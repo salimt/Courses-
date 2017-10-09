@@ -4,7 +4,7 @@
 Harvard University CS50x: Introduction to Computer Science
 
 - ### [Duke-University-Data-Science-Math-Skills](https://github.com/salimt/Courses-/tree/master/Duke-University-Data-Science-Math-Skills)
-
+Duke University: Data Science Math Skills
 - ### [MITx-6.00.1x](https://github.com/salimt/Courses-/tree/master/MITx-6.00.1x)
 Massachusetts Institute of Technology 6.00.1x: Introduction to Computer Science and Programming Using Python
 
