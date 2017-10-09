@@ -1,0 +1,90 @@
+                .button {
+                    background-color: #4CAF50; /* Green */
+                    border: none;
+                    color: white;
+                    padding: 3px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 13px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+                .button:hover {
+                  background: #3cb0fd;
+                  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+                  text-decoration: none;
+                }
+                
+                .button3 {
+                    background-color: #f44336; /* Red */
+                    border: none;
+                    color: white;
+                    padding: 3px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 13px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
+                .button3:hover {
+                  background: #3cb0fd;
+                  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+                  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+                  text-decoration: none;
+                }
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* colors for navbar */
+.navbar-default .navbar-brand .blue
+{
+    color: #537fbe;
+}
+.navbar-default .navbar-brand .red
+{
+    color: #ea433b;
+}
+.navbar-default .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+.navbar-default .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+main td
+{
+    /* left-align tables' cells */
+    text-align: left;
+}

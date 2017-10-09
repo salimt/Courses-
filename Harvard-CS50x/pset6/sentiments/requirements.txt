@@ -1,0 +1,5 @@
+Flask
+nltk
+plotly
+termcolor
+twython

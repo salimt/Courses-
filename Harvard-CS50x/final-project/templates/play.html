@@ -1,0 +1,133 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <!DOCTYPE html>
+<center><html>
+<head>
+
+    <img src='https://images6.alphacoders.com/400/thumb-1920-400645.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+    <input type="hidden" class="hidden" value="{{ score }}" />
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <!-- jquery for maximum compatibility -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        /** Simple JavaScript Quiz
+         * version 0.1.0
+         * http://journalism.berkeley.edu
+         * created by: Jeremy Rue @jrue
+         *
+         * Copyright (c) 2013 The Regents of the University of California
+         * Released under the GPL Version 2 license
+         * http://www.opensource.org/licenses/gpl-2.0.php
+         * This program is distributed in the hope that it will be useful, but
+         * WITHOUT ANY WARRANTY; without even the implied warranty of
+         * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+         */
+    
+        var quiztitle = "GUESS THE COUNTRY";
+    
+        /**
+        * Set the information about your questions here. The correct answer string needs to match
+        * the correct choice exactly, as it does string matching. (case sensitive)
+        *
+        */
+        var quiz = [
+            {
+                "question"      :   "29 October 1923",
+                "image"         :   "https://flagspot.net/images/t/tr.gif",
+                "choices"       :   [
+                                        "Turkey",
+                                        "Jordan",
+                                        "Iraq",
+                                        "Syria"
+                                    ],
+                "correct"       :   "Turkey",
+                "explanation"   :   "Turkey gained its independence in 29 October 1923.",
+            },
+            {
+                "question"      :   "4 July 1776",
+                "image"         :   "https://flagspot.net/images/u/us.gif",
+                "choices"       :   [
+                                        "United States of America",
+                                        "United Kingdom",
+                                        "Isle of Man",
+                                        "Indonesia"
+                                    ],
+                "correct"       :   "United States of America",
+                "explanation"   :   "Declaration of Independence from the Kingdom of Great Britain (now the United Kingdom) in 1776.",
+            },
+            {
+                "question"      :   "30 November 1966",
+                "image"         :   "https://flagspot.net/images/b/bb.gif",
+                "choices"       :   [
+                                        "Belize",
+                                        "Cambodia",
+                                        "Barbados",
+                                        "Burkina Faso"
+                                    ],
+                "correct"       :   "Barbados",
+                "explanation"   :   "Independence from the United Kingdom in 1966.",
+            },
+            {
+                "question"      :   "24 May 1822",
+                "image"         :   "https://flagspot.net/images/e/ec2.gif",
+                "choices"       :   [
+                                        "El Salvador",
+                                        "Grenada",
+                                        "Equatorial Guinea",
+                                        "Ecuador"
+                                    ],
+                "correct"       :   "Ecuador",
+                    
+                "explanation"   :   "August 10	1809 Proclaimed independence from Spain on August 10, 1809, but failed with the execution of all the conspirators of the movement on August 2, 1810. | May 24	1822	Independence finally occurred on May 24, 1822 at the Battle of Pichincha.",
+            },
+            {
+                "question"      :   "17 August 1960",
+                "image"         :   "https://flagspot.net/images/g/ga.gif",
+                "choices"       :   [
+                                        "Guinea-Bissau",
+                                        "Gabon",
+                                        "Grenada",
+                                        "Guyana"
+                                    ],
+                "correct"       :   "Gabon",
+                "explanation"   :   "Independence from France in 1960.",
+            },
+    
+        ];
+    
+    
+        /******* No need to edit below this line *********/
+    var currentquestion=0,score=0,submt=true,picked;jQuery(document).ready(function(e){function h(i){return e(document.createElement("div")).text(i).html()}function b(k){if(typeof k!=="undefined"&&e.type(k)=="array"){e("#choice-block").empty();for(var j=0;j<k.length;j++){e(document.createElement("li")).addClass("choice choice-box").attr("data-index",j).text(k[j]).appendTo("#choice-block")}}}function d(){submt=true;e("#explanation").empty();e("#question").text(quiz[currentquestion]["question"]);e("#pager").text("Question "+Number(currentquestion+1)+" of "+quiz.length);if(quiz[currentquestion].hasOwnProperty("image")&&quiz[currentquestion]["image"]!=""){if(e("#question-image").length==0){e(document.createElement("img")).addClass("question-image").attr("id","question-image").attr("src",quiz[currentquestion]["image"]).attr("alt",h(quiz[currentquestion]["question"])).insertAfter("#question")}else{e("#question-image").attr("src",quiz[currentquestion]["image"]).attr("alt",h(quiz[currentquestion]["question"]))}}else{e("#question-image").remove()}b(quiz[currentquestion]["choices"]);c()}function f(i){if(quiz[currentquestion]["choices"][i]==quiz[currentquestion]["correct"]){e(".choice").eq(i).css({"background-color":"#50D943"});e("#explanation").html("<strong>Correct!</strong> "+h(quiz[currentquestion]["explanation"]));score++}else{e(".choice").eq(i).css({"background-color":"#D92623"});e("#explanation").html("<strong>Incorrect.</strong> "+h(quiz[currentquestion]["explanation"]))}currentquestion++;e("#submitbutton").html("NEXT QUESTION &raquo;").on("click",function(){if(currentquestion==quiz.length){a()}else{e(this).text("Check Answer").css({color:"#222"}).off("click");d()}})}function c(){e(".choice").on("mouseover",function(){e(this).css({"background-color":"#e1e1e1"})});e(".choice").on("mouseout",function(){e(this).css({"background-color":"#fff"})});e(".choice").on("click",function(){picked=e(this).attr("data-index");e(".choice").removeAttr("style").off("mouseout mouseover");e(this).css({"border-color":"#222","font-weight":700,"background-color":"#c1c1c1"});if(submt){submt=false;e("#submitbutton").css({color:"#000"}).on("click",function(){e(".choice").off("click");e(this).off("click");f(picked)})}})}function a(){e("#explanation").empty();e("#question").empty();e("#choice-block").empty();e("#submitbutton").remove();e("#question").text("You got "+score+" out of "+quiz.length+" correct.");e(document.createElement("h2")).css({"text-align":"center","font-size":"4em"}).text(Math.round(score/quiz.length*100)+"%").insertAfter("#question")}function g(){if(typeof quiztitle!=="undefined"&&e.type(quiztitle)==="string"){e(document.createElement("h1")).text(quiztitle).appendTo("#frame")}else{e(document.createElement("h1")).text("Quiz").appendTo("#frame")}if(typeof quiz!=="undefined"&&e.type(quiz)==="array"){e(document.createElement("p")).addClass("pager").attr("id","pager").text("Question 1 of "+quiz.length).appendTo("#frame");e(document.createElement("h2")).addClass("question").attr("id","question").text(quiz[0]["question"]).appendTo("#frame");if(quiz[0].hasOwnProperty("image")&&quiz[0]["image"]!=""){e(document.createElement("img")).addClass("question-image").attr("id","question-image").attr("src",quiz[0]["image"]).attr("alt",h(quiz[0]["question"])).appendTo("#frame")}e(document.createElement("p")).addClass("explanation").attr("id","explanation").html("&nbsp;").appendTo("#frame");e(document.createElement("ul")).attr("id","choice-block").appendTo("#frame");b(quiz[0]["choices"]);e(document.createElement("div")).addClass("choice-box").attr("id","submitbutton").text("Check Answer").css({"font-weight":700,color:"#222",padding:"30px 0"}).appendTo("#frame");c()}}g()});
+        
+        var score  = document.querySelector(".hidden").score;
+        </script>
+        <style type="text/css" media="all">
+            /*css reset */
+            html,body,div,span,h1,h2,h3,h4,h5,h6,p,code,small,strike,strong,sub,sup,b,u,i{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;} 
+            article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} 
+            body{line-height:1; font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;} 
+            ol,ul{list-style:none;}
+            strong{font-weight:700;}
+            #frame{max-width:620px;width:auto;border:1px solid #ccc;background:#fff;padding:10px;margin:3px;}
+            h1{font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;text-align:left;border-bottom:1px solid #999;padding:0;width:auto}
+            h2{font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:0;text-align:center;margin:20px 0;}
+            p.pager{margin:5px 0 5px; font:bold 1em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;color:#999;}
+            img.question-image{display:block;max-width:250px;margin:10px auto;border:1px solid #ccc;width:100%;height:auto;}
+            #choice-block{display:block;list-style:none;margin:0;padding:0;}
+            #submitbutton{background:#5a6b8c;}
+            #submitbutton:hover{background:#7b8da6;}
+            #explanation{margin:0 auto;padding:20px;width:75%;}
+            .choice-box{display:block;text-align:center;margin:8px auto;padding:10px 0;border:1px solid #666;cursor:pointer;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+        </style>
+    </head>
+    <body>
+        <div id="frame" role="content"></div>
+    </body>
+    </html></center>
+{% endblock %}

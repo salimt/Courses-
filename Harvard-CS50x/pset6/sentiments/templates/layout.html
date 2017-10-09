@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- http://getbootstrap.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <meta charset="utf-8"/>
+        <meta content="initial-scale=1, width=device-width" name="viewport"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Sentiments</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Sentiments
+                    <small>{% block subtext %}{% endblock %}</small>
+                </h1>
+            </div>
+            {% block body %}{% endblock %}
+        </div>
+    </body>
+</html>

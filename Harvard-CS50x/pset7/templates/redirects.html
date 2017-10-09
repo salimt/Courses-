@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <form action="{{ url_for('redirects') }}" method="post">
+  <head>      
+    <title>C$50 Finance</title>      
+    <meta http-equiv="refresh" content="3;URL='/'" />    
+  </head> 
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        <b><p>Welcome Mr. {{ name }}</p></b>
+        <p>If you are not redirected automatically, please click <u><a href='/'>here</a>.</p></u>
+            You will be redirected in <div id="counter">3</div> seconds
+            <script>
+                setInterval(function() {
+                    var div = document.querySelector("#counter");
+                    var count = div.textContent * 1 - 1;
+                    div.textContent = count;
+                    if (count == 0) {
+                        location.href="/";
+                    }
+                }, 1000);
+            </script>
+    </body>
+    </form>
+{% endblock %}
+

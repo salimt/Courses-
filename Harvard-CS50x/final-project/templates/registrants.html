@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+<ul>
+    {% for registrant in registrants %}
+        <p>user {{ registrant.username }} has {{ "${:,.2f}".format(registrant.cash) }}</p>
+    {% endfor %}
+</ul>
+{% endblock %}

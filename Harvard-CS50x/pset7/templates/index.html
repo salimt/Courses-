@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('index') }}" method="post">
+        <fieldset>
+    <table class="table table-striped">
+        <thead>
+            <head>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+                <th>BUY/SELL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td><b>{{ total }}</b></td><td colspan="1"></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["symbol"] }}</td>
+                    <td>{{ stock["name"] }}</td>
+                    <td>{{ stock["SUM(shares)"] }}</td>
+                    <td>{{ "${:,.2f}".format(stock.price) }}</td>
+                    <td>{{ "${:,.2f}".format(stock.total) }}</td>
+                    <td><a href="{{ url_for('buy') }}" class="button" >BUY</a> <a href="{{ url_for('sell') }}" class="button3">SELL</a></td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>{{ cash }}</td><td colspan="1"></td>
+            </tr>
+        </tbody>
+    </table>
+        </fieldset>
+    </form>
+{% endblock %}

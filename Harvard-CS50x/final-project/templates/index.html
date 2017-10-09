@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('index') }}" method="post">
+        <fieldset>
+        	<!-- <center><img src="https://i.giphy.com/media/zG52jhApfBRBe/200.gif"/></center> -->
+        	<center><img src="https://media0.giphy.com/media/YfMHLC2s6okBq/200w.webp#0-grid1"/></center>
+        	
+    <td><a href="{{ url_for('play') }}" class="button" >GUESS THE COUNTRY</a></td><td><a href="{{ url_for('play2') }}" class="button" >RANDOM QUESTIONS</a></td>
+    
+    
+<!--<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>-->
+<video poster="http://i2.kym-cdn.com/entries/icons/original/000/000/091/TrollFace.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">-->
+<source src="https://pixabay.com/en/videos/download/video-554_large.mp4" type="video/webm">
+<source src="https://pixabay.com/en/videos/download/video-554_large.mp4" type="video/mp4">
+</video>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p>
+<!--<div id="polina">
+<h1>Polina</h1></div>-->
+
+
+<script>var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+
+</script>
+    
+    
+    
+        </fieldset>
+    </form>
+{% endblock %}

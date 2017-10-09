@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+    <form action="{{ url_for('sold') }}" method="post">
+        <ul>
+            {% for registrant in registrants %}
+                <p><input name="id" type="radio" value="{{ id }}"/> user {{ registrant.username }} has {{ "${:,.2f}".format(registrant.cash) }}</p>
+            {% endfor %}
+        </ul>
+        <input type="submit" value="Unregister"/>
+    </form>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sell
+{% endblock %}
+
+{% block main %}
+    <head>
+    <img src='http://eskipaper.com/images/subtle-orange-wallpaper-1.jpg' style='position:fixed;top:0px;left:0px;width:100%;height:100%;z-index:-1;'>
+        <script>scripts3.js</script>
+                <!-- app's own JavaScript -->
+        <script src="{{ url_for('static', filename='scripts3.js') }}"></script>
+
+        <meta charset="utf-8" />
+        <title>QUIZ</title>
+            <style>
+            b.r{color:Crimson;}
+            input[type=radio],input[type=checkbox],button,label{cursor:pointer;}
+            #test{border:#000 1px solid;padding:10px 40px 40px 40px;}
+            #tt{padding:10px;}
+            </style>
+    </head>
+    <body>
+        <div id="test"></div>
+        <label for="nw"><input type="checkbox" checked="checked" id="nw" />&nbsp;Show results in a new window</label>
+    </body>
+</html>
+{% endblock %}
