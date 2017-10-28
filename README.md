@@ -10,3 +10,6 @@ Massachusetts Institute of Technology 6.00.1x: Introduction to Computer Science 
 
 - ### [UBCx-HtC1x](https://github.com/salimt/Courses-/tree/master/UBCx-HtC1x)
 University of British Columbia HtC1x: How to Code: Simple Data
+
+- ### [Stanford-Mathematical-Thinking](https://github.com/salimt/Courses-/tree/master/Stanford-University-Introduction-to-Mathematical-Thinking)
+Stanford University: Introduction to Mathematical Thinking
