@@ -13,3 +13,7 @@ University of British Columbia HtC1x: How to Code: Simple Data
 
 - ### [Stanford-Mathematical-Thinking](https://github.com/salimt/Courses-/tree/master/Stanford-University-Introduction-to-Mathematical-Thinking)
 Stanford University: Introduction to Mathematical Thinking
+
+- ### [University-of-Toronto-The Fundamentals](https://github.com/salimt/Courses-/tree/master/University-of-Toronto-The%20Fundamentals)
+University of Toronto: Learn to Program: The Fundamentals
+
