@@ -1,6 +1,6 @@
 ﻿# University of Toronto - Learn to Program: The Fundamentals
 ## Solutions for UofT's Learn to Program: The Fundamentals
-![University of Toronto](https://imgur.com/pmA0s44)
+![University of Toronto](https://i.imgur.com/pmA0s44.png)
 
 ![University of Toronto](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: Jennifer Campbell, Paul Gries
