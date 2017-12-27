@@ -75,4 +75,4 @@ This module introduces tuples (an immutable version of lists), and Python's dict
 
 - [Tuples](https://salimt.github.io/python-fundamentals/week7/1tuples.html)
 - [Dictionary](https://salimt.github.io/python-fundamentals/week7/2dictionary.html)
-- [Inverting a Dictionary](https://salimt.github.io/python-fundamentals/week7/3invertingadictionary.html)Inverting a Dictionary
+- [Inverting a Dictionary](https://salimt.github.io/python-fundamentals/week7/3invertingadictionary.html)
