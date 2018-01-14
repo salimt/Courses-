@@ -1,0 +1,43 @@
+Python 3.2.3 (v3.2.3:3d0686d90f55, Apr 10 2012, 11:25:50) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> flanders_filename = '/Users/ltp/Documents/ltp/ltp1/lectures/6readfiles/In Flanders Fields.txt'
+>>> flanders_file = open(flanders_filename, 'r')
+>>> flanders_file.readlines()
+['In Flanders Fields\n', '\n', 'In Flanders fields the poppies blow\n', 'Between the crosses, row on row,\n', 'That mark our place; and in the sky\n', 'The larks, still bravely singing, fly\n', 'Scarce heard amid the guns below.\n', '\n', 'We are the Dead. Short days ago\n', 'We lived, felt dawn, saw sunset glow,\n', 'Loved and were loved, and now we lie\n', 'In Flanders fields.\n', '\n', 'Take up our quarrel with the foe:\n', 'To you from failing hands we throw\n', 'The torch; be yours to hold it high.\n', 'If ye break faith with us who die\n', 'We shall not sleep, though poppies grow\n', 'In Flanders fields.\n', '\n', '-John McCrae\n']
+>>> flanders_file.close()
+>>> flanders_file = open(flanders_filename, 'r')
+>>> lines = flanders_file.readlines()
+>>> for line in lines:
+	print(line, end='')
+
+	
+In Flanders Fields
+
+In Flanders fields the poppies blow
+Between the crosses, row on row,
+That mark our place; and in the sky
+The larks, still bravely singing, fly
+Scarce heard amid the guns below.
+
+We are the Dead. Short days ago
+We lived, felt dawn, saw sunset glow,
+Loved and were loved, and now we lie
+In Flanders fields.
+
+Take up our quarrel with the foe:
+To you from failing hands we throw
+The torch; be yours to hold it high.
+If ye break faith with us who die
+We shall not sleep, though poppies grow
+In Flanders fields.
+
+-John McCrae
+>>> flanders_file.close()
+>>> lines[0]
+'In Flanders Fields\n'
+>>> lines[1]
+'\n'
+>>> lines[2]
+'In Flanders fields the poppies blow\n'
+>>> 

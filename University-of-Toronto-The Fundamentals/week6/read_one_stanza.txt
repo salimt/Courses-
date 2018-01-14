@@ -1,0 +1,27 @@
+Python 3.2.3 (v3.2.3:3d0686d90f55, Apr 10 2012, 11:25:50) 
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type "copyright", "credits" or "license()" for more information.
+>>> flanders_filename = '/Users/ltp/Documents/ltp/ltp1/lectures/6readfiles/In Flanders Fields.txt'
+>>> flanders_file = open(flanders_filename, 'r')
+>>> line = flanders_file.readline()
+>>> line = flanders_file.readline()
+>>> line = flanders_file.readline()
+>>> line
+'In Flanders fields the poppies blow\n'
+>>> while line != '\n':
+	print(line)
+	line = flanders_file.readline()
+
+	
+In Flanders fields the poppies blow
+
+Between the crosses, row on row,
+
+That mark our place; and in the sky
+
+The larks, still bravely singing, fly
+
+Scarce heard amid the guns below.
+
+>>> flanders_file.close()
+>>> 
