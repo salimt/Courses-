@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+				
+		<title>Bubble Sort</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Bubble Sort</h1> 
+		<div class="indent">
+			Let's look at an example:
+			<h2>Example</h2>			
+			<div class="indent">
+				We'll start at index <code>i</code> and work towards end of list <code>e</code>
+				<h3>Pass 1</h3>
+				<code><table class="boxed">
+					<tr>
+						<td>i</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>e</td>
+					</tr>
+					<tr>
+						<td class="boxed"><span class="red">7</span></td>
+						<td class="boxed"><span class="red">3</span></td>
+						<td class="boxed">5</td>
+						<td class="boxed">2</td>
+					</tr>
+				</table></code>
+				Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>7</code> is greater than <code>3</code>, they are swapped.<br>
+				<br>
+				<code><table class="boxed">
+					<tr>						
+						<td>&nbsp;</td>
+						<td>i</td>
+						<td>&nbsp;</td>
+						<td>e</td>
+					</tr>
+					<tr>
+						<td class="boxed">3</td>
+						<td class="boxed"><span class="red">7</span></td>
+						<td class="boxed"><span class="red">5</span></td>
+						<td class="boxed">2</td>
+					</tr>
+				</table></code>				  
+				 Increase <code>i</code> by 1. Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>7</code> is greater than <code>5</code>, they are swapped.<br>
+				<br>
+				<code><table class="boxed">
+					<tr>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>i</td>						
+						<td>e</td>
+					</tr>
+					<tr>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+						<td class="boxed"><span class="red">7</span></td>
+						<td class="boxed"><span class="red">2</span></td>
+					</tr>
+				</table></code>						
+				 Increase <code>i</code> by 1. Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>7</code> is greater than <code>2</code>, they are swapped.<br>
+				<br>
+				<code><table class="boxed">
+					<tr>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>						
+						<td>e</td>
+					</tr>
+					<tr>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+						<td class="boxed">2</td>
+						<td class="boxed">7</td>
+					</tr>
+				</table></code>					  				
+				This pass is complete. The largest item in the list, <code>7</code>, is in its correct location.<br>
+				<br>
+				<h3>Pass 2</h3>
+				<code><table class="boxed">
+					<tr>
+						<td>i</td>
+						<td>&nbsp;</td>
+						<td style="border-right:1px solid black">e</td>
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="boxed"><span class="red">3</span></td>
+						<td class="boxed"><span class="red">5</span></td>
+						<td class="boxed">2</td>
+						<td class="boxed">7</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">unsorted&nbsp;</td>												
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;sorted</td>
+					</tr>
+				</table></code>
+				<code>i</code> initially refers to <code>0</code>. Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>3</code> is less than <code>5</code>, nothing needs to be swapped.<br>
+				<br>								
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>
+						<td>i</td>						
+						<td style="border-right:1px solid black">e</td>
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="boxed">3</td>
+						<td class="boxed"><span class="red">5</span></td>
+						<td class="boxed"><span class="red">2</span></td>
+						<td class="boxed">7</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">unsorted&nbsp;</td>												
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;sorted</td>
+					</tr>
+				</table></code>				  
+				Increase <code>i</code> by 1. Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>5</code> is greater than <code>2</code>, they are swapped.<br>
+				<br>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td style="border-right:1px solid black">e</td>
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="boxed">3</td>
+						<td class="boxed">2</td>
+						<td class="boxed">5</td>
+						<td class="boxed">7</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">unsorted&nbsp;</td>												
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;sorted</td>
+					</tr>
+				</table></code>				 								
+				This pass is complete. The second largest item in the list, <code>5</code>, is in its correct location.<br>
+				<br>				
+				<h3>Pass 3</h3>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>
+						<td>i</td>
+						<td style="border-right:1px solid black">e</td>
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>												
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed"><span class="red">3</span></td>
+						<td class="boxed"><span class="red">2</span></td>
+						<td class="boxed">5</td>
+						<td class="boxed">7</td>
+						
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">unsorted&nbsp;</td>												
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;sorted</td>
+					</tr>
+				</table></code>							 
+				 <code>i</code> initially refers to <code>0</code>. Compare the item at index <code>i</code> with the item at <code>i + 1</code>. Since <code>3</code> is greater than <code>2</code>, they are swapped.<br>
+				 <br>
+				 
+				 <code><table class="boxed">					
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed">2</td>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+						<td class="boxed">7</td>						
+					</tr>					
+				</table></code>								 				 
+				This pass is complete.  The list is now sorted!<br>
+				<br>				 
+				<h3>Generalized List States</h3>
+
+				<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_780bac3d575c9684b627f05e77761b45_general_bubble.png?expiry=1489795200000&hmac=6zBS1WG36RfPs9YFkqx9rQiney3SsjUCQgTlc5QNq74" alt="generalized list states"><br>
+				<!--img src="lecture_summaries/w3/general_bubble.png" alt="generalized list states"><br-->
+				<br>			
+			</div>
+			<h2>Implementation</h2>
+			<br>
+			<div class="indent">
+				<div class="indent">
+
+					<table class="bordered"><tr><td>
+<pre>
+def bubble_sort(L):
+    """ (list) -> NoneType
+
+    Sort the items of L from smallest to largest.
+
+    >>> L = [7, 3, 5, 2]
+    >>> bubble_sort(L)
+    >>> L
+    [2, 3, 5, 7]
+    """
+
+    # The index of the last unsorted item.
+    end = len(L) - 1
+
+    while end != 0:
+
+        # Bubble once through the unsorted section to move the largest item
+        # to index end.
+        for i in range(end):
+            if L[i] > L[i + 1]:
+                L[i], L[i + 1] = L[i + 1], L[i]
+
+        end = end - 1
+
+    
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+</pre>
+					</td></tr></table>
+				</div>
+			</div>
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+				
+		<title>Plugging Your Classes into Python Syntax</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Plugging Your Classes into Python Syntax</h1> 
+		<div class="indent">
+			
+			<p>
+			You know how to use several of Python's operators.  For example, we have used the + operator for:
+			<ul>
+				<li>adding 2 numbers together, 
+				<li>concatenating two string, and
+				<li>joining two lists.
+			</ul>			
+			
+			<p>
+			You've also used <code>*</code>, <code>/</code>, <code>-</code>, <code>**</code>, and other operators.
+			</p>
+			<p>
+			We're going to show you how to use operators like <code>+</code> with your own types.
+		  </p>
+			
+			<h2>Special Methods</h2>
+			<div class="indent">
+				<p>
+				All classes are built on an existing class called <code>object</code>.
+				Class <code>object</code> has many existing "underscore" methods, known as <em>special</em> or <em>magic</em> methods.  We can see their names by calling <code>dir</code> on <code>object</code>:
+			</p>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> dir(object)
+['__class__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__',
+ '__getattribute__', '__gt__', '__hash__', '__init__', '__le__', '__lt__', 
+ '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', 
+ '__sizeof__', '__str__', '__subclasshook__']
+</pre>
+					</td></tr></table>
+				</div>	
+				<br>
+				<p>			
+				These special methods "plug in" to Python syntax, often with operators such as <code>+</code> and <code>==</code>.	Here are a few examples:</p>
+				<ul>
+					<li>Method <code>__init__</code> is called after an object is created, in order to initialize that object.</li>
+					<li>Method <code>__str__</code> is called to get a string representation of an object (such as by <code>str()</code> or <code>print()</code>).</li>
+					<li>Method <code>__eq__</code> is called whenever the operator <code>==</code> is used.</li>
+				</ul>
+			</div>
+			<h2>Adding to the CashRegister Class</h2>
+			<div class="indent">
+				<p>
+				We're going to add the <code>__eq__</code> method to our <code>CashRegister</code> class so that we can compare two cash register objects using <code>==</code>.
+			</p>
+			<p>
+				We will consider two cash registers to be equal if they contain the same amount of money.
+				Here is the main program that we'd like to run:
+			</p>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+if __name__ == '__main__':
+
+    cr1 = CashRegister(2, 0, 0, 0, 0)
+    cr2 = CashRegister(0, 1, 0, 0, 0)
+    cr3 = CashRegister(1, 1, 0, 0, 0)
+    print(cr1 == cr2)
+    print(cr3 == cr2)
+</pre>
+					</td></tr></table>
+				</div>			
+				<br>
+				<p>
+				When we run the program, both the comparisons for equality produce <code>False</code>:
+			</p>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>>
+False
+False
+</pre>
+					</td></tr></table>
+				</div>			
+				<br>
+				Since we have not supplied an <code>__eq__</code> method in class <code>CashRegister</code>, <code>object</code>'s <code>__eq__</code> method is used.  Class <code>object</code>'s <code>__eq__</code> method works by comparing memory addresses.  Since <code>cr1, cr2</code>, and <code>cr3</code> contain different memory locations, they are not equal to one another.<br>  
+				<br>			  			 
+				However, since we want our <code>CashRegister</code> objects to be considered equal if the amount of money is the same, we need to write our own method.<br>
+				
+				<h3>Writing <code>__eq__</code></h3>
+				<div class="indent">
+					<p>
+					The first parameter to our <code>__eq__</code> method is <code>self</code>, and the second parameter refers to the <code>CashRegister</code> object that <code>self</code> will be compared with.
+				</p>
+				<p>
+					When calling the <code>__eq__</code> method, the object on the left-hand side of the equality operator corresponds with <code>self</code>, and the operator on the right-hand side correponds with <code>other</code> (for example, for expression <code>cash1 == cash2</code>, <code>self</code> will refer to <code>cash1</code>, and <code>other</code> will refer to <code>cash2</code>)
+				</p>
+				<p>
+					For this method, we need to check whether the value produced by <code>self.get_total()</code> is equal to the value produced by <code>other.get_total()</code>:
+				</p>
+					<div class="indent">
+						<table class="bordered"><tr><td>
+<pre>
+def __eq__(self, other):
+    """ (CashRegister, CashRegister) -> bool
+	
+    Return True iff this CashRegister has the same amount of money as other.
+	
+    >>> reg1 = CashRegister(2, 0, 0, 0, 0)
+    >>> reg2 = CashRegister(0, 1, 0, 0, 0)
+    >>> reg1 == reg2
+    True
+    """	
+	
+    return self.get_total() == other.get_total()
+</pre>	
+						</td></tr></table>
+					</div>	
+					<br>				
+					Now, when the program is executed, we get the following results:
+					<div class="indent">
+						<table class="bordered"><tr><td>
+<pre>
+>>> 
+True
+False
+</pre>			  
+						</td></tr></table>
+					</div>	
+								
+				</div>				
+				<h2>In General</h2>
+				<div class="indent">
+					<p>
+					Whenever defining special methods that correpond with Python's operators, it's up to you to decide what these operators will do.
+				</p>
+				<p>
+					In this case we decided that two <code>CashRegister</code> objects were equal when the amount of money stored in them was equal.  We could have also chosen to consider them equal only when they had the exact same number of loonies, toonies, fives, tens and twenties, or chosen to go with the default - making them equal only when they referred to the same object in memory.
+				</p>
+				<p>
+					The choice is up to you.			
+				</p>
+				</div>
+			</div>
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

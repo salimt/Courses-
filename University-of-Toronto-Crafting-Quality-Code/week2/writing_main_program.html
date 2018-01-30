@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Writing a '__main__' program</title>
+    </head>
+
+    <body>
+        <div class="page_header">
+            <!-- For local testing -->
+            <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+            
+            <!-- For web version -->
+            <a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>           
+            <hr>
+        </div>
+        <h1>Writing a '__main__' program</h1>
+			<p>		
+				When a module is imported, the code in it is executed. For instance, consider the module <code>palindrome_v1</code>, which contains two function definitions, followed be 5 lines of code
+				that prompts the user for input, calls <code>is_palindrome_v1</code>, and prints the result:
+			</p>
+			<pre>
+def is_palindrome_v1(s):
+    """ (str) -> bool
+
+    Return True if and only if s is a palindrome.
+
+    >>> is_palindrome_v1('noon')
+    True
+    >>> is_palindrome_v1('racecar')
+    True
+    >>> is_palindrome_v1('dented')
+    False
+    """
+
+    return reverse(s) == s
+
+
+def reverse(s):
+    """ (str) -> str
+
+    Return a reversed version of s.
+
+    >>> reverse('hello')
+    'olleh'
+    >>> reverse('a')
+    'a'
+    """
+
+    rev = ''
+
+    # For each character in s, add that char to the beginning of rev.
+    for ch in s:
+        rev = ch + rev
+
+    return rev
+
+word = input('Enter a word: ')
+if is_palindrome_v1(word):
+    print(word, 'is a palindrome.')
+else:
+    print(word, 'is not a palindrome.')
+			</pre>
+	<p>	
+		Module <code>palindrome_v2</code> imports <code>palindrome_v1</code>. When <code>palindrome_v1</code> is imported by another module, not only are the two function definitions executed, the last 5 lines of <code>palindrome_v1</code> are also executed.
+	</p>
+
+<h2>
+Python's <code>__name__</code> Variable
+</h2>
+
+	<p>
+	Every module has a variable named <code>__main__</code>. Since this variable is special (it is built in to Python), its name starts and ends with
+	two underscores. If the function call <code>print(I am ', __name__) </code> is included in <code>palindrome_v1</code>, then when the module is executed, <code>I am __main__</code> will be printed. However, if <code>palindrome_v1</code> is imported into <code>palindrome_v2</code>, then executing
+	<code>palindrome_v2</code>, will print <code>I am palindrome_v1</code>.
+	</p>
+	<p>
+	In other words, <code>__name__</code> will refer to <code>"__main__"</code> only if it is referenced inside the module being run. In all other
+	cases, <code>__name__</code> will refer a string containing the module name. 
+	</p>
+
+<h2>Using <code>if __name__ == '__main__':</code></h2>
+
+<p>
+We can use an <code>if</code> statement to check whether a module is the main one being executed (as opposed to being imported by another module), and only if it is, run certain lines of code.
+</p>
+	<pre>
+if __name__ == __main__:
+    print('This line is being executed because this is the main module being executed.')
+	</pre>
+	<p>
+	For the code above, if variable <code>__name__</code> does not refer to <code>"__main__"</code>, then the code in the body of the <code>if</code> statement will not be executed. 
+	</p>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

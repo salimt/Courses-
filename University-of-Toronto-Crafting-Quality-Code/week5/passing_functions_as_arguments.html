@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+				
+		<title>Passing Functions as Arguments</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Passing Functions as Arguments</h1> 
+		<div class="indent">
+			<br>
+			Like everything else in Python, functions are objects.  Since they are objects, they can be supplied as arguments to other functions.<br>
+			<br>
+			We can test this concept by creating an example function that simply runs other functions:
+			<div class="indent">
+				<table class="bordered"><tr><td>
+<pre>
+def function_runner(f):
+    """ (function) -> NoneType
+
+    Call f.
+    """
+
+    f()
+</pre>
+				</td></tr></table>
+			</div>	
+			<br>
+			We can test this concept by having it call one of two other functions:
+			<div class="indent">
+				<table class="bordered"><tr><td>
+<pre>
+def function_1():
+    print("function_1 was called.")
+
+def function_2():
+    print("function_2 was called.")
+</pre>
+				</td></tr></table>
+			</div>	
+		
+			<br>
+			If we call <code>function_runner</code> passing it the name of <code>function_1</code>, 
+			<div class="indent">
+				<table class="bordered"><tr><td>
+					<code>function_runner(function_1)</code>
+				</td></tr></table>
+			</div>	
+			<br>
+			we get the results:
+			<div class="indent">
+				<table class="bordered"><tr><td>
+					<code>function_1 was called.</code>
+				</td></tr></table>
+			</div>	
+			<br>
+			If we call it using <code>function_2</code>			
+			<div class="indent">
+				<table class="bordered"><tr><td>
+					<code>function_runner(function_2)</code>
+				</td></tr></table>
+			</div>	
+			<br>
+			we see the following:
+			<div class="indent">
+				<table class="bordered"><tr><td>
+					<code>function_2 was called.</code>
+				</td></tr></table>
+			</div>	
+		
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

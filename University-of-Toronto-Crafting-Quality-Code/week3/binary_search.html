@@ -1,0 +1,202 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Change to proper title -->
+		<title>Searching for a Value in a List: Binary Search</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		<h1>Searching for a Value in a List: Binary Search</h1>
+			<p>		
+				Linear Search searches for a value in a list, starting at index <code>0</code>, working towards the end of the list.
+				If the value is not contained in the list, then linear search will examine all items in the list. Linear search can be applied to both sorted and unsorted lists. However, if the list is sorted,
+				then a faster searching algorithm, called binary search, may be used.
+			</p>
+			
+		<h2>
+			Binary Search
+		</h2>
+			<p>
+				The binary search algorithm is used to find a value in a sorted list. To understand binary search, let us look at the following diagram:
+				
+			</p>
+			<table border="1" style="text-align:center;">
+			<tr>
+			  <td width="200"> items less than v</td>
+			  <td width="40"> v</td>
+			  <td width="200"> items greater than v</td>
+			</tr>
+			</table>
+			<p>
+				Let us assume that there are 100,000 items in the above list. The middle item,
+				let us call it <code>v</code>, is compared to the value that we are looking for. Since the list is sorted, every item to the left of
+				<code>v</code> is less than or equal to <code>v</code>, and the items to the right of <code>v</code> are greater than or equal to <code>v</code>. If the value we are looking for is greater than <code>v</code>, then
+				we can quickly deduce that it is not to the left of <code>v</code>, and thus we eliminate
+				50,000 items of the list after making just one comparison. 
+			</p>
+			
+			<!--
+			<p>
+				Let us consider a more detailed example. Assume we have a sorted list of
+				9 items, and the middle item has a value of <code>43</code>. Below is the graphical
+				layout of our list
+			</p>
+			
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="200"> items less than 43</td>
+				  <td width="40"> 43</td>
+				  <td width="200"> items greater than 43</td>
+				</tr>
+			</table>
+			
+			<p>	
+				Let us use Binary Search to look for the value <code>15</code> in the above list. Since our list is sorted,
+				it is guaranteed that 15 will be located to the left of <code>43</code>. Notice that we do not know yet if
+				<code>15</code> even exists in the list; however, if it does exist, then it must be located to the left of
+				<code>43</code>.
+			</p>
+
+		-->
+
+		<h2>
+			Implementation
+		</h2>
+
+			<p>
+				For our implementation, we need to understand a few invariants. At all times, our list is divided into three regions.
+				On the left, we have all the items that are less than <code>v</code>. On the right, we have all the items that are greater
+				than or equal to <code>v</code>. In the middle, we have all the items that are still unknown. We will mark the beginning of the unknown section
+				with <code>b</code>, and the end with <code>e</code>. This will be known as the binary loop invariant:
+			</p>
+			
+
+			<table border="0" style="text-align:right;">
+				<tr>
+				  <td width="160"> b </td>
+				  <td width="150"> e</td>
+				  <td width="150"> &nbsp;</td>
+				</tr>
+			</table>
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="150"> items less than v</td>
+				  <td width="150"> unknown items</td>
+				  <td width="200"> items greater than or equal to v</td>
+				</tr>
+			</table>
+			<br>
+			<p>
+				In the beginning, we know nothing about all the items in the list. Therefore, the initial state has
+				<code>b</code> located at the beginning of the list, and <code>e</code> located at the end of the list:
+			</p>
+			
+			<table border="0" style="text-align:left;">
+				<tr>
+				  <td width="160"> b </td>
+				  <td width="334">&nbsp; </td>
+				  <td width="150"> e</td>
+				</tr>
+			</table>
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="500"> unknown items</td>
+				</tr>
+			</table>
+			<br>
+			
+			<p>
+				The code for our initial state is:
+			</p>
+<pre>
+b = 0
+e = len(L) - 1
+</pre>
+
+			<p>
+				At the end of this process, the unknown section is empty. Everything to the right is
+				greater than or equal to <code>v</code> and everything to the left is less than <code>v</code>.
+				Index <code>b</code> is to the right of index <code>e</code>. This how our list looks at the end:
+			</p>
+			
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="150"> items less than v</td>
+				  <td width="5">e</td>
+				  <td width="5">b</td>
+				  <td width="150"> items less than v</td>
+				</tr>
+			</table>
+			<br>
+			<p>
+				Here is the code for the binary search function:
+			</p>
+<pre>
+def binary_search(L, v):
+    """ (list, object) -> int
+
+    Precondition: L is sorted from smallest to largest, and
+    all the items in L can be compared to v.
+
+    Return the index of the first occurrence of v in L, or
+    return -1 if v is not in L.
+
+    >>> binary_search([2, 3, 5, 7], 2)
+    0
+    >>> binary_search([2, 3, 5, 5], 5)
+    2
+    >>> binary_search([2, 3, 5, 7], 8)
+    -1
+    """
+    
+    b = 0
+    e = len(L) - 1
+	
+    while b &#60;= e:
+        m = (b + e) // 2
+        if L[m] &#60; v:
+            b = m + 1
+        else:
+            e = m - 1
+		
+    if b == len(L) or L[b] != v:
+        return -1
+    else:
+        return b
+</pre>
+
+			<p>
+				In the above function, the main <code>while</code> loop continues to loop as long as <code>b</code> is
+				less than <code>e</code>. Once <code>b</code> is greater than <code>e</code>, than our search is complete.
+				Inside the loop, we first set <code>m</code> to the middle index between index <code>b</code> and index <code>e</code>. Inside the <code>while</code> loop, there is an <code>if</code> statement. If the item at position <code>m</code> is less than <code>v</code>,
+				then we advance <code>b</code> to be the index just to the right of <code>m</code>. However, if the item at index <code>
+				m</code> is greater than <code>v</code>, then we decrease <code>e</code> so that it is the index to the left of <code>m</code>.
+				<br><br>
+				Finally, at the end of our function, we have one last <code>if</code> statement. When the <code>while</code>
+				loop ends, there are two reasons why it might have ended. First, if all the items in the list are less than
+				<code>v</code>, then <code>b</code> will end up being equal to the length of the list, and will refer to an index outside
+				of the list; we check whether <code>b</code> is equal to the length of <code>L</code>, and if it is, then we return<code>
+				-1</code>. Finally, we check the item at location <code>b</code>. After all, it is possible that <code>v</code>
+				is not contained in the list. If <code>L[b]</code> is equal to <code>v</code>, then we return <code>b</code>. Otherwise
+				we will return <code>-1</code>.
+			</p>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

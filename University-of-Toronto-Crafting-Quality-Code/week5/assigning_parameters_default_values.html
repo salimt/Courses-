@@ -1,0 +1,222 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+                
+        <title>Assigning Parameters Default Values</title>                   
+    </head> 
+    
+    <body>
+        <div class="page_header">
+            <!-- For local testing -->
+            <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+            
+            <!-- For web version -->
+            <a href="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>           
+            <hr>
+        </div>
+        
+        <h1>Assigning Parameters Default Values</h1> 
+			<p>
+				When you use functions such as <code>range</code> and <code>print</code>, the number of arguments that you pass to them
+				can vary. If you do not pass an argument for every parameter, then the default parameter values will be used.
+				You will now learn how to define your own functions that use default parameter values. 
+			</p>
+<h2>
+The <code>print</code> Function
+</h2>
+
+	<p>
+		Let us first explore the <code>print</code> function:
+	</p>
+	<pre>
+>>> help(print)
+Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=' ', end='\n', file=sys.stdout)
+    
+    Prints the values to a steam, or to sys.stdout by default.
+    Optional keyword arguments:
+    file: a file-like object (Stream); defaults to the current sys.stdout.
+    sep: string inserted between values, default a space.
+    end: string appended after the last value, default a newline.
+    
+>>> 
+	</pre>
+	<p>
+		Here we see that <code>print</code> has several parameters:
+    </p>
+
+    <ul>
+        <li><code>value, ...,</code>: the values to be printed.</li>
+        <li><code>sep=' '</code>: an optional argument that by default will be a space. When multiple values are printed, this string will be printed between pairs of values.</li>
+        <li><code>end='\n'</code>: an optional argument that by default will be a newline character. This string is printed after the last value.</li>
+        <li><code>file</code>: an optional argument that by default is <code>sys.stdout</code>, which specifies where to print.</li>
+    </ul>	
+	
+	<p>
+		Let us now use the <code>print</code> function to learn more about its behaviour:
+	</p>
+	
+	<pre>
+>>> print('345')
+345
+>>> </pre>
+	<p>
+		We see that the newline character, <code>'\n'</code>, is automatically printed after value <code>'345'</code>.
+	</p>
+	<pre>
+>>> print(1, 2, 3)
+1 2 3
+>>></pre>
+	<p>
+        Here, since we printed multiple values, the default separator (a space)
+        is printed in between each value being printed. Once more, the newline 
+        character (<code>'\n'</code>) is printed at the end. We will use <code>print</code> again, but this time we'll pass arguments to use instead of the default parameter values:
+	</p>
+	<pre>
+>>> print(1, 2, 3, sep='..', end='!')
+1..2..3!
+>>> </pre>
+	<p>
+We see that the arguments that we passed to the function call were used in place of the default parameter values.
+	</p>
+	
+<h2>
+Using Default Parameter Values in Our Own Function
+</h2>
+	<p>
+		Let us now define a function with default parameters values. We will define a
+		function called <code>every_nth</code> that takes two arguments. The first argument
+		will be a <code>list</code> and the second argument will be an <code>int</code>. The job of this new function will
+		be to create a new list <code>L</code> that contains every <code>n</code>th item from the list <code>L</code>.
+		
+		Here is the definition of function <code>every_nth</code>:
+	</p>
+    <pre>
+def every_nth(L, n):
+    """ (list, int) -> list
+
+    Precondition: 0 <= n < len(L)
+
+    Return a list containing every nth item of L,
+    starting at index 0.
+    
+    >>> every_nth([1, 2, 3, 4, 5, 6], 2)
+    [1, 3, 5]
+    >>> every_nth([1, 2, 3, 4, 5, 6], 3)
+    [1, 4]
+    """
+    
+    result = []
+
+    for i in range(0, len(L), n):
+        result.append(L[i])
+
+    return result
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    </pre>
+    <p>
+        We have not introduced default parameter values yet. At the moment, both of the example
+        function calls pass in two arguments. We will now modify
+        the <code>docstring</code> and the function header to allow for a default parameter value to be used for the second parameter.
+    </p>
+    <pre>
+def every_nth(L, n=1):
+    """ (list, int) -> list
+
+    Precondition: 0 <= n < len(L)
+
+    Return a list containing every nth item of L,
+    starting at index 0.
+    
+    >>> every_nth([1, 2, 3, 4, 5, 6], 2)
+    [1, 3, 5]
+    >>> every_nth([1, 2, 3, 4, 5, 6], 3)
+    [1, 4]
+    >>> every_nth([1, 2, 3, 4, 5, 6])
+    [1, 2, 3, 4, 5, 6]
+    """
+    
+    result = []
+
+    for i in range(0, len(L), n):
+        result.append(L[i])
+
+    return result
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+    </pre>
+    <p>
+    	We see that if we run the above code, the <code>doctest</code> passes. When passing the second
+    	argument, we can also specify which parameter it is being associated with (e.g., <code>every_nth([1, 2, 3, 4, 5, 6], n=3)</code>). With
+    	functions that have multiple default parameter values, using this notation is necessary
+    	in order to associate the arguments with the correct parameters.
+    </p>
+<h2>
+More on Default Parameters
+</h2>
+	<p>
+		Let us now look at more examples of functions using default parameter values.
+	</p>
+    <pre>
+def add_greeting(L=[]):
+    """ (list) -> NoneType
+
+    Append 'hello' to L and print L.
+
+    >>> L = ['hi', 'bonjour']
+    >>> f(L)
+    >>> L
+    ['hi', 'bonjour', 'hello']
+    """
+
+    L.append('hello')
+    print(L)
+    </pre>
+    <p>
+        In this case, the default parameter value is mutable. Here, we have just one
+        parameter, and it has the default value of an empty list <code>L=[]</code>. This
+        function simply appends the string <code>'hello'</code> to the list, and then prints
+        the list. Let us see what happens when we call this function:
+    </p>
+    <pre>
+>>> add_greeting()
+['hello']</pre>
+    <p>
+		We see that the string <code>'hello'</code> is added to the list and then printed.
+		Let us see what happens when the function is called multiple times:
+    </p>
+    <pre>
+>>> add_greeting()
+['hello']
+>>> add_greeting()
+['hello', 'hello']
+>>> add_greeting()
+['hello', 'hello', 'hello']</pre>
+<p>
+	Here, we see that the same list object is being used for each function call. In other words,
+	the memory address that <code>L</code> refers to is the same for each funtion call, so the string <code>'hello'</code> is appended to that same list each time the function is called.
+	<br><br>
+	The lesson to be learned here is that default parameter values are assigned at the time
+	of function definition. When the function is called, any changes that the function
+	call makes to the mutable object persist from one function call to the next. 
+</p>
+	</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

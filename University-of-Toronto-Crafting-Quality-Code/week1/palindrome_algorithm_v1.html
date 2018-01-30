@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">		
+		<title>Palindrome: Algorithm 1</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Palindrome: Algorithm 1</h1> 
+		<h2>
+			Overview
+		</h2>
+			<p>		
+				To determine whether a string is a palindrome, the first algorithm we explored was:
+			</p>
+			<ol>
+				<li>Reverse the string.</li>
+				<li>Compare the reversed string to the original string.</li>
+			</ol>
+			<p>
+				For example, the reverse of the string <code>"noon"</code> is <code>"noon"</code>. Since the reversed string is the same as the original string, <code>"noon"</code> is a palindrome.
+			</p>	
+			<p>
+				For the string <code>"dented"</code>, the reverse of the string <code>"dented"</code> is <code>"detned"</code>. Since the reversed string is <em>not</em> the same as the original string, <code>"dented"</code> is <em>not</em> a palindrome.
+			</p>	
+		
+			<h2>
+				Code
+			</h2>
+<pre>
+def reverse(s):
+    """ (str) -> str
+
+    Return s reversed.
+    
+    >>> reverse('hello')
+    'olleh'
+    """
+
+    s_reversed = ''
+    for ch in s:
+        s_reversed = ch + s_reversed
+    return s_reversed
+
+
+def is_palindrome_v1(s):
+    """ (str) -> bool
+
+    Return True if and only if s is a palindrome.
+
+    >>> is_palindrome_v1('noon')
+    True
+    >>> is_palindrome_v1('radar')
+    True
+    >>> is_palindrome_v1('kayaks')
+    False
+    """
+
+    s_reversed = reverse(s)
+    return s == s_reversed
+</pre>
+ 		</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

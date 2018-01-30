@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+			
+		<title>Selection Sort</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Selection Sort</h1> 
+		<div class="indent">
+			Let's start with an example:
+			<h2>Example</h2>			
+			<div class="indent">
+				
+				<h3>Pass 1</h3>
+				<code><table class="boxed">
+					<tr>
+						<td>i</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="boxed"><span class="red">3</span></td>
+						<td class="boxed">7</td>
+						<td class="boxed"><span class="red">2</span></td>
+						<td class="boxed">5</td>
+					</tr>
+				</table></code>
+				Variable <code>i</code> initially refers to <code>0</code>. We need to find the smallest value in the list and swap it with item at index <code>i</code>.  The smallest value is <code>2</code>, so it is swapped with the item at <code>i</code>. Increase <code>i</code> by one.<br>
+				<br>
+				<code><table class="boxed">					
+					<tr>
+						<td class="boxed">2</td>
+						<td class="boxed">7</td>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+					</tr>
+				</table></code>
+				<br>
+				<h3>Pass 2</h3>				
+				Note that <code>i</code> now refers to the index of the first item in the unsorted part of the list.<br>
+				<br>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>						
+						<td style="border-right:1px solid black">&nbsp;</td>						
+						<td style="border-left:1px solid black;">i</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed">2</td>
+						<td class="boxed"><span class="red">7</span></td>
+						<td class="boxed"><span class="red">3</span></td>
+						<td class="boxed">5</td>						
+					</tr>
+					<tr>
+						<td colspan="2" style="border-right:1px solid black">sorted&nbsp;</td>
+						<td colspan="3" style="border-left:1px solid black;">&nbsp;unsorted</td>																		
+					</tr>
+				</table></code>
+				<br>
+				We need to find the smallest value in the unsorted part of the list and swap it with the item at index <code>i</code>.  The smallest value is <code>3</code>, so it is swapped with the item at <code>i</code>. Increase <code>i</code> by one.<br><br>
+				<br>
+				<code><table class="boxed">		
+					<tr>
+						<td>&nbsp;</td>						
+						<td style="border-right:1px solid black">&nbsp;</td>
+						<td style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>				
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed">2</td>
+						<td class="boxed">3</td>
+						<td class="boxed">7</td>
+						<td class="boxed">5</td>						
+					</tr>
+					<tr>
+						<td colspan="2" style="border-right:1px solid black">sorted&nbsp;</td>
+						<td colspan="3" style="border-left:1px solid black;">&nbsp;unsorted</td>																		
+					</tr>
+				</table></code>
+				<br>
+				<h3>Pass 3</h3>	
+				<br>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>						
+						<td style="border-right:1px solid black">&nbsp;</td>						
+						<td style="border-left:1px solid black;">i</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed">2</td>
+						<td class="boxed">3</td>
+						<td class="boxed"><span class="red">7</span></td>
+						<td class="boxed"><span class="red">5</span></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">sorted&nbsp;</td>
+						<td colspan="3" style="border-left:1px solid black;">&nbsp;unsorted</td>																		
+					</tr>
+				</table></code>
+				<br>
+				We need to find the smallest value in the unsorted part of the list and swap it with the item at index <code>i</code>.  The smallest value is <code>5</code>, so it is swapped with the item at <code>i</code>. Increase <code>i</code> by one.<br> 
+				<br>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>						
+						<td style="border-right:1px solid black">&nbsp;</td>						
+						<td style="border-left:1px solid black;">&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td class="boxed">2</td>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+						<td class="boxed">7</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">sorted&nbsp;</td>
+						<td colspan="3" style="border-left:1px solid black;">&nbsp;unsorted</td>																		
+					</tr>
+				</table></code>
+				<br>
+				<h3>Pass 4</h3>
+				<code><table class="boxed">
+					<tr>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>												
+						<td style="border-right:1px solid black">&nbsp;</td>						
+						<td style="border-left:1px solid black;">i</td>						
+						<td>&nbsp;</td>
+					</tr>
+					<tr>						
+						<td class="boxed">2</td>
+						<td class="boxed">3</td>
+						<td class="boxed">5</td>
+						<td class="boxed">7</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3" style="border-right:1px solid black">sorted&nbsp;</td>
+						<td colspan="2" style="border-left:1px solid black;">&nbsp;unsorted</td>																		
+					</tr>
+				</table></code>
+				<br>
+				There is only one item left in the unsorted part, therefore the list is sorted.<br>
+				<br>
+				<h3>Generalized List States</h3>
+
+				<!--img src="general_selection.png" alt="generalized list states"><br-->
+				<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_780bac3d575c9684b627f05e77761b45_general_selection.png?expiry=1489795200000&hmac=HJ02dvrLRwtpHU0pV2le8N6jNrt8jEwHogHJyuMnQcI" alt="generalized list states"><br>
+				<br>
+			</div>
+			<h2>Implementation</h2>
+			<br>			
+			<div class="indent">
+				<div class="indent">
+
+						<table class="bordered"><tr><td>
+<pre>
+def get_index_of_smallest(L, i):
+    """ (list, int) -> int
+
+    Return the index of the smallest item in L[i:].
+
+    >>> get_index_of_smallest([2, 7, 3, 5], 1)
+    2
+    """
+
+    # The index of the smallest item so far.
+    index_of_smallest = i
+
+    for j in range(i + 1, len(L)):
+        if L[j] < L[index_of_smallest]:
+            index_of_smallest = j
+
+    return index_of_smallest
+
+    
+def selection_sort(L):
+    """ (list) -> NoneType
+
+    Sort the items of L from smallest to largest.
+
+    >>> L = [3, 7, 2, 5]
+    >>> selection_sort(L)
+    >>> L
+    [2, 3, 5, 7]
+    """
+
+    
+    for i in range(len(L)):
+
+        # Find the index of the smallest item in L[i:] and swap that
+        # item with the item at index i.
+
+        index_of_smallest = get_index_of_smallest(L, i)
+        L[index_of_smallest], L[i] = L[i], L[index_of_smallest]
+
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()						
+</pre>
+					</td></tr></table>
+				</div>
+			</div>		
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

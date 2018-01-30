@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>	
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+
+  <!-- Change to proper title -->
+  <title>Creating a New Type</title>					
+</head>	
+
+<body>
+  <div class="page_header">
+     <!-- For local testing -->
+     <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+
+     <!-- For web version -->
+     <a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+     <hr>
+ </div>
+
+ <h1>Creating a New Type</h1> 
+ <div class="indent">
+     We're going to explore classes by writing a register class.<br>
+     <br>
+     In the example, we will use Canadian currency including the Loonie ($1) and the Toonie ($2).			
+
+     <h2>Example</h2>
+     <div class="indent">
+        <p>Consider this program:</p>
+        <div class="indent">
+           <table class="bordered"><tr><td>
+<pre>
+# A cash register with 5 loonies, 5 toonies, 5 fives, 5 tens, and 5 twenties,
+# for a total of $190.
+register = CashRegister(5, 5, 5, 5, 5)
+print(register.get_total())
+
+register.add(3, 'toonies')
+register.remove(2, 'twenties')
+
+print(register.get_total())
+</pre>
+        </td></tr></table>
+    </div><br>
+    <p>
+        The code above:
+    </p>
+    <ul>
+        <li>creates a cash register with 5 loonies, 5 toonies, 5 fives, 5 tens, and 5 twenties,</li>
+        <li>prints the total amount ($190) in the cash register,</li>
+        <li>adds 3 toonies ($2 coins) to the cash register,</li>
+        <li>removes 2 twenties ($20 bills) from the cash register, and</li>
+        <li>prints the total amount ($156) in the cash register.</li>
+    </ul>
+
+    <p>
+        If you try to run the program, an error occurs because there is no <code>CashRegister</code> class yet:<br>
+    </p>
+    <div class="indent">
+       <table class="bordered"><tr><td><div class="red">
+<pre>
+Traceback (most recent call last):
+  File "cash_register.py", line 4, in <module>
+    register = CashRegister(5, 5, 5, 5, 5)
+  NameError: name 'CashRegister' is not defined	
+</pre>
+    </div></td></tr></table>
+</div>
+
+</div>
+<h2>Defining Class<code> CashRegister</code></h2>
+<div class="indent">
+
+    <p>
+    The first line of the class definition is:
+    </p>
+    <pre>
+    class CashRegister:
+    </pre>
+    <h3>Method <code>__init__</code></h3>
+    <div class="indent">
+        <p>
+           The first method that we'll write is the constructor, method <code>__init__</code>, which is called to initialize an object.  Since it is a method, by convention, the first parameter is <code>self</code>.  In this case, <code>self</code> refers to the <code>CashRegister</code> object that is being initialized.  We'll also pass in the number of loonies, toonies, fives, tens and twenty dollar bills.
+        </p>
+				
+                      <div class="indent">
+                          <table class="bordered"><tr><td>				
+                            <pre>
+class CashRegister:
+    """A cash register."""
+
+    def __init__(self, loonies, toonies, fives, tens, twenties):
+        """ (CashRegister, int, int, int, int, int) -> NoneType
+
+        A CashRegister with loonies, toonies, fives, tens, and twenties.
+
+        >>> register = CashRegister(5, 5, 5, 5, 5)
+        >>> register.loonies
+        5
+        >>> register.toonies
+        5
+        >>> register.fives
+        5
+        >>> register.tens
+        5
+        >>> register.twenties
+        5
+        """
+
+        self.loonies = loonies
+        self.toonies = toonies
+        self.fives = fives
+        self.tens = tens
+        self.twenties = twenties</pre>
+                        </td></tr></table>
+                    </div> <!--end code-->
+                    <br>
+                   Each of the assignment statements in method <code>__init__</code> creates an <em>instance variable</em> that belongs to the <code>CashRegister</code> object. For example, one of the object's instance variables is seen on the left-hand side of this assignment statement and it is named <code>loonies</code>:
+           <div class="example">
+              <code>self.loonies = loonies</code>.  
+          </div>
+          <br>
+          <p>
+          The following function call creates a new <code>CashRegister</code> object, initializes the object by calling the constructor, and then stores the object's memory address in <code>register</code>: </p>
+          <div class="example">
+              <code>register = CashRegister(5, 5, 5, 5, 5)</code>
+          </div>
+        </div> <!-- end h3 __init__ method -->
+
+                <h3>Examining <code>__init__</code> Results</h3>
+                <div class="indent">
+                   Now, when the program above is executed, a different error occurs:
+                   <div class="indent">
+                      <table class="bordered"><tr><td><div class="red">
+                        <pre>
+Traceback (most recent call last):
+  File "cash_register.py", line 33, in <module>
+    print(register.get_total())
+  AttributeError: 'CashRegister' object has no attribute 'get_total'</pre>
+                    </div></td></tr></table>
+                </div><br>
+                The traceback tells us that we  have successfully created a <code>CashRegister</code> object, but that it has no method <code>get_total</code>.<br>
+                <br>
+                If we examine <code>register</code>, we see that it exists and that it contains the memory address of an object:
+                <div class="indent">
+                  <table class="bordered"><tr><td>
+                    <pre>
+>>> register
+<__main__.CashRegister object at 0x101d79cd0></pre>
+                </td></tr></table>
+            </div>
+            <br>
+            Further, we can examine the values of instance variables for the <code>CashRegister</code> object that <code>register</code> refers to:
+            <div class="indent">
+              <table class="bordered"><tr><td>
+                <pre>
+>>> register.loonies
+5
+>>> register.twenties
+5</pre>						
+            </td></tr></table>
+        </div>
+        <br>
+        We can create a second instance called <code>register2</code>:
+        <div class="indent">
+          <table class="bordered"><tr><td>
+            <pre>
+>>> register2 = CashRegister(2, 3, 4, 6, 7)</pre>						
+        </td></tr></table>
+    </div>
+    <br>
+    Variable <code>register2</code> refers to a different <code>CashRegister</code> object than <code>register</code>, and that object has different values in its instance variables:
+    <div class="indent">
+      <table class="bordered"><tr><td>
+        <pre>
+>>> register2.twenties
+7
+>>> register.twenties
+5</pre>						
+    </td></tr></table>
+</div>					
+</div>
+<h3>Method <code>get_total</code></h3>
+<div class="indent">					
+   <p>
+    Let's define <code>get_total</code>. Like all methods, its first parameter is <code>self</code>. Here is the implementation:<br>
+   </p>
+   
+   <div class="indent">
+      <table class="bordered"><tr><td>
+        <pre>
+def get_total(self):
+    """ (CashRegister) -> int
+
+    Return the total amount of cash in the register.
+
+    >>> register = CashRegister(5, 5, 5, 5, 5)
+    >>> register.get_total()
+    190
+    """
+
+    return self.loonies + self.toonies * 2 + self.fives * 5 + \
+    self.tens * 10 + self.twenties * 20
+</pre>						
+    </td></tr></table>
+</div>
+<br>
+When the program above is executed, we get the following results:
+<div class="indent">
+  <table class="bordered"><tr><td>
+    <pre>
+190</pre><div class="red">
+<pre>
+Traceback (most recent call last):
+  File "cash_register.py", line 48, in <module>
+    register.add(3, 'toonies')
+  AttributeError: 'CashRegister' object has no attribute 'add'
+</pre></div>						
+    </td></tr></table>
+</div>			
+<br>
+The line <code>190</code> results from our first call on <code>get_total()</code>. This is followed by an error that occurs because there is no <code>add</code> method in <code>CashRegister</code>.
+</div> <!-- end h3 get_total() method -->
+<h3>Method <code>add</code></h3>
+<div class="indent">
+    <p>
+   Method <code>add</code> has three parameters: <code>self</code> (a <code>CashRegister</code> object), the number of items to add, and the denomination:
+</p>
+   <div class="indent">
+      <table class="bordered"><tr><td>
+        <pre>
+def add(self, count, denomination):
+    """ (CashRegister, int, str) -> NoneType
+
+    Add count items of denomination to the register.
+    denomination is one of 'loonies', 'toonies',
+    'fives', 'tens', and 'twenties'.
+
+    >>> register = CashRegister(5, 5, 5, 5, 5)
+    >>> register.add(2, 'toonies')
+    >>> register.toonies
+    7
+    >>> register.add(1, 'tens')
+    >>> register.tens
+    6
+    """
+
+    if denomination == 'loonies':
+        self.loonies += count
+    elif denomination == 'toonies':
+        self.toonies += count
+    elif denomination == 'fives':
+        self.fives += count
+    elif denomination == 'tens':
+        self.tens += count
+    elif denomination == 'twenties':
+        self.twenties += count</pre>						
+    </td></tr></table>
+</div>
+</div> <!-- end h3 add() method -->
+<h3>The <code>remove</code> Method</h3>
+<div class="indent">
+<p>
+   This method looks remarkably similar to method <code>add</code>:
+</p>
+   <div class="indent">
+      <table class="bordered"><tr><td>
+        <pre>
+def remove(self, count, denomination):
+    """ (CashRegister, int, str) -> NoneType
+
+    Remove count items of denomination from the register.
+    denomination is one of 'loonies', 'toonies',
+    'fives', 'tens', and 'twenties'.
+
+    >>> register = CashRegister(5, 5, 5, 5, 5)
+    >>> register.remove(2, 'toonies')
+    >>> register.toonies
+    3
+    >>> register.remove(1, 'tens')
+    >>> register.tens
+    4
+    """
+
+    if denomination == 'loonies':
+        self.loonies -= count
+    elif denomination == 'toonies':
+        self.toonies -= count
+    elif denomination == 'fives':
+        self.fives -= count
+    elif denomination == 'tens':
+        self.tens -= count
+    elif denomination == 'twenties':
+        self.twenties -= count</pre>						
+    </td></tr></table>
+</div>
+</div> <!-- end h3 remove() method -->
+<h3>The complete class</h3>
+<div class="indent">
+   
+  </code></div><br>
+ We have finishing defining our new type, and the program runs without error:<br>
+  <div class="indent">
+      <table class="bordered"><tr><td>
+        <pre>
+190			
+156</pre>
+    </td></tr></table>
+</div><br>
+</div> <!-- end h3 the full class -->
+</div> <!-- end h2 CashRegister class -->
+</div>
+<div class="page_footer">
+ <hr>
+ <center>
+    Jennifer Campbell &bull; Paul Gries<br>
+    University of Toronto
+</center>
+<hr>
+</div>
+</body>	
+</html>

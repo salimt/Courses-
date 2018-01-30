@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Palindrome: Approaching the Problem</title><br>
+	</head>
+
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		<h1>Palindrome: Approaching the Problem</h1>
+		<h2>
+			Introduction
+		</h2>
+			<p>
+				A palindrome is a word that is read the same front-to-back
+				or back-to-front. For instance,
+				<FONT COLOR="Red">R</FONT>
+				<FONT COLOR="Green">A</FONT>
+				<FONT COLOR="Blue">C</FONT>
+				<FONT COLOR="Orange">E</FONT>
+				<FONT COLOR="HotPink">C</FONT>
+				<FONT COLOR="LightSalmon">A</FONT>
+				<FONT COLOR="Sienna">R</FONT>
+				reversed is also
+				<FONT COLOR="Sienna">R</FONT>
+				<FONT COLOR="LightSalmon">A</FONT>
+				<FONT COLOR="HotPink">C</FONT>
+				<FONT COLOR="Orange">E</FONT>
+				<FONT COLOR="Blue">C</FONT>
+				<FONT COLOR="Green">A</FONT>
+				<FONT COLOR="Red">R</FONT>.
+				However, BLUE reversed is EULB, and thus not a
+				palindrome. 
+			</p>
+			
+		<h2>
+			Algorithms
+		</h2>
+			<p>
+				An <em>algorithm</em> is a 
+				sequence of steps that accomplish a task. We present three algorithms for detecting palindromes:
+			</p>			
+			
+			<h3>
+				 Algorithm 1: Reverse the string. Compare the reversed string to the original string.
+			</h3>
+				<ul>
+					<li>
+						For example, the reverse of the string <code>"noon"</code> is <code>"noon"</code>. Since the reversed string is the same as the original string, <code>"noon"</code> is a palindrome.
+					</li>
+				</ul>
+				
+			<h3>
+				 Algorithm 2: Split the string into two halves. Reverse the second half. Compare the first half to the reversed second half.
+			</h3>
+				<ul>
+					<li>
+						    For example, the first half of the string <code>"noon"</code> is <code>"no"</code> and the second half is <code>"on"</code>. The reverse of the second half is <code>"no"</code>.
+						    Since the first half is equal to the reverse of the second half, <code>"noon"</code> is a palindrome.
+					</li>
+					<li>
+					        For a string with an odd length, let's consider <code>"racecar"</code>. When splitting the string into two halves, we omit the middle character, <code>"e"</code>. The first half of the string is <code>"rac"</code> and the second half of the string is <code>"car"</code>. The reverse of the second half is <code>"rac"</code>. Since the first half is equal to the reverse of the second half, <code>"racecar"</code> is a palindrome.
+					</li>
+				</ul>
+			
+			<h3>
+				 Algorithm 3: Compare the first character to the last, the second to the second last, and so on.  Stop when the middle of the string is reached.
+			</h3>
+				<ul>
+					<li>
+						    For example, for string <code>"noon"</code>, we compare the first character (<code>"n"</code>) to the last character (<code>"n"</code>), and the second character (<code>"o"</code>) to the second last (<code>"o"</code>). Since both pairs of characters that were compared are equal, <code>"noon"</code> is a palindrome.
+					</li>
+					<li>
+					        For a string with an odd length, let's consider <code>"racecar"</code>. We compare the first character (<code>"r"</code>) to the last character (<code>"r"</code>), the second character (<code>"a"</code>) to the second last (<code>"a"</code>), and the third character (<code>"c"</code>) to the third last character (<code>"c"</code>). The middle character, <code>"e"</code> does not need to be compared with anything. Since all pairs of characters that were compared are equal, <code>"racecar"</code> is a palindrome.
+					</li>
+				</ul>
+		
+		
+		<p>
+			In upcoming lectures, we will implement all three algorithms. Following the Recipe for Designing Functions, we implemented the function header:
+			<ol>
+			
+			<li>
+				Examples
+				<br>
+				<code>
+				<div class="listIndent">
+					>>> is_palindrome('noon')<br>
+					True<br>
+					>>> is_palindrome('racecar')<br>
+					True<br>
+					>>> is_palindrome('dented')<br>
+					False<br>
+				</div>
+				</code>
+			</li>
+			
+			
+			<li>
+			Type Contract
+			<br>
+			<code>
+			<div class="listIndent">
+				(str) --> boolean
+			</div>
+			</code>
+			</li>
+			
+			<li>
+			Header
+			<br>
+			<code>
+			<div class="listIndent">
+				def is_palindrome(s):
+			</div>
+			</code>
+			</li>
+			
+			<li>
+			Description
+			<br>
+			<div class="listIndent">
+			Return <code>True</code> if and only if <code>s</code> is a palindrome
+			</div>
+			</li>
+			
+			<li>
+			Body
+			<br>
+			<div class="listIndent">
+			This will be discussed in future lectures.
+			</div>
+			</li>
+			
+			<li>
+			Test
+			<br>
+			<div class="listIndent">
+			This will be discussed in future lectures.
+			</div>
+			</li>
+			
+			</ol>
+		</p>
+	</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

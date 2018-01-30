@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<title>Palindrome: Algorithm 3</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Palindrome: Algorithm 3</h1> 
+		<h2>
+			Overview
+		</h2>
+			<p>		
+				To determine whether a string is a palindrome, the third algorithm we explored was:
+			</p>
+			<ol>
+				<li>Compare the first character to the last, the second to the second last, and so on.</li>
+				<li> Stop when the middle of the string is reached.</li>
+			</ol>
+		<p>
+			 For example, for string <code>"noon"</code>, we compare the first character (<code>"n"</code>) to the last character (<code>"n"</code>), and the second character (<code>"o"</code>) to the second last (<code>"o"</code>). Since both pairs of characters that were compared are equal, <code>"noon"</code> is a palindrome.
+		</p>
+		<p>
+
+            For a string with an odd length, let's consider
+			<code>"racecar"</code>. We compare the first character (<code>"r"</code>) to the last
+			character (<code>"r"</code>), the second character (<code>"a"</code>) to the second last (<code>"a"</code>), and the third character (<code>"c"</code>) to the third last character (<code>"c"</code>). The middle character, <code>"e"</code> does not need to be compared with anything. Since all pairs of characters that were compared are equal, <code>"racecar"</code> is a palindrome.	
+		</p>	
+		<p>
+			Finally, for a string that is not a palindrome, let's consider
+			<code>"dented"</code>.  We compare the first character (<code>"d"</code>) to the last
+			character (<code>"d"</code>), the second character (<code>"e"</code>) to the second last (<code>"e"</code>), and the third character (<code>"n"</code>) to the third last character (<code>"t"</code>). Since <em>not</em> all pairs of characters that were compared are equal, <code>"dented"</code> is a <em>not</em> palindrome.	
+			</p>
+
+<h2>           
+	Code
+</h2> 
+
+<pre> 
+def is_palindrome_v3(s):     """ (str) -> bool
+
+    Return True if and only if s is a palindrome.
+
+    >>> is_palindrome_v3('noon')
+    True
+    >>> is_palindrome_v3('racecar')
+    True
+    >>> is_palindrome_v3('dented')
+    False
+    """
+
+    # s[i] and s[j] are the next pair of characters to compare.
+    i = 0
+    j = len(s) - 1
+
+    # The characters in s[:i] have been successfully compared to those in s[j:].
+    while i < j and s[i] == s[j]:
+        i = i + 1
+        j = j - 1
+
+    # If we exited because we successfully compared all pairs of characters,
+    # then j <= i.
+    return j <= i
+</pre>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Change to proper title -->
+		<title>Searching for a Value in a List: Linear Search</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		<h1>Searching for a Value in a List: Linear Search</h1>
+
+		<!--
+		<h2>
+			Introduction
+		</h2>
+			<p>		
+				Using the tools we have seen so far, our Python programs
+				can do one thing at a time. However, we have used methods
+				that seem to do more than one thing at a time. For instance,
+				<code>list.sort()</code> sorts a list of numbers.
+
+
+				Today, we are going to look with more detail at the
+				searching and sorting algorithms. Specifically, we will
+				look at linear search, where we examine items in a list,
+				individually.
+			</p>
+		-->
+		<h2>
+			Exploring <code>list.index(value)</code>
+		</h2>
+				<p>
+				<code>list.index(value)</code> returns the index of the first
+				occurrence of <code>value</code> in the list. For instance:
+
+				</p>
+<pre>
+>>> L = ['a', 'b', 'c', 'a', 'd']
+>>> L.index('a')
+0
+>>> L.index('c')
+2
+>>> L.index('d')
+4
+>>> 
+</pre>
+
+				<p>
+				Notice that the value produced by <code>L.index('a')</code>
+				is <code>0</code> (the index of the first occurrence of <code>'a'</code>), and not <code>3</code> (the index of the second occurrence of <code>'a'</code>).
+				<br><br>
+
+				When <code>L.index('d')</code> is executed, it first examines 
+				the item at index <code>0</code> of <code>L</code>, which is
+				<code>'a'</code>. Since that is not the value we are
+				looking for, it moves on to index <code>1</code>,
+				which contains <code>'b'</code>. Again, this is not what
+				we are looking for, so it moves on. This pattern
+				continues, until it finds <code>'d'</code> at index <code>4</code>.
+				This way of searching is called <i>linear</i/>, which
+				refers to items arranged in a line. Essentially, we are
+				searching for items in a linear manner.
+				</p>
+
+
+		<h2>
+			Linear Search
+		</h2>
+		
+			<p>
+				Let us understand more deeply how linear search works. Here is a list that we want to search through:
+			</p>
+		
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>
+				Next, let us index the items in the list:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>
+				Now, let us search for value <code>'d'</code> in the list.
+				 We will now draw our indices above the position that we are
+				 currently inspecting:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>i</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			</tr>
+			</table>
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>	We can now start our linear search for the value <code>
+				'd'</code>.
+				Since at index <code>0</code> we cannot find <code>'d'</code>, we
+				will advance <code>i</code> to refer to the next index and search at that new
+				index. <code>i</code> now refers to <code>1</code>:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>i</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			</tr>
+			</table>
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>
+				Since we did not find what we were looking for, we move to the item at the next index:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>i</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			</tr>
+			</table>
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>
+				Again, we did not find what we were looking for, so
+				we move to the item at the next index:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>i</td>
+			  <td>&nbsp;</td>
+			</tr>
+			</table>
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			<br>
+			<p>
+			Again, we move to the item at the next index:
+			</p>
+
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>&nbsp;</td>
+			  <td>i</td>
+			</tr>
+			</table>
+			<table border="0" width="300" style="text-align:center;">
+			<tr>
+			  <td>0</td>
+			  <td>1</td>
+			  <td>2</td>
+			  <td>3</td>
+			  <td>4</td>
+			</tr>
+			</table>
+			<table border="1" width="300" style="text-align:center;">
+			<tr>
+			  <td>'a'</td>
+			  <td>'b'</td>
+			  <td>'c'</td>
+			  <td>'a'</td>
+			  <td>'d'</td>
+			</tr>
+			</table>
+			 <br>
+			<p>
+			Finally, we have found the value we were searching for, which is at index <code>4</code>.
+
+
+			One question that we must ask ourselves is, what do we
+			return if we do not find the item that we are searching
+			for? In that case, we will return -1.
+			</p>
+
+			<h2>
+				Implementation
+			</h2>
+			<p>
+				For the linear search algorithm, here is the code we have developed:
+			</p>
+<pre>
+def linear_search(L, v):
+    """ (list, object) -> int
+
+    Return the index of the first occurrence of v in L, or
+    return -1 if v is not in L.
+
+    >>> linear_search([2, 3, 5, 3], 2)
+    0
+    >>> linear_search([2, 3, 5, 3], 5)
+    2
+    >>> linear_search([2, 3, 5, 3], 8)
+    -1
+    """
+    
+    i = 0
+    
+    while i != len(L) and v != L[i]:
+        i = i + 1
+    
+    if i == len(L):
+        return -1
+    else:
+        return i
+</pre>
+			<p>
+				Here are some important details for the above function:
+				<ol>
+						<li>
+							The <code>while</code> loop has two conditions
+							for when to end the loop. First, we will continue
+							looping while the index <code>i</code> is not
+							equal to the length of the list. And since the
+							index starts from 0, we will be examining each
+							item in the list in a forward manner. Second,
+							we will continue looping as long as
+							<code>v</code>, the value we are searching for,
+							is not in the current position of the list
+							<code>v!=L[i]</code>. In other words, if
+							<code>v</code> is in the current position of
+							the list, then we know we have found the item
+							we are looking for, and we can exit the
+							<code>while</code> loop.
+						</li>
+						<br>
+						<li>
+							There is an <code>if</code> statement
+							after the while loop ends. This is because
+							there are two possible reasons why the while loop
+							could have exited. First is the case when we have not
+							found the item we are looking for, and this
+							happens when the index <code>i</code> is
+							equal to the length of the list <code>(i == len(L))</code>. In this case we return
+							-1. Otherwise, if <code>i</code> is not
+							equal to the length of the list, then <code>i</code> is less than the
+							length of the list, so we must return
+							<code>i</code>. This is because <code>i</code>
+							is the index at which we found the value
+							<code>v</code>, and that is precisely why
+							the while loop ended before <code>i</code>
+							became equal to the length of the list.
+						</li>
+				</ol>
+			</p>
+	</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

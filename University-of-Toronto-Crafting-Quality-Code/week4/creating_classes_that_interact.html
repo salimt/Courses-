@@ -1,0 +1,286 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+                
+        <title>Writing Classes That Interact</title>                   
+    </head> 
+    
+    <body>
+        <div class="page_header">
+            <!-- For local testing -->
+            <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+            
+            <!-- For web version -->
+            <a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>           
+            <hr>
+        </div>
+        
+        <h1>Writing Classes That Interact</code></h1>
+			<p>
+				You already know how to create your own types.  Now, you will learn how to create two types that are related to each other.
+			</p>
+<h2>
+Class <code>Song</code>
+</h2>
+
+	<p>
+		We have already created a class <code>Song</code>. As shown in the constructor, a <code>Song</code> has an artist, a title, and a duration in minutes and seconds. Our <code>Song</code> class also has an <code>
+		__str__</code> method that prints the name of the artist, the title, and duration of the song. 
+	</p>
+	<pre>
+class Song:
+    """A song."""
+
+    def __init__(self, artist, title, minutes, seconds):
+        """ (Song, str, str, int, int) -> NoneType
+
+        A Song with an artist, title, minutes, and seconds.
+
+        >>> song = Song('Neil Young', 'Harvest Moon', 5, 3)
+        >>> song.artist
+        'Neil'
+        >>> song.title
+        'Harvest Moon'
+        >>> song.minutes
+        5
+        >>> song.seconds
+        3
+        """
+
+        self.title = title
+        self.artist = artist
+        self.minutes = minutes
+        self.seconds = seconds
+
+    def __str__(self):
+        """ (Song) -> str
+
+        Return a string representation of this song.
+
+        >>> song = Song('Neil Young', 'Harvest Moon', 5, 3)
+        >>> str(song)
+        'Neil Young, Harvest Moon (5:03)'
+        """
+
+        return self.artist + ', ' + self.title + ' (' + str(self.minutes) \
+            + ':' + str(self.seconds).rjust(2, '0') + ')'
+
+if __name__ == '__main__':
+
+    s1 = Song("Neil Young", "Harvest Moon", 5, 3)
+    s2 = Song("Serena Ryder", "Stompa", 3, 15)
+
+    print(s1)
+    print(s2)
+	</pre>
+	
+	
+	
+	<p>
+		If we run the above module, here is the output:
+	</p>
+	
+	<pre>
+>>>
+Neil Young, Harvest Moon (5:03)
+Serena Ryder, Stompa (3:15)
+>>> 
+	</pre>
+
+<h2>
+Class <code>Playlist</code>
+</h2>
+	<p>
+		Now, we want to create a new class called <code>Playlist</code> that will keep track of a playlist of songs. Initially, the
+		<code>Playlist</code> object will have a title, but will not contain any songs. Therefore, the constructor will only take as input the name of the <code>Playlist</code>. The constructor will
+		create an empty list for the songs. Next, we create an <code>add</code> method that adds songs to the
+		<code>Playlist</code>. Here is the code so far:
+	</p>
+	<pre>
+import song	
+
+class Playlist:
+
+    def __init__(self, title):
+        """ (Playlist, str) -> NoneType
+
+        >>> playlist = Playlist('Canadian Artists')
+        >>> playlist.title
+        'Canadian Artists'
+        >>> playlist.songs
+        []
+        """
+
+        self.title = title
+        self.songs = []
+
+    def add(self, song):
+        """ (Playlist, Song) -> NoneType
+
+        Add song to this playlist.
+
+        >>> stompa = song.Song("Serena Ryder", "Stompa", 3, 15)
+        >>> playlist = Playlist('Canadian Artists')
+        >>> playlist.add_song(stompa)
+        >>> playlist.songs
+        [stompa]
+        """
+
+        self.songs.append(song)
+        
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+	</pre>
+	<p>
+        Notice that we <code>import song</code>, so that we can use class <code>Song</code> it in our new class.
+		If we run the above module, we will get no output, which means that the <code>doctest</code> passed. Now, let us create a new
+		method that returns the total duration of all the <code>Song</code> objects in the <code>Playlist</code>. The return type
+		of the <code>get_duration</code> method will be a tuple of minutes and seconds. Here is the code for <code>get_duration</code>:
+	</p>
+	<pre>
+def get_duration(self):
+    """ (Playlist) -> (int, int)
+
+    Return the duration of this playlist as tuple of minutes and
+    seconds.
+
+    >>> playlist = Playlist('Canadian Artists')
+    >>> playlist.add(song.Song('Neil Young', 'Harvest Moon', 5, 3))
+    >>> playlist.add(song.Song('Serena Ryder', 'Stompa', 3, 15)
+    >>> playlist.duration()
+    (8, 18)
+    """
+
+    total_minutes = 0
+    total_seconds = 0
+
+    for song in self.songs:
+        total_minutes = total_minutes + song.minutes
+        total_seconds = total_minutes + song.seconds
+
+    return (total_minutes,  total_seconds)
+	</pre>
+	<p>
+        We use two accumulators: one to keep track of the sum of the minutes for all songs in the playlist, and another one to keep track of the sum of the seconds for all songs in the playlist. We look up a song's length using its <code>seconds</code> and
+        <code>minutes</code> instance variables. The <code>for</code> loop loops over all the <code>song</code> objects in the playlist (in the <code>songs</code> instance variable),
+        and for each <code>Song</code> object, its
+        <code>minutes</code> and <code>seconds</code> are added to the appropriate accumulator.
+    </p>
+    <p> Once the loop has finished executing, the total number of minutes and seconds is returned. However, it is possible
+        for the total number of seconds for all the songs to be greater than 60. For instance, assume a song that is 3:35 (3 minutes and
+        35 seconds) long, and another song that is 2:50 (2 minutes and 50 seconds) long. If we simply add these two songs just as the 
+        above <code>get_duration</code> method does, we will get a tuple (5, 85) or 5 minutes and 85 seconds.
+        However, this is not a nice way to report the total
+        duration of the songs. The correct thing to do is to return (6, 25). This can be acheived by removing 60 seconds from the
+        seconds accumulator, and adding it to the minutes accumulator. We'll update the expression returned by the method:
+	</p>
+    <pre>
+def get_duration(self):
+    """ (Playlist) -> (int, int)
+
+    Return the duration of this playlist as tuple of minutes and
+    seconds.
+
+    >>> playlist = Playlist('Canadian Artists')
+    >>> playlist.add(song.Song('Neil Young', 'Harvest Moon', 5, 3))
+    >>> playlist.add(song.Song('Serena Ryder', 'Stompa', 3, 15)
+    >>> playlist.duration()
+    (8, 18)
+    """
+
+    total_minutes = 0
+    total_seconds = 0
+
+    for song in self.songs:
+        total_minutes += song.minutes
+        total_seconds += song.seconds
+
+    return (total_minutes + total_seconds // 60,  total_seconds % 60)
+    </pre>
+    <p>
+Finally, we will write a <code>__str__</code> method in order to have a nice output
+        when the <code>print</code> function is called on our <code>Playlist</code> object:
+    </p>
+    <pre>
+def __str__(self):
+    """ (Song) -> str
+
+    Return a string representation of this playlist.
+
+    >>> playlist = Playlist('Canadian Artists')
+    >>> playlist.add(song.Song('Neil Young', 'Harvest Moon', 5, 3))
+    >>> playlist.add(song.Song('Serena Ryder', 'Stompa', 3, 15)
+    '''Canadian Artists (8:18)
+    Neil Young, Harvest Moon (5:03)
+    Serena Ryder, Stompa (3:15)'''
+    """
+
+    duration = self.get_duration()
+    minutes = str(duration[0])
+    seconds = str(duration[1]).rjust(2, '0')
+
+    result = self.title + ' (' + minutes + ':' + seconds + ')'
+
+    # Append the songs in the playlist.
+    song_num = 1
+    for song in self.songs:
+        result = result + '\n' + str(song_num) + '. ' + str(song)
+        song_num = song_num + 1
+
+    return result
+    </pre>
+    <p>
+        In the above <code>__str__</code> method, we first gather general data about the playlist, and then move on to get information
+        for each individual song by calling <code>str</code>, which uses <code>Song</code>'s <code>__str__</code> method. Notice that for the string representation of <code>seconds</code>, we perform <code>rjust</code>. Here is
+        an example of how we'll use it:
+    </p>
+    <pre>
+>>> '3'.rjust(2,'0')
+'03'
+>>> '14'.rjust(2, '0')
+'14'
+    </pre>
+    <p>
+        Essentially, <code>rjust</code> makes sure that the string has exactly two characters. If it doesn't, then <code>rjust</code>
+        will add as many <code>0</code>s as necessary to the beginning of the string in order to make its length 2. Finally, in <code>__str__</code>, we create a variable <code>
+        result</code> that will contain the name of the playlist and the total duration of all the songs in the playlist. Next, we add
+        the name and duration of each individual song to the <code>result</code> variable. Notice that we keep of track of the number
+        of songs with the variable <code>song_num</code>; this varialbe will be used for the string representation of the
+        <code>Playlist</code> object. Finally, <code>__str__</code> will return the <code>result</code> string we created.
+    </p>
+    <p>
+        The last thing we will do is create our main program:
+    </p>
+    <pre>
+if __name__ == '__main__':
+
+    playlist = Playlist('Canadian Artists')
+    playlist.add(song.Song("Neil Young", "Harvest Moon", 5, 3))
+    playlist.add(song.Song("Serena Ryder", "Stompa", 3, 15))
+    playlist.add(song.Song("Stompin' Tom Connors", "The Hockey Song", 2, 17))
+
+    print(playlist)
+    </pre>
+    <p>
+    If we run the <code>Playlist</code> module, the output will be:
+    </p>
+    <pre>
+>>>
+Canadian Artists (10:35)
+1. Serena Ryder, Stompa (3:15)
+2. Neil Young, Harvest Moon (5:03)
+3. Stompin' Tom Connors, The Hockey Song (2:17)
+>>>
+    </pre>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

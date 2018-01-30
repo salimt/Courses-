@@ -1,0 +1,411 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Change to proper title -->
+		<title>Comparing Search Algorithms</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		<h1>Comparing Search Algorithms</h1>
+			<p>		
+				We have seen two ways to search for a value in a list. Linear search works on both unsorted
+				and sorted lists. Binary search works only on sorted lists.
+				<br><br>
+				Let's take a deeper look at each of the searching algorithms.
+			</p>
+			
+		<h2>
+			Comparing Linear Search and Binary Search
+		</h2>
+	<!--	
+			<p>
+				In order to analyze our searching algorithms, we must take a look at the code for each:
+			</p>
+<pre>
+1 def linear_search(L, v):
+2     """ (list, object) -> int
+3 
+4     Return the index of the first occurrence of v in L, or
+5     return -1 if v is not in L.
+6 
+7     >>> linear_search([2, 3, 5, 3], 2)
+8     0
+9     >>> linear_search([2, 3, 5, 3], 5)
+10    2
+11    >>> linear_search([2, 3, 5, 3], 8)
+12    -1
+13    """
+14    
+15    i = 0
+16    
+17    while i != len(L) and v != L[i]:
+18        i = i + 1
+19    
+20    if i == len(L):
+21        return -1
+22    else:
+23        return i
+24
+25 def binary_search(L, v):
+26    """ (list, object) -> int
+27
+28    Precondition: L is sorted from smallest to largest, and
+29    all the items in L can be compared to v.
+30
+31    Return the index of the first occurrence of v in L, or
+32    return -1 if v is not in L.
+33
+34    >>> binary_search([2, 3, 5, 7], 2)
+35    0
+36    >>> binary_search([2, 3, 5, 5], 5)
+37    2
+38    >>> binary_search([2, 3, 5, 7], 8)
+39    -1
+40    """
+41
+42    b = 0
+43    e = len(L) - 1
+44
+45    while b &#60;= e:
+46        m = (b + e) // 2
+47        if L[m] &#60; v:
+48            b = m + 1
+49        else:
+50            e = m - 1
+51
+52    if b == len(L) or L[b] != v:
+53        return -1
+54    else:
+55        return b
+</pre>
+-->
+<!--
+			<p>
+				In order to make our discussion easier, we have included line numbers in the above code sample.
+				<br><br>
+				Analyzing the raw code is not always the best way to measure how fast the code will finish, but it
+				is a great starting point. For Linear Search, we see that there are two 
+				comparisons in line 17 and one assignment statement in line 18. These operations happen for each iteration
+				of the <code>while</code> loop. For Binary search, things are a little more complex;
+				we have two comparisons on line 45 and line 47 each. We also have two assignments on line 46 and one on line 48 or line 50 for each
+				time we enter the <code>while</code> loop. Notice that for every iteration of the <code>while</code> loop, either line
+				48 will execute or line 50, but not both; this is true since these lines are part of the <code>if-else</code>
+				statement, and only one can run.
+			</p>
+			
+			<p>
+				Since the initializations (line 15 and line 42-43) and the <code>if-else</code> blocks at the end of
+				each search algorithm happen only once, regardless of the size of the list,
+				we can ignore them in our comparison.
+				<br><br>
+				So far, we have seen that there are about 2 steps per iteration in Linear Search. We have also
+				seen that there are about 4 steps per iteration in Binary Search. We are going to compare our
+				algorithms in the worst cases; this happens when the item we are searching for is not actually
+				in the list.
+			</p>
+-->			
+		<h3>
+			A Deeper Look at Linear Search 
+		</h3>
+			<p>
+				Let us consider the following example in order to understand the number of steps linear search will
+				take to complete:
+			</p>
+			
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50">1</td>
+				  <td width="50">2</td>
+				  <td width="50">3</td>
+				  <td width="50">4</td>
+				  <td width="50">5</td>
+				</tr>
+			</table>
+			
+			<p>	
+				Let us look for the value <code>6</code>, which does not occur in the list. We compare <code>6</code> to the item at index <code>0</code>, which is
+				<code>1</code>, and since this is not the value we are looking for, we will move on to the next item. Next, we compare
+				<code>6</code> to <code>2</code>. Again, we move on. We will compare <code>6</code> to <code>3</code>,
+				then <code>4</code>, and then <code>5</code>. So, for a list of 5 items, we examined all 5 items in the list.
+				<br><br>
+				Let us make a table of the number of iterations we make as the number of items in the list grows:
+			</p>
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50"># items</td>
+				  <td width="50"># iters</td>
+				</tr>
+				<tr>
+				  <td width="50">1</td>
+				  <td width="50">1</td>
+				</tr>
+				<tr>
+				  <td width="50">2</td>
+				  <td width="50">2</td>
+				</tr>
+				<tr>
+				  <td width="50">3</td>
+				  <td width="50">3</td>
+				</tr>
+				<tr>
+				  <td width="50">.</td>
+				  <td width="50">.</td>
+				</tr>
+				<tr>
+				  <td width="50">.</td>
+				  <td width="50">.</td>
+				</tr>
+				<tr>
+				  <td width="50">.</td>
+				  <td width="50">.</td>
+				</tr>
+			</table>
+
+		<h3>
+			A Deeper Look at Binary Search 
+		</h3>
+			<p>
+				We know that for a list with one item, the number of iterations is also one. However, what happens when there are two
+				items? Well, with the first comparison, we eliminate half of the list, and we are left with one item. This leaves us with
+				one more comparison. So, for a list with two items, the number of iterations is two.
+				
+			</p>
+			
+			<!--
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50">1</td>
+				  <td width="50">2</td>
+				  <td width="50">3</td>
+				  <td width="50">4</td>
+				</tr>
+			</table>
+			-->
+			<p>
+				Now, let us consider what happens when our list has 4 items: With just one comparison, we are able to eliminate half the list, and thus, we are left with only two items. 
+
+<!--
+			Here is
+				how the list might look like after one iteration:
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50">1</td>
+				  <td width="50">2</td>
+				  <td width="50">X</td>
+				  <td width="50">X</td>
+				</tr>
+			</table>
+			<p>
+				The <code>X</code>s in the above diagram mark items in the list that we will no longer consider.
+				--> At this point, we have
+				only two items left, and we know from our previous calculation that we will need two more iterations for that.
+				Therefore, for a list of 4 items, we only needed 3 iterations. Let us now construct a table with this information:
+			</p>
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50"># items</td>
+				  <td width="50"># iters</td>
+				</tr>
+				<tr>
+				  <td width="50">1</td>
+				  <td width="50">1</td>
+				</tr>
+				<tr>
+				  <td width="50">2</td>
+				  <td width="50">2</td>
+				</tr>
+				<tr>
+				  <td width="50">4</td>
+				  <td width="50">3</td>
+				</tr>
+				<tr>
+				  <td width="50">8</td>
+				  <td width="50">4</td>
+				</tr>
+				<tr>
+				  <td width="50">16</td>
+				  <td width="50">5</td>
+				</tr>
+				<tr>
+				  <td width="50">32</td>
+				  <td width="50">6</td>
+				</tr>
+				<tr>
+				  <td width="50">64</td>
+				  <td width="50">7</td>
+				</tr>
+				<tr>
+				  <td width="50">128</td>
+				  <td width="50">8</td>
+				</tr>
+			</table>
+			<p>
+				This is very interesting! If a list has 128 items to begin with, then after only one iteration, we will only have to
+				consider 64 items. This is very powerful. With one interation of the loop, we are able to eliminate half
+				the list. This is only possible because the list is sorted.
+			</p>
+		<h2>
+			Logarithms
+		</h2>
+			<p>
+				<code>log<sub>2</sub>(n)</code> is the logarithm base <code>2</code> of <code>n</code>,
+				and we can think of that as the number of times we divide <code>n</code> by 2 in
+				order to reach 1. Here is quick table of values and their logarithms of base <code>2</code>:
+			</p>
+			
+
+			<table border="1" style="text-align:center;">
+				<tr>
+				  <td width="50">n</td>
+				  <td width="50"> log_2(n)</td>
+				</tr>
+				<tr>
+				  <td width="50">2</td>
+				  <td width="50">1</td>
+				</tr>
+				<tr>
+				  <td width="50">4</td>
+				  <td width="50">2</td>
+				</tr>
+				<tr>
+				  <td width="50">8</td>
+				  <td width="50">3</td>
+				</tr>
+				<tr>
+				  <td width="50">16</td>
+				  <td width="50">4</td>
+				</tr>
+				<tr>
+				  <td width="50">32</td>
+				  <td width="50">5</td>
+				</tr>
+			</table>
+
+			<h2>
+				Time to Run Linear and Binary Search
+			</h2>
+				<h3>
+					Number of iterations
+				</h3>
+			<p>
+				In Python, <code>math.log(x, b)</code> returns the logarithm of <code>x</code> to the base <code>b</code>.
+			</p>
+<pre>
+>>> math.log(2, 2)
+1.0
+>>> math.log(4, 2)
+2.0
+>>> math.log(8, 2)
+3.0
+>>> math.log(16, 2)
+4.0
+>>> math.log(32, 2)
+5.0
+>>> math.log(1000000000, 2)
+29.897352853986263
+</pre>
+			<p>
+				These calculations can give us an indication of how many iterations binary search will take. Since we know that
+				binary search eliminates half the list on every iteration, we can use <code>math.log(x , b)</code> to predict
+				the number of iterations it will take for a list with <code>x</code> items. So, for a list with 1 billion items (1,000,000,000), binary search
+				will perform about 30 iterations. On the other hand, linear search will take about 1,000,000,000 iterations
+				in the worst case.
+			</p>
+			<h3>
+				Profiling
+			</h3>
+				<p>
+					The <code>cProfile</code> module allows us to <i>profile</i> a piece of code. By profile, we mean to measure
+					how much time it takes to run, and how much memory it uses. Here is how we can time our searching functions using a module named
+					<code>cProfile</code>:
+				</p>
+<pre>
+>>> import cProfile
+>>> L = list(range(10000000))
+>>> len(L)
+10000000
+>>> cProfile.run('binary_search(L, 10000000)')
+         5 function calls in 0.000 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 <stdin>:1(binary_search)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        2    0.000    0.000    0.000    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+>>> cProfile.run('linear_search(L, 10000000)')
+         10000005 function calls in 9.146 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    6.198    6.198    9.146    9.146 <stdin>:1(linear_search)
+        1    0.000    0.000    9.146    9.146 <string>:1(<module>)
+ 10000002    2.948    0.000    2.948    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+</pre>
+			<p>
+				Looking at the above code, <code>cProfile</code> is able to give us a nice breakdown of the function calls
+				involved in each searching algorithm. We see that all function calls take 0.000 seconds in binary search. However,
+				in linear search, the total time spent is more than 9 seconds, and we notice that the function call to <code>len</code>
+				happens 10,000,002 times. This presents an opportunity for us to save time. In our linear search algorithm,
+				we can save a huge amount of time by storing the length of the list into a local variable. The new and faster linear
+				search algorithm is shown below, as well as its running time:
+			</p>
+
+<pre>
+>>> def linear_search(L, v):
+      """ (list, object) -> int
+      Return the index of the first occurrence of v in L,
+      or return -1 if v is not in L.
+      """
+      i = 0
+
+      length = len(L)
+
+      while i != length and v != L[i]:
+          i = i + 1
+
+      if i == length:
+          return -1
+      else:
+          return i6
+>>> cProfile.run('linear_search(L, 10000000)')
+         4 function calls in 1.872 seconds
+
+   Ordered by: standard name
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    1.872    1.872    1.872    1.872 <stdin>:1(linear_search)
+        1    0.000    0.000    1.872    1.872 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 {len}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+</pre>
+
+			<p>
+				In the above profile, we see that <code>len</code> is called only once, as opposed to 10,000,002 times in the previous
+				version of <code>linear_search(L, v)</code>. Also, the total time of linear search dropped down to about 2 seconds in this faster
+				implementation of linear search.
+			</p>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

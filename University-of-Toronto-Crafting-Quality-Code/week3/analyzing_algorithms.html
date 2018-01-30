@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Change to proper title -->
+		<title>Analyzing Algorithms</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Analyzing Algorithms</h1> 
+		<div class="indent">
+			Up to now our focus has been on writing correct code.
+			Next, we'll focus on:
+			<ul>
+				<li>analyzing our algorithms, and
+				<li>determining the amount of time algorithms take to run.
+
+			</ul>
+			
+			<h2>Linear Running Time Functions</h2>
+			<div class="indent">
+				<h3>Function 1:</h3>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+def print_ints(n):
+    """ (int) -> NoneType
+
+    Print the integers from 1 to n, inclusive.
+    """
+
+    for i in range(1, n + 1):
+        print(i)
+</pre>
+					</td></tr></table>
+				</div>
+				<br>
+				Output:
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_ints(10)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+					</td></tr></table>
+				</div>
+				<br>
+				When the function is called, the value that <code>n</code> refers to is equal to the number of items printed:
+				<ul>
+				<li>when <code>n</code> refers to <code>10</code>, it prints 10 integers</li>
+				<li>when <code>n</code> refers to <code>20</code>, it prints 20 integers</li>				
+				<li>when <code>n</code> refers to <code>40</code>, it prints 40 integers</li>
+			</ul>
+				
+
+				<p>This graph shows the number of steps (print function calls) relative to the size of the input:
+				</p>
+				<div class="indent">
+					<!--img src="linear.jpg" alt="plot of linear runtime, steps = n"><br -->
+					<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_a51c4cfa41973122e2e87cce5552cc72_linear.jpg?expiry=1489795200000&hmac=VXo5sow8uF56DKr39_mHhbWqrB-yA7u_92MPnG6wdTE" alt="plot of linear runtime, steps = n"><br>
+				</div>
+				<br>								
+				The number of steps is proportional to <code>n</code>.
+				<br>
+				<h3>Function 2:</h3>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+def print_odd_ints(n):
+    """ (int) -> NoneType
+
+    Print the odd values from 1 to n, inclusive.
+    """
+
+    for i in range(1, n + 1, 2):
+        print(i)
+</pre>
+					</td></tr></table>
+				</div>
+				<br>
+				Output:
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_odd_ints(10)		
+1
+3
+5
+7
+9
+</pre>
+					</td></tr></table>
+				</div>
+				<br>
+				When the function is called, the value that <code>n</code> refers to is twice the number of items printed:
+				<ul>
+				<li>when <code>n</code> refers to <code>10</code>, it prints 5 integers</li>
+				<li>when <code>n</code> refers to <code>20</code>, it prints 10 integers</li>				
+				<li>when <code>n</code> refers to <code>40</code>, it prints 20 integers</li>
+			</ul>
+				<br>
+			
+				We can plot this as well:<br>
+				<div class="indent">
+					<!--img src="linear2.jpg" alt="plot of linear runtime, steps = n/2 "-->		
+					<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_a51c4cfa41973122e2e87cce5552cc72_linear2.jpg?expiry=1489795200000&hmac=HFe6QUWbdmDTC0mx627fmk6GllurIkypIutkTEb3g0Y" alt="plot of linear runtime, steps = n/2 ">
+				</div>
+				<br>
+				The number of steps is still proportional to <code>n</code>.<br>
+				<br>
+				<i>Both function 1 and 2 are linear functions: the runtime grows linearly with respect to the size of input.</i>
+			</div>		
+			<h2>Quadratic Functions</h2>
+			<div class="indent">
+				<h3>Function 3:</h3>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+def print_pairs(n):
+    """ (int) -> NoneType
+
+    Print all combinations of pairs of integers 1 to n,
+	inclusive.
+    """
+
+    for i in range(1, n + 1):
+        for j in range(1, n + 1):
+            print(i, j)
+</pre>
+					</td></tr></table>
+				</div>
+				<br>
+				Output 1:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_pairs(2)
+1 1
+1 2
+2 1
+2 2
+</pre>
+					</td></tr></table>
+					The function call above prints 4 pairs of integers.<br>
+				</div>				
+				
+				<br>
+				Output 2:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_pairs(3)
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+</pre>
+					</td></tr></table>
+					The function call above prints 9 pairs of integers.<br>
+				</div>				
+				<br>
+				Output 3:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>>print_pairs(4)
+1 1
+1 2
+1 3
+1 4
+2 1
+2 2
+2 3
+2 4
+3 1
+3 2
+3 3
+3 4
+4 1
+4 2
+4 3
+4 4
+</pre>
+					</td></tr></table>
+					The function call above prints 16 pairs of integers.<br>
+				</div>								
+				<br>
+				For argument <code>n</code>, the print function is called <code>n<sup>2</sup></code> times.<br>
+				<br>
+				When reading the code, notice that the <code>print</code> function call is inside a <code>for</code> loop, which loops <code>n</code> times.  This <code>for</code> loop is also within a <code>for</code> loop that executes <code>n</code> times.<br>
+				<br>
+				Therefore:<br>
+				<div class="example">
+					<b>n</b><i> (iterations of the outside loop)</i> * <b>n</b> <i>(iterations of the inside loop)</i> = <b>n<sup>2</sup></b> <i>iterations</i><br>
+				</div>						
+				<br>
+				Plotting the graph, we get:<br>
+				<!-- img src="quadratic.jpg" alt="plot of quadratic time, steps = n^2"><br-->				
+				<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_a51c4cfa41973122e2e87cce5552cc72_quadratic.jpg?expiry=1489795200000&hmac=nkt6-L-PrEOxu--sMy-R-G_SXgSXb9Vh3Yl3AgJedt4" alt="plot of quadratic time, steps = n^2"><br>
+				<i>Function 3 is quadratic: the runtime grows quadratically with respect to the size of input.</i><br>
+				<br>
+				<!--
+				<h3>Comparison</h3>
+				<br>
+				If we had two solutions that ran at the same time, one that used linear runtime, and one that used quadratic runtime, we'd want to pick linear for the most efficient algorithm<br>
+				<img src="linquad.jpg" alt="comparison of linear and quadratic plots"><br>
+						-->
+				<!--img src="lecture_summaries/w3/linquad.jpg" alt="comparison of linear and quadratic plots"><br-->
+			</div>	
+
+			<h2>Logarithmic Functions</h2>
+			<div class="indent">				
+				<h3>Function 1</h3>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+def print_double_step(n):
+    """ (int) -> NoneType
+
+    Print integers from 1 to n inclusive, with an initial
+    step size of 1 and each subsequent step size being 
+    twice as large as it was previously.    
+    """
+
+    i = 1
+    while i < n + 1:
+        print(i)
+        i = i * 2        
+</pre>
+					</td></tr></table>
+				</div>
+				<br>		
+				In this example, the step size varies.  It size of the first step is 1, the next step would be 2, then 4, 8, 16, 32...<br>
+				<br>
+				How many values would be printed for different values of n?<br>
+				<br>
+				Output 1:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_double_step(4)
+1
+2
+4
+</pre>
+					</td></tr></table>
+					When <code>n</code> refers to <code>4</code>, 3 integers are printed.
+				</div>				
+				
+				<br>
+				Output 2:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_double_step(5)
+1
+2
+4
+</pre>
+					</td></tr></table>
+						When <code>n</code> refers to <code>5</code>, 3 integers are printed.
+				</div>
+				<br>
+				 It's not until <code>n</code> refers to <code>8</code> that more than 3 integers are printed.<br>
+				<br>
+				Output 3:<br>
+				<div class="indent">
+					<table class="bordered"><tr><td>
+<pre>
+>>> print_double_step(8)
+1
+2
+4
+8
+</pre>
+					</td></tr></table>
+					When <code>n</code> refers to values <code>8</code> to <code>15</code>, there will be 4 integers printed.<br>
+				</div>
+				<br>
+				
+				When <code>n</code> refers to <code>16</code>, 5 integers are printed.<br>
+				When <code>n</code> refers to <code>32</code>, 6 integers are printed.<br>
+				When <code>n</code> refers to <code>64</code>, 8 integers are printed.<br>
+				
+				<br>
+				Starting with <code>n</code> referring to <code>1</code>, each time that <code>n</code> is doubled, it prints one extra line.<br>
+				<br>
+				This function is logarithmic and as the input size increases, the running time grows more slowly than for linear and quadratic functions.<br>
+				<br>
+				<!--img src="logarithm.jpg" alt="plot of logarithmic time, steps = log(n)"><br-->
+			
+				<img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_a51c4cfa41973122e2e87cce5552cc72_logarithm.jpg?expiry=1489795200000&hmac=TeJ_GbTZ9UK3a3xuSfCF8JPUANeQtAuHSghjq7MPvIs" alt="plot of logarithmic time, steps = log(n)"><br>
+
+			</div>
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

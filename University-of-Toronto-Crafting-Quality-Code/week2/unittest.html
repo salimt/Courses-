@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+				
+		<title>Testing Automatically Using unittest</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--<a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a>-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image"></a>
+			<hr>
+		</div>
+		
+		<h1>Testing Automatically Using unittest</h1> 
+		<div class="indent">
+			<h2>doctest vs. unittest</h2>			
+			<div class="indent">
+				Python's <code>unittest</code> module provides a testing framework that is similar to <code>doctest</code>.<br>
+				Unlike <code>doctest</code>, which can make code hard to read when there are many tests, the <code>unittest</code> tests are written separately from the function being tested.<br>
+				<br>
+				Translating <code>doctest</code> to <code>unittest</code>:<br>
+				<br>
+				<table class="indent">
+					<tr><td>
+						<table class="bordered">
+							<tr><td>
+<pre>
+def get_divisors(num, possible_divisors):
+    ''' (int, list of int) -> list of int
+
+    Return a list of the values from possible_divisors
+    that are divisors of num.
+
+    >>> get_divisors(8, [1, 2, 3])
+    [1, 2]
+    >>> get_divisors(4, [-2, 0, 2])
+    [-2, 2]
+    '''
+
+    divisors = []
+    for item in possible_divisors:
+        if item != 0 and num % item == 0:
+            if num % item == 0:
+                divisors.append(item)
+    return divisors</pre>
+							</td></tr>					
+						</table>
+					</td>
+					<td>
+					&rarr;
+					</td>
+					<td>
+						<table class="bordered">
+							<tr><td>
+<pre>
+import unittest
+import divisors
+
+class TestDivisors(unittest.TestCase):
+    """Example unittest test methods for get_divisors."""
+	
+    def test_divisors_example_1(self):
+        """Test get_divisors with 8 and [1, 2, 3]."""
+		
+        actual = divisors.get_divisors(8, [1, 2, 3])
+        expected = [1, 2]
+        self.assertEqual(expected, actual)	
+		
+    def test_divisors_example_2(self):	
+        """Test get_divisors with 4 and [-2, 0, 2]."""
+		
+        actual = divisors.get_divisors(4, [-2, 0, 2])
+        expected = [-2, 2]
+        self.assertEqual(expected, actual)	
+</pre>
+							</td></tr>					
+						</table>
+					</td></tr>
+				</table>		
+				<br>
+				<h3>Similarities and Differences</h3>
+				<div class="indent">
+					In doctest:
+					<ul>
+						<li><code>import doctest</code></li>
+						<li>Write the tests as you would type them in the shell.</li>
+						<li>Write the expected result on the next line.</li>
+					</ul>
+					In unittest:
+					<ul>
+						<li><code>import unittest</code></li>
+						<li>Write separate methods for each test. In each method,
+							<ul>
+							<li>write a call on the function being tested, and </li> 
+							<li>call <code>self.assertEqual(...)</code> to compare the  <i>actual result</i> to the <i>expected result</i>.</li>
+							</li>
+						</ul>
+					</ul>
+					
+					<div class="indent">
+						<table class="bordered">
+							<tr><td>
+								To <i>assert</i> something is to claim that it is true.
+							</td></tr>
+						</table>
+					</div>
+				</div>
+				<br>
+				<h3>Running Tests</h3>				
+				<div class="indent">
+					To run tests using <code>doctest</code>:
+					<ul>
+						<li>call <code>doctest.testmod()</code>, which examines the docstrings in the current module, </li>
+						<li>executes the tests that it finds, and </li>
+						<li>reports any differences between the actual results and the expected results.
+					</ul>
+					To run tests using <code>unittest</code>:
+					<ul>
+						<li>call <code>unittest.main()</code>, which examines all of the <code>TestCase</code> subclasses in the current module, </li>
+						<li>calls each method that begin with "test", and </li>
+						<li>and reports any unexpected results.</li>
+					</ul>
+					When calling <code>unittest</code> from within IDLE, the parameter <code>exit</code> should be assigned <code>False</code>:<br>
+					<div class="example">
+						<code>unittest.main(exit=<b>False</b>)</code><br>
+					</div>			
+				</div>
+			</div>
+			<h2>Comparing Output</h2>
+			<div class="indent">								
+				<div class="indent">
+					<h3>Successful Test</h3>
+					<br>
+					When we run the <code>test_divisors</code> module we get these results, where each dot represents a successful test:
+					<table class="indent"><tr><td>
+						<table class="bordered">
+							<tr><td>
+								<code><span class="red">
+								..<br>
+								----------------------------------------------------------------------<br>
+								Ran 2 tests in 0.025s<br>
+								<br>
+								OK
+								</span></code>
+							</td></tr>
+						</table>
+					</td></tr></table>
+
+					<h3>Test with Errors</h3>
+					<br>
+					Now, let's change the code as follows:
+					<table class="indent">
+						<tr><td>
+							<table class="bordered">
+								<tr><td>
+									line 13: <code>divisors = []</code>
+								</td></tr>
+							</table>
+						</td>
+						<td>
+						&rarr;
+						</td>
+						<td>
+							<table class="bordered">
+								<tr><td>
+									line 13: <code>divisors = [num]</code>
+								</td></tr>
+							</table>
+						</td></tr>
+					</table>
+					<br>
+					
+					When the tests are executed, the following results are reported:
+					<table class="indent"><tr><td>
+						<table class="bordered">
+							<tr><td>
+<span class="red"><pre>
+FF
+======================================================================
+FAIL: test_divisors_example_1 (__main__.TestDivisors)
+Test get_divisors with 8 and [1, 2, 3].
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    File "test_divisors.py", line 13, in test_divisors_example_1
+        self.assertEqual(actual, expected)
+AssertionError: Lists differ: [8, 1, 2] != [1, 2]
+
+First differing element 0:
+8
+1
+
+First list contains 1 additional elements.
+First extra element 2:
+2
+
+- [8, 1, 2]
+?  ---
+
++ [1, 2]
+
+======================================================================
+FAIL: test_divisors_example_2 (__main__.TestDivisors)
+Test get_divisors with 4 and [-2, 0, 2].
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    File "test_divisors.py", line 20, in test_divisors_example_2
+	    self.assertEqual(actual, expected)
+AssertionError: Lists differ: [4, -2, 2] != [-2, 2]
+
+First differing element 0:
+4
+-2
+
+First list contains 1 additional elements.
+First extra element 2:
+2
+
+- [4, -2, 2]
+?  ---
+
++ [-2, 2]
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.018s
+
+FAILED (failures=2)
+</span></pre>
+							</td></tr>
+						</table>
+					</td></tr></table>
+					<br>
+					This time, we get a lot of feedback! 
+					We see:
+					<ul>
+						<li>2 Fs instead of 2 dots: <span class="red">[<code>FF</code>]</span>
+						<li>the name of the method that has the failure: <span class="red">[<code>(FAIL: test_divisors_example_1(__main__.TestDivisors)</code>]</span>
+						<li>the failed method's docstring: <span class="red">[<code>Test get_divisors with 8 and [1, 2, 3]</code>]</span>
+						<li>a <em>traceback</em>, which is the series of function and method calls that led to the error: <span class="red">[<code>Traceback (most recent call last):...</code>]</span>
+						<li>the <code>AssertionError</code>, including the expected and actual values: <span class="red">[<code>AssertionError: Lists differ: [8, 1, 2] != [1, 2]</code>]</span>
+						<li>details about the problems: <span class="red">[<code>First differing element 0:...</code>]</span>
+						<li>a summary of the results: <span class="red">[<code>FAILED (failures=2)</code>]</span>
+					</ul>
+					<br>
+					Let's fix that bug and introduce a different one:
+					<br>
+					<table class="indent">
+						<tr><td>
+							<table class="bordered">
+								<tr><td>
+<pre>
+<span class="blue"><b>divisors = [num]</b></span>
+for item in possible_divisors:
+    <span class="blue"><b>if item != 0 and num % item == 0:</b></span>
+        if num % item == 0:	
+            divisors.append(item)
+
+return divisors
+</pre>
+								</td></tr>
+							</table>
+						</td>
+						<td>
+						&rarr;
+						</td>
+						<td>
+							<table class="bordered">
+								<tr><td>
+<pre>
+<span class="blue"><b>divisors = []</b></span>
+for item in possible_divisors:
+    <span class="blue"><b># if item != 0 and num % item == 0:</b></span>
+    if num % item == 0:
+        divisors.append(item)	
+
+return divisors
+</pre>
+								</td></tr>
+							</table>
+						</tr>
+					</table>
+					<br>
+					When the tests are executed, the following results are reported:
+					<table class="indent">
+						<tr><td>
+							<table class="bordered">
+								<tr><td>
+<span class="red"><pre>
+.E
+======================================================================
+ERROR: test_divisors_example_2 (__main__.TestDivisors)
+Test get_divisors with 4 and [-2, 0, 2].
+----------------------------------------------------------------------
+Traceback (most recent call last):
+    File "test_divisors.py", line 18, in test_divisors_example_2  
+        actual = divisors.get_divisors(4, [-2, 0, 2])  
+    File "divisors.py", line 16, in get_divisors  
+        if num % item == 0:
+ZeroDivisionError: integer division or modulo by zero
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.048s
+
+FAILED (errors=1)
+</pre></span>
+								</td></tr>
+							</table>
+						</td></tr>
+					</table>
+					<p>
+					One test passed and a zero division error occured when the other test was executed.					Instead of an <code>F</code>, which indicates an incorrect assertion, we see an <code>E</code>. The <code>E</code> indicates that a call on function <code>get_divisors()</code> resulted in an error.
+				</p>
+				<p>
+					Again, the results include the method name, docstring, and a traceback. This time the traceback shows us several steps:
+					</p>
+						<li>on line 18, <code>get_divisors</code> was called:<br> 
+						<span class="red">
+<pre>
+File "test_divisors.py", line 18, in test_divisors_example_2
+    actual = divisors.get_divisors(4, [-2, 0, 2])
+</pre>
+						</span>
+						<li>on line 16, in function <code>get_divisors</code>, the code <code>num % item == 0:</code> results in a <code>ZeroDivisionError</code>:<br>
+						<span class="red">
+<pre>
+File "divisors.py", line 16, in get_divisors
+    if num % item == 0:
+ZeroDivisionError: integer division or modulo by zero
+</pre>
+						</span>
+					</ul>
+					<br>
+					
+
+					<br>
+					By using <code>unittest</code> instead of <code>doctest</code>, we separate the testing of the function from the function definition, which allows us to write a lot of tests without affecting readability of the code.<br>
+					<br>
+					Typically, we will write:
+					<ul>
+						<li>one <code>TestCase</code>  subclass for each function we want to test, and 
+						<li>one test method for each function call.
+					</ul>
+				</div>
+			</div>
+		</div>	
+		
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

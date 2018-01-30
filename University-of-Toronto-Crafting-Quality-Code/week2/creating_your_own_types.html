@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Creating Your Own Types</title>
+    </head>
+
+    <body>
+        <div class="page_header">
+            <!-- For local testing -->
+            <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+            
+            <!-- For web version -->
+            <a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>           
+            <hr>
+        </div>
+        <h1>Creating Your Own Types</h1>
+<h2>
+Reviewing Python's Modules and Built-in Types
+</h2>
+
+<h3>
+Importing a module
+</h3>
+	<p>
+	The <code>math</code>
+	module contains functions such as <code>math.ceil</code>, which returns the smallest integer that is equal than or greater to the function's
+	argument. Importing <code>math</code> creates a variable called <code>math</code>. This creates a namespace, or a chunk of memory, that holds
+		the information for all the functions and data variables in the <code>math</code> module.
+	</p>
+<h3>
+Type <code>str</code>
+</h3>
+	<p>
+		Because <code>str</code> is built into Python, we already have a type named <code>str</code>. But, instead of a module, <code>str</code>
+		refers to a class, and contains methods rather than functions. The notation for calling a <code>str</code> method is similar to the one used to call a function from the <code>math</code> module:
+	</p>
+	<pre>
+>>> math.ceil(3.2)
+4
+>>> str.count('syzygy', 'y')
+3
+	</pre>
+	<p>
+		The first argument to a method is always an instance of the class, so we also use this notation call the method:
+	</p>
+	<pre>
+>>> 'syzygy'.count('y')
+3
+	</pre>
+
+<h2>Creating a Custom Class</h2>
+	<p>
+		The <code>str</code> class has lots of useful methods, however, it does not contain every possible
+		method we might need. We will create a new class that customizes class <code>str</code>. Our class will have
+		all the <code>str</code> methods, plus a new method that checks whether a string begins and ends with the same
+		letter.
+	</p>
+	<p>
+		We start our class definition with <code>class WordplayStr(str)</code>. In this case, <code>WordplayStr</code> is the name of our new class, and the <code>
+		(str)</code> indicates that our new class is based on the <code>str</code> class. <code>WordplayStr</code> is a <em>subclass</em> of <code>str</code>, which means that <code>WordplayStr</code> inherits all of the methods from <code>str</code>. Here is the completed class definition:
+	</p>
+	<pre>
+class WordplayStr(str):
+    """A string that can report whether it has interesting properties."""
+
+    
+    def same_start_and_end(self):
+        """ (WordplayStr) -> bool
+
+        Precondition: len(self) != 0
+
+        Return whether self starts and ends with the same letter.
+
+        >>> s = WordplayStr('abracadabra')
+        >>> s.same_start_and_end()
+        True
+        >>> s = WordplayStr('canoe')
+        >>> s.same_start_and_end()
+        False
+        """
+
+        return self[0] == self[-1]
+
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
+	</pre>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

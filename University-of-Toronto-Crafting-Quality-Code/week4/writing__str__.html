@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+				
+		<title>Writing Special Method __str__</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1489795200000&hmac=yVxwAaLMzbeJe1no7Efm_o9mRmy_tW6Xtq9GXhm_V5c" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		
+		<h1>Writing Special Method <code>__str__</code></h1> 
+			<p>		
+				In this lecture, you will learn about the special method <code>__str__</code>.	As you saw in the previous lecture, special methods start and end with a double underscore <code>__</code>.  
+				So far, our <code>class CashRegister</code> has two special methods, <code>__init__</code> and <code>__eq__</code>. It
+				also has three regular methods, <code>get_total</code>, <code>add</code>, and <code>remove</code>. 
+			</p>
+<h2>
+Method <code>__str__</code>
+</h2>
+
+	<p>
+		Let us create a few <code>CashRegister</code> objects:
+	</p>
+	<pre>
+>>> cr1 = CashRegister(2, 0, 0, 0, 0)
+>>> cr2 = CashRegister(0, 1, 0, 0, 0)
+>>> cr3 = CashRegister(1, 1, 0, 0, 0)
+	</pre>
+	
+	<p>
+		At this point, when the print function is called on <code>CashRegister</code> objects, the memory addresses of the objects are printed:
+	</p>
+	<pre>
+>>> print(cr1)
+&#60;__main__>.CashRegiter object at 0x101d7a550
+>>> print(cr2)
+&#60;__main__>.CashRegiter object at 0x101d7ac90
+	</pre>
+
+	<p>The function <code>print</code> calls the special method <code>__str__</code> in order to
+	get a string to print. Let us now implement the <code>__str__</code> method in our
+	<code>CashRegister</code> class in order to get nicer output from the <code>print</code> function call:
+	</p>
+	<pre>
+def __str__(self):
+    """ (CashRegister) -> str
+
+    Return a string representation of this CashRegister.
+    
+    >>> reg1 = CashRegister(1, 2, 3, 4, 5)
+    >>> reg1.__str__()
+    CashRegister: $160 ($1x1, $2x2, $5x3, $10x4, $20x5)
+    """
+
+    return 'CashRegister: $' + self.get_total() + ' ($1x' + self.loonies + \
+           ', $2x' + self.toonies + ', $5x' + self.fives + ', $10x' + \
+           self.tens + ', $20x' + self.twenties + ')'
+    </pre>
+    <p>
+        According to the type contract, the <code>__str__</code> method takes a <code>CashRegister</code> object and returns an <code>str</code>
+        object. If we run the <code>CashRegister</code> module with the above <code>__str__</code> method, we will get an error that
+        says <code>TypeError: Can't Convert 'int' object to str implicitly</code>. The problem is that we are applying the <code>+</code> operator to an <code>int</code> and a <code>str</code>. That can be fixed by calling function <code>str</code> on the <code>int</code>s to get string representations of them. Here is the updated code:
+    </p>
+    <pre>
+def __str__(self):
+    """ (CashRegister) -> str
+
+    Return a string representation of this CashRegister.
+    
+    >>> reg1 = CashRegister(1, 2, 3, 4, 5)
+    >>> reg1.__str__()
+    CashRegister: $160 ($1x1, $2x2, $5x3, $10x4, $20x5)
+    """
+
+    return 'CashRegister: $' + str(self.get_total()) + ' ($1x' + str(self.loonies) + \
+           ', $2x' + str(self.toonies) + ', $5x' + str(self.fives) + ', $10x' + \
+           str(self.tens) + ', $20x' + str(self.twenties) + ')'
+    </pre>
+    <p>
+    If we run the <code>CashRegister</code> module now, we see that it runs without any problems. Now, if we print a <code>CashRegister</code>
+    object, here is what we get:
+    </p>
+    <pre>
+>>> cr1 = CashRegister(2, 0, 0, 0, 0)
+>>> cr2 = CashRegister(0, 1, 0, 0, 0)
+>>> print(cr1)
+CashRegister: $2 ($1x2, $2x0, $5x0, $10x0, $20x0)
+>>> print(cr2)
+CashRegister: $2 ($1x0, $2x1, $5x0, $10x0, $20x0
+    </pre>
+    <p>
+     However, notice that our current <code>__str__</code> method looks long and messy. We can improve this by using the <code>str.format</code>
+     method call.
+    </p>
+    <h2>
+        Method <code>str.format</code>
+    </h2>
+    <p>
+        The <code>str.format</code> uses <i>placeholders</i>, which are locations in the string that we want to replace with actual values.
+        These placeholders are curly braces with an integer between them. The placeholders correspond with the arguments passed to <code>str.format</code> between the parentheses (as opposed to the argument to the left of the dot). Placeholder <code>{0}</code> corresponds with the first argument, and <code>{1}</code> corresponds with the second argument, and so on. Here is the updated <code>__str__</code> method that uses <code>str.format</code>:
+    </p>
+    <pre>
+def __str__(self):
+    """ (CashRegister) -> str
+
+    Return a string representation of this CashRegister.
+    
+    >>> reg1 = CashRegister(1, 2, 3, 4, 5)
+    >>> reg1.__str__()
+    CashRegister: $160 ($1x1, $2x2, $5x3, $10x4, $20x5)
+    """
+
+    return 'CashRegister: ' + \
+           '${0} ($1x{1}, $2x{2}, $5x{3}, $10x{4}, $20x{5})'.format(
+               self.get_total(), self.loonies, self.toonies,
+               self.fives, self.tens, self.twenties)
+    </pre>
+    <p>
+        In the above function, <code>self.get_total()</code> corresponds with <code>{0}</code>, <code>self.loonies</code>
+		corresponds with <code>{1}</code>, and so on.
+	</p>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

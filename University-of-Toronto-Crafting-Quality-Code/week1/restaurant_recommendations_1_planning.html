@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<title>Restaurant Recommendations: Planning the Program</title>
+	</head>
+
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>
+			<hr>
+		</div>
+		<h1>Restaurant Recommendations: Planning the Program</h1>
+		<div class="indent">
+		<p>
+			At this point, you should:
+			<ul>
+				<li>understand the problem, and
+				<li>be familiar with the data structures we'll use to represent the data from the file.
+			</ul>
+
+			Next, we'll design the functions.
+		</p>
+
+		<h2>Quick Review:</h2>
+		<p>
+			We've created 3 dictionaries:
+			<ol>
+				<li>restaurant to rating (<code>dict of {str: int}</code>)
+				<li>price range to restaurants (<code>dict of {str: list of str}</code>)
+				<li>cuisine type to restaurants (<code>dict of {str: list of str}</code>)
+			</ol>
+		</p>
+		<!--
+		<h2>The Program</h2>
+		<p>
+			In <code>restaurant.py</code>, we have some starter code:
+			<ul>
+				<li>a description of the dictionaries used to store the restaurant data
+				<li>an example of what the program will do
+				<li>a constant for the filename
+				<li>a header for the recommendation function
+			</ul>
+		</p>
+	-->
+		<h2>Planning the Program</h2>
+		<p>
+			<ol>
+				<li>As with many programs, the first step is reading the file and building the data structures (in this case, building the three dictionaries).
+				<li>Now we need to make a design decision: should we look up restaurants by price or by cuisine first? We choose to look up price first. (Choosing to look up restaurants by cuisine first would result in a different solution.) We'll make a list of the restaurants in the desired price range.
+				<li>Next, we need to create a list of restaurants in the desired price range list that serve one of the desired cuisines.
+				<li>Now that we have a list of restaurants in the desired price range that serve the desired cuisine type, we need to sort the restaurants based on their ratings and return the sorted list.
+			</ol>
+		</p>
+
+		<table class="indent">
+			<tr><td>
+				<table class="bordered">
+					<tr><td>
+						<b>Design Tip</b>
+						<ul>
+							<li>Before programming, plan your program by breaking it down into subproblems.  Take notes.
+							<li>Work through at least one example by hand and decide how to represent the data.
+							<li>Decompose the problem into subproblems so that you have more places in the program to test for correctness.
+						</ul>
+					</td></tr>
+				</table>
+			</td></tr>
+		</table>
+
+		<h2>More Planning and Some Implementation</h2>
+		<table class="indent">
+			<tr><td>
+				<h3>Step 1 - Build the Data Structures</h3>
+
+				Start by building the data structures we've discussed:
+				<table>
+					<tr><td>
+						<code><ul>
+							<li>a dict of {restaurant name: rating %}
+							<li>a dict of {price: list of restaurant names}
+							<li>a dict of {cuisine: list of restaurant names}
+						</ul></code>
+					</td></tr>
+				</table>
+				To do all of this in one function would be long, messy and hard to debug.Therefore, we create another function that takes a file and returns the three dictionaries as a tuple:<br>
+				<div class="example">
+					<br>
+					<code>name_to_rating, price_to_names, cuisine_to_names = read_restaurant(file)</code></br>
+					</br>
+				</div>
+
+				<p>We can now create the header for this new function and create three accumulator variables. The function will accumulate the information from the file in the three dictionaries as it reads the file line-by-line:</p>
+
+				<pre>
+def read_restaurants(file):
+    """ (file) -> (dict of {str: int}, dict of {str: list of str}, dict of {str: list of str})
+
+    Return a tuple of three dictionaries based on the information in file:
+
+    - a dict of {restaurant name: rating%}
+    - a dict of {price range: list of restaurant names}
+    - a dict of {cuisine: list of restaurant names}
+    """
+
+    name_to_rating = {}
+	price_to_name = {'$':[], '$$':[], '$$$':[], '$$$$':[]}
+	cuisine_to_name = {}
+				</pre>
+
+				<p>Finishing this function is left as an exercise for you.
+				We recommend you approach it as follows:</p>
+				<ul>
+					<li>Read the file line by line, and build up the <code>name_to_rating</code> dictionary.
+					<li>Only once that's working, go back and edit the function to build up the <code>price_to_name</code> dictionary as well.
+					<li>Next, add the code to build the <code>cuisine_to_name</code> dictionary.
+					<li>You should only read through the file once, so you'll need to add more statements in your for loop to build the 2nd and 3rd dictionaries.
+					<li>One thing that you may find a bit challenging is pulling apart the comma separated list of cuisines for the <code>cuisine_to_name</code> dictionary. You may want to create a helper function to aid with this task.
+				</ul>
+			</td></tr>
+			<tr><td>
+				<h3>Step 2 - Filter by Price Range</h3>
+				We now have:
+				<ul>
+					<li>the <code>price_to_name</code> dictionary, and</li>
+					<li>the price range the user desires.</li>
+				</ul>
+				We can find the names of restaurants in that price range as follows:
+				<div class="example">
+					<pre>names_matching_price = price_to_names[price]</pre>
+				</div>
+			</td></tr>
+			<tr><td>
+				<h3>Step 3 - Filter by Cuisine</h3>
+				We now need a new list of restaurants from the <code>names_matching_price</code> list that we just created that also serve the desired type of cuisine.
+				We'll add a helper function <code>filter_by_cuisine</code> to return a list of all of the restaurants that are in the price range that serves one of the cuisines in the <code>cuisines_list</code>.
+				<div class="example">
+					<pre>names_final = filter_by_cuisine(names_matching_price, cuisine_to_names, and cuisines_list)</pre>
+				</div>
+
+				Start by writing following the Function Design Recipe to write the function header:
+
+<pre>
+def filter_by_cuisine(names_matching_price, cuisine_to_names, cuisines_list):
+    """ (list of str, dict of {str: list of str}, list of str) -> list of str
+
+    Return a list of the restaurants in names_matching_price that serve at
+    least one of the cuisines in cuisines_list according to cuisine_to_names.
+
+    >>> names = ['Queen St. Cafe', 'Dumplings R Us', 'Deep Fried Everything']
+    >>> cuis = {'Canadian': ['Georgie Porgie'],
+                'Pub Food': ['Georgie Porgie', 'Deep Fried Everything'],
+                'Malaysian': ['Queen St. Cafe'],
+                'Thai': ['Queen St. Cafe'],
+                'Chinese: ['Dumplings R Us'],
+                'Mexican': ['Mexican Grill']}
+    >>> cuisines = ['Chinese', 'Thai']
+    >>> filter_by_cuisine(names, cuis, cuisines)
+    ['Queen St. Cafe', 'Dumplings R Us']
+    """
+</pre>
+				<p>
+					In the example in the docstring, we filtered the <code>names_matching_price</code> list, looking for Thai (<code>'Queen St. Cafe'</code>) and Chinese (<code>'Dumplings R Us'</code>).  We expect those two restaurants to be returned: <code>['Queen St. Cafe', 'Dumplings R Us']</code>.
+				</p>
+				<p>
+					For this example, we would start by looking for <code>'Queen St. Cafe'</code> in the <code>'Chinese'</code> food list.  It's not there, so we now check the <code>'Thai'</code> food list.  It is there, so we add <code>'Queen St. Cafe'</code> to our accumulator.
+					We then move onto <code>'Dumplings R Us'</code> and then <code>'Deep Fried Everything'</code> repeating the same process.<br>
+					Since <code>'Deep Fried Everything'</code> doesn't appear in either the Chinese or Thai lists, it is excluded from the results.<br>
+				</p>
+				<p>
+					This function is left as an exercise for you to implement.
+				</p>
+			</td></tr>
+			<tr><td>
+				<h3>Step 4 - Sort and Return</h3>
+
+				<p>We need to build a <code>list of list</code> in the right format, and sort by rating percentage. Again, we'll use a  helper function:
+				<div class="example">
+					<pre>result = build_rating_list(name_to_rating, names_final)</pre>
+				</div>
+				<p>Again, start with the function header:</p>
+
+				<pre>
+def build_rating_list(names_matching, name_to_rating):
+    """ (list of str, dict of {str: int}) -> list of [int, str] list
+
+    Return a list of [rating%, restaurant name], sorted by rating%.
+    >>> name_to_rating = {'Georgie Porgie': 87,
+                          'Queen St. Cafe': 82,
+                          'Dumplings R Us': 71,
+                          'Mexican Grill': 85,
+                          'Deep Fried Everything': 52}
+    >>> names = ['Queen St. Cafe', 'Dumplings R Us']
+    >>> build_rating_list(name_to_rating, names)
+    [[82, 'Queen St. Cafe'], [71, 'Dumplings R Us']]
+    """
+				</pre>
+
+				<h4>Final steps</h4>
+				<p>
+					Now, all that's left is to sort and return the list of recommended restaurants.	The reason we put the rating first, followed by the string, is that when calling <code>sort()</code> on a <code>list of list</code>, it will use the first value of the inner list to determine the sort order of the items.<br>
+				</p>
+				<p>
+					The rest of this function is being left for you to complete.<br>
+				</p>
+			</td></tr>
+		</table>
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>
+</html>

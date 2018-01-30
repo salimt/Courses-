@@ -1,0 +1,180 @@
+	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		
+		<!-- Change to proper title -->
+		<title>Testing Functions that Mutate Values</title>					
+	</head>	
+	
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>
+			<hr>
+		</div>
+		
+		<h1>Testing Functions that Mutate Values</h1> 
+		<p>
+		In this lecture, we'll explore how to test functions that mutate objects. <br>
+		We'll start with a <code>doctest</code> example, and then translate it to <code>unittest</code>.
+	</p>
+	<p>
+		The problem: given two lists, remove the items from the first list that appear in the second list.<br>
+		The algorithm: for each item in the second list, if that item appears in the first list, remove it.<br>
+		Here is the implementation:
+	</p>
+		<table class="bordered">
+			<tr><td>
+<pre>
+def remove_shared(L1, L2):
+    """ (list, list) -> NoneType
+
+    Remove items from L1 that are in both L1 and L2.
+
+    >>> list_1 = [1, 2, 3, 4, 5, 6]
+    >>> list_2 = [2, 4, 5, 7]
+    >>> remove_shared(list_1, list_2)
+    >>> list_1
+    [1, 3, 6]
+    >>> list_2
+    [2, 4, 5, 7]
+	"""
+
+    for v in L2:	
+        if v in L1:		
+            L1.remove(v)		
+</pre>				
+			</td></tr>
+		</table>
+
+		<h2><code>doctest</code></h2>
+		<div class="indent">
+			<p>
+			In the <code>doctest</code>, we create two lists that variables <code>list_1</code> and <code>list_2</code> refer to. Now we call <code>remove_shared(list1, list2)</code>.
+			</p>
+			<p>
+			  The function has no return statement; it produces <code>None</code>.  This means that when we call the function there is no useful return value to examine in our test. Instead, we examine <code>list_1</code> and then <code>list_2</code> to make sure that the list that <code>list_1</code> refers to has been mutated properly, and that the list that <code>list_2</code> refers to has not been mutated.  
+			 </p> 
+
+			 <p>
+			  For thorough testing, it's important to verify that any mutable objects passed to a function are not mutated, unless the function description specifies that they should be.<br>			
+			</p>
+		</div>
+		<h2><code>unittest</code> version</h2>
+		<div class="indent">	
+			<p>		
+			Each <code>unittest</code> starts by importing:
+		</p>
+			<ul>
+				<li><code>unittest</code>, and
+				<li>the module containing the function to be tested.
+			</ul>
+			
+			We need to:
+			<ol>
+				<li>create a subclass based on <code>unittest.TestCase</codE> and name it based on the function we're testing, </li>
+				<li>add a brief <code>docstring</code> describing the test case, and </li> 
+				<li>name every <code>unittest</code> test method with a name starting with "test".
+			</ol>
+			
+			
+			
+			<p>
+			Because our test involves two lists where there are some shared items and some non-shared items, we'll choose <code>test_general_case</code> for our name.
+			The <code>docstring</code> should describe the test.  Remember that if the test fails then this <code>docstring</code> is part of the report, so try to make it clear and helpful.<br>
+			<br>
+			We can start creating variables that refer to the lists that will be used as arguments:
+			<div class="indent">
+				<table class="bordered">
+					<tr><td><code>
+						list_1 = [1, 2, 3, 4, 5, 6]<br>
+						list_2 = [2, 4, 5, 7]
+					</code></td></tr>
+				</table>
+			</div>
+			<br>
+			We specify what we expect the two variables to refer to after the function call has executed:
+			<div class="indent">
+				<table class="bordered">
+					<tr><td><code>
+						list_1_expected = [1, 3, 6]<br>
+						list_2_expected = [2, 4, 5, 7]
+					</code></td></tr>
+				</table>
+			</div>
+			<br>
+			We call the function:
+			<div class="indent">
+				<table class="bordered">
+					<tr><td><code>
+						duplicates.remove_shared(list_1, list_2)
+					</code></td></tr>
+				</table>
+			</div>
+			<br>
+			Finally, we assert that the lists refer to the values we expect:
+			<div class="indent">
+				<table class="bordered">
+					<tr><td><code>
+						self.assertEqual(list_1, list_1_expected)<br>
+						self.assertEqual(list_2, list_2_expected)
+					</code></td></tr>
+				</table>
+			</div>
+			<br>
+			The full code appears as follows:
+			<div class="indent">			
+				<table class="bordered">
+					<tr><td>
+<pre>
+import unittest
+import duplicates
+
+class TestRemoveShared(unittest.TestCase):
+    """Tests for function duplicates.remove_shared."""
+
+    def test_general_case(self):
+        """
+        Test remove_shared where there are items that
+        appear in both lists, and items that appear in
+        only one or the other list.
+        """
+        
+        list_1 = [1, 2, 3, 4, 5, 6]
+        list_2 = [2, 4, 5, 7]
+        list_1_expected = [1, 3, 6]
+        list_2_expected = [2, 4, 5, 7]
+
+        duplicates.remove_shared(list_1, list_2)
+
+        self.assertEqual(list_1, list_1_expected)
+        self.assertEqual(list_2, list_2_expected)
+	
+if __name__ == '__main__':
+    unittest.main(exit=False)
+</pre>
+					</td></tr>
+				</table>
+			</div>
+		</div>
+		<br>
+		<p>
+			This test class contains only one method (the one from the docstring). To thouroghly test <code>remove_shared</code>, you would need to choose a set of test cases and write one method for each test.
+		</p>
+		
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>	
+</html>

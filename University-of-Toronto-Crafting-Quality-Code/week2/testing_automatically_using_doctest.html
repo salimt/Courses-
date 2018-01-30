@@ -1,0 +1,203 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Testing Automatically Using doctest</title>
+    </head>
+
+    <body>
+        <div class="page_header">
+            <!-- For local testing -->
+            <!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+            
+            <!-- For web version -->
+            <a href="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>           
+            <hr>
+        </div>
+        <h1>Testing Automatically Using doctest</h1>
+		<p>		
+				As part of the Function Design Recipe, we include one or
+				two example calls on the function in the docstring.
+				For example, consider the function <code>collect_vowels:</code>
+			</p>
+<pre>
+def collect_vowels(s):
+    """ (str) -> str
+
+    Return the vowels (a, e, i, o, and u) from s.
+    
+    >>> collect_vowels('Happy Anniversary!')
+    'aAiea'
+    >>> collect_vowels('xyz')
+    ''
+    """
+    
+    vowels = ''
+    for char in s:
+        if char in 'aeiouAEIOU':
+            vowels = vowels + char
+    return vowels
+</pre>
+<br>
+	<p>	
+		The function above has two examples calls in its docstring. You can execute those calls one at a time in the Python shell:<br>
+	</p>
+
+<pre>
+>>> collect_vowels('Happy Anniversary!')
+'aAiea'
+>>> collect_vowels('xyz')
+''
+</pre>
+
+<h2>
+Using <code>doctest</code>
+</h2>
+
+	<p>
+	Using <code>doctest</code>, you can run all of the tests
+	from the docstring at once.
+	After running the module containing <code>collect_vowels</code>, in the Python shell, import the <code>doctest</code> module, then call <code>doctest.testmod()</code>:
+	</p>
+
+<pre>
+>>> import doctest
+>>> doctest.testmod()
+TestResults(failed=0, attempted=2)
+</pre>
+
+<br>
+<p>
+The number of tests that failed and the number of tests that were attempted are reported. In this case, 2 tests were attemped, and 0 failed.
+<code>doctest.testmod()</code> automatically compares the actual value returned by the function call with the value we expect to be returned. 
+</p>
+
+<h2>
+More Examples
+</h2>
+<p>
+Consider this code:
+</p>
+
+<pre>
+def get_divisors(num, possible_divisors):
+    """ (int, list of int) -> list of int
+    
+    Return a list of the values from possible_divisors
+    that are divisors of num.
+    
+    >>> get_divisors(8, [1, 2, 3])
+    [1, 2]
+    >>> get_divisors(4, [-2, 0, 2])
+    [2]
+    """
+
+    divisors = []
+
+    for item in possible_divisors:
+        if item != 0 and num % item == 0:
+            divisors.append(item)
+
+    return divisors
+</pre>
+<br>
+
+<p>
+The above function, <code>get_divisors</code> has a <code>docstring</code> with two examples calls. After loading the module that contains the above function, we will test it by executing the following:
+</p>
+
+<pre>
+>>> import doctest
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 7, in __main__.get_divisors
+Failed example:
+    get_divisors(4, [-2, 0, 2])
+
+Exception raised:
+    Traceback (most recent call last):
+      File "/local/packages/python-2.7/lib/python2.7/doctest.py", line 1254, in __run
+        compileflags, 1) in test.globs
+      File "<doctest __main__.get_divisors[1]>", line 1, in <module>
+        get_divisors(4, [-2, 0, 2])
+      File "<stdin>", line 12, in get_divisors
+    ZeroDivisionError: integer division or modulo by zero
+**********************************************************************
+1 items had failures:
+   1 of   2 in __main__.get_divisors
+***Test Failed*** 1 failures.
+TestResults(failed=1, attempted=2)
+</pre>
+<br>
+
+<p>
+From the report above, we see that 2 tests were attempted, but one failed. The failure was due to a <code>ZeroDivisionError</code>. 
+Looking at the error report further, we find out that the error
+happened at line 15 (<code>if num % item == 0:</code>).
+</p>
+
+<p>
+For one of the function calls, when line 15 is executed, <code>item</code> refers to <code>0</code>. To prevent this division by zero, we add another condition to the <code>if</code> statement: <code>if item != 0 and num % item == 0:</code>
+</p>
+
+<p>
+Now, the error is avoided. This is
+true because of <em>lazy evaluation</em> (if the first operand in an <code>and</code> expression is <code>False</code>, the <code>and</code> expression evaluates to <code>False</code>, and the second
+operand is not evaluated).
+
+
+Now, if we run <code>doctest.testmod()</code> again, we get the following report:
+</p>
+
+<pre>
+>>> doctest.testmod()
+**********************************************************************
+File "__main__", line 7, in __main__.get_divisors
+Failed example:
+    get_divisors(4, [-2, 0, 2])
+Expected:
+    [2]
+Got:
+    [-2, 2]
+**********************************************************************
+1 items had failures:
+   1 of   2 in __main__.get_divisors
+***Test Failed*** 1 failures.
+TestResults(failed=1, attempted=2)
+</pre>
+
+<br>
+<p>
+An error still occurs, but it is different from the previous one. For the function call <code>get_divisors(4,[-2,0,2])</code> we expect <code>[2]</code> to be returned, but <code>[-2,2]</code> is actually returned.
+</p>
+
+<p>
+In this case, there is no problem with our function definition, but rather, with our
+test case. <code>-2</code> is in fact a divisor of <code>8</code>, and should have been included in our returned
+value. So, if we change the <code>docstring</code> to include <code>-2</code>, all tests pass.
+</p>
+<h2>
+Automatically run <code>doctest</code>
+</h2>
+<p>
+It is also possible to automate the running of doctest when loading a module into Python, by including the following code at the end of the module:<br>
+
+<pre>
+import doctest
+doctest.testmod()
+</pre>
+
+<br>
+In this case, every time you run the module, the doctest is also executed, and if there are no
+errors, then nothing will be reported to the console output. 
+</p>
+			</body>
+	<hr>
+		<center>
+    		Jennifer Campbell &bull; Paul Gries<br />
+     		University of Toronto
+		</center>
+	<hr> 
+</html>

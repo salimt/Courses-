@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>	
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link href="resources/web/styles.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<title>Restaurant Recommendations: Representing the Data</title>
+	</head>
+
+	<body>
+		<div class="page_header">
+			<!-- For local testing -->
+			<!--a href="http://web.cs.toronto.edu/"><img src="bluescreen.jpg" alt="University of Toronto - Computer Science - Image" ></a-->
+			
+			<!-- For web version -->
+			<a href="http://web.cs.toronto.edu/"><img src="http://web.cs.toronto.edu/"><img src="https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/_effbbd4e792a0bbfa32f5b33444045d6_bluescreen.jpg?expiry=1480032000000&hmac=uQZjAn7jCK2ZHcgMEm-rauxyeVhHk_QDfKvy2i766kU" alt="University of Toronto - Computer Science - Image" ></a>			
+			<hr>
+		</div>
+		<h1>
+			Restaurant Recommendations: Representing the Data
+		</h1>
+		<div class="indent">
+			<p>		
+				The first step to solving the restaurant recommendations problem is choosing data structures to store the information on restaurant prices, ratings, and cuisines.<br>			
+				<h2>Examining the Data File</h2>
+				<div class="indent">
+				<p>
+					Here is the restaurant data from a sample file:
+				</p>			
+			
+				<table class="indent">
+					<tr><td>			
+						<table class="bordered">
+							<tr><td>
+							<code>
+							Georgie Porgie<br>
+							87%<br>
+							$$$<br>
+							Canadian, Pub Food<br>
+							<br>
+							Queen St. Cafe<br>
+							82%<br>
+							$<br>
+							Malaysian, Thai<br>
+							<br>						
+							Dumplings R Us<br>
+							71%<br>
+							$<br>
+							Chinese<br>
+							<br>
+							Mexican Grill<br>
+							85%<br>
+							$$<br>
+							Mexican<br>
+							<br>
+							Deep Fried Everything<br>
+							52%<br>
+							$<br>
+							Pub Food
+							</code>
+							</td></tr>
+						</table>				
+					</td></tr>
+				</table>
+			</p>
+			</div>
+			<h2>Examining the Data</h2>
+			<div class="indent">
+			We'll organize the data by grouping it according to tasks that we would like to perform.
+			<p>
+				<h3>Rating Information</h3>
+				<p>
+					For each restaurant, we want to be able to look up the rating, so we'll keep track of that information:
+				</p>						
+				<table class="indent">
+					<tr><td>		
+						<table class="bordered">
+							<tr><td>
+								<b>Georgie Porgie:</b> 87<br>
+								<b>Queen St. Cafe:</b> 82<br>
+								<b>Dumplings R Us:</b> 71<br>
+								<b>Mexican Grill:</b> 85<br>
+								<b>Deep Fried Everything:</b> 52
+							</td></tr>
+						</table>
+					</td></tr>
+				</table>
+				<br>
+				<h3>Price Range Information</h3>
+				<p>
+					We'll also want to look up restaurants by price, so we'll make a list of that data:
+				</p>			
+				<table class="indent">
+					<tr><td>		
+						<table class="bordered">
+							<tr><td>
+								<b>$:</b> Queen St. Cafe, Dumplings R Us, Deep Fried Everything<br>
+								<b>$$:</b> Mexican Grill<br>
+								<b>$$$:</b> Georgie Porgie<br>
+								<b>$$$$:</b>
+							</td></tr>
+						</table>
+					</td></tr>
+				</table>
+				<br>
+				<h3>Cuisine Information</h3>
+				<p>
+					Recommendations are made based on types of cuisine as well, so we need to keep track of that information:
+				</p>			
+				<table class="indent">
+					<tr><td>		
+						<table class="bordered">
+							<tr><td>
+								<b>Canadian:</b> Georgie Porgie<br>
+								<b>Pub Food:</b> Georgie Porgie, Deep Fried Everything<br>
+								<b>Malaysian:</b> Queen St. Cafe<br>
+								<b>Thai:</b> Queen St. Cafe<br>
+								<b>Chinese:</b> Dumplings R Us<br>
+								<b>Mexican:</b> Mexican Grill
+							</td></tr>
+						</table>
+					</td></tr>
+				</table>
+				<br>			
+			</p>
+			</div>
+			<h2>Choose the data structure</h2>
+			<div class="indent">
+				<p>
+					What data structures can we use to store this information?	We could use strings, lists, tuples or dictionaries. That is a design decision that we need to make.<br>
+				</p>
+				<h3>Rating Information</h3>
+				<p>
+					Our "Rating Information" looks a lot like a Python dictionary, where each key is a restaurant name and each value is a rating.<br>
+				</p>
+				<p>
+					Let's add some braces and commas to make the structure look more like a Python dictionary.  Let's also add quotes around the restaurant names to make them strings. Finally, let's create a variable name <code>name_to_rating</code> that refers to this dictionary:
+					<table class="indent">
+						<tr><td>	
+							<table>
+								<tr>
+									<td>
+										<table class="bordered"><tr><td>
+										<b>Georgie Porgie:</b> 87<br>
+										<b>Queen St. Cafe:</b> 82<br>
+										<b>Dumplings R Us:</b> 71<br>
+										<b>Mexican Grill:</b> 85<br>
+										<b>Deep Fried Everything:</b> 52
+										</td></tr></table>
+									</td>
+									<td>&nbsp;</td>
+									<td>
+									&rarr;
+									</td>
+									<td>&nbsp;</td>
+									<td>
+										<table class="bordered"><tr><td><code>
+										name_to_rating = {'Georgie Porgie': 87,<br>
+										'Queen St. Cafe': 82,<br>
+										'Dumplings R Us': 71,<br>
+										'Mexican Grill': 85,<br>
+										'Deep Fried Everything': 52}
+										</code></td></tr></table>
+									</td>
+								</tr>
+							</table>
+						</td></tr>
+					</table>
+				</p>
+				<p>
+					Now, to find ratings, we can use the restaurant's name.<br>
+					<div class="example">
+						<code>>>>name_to_rating['Queen St. Cafe']<br>
+						82</code>
+					</div>
+				</p>	
+				<p>
+					This dictionary type can be written as: <code>dict of {str: int}</code>
+				</p>
+				
+				<h3>Pricing Information</h3>
+				<p>				
+					Pricing information also looks a lot like a Python dictionary. We would like to be able to look up a price and get all the restaurants in the price range.
+				</p>
+				<p>
+					The <code>keys</code> (price ranges) look like strings, and the <code>values</code> (restaurant names) look like <code>strings</code> too;
+					however, there can be zero, one or more than one restaurant associated with each price range. Therefore, each <code>value</code> will be a <code>list of str</code>.<br>
+				</p>
+				<p>
+					Again, adding quotes, commas, brackets, braces and a variable name gives us:
+					<table class="indent">
+						<tr><td>	
+							<table>
+								<tr>
+									<td>
+										<table class="bordered"><tr><td>
+										<b>$:</b> Queen St. Cafe, Dumplings R Us, Deep Fried Everything<br>
+										<b>$$:</b> Mexican Grill<br>
+										<b>$$$:</b> Georgie Porgie<br>
+										<b>$$$$:</b>
+										</td></tr></table>
+									</td>
+									<td>&nbsp;</td>
+									<td>
+									&rarr;
+									</td>
+									<td>&nbsp;</td>
+									<td>
+										<table class="bordered"><tr><td><code>
+										price_to_names = {'$': ['Queen St. Cafe', 'Dumplings R Us', 'Deep Fried Everything'],<br>
+										'$$': ['Mexican Grill'],<br>
+										'$$$': ['Georgie Porgie'],<br>
+										'$$$$': []}
+										</code></td></tr></table>
+									</td>
+								</tr>
+							</table>
+						</td></tr>
+					</table>
+				</p>
+				<p>
+					We can use this dictionary to find restaurants in a given price range.<br>			
+					<div class="example">
+						<code>>>>price_to_names['$']<br>
+						['Queen St. Cafe', 'Dumplings R Us', 'Deep Fried Everything']</code>
+					</div>
+				</p>		
+				<p>
+					This dictionary type can be written as: <code>dict of {str: list of str}</code>
+				</p>
+				<h3>Cuisine Information</h3>
+				<p>
+					A dictionary is also suitable for representing cuisine information. 
+				</p>
+				<p>
+					In this case, the type will be <code>dict of {str: list of str}</code>. Each key will be a cuisine and each value will be a <code>list of str</code>, since there can be more than one restaurant for each type of cuisine.
+				</p>
+				<p>		
+					Once again, adding quotes, commas, brakets, braces and a variable name gives us:
+					<table class="indent">
+						<tr><td>	
+							<table>
+								<tr>
+									<td>
+										<table class="bordered"><tr><td>
+										<b>Canadian:</b> Georgie Porgie<br>
+										<b>Pub Food:</b> Georgie Porgie, Deep Fried Everything<br>
+										<b>Malaysian:</b> Queen St. Cafe<br>
+										<b>Thai:</b> Queen St. Cafe<br>
+										<b>Chinese:</b> Dumplings R Us<br>
+										<b>Mexican:</b> Mexican Grill
+										</td></tr></table>
+									</td>
+									<td>&nbsp;</td>
+									<td>
+									&rarr;
+									</td>
+									<td>&nbsp;</td>
+									<td>
+										<table class="bordered"><tr><td><code>
+										cuisine_to_name = {'Canadian': ['Georgie Porgie'],<br>
+										'Pub Food': ['Georgie Porgie', Deep Fried Everything'],<br>
+										'Malaysian': ['Queen St. Cafe'],<br>
+										'Thai': ['Queen St. Cafe'],<br>
+										'Chinese': ['Dumplings R Us'],<br>
+										'Mexican': ['Mexican Grill']}
+										</code></td></tr></table>
+									</td>
+								</tr>
+							</table>
+						</td></tr>
+					</table>
+					
+				</p>
+				<p>
+					We can use this dictionary to find restaurants that serve a particular type of cuisine.
+					<div class="example">
+						<code>>>>cuisine_to_name['Chinese']<br>
+						['Dumplings R Us']</code>
+					</div>
+				</p>		
+			</div>
+		</div>
+		<div class="page_footer">
+			<hr>
+			<center>
+				Jennifer Campbell &bull; Paul Gries<br>
+				University of Toronto
+			</center>
+			<hr>
+		</div>
+	</body>
+</html>
