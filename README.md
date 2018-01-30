@@ -17,3 +17,6 @@ Stanford University: Introduction to Mathematical Thinking
 - ### [University-of-Toronto-The Fundamentals](https://github.com/salimt/Courses-/tree/master/University-of-Toronto-The%20Fundamentals)
 University of Toronto: Learn to Program: The Fundamentals
 
+- ### [University-of-Toronto-Crafting-Quality-Code](https://github.com/salimt/Courses-/tree/master/University-of-Toronto-Crafting-Quality-Code)
+University of Toronto: Learn to Program: Crafting Quality Code
+
