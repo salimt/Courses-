@@ -20,3 +20,5 @@ University of Toronto: Learn to Program: The Fundamentals
 - ### [University-of-Toronto-Crafting-Quality-Code](https://github.com/salimt/Courses-/tree/master/University-of-Toronto-Crafting-Quality-Code)
 University of Toronto: Learn to Program: Crafting Quality Code
 
+- ### [MITx-6.00.2x](https://github.com/salimt/Courses-/tree/master/MITx-6.00.2x)
+Massachusetts Institute of Technology 6.00.2x: Introduction to Computational Thinking and Data Science
