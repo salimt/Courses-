@@ -22,3 +22,6 @@ University of Toronto: Learn to Program: Crafting Quality Code
 
 - ### [MITx-6.00.2x](https://github.com/salimt/Courses-/tree/master/MITx-6.00.2x)
 Massachusetts Institute of Technology 6.00.2x: Introduction to Computational Thinking and Data Science
+
+- ### [Rice-Python-Data-Representations](https://github.com/salimt/Courses-/tree/master/Rice-Python-Data-Representations)
+Rice University: Python Data Representations
