@@ -2,6 +2,7 @@
 ## Solutions for Rice's Python Data Representations
 ![Rice University](https://i.imgur.com/mvKjQxs.png)
 
+![Rice University](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: Joe Warren, Scott Rixner
 
 ## Course Description
