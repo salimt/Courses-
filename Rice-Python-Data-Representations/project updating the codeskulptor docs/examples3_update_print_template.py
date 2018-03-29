@@ -93,18 +93,16 @@ def update_file(input_file_name, output_file_name):
         doc_text = doc_file.read()
         
     # split text in <pre> blocks and update using update_pre_block()
-    parts = doc_text.split(PREFIX)
-    updated_text = parts[0]
-    for part in parts[1:]:
-        updated_text += PREFIX
-        [pre_block, filler] = part.split(POSTFIX, 1)
-        updated_text += update_pre_block(pre_block)
-        updated_text += POSTFIX
-        updated_text += filler
+    lines = doc_text.split(PREFIX)
+    updated_file = lines[0]
+    for line in lines[1:]:
+        idx = line.index('<')
+        updated_file += PREFIX + update_pre_block(line[:idx]) + line[idx:]
+#    print(updated_file)
 
     # Write the answer in the specified output file
-    with  open(output_file_name, "w") as processed_file:
-        processed_file.write(updated_text)
+    with open(output_file_name, "w") as doc_updated:
+        doc_updated.write(updated_file)
 
     
 # A couple of test files
