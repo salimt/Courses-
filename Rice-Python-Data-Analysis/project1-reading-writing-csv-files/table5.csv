@@ -1,0 +1,6 @@
+"Field, 1";'Field 2',"Field 3";'Field, 4'
+"Field, 1",'Field 2';"Field 3";'Field, 4'
+"Field, 1";'Field 2',"Field 3";'Field, 4'
+'abc';"def";'g,hi',"j,kl"
+';abc',"d,ef",'ghi';"jkl"
+'ab;c',"def,"'ghi';"j,k;l"
