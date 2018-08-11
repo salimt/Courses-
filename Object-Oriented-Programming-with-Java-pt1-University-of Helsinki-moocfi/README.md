@@ -1,6 +1,6 @@
 # mooc-OOProgrammingWithJava-PART1
 ## Solutions for University of Helsinki's Object-Oriented Programming with Java, part I
-![University of Helsinki](http://brand.ubc.ca/files/2016/04/NarrowSignature_ex_768_v3.png)
+![University of Helsinki](https://i.imgur.com/upHrQHP.png)
 
 ![University of Helsinki](https://i.imgur.com/upHrQHP.png) INSTRUCTORS
 #### Instructors: Arto Hellas, Matti Luukkainen
