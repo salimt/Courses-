@@ -1,0 +1,6 @@
+
+BUILD FAILED
+C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week3-058.RecurringWord\nbproject\build-impl.xml:603: The following error occurred while executing this line:
+C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week3-058.RecurringWord\nbproject\build-impl.xml:245: Error running javac.exe compiler
+
+Total time: 0 seconds
