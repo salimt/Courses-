@@ -2,7 +2,7 @@
 This repository is aimed to help Coursera learners who have difficulties in their learning process.  
 The quiz and programming homework is belong to coursera and edx.
 
-- ### [Object-Oriented-Programming-with-Java-pt1](./Object-Oriented-Programming-with-Java-pt1-University-of Helsinki-moocfi)
+- ### [Object-Oriented-Programming-with-Java-pt1](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 University of Helsinki: Object-Oriented Programming with Java, part I
 
 - ### [Harvard-CS50x](./Harvard-CS50x)
