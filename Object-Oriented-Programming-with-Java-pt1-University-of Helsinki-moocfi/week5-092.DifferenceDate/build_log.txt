@@ -1,0 +1,70 @@
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-junit:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+
+deps-jar:
+    [mkdir] Created dir: C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build\built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+    [mkdir] Created dir: C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build\classes
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [mkdir] Created dir: C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build\empty
+    [mkdir] Created dir: C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build\generated-sources\ap-source-output
+    [javac] Compiling 2 source files to C:\Users\ACER\Desktop\Object-Oriented-Programming-with-Java-pt1-University-of Helsinki\TMC-Files\TMCProjects\mooc-2013-OOProgrammingWithJava-PART1\week5-092.DifferenceDate\build\classes
