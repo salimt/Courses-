@@ -2,7 +2,7 @@
 ## Solutions for University of Helsinki's Object-Oriented Programming with Java, part I
 ![University of Helsinki](https://i.imgur.com/upHrQHP.png)
 
-![University of Helsinki](https://i.imgur.com/upHrQHP.png) INSTRUCTORS
+![University of Helsinki](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: Arto Hellas, Matti Luukkainen
 
 <li><a href="http://moocfi.github.io/courses/2013/programming-part-1/material.html">PART I, Material</a></li>
