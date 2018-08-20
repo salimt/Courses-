@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=PerimeterRunner
+comment1.params=s
+comment1.target=double\ getPerimeter(edu.duke.Shape)
+comment2.params=
+comment2.target=void\ testPerimeter()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
