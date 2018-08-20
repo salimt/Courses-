@@ -6,7 +6,7 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [Harvard University - Introduction to Computer Science CS50x](./Harvard-CS50x)
 
-- #### [Duke University - Java Programming: Solving Problems with Software](./Java-Duke-Programming-Solving-Problems-with-Software)
+- #### [Duke University - Java Programming: Solving Problems with Software](./Duke-Java-Programming-Solving-Problems-with-Software)
 
 - #### [Duke University - Data Science Math Skills](./Duke-University-Data-Science-Math-Skills)
 
