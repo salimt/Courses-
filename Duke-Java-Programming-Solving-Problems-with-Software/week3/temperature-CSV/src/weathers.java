@@ -124,7 +124,7 @@ public class weathers {
         System.out.println("Lowest Humidity was " + csv.get("Humidity") + " at " + csv.get("DateUTC"));
     }
 
-    //TEST method to find lowestHumidity in the given files --many
+    //method that returns the lowest humidity in the given files
     public static CSVRecord lowestHumidityInManyFiles(){
         DirectoryResource dr = new DirectoryResource();
         CSVRecord lowestSoFar = null;
