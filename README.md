@@ -2,6 +2,12 @@
 This repository is aimed to help Coursera and edX learners who have difficulties in their learning process.  
 The quiz and programming homework is belong to coursera and edx.
 
+- #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
+
+- #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
+
+- #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [Harvard University - Introduction to Computer Science CS50x](./Harvard-CS50x)
@@ -19,12 +25,6 @@ The quiz and programming homework is belong to coursera and edx.
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
 
 - #### [University of Toronto - Learn to Program: Crafting Quality Code](./University-of-Toronto-Crafting-Quality-Code)
-
-- #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
-
-- #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
-
-- #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
 
 - #### [University of British Columbia - How to Code: Simple Data HtC1x](./UBCx-HtC1x)
 
