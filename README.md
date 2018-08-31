@@ -24,6 +24,8 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
 
+- #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
+
 - #### [University of British Columbia - How to Code: Simple Data HtC1x](./UBCx-HtC1x)
 
 - #### [University of British Columbia - Software Construction: Data Abstraction](./UBCx-Software-Construction-Data-Abstraction-SoftConst1x)
