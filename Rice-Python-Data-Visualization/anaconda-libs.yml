@@ -1,0 +1,101 @@
+---
+
+- name: install bokeh
+  command: /opt/anaconda/bin/conda install bokeh==0.10.0 -y
+  args:
+      creates: /opt/anaconda/bin/bokeh-server
+
+
+- name: install python hdfs access library
+  command: /opt/anaconda/bin/pip install hdfs
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/hdfs/
+
+- name: install spotify luigi 
+  command: /opt/anaconda/bin/pip install luigi
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/luigi/
+
+- name: install gensim libraries
+  command: /opt/anaconda/bin/conda install gensim -y
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/gensim
+
+- name: install scrapy
+  command: /opt/anaconda/bin/conda install scrapy -y
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/scrapy
+
+- name: install python scrapyd 
+  command: /opt/anaconda/bin/pip install scrapyd
+  args:
+      creates: /opt/anaconda/bin/scrapyd
+
+- name: install python geojson library
+  command: /opt/anaconda/bin/pip install geojson
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/geojson/
+
+- name: install python geocoder library
+  command: /opt/anaconda/bin/pip install geocoder
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/geocoder/
+
+- name: install python geopy library
+  command: /opt/anaconda/bin/pip install geopy
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/geopy/
+
+- name: install python hive access library
+  command: /opt/anaconda/bin/pip install pyhive
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/pyhive/
+
+- name: install ipython parallel
+  command: /opt/anaconda/bin/conda install ipyparallel -y
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/ipyparallel/
+
+- name: install python-nvd3
+  command: /opt/anaconda/bin/pip install python-nvd3
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/nvd3/
+
+- name: install python pygal visualization library
+  command: /opt/anaconda/bin/pip install pygal
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/pygal
+
+- name: install python seaborn visualization library
+  command: /opt/anaconda/bin/pip install seaborn
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/seaborn
+
+- name: install python textblob library
+  command: /opt/anaconda/bin/pip install textblob
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/textblob/
+
+- name: install python vaderSentiment library
+  command: /opt/anaconda/bin/pip install vaderSentiment
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/vaderSentiment/
+
+- name: install python mrjob library
+  command: /opt/anaconda/bin/pip install mrjob
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/mrjob/
+
+
+- name: download tensorflow whl
+  get_url: url={{ tensorflow_url }} dest=/root/{{ tensorflow_url | basename }}
+  when: use_local_files == false
+
+- name: copy tensorflow whl
+  copy: src=files/{{ tensorflow_url | basename }} dest=/root/{{ tensorflow_url | basename }}
+  when: use_local_files == true
+
+- name: install Google Tensorflow
+  command: /opt/anaconda/bin/pip install /root/{{ tensorflow_url | basename }}
+  args:
+      creates: /opt/anaconda/lib/python2.7/site-packages/tensorflow
