@@ -26,5 +26,7 @@ This module will teach you about packages and modules in Python, including how t
 ### Week 3
 This module will teach you about Python sets. Sets are used to hold unordered collections of data without duplicates. We will also discuss efficiency.
 
+> project: _Plotting GDP Data on a World Map - Part I_
+
 ### Week 4
 The final project of the specialization will enable you to demonstrate mastery of the concepts you have learned up to this point. You will also be able to understand and compare different approaches to reconciling two data sets. 
