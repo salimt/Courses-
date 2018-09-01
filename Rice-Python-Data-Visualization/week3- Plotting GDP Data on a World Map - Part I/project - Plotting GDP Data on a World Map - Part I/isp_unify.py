@@ -4,6 +4,8 @@ Unify data via common country name.
 
 Be sure to read the project description page for further information
 about the expected behavior of the program.
+
+@author: salimt
 """
 
 import csv
