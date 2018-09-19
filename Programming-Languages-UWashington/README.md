@@ -1,5 +1,4 @@
 # Coursera: Programming Languages, UW
-## This is the course project for Programming Languages, offered by University of Washington
 <img src="https://i.imgur.com/rQEDP2a.png" alt="Smiley face" height="300" width="600">
 
 ![Duke University](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
