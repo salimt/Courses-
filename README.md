@@ -8,6 +8,11 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
 
+- #### [IBM: Applied Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
+1. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
+
+2. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [Harvard University - Introduction to Computer Science CS50x](./Harvard-CS50x)
