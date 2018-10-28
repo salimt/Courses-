@@ -1,0 +1,496 @@
+<svg viewBox="0 0 1786 724" height="724" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<rect  height="25" width="585"  style=" fill:rgb(213, 224, 197); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="1" />
+<text x="7" y="18" font-size= "14" font-weight = "bold" style="fill:rgb(0, 0, 0)" font-family="Arial">The following magic functions are currently available:</text>
+<rect  height="8" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="26" />
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="34" />
+<text x="11" y="46" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%alias</text>
+<text x="156" y="46" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Define an alias for a system command.</text>
+<line x1="145" y1="34" x2="145" y2="51" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="51" />
+<text x="11" y="63" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%alias_magic</text>
+<text x="156" y="63" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="145" y1="51" x2="145" y2="68" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="68" />
+<text x="11" y="80" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%autocall</text>
+<text x="156" y="80" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Make functions callable without having to type parentheses.</text>
+<line x1="145" y1="68" x2="145" y2="85" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="85" />
+<text x="11" y="97" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%automagic</text>
+<text x="156" y="97" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Make magic functions callable without having to type the initial %.</text>
+<line x1="145" y1="85" x2="145" y2="102" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="102" />
+<text x="11" y="114" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%autosave</text>
+<text x="156" y="114" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Set the autosave interval in the notebook (in seconds).</text>
+<line x1="145" y1="102" x2="145" y2="119" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="119" />
+<text x="11" y="131" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%bookmark</text>
+<text x="156" y="131" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Manage IPython's bookmark system.</text>
+<line x1="145" y1="119" x2="145" y2="136" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="136" />
+<text x="11" y="148" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%cat</text>
+<text x="156" y="148" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!cat`</text>
+<line x1="145" y1="136" x2="145" y2="153" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="153" />
+<text x="11" y="165" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%cd</text>
+<text x="156" y="165" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Change the current working directory.</text>
+<line x1="145" y1="153" x2="145" y2="170" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="170" />
+<text x="11" y="182" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%clear</text>
+<text x="156" y="182" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Clear the terminal.</text>
+<line x1="145" y1="170" x2="145" y2="187" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="187" />
+<text x="11" y="199" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%colors</text>
+<text x="156" y="199" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Switch color scheme for prompts, info system and exception handlers.</text>
+<line x1="145" y1="187" x2="145" y2="204" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="204" />
+<text x="11" y="216" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%config</text>
+<text x="156" y="216" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">configure IPython</text>
+<line x1="145" y1="204" x2="145" y2="221" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="221" />
+<text x="11" y="233" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%connect_info</text>
+<text x="156" y="233" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print information for connecting other clients to this kernel</text>
+<line x1="145" y1="221" x2="145" y2="238" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="238" />
+<text x="11" y="250" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%cp</text>
+<text x="156" y="250" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!cp`</text>
+<line x1="145" y1="238" x2="145" y2="255" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="255" />
+<text x="11" y="267" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%debug</text>
+<text x="156" y="267" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="145" y1="255" x2="145" y2="272" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="272" />
+<text x="11" y="284" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%dhist</text>
+<text x="156" y="284" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print your history of visited directories.</text>
+<line x1="145" y1="272" x2="145" y2="289" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="289" />
+<text x="11" y="301" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%dirs</text>
+<text x="156" y="301" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Return the current directory stack.</text>
+<line x1="145" y1="289" x2="145" y2="306" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="306" />
+<text x="11" y="318" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%doctest_mode</text>
+<text x="156" y="318" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Toggle doctest mode on and off.</text>
+<line x1="145" y1="306" x2="145" y2="323" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="323" />
+<text x="11" y="335" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%ed</text>
+<text x="156" y="335" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%edit`.</text>
+<line x1="145" y1="323" x2="145" y2="340" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="340" />
+<text x="11" y="352" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%edit</text>
+<text x="156" y="352" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Bring up an editor and execute the resulting code.</text>
+<line x1="145" y1="340" x2="145" y2="357" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="357" />
+<text x="11" y="369" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%env</text>
+<text x="156" y="369" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Get, set, or list environment variables.</text>
+<line x1="145" y1="357" x2="145" y2="374" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="374" />
+<text x="11" y="386" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%gui</text>
+<text x="156" y="386" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Enable or disable IPython GUI event loop integration.</text>
+<line x1="145" y1="374" x2="145" y2="391" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="391" />
+<text x="11" y="403" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%hist</text>
+<text x="156" y="403" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%history`.</text>
+<line x1="145" y1="391" x2="145" y2="408" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="408" />
+<text x="11" y="420" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%history</text>
+<text x="156" y="420" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="145" y1="408" x2="145" y2="425" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="425" />
+<text x="11" y="437" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%killbgscripts</text>
+<text x="156" y="437" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Kill all BG processes started by %%script and its family.</text>
+<line x1="145" y1="425" x2="145" y2="442" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="442" />
+<text x="11" y="454" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%ldir</text>
+<text x="156" y="454" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F -o --color %l | grep /$`</text>
+<line x1="145" y1="442" x2="145" y2="459" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="459" />
+<text x="11" y="471" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%less</text>
+<text x="156" y="471" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Show a file through the pager.</text>
+<line x1="145" y1="459" x2="145" y2="476" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="476" />
+<text x="11" y="488" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%lf</text>
+<text x="156" y="488" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F -o --color %l | grep ^-`</text>
+<line x1="145" y1="476" x2="145" y2="493" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="493" />
+<text x="11" y="505" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%lk</text>
+<text x="156" y="505" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F -o --color %l | grep ^l`</text>
+<line x1="145" y1="493" x2="145" y2="510" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="510" />
+<text x="11" y="522" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%ll</text>
+<text x="156" y="522" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F -o --color`</text>
+<line x1="145" y1="510" x2="145" y2="527" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="527" />
+<text x="11" y="539" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%load</text>
+<text x="156" y="539" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Load code into the current frontend.</text>
+<line x1="145" y1="527" x2="145" y2="544" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="544" />
+<text x="11" y="556" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%load_ext</text>
+<text x="156" y="556" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Load an IPython extension by its module name.</text>
+<line x1="145" y1="544" x2="145" y2="561" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="561" />
+<text x="11" y="573" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%loadpy</text>
+<text x="156" y="573" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias of `%load`</text>
+<line x1="145" y1="561" x2="145" y2="578" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="578" />
+<text x="11" y="590" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%logoff</text>
+<text x="156" y="590" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Temporarily stop logging.</text>
+<line x1="145" y1="578" x2="145" y2="595" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="595" />
+<text x="11" y="607" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%logon</text>
+<text x="156" y="607" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Restart logging.</text>
+<line x1="145" y1="595" x2="145" y2="612" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="612" />
+<text x="11" y="624" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%logstart</text>
+<text x="156" y="624" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Start logging anywhere in a session.</text>
+<line x1="145" y1="612" x2="145" y2="629" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="629" />
+<text x="11" y="641" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%logstate</text>
+<text x="156" y="641" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print the status of the logging system.</text>
+<line x1="145" y1="629" x2="145" y2="646" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="646" />
+<text x="11" y="658" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%logstop</text>
+<text x="156" y="658" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Fully stop logging and close log file.</text>
+<line x1="145" y1="646" x2="145" y2="663" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="663" />
+<text x="11" y="675" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%ls</text>
+<text x="156" y="675" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F --color`</text>
+<line x1="145" y1="663" x2="145" y2="680" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="680" />
+<text x="11" y="692" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%lsmagic</text>
+<text x="156" y="692" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">List currently available magic functions.</text>
+<line x1="145" y1="680" x2="145" y2="697" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="697" />
+<text x="11" y="709" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%lx</text>
+<text x="156" y="709" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!ls -F -o --color %l | grep ^-..x`</text>
+<line x1="145" y1="697" x2="145" y2="714" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="8" width="585"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1"  y="714" />
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="1" />
+<text x="608" y="13" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%macro</text>
+<text x="718" y="13" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Define a macro for future re-execution. It accepts ranges of history,</text>
+<line x1="707" y1="1" x2="707" y2="18" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="18" />
+<text x="608" y="30" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%magic</text>
+<text x="718" y="30" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print information about the magic function system.</text>
+<line x1="707" y1="18" x2="707" y2="35" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="35" />
+<text x="608" y="47" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%man</text>
+<text x="718" y="47" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Find the man page for the given command and display in pager.</text>
+<line x1="707" y1="35" x2="707" y2="52" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="52" />
+<text x="608" y="64" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%matplotlib</text>
+<text x="718" y="64" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="707" y1="52" x2="707" y2="69" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="69" />
+<text x="608" y="81" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%mkdir</text>
+<text x="718" y="81" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!mkdir`</text>
+<line x1="707" y1="69" x2="707" y2="86" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="86" />
+<text x="608" y="98" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%more</text>
+<text x="718" y="98" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Show a file through the pager.</text>
+<line x1="707" y1="86" x2="707" y2="103" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="103" />
+<text x="608" y="115" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%mv</text>
+<text x="718" y="115" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!mv`</text>
+<line x1="707" y1="103" x2="707" y2="120" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="120" />
+<text x="608" y="132" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%notebook</text>
+<text x="718" y="132" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="707" y1="120" x2="707" y2="137" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="137" />
+<text x="608" y="149" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%page</text>
+<text x="718" y="149" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Pretty print the object and display it through a pager.</text>
+<line x1="707" y1="137" x2="707" y2="154" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="154" />
+<text x="608" y="166" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pastebin</text>
+<text x="718" y="166" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Upload code to Github's Gist paste bin, returning the URL.</text>
+<line x1="707" y1="154" x2="707" y2="171" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="171" />
+<text x="608" y="183" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pdb</text>
+<text x="718" y="183" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Control the automatic calling of the pdb interactive debugger.</text>
+<line x1="707" y1="171" x2="707" y2="188" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="188" />
+<text x="608" y="200" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pdef</text>
+<text x="718" y="200" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print the call signature for any callable object.</text>
+<line x1="707" y1="188" x2="707" y2="205" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="205" />
+<text x="608" y="217" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pdoc</text>
+<text x="718" y="217" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print the docstring for an object.</text>
+<line x1="707" y1="205" x2="707" y2="222" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="222" />
+<text x="608" y="234" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pfile</text>
+<text x="718" y="234" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print (or run through pager) the file where an object is defined.</text>
+<line x1="707" y1="222" x2="707" y2="239" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="239" />
+<text x="608" y="251" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pinfo</text>
+<text x="718" y="251" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Provide detailed information about an object.</text>
+<line x1="707" y1="239" x2="707" y2="256" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="256" />
+<text x="608" y="268" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pinfo2</text>
+<text x="718" y="268" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Provide extra detailed information about an object.</text>
+<line x1="707" y1="256" x2="707" y2="273" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="273" />
+<text x="608" y="285" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%popd</text>
+<text x="718" y="285" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Change to directory popped off the top of the stack.</text>
+<line x1="707" y1="273" x2="707" y2="290" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="290" />
+<text x="608" y="302" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pprint</text>
+<text x="718" y="302" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Toggle pretty printing on/off.</text>
+<line x1="707" y1="290" x2="707" y2="307" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="307" />
+<text x="608" y="319" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%precision</text>
+<text x="718" y="319" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Set floating point precision for pretty printing.</text>
+<line x1="707" y1="307" x2="707" y2="324" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="324" />
+<text x="608" y="336" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%profile</text>
+<text x="718" y="336" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print your currently active IPython profile.</text>
+<line x1="707" y1="324" x2="707" y2="341" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="341" />
+<text x="608" y="353" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%prun</text>
+<text x="718" y="353" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Run a statement through the python code profiler.</text>
+<line x1="707" y1="341" x2="707" y2="358" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="358" />
+<text x="608" y="370" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%psearch</text>
+<text x="718" y="370" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Search for object in namespaces by wildcard.</text>
+<line x1="707" y1="358" x2="707" y2="375" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="375" />
+<text x="608" y="387" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%psource</text>
+<text x="718" y="387" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print (or run through pager) the source code for an object.</text>
+<line x1="707" y1="375" x2="707" y2="392" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="392" />
+<text x="608" y="404" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pushd</text>
+<text x="718" y="404" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Place the current dir on stack and change directory.</text>
+<line x1="707" y1="392" x2="707" y2="409" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="409" />
+<text x="608" y="421" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pwd</text>
+<text x="718" y="421" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Return the current working directory path.</text>
+<line x1="707" y1="409" x2="707" y2="426" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="426" />
+<text x="608" y="438" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pycat</text>
+<text x="718" y="438" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Show a syntax-highlighted file through a pager.</text>
+<line x1="707" y1="426" x2="707" y2="443" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="443" />
+<text x="608" y="455" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%pylab</text>
+<text x="718" y="455" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="707" y1="443" x2="707" y2="460" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="460" />
+<text x="608" y="472" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%qtconsole</text>
+<text x="718" y="472" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Open a qtconsole connected to this kernel.</text>
+<line x1="707" y1="460" x2="707" y2="477" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="477" />
+<text x="608" y="489" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%quickref</text>
+<text x="718" y="489" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Show a quick reference sheet</text>
+<line x1="707" y1="477" x2="707" y2="494" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="494" />
+<text x="608" y="506" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%quickref_text</text>
+<text x="718" y="506" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Return the quickref text to be assigned to a variable</text>
+<line x1="707" y1="494" x2="707" y2="511" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="511" />
+<text x="608" y="523" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%recall</text>
+<text x="718" y="523" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Repeat a command, or get command to input line for editing.</text>
+<line x1="707" y1="511" x2="707" y2="528" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="528" />
+<text x="608" y="540" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%rehashx</text>
+<text x="718" y="540" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Update the alias table with all executable files in $PATH.</text>
+<line x1="707" y1="528" x2="707" y2="545" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="545" />
+<text x="608" y="557" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%reload_ext</text>
+<text x="718" y="557" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Reload an IPython extension by its module name.</text>
+<line x1="707" y1="545" x2="707" y2="562" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="562" />
+<text x="608" y="574" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%rep</text>
+<text x="718" y="574" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%recall`.</text>
+<line x1="707" y1="562" x2="707" y2="579" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="579" />
+<text x="608" y="591" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%rerun</text>
+<text x="718" y="591" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Re-run previous input</text>
+<line x1="707" y1="579" x2="707" y2="596" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="596" />
+<text x="608" y="608" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%reset</text>
+<text x="718" y="608" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Resets the namespace by removing all names defined by the user, if</text>
+<line x1="707" y1="596" x2="707" y2="613" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="613" />
+<text x="608" y="625" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%reset_selective</text>
+<text x="718" y="625" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Resets the namespace by removing names defined by the user.</text>
+<line x1="707" y1="613" x2="707" y2="630" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="630" />
+<text x="608" y="642" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%rm</text>
+<text x="718" y="642" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!rm`</text>
+<line x1="707" y1="630" x2="707" y2="647" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="647" />
+<text x="608" y="659" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%rmdir</text>
+<text x="718" y="659" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `!rmdir`</text>
+<line x1="707" y1="647" x2="707" y2="664" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="664" />
+<text x="608" y="676" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%run</text>
+<text x="718" y="676" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Run the named file inside IPython as a program.</text>
+<line x1="707" y1="664" x2="707" y2="681" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="681" />
+<text x="608" y="693" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%save</text>
+<text x="718" y="693" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Save a set of lines or a macro to a given filename.</text>
+<line x1="707" y1="681" x2="707" y2="698" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="698" />
+<text x="608" y="710" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%sc</text>
+<text x="718" y="710" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell capture - run shell command and capture output (DEPRECATED use !).</text>
+<line x1="707" y1="698" x2="707" y2="715" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="8" width="600"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="598"  y="715" />
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="1" />
+<text x="1220" y="13" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%set_env</text>
+<text x="1310" y="13" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Set environment variables.  Assumptions are that either "val" is a</text>
+<line x1="1299" y1="1" x2="1299" y2="18" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="18" />
+<text x="1220" y="30" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%store</text>
+<text x="1310" y="30" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Lightweight persistence for python variables.</text>
+<line x1="1299" y1="18" x2="1299" y2="35" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="35" />
+<text x="1220" y="47" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%sx</text>
+<text x="1310" y="47" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell execute - run shell command and capture output (!! is short-hand).</text>
+<line x1="1299" y1="35" x2="1299" y2="52" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="52" />
+<text x="1220" y="64" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%system</text>
+<text x="1310" y="64" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell execute - run shell command and capture output (!! is short-hand).</text>
+<line x1="1299" y1="52" x2="1299" y2="69" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="69" />
+<text x="1220" y="81" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%tb</text>
+<text x="1310" y="81" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print the last traceback with the currently active exception mode.</text>
+<line x1="1299" y1="69" x2="1299" y2="86" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="86" />
+<text x="1220" y="98" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%time</text>
+<text x="1310" y="98" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Time execution of a Python statement or expression.</text>
+<line x1="1299" y1="86" x2="1299" y2="103" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="103" />
+<text x="1220" y="115" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%timeit</text>
+<text x="1310" y="115" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Time execution of a Python statement or expression</text>
+<line x1="1299" y1="103" x2="1299" y2="120" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="120" />
+<text x="1220" y="132" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%unalias</text>
+<text x="1310" y="132" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Remove an alias</text>
+<line x1="1299" y1="120" x2="1299" y2="137" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="137" />
+<text x="1220" y="149" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%unload_ext</text>
+<text x="1310" y="149" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Unload an IPython extension by its module name.</text>
+<line x1="1299" y1="137" x2="1299" y2="154" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="154" />
+<text x="1220" y="166" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%who</text>
+<text x="1310" y="166" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Print all interactive variables, with some minimal formatting.</text>
+<line x1="1299" y1="154" x2="1299" y2="171" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="171" />
+<text x="1220" y="183" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%who_ls</text>
+<text x="1310" y="183" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Return a sorted list of all interactive variables.</text>
+<line x1="1299" y1="171" x2="1299" y2="188" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="188" />
+<text x="1220" y="200" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%whos</text>
+<text x="1310" y="200" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Like %who, but gives some extra information about each variable.</text>
+<line x1="1299" y1="188" x2="1299" y2="205" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="205" />
+<text x="1220" y="217" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%xdel</text>
+<text x="1310" y="217" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Delete a variable, trying to clear it from anywhere that</text>
+<line x1="1299" y1="205" x2="1299" y2="222" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="222" />
+<text x="1220" y="234" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%xmode</text>
+<text x="1310" y="234" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Switch modes for the exception handlers.</text>
+<line x1="1299" y1="222" x2="1299" y2="239" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="239" />
+<text x="1220" y="251" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%!</text>
+<text x="1310" y="251" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell execute - run shell command and capture output (!! is short-hand).</text>
+<line x1="1299" y1="239" x2="1299" y2="256" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="256" />
+<text x="1220" y="268" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%HTML</text>
+<text x="1310" y="268" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%%html`.</text>
+<line x1="1299" y1="256" x2="1299" y2="273" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="273" />
+<text x="1220" y="285" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%SVG</text>
+<text x="1310" y="285" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%%svg`.</text>
+<line x1="1299" y1="273" x2="1299" y2="290" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="290" />
+<text x="1220" y="302" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%bash</text>
+<text x="1310" y="302" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%bash script magic</text>
+<line x1="1299" y1="290" x2="1299" y2="307" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="307" />
+<text x="1220" y="319" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%capture</text>
+<text x="1310" y="319" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="1299" y1="307" x2="1299" y2="324" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="324" />
+<text x="1220" y="336" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%debug</text>
+<text x="1310" y="336" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="1299" y1="324" x2="1299" y2="341" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="341" />
+<text x="1220" y="353" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%file</text>
+<text x="1310" y="353" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Alias for `%%writefile`.</text>
+<line x1="1299" y1="341" x2="1299" y2="358" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="358" />
+<text x="1220" y="370" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%html</text>
+<text x="1310" y="370" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Render the cell as a block of HTML</text>
+<line x1="1299" y1="358" x2="1299" y2="375" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="375" />
+<text x="1220" y="387" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%javascript</text>
+<text x="1310" y="387" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Run the cell block of Javascript code</text>
+<line x1="1299" y1="375" x2="1299" y2="392" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="392" />
+<text x="1220" y="404" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%js</text>
+<text x="1310" y="404" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Run the cell block of Javascript code</text>
+<line x1="1299" y1="392" x2="1299" y2="409" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="409" />
+<text x="1220" y="421" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%latex</text>
+<text x="1310" y="421" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Render the cell as a block of latex</text>
+<line x1="1299" y1="409" x2="1299" y2="426" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="426" />
+<text x="1220" y="438" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%perl</text>
+<text x="1310" y="438" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%perl script magic</text>
+<line x1="1299" y1="426" x2="1299" y2="443" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="443" />
+<text x="1220" y="455" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%prun</text>
+<text x="1310" y="455" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Run a statement through the python code profiler.</text>
+<line x1="1299" y1="443" x2="1299" y2="460" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="460" />
+<text x="1220" y="472" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%pypy</text>
+<text x="1310" y="472" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%pypy script magic</text>
+<line x1="1299" y1="460" x2="1299" y2="477" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="477" />
+<text x="1220" y="489" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python</text>
+<text x="1310" y="489" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python script magic</text>
+<line x1="1299" y1="477" x2="1299" y2="494" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="494" />
+<text x="1220" y="506" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python2</text>
+<text x="1310" y="506" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python2 script magic</text>
+<line x1="1299" y1="494" x2="1299" y2="511" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="511" />
+<text x="1220" y="523" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python3</text>
+<text x="1310" y="523" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%python3 script magic</text>
+<line x1="1299" y1="511" x2="1299" y2="528" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="528" />
+<text x="1220" y="540" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%ruby</text>
+<text x="1310" y="540" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%ruby script magic</text>
+<line x1="1299" y1="528" x2="1299" y2="545" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="545" />
+<text x="1220" y="557" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%script</text>
+<text x="1310" y="557" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="1299" y1="545" x2="1299" y2="562" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="562" />
+<text x="1220" y="574" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%sh</text>
+<text x="1310" y="574" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%sh script magic</text>
+<line x1="1299" y1="562" x2="1299" y2="579" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="579" />
+<text x="1220" y="591" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%svg</text>
+<text x="1310" y="591" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Render the cell as an SVG literal</text>
+<line x1="1299" y1="579" x2="1299" y2="596" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="596" />
+<text x="1220" y="608" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%sx</text>
+<text x="1310" y="608" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell execute - run shell command and capture output (!! is short-hand).</text>
+<line x1="1299" y1="596" x2="1299" y2="613" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="613" />
+<text x="1220" y="625" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%system</text>
+<text x="1310" y="625" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Shell execute - run shell command and capture output (!! is short-hand).</text>
+<line x1="1299" y1="613" x2="1299" y2="630" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="630" />
+<text x="1220" y="642" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%time</text>
+<text x="1310" y="642" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Time execution of a Python statement or expression.</text>
+<line x1="1299" y1="630" x2="1299" y2="647" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="647" />
+<text x="1220" y="659" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%timeit</text>
+<text x="1310" y="659" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">Time execution of a Python statement or expression</text>
+<line x1="1299" y1="647" x2="1299" y2="664" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="17" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="664" />
+<text x="1220" y="676" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial">%%writefile</text>
+<text x="1310" y="676" font-size= "12" font-weight = "normal" style="fill:rgb(0, 0, 0)" font-family="Arial"></text>
+<line x1="1299" y1="664" x2="1299" y2="681" style="stroke:rgb(0, 0, 0); stroke-width:1"/>
+<rect  height="8" width="575"  style=" fill:rgb(255, 255, 255); stroke:rgb(0, 0, 0); stroke-width:1"  x="1210"  y="681" />
+</svg>
