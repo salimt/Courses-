@@ -19,6 +19,8 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [Duke University - Java Programming: Solving Problems with Software](./Duke-Java-Programming-Solving-Problems-with-Software)
 
+- #### [Duke University - Java Programming: Arrays, Lists, and Structured Data](./Duke-Java-Programming-Arrays-Lists-Structured-Data)
+
 - #### [Duke University - Data Science Math Skills](./Duke-University-Data-Science-Math-Skills)
 
 - #### [Massachusetts Institute of Technology - Introduction to Computer Science and Programming Using Python 6.00.1x](./MITx-6.00.1x)
