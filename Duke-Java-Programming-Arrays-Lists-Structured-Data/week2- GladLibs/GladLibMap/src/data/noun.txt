@@ -1,0 +1,7 @@
+house
+carport
+elevator
+wheelbarrow
+apple
+eyeball
+

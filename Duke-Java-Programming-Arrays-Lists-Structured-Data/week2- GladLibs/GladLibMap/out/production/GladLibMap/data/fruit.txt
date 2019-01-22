@@ -1,0 +1,14 @@
+apple
+orange
+pear
+strawberry
+kiwi
+banana
+plum
+mango
+lemon
+pomegranate
+apricot
+avocado
+peach
+fig

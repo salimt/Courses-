@@ -1,0 +1,24 @@
+minutes
+centuries
+decades
+hours
+months
+millennia
+eons
+moments
+seconds
+days
+lifetimes
+weeks
+years
+galactic years
+lunar years
+Svedbergs
+nanoseconds
+Planck times
+jiffies
+shakes of a lamb’s tail
+fortnights
+
+
+

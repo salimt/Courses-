@@ -1,0 +1,7 @@
+This is a <adjective> story about how a <color> <animal>
+became a <color> <animal>. Once upon a time, about <number>
+<timeframe> ago, <adjective>, <adjective> <animal>s roamed the
+earth. One of them was named <name>. This <animal> was alone in
+the world. Then it became a <color> <animal> living in <country>.
+
+
