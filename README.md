@@ -13,7 +13,9 @@ The quiz and programming homework is belong to coursera and edx.
 
 2. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
 
-- #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
+- #### [University of Helsinki: Object-Oriented Programming with Java, part I](./University%20of%20Maryland%20-%20Programming%20Mobile%20Applications%20for%20Android%20Handheld%20Systems%2C%20Part%20I)
+
+- #### [University of Maryland, College Park: Programming Mobile Applications for Android Handheld Systems: Part 1](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [Harvard University - Introduction to Computer Science CS50x](./Harvard-CS50x)
 
