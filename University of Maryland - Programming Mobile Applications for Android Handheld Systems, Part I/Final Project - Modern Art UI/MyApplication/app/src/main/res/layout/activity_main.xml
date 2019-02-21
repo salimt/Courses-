@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ff000000">
+
+        <FrameLayout
+            android:id="@+id/white"
+            android:layout_width="195dp"
+            android:layout_height="206dp"
+            android:background="#D3D3D3"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="#3651DD"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/sofgreen"
+            android:layout_width="208dp"
+            android:layout_height="403dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="102dp"
+            android:layout_marginBottom="34dp"
+            android:background="#638941"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/pink"
+            android:layout_width="118dp"
+            android:layout_height="701dp"
+            android:background="#DD4589"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/melon"
+            android:layout_width="118dp"
+            android:layout_height="701dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:background="#DDda99"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/sbox1"
+            android:layout_width="117dp"
+            android:layout_height="117dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="294dp"
+            android:layout_marginBottom="318dp"
+            android:background="#166366"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/sbox2"
+            android:layout_width="174dp"
+            android:layout_height="119dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="119dp"
+            android:layout_marginBottom="198dp"
+            android:background="#F98563"
+            android:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/sbox3"
+            android:layout_width="119dp"
+            android:layout_height="123dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="77dp"
+            android:background="#111222"
+            android:visibility="visible" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:max="255" />
+
+</RelativeLayout>
