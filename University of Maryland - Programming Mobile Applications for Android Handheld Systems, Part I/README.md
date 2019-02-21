@@ -16,3 +16,9 @@ This course introduces you to the design and implementation of Android applicati
 - Intents, Permissions, and Fragments
 - User Interface Classes
 - Build From Scratch Assignment
+
+#### Final Project
+
+- Create an application from scratch with an interesting user interface using what you learned in the User Interface Classes Lesson. For example, here's a screenshot of an app that I created.
+
+<img src="https://i.imgur.com/hwO0T88.png" alt="mine">
