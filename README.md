@@ -8,6 +8,8 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
 
+- #### [University of California, San Diego - Object Oriented Programming in Java](./UCSD-Object-Oriented-Programming-in-Java)
+
 - #### [IBM: Applied Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
 1. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
 
