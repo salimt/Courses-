@@ -14,3 +14,7 @@ This is an intermediate Java course. We recommend this course to learners who ha
 1. created an interactive graphical map that displayed geospatial data using unfolding maps library and essentials of data cleaning and data visualization
 2. used core object oriented programming principles like encapsulation, inheritance, polymorphism and abstraction.
 3. implemented event driven programming and implemented effecient searching and sorting techniques for data to be displayed.
+
+Final Project:
+
+<img src="https://i.imgur.com/8pvczwQ.png" alt="Smiley face" height="200" width="1500">
