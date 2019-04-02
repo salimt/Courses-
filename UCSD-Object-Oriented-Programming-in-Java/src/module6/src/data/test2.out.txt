@@ -1,0 +1,15 @@
+Afghanistan: 1
+Argentina: 2
+Bolivia: 1
+Chile: 1
+China: 3
+Democratic Republic of the Congo: 2
+Indonesia: 2
+Japan: 4
+Mexico: 1
+Philippines: 1
+Papua New Guinea: 1
+El Salvador: 1
+Uzbekistan: 1
+Venezuela: 1
+OCEAN QUAKES: 67

@@ -1,0 +1,48 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","properties":{"name":"Berlin", "population":"3.375", "country" : "Germany", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[13.383, 52.5167]}},
+{"type":"Feature","properties":{"name":"Tokyo", "population":"13.35", "country" : "Japan", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[139.6833, 35.6833]}},
+{"type":"Feature","properties":{"name":"New Delhi", "population":"9.88", "country" : "India", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[ 77.2090, 28.6139]}},
+{"type":"Feature","properties":{"name":"Los Angeles", "population":"3.92", "country" : "United States", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-118.2500, 34.0500]}},
+{"type":"Feature","properties":{"name":"Boston", "population":" 4.18", "country" : "United States", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-71.0589, 42.3601]}},
+{"type":"Feature","properties":{"name":"Copenhagen", "population":"1.26", "country" : "Denmark", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[12.5683, 55.6761]}},
+{"type":"Feature","properties":{"name":"Mexico City", "population":"8.85", "country" : "Mexico", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[-99.1333, 19.4333]}},
+{"type":"Feature","properties":{"name":"Amsterdam", "population":"1.32", "country" : "Netherlands", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[4.9000, 52.3667]}},
+{"type":"Feature","properties":{"name":"Bangkok", "population":"8.28", "country" : "Thailand", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[100.5018, 13.7563]}},
+{"type":"Feature","properties":{"name":"Sydney", "population":"4.84", "country" : "Australia", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[151.2094, -33.8650]}},
+{"type":"Feature","properties":{"name":"Prague", "population":"1.26", "country" : "Czech Republic", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[14.4167, 50.0833]}},
+{"type":"Feature","properties":{"name":"Cape Town", "population":"0.43", "country" : "South Africa", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[18.4239, -33.9253]}},
+{"type":"Feature","properties":{"name":"Taipei", "population":"2.70", "country" : "Taiwan", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[121.6333, 25.0333]}},
+{"type":"Feature","properties":{"name":"Hong Kong", "population":"7.23", "country" : "China", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[114.1747, 22.2783]}},
+{"type":"Feature","properties":{"name":"Shanghai", "population":"24.26", "country" : "China", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[121.5000, 31.2000]}},
+{"type":"Feature","properties":{"name":"San Juan", "population":"0.39", "country" : "Puerto Rico", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-66.0667, 18.4500]}},
+{"type":"Feature","properties":{"name":"Nairobi", "population":"3.14", "country" : "Kenya", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[36.8167, -1.2833]}},
+{"type":"Feature","properties":{"name":"Bergen", "population":"0.27", "country" : "Norway", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[5.3300, 60.3894]}},
+{"type":"Feature","properties":{"name":"Santiago", "population":"5.15", "country" : "Chile", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[-70.6667, -33.4500]}},
+{"type":"Feature","properties":{"name":"Busan", "population":"3.53", "country" : "South Korea", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[129.0667, 35.1667]}},
+{"type":"Feature","properties":{"name":"Singapore", "population":"5.47", "country" : "Republic of Singapore", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[103.8000, 1.3000]}},
+{"type":"Feature","properties":{"name":"Paris", "population":"2.24", "country" : "France", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[2.3408, 48.8567]}},
+{"type":"Feature","properties":{"name":"Rio de Janeiro", "population":"6.45", "country" : "Brazil", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-43.1729, -22.9068]}},
+{"type":"Feature","properties":{"name":"Montevideo", "population":"1.31", "country" : "Uruguay", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-56.1819, -34.8836]}},
+{"type":"Feature","properties":{"name":"Caracas", "population":"3.27", "country" : "Venezuela", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-66.9167, 10.5000]}},
+{"type":"Feature","properties":{"name":"Madrid", "population":"3.17", "country" : "Spain", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[-3.7167, 40.4000]}},
+{"type":"Feature","properties":{"name":"Rome", "population":"2.87", "country" : "Italy", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[12.5000, 41.9000]}},
+{"type":"Feature","properties":{"name":"Athens", "population":"3.09", "country" : "Greece", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[23.7167, 37.9667]}},
+{"type":"Feature","properties":{"name":"Istanbul", "population":"14.10", "country" : "Turkey", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[28.9550, 41.0136]}},
+{"type":"Feature","properties":{"name":"Bucharest", "population":"1.88", "country" : "Romania", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[26.1025, 44.4268]}},
+{"type":"Feature","properties":{"name":"Perth", "population":"2.02", "country" : "Australia", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[115.8589, -31.9522]}},
+{"type":"Feature","properties":{"name":"Mumbai", "population":"12.48", "country" : "India", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[72.8258, 18.9750]}},
+{"type":"Feature","properties":{"name":"Helsinki", "population":"1.11", "country" : "Finland", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[24.9375, 60.1708]}},
+{"type":"Feature","properties":{"name":"Stockholm", "population":"1.37", "country" : "Sweden", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[18.0686, 59.3294]}},
+{"type":"Feature","properties":{"name":"Reykjavik", "population":"0.12", "country" : "Iceland", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-21.9333, 64.1333]}},
+{"type":"Feature","properties":{"name":"San Diego", "population":"1.38", "country" : "United States", "coastal" : "true"},"geometry":{"type":"Point","coordinates":[-117.1625, 32.7150]}},
+{"type":"Feature","properties":{"name":"Toronto", "population":"2.62", "country" : "Canada", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[-79.4000, 43.7000]}},
+{"type":"Feature","properties":{"name":"Moscow", "population":"12.20", "country" : "Russia", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[37.7500, 55.7500]}},
+{"type":"Feature","properties":{"name":"Tehran", "population":"8.15", "country" : "Iran", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[51.4231, 35.6961]}},
+{"type":"Feature","properties":{"name":"Cairo", "population":"10.23", "country" : "Egypt", "coastal" : "false"},"geometry":{"type":"Point","coordinates":[31.2333, 30.0500]}}
+]
+}
+
+// coastal or non-coastal
+// put more coastal cities
+// equal rep!
+// is Athens coastal?

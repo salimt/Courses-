@@ -1,0 +1,30 @@
+Output using file test2.atom with sortAndPrint(5)
+
+M 6.6 - 180km SW of Dadali, Solomon Islands
+M 5.9 - 34km WSW of Ashkasham, Afghanistan
+M 5.9 - 271km NE of Raoul Island, New Zealand
+M 5.9 - South of the Fiji Islands
+M 5.8 - 35km NNE of Kabare, Democratic Republic of the Congo
+
+Output using file test2.atom with sortAndPrint(20)
+
+M 6.6 - 180km SW of Dadali, Solomon Islands
+M 5.9 - 34km WSW of Ashkasham, Afghanistan
+M 5.9 - 271km NE of Raoul Island, New Zealand
+M 5.9 - South of the Fiji Islands
+M 5.8 - 35km NNE of Kabare, Democratic Republic of the Congo
+M 5.7 - 181km SE of Gizo, Solomon Islands
+M 5.7 - 16km ENE of Tonala, Mexico
+M 5.6 - 51km WNW of Pangai, Tonga
+M 5.5 - 42km N of Cyangugu, Rwanda
+M 5.4 - 290km NE of Raoul Island, New Zealand
+M 5.4 - 138km SSW of Kokopo, Papua New Guinea
+M 5.3 - 247km ESE of Kimbe, Papua New Guinea
+M 5.3 - 95km NNW of Lautoka, Fiji
+M 5.3 - 67km NNW of Neiafu, Tonga
+M 5.3 - Off the coast of Ecuador
+M 5.3 - 119km NE of San Jose del Cabo, Mexico
+M 5.2 - 285km NE of Raoul Island, New Zealand
+M 5.2 - 46km N of La Serena, Chile
+M 5.2 - 53km SW of Padangsidempuan, Indonesia
+M 5.2 - 4km NE of Funaishikawa, Japan
