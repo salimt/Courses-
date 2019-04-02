@@ -1,6 +1,6 @@
 ## University of California, San Diego - Object Oriented Programming in Java
 
-<img src="https://i.imgur.com/Vcscj4i.png" alt="Smiley face" height="300" width="600">
+<img src="https://i.imgur.com/Vcscj4i.png" alt="Smiley face" height="200" width="600">
 
 ![University of California, San Diego](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: Mia Minnes, Leo Porter and Christine Alvarado
