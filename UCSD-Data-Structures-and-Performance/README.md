@@ -45,6 +45,6 @@ spelling.WPTree.java
 
 Final Project:
 
-<img src="https://i.imgur.com/f3y9ACN.png" alt="Smiley face" height="200" width="1500">
-<img src="https://i.imgur.com/O7FJSxq.png" alt="Smiley face" height="200" width="1500">
-<img src="https://i.imgur.com/KEkcdX6.png" alt="Smiley face" height="200" width="1500">
+ <a><img src="https://i.imgur.com/f3y9ACN.png"/></a> 
+ <a><img src="https://i.imgur.com/O7FJSxq.png"/></a> 
+ <a><img src="https://i.imgur.com/KEkcdX6.png"/></a> 
