@@ -10,6 +10,8 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [University of California, San Diego - Object Oriented Programming in Java](./UCSD-Object-Oriented-Programming-in-Java)
 
+- #### [University of California, San Diego - Data Structures and Performance](./UCSD-Data-Structures-and-Performance)
+
 - #### [IBM: Applied Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
 1. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
 
