@@ -1,0 +1,5 @@
+** Test #1: Testing short path...Your path was: pool, spool, spoon.
+** Test #2: Testing long path...Your path was: stools, tools, fools, fool, pool, spool, spoon, soon, moon.
+** Test #3: Testing impossible path...Your path was: NULL PATH.
+** Test #4: Testing using a nonexistent word...Your path was: NULL PATH.
+Tests complete. Make sure everything looks right.

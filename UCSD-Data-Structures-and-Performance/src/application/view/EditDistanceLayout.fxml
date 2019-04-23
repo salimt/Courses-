@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="true" prefHeight="200.0" prefWidth="300.0" spacing="10.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.EditDistanceDialogController">
+  <children>
+    <Label text="Enter two words...">
+      <font>
+        <Font name="System Bold" size="16.0" />
+      </font>
+      <VBox.margin>
+        <Insets top="25.0" />
+      </VBox.margin>
+    </Label>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+      <children>
+        <Label text="Word 1 :">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Label>
+        <TextField fx:id="word1" prefHeight="25.0" prefWidth="155.0" />
+      </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+      <children>
+        <Label font="$x1" text="Word 2 :" />
+        <TextField fx:id="word2" prefHeight="25.0" prefWidth="155.0" />
+      </children>
+    </HBox>
+    <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="35.0">
+      <children>
+        <Button font="$x1" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+        <Button fx:id="okButton" font="$x1" mnemonicParsing="false" onAction="#handleOk" prefWidth="65.0" text="OK" />
+      </children>
+      <VBox.margin>
+        <Insets bottom="25.0" />
+      </VBox.margin>
+    </HBox>
+  </children>
+</VBox>

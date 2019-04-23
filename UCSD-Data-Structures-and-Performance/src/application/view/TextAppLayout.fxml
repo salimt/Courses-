@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../application.css?>
+
+
+<HBox fx:id="container" maxHeight="1080.0" maxWidth="1980.0"  prefHeight="582.0" prefWidth="855.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.TextProController">
+	<fx:define>
+	<Double fx:id="MIN_WINDOW" fx:value="334.0" />
+	</fx:define>
+  <children>
+    <VBox fx:id="leftPane" minHeight="200.0" minWidth="0.0" prefHeight="400.0" prefWidth="402.0" spacing="10.0" HBox.hgrow="ALWAYS">
+      <children>
+        <HBox alignment="CENTER_LEFT" maxHeight="32.0" minHeight="32.0" minWidth="0" prefHeight="32.0" prefWidth="642.0" spacing="15.0" VBox.vgrow="NEVER">
+          <children>
+            <TextField fx:id="fleschField" minWidth="72.0" prefWidth="72.0" HBox.hgrow="NEVER" />
+            <Label fx:id="fLabel" minWidth="81.0" prefWidth="81.0" text="Flesch Index" HBox.hgrow="NEVER">
+              <font>
+                <Font name="System Bold" size="14.0" />
+              </font>
+            </Label>
+            <Pane fx:id="bufferPane" maxHeight="32.0" maxWidth="+Infinity" minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+            <Button minWidth="56.0" mnemonicParsing="false" onAction="#handleClear" text="Clear">
+              <font>
+                <Font size="14.0" fx:id="x1" />
+              </font>
+              <HBox.margin>
+                <Insets />
+              </HBox.margin>
+            </Button>
+          </children>
+          <padding>
+            <Insets />
+          </padding>
+        </HBox>
+      </children>
+      <padding>
+        <Insets bottom="25.0" left="40.0" right="40.0" top="25.0" />
+      </padding>
+    </VBox>
+    <VBox fx:id="rightBox" maxWidth="-1.0" minWidth="205" prefHeight="582.0" prefWidth="205.0" spacing="55.0" HBox.hgrow="NEVER">
+      <children>
+        <Button font="$x1" mnemonicParsing="false" onAction="#handleLoadText" prefHeight="21.0" prefWidth="160.0" text="Load Text" />
+        <Button font="$x1" mnemonicParsing="false" onAction="#handleFleschIndex" prefWidth="160.0" text="Flesch Index" />
+        <Button font="$x1" mnemonicParsing="false" onAction="#handleEditDistance" prefHeight="21.0" prefWidth="160.0" text="Edit Distance" />
+        <Button mnemonicParsing="false" onAction="#handleMarkovText" prefHeight="25.0" prefWidth="160.0" text="Generate Markov Text">
+          <font>
+            <Font size="13.5" />
+          </font>
+        </Button>
+        <CheckBox fx:id="spellingBox" font="$x1" mnemonicParsing="false" onAction="#handleSpelling" text="Spelling Suggestions" />
+        <CheckBox fx:id="autocompleteBox" font="$x1" mnemonicParsing="false" onAction="#handleAutoComplete" text="AutoComplete" />
+      </children>
+      <padding>
+        <Insets bottom="20.0" left="5.0" />
+      </padding>
+      <HBox.margin>
+        <Insets top="50.0" />
+      </HBox.margin>
+    </VBox> <Text fx:id="actiontarget" GridPane.columnIndex="1" GridPane.rowIndex="6" text="author: salimt" />
+  </children>
+</HBox>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MarkovOptionsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="109.0" layoutY="42.0" text="Markov Option:" />
+    <Label layoutX="33.0" layoutY="100.0" prefWidth="164.9998779296875" text="Number of words to generate :" />
+    <TextField fx:id="numWordsField" layoutX="211.0" layoutY="97.0" prefWidth="50.0" />
+    <Button layoutX="123.0" layoutY="150.0" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+  </children>
+</AnchorPane>

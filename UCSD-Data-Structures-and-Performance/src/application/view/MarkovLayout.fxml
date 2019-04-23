@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MarkovController">
+  <!-- TODO Add Nodes -->
+  <bottom>
+    <VBox alignment="BOTTOM_CENTER" fillWidth="true" prefHeight="90.0" prefWidth="400.0" spacing="15.0">
+      <children>
+        <HBox alignment="CENTER" spacing="15.0">
+          <Label text="Number of words :">
+            <font>
+              <Font size="14.0" fx:id="x1" />
+            </font>
+          </Label>
+          <TextField fx:id="numWordsField" prefHeight="32.0" prefWidth="57.0" />
+        </HBox>
+        <Button font="$x1" mnemonicParsing="false" onAction="#handleGenerate" text="Generate Text!" />
+      </children>
+      <padding>
+        <Insets bottom="25.0" />
+      </padding>
+      <BorderPane.margin>
+        <Insets top="15.0" />
+      </BorderPane.margin>
+    </VBox>
+  </bottom>
+  <center>
+    <TextArea fx:id="resultBox" prefHeight="420.0" prefWidth="340.0" wrapText="true" />
+  </center>
+  <left>
+    <VBox prefHeight="450.0" prefWidth="30.0" />
+  </left>
+  <right>
+    <VBox prefHeight="450.0" prefWidth="30.0" />
+  </right>
+  <top>
+    <HBox alignment="CENTER" prefHeight="85.0" prefWidth="400.0">
+      <children>
+        <Label text="Markov Text" textAlignment="LEFT">
+          <font>
+            <Font size="40.0" />
+          </font>
+        </Label>
+      </children>
+    </HBox>
+  </top>
+</BorderPane>

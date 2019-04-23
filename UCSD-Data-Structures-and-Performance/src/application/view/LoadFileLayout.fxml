@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0"  minHeight ="35.0" spacing="25.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.LoadFileDialogController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label text="Choose text file..." />
+    <HBox alignment="CENTER" spacing="10.0">
+      <children>
+        <TextField fx:id="pathField" prefHeight="30.0" prefWidth="162.0" />
+        <Button mnemonicParsing="false" onAction="#handleBrowse" text="Browse" />
+      </children>
+      <padding>
+        <Insets />
+      </padding>
+    </HBox>
+    <HBox alignment="CENTER" spacing="30.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#handleAppend" text="Append" />
+        <Button mnemonicParsing="false" onAction="#handleReplace" text="Replace" />
+      </children>
+    </HBox>
+  </children>
+</VBox>

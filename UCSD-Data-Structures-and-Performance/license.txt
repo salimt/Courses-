@@ -1,0 +1,4 @@
+RichTextFX API:
+Dual-licensed under BSD 2-Clause License and GPLv2 with the Classpath Exception.
+http://opensource.org/licenses/BSD-2-Clause
+http://openjdk.java.net/legal/gplv2+ce.html
