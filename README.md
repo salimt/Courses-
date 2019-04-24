@@ -13,9 +13,13 @@ The quiz and programming homework is belong to coursera and edx.
 - #### [University of California, San Diego - Data Structures and Performance](./UCSD-Data-Structures-and-Performance)
 
 - #### [IBM: Applied Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
-1. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
+1. [IBM: Open Source tools for Data Science](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Open%20Source%20tools%20for%20Data%20Science)
 
-2. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
+2. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
+
+3. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
+
+
 
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
