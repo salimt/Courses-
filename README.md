@@ -12,6 +12,8 @@ The quiz and programming homework is belong to coursera and edx.
 
 - #### [University of California, San Diego - Data Structures and Performance](./UCSD-Data-Structures-and-Performance)
 
+- #### [University of California, San Diego - Advanced Data Structures in Java](./UCSD-Advanced-Data-Structures-in-Java)
+
 - #### [IBM: Applied Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
 1. [IBM: Open Source tools for Data Science](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Open%20Source%20tools%20for%20Data%20Science)
 
