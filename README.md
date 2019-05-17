@@ -20,9 +20,11 @@ The quiz and programming homework is belong to coursera and edx.
 
 2. [IBM: Data Science Methodology](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Science%20Methodology)
 
-3. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
+3. [IBM: Databases and SQL for Data Science](./Applied-Data-Science-Specialization-IBM/IBM%20%20Databases%20nd%20SQL%20for%20Data%20Science)
 
-4. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
+4. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
+
+5. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
 
 
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
