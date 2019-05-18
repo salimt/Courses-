@@ -20,7 +20,7 @@ The quiz and programming homework is belong to coursera and edx.
 
 2. [IBM: Data Science Methodology](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Science%20Methodology)
 
-3. [IBM: Databases and SQL for Data Science](./Applied-Data-Science-Specialization-IBM/IBM%20%20Databases%20nd%20SQL%20for%20Data%20Science)
+3. [IBM: Databases and SQL for Data Science](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Databases%20and%20SQL%20for%20Data%20Science)
 
 4. [IBM: Data Analysis with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Analysis%20with%20Python)
 
