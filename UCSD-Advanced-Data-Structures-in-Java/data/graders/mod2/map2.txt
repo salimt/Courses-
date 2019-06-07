@@ -1,0 +1,6 @@
+0 0 1 1 "Road 1" edge
+1 1 2 2 "Road 2" edge
+2 2 3 3 "Road 3" edge
+3 3 4 4 "Road 4" edge
+4 4 5 5 "Road 5" edge
+5 5 6 6 "Road 6" edge

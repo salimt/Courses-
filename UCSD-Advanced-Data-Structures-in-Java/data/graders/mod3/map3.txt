@@ -1,0 +1,7 @@
+0 0 -1 1 "Zig" edge
+-1 1 1 2 "Zag" edge
+1 2 0 3 "Left" edge
+0 3 4 4 "Mid" edge
+0 0 2 2 "Right" edge
+2 2 4 4 "Right" edge
+4 4 0 4 "Upper" edge
