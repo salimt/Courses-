@@ -23,6 +23,4 @@ The backbone project in this course will be a route planning application.  You w
 
 Final Project:
 
- <a><img src="https://i.imgur.com/f3y9ACN.png"/></a> 
- <a><img src="https://i.imgur.com/O7FJSxq.png"/></a> 
- <a><img src="https://i.imgur.com/KEkcdX6.png"/></a> 
+ <a><img src="https://i.imgur.com/gD8pTOv.png"/></a> 
