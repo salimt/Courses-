@@ -28,6 +28,7 @@ The quiz and programming homework is belong to coursera and edx.
 
 6. [IBM: Data Visualization with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Data%20Visualization%20with%20Python)
 
+7. [IBM: Machine Learning with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%Machine%Learning%20with%20Python)
 
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
