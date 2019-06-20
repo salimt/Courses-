@@ -59,4 +59,6 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [University of British Columbia - Software Construction: Data Abstraction](./UBCx-Software-Construction-Data-Abstraction-SoftConst1x)
 
+- #### [University of British Columbia - Software Construction: Object-Oriented Design](./UBCx-Software-Construction-OOP-SoftConst2x)
+
 
