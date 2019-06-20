@@ -15,3 +15,6 @@ You will learn techniques to:
 - How to read and use software design patterns
 - To implement and test an object-oriented design
 - How to develop a mobile application
+
+## Final Project
+![University of British Columbia](https://i.imgur.com/jBsGBeE.png)
