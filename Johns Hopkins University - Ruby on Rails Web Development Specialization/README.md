@@ -1,6 +1,6 @@
 # Johns Hopkins University: Ruby on Rails Web Development Specialization
 
-<img src="https://pages.jh.edu/~chem/klausen/Images/JHU_logo.png" alt="Smiley face" height="300" width="600">
+<img src="https://pages.jh.edu/~chem/klausen/Images/JHU_logo.png">
 
 ![Johns Hopkins University](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: Kalman Hazins
