@@ -61,4 +61,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [University of British Columbia - Software Construction: Object-Oriented Design](./UBCx-Software-Construction-OOP-SoftConst2x)
 
+- #### [Johns Hopkins University: Ruby on Rails Web Development Specialization](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization)
+
+1. [Johns Hopkins University - Ruby on Rails](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails)
 
