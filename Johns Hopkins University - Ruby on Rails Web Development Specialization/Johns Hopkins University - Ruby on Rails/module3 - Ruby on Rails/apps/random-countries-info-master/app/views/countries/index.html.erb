@@ -1,0 +1,24 @@
+<h1>Countries (<%= @countries_to_display.size %>)</h1>
+
+<table border="1">
+  <tr>
+    <th>Flag</th>
+    <th>Name</th>
+    <th>Capital</th>
+    <th>Population</th>
+    <th>Languages Spoken</th>
+    <th>Borders With</th>
+    <th>Lat/Long</th>
+  </tr>
+  <% @countries_to_display.each do |country| %>
+    <tr class=<%= cycle('even', 'odd') %>>
+      <td><%= image_tag country["flag"], alt: "Flag of #{country['name']}", size: "100x50", class: "flag" %></td>
+      <td><%= country["name"] %></td>
+      <td><%= country["capital"] %></td>
+      <td><%= number_to_human country["population"].to_i %></td>
+      <td><%= country["languages"].join(", ") %></td>
+      <td><%= country["borders"].join(", ") %></td>
+      <td><%= country["latlng"].join(", ") %></td>
+    </tr>
+  <% end %>
+</table>
