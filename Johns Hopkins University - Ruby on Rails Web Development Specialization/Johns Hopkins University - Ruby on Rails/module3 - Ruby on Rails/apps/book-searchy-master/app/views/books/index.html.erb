@@ -1,0 +1,34 @@
+<div id='search-form'>
+  <%= form_tag(root_path, method: :get) do %>
+    <%= search_field_tag :looking_for, nil, placeholder: "Book Title..." %>
+    <%= submit_tag 'Search', id: 'submit-button' %>
+  <% end %>
+</div>
+
+<% if @books.empty? %>
+
+No books found matching '<%= @search_term %>'
+
+<% else %>
+
+<table border="1">
+  <tr>
+    <th>Image</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+  <% @books.each do |book| %>
+    <tr class=<%= cycle('even', 'odd') %>>
+      <td><%= link_to image_tag(book["volumeInfo"]["imageLinks"]["smallThumbnail"], class: "linked-image"),
+                book["volumeInfo"]["previewLink"] if book["volumeInfo"]["imageLinks"]%></td>
+      <td><%= link_to(book["volumeInfo"]["title"], book["volumeInfo"]["previewLink"]) %></td>
+      <td><%= book["volumeInfo"]["authors"].join(',') if book["volumeInfo"]["authors"] %></td>
+      <td><%= sanitize(book["volumeInfo"]["description"]) %></td>
+      <td><%= link_to("Buy on Amazon", "https://www.amazon.com/dp/#{book['isbn10']}?tag=#{@amazon_tag}") if book['isbn10'] %></td>
+    </tr>
+  <% end %>
+</table>
+
+<% end %>

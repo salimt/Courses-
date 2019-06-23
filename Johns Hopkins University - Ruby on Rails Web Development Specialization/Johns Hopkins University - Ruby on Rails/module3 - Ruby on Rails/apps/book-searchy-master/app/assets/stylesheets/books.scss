@@ -1,0 +1,39 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 12px;
+}
+
+.even {
+  background-color: #D6E1C3;
+}
+
+.linked-image {
+    border: 2px pink dashed;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+#submit-button {
+    height: 25px;
+    width: 100px;
+    background: black;
+    color: white;
+    font-size: 10pt;
+}
+
+input#looking_for {
+    height: 65px;
+    width: 150px;
+    font-size: 14pt;
+}
+
+#search-form {
+    padding-bottom: 20px;
+}
