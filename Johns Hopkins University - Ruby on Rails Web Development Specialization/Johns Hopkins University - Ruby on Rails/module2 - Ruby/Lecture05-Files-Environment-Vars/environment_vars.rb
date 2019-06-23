@@ -1,0 +1,2 @@
+puts ENV["EDITOR"] # => subl
+

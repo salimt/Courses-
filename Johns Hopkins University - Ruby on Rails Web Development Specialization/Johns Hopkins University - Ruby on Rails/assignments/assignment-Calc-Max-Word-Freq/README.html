@@ -1,0 +1,135 @@
+<h2 id="assignment-for-module-2-calculate-maximum-word-frequency">Assignment for Module #2: Calculate Maximum Word Frequency</h2>
+<p>The overall goal of the assignment is to write a Ruby class and work with attributes, methods, hashes, and arrays.</p>
+<p>The functional goal of the assignment is to read some text from a file and find the word or words that appear the most in a line in the file. The way we are instructed to measure &quot;the words that appear the most&quot; is by</p>
+<pre><code>1. finding the highest frequency word(s) in each line
+2. finding lines in the file whose &quot;highest frequency words&quot; 
+   is the greatest value among all lines.</code></pre>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li>Write a class called LineAnalyzer that
+<ul>
+<li>records the location of a line of text in the file</li>
+<li>analyzes a line of text</li>
+<li>figures out the highest frequency word(s) on that line and their frequency count</li>
+</ul></li>
+<li>Write a driver class called Solution that
+<ul>
+<li>reads provided 'test.txt' file</li>
+<li>creates an array of LineAnalyzers</li>
+<li>selects the ones whose &quot;highest frequency words&quot; are the greatest among all LineAnalyzers</li>
+<li>prints out the results</li>
+</ul></li>
+</ol>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</p>
+<pre class="text"><code>--- student-start  
+|-- .rspec (important hidden file)
+|-- module2_assignment.rb
+|-- solution.rb
+|-- spec
+|   |-- line_analyzer_spec.rb
+|   |-- solution_spec.rb
+|   `-- spec_helper.rb
+`-- test.txt</code></pre>
+<ul>
+<li>module2_assignment.rb - your solution must be placed within this file and spread across two classes: LineAnalyzer and Solution.</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+<li>solution.rb - a script that you can use execute your Solution outside the scope of the unit tests</li>
+<li>test.txt - this file contains test data your solution will read an analyze.</li>
+</ul></li>
+<li><p>Install the following gem. You may already have it installed.</p>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its</code></pre></li>
+<li><p>Run the rspec command from the project root directory (i.e., <code>student-start</code> directory) to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution in module2_assignment2.rb.</p>
+<pre class="shell"><code>$ rspec
+
+FFFFFFFFFFFFFFFFF
+
+Failures:
+
+  1) LineAnalyzer 
+     Failure/Error: subject { LineAnalyzer.new(&quot;test&quot;, 1) }
+     ArgumentError:
+       wrong number of arguments (2 for 0)
+     # ./spec/line_analyzer_spec.rb:6:in `initialize&#39;
+     # ./spec/line_analyzer_spec.rb:6:in `new&#39;
+...
+Finished in 0.04955 seconds (files took 0.10746 seconds to load)
+17 examples, 17 failures
+...</code></pre></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Implement all parts of this assignment within the module2_assignment.rb file in the root directory of your solution. The grader will load this specific file from this location.</p></li>
+<li><p>Implement a class called LineAnalyzer. The grader will look for a class with this exact name.</p></li>
+<li>Implement the following read-only attributes in the LineAnalyzer class. The grader will look for accessor methods with these exact names.
+<ul>
+<li>highest_wf_count - a number with maximum number of occurrences for a single word (calculated)</li>
+<li>highest_wf_words - an array of words with the maximum number of occurrences (calculated)</li>
+<li>content - the string analyzed (provided)</li>
+<li>line_number - the line number analyzed (provided)</li>
+</ul></li>
+<li>Add the following methods in the LineAnalyzer class. The grader will look for methods with these exact names.
+<ul>
+<li>initialize() - taking a line of text (content) and a line number</li>
+<li>calculate_word_frequency() - calculates result and stores in attributes</li>
+</ul></li>
+<li>Implement the initialize() method to:
+<ul>
+<li>take in a line of text and line number</li>
+<li>initialize the content and line_number attributes</li>
+<li>call the calculate_word_frequency() method.</li>
+</ul></li>
+<li>Implement the calculate_word_frequency() method to:
+<ul>
+<li>calculate the maximum number of times a single word appears within provided content and store that in the highest_wf_count attribute.</li>
+<li>identify the words that were used the maximum number of times and store that in the highest_wf_words attribute.</li>
+</ul></li>
+<li><p>Implement a class called Solution. The grader will look for a class with this exact name.</p></li>
+<li>Implement the following read-only attributes in the Solution class. The grader will look for accessor methods with these exact names.
+<ul>
+<li>analyzers - an array that will hold a LineAnalyzer for each line of the input text file</li>
+<li>highest_count_across_lines - a number with the value of the highest frequency of a word</li>
+<li>highest_count_words_across_lines - an array of LineAnalyzers with the words with the highest frequency</li>
+</ul></li>
+<li>Implement the following methods in the Solution class. The grader will look for methods with these exact names.
+<ul>
+<li>initialize() - initialize the array that will have analyzers for each line of the file</li>
+<li>analyze_file() - processes 'test.txt' into an array of LineAnalyzers</li>
+<li>calculate_line_with_highest_frequency() - determines which line(s) of text has the highest number of occurrence of a single word</li>
+<li>print_highest_word_frequency_across_lines() - prints the word(s) with the highest number of occurrences and its corresponding line number</li>
+</ul></li>
+<li>Implement the initialize() method to:
+<ul>
+<li>initialize analyzers as an empty array</li>
+</ul></li>
+<li>Implement the analyze_file() method to:
+<ul>
+<li>Read the 'test.txt' file in lines</li>
+<li>Create an array of LineAnalyzers for each line in the file</li>
+</ul></li>
+<li>Implement the calculate_line_with_highest_frequency() method to:
+<ul>
+<li>calculate the maximum value for highest_wf_count contained by the LineAnalyzer objects in the analyzers array and store this result in the highest_count_across_lines attribute.</li>
+<li>identify the LineAnalyzer object(s) in the analyzers array that have the highest_wf_count equal to the highest_count_across_lines attribute value found in the previous step and store them in highest_count_words_across_lines attribute.</li>
+</ul></li>
+<li>Implement the print_highest_word_frequency_across_lines() method to
+<ul>
+<li>print the result in the following format</li>
+</ul>
+<pre class="text"><code>The following words have the highest word frequency per line: 
+[&quot;word1&quot;] (appears in line #)
+[&quot;word2&quot;, &quot;word3&quot;] (appears in line #)</code></pre></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>You can self-grade yourself by calculating the result from the simple text file provided and by using the rspec unit tests also provided. When the solution has been completed successfully, the rspec test result should look ast follows.</p>
+<pre class="shell"><code>$ rspec
+
+Finished in 0.02748 seconds (files took 0.16322 seconds to load)
+19 examples, 0 failures</code></pre>
+<h3 id="submission">Submission</h3>
+<p>Submit an .zip archive (other archive forms not currently supported) created with your solution root directory as the top-level. The grader will replace the spec files will fresh copies and will perform a test with a different test.txt.</p>
+<pre class="text"><code>|-- module2_assignment.rb
+`-- solution.rb</code></pre>
+<h4 id="updated-2015-10-10a">Updated: 2015-10-10a</h4>

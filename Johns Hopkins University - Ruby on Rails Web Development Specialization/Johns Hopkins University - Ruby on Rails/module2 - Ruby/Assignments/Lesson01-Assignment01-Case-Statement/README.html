@@ -1,0 +1,96 @@
+<h2 id="formative-assignment-for-module-2-lesson-1-case-statement">Formative Assignment for Module #2, Lesson #1: Case Statement</h2>
+<p>The overall goal of this assignment is to implement a program control mechanism using Ruby that</p>
+<ul>
+<li>properly tests for object equality</li>
+<li>properly tests for a <code>nil</code> value</li>
+<li>properly tests for a boolean <code>true</code>/<code>false</code> value</li>
+<li>implements these tests using a <code>case</code> statement</li>
+</ul>
+<p>The functional goal of the assignment is to rewrite a provided if/else statement using a case statement.</p>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li>Re-write the following if/else statement using a <code>case</code> statement in Ruby.</li>
+</ol>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">some_var = <span class="st">&quot;false&quot;</span>
+another_var = <span class="st">&quot;nil&quot;</span>
+
+<span class="kw">if</span> some_var == <span class="st">&quot;pink elephant&quot;</span>
+  puts <span class="st">&quot;Don&#39;t think about the pink elephant!&quot;</span>
+
+<span class="kw">elsif</span> another_var.nil?
+  puts <span class="st">&quot;Question mark in the method name?&quot;</span>
+
+<span class="kw">elsif</span> some_var == <span class="dv">false</span>
+  puts <span class="st">&quot;Looks like this one should execute&quot;</span>
+
+<span class="kw">else</span>
+  puts <span class="st">&quot;I guess nothing matched... But why?&quot;</span>
+<span class="kw">end</span></code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Analyze the outcome of the original script and state the reasons why each of the first three (3) tests fail and how they could be made to succeed.</li>
+</ol>
+<pre class="shell"><code>$ ruby module2_lesson1_formative.rb
+
+I guess nothing matched... But why?</code></pre>
+<p>Change the source code of the solution to verify your conclusions.</p>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li>Download and extract the starter set of files. The root directory of the student-start will be referred to as the root directory of your solution.</li>
+</ol>
+<pre class="text"><code>--- student-start
+   |-- module2_lesson1_formative.rb
+   `-- spec
+       |-- lesson1_spec.rb
+       `-- spec_helper.rb</code></pre>
+<ul>
+<li>module2_lesson1_formative.rb - contains the starting if/else statements. Your solution must be placed within this file.</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Install the following gems used by the rspec unit tests. You may have some of these already installed.</li>
+</ol>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Run the provided Ruby script containing the if/else</li>
+</ol>
+<pre class="shell"><code>$ ruby module2_lesson1_formative.rb
+
+I guess nothing matched... But why?</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</li>
+</ol>
+<pre class="shell"><code>  $ rspec
+
+.FFFF
+
+Failures:
+...
+Finished in 0.02247 seconds (files took 0.1567 seconds to load)
+5 examples, 4 failures
+
+Failed examples:
+
+rspec ./spec/lesson1_spec.rb:17 # lesson1 check implementation remove if clause
+rspec ./spec/lesson1_spec.rb:21 # lesson1 check implementation remove elsif clause
+rspec ./spec/lesson1_spec.rb:25 # lesson1 check implementation remove elsif clause
+rspec ./spec/lesson1_spec.rb:29 # lesson1 check implementation missing case</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Implement the solution and re-test.</li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Implement all parts of this assignment within the module2_lesson1_formative.rb file in the root directory of your solution. The grader will load this specific file from this location.</p></li>
+<li><p>Remove all traces of <code>if</code>, <code>elsif</code>.</p></li>
+<li><p>Re-implement the solution in terms of <code>case</code> and associated constructs.</p></li>
+<li><p>Return the same result as the initial solution after applying the case statement.</p></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+
+Finished in 0.00304 seconds (files took 0.16353 seconds to load)
+5 examples, 0 failures</code></pre>
+<h3 id="submission">Submission</h3>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>

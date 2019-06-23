@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+</head>
+<body>
+<h2 id="formative-assignment-for-module-2-lesson-2-collections">Formative Assignment for Module #2, Lesson #2: Collections</h2>
+<p>The overall goal of this assignment is to manipulate collections to derive a result.</p>
+<p>The functional goal of the assignment is to chain a series of functions together to locate selected values within a collection.</p>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li>Given the following collection examples ...</li>
+</ol>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="co"># Grab 23 random elements between 0 and 10000</span>
+arr = (<span class="dv">1</span>..<span class="dv">10000</span>).to_a.sample(<span class="dv">23</span>)
+p arr
+
+<span class="co">#=&gt; [61, 6969, 9885, 4722, 158, 9979, 4568, 3079, 2590, 2345, 9086, 9611, 1384, 8444, 7815, 5444, 4852, 1317, 1565, 8466, 7220, 5146, 4558]</span></code></pre>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="co"># This selects only elements that when divided by 3 have a remainder of 0 </span>
+<span class="co"># using the % (modulus) operator</span>
+p arr.select { |element| element % <span class="dv">3</span> == <span class="dv">0</span> }
+
+<span class="co">#=&gt; [6969, 9885, 4722, 7815, 1317, 8466]</span></code></pre>
+<p>Write a single chain of commands to find all numbers that</p>
+<ul>
+<li>are from an array of numbers 1..10000 inclusive</li>
+<li>are divisible by 3 (i.e., element % 3 == 0)</li>
+<li>are not less than 5000</li>
+<li>sorted in reverse order</li>
+</ul>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</li>
+</ol>
+<pre class="text"><code>|-- module2_lesson2_formative.rb
+|-- .rspec (important hidden file)
+`-- spec
+    |-- lesson2_spec.rb
+    `-- spec_helper.rb</code></pre>
+<ul>
+<li>module2_lesson2_formative.rb - contains the starting examples. Your solution must be placed within this file.</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Install the following gems used by the rspec unit tests. You may have some of these already installed.</li>
+</ol>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Run the rspec command to execute the unit tests within the spec directory. This command should be run from the root directory of the project. This should result in several failures until you complete your solution.</li>
+</ol>
+<pre class="shell"><code>$ rspec
+
+FF.F....
+
+Failures:
+
+  1) lesson2 check results unexpected number of output lines
+  2) lesson2 check results unexpected minimum number
+  3) lesson2 check results unexpected sort order
+
+Finished in 0.02205 seconds (files took 0.15601 seconds to load)
+8 examples, 3 failures
+
+Failed examples:
+
+rspec ./spec/lesson2_spec.rb:16 # lesson2 check results unexpected number of output lines
+rspec ./spec/lesson2_spec.rb:20 # lesson2 check results unexpected minimum number
+rspec ./spec/lesson2_spec.rb:32 # lesson2 check results unexpected sort order</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Implement the solution and re-test. You will likely find the <code>reject</code>, <code>sort</code>, and <code>reverse</code> methods of value when completing the solution.</li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Implement all parts of this assignment within the module2_lesson2_formative.rb file in the root directory of your solution. The grader will load this specific file from this location.</p></li>
+<li><p>You script must locate a single chain of commands that locate numbers that</p></li>
+</ol>
+<ul>
+<li>are from an array of numbers 1..10000 inclusive</li>
+<li>are divisible by 3 (i.e., element % 3 == 0)</li>
+<li>are not less than 5000</li>
+<li>sorted in reverse order</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Your answer must be printed as an array of numbers using the <code>p</code> print command as the last line of the script output.</li>
+</ol>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">...
+[(number), (number), (number), ...]</code></pre>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+........
+
+Finished in 0.00838 seconds (files took 0.17347 seconds to load)
+8 examples, 0 failures</code></pre>
+<h3 id="submission">Submission</h3>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+</body>
+</html>
