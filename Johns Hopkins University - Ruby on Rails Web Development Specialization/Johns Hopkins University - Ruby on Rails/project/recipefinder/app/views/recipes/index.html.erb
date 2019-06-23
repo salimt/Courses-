@@ -1,0 +1,23 @@
+<h1>Recipes for '<%= @search %>'</h1>
+
+<% if @recipes.empty? %>
+
+No recipes found matching '<%= @search %>'
+
+<% else %>
+
+<table border="2">
+  <tr>
+    <th>Photo</th>
+    <th>Title</th>
+    <th>Social Rank</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+    <tr>
+    <td><%= link_to image_tag(recipe["image_url"], width: 100, height: 100), recipe["f2f_url"] %></td>
+    <td><%= link_to sanitize(recipe["title"]), recipe["f2f_url"] %></td>
+    <td><%= recipe["social_rank"] %></td>
+    </tr>
+  <% end %>
+</table>
+<% end %>
