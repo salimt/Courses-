@@ -1,0 +1,226 @@
+<h2 id="module-3-assignment-1-food-2-fork-http-api-interface">Module #3, Assignment 1: Food 2 Fork HTTP API Interface</h2>
+<p>The purpose of this assignment is to implement a source of data -- for use in an MVC Model class implementation.</p>
+<p>The functional goal is to implement a restful-flavored API client for <code>http://food2fork.com/about/api</code> to return JSON documents containing recipe information.</p>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Implement a Ruby class that will</p>
+<ul>
+<li>accept a keyword search term</li>
+<li>forward the keyword search term according to the <code>http://food2fork.com/about/api</code> interface definition using the HTTParty API</li>
+<li>return the JSON document containing recipe information provided by <code>http://food2fork.com/about/api</code></li>
+</ul></li>
+</ol>
+<h3 id="getting-started">Getting Started</h3>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Sign up for a Food 2 Fork account at <code>http://food2fork.com/about/api</code>. The free plan will give you 500 requests per day. When you sign up, you will need to use an &quot;API Key&quot; available on your &quot;API Admin&quot; page.</p>
+<ul>
+<li>define an environment variable (FOOD2FORK_KEY) to store your API Key</li>
+</ul></li>
+<li><p>Download and extract the starter set of boostrap files from (URL).</p>
+<pre class="shell"><code>--- student-start
+  |-- .rspec (important hidden file)
+  |-- chocolate_recipes.json
+  |-- module3_1_assignment.rb
+  |-- solution.rb
+  `-- spec
+      |-- recipe_spec.rb
+      `-- spec_helper.rb</code></pre>
+<ul>
+<li>.rspec - configuration file for unit tests. If you move your files you must take care to also copy this file.</li>
+<li>module3_lesson1_assignment.rb - contains the starting example. Your solution must be placed within this file.</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+<li>chocolate_recipes.json - used for off-line unit testing by rspec tests</li>
+</ul></li>
+<li><p>Install the following gems used by the rspec unit tests. You may have some of these already installed. The last gem is used for testing HTTP calls without using the live <code>http://food2fork.com/</code> site.</p>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its
+$ gem install webmock</code></pre></li>
+<li><p>Read thru the Food2Fork and HTTParty documentation.</p>
+<ul>
+<li>HTTParty API document is located at <code>https://github.com/jnunemaker/httparty</code></li>
+<li>Food2Fork interface definition is located at <code>http://food2fork.com/about/api</code></li>
+</ul></li>
+<li><p>Implement the Ruby class in a file called <code>module3_1_assignment.rb</code>.</p></li>
+<li><p>Run the rspec test(s) to receive feedback. If you copy/move them, be sure to include the important .rspec hidden file. All tests will (obviously) fail until you complete the specified solution.</p>
+<pre class="shell"><code>$ rspec
+
+Recipe
+  should respond to #for (FAILED - 1)
+  Environment variable FOOD2FORK_KEY is set (FAILED - 2)
+  default_params[:key] equals Environment variable FOOD2FORK_KEY (FAILED - 3)
+  default_params
+    example at ./spec/recipe_spec.rb:18 (FAILED - 4)
+  base_uri
+    example at ./spec/recipe_spec.rb:26 (FAILED - 5)
+  Chocolate Search
+    example at ./spec/recipe_spec.rb:39 (FAILED - 6)
+    size
+      example at ./spec/recipe_spec.rb:42 (FAILED - 7)
+    sample
+      example at ./spec/recipe_spec.rb:45 (FAILED - 8)
+    sample
+      example at ./spec/recipe_spec.rb:46 (FAILED - 9)
+    sample
+      example at ./spec/recipe_spec.rb:47 (FAILED - 10)
+    sample
+      example at ./spec/recipe_spec.rb:48 (FAILED - 11)
+
+Failures:
+
+  1) Recipe should respond to #for
+     Failure/Error: it { is_expected.to respond_to(:for) }
+       expected Recipe to respond to :for
+     # ./spec/recipe_spec.rb:11:in `block (2 levels) in &lt;top (required)&gt;&#39;
+
+  2) Recipe Environment variable FOOD2FORK_KEY is set
+     Failure/Error: expect(ENV[&quot;FOOD2FORK_KEY&quot;]).to_not be_nil
+       expected: not nil
+            got: nil
+     # ./spec/recipe_spec.rb:14:in `block (2 levels) in &lt;top (required)&gt;&#39;
+
+  3) Recipe default_params[:key] equals Environment variable FOOD2FORK_KEY
+     Failure/Error: expect(subject.default_params[:key]).to eq ENV[&quot;FOOD2FORK_KEY&quot;]
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:22:in `block (2 levels) in &lt;top (required)&gt;&#39;
+
+  4) Recipe default_params
+     Failure/Error: its(:default_params) { is_expected.to include :key }
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:18:in `block (2 levels) in &lt;top (required)&gt;&#39;
+
+  5) Recipe base_uri
+     Failure/Error: its(:base_uri) { is_expected.to include &quot;http://food2fork.com/api&quot; }
+     NoMethodError:
+       undefined method `base_uri&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:26:in `block (2 levels) in &lt;top (required)&gt;&#39;
+
+  6) Recipe Chocolate Search
+     Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+  7) Recipe Chocolate Search size
+     Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+  8) Recipe Chocolate Search sample
+     Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+  9) Recipe Chocolate Search sample
+     Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+     NoMethodError:
+       undefined method `default_params&#39; for Recipe:Class
+     # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+  10) Recipe Chocolate Search sample
+      Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+      NoMethodError:
+        undefined method `default_params&#39; for Recipe:Class
+      # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+  11) Recipe Chocolate Search sample
+      Failure/Error: query = Recipe.default_params.merge({&quot;q&quot; =&gt; &quot;chocolate&quot;})
+      NoMethodError:
+        undefined method `default_params&#39; for Recipe:Class
+      # ./spec/recipe_spec.rb:31:in `block (3 levels) in &lt;top (required)&gt;&#39;
+
+Finished in 0.01817 seconds (files took 0.39671 seconds to load)
+11 examples, 11 failures
+
+Failed examples:
+
+rspec ./spec/recipe_spec.rb:11 # Recipe should respond to #for
+rspec ./spec/recipe_spec.rb:13 # Recipe Environment variable FOOD2FORK_KEY is set
+rspec ./spec/recipe_spec.rb:21 # Recipe default_params[:key] equals Environment variable FOOD2FORK_KEY
+rspec ./spec/recipe_spec.rb:18 # Recipe default_params
+rspec ./spec/recipe_spec.rb:26 # Recipe base_uri
+rspec ./spec/recipe_spec.rb:39 # Recipe Chocolate Search
+rspec ./spec/recipe_spec.rb:42 # Recipe Chocolate Search size
+rspec ./spec/recipe_spec.rb:45 # Recipe Chocolate Search sample
+rspec ./spec/recipe_spec.rb:46 # Recipe Chocolate Search sample
+rspec ./spec/recipe_spec.rb:47 # Recipe Chocolate Search sample
+rspec ./spec/recipe_spec.rb:48 # Recipe Chocolate Search sample</code></pre></li>
+<li><p>Run the <code>solution.rb</code> Ruby script to execute a sample call.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">require_relative <span class="st">&quot;module3_1_assignment&quot;</span>
+
+puts <span class="dt">Recipe</span>.for(<span class="st">&quot;chocolate&quot;</span>)</code></pre></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Define an environment variable called FOOD2FORK_KEY that stores the value of your API Key from the <code>food2fork.com</code> admin page when you signed up for an account.</p></li>
+<li><p>Implement a <code>Recipe</code> class that will implement the HTTP API to <code>http://food2fork.com/about/api</code>. The unit tests will expect a class by that exact name.</p></li>
+<li><p>The <code>Recipe</code> class should</p>
+<ul>
+<li>be implemented in a file called <code>module3_1_assignment.rb</code>. The unit tests will expect a file by that name.</li>
+<li>import the HTTParty mixin</li>
+<li>define a base_uri to use <code>http://food2fork.com/api</code></li>
+<li>define a default query param of <code>key</code> for all HTTP GET requests whose value is equal to value of the environment variable FOOD2FORK_KEY.</li>
+<li>specify the desired format as <code>json</code></li>
+<li>specify all the above using legal Ruby syntax</li>
+</ul></li>
+<li><p>The <code>Recipe</code> class must have a <code>for</code> class method that</p>
+<ul>
+<li>accepts a keyword for a search term</li>
+<li>issues an HTTP GET request using the HTTParty gem</li>
+<li>the HTTP GET request must have the &quot;q=keyword&quot; query argument and query &quot;/search&quot; route</li>
+<li>returns the JSON payload document supplied in the <code>recipes</code> element of the hash returned by HTTParty</li>
+</ul></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Some unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+
+Recipe
+  should respond to #for
+  Environment variable FOOD2FORK_KEY is set
+  default_params[:key] equals Environment variable FOOD2FORK_KEY
+  default_params
+    should include :key
+  base_uri
+    should include &quot;http://food2fork.com/api&quot;
+  Chocolate Search
+    should be a kind of Array
+    size
+      should eq 30
+    sample
+      should have key &quot;title&quot;
+    sample
+      should have key &quot;f2f_url&quot;
+    sample
+      should have key &quot;social_rank&quot;
+    sample
+      should have key &quot;image_url&quot;
+
+Finished in 0.02369 seconds (files took 0.40009 seconds to load)</code></pre>
+<p>A client script (<code>solution.rb</code>) is also provided in the bootstrap and can be used to issue a sample client request.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ ruby solution.rb 
+{<span class="st">&quot;publisher&quot;</span>=&gt;<span class="st">&quot;BBC Good Food&quot;</span>, <span class="st">&quot;f2f_url&quot;</span>=&gt;<span class="st">&quot;http://food2fork.com/view/9089e3&quot;</span>, 
+<span class="st">&quot;title&quot;</span>=&gt;<span class="st">&quot;Cookie Monster cupcakes&quot;</span>,
+<span class="st">&quot;source_url&quot;</span>=&gt;<span class="st">&quot;http://www.bbcgoodfood.com/recipes/873655/cookie-monster-cupcakes&quot;</span>, 
+<span class="st">&quot;recipe_id&quot;</span>=&gt;<span class="st">&quot;9089e3&quot;</span>, <span class="st">&quot;image_url&quot;</span>=&gt;<span class="st">&quot;http://static.food2fork.com/604133_mediumd392.jpg&quot;</span>,
+<span class="st">&quot;social_rank&quot;</span>=&gt;<span class="fl">100.0</span>, <span class="st">&quot;publisher_url&quot;</span>=&gt;<span class="st">&quot;http://www.bbcgoodfood.com&quot;</span>}
+...
+{<span class="st">&quot;publisher&quot;</span>=&gt;<span class="st">&quot;Elana&#39;s Pantry&quot;</span>, <span class="st">&quot;f2f_url&quot;</span>=&gt;<span class="st">&quot;http://food2fork.com/view/22d607&quot;</span>, 
+<span class="st">&quot;title&quot;</span>=&gt;<span class="st">&quot;Brownies&quot;</span>, 
+<span class="st">&quot;source_url&quot;</span>=&gt;<span class="st">&quot;http://www.elanaspantry.com/brownies/&quot;</span>, 
+<span class="st">&quot;recipe_id&quot;</span>=&gt;<span class="st">&quot;22d607&quot;</span>, <span class="st">&quot;image_url&quot;</span>=&gt;<span class="st">&quot;http://static.food2fork.com/dsc_8204brownies7a41.jpg&quot;</span>, 
+<span class="st">&quot;social_rank&quot;</span>=&gt;<span class="fl">99.99999999990415</span>, <span class="st">&quot;publisher_url&quot;</span>=&gt;<span class="st">&quot;http://www.elanaspantry.com&quot;</span>}</code></pre>
+<h3 id="submission">Submission</h3>
+<p>There is no submission required for this assignment but the implementation will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<p>Your final directory contents should look as follows:</p>
+<pre class="shell"><code>|-- module3_1_assignment.rb
+|-- chocolate_recipes.json
+|-- solution.rb
+|-- .rspec (important hidden file)
+`-- spec
+    |-- recipe_spec.rb
+    `-- spec_helper.rb</code></pre>
+<h4 id="updated-2015-09-22">Updated: 2015-09-22</h4>
