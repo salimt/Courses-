@@ -33,7 +33,6 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [Delft University of Technology - Automated Software Testing](./Delft%20University%20of%20Technology%20-%20Automated%20Software%20Testing)
-1. [TU Delft - Practical Skills for Java Developers](./Delft%20University%20of%20Technology%20-%20Automated%20Software%20Testing/TU%20Delft%20-%20Practical%20Skills%20for%20Java%20Developers)
 
 - #### [University of Maryland, College Park: Programming Mobile Applications for Android Handheld Systems: Part 1](./University%20of%20Maryland%20-%20Programming%20Mobile%20Applications%20for%20Android%20Handheld%20Systems%2C%20Part%20I)
 
