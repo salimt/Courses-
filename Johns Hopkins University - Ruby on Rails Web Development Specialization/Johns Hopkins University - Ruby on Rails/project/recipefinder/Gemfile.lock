@@ -3,7 +3,7 @@ GEM
   specs:
     actionmailer (4.2.8)
       actionpack (= 4.2.8)
-      actionview (= 4.2.8)
+      actionview (>= 4.2.11.1)
       activejob (= 4.2.8)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
@@ -14,7 +14,7 @@ GEM
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.8)
+    actionview (>= 4.2.11.1)
       activesupport (= 4.2.8)
       builder (~> 3.1)
       erubis (~> 2.7.0)
