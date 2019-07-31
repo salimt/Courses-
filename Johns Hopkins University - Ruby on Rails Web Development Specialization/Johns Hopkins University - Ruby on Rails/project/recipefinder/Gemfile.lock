@@ -8,7 +8,7 @@ GEM
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
     actionpack (4.2.8)
-      actionview (= 4.2.8)
+      actionview (>= 4.2.11.1)
       activesupport (= 4.2.8)
       rack (~> 1.6)
       rack-test (~> 0.6.2)
