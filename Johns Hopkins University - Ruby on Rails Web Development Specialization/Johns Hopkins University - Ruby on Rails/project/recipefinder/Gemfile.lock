@@ -101,7 +101,7 @@ GEM
     rails (4.2.8)
       actionmailer (= 4.2.8)
       actionpack (= 4.2.8)
-      actionview (= 4.2.8)
+      actionview (>= 4.2.11.1)
       activejob (= 4.2.8)
       activemodel (= 4.2.8)
       activerecord (= 4.2.8)
