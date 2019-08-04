@@ -1,0 +1,298 @@
+<h2 id="assignment-for-module-2-active-record-relationships">Assignment for Module #2: Active Record Relationships</h2>
+<p>The overall goal of this assignment is to assess your ability to implement and use Active Record model relationships. This includes:</p>
+<ul>
+<li>Creating Active Record models and relationships between the models using a rails-provided generator (<code>rails g model</code> or <code>rails g scaffold</code>)</li>
+<li>Providing validations for models (using built-in Active Record validations as well as custom validations)</li>
+<li>Implementing a grandparent relationship with a <code>:through</code> option</li>
+<li>Providing bootstrap data using a <code>seeds.rb</code> file</li>
+<li>Implementing <code>default_scope</code> queries</li>
+<li>Implementing aggregation queries</li>
+<li>Implementing advanced queries (e.g., SQL snippets)</li>
+<li>Implementing model/database (DB) cascades</li>
+</ul>
+<p>The functional goal of this assignment is to implement relationships and query behavior for the following four (4) model classes</p>
+<ol style="list-style-type: decimal">
+<li>User</li>
+<li>Profile</li>
+<li>TodoList</li>
+<li>TodoItem</li>
+</ol>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li>Create several Active Record model classes - some of which will have relationships defined when they are created
+<ul>
+<li>User</li>
+<li>Profile</li>
+<li>TodoList</li>
+<li>TodoItem</li>
+</ul></li>
+<li><p>Create database migrations for relationships not present when the model classes were created</p></li>
+<li><p>Create a DB schema for each model class and their relationships</p></li>
+<li><p>Populate the DB with bootstrap data</p></li>
+<li><p>Implement relationship features</p></li>
+<li><p>Implement model class features</p></li>
+</ol>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails application called <code>todolists</code>. This will look quite a bit like what you did in the module 1 assignment.</p></li>
+<li><p>Add the following specification to your Gemfile.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">group <span class="st">:test</span> <span class="kw">do</span>
+ gem <span class="st">&#39;rspec-rails&#39;</span>, <span class="st">&#39;~&gt; 3.0&#39;</span>
+<span class="kw">end</span></code></pre></li>
+<li><p>Run the <code>bundle</code> command to resolve new gems</p></li>
+<li><p>From the <code>todolists</code> application root directory, initialize the rspec tests using <code>rails generate rspec:install</code> command.</p>
+<pre class="shell"><code>  [todolists]$ rails generate rspec:install
+  create  .rspec
+  create  spec
+  create  spec/spec_helper.rb
+  create  spec/rails_helper.rb</code></pre>
+<p>Add the following line to <code>.rspec</code> to add verbose output to test results.</p>
+<pre class="shell"><code>--format documentation</code></pre></li>
+<li><p>Download and extract the starter set of boostrap files.</p>
+<pre class="shell"><code>|-- Gemfile
+`-- spec
+    `-- assignment_spec.rb</code></pre>
+<ul>
+<li><p>overwrite your existing Gemfile with the Gemfile from the bootstrap fileset. They should be nearly identical, but this is done to make sure the gems and versions you use in your solution can be processed by the automated Grader when you submit. Any submission should be tested with this version of the file.</p></li>
+<li><p>add the <code>spec/assignment_spec.rb</code> file provided with the bootstrap fileset to the corresponding <code>spec</code> directory that already exists under your application root directory (e.g., <code>application-root-directory/spec/assignment_spec.rb</code>). This file contains tests that will help determine whether you have completed the assignment.</p></li>
+</ul></li>
+<li><p>Run the rspec test(s) to receive feedback. <code>rspec</code> must be run from the root directory of your application. All tests will (obviously) fail until you complete the specified solution.</p>
+<pre class="shell"><code>$ rspec
+...
+Finished in 0.02831 seconds (files took 1.39 seconds to load)
+56 examples, 1 failure, 54 pending</code></pre>
+<p>To focus test feedback on a specific step of the requirements, add &quot;-e rq##&quot; to the rspec command line to only evaluate that requirement. Pad all step numbers to two digits.</p>
+<pre class="shell"><code>$ rspec -e rq01
+Run options: include {:full_description=&gt;/rq01/}
+
+Assignment
+  rq01
+    Generate Rails application
+      must have top level structure of a rails application
+
+Finished in 0.00356 seconds (files took 1.3 seconds to load)
+1 example, 0 failures</code></pre>
+<pre class="shell"><code>$ rspec -e rq02
+
+...
+Finished in 0.00422 seconds (files took 2.16 seconds to load)
+6 examples, 1 failure, 5 pending
+
+Failed examples:
+
+rspec ./spec/assignment_spec.rb:50 # Assignment rq02 User Model: User class created</code></pre></li>
+<li><p>Implement your Models and use the rspec tests to help verify your completed solution.</p></li>
+<li><p>Submit your Rails app solution for grading.</p></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails app called <code>todolists</code>. Use the Gemfile provided in the boostrap files. Do not change the Gemfile from what is provided or your submitted solution may not be able to be processed by the grader (i.e., do not add any additional gems or change gem versions).</p>
+<p>An Entity Relationship (ER) diagram is provided below to help depict each Model's relationship:</p>
+<pre><code>|------| 1      1 |----------|
+| User |----------| Profile  |
+|------|          |----------|
+    \
+     \
+      \ 1   * |----------| 1      * |----------|
+       \------| TodoList |----------| TodoItem | 
+              |----------|          |----------|</code></pre></li>
+<li><p>Re-use the <code>User</code> model class and database table creation commands implemented in Assignment 1. (i.e., you may re-use the exact <code>rails generate</code> command you used to generate this class from the previous assignment)</p>
+<ul>
+<li>User
+<ul>
+<li>username - a string to hold account identity</li>
+<li>password_digest - a string to hold password information</li>
+</ul></li>
+</ul>
+<p>Reminder: Ruby/Rails conventions are that class names are CamelCase and file and method names are snake_case.</p>
+<p>You must migrate the database schema at this time and in between each of the following steps to be able to pass the rspec tests incrementally.</p>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq02
+Run options: include {:full_description=&gt;/rq02/}
+
+Assignment
+  rq02
+    User Model:
+      User class created
+      User database structure in place
+      User class properties added
+        should respond to #username
+        should respond to #password_digest
+        should respond to #created_at
+        should respond to #updated_at
+
+Finished in 0.19157 seconds (files took 1.27 seconds to load)
+6 examples, 0 failures</code></pre></li>
+<li><p>Re-use the <code>Profile</code> model class and database table creation commands implemented in Assignment 1, except this time create it with a reference to <code>User</code> when you create the model class. The grader will look for the relationship to be included in the initial create table migration for this model class.</p>
+<ul>
+<li>Profile
+<ul>
+<li>gender - a string to hold the words &quot;male&quot; or &quot;female&quot;</li>
+<li>birth_year - a number to hold the year the individual was born</li>
+<li>first_name - a string with given name of user</li>
+<li>last_name - a string with family name of user</li>
+<li>user - a 1:1 relationship with User (i.e., Profile <code>belongs_to</code> User)</li>
+</ul></li>
+</ul>
+<p>Also define the 1:1 <code>has_one</code> relationship in the <code>User</code> model class.</p>
+<ul>
+<li>User
+<ul>
+<li>profile - a 1:1 relationship with <code>Profile</code> (i.e., User <code>has_one</code> profile). Add appropriate options to have the <code>User</code> model class delete a <code>Profile</code> in a cascading fashion</li>
+</ul></li>
+</ul>
+<p>Reminder: Relationships are only generated or migrated in the class forming the relationship (e.g., the many-side of a many:1). The inverse side of a relationship (e.g., the one-side of a 1:many) need only have the relationship declared in the model class and not in the database migration. In this case, <code>Profile</code> is forming the relationship in the database and <code>User</code> is the inverse side.</p>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq03</code></pre></li>
+<li><p>Re-use the <code>TodoList</code> model class implemented in Assignment 1 (i.e., you may re-use the exact <code>rails generate</code> command you used to generate this class from the previous assignment). The grader will look for no relations in the initial create table migration for this model class.</p>
+<ul>
+<li>TodoList
+<ul>
+<li>list_name - a string name assigned to the list</li>
+<li>list_due_date - a date when todo items in the list are to be complete. This is a date. We are not concerned with the time of day.</li>
+</ul></li>
+</ul>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq04</code></pre></li>
+<li><p>Create a database migration (hint: <code>rails g migration</code>) that adds a database reference from the <code>TodoLists</code> table to the <code>Users</code> table. The grader will look for this relationship to be formed by a database table migration.</p>
+<p>Also define the many:1 <code>belongs_to</code> relationship in the <code>TodoList</code> model class.</p>
+<ul>
+<li>TodoList
+<ul>
+<li>user - a many:1 relationship with <code>User</code> (i.e., TodoList <code>belongs_to</code> User)</li>
+</ul></li>
+</ul>
+<p>Also define the 1:many <code>has_many</code> relationship in the <code>User</code> model class.</p>
+<ul>
+<li>User
+<ul>
+<li>todo_lists - a 1:many relationship with <code>TodoList</code> (i.e., User <code>has_many</code> todo_lists). Add appropriate options to have the <code>User</code> model class delete a <code>TodoList</code> in a cascading fashion</li>
+</ul></li>
+</ul>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq05</code></pre></li>
+<li><p>Re-use the <code>TodoItem</code> model class implemented in Assignment 1, except this time create it with a many:1 <code>belongs_to</code> relationship with <code>TodoList</code> when you create the model class. The grader will look for the relationship to be included in the initial create table migration for this model class.</p>
+<ul>
+<li>TodoItem
+<ul>
+<li>due_date - date when the specific task is to be complete</li>
+<li>title - a string with short name for specific task</li>
+<li>description - a text field with narrative text for specific task</li>
+<li>completed - a boolean value (default=false), indicating whether item is complete</li>
+<li>todo_list - a many:1 relationship with TodoList - TodoItem belongs_to TodoList</li>
+</ul></li>
+</ul>
+<p>Also define the 1:many <code>has_many</code> relationship in the <code>TodoList</code> model class.</p>
+<ul>
+<li>TodoList
+<ul>
+<li>todo_items - a 1:many relationship with <code>TodoItem</code> (i.e., TodoList <code>has_many</code> todo_items). Add appropriate options to have the <code>TodoList</code> model class delete a <code>TodoItem</code> in a cascading fashion</li>
+</ul></li>
+</ul>
+<code>shell $ rake db:migrate $ rspec -e rq06</code></li>
+<li><p>Migrate all database schema changes at this time if you have not yet done so. At this point you should have:</p>
+<ul>
+<li>four (4) create table (Users, Profiles, TodoLists, and TodoItems)</li>
+<li>one (1) update table migrations to add reference (TodoLists to Users)</li>
+</ul>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq07</code></pre></li>
+<li><p>Implement a 1:many <code>:through</code> relationship from <code>User</code> to <code>TodoItem</code> by using the 1:many relationship from <code>User</code> to <code>TodoLists</code> as a source.</p>
+<ul>
+<li>User
+<ul>
+<li>todo_items - a 1:many through relationship with TodoItem through TodoLists (i.e., User <code>has_many</code> todo_items)</li>
+</ul></li>
+</ul>
+<pre class="shell"><code>$ rspec -e rq08</code></pre></li>
+<li><p>Create a seeds.rb file that will clear the existing data from the model tables and load the database with</p>
+<ul>
+<li>The four users below with their birth years:
+<ul>
+<li>Carly Fiorina, 1954</li>
+<li>Donald Trump, 1946</li>
+<li>Ben Carson, 1951</li>
+<li>Hillary Clinton, 1947</li>
+</ul></li>
+<li>Usernames (e.g., their last names) and a password for each <code>User</code></li>
+<li>A <code>Profile</code> for each <code>User</code></li>
+<li>Exactly one <code>TodoList</code> per <code>User</code> that is due one year from the date the database is loaded
+<ul>
+<li>(hint: <code>Date.today</code> provides today's date and <code>1.year</code> can be used to define one year)</li>
+</ul></li>
+<li>Each <code>TodoList</code> contains five (5) <code>TodoItems</code> (there must be 20 total)</li>
+<li>Each <code>TodoItem</code> having a due date of one year from the time the database is loaded<br /></li>
+<li>Each <code>TodoItem</code> must have an arbitrary <code>title</code> and <code>description</code>s</li>
+</ul>
+<p>(Hint: you may want to consider using loops)</p>
+<p>Once the seeds.rb file is created, populate the database using <code>rake db:seed</code></p>
+<pre class="shell"><code>$ rake db:seed
+$ rspec -e rq09</code></pre></li>
+<li><p>Add <code>default_scope</code> to both <code>TodoList</code> and <code>TodoItem</code> models to always return collectons from the database ordered by due dates with earliest dates first.</p>
+<code>shell $ rspec -e rq10</code></li>
+<li><p>Add validation to <code>User</code> and <code>Profile</code> models</p></li>
+</ol>
+<ul>
+<li>User
+<ul>
+<li>Define a validation for <code>username</code> to enforce that username be supplied by using a built-in validator</li>
+</ul></li>
+<li>Profile
+<ul>
+<li>Define custom validator that permits <code>first_name</code> or <code>last_name</code> to be null but not both</li>
+<li>Define a validation for <code>gender</code> to be either &quot;male&quot; or &quot;female&quot; by using a built-in validator</li>
+<li>Define custom validator that prevents anyone that is <code>male</code> (gender) from having the <code>first_name</code> &quot;Sue&quot; ;)</li>
+</ul>
+<pre class="shell"><code>$ rspec -e rq11</code></pre></li>
+</ul>
+<ol start="12" style="list-style-type: decimal">
+<li><p>Add a cascade of deletes that will remove <code>Profile</code>, <code>TodoList</code>, and <code>TodoItem</code> rows for any <code>User</code> removed.</p>
+<pre class="shell"><code>$ rspec -e rq12</code></pre></li>
+<li><p>Add a method to the <code>User</code> model class called <code>get_completed_count</code>, which:</p>
+<ul>
+<li>determines the number of <code>TodoItems</code> the <code>User</code> has completed using an aggregate query function
+<ul>
+<li>(Hint: You are looking for the count of <code>TodoItems</code> associated with a specific <code>User</code> where <code>completed:true</code>)</li>
+</ul></li>
+<li>returns the count</li>
+</ul>
+<code>shell $ rspec -e rq13</code></li>
+<li><p>Add a <strong>class</strong> method to the <code>Profile</code> class, called <code>get_all_profiles</code>, which:</p>
+<ul>
+<li>accepts a min and max for the <code>birth year</code></li>
+<li>issues a <code>BETWEEN</code> SQL clause in a <code>where</code> clause to locate <code>Profiles</code> with birth years that are between min year and max year</li>
+<li>defends itself against SQL injection when applying the parameters to the SQL clauses</li>
+<li>returns a collection of Profiles in ASC birth year order</li>
+</ul>
+<pre class="shell"><code>$ rspec -e rq14</code></pre></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Some unit tests have been provided in the bootstrap files and provide examples of tests the grader will be evaluating for when you submit your solution. They must be run from the project root directory.</p>
+<pre class="shell"><code>$ rspec 
+...
+Finished in 9.56 seconds (files took 1.41 seconds to load)
+56 examples, 0 failures</code></pre>
+<p>You can run as many specific tests you wish be adding <code>-e rq## -e rq##</code> <code>shell $ rspec -e rq01 -e rq02</code></p>
+<h3 id="submission">Submission</h3>
+<p>Submit an .zip archive (other archive forms not currently supported) with your solution root directory as the top-level (e.g., your Gemfile and sibling files must be in the root of the archive and <em>not</em> in a sub-folder. The grader will replace the spec files with fresh copies and will perform a test with different query terms.</p>
+<pre class="text"><code>|-- app
+|   |-- assets
+|   |-- controllers
+|   |-- helpers
+|   |-- mailers
+|   |-- models
+|   `-- views
+|-- bin
+|-- config
+|-- config.ru
+|-- db
+|-- Gemfile
+|-- Gemfile.lock
+|-- lib
+|-- log
+|-- public
+|-- Rakefile
+|-- README.rdoc
+|-- test
+`-- vendor</code></pre>
+<h4 id="last-updated-2015-10-20">Last Updated: 2015-10-20</h4>
