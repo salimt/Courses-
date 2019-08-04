@@ -1,0 +1,262 @@
+<h2 id="assignment-for-module-1-basic-active-record-crud">Assignment for Module #1: Basic Active Record CRUD</h2>
+<p>The overall goal of this assignment is to assess your ability to implement basic CRUD functionality of Active Record. This includes:</p>
+<ul>
+<li>Creating Active Record Models using a rails-provided generator (<code>rails g model</code> or <code>rails g scaffold</code>)</li>
+<li>Creating a DataBase (DB) schema</li>
+<li>Inserting rows in the DB</li>
+<li>Updating rows in the DB</li>
+<li>Querying the DB with exact matching</li>
+<li>Getting rows from the DB by Primary Key (PK)</li>
+<li>Deleting rows from the DB</li>
+<li>Retrieving paginated results from the DB using <code>limit</code> and <code>offset</code> keywords</li>
+</ul>
+<p>This does NOT include:</p>
+<ul>
+<li>Seeding with seeds.rb</li>
+<li>Relationships</li>
+<li>Validations</li>
+<li>Advanced queries</li>
+</ul>
+<p>These topics of Active Record are covered in Module 2.</p>
+<p>The functional goal of this assignment is to implement CRUD behavior for four (4) Model classes</p>
+<ol style="list-style-type: decimal">
+<li>User</li>
+<li>Profile</li>
+<li>TodoList</li>
+<li>TodoItem</li>
+</ol>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li>Create several Active Record Model classes
+<ul>
+<li>User</li>
+<li>Profile</li>
+<li>TodoList</li>
+<li>TodoItem</li>
+</ul></li>
+<li><p>Create a DB schema for each Model class</p></li>
+<li><p>Demonstrate CRUD access to information in the DB using Active Record Model methods.</p></li>
+</ol>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails application called <code>todolists</code>.</p></li>
+<li><p>Add the following specification to your Gemfile to enable rspec testing.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">group <span class="st">:test</span> <span class="kw">do</span>
+  gem <span class="st">&#39;rspec-rails&#39;</span>, <span class="st">&#39;~&gt; 3.0&#39;</span>
+<span class="kw">end</span></code></pre></li>
+<li><p>Run the <code>bundle</code> command to resolve new gems</p></li>
+<li><p>From the <code>todolists</code> application root directory, initialize the rspec tests using <code>rails generate rspec:install</code> command.</p>
+<pre class="shell"><code>  [todolists]$ rails generate rspec:install
+  create  .rspec
+  create  spec
+  create  spec/spec_helper.rb
+  create  spec/rails_helper.rb</code></pre>
+<p>Add the following line to <code>.rspec</code> to add verbose output to test results.</p>
+<pre class="shell"><code>--format documentation</code></pre></li>
+<li><p>Download and extract the starter set of boostrap files.</p>
+<pre class="shell"><code>|-- Gemfile
+|-- assignment
+|   `-- assignment.rb
+`-- spec
+    `-- assignment_spec.rb</code></pre>
+<ul>
+<li><p>overwrite your existing Gemfile with the Gemfile from the bootstrap fileset. They should be nearly identical, but this is done to make sure the gems and versions you use in your solution can be processed by the automated Grader when you submit. Any submission should be tested with this version of the file.</p></li>
+<li><p>add the <code>assignment/assignment.rb</code> file provided with the boostrap fileset to a corresponding <code>assignment</code> directory under your application root directory (e.g., <code>application-root-directory/assignment/assignment.rb</code>). (Note: You will need to create the <code>assignment</code> directory if you are copying the file.) The <code>assignment.rb</code> file contains a skeleton of methods for you to implement as part of your assignment.</p></li>
+<li><p>add the <code>spec/assignment_spec.rb</code> file provided with the bootstrap fileset to the corresponding <code>spec</code> directory that already exists under your application root directory (e.g., <code>application-root-directory/spec/assignment_spec.rb</code>). This <code>assignment_spec.rb</code> file contains tests that will help determine whether you have completed the assignment.</p></li>
+</ul></li>
+<li><p>Run the rspec test(s) to receive feedback. <code>rspec</code> must be run from the root directory of your application. All tests will (obviously) fail until you complete the specified solution.</p>
+<pre class="shell"><code>$ rspec 
+...
+Finished in 0.02069 seconds (files took 1.63 seconds to load)
+52 examples, 1 failure, 50 pending</code></pre>
+<p>To focus test feedback on a specific step of the requirements, add &quot;-e rq##&quot; to the rspec command line to only evaluate that requirement. Pad all step numbers to two digits.</p>
+<pre class="shell"><code>$ rspec -e rq01
+Run options: include {:full_description=&gt;/rq01/}
+
+Assignment
+  rq01
+    Generate Rails application
+      must have top level structure of a rails application
+
+Finished in 0.00465 seconds (files took 1.56 seconds to load)
+1 example, 0 failures</code></pre></li>
+<li><p>Implement your Model and assignment.rb solution and use the rspec tests to help verify your completed solution.</p></li>
+<li><p>Submit your Rails app solution for grading.</p></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails app called <code>todolists</code>.</p>
+<pre class="shell"><code>$ rspec -e rq01</code></pre></li>
+</ol>
+<p>Note: Use the Gemfile provided in the boostrap files. Windows users may need to add this gem into the Gemfile:</p>
+<p><code>ruby    # Windows does not include zoneinfo files, so bundle the tzinfo-data gem    gem 'tzinfo-data', platforms: [:mingw, :mswin]</code></p>
+<p>Otherwise, do not change the Gemfile from what is provided or your submitted solution may not be able to be processed by the grader (i.e., do not add any additional gems or change gem versions).</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Generate four (4) model classes and DB migrations having the following business-related fields using one of the <code>rails generate</code> commands.</p>
+<p>You can individually grade your results after each model class is created by migrating the database and running the rspec test listed after each classname. Example:</p>
+<pre class="shell"><code>$ rake db:migrate
+$ rspec -e rq02.1</code></pre>
+<ol style="list-style-type: decimal">
+<li><p>User (<code>rq02.1</code>)</p>
+<ul>
+<li>username - a string to hold account identity</li>
+<li>password_digest - a string to hold password information</li>
+</ul></li>
+<li><p>Profile (<code>rq02.2</code>)</p>
+<ul>
+<li>gender - a string to hold the words &quot;male&quot; or &quot;female&quot;</li>
+<li>birth_year - a number to hold the year the individual was born</li>
+<li>first_name - a string with given name of user</li>
+<li>last_name - a string with family name of user</li>
+</ul></li>
+<li><p>TodoList (<code>rq02.3</code>)</p>
+<ul>
+<li>list_name - a string name assigned to the list</li>
+<li>list_due_date - a date when TODO items in the list are to be complete. This is a date. We are not concerned with the time of day.</li>
+</ul></li>
+<li><p>TodoItem (<code>rq02.4</code>)</p>
+<ul>
+<li>due_date - date when the specific task is to be complete</li>
+<li>title - a string with short name for specific task</li>
+<li>description - a text field with narrative text for specific task</li>
+<li>completed - a boolean value (default=false), indicating whether item is complete</li>
+</ul></li>
+</ol>
+<p>Reminder: Ruby/Rails conventions are that class names are CamelCase and file and method names are snake_case.</p>
+<p>Note: We will only be using the Model and DB migration classes for this assignment. It is assumed that each Model will also contain the <code>id</code>, <code>created_at</code>, and <code>updated_at</code> fields. All four (4) Model Classes/DB tables must be created, but the detailed tests will be focused on the User and TodoList only. You will use the remaining classes more in a follow-on assignment.</p></li>
+<li><p>Insert rows in DB</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>create_user</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept a hash of user properties (<code>:username</code> and <code>:password_digest</code>) as an input parameter. Note these are 100% same as model class.</li>
+<li>use the User Model class to create a new user in the DB</li>
+<li>return an instance of the class with primary key (<code>id</code>), and dates (<code>created_at</code> and <code>updated_at</code>) assigned</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq03.1</code></pre></li>
+<li><p>Implement the <code>create_todolist</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept a hash of todolist properties (<code>:name</code> and <code>:due_date</code>) as an input parameter. <strong>Note</strong> these hash keys are not 100% the same as Model class. Your solution must convert these properties into hash with keys Active Record will accept for the schema for the class.</li>
+<li>use the TodoList Model class to create a new todolist in the DB</li>
+<li>return an instance of the class with primary key (<code>id</code>), and dates (<code>created_at</code> and <code>updated_at</code>) assigned</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq03.2</code></pre></li>
+</ol></li>
+<li><p>Retrieve paginated results from DB</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>find_allusers</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept offset and limit input parameters</li>
+<li>use the User Model class to find all Users, ordered by <code>updated_at</code> ascending, with specified row offset and row limit</li>
+<li>return a collection of User instances that represent the specified page</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq04.1</code></pre></li>
+<li><p>Implement the <code>find_alllists</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept offset and limit input parameters</li>
+<li>use the TodoList Model class to find all TodoLists, ordered by <code>list_due_date</code> descending, with specified row offset and row limit</li>
+<li>return a collection of TodoList instances that represent the specified page</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq04.2</code></pre></li>
+</ol></li>
+<li><p>Query DB with exact match</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>find_user_byname</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept a username input parameter</li>
+<li>use the User Model class to find all Users with the supplied username. Note that we have not yet constrained the username to be unique.</li>
+<li>return a collection of User instances that match the provided username</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq05.1</code></pre></li>
+<li><p>Implement the <code>find_todolist_byname</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept a name input parameter</li>
+<li>use the TodoList Model class to find all TodoLists with the supplied list_name. Note that list_name is not required to be unique.</li>
+<li>return a collection of TodoList instances that match the provided name</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq05.2</code></pre></li>
+</ol></li>
+<li><p>Get rows from DB by PK</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>get_user_byid</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id input parameter</li>
+<li>use the User Model class to get the User associated with the <code>id</code> primary key</li>
+<li>return the User instance that matches the provided id</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq06.1</code></pre></li>
+<li><p>Implement the <code>get_todolist_byid</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id input parameter</li>
+<li>use the TodoList Model class to get the TodoList associated with the <code>id</code> primary key</li>
+<li>return the TodoList instance that matches the provided id</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq06.2</code></pre></li>
+</ol></li>
+<li><p>Update rows in DB</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>update_password</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id and password_digest input parameters</li>
+<li>use the User Model class to update the <code>password_digest</code> for the User associated with the id primary key</li>
+<li>(no return is required)</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq07.1</code></pre></li>
+<li><p>Implement the <code>update_listname</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id and name input parameters</li>
+<li>use the TodoList Model class to update the <code>list_name</code> for the TodoList associated with id primary key</li>
+<li>(no return is required)</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq07.2</code></pre></li>
+</ol></li>
+<li><p>Delete rows from DB</p>
+<ol style="list-style-type: decimal">
+<li><p>Implement the <code>delete_user</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id input parameter</li>
+<li>use the User Model class to delete the User associated with the <code>id</code> primary key from the database</li>
+<li>(no return is required)</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq08.1</code></pre></li>
+<li><p>Implement the <code>delete_todolist</code> method within <code>assignment/assignment.rb</code> to</p>
+<ul>
+<li>accept an id input parameter</li>
+<li>use the TodoList Model class to delete the TodoList associated with the <code>id</code> primary key.</li>
+<li>(no return is required)</li>
+</ul>
+<pre class="script"><code>$ rspec -e rq08.2</code></pre></li>
+</ol></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Some unit tests have been provided in the bootstrap files and provide examples of tests the grader will be evaluating for when you submit your solution. They must be run from the project root directory.</p>
+<pre class="shell"><code>$ rspec 
+...
+Finished in 3.39 seconds (files took 1.47 seconds to load)
+52 examples, 0 failures</code></pre>
+<p>You can run as many specific tests you wish be adding <code>-e rq## -e rq##</code></p>
+<pre class="shell"><code>$ rspec -e rq01 -e rq02</code></pre>
+<h3 id="submission">Submission</h3>
+<p>Submit an .zip archive (other archive forms not currently supported) with your solution root directory as the top-level (e.g., your Gemfile and sibling files must be in the root of the archive and <em>not</em> in a sub-folder. The grader will replace the spec files with fresh copies and will perform a test with different query terms.</p>
+<pre class="text"><code>|-- app
+|   |-- assets
+|   |-- controllers
+|   |-- helpers
+|   |-- mailers
+|   |-- models
+|   `-- views
+|-- assignment
+|   `-- assignment.rb
+|-- bin
+|-- config
+|-- config.ru
+|-- db
+|-- Gemfile
+|-- Gemfile.lock
+|-- lib
+|-- log
+|-- public
+|-- Rakefile
+|-- README.rdoc
+|-- test
+`-- vendor</code></pre>
+<h4 id="last-updated-2015-10-29">Last Updated: 2015-10-29</h4>
