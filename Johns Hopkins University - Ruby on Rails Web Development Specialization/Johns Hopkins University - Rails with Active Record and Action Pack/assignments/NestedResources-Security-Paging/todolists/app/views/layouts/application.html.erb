@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todolists</title>
+  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if logged_in? %>
+  <div style='float: right;'>
+    Logged in as <%= current_user.username %> |
+    <%= link_to "Logout", logout_path, method: :delete %> 
+  </div>
+<% end %>
+
+<% flash.each do |key, value| %>
+  <p id='<%= key %>'><%= value %></p>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
