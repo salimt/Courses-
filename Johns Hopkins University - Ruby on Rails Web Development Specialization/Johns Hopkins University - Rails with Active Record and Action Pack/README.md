@@ -19,5 +19,5 @@ In Rails with Active Record and Action Pack, we will explore how to interact wit
 ### Introduction to Action Pack
 -In this module, we will introduce Rails' Action Pack, which is a combination of Action Controller and Action View. We will see how REST has influenced routing in a Rails application and also talk about partials, form helpers, and layouts.
 
-###Security and Nested Resources in Action Pack
+### Security and Nested Resources in Action Pack
 -In this module, we will talk about how to deal with nested resources in Rails. We will then talk about securing your app with a username and password combination for authentication purposes and making sure that users are only authorized to make changes to and view their own resources. We will finish off the module by discussing pagination and deploying to Heroku Paas (Platform as a Service).
