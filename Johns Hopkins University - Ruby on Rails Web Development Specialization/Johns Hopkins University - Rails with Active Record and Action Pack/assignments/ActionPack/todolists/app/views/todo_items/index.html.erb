@@ -1,0 +1,38 @@
+<body style="background-color:#C0C0C0;">
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Todo Items</h1>
+<font color="red"><h3>Number of Completed Todos: <td><%= @number_of_completed_todos %></td></h3></font>
+
+<table>
+  <thead>
+    <tr>
+      <th>Due date</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Completed</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_items.each do |todo_item| %>
+      <tr>
+        <td><%= todo_item.due_date %></td>
+        <td><%= todo_item.title %></td>
+        <td><%= todo_item.description %></td>
+        <td><%= todo_item.completed %></td>
+        <td><%= link_to 'Show', todo_item %></td>
+        <!-- <td><%= link_to 'Edit', edit_todo_item_path(todo_item) %></td> -->
+        <td><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Todo item', new_todo_item_path %>
+
+</body>

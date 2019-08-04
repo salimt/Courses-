@@ -1,0 +1,244 @@
+<h2 id="assignment-for-module-3-actionpack">Assignment for Module #3: ActionPack</h2>
+<p>The overall goal of this assignment is to assess your ability to implement and customize Rails scaffold.</p>
+<p>This includes:</p>
+<ul>
+<li>Creating a Rails scaffold for a Model, View, and Controller (MVC)</li>
+<li>Modifying the runtime application flow</li>
+<li>Re-using and customizing partial views</li>
+<li>Sharing state through the controller attributes with the view</li>
+<li>Implementing an end-to-end display of a custom query result</li>
+</ul>
+<p>The functional goal of this assignment is to implement a web application to manage TodoItems.</p>
+<h3 id="functional-requirements">Functional Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create the scaffold for the following model type:</p>
+<ul>
+<li>TodoItem</li>
+</ul></li>
+<li><p>Create the Database (DB) schema for <code>TodoItem</code></p></li>
+<li><p>Change the default scaffolding to route to the <code>index</code> page versus the <code>show</code> page after a TodoItem is created</p></li>
+<li><p>Remove the <code>Edit</code> link from the <code>index</code> view.</p></li>
+<li><p>Modify the TodoItem view partial to display the <code>Completed</code> property when a TodoItem is being edited and not during creation.</p></li>
+<li><p>Display the number of completed TodoItems.</p></li>
+</ol>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails application called <code>todolists</code></p></li>
+<li><p>Add the following specification to your Gemfile</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">group <span class="st">:test</span> <span class="kw">do</span>
+  gem <span class="st">&#39;rspec-rails&#39;</span>, <span class="st">&#39;~&gt; 3.0&#39;</span>
+  gem <span class="st">&#39;capybara&#39;</span>
+<span class="kw">end</span></code></pre></li>
+<li><p>Run the <code>bundle</code> command to resolve new gems</p></li>
+<li><p>From the <code>todolists</code> application root directory, initialize the rspec tests using the <code>rails generate rspec:install</code> command</p>
+<pre class="shell"><code>  [todolists]$ rails generate rspec:install
+      create  .rspec
+      create  spec
+      create  spec/spec_helper.rb
+      create  spec/rails_helper.rb</code></pre>
+<p>Add the following line to <code>.rspec</code> to add verbose output to test results.</p>
+<pre class="shell"><code>--format documentation</code></pre></li>
+<li><p>Download and extract the starter set of bootstrap files.</p>
+<pre class="shell"><code>|-- Gemfile
+|-- db
+|    `-- seed.rb
+`-- spec
+    `-- features
+        `-- module3_action_pack_spec.rb</code></pre>
+<ul>
+<li><p>overwrite your existing Gemfile with the Gemfile from the bootstrap fileset. They should be nearly identical, but this is done to make sure the gems and versions you use in your solution can be processed by the automated Grader when you submit. Any submission should be tested with this version of the file.</p></li>
+<li><p>overwrite your existing <code>db/seed.rb</code> file using the <code>seeds.rb</code> provided with the bootstrap fileset. The bootstrap <code>seeds.rb</code> file contains some test data that will be useful during development and unit tests.</p></li>
+<li><p>add the <code>spec/features/module3_action_pack_spec.rb</code> file provided with the bootstrap fileset to your <code>todolists</code> application. Within your application root directory, you will first need to create a corresponding <code>spec/features</code> sub-directory to place the <code>module3_action_pack_spec.rb</code> file. This file contains tests that will help determine whether you have completed the assignment.</p></li>
+</ul></li>
+<li><p>Run the rspec test(s) to receive feedback. <code>rspec</code> must be run from the root directory of your application. All tests will (obviously) fail until you complete the specified solution.</p>
+<pre class="shell"><code>$ rspec 
+...
+19 examples, 1 failure, 17 pending</code></pre>
+<p>To focus test feedback on a specific step of the requirements, add &quot;-e rq##&quot; to the rspec command line to only evaluate that requirement. Pad all step numbers to two digits.</p>
+<pre class="shell"><code>$ rspec -e rq01
+Run options: include {:full_description=&gt;/rq01/}
+
+Module #3
+  rq01
+    Generate Rails application
+      must have top level structure of a rails application
+
+Finished in 0.00465 seconds (files took 1.56 seconds to load)
+1 example, 0 failures</code></pre></li>
+<li><p>Implement your solution to the technical requirements and use the rspec tests to help verify your completed solution.</p></li>
+<li><p>Submit your Rails app solution for grading.</p></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Create a new Rails app called <code>todolists</code>. Use the Gemfile provided in the bootstrap files (as stated in Step 5 within the Getting Started section). Do not change this Gemfile from what is provided or your submitted solution may not be able to be processed by the grader (i.e., do not add any additional gems or change gem versions).</p>
+<pre class="shell"><code>$ rails new ...
+$ rspec -e rq01</code></pre></li>
+<li><p>Using the <code>rails generate scaffold</code> command, create a Rails MVC artifact for a TodoItem that has the following business-related fields:</p>
+<ul>
+<li>TodoItem
+<ul>
+<li>due_date - date when the specific task is to be complete</li>
+<li>title - a string with short name for specific task</li>
+<li>description - a string with narrative text for specific task</li>
+<li>completed - a boolean value (default=false), indicating whether item is complete</li>
+</ul></li>
+</ul>
+<p>It is assumed that this type will also contain the <code>id</code>, <code>created_at</code>, and <code>updated_at</code> fields. Migrate the database as a part of this requirement to populate the database with the TodoItem schema.</p>
+<pre class="shell"><code>$ rails g scaffold ... 
+$ rake db:migrate 
+$ rspec -e rq02</code></pre>
+<p>Note that the above <code>rake db:migrate</code> command will execute against the <code>db/development.sqlite3</code> database instance. The capybara rspec tests will use the <code>db/test.sqlite3</code> database instance and automatically run <code>db:migrate</code> and <code>db:seed</code> on its own. The default database for all commands is the development database.</p>
+<ul>
+<li>Use <code>rake db:seed RAILS_ENV=test</code> to execute the db/seed.rb against the test database.</li>
+<li>Use <code>rails db -e test</code> to access the test database.</li>
+<li>Use <code>rails c test</code> to use the Rails console to interact with the test database.</li>
+</ul>
+<p>Since the grader uses a separate <code>test</code> database instance, you can modify the state of the <code>development</code> database as you wish during your development.</p>
+<p>We will have specific interest in the following artifacts.</p>
+<pre class="shell"><code>db/migrate/..._create_todo_items.rb
+app/models/todo_item.rb
+app/controllers/todo_items_controller.rb
+app/views/todo_items/index.html.erb
+app/views/todo_items/edit.html.erb
+app/views/todo_items/show.html.erb
+app/views/todo_items/new.html.erb
+app/views/todo_items/_form.html.erb</code></pre></li>
+<li><p>Seed the database with the <code>db/seeds.rb</code> file supplied in the student-start bootstrap files. Do not modify this file. The grader expects test results to be based on this input.</p>
+<pre class="shell"><code>$ rake db:seed 
+$ rspec -e rq03</code></pre></li>
+<li><p>Start the Rails server and navigate to the todo_items index page.</p>
+<pre class="shell"><code>$ rails s</code></pre>
+<p><a href="http://localhost:3000/todo_items">http://localhost:3000/todo_items</a></p>
+<pre class="shell"><code>$ rspec -e rq04</code></pre></li>
+<li><p>Using the <code>New Todo item</code> link, create a new TodoItem (with any data). After a new Todo Item has been successfully created, notice the page that it navigated you to. This is the show page.</p>
+<pre class="shell"><code>$ rspec -e rq05</code></pre>
+<ul>
+<li><p>Review how the <code>submit</code> action in the view invokes a <code>create</code> URI when the user presses the <code>Create Todo Item</code> button.</p>
+<pre class="shell"><code>app/views/todo_items/new.html.erb
+app/views/todo_items/_form.html.erb</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="er">&lt;</span>%= form_for(@todo_item) do |f| %&gt;
+  ...
+  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;actions&quot;</span><span class="kw">&gt;</span>
+    <span class="er">&lt;</span>%= f.submit %&gt;
+  <span class="kw">&lt;/div&gt;</span>
+<span class="er">&lt;</span>%= end %&gt;</code></pre></li>
+<li><p>Notice that the <code>create</code> method in the controller handles the <code>create</code> URI call passed by the view and persists the new TodoItem. When the save operation is completed, the controller then redirects the flow to the <code>show</code> URI for the <span class="citation">@todo_item</span>.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="co"># POST /todo_items</span>
+<span class="co"># POST /todo_items.json</span>
+<span class="kw">def</span> create
+  <span class="ot">@todo_item</span> = <span class="dt">TodoItem</span>.new(todo_item_params)
+
+  respond_to <span class="kw">do</span> |format|
+    <span class="kw">if</span> <span class="ot">@todo_item</span>.save
+      format.html { redirect_to <span class="ot">@todo_item</span>, notice: <span class="st">&#39;Todo item was successfully created.&#39;</span> }
+      format.json { render <span class="st">:show</span>, status: <span class="st">:created</span>, location: <span class="ot">@todo_item</span> }
+    ...
+    <span class="kw">end</span>
+  <span class="kw">end</span>
+<span class="kw">end</span></code></pre></li>
+<li><p>Notice that the <code>show</code> method in the controller retrieves the persisted TodoItem by <code>:id</code>. By default the flow continues to the <code>show</code> page, where the view displays the details of the newly created <span class="citation">@todo_item</span>.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="kw">class</span> <span class="dt">TodoItemsController</span> &lt; <span class="dt">ApplicationController</span> 
+  before_action <span class="st">:set_todo_item</span>, only: [<span class="st">:show</span>, ...] 
+
+... 
+
+<span class="co"># GET /todo_items/1</span>
+<span class="co"># GET /todo_items/1.json</span>
+<span class="kw">def</span> show
+<span class="kw">end</span> 
+
+...
+
+<span class="kw">private</span>
+    <span class="co"># Use callbacks to share common setup or constraints between actions.</span>
+    <span class="kw">def</span> set_todo_item
+      <span class="ot">@todo_item</span> = <span class="dt">TodoItem</span>.find(params[<span class="st">:id</span>])
+    <span class="kw">end</span>
+
+    ...</code></pre>
+<pre class="shell"><code>app/views/todo_items/show.html.erb</code></pre>
+<pre class="sourceCode html"><code class="sourceCode html"><span class="kw">&lt;p&gt;</span>
+  <span class="kw">&lt;strong&gt;</span>Due date:<span class="kw">&lt;/strong&gt;</span>
+  <span class="er">&lt;</span>%= @todo_item.due_date %&gt;
+<span class="kw">&lt;/p&gt;</span>
+
+<span class="kw">&lt;p&gt;</span>
+  <span class="kw">&lt;strong&gt;</span>Title:<span class="kw">&lt;/strong&gt;</span>
+  <span class="er">&lt;</span>%= @todo_item.title %&gt;
+<span class="kw">&lt;/p&gt;</span>
+
+<span class="kw">&lt;p&gt;</span>
+  <span class="kw">&lt;strong&gt;</span>Description:<span class="kw">&lt;/strong&gt;</span>
+  <span class="er">&lt;</span>%= @todo_item.description %&gt;
+<span class="kw">&lt;/p&gt;</span>
+
+<span class="kw">&lt;p&gt;</span>
+  <span class="kw">&lt;strong&gt;</span>Completed:<span class="kw">&lt;/strong&gt;</span>
+  <span class="er">&lt;</span>%= @todo_item.completed %&gt;
+<span class="kw">&lt;/p&gt;</span></code></pre></li>
+<li><p>Note the mapping of helper_method_prefix, method/URI, and controller#method mappings shown by the <code>rake routes</code> command. This shows which action in the controller will be called when a method/URI is invoked.</p>
+<ul>
+<li>The controller method is optional and the flow will continue to the view of the same name as the intended action when that occurs.</li>
+<li>If a controller method does exist and matches the action's name, it has the ability to add member <span class="citation">@variables</span> with state for the views to use (e.g., set_todo_item called prior to show).</li>
+<li>If the controller method does not change the route (e.g., show does not change the route), then the flow will continue to the view of the same name as the action.</li>
+<li>If the controller method changes the route through a <code>redirect_to</code> (e.g., the create action re-directs the flow to the show URI), the flow will follow the newly defined path by sending the HTTP client a re-direct.</li>
+<li>If the controller method changes the route using a <code>render</code> (e.g., the create action redenders a JSON document response when JSON is requested), the specified view is returned directly to the client.</li>
+</ul>
+<pre class="shell"><code>$ rake routes
+        Prefix Verb   URI Pattern                    Controller#Action
+    todo_items GET    /todo_items(.:format)          todo_items#index
+               POST   /todo_items(.:format)          todo_items#create
+ new_todo_item GET    /todo_items/new(.:format)      todo_items#new
+edit_todo_item GET    /todo_items/:id/edit(.:format) todo_items#edit
+     todo_item GET    /todo_items/:id(.:format)      todo_items#show
+               PATCH  /todo_items/:id(.:format)      todo_items#update
+               PUT    /todo_items/:id(.:format)      todo_items#update
+               DELETE /todo_items/:id(.:format)      todo_items#destroy</code></pre></li>
+</ul></li>
+<li><p>Modify the flow so that the user is directed back to the <code>index</code> page after creating a TodoItem instead of the <code>show</code> page. (Hint: you are changing the URI redirected by the controller's <code>create</code> method. Use <code>rake routes</code> to help determine the appropriate helper_method_prefix, URI, and controller#method mappings. Append <code>_url</code> to the helper method prefix when implementing this redirection.)</p>
+<pre class="shell"><code>$ rake routes
+$ rspec -e rq06</code></pre></li>
+<li><p>Remove the <code>Edit</code> link from the <code>index</code> page view. (You will still be able to access edit from the <code>show</code> page view).</p>
+<pre class="shell"><code>$ rspec -e rq07</code></pre></li>
+<li><p>Add conditional logic to the <code>_form.html.erb</code> partial so that it only displays the <code>completed</code> property when editing and not when creating. (A TodoItem cannot possibly be done before it is created;)</p>
+<pre class="shell"><code>$ rspec -e rq08</code></pre>
+<p>Hint: You can obtain the model object's persisted state using <code>object.persisted?</code> or <code>object.new_record?</code> to help determine if it is new or being edited.</p></li>
+<li><p>Display the number of completed TodoItems on the <code>index</code> page.</p>
+<ol style="list-style-type: decimal">
+<li>Implement a class method in the <code>TodoItem</code> model that returns the count of completed TodoItems.</li>
+<li>Update the <code>index</code> method in the controller class to assign the count of completed TodoItems in a member variable (.e.g, <span class="citation">@number_of_completed_todos</span>)</li>
+<li>Display the count of completed TodoItems on the <code>index</code> page using a reference by the view -- to the member variable defined in the controller class. The grader is looking for the result to be expressed as <code>Number of Completed Todos: #</code> anywhere on the page -- where <code>#</code> is the number of completed todos. There must be a single space between the <code>:</code> and number.</li>
+</ol>
+<pre class="shell"><code>$ rspec -e rq09</code></pre>
+<p>Hint: This should be very similar to how the view class gets the list of TodoItems from the controller using the <code>@todo_items</code> member variable.</p></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Some unit tests have been provided in the bootstrap files and provide examples of tests the grader will be evaluating for when you submit your solution. They must be run from the project root directory.</p>
+<pre class="shell"><code>$ rspec 
+...
+19 examples, 0 failures</code></pre>
+<p>You can run as many specific tests you wish be adding <code>-e rq## -e rq##</code></p>
+<pre class="shell"><code>$ rspec -e rq01 -e rq02</code></pre>
+<h3 id="submission">Submission</h3>
+<p>Submit an .zip archive (other archive forms not currently supported) with your solution root directory as the top-level (e.g., your Gemfile and sibling files must be in the root of the archive and <em>not</em> in a sub-folder. The grader will replace the spec files with fresh copies and will perform a test with different query terms.</p>
+<pre class="text"><code>|-- app
+|   |-- assets
+|   |-- controllers
+|   |-- helpers
+|   |-- mailers
+|   |-- models
+|   `-- views
+|-- bin
+|-- config
+|-- config.ru
+|-- db
+|-- Gemfile
+|-- Gemfile.lock
+|-- lib
+|-- log
+|-- public
+|-- Rakefile
+|-- README.rdoc
+|-- test
+`-- vendor</code></pre>
+<h4 id="last-updated-2015-10-25">Last Updated: 2015-10-25</h4>
