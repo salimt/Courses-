@@ -1,0 +1,262 @@
+<h1 id="module-2-lesson-1-aggregation-framewework">Module 2, Lesson 1: Aggregation Framewework</h1>
+<p>The overall goal of the assignment is to:</p>
+<ul>
+<li>implement aggregation framework queries using the MongoDB Ruby Driver</li>
+</ul>
+<p>The functional goal of the assignment is to:</p>
+<ul>
+<li>implement various document access methods for Race Results</li>
+</ul>
+<p>Note that this assignment was written so that you can implement it in parts after each lecture. If you are performing the assignment in between lectures, stop at the next lecture boundary in the technical requirements section and resume once you have completed the lecture. You are free to experiment with other forms of the queries presented, but the grading will only be targeted at the specific requirements listed.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ol style="list-style-type: decimal">
+<li><p>Start your MongoDB server</p></li>
+<li><p>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</p>
+<pre class="text"><code>--- student-start  
+    |-- assignment.rb
+    |-- race_results.json
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- assignment_spec.rb
+        `-- spec_helper.rb</code></pre>
+<ul>
+<li>assignment.rb - your solution must be placed within this file</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+</ul></li>
+<li><p>Install the following gems. You may already have them installed.</p>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its
+$ gem install mongo -v 2.1.2</code></pre></li>
+<li><p>Run the rspec command from the project root directory (i.e., <code>student-start</code> directory) to execute the unit tests within the spec directory. This should result in several failures until you complete your solution in <code>assignment.rb</code>.</p>
+<pre class="shell"><code>$ rspec
+
+(N) examples, (N) failures
+...</code></pre></li>
+<li>Implement the Ruby technical requirements in <code>assignment.rb</code> within the provided class <code>Solution</code>. Helper methods have been provided to get a connection to Mongo and set the database and collection names. You can override these values using environment variables if you are not using the defaults.</li>
+</ol>
+<ul>
+<li>MONGO_URL='mongodb://localhost:27017'</li>
+<li>MONGO_DATABASE='test'</li>
+<li>RACE_COLLECTION='race1'</li>
+</ul>
+<p>Implement all methods relative to the <code>@coll</code> instance variable setup to reference the collection.</p>
+<h2 id="technical-requirements">Technical Requirements</h2>
+<h3 id="lecture-1-introduction">Lecture 1: Introduction</h3>
+<p>In this section will use a few pre-canned queries to get warmed up on the syntax of the aggregation query. Follow-on sections will require more work on your part.</p>
+<ol style="list-style-type: decimal">
+<li><p>Load the <code>assignment.rb</code> script into the <code>irb</code> shell, verify you can get access to the collection, and assign that collection to the variable called <code>racers</code> (used in follow-on steps).</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">$ irb
+&gt; require <span class="st">&#39;./assignment.rb&#39;</span>
+&gt; racers=<span class="dt">Solution</span>.collection
+ =&gt; <span class="co">#&lt;Mongo::Collection:0x22344800 namespace=test.race1&gt;</span></code></pre></div></li>
+<li><p>Issue a simple aggregation query that counts the number of race results in the collection.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.aggregate([ {<span class="st">:$group=</span>&gt;{<span class="st">:_id=</span>&gt;<span class="dv">0</span>, <span class="st">:count=</span>&gt;{<span class="st">:$sum=</span>&gt;<span class="dv">1</span>}}}]).first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">0</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">1000</span>}</code></pre></div>
+<p>To break this query down</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.aggregate([ 
+      {<span class="st">:$group=</span>&gt;{ 
+          <span class="st">:_id=</span>&gt;<span class="dv">0</span>, 
+          <span class="st">:count=</span>&gt;{<span class="st">:$sum=</span>&gt;<span class="dv">1</span>}}
+      }
+  ]).first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">0</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">1000</span>}</code></pre></div>
+<ul>
+<li><code>aggregate()</code> takes an array of commands, <code>$group</code> is one of them. We can have many aggregate commands in that array and <code>$group</code> can occur multiple times. The order within the array is important.</li>
+<li><code>$group</code> has two primary arguments: group by key, and group functions. The function results are associated with each resulting key. In this example, we are making the key be a single value -- so all functions results are applied against every row. We have a single group.</li>
+<li><code>_id</code> is assigned to our group key. Here it is a fixed <code>0</code> value to make every document processed a member of the same group.</li>
+<li><code>count</code> is a property name we want in the results. We set it to the result of counting 1 for each document.</li>
+<li><code>$sum</code> is an aggregate function that adds a number (<code>1</code> in this case) for each document it processes.</li>
+<li><code>first()</code> is a function that returns only the first document from the result of <code>aggregate()</code>. Since we know we will have only a single result row with the count result, we can simply return the first (and only) result.</li>
+</ul></li>
+<li><p>Issue a slightly more complex aggregation query that counts the number of race results by group. Please pardon the overload of the age-group <code>'$group'</code> (e.g., &quot;14 and under&quot;) with the MongoDB aggregation function <code>:$group</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.aggregate([ {<span class="st">:$group=</span>&gt;{<span class="st">:_id=</span>&gt;<span class="st">&quot;$group&quot;</span>, <span class="st">:count=</span>&gt;{<span class="st">:$sum=</span>&gt;<span class="dv">1</span>}}}]).each {|r| pp r}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;14 and under&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">111</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;40 to 49&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">141</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;20 to 20&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">123</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;60 to 69&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">121</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;50 to 59&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">129</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;masters&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">117</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;30 to 39&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">127</span>}
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;15 to 19&quot;</span>, <span class="st">&quot;count&quot;</span>=&gt;<span class="dv">131</span>}</code></pre></div>
+<p>To again break the query down</p>
+<ul>
+<li><code>aggregate</code> and (the aggregration function-)<code>$group</code> are being used exactly as they were before except we have changed the <code>$group</code> specification to use the name of the (age-)<code>group</code> as the key. As you saw above -- this results in several documents broken down by distinct (age-)<code>group</code> name assigned to the <code>_id</code> of the document.</li>
+<li><code>count</code> and <code>$sum</code> work the same as they did before except they have more (aggregate function-)<code>group</code>s to work with.</li>
+<li><code>each</code> iterates through each document in the collection. Since we may have multiple documents <code>first</code> is of little value to us except to grab a sample.</li>
+<li><code>{|r| pp r}</code> is a single line block where each document of the result is passed in as <code>r</code> and pretty print (<code>pp</code>) is used to print a more human readable form of document hashes.</li>
+</ul>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.aggregate([ {
+      <span class="st">:$group=</span>&gt;{
+          <span class="st">:_id=</span>&gt;<span class="st">&quot;$group&quot;</span>, 
+          <span class="st">:count=</span>&gt;{<span class="st">:$sum=</span>&gt;<span class="dv">1</span>}}
+          }
+          ]).each {|r| pp r}</code></pre></div>
+<p>If you are familiar with SQL, the above query would be similar to the following. Again, pardon our use of the term (age-)<code>group</code> versus a SQL-<code>group by</code>.</p>
+<div class="sourceCode"><pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">select</span> <span class="st">&#39;group&#39;</span>, <span class="fu">count</span>(<span class="st">&#39;_id&#39;</span>)
+<span class="kw">from</span> RACERS
+<span class="kw">group</span> <span class="kw">by</span> <span class="st">&#39;group&#39;</span></code></pre></div></li>
+</ol>
+<h3 id="lecture-2-project">Lecture 2: <code>$project</code></h3>
+<p>In this section you will be asked to reshape a document by promoting and building new properties required by downstream aggregation functions and in the final result. You will place all solutions within <code>assignment.rb</code>. Refer back to the lectures for the details of each query.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>racer_names</code> that
+<ul>
+<li>accepts no inputs</li>
+<li>finds all racers</li>
+<li>reduces the result to contain only <code>first_name</code> and <code>last_name</code> (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/project/#pipe._S_project">$project</a>)</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; s=<span class="dt">Solution</span>.new
+&gt; r=s.racer_names.to_a.slice(<span class="dv">0</span>,<span class="dv">2</span>)
+  =&gt; [{<span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;SHAUN&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JOHNSON&quot;</span>}, 
+      {<span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;TUAN&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JOHNSON&quot;</span>}] </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture2_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>id_number_map</code> that
+<ul>
+<li>accepts no inputs</li>
+<li>finds all racers</li>
+<li>reduces the result to contain only <code>_id</code> and <code>number</code></li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.id_number_map.to_a.slice(<span class="dv">0</span>,<span class="dv">2</span>)
+[{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563e7555e301d0b356000000&#39;</span>), <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">0</span>}, 
+ {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563e7555e301d0b356000001&#39;</span>), <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">1</span>}] </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture2_spec.rb -e rq02</code></pre></li>
+<li>Implement an instance method called <code>concat_names</code> that
+<ul>
+<li>accepts no inputs</li>
+<li>finds all racers</li>
+<li>reduces the result to contain only <code>number</code> and <code>name</code> field only where <code>name</code> is the result of concatenating <code>last_name, first_name</code> (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation-string/"><code>$concat</code></a>)</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.concat_names.to_a.slice(<span class="dv">0</span>,<span class="dv">2</span>)
+ =&gt; [{<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">0</span>, <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;JOHNSON, SHAUN&quot;</span>}, {<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">1</span>, <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;JOHNSON, TUAN&quot;</span>}] </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture2_spec.rb -e rq03</code></pre></li>
+</ol>
+<h3 id="lecture-3-group">Lecture 3: <code>$group</code></h3>
+<p>In this section we will get some practice applying group functions around a selected set of sub-results.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>group_times</code> that
+<ul>
+<li>accepts no inputs</li>
+<li>finds all racers</li>
+<li>groups the racers into gender and age group (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/group/#pipe._S_group">$group</a>)</li>
+<li>counts the number of racers in the group and assigns this to <code>runners</code></li>
+<li>calculates the fastest time for each group and assigns this value to <code>fastest_time</code> (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/min/#grp._S_min">$min</a>)</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.group_times.to_a.slice(<span class="dv">0</span>,<span class="dv">3</span>)
+ =&gt; [{<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;50 to 59&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">65</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1269</span>}, 
+     {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;30 to 39&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;M&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">68</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1262</span>},
+     {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;14 and under&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;M&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">66</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1363</span>}]</code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture3_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>group_last_names</code> that
+<ul>
+<li>accepts no inputs</li>
+<li>finds all racers</li>
+<li>groups the racers into gender and (age-)group as above</li>
+<li>creates an array[] of (<strong>non-distinct</strong>) last_names called <code>last_names</code> (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/push/#grp._S_push">$push</a>)</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>You can try out your new method using the irb shell. Note the first group and the names within the group may not be in the same order as the example shows.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.group_last_names.first
+{<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;50 to 59&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;last_names&quot;</span>=&gt;[<span class="st">&quot;GARNER&quot;</span>, <span class="st">&quot;SINGH&quot;</span>, ...]} 
+&gt; r=s.group_last_names.first[<span class="st">:last_names</span>].count
+ =&gt; <span class="dv">65</span> </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture3_spec.rb -e rq02</code></pre></li>
+<li><p>Implement an instance method called <code>group_last_names_set</code> that repeats the previous query except</p>
+<ul>
+<li>creates an array[] of (<strong>distinct</strong>) last_names called <code>last_names</code> (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/addToSet/#grp._S_addToSet">$addToSet</a>)</li>
+</ul>
+<p>Note that because of the size of the array and the fact the contents are unsorted, it is hard to visually spot the duplicates, but <code>$addToSet</code> will de-dup the collection and <code>$push</code> will collect all members.</p>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.group_last_names_set.first
+{<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;50 to 59&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;last_names&quot;</span>=&gt;[<span class="st">&quot;GARNER&quot;</span>, <span class="st">&quot;SINGH&quot;</span>, ...]} 
+&gt; r=s.group_last_names_set.first[<span class="st">:last_names</span>].count
+ =&gt; <span class="dv">61</span> </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture3_spec.rb -e rq03</code></pre></li>
+</ol>
+<h3 id="lecture-4-match">Lecture 4: $match</h3>
+<p>In this section we will limit documents in the query pipeline to those that match a certain criteria.</p>
+<ol style="list-style-type: decimal">
+<li>Reimplement your solution to <code>group_times</code> in a new instance method called <code>groups_faster_than</code> such that it:
+<ul>
+<li>accepts time input</li>
+<li>finds all racers</li>
+<li>groups the racers into gender and age group</li>
+<li>counts the number of racers in the group and assigns this to <code>runners</code></li>
+<li>calculates the fastest time for each group and assigns this value to <code>fastest_time</code></li>
+<li><strong>reduces</strong> the list of results to only those that have a fastest time less than or equal to the time provided. This is the only difference from before. (Hint: <a href="https://docs.mongodb.org/v3.0/reference/operator/aggregation/match/#pipe._S_match">$match</a>)</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>Note that this will require that you form a <code>$match</code> (<code>:fastest_time</code>) on a property that is not in the original document from the database.</p>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.groups_faster_than(<span class="dv">1280</span>).to_a
+ =&gt; [{<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;50 to 59&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">65</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1269</span>}, 
+     {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;30 to 39&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;M&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">68</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1262</span>},
+     {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;30 to 39&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">59</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1270</span>}, 
+     {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;masters&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">58</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1264</span>}] </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture4_spec.rb -e rq01</code></pre></li>
+<li>Reimplement the previous solution to <code>groups_faster_than</code> in a new instance method called <code>age_groups_faster_than</code> such that it:
+<ul>
+<li>accepts <code>criteria_time</code> and <code>age_group</code></li>
+<li><strong>finds</strong> all racers in specified age group (&quot;M&quot; and &quot;F&quot;). This part is different.</li>
+<li>groups the racers into gender and age group</li>
+<li>counts the number of racers in the group and assigns this to <code>runners</code></li>
+<li>calculates the fastest time for each group and assigns this value to <code>fastest_time</code></li>
+<li>reduces the list of results to only those that have a fastest time less than or equal to the time provided.</li>
+<li>returns the Mongo result object for the aggregation command</li>
+</ul>
+<p>Note that this can be implemented with two (2) <code>$match</code> functions. One prior to the <code>$group</code> function and one after.</p>
+<p>You can try out your new method using the irb shell. The gender=&quot;M&quot; for this age group did not satisfy the <code>criteria_time</code> specified.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.age_groups_faster_than(<span class="st">&quot;masters&quot;</span>,<span class="dv">1280</span>).first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;{<span class="st">&quot;age&quot;</span>=&gt;<span class="st">&quot;masters&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>}, <span class="st">&quot;runners&quot;</span>=&gt;<span class="dv">58</span>, <span class="st">&quot;fastest_time&quot;</span>=&gt;<span class="dv">1264</span>}</code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture4_spec.rb -e rq02</code></pre></li>
+</ol>
+<h3 id="lecture-5">Lecture 5:</h3>
+<p>In this section we will modify the database.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>avg_family_time</code> that
+<ul>
+<li>accepts a <code>last_name</code></li>
+<li>finds the racers having that same last name (Hint: <code>$match</code>)</li>
+<li>determines the average of all their race times (Hint: <code>$group</code> and <code>$avg</code>)</li>
+<li>forms an array of numbers for each member of the group (Hint: <code>$group</code> and <code>$push</code>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; s.avg_family_time(<span class="st">&quot;JONES&quot;</span>).first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>, <span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;numbers&quot;</span>=&gt;[<span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>, <span class="dv">7</span>]} </code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture5_spec.rb -e rq01</code></pre></li>
+<li>Extend the implementation of <code>avg_family_time</code> in an instance method called <code>number_goal</code>
+<ul>
+<li>accepts a <code>last_name</code></li>
+<li>finds the racers having that same last name (Hint: <code>$match</code>)</li>
+<li>determines the average of all their race times (Hint: <code>$group</code> and <code>$avg</code>)</li>
+<li>forms an array of numbers for each member of the group (Hint: <code>$group</code> and <code>$push</code>) This is where the difference starts.</li>
+<li>forms a result with <code>avg_time</code> for each number (Hint: <code>$unwind</code>)</li>
+<li>forms a result with <code>last_name</code>, <code>number</code>, and <code>avg_time</code> for each number in the family with no <code>_id</code> property (Hint: <code>$project</code>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can try out your new method using the irb shell.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; s.number_goal(<span class="st">&quot;JONES&quot;</span>).each {|r| pp r}
+{<span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">3</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>}
+{<span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">4</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>}
+{<span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">5</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>}
+{<span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">6</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>}
+{<span class="st">&quot;avg_time&quot;</span>=&gt;<span class="fl">2006.6</span>, <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">7</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JONES&quot;</span>}</code></pre></div>
+<pre class="shell"><code>$rspec spec/lecture5_spec.rb -e rq02</code></pre></li>
+</ol>
+<h2 id="self-gradingfeedback">Self Grading/Feedback</h2>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+........
+
+(N) examples, 0 failures</code></pre>
+<h2 id="submission">Submission</h2>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<h2 id="last-updated-2016-01-31">Last Updated: 2016-01-31</h2>

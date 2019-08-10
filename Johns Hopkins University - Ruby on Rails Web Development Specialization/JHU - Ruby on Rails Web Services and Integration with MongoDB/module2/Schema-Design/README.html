@@ -1,0 +1,215 @@
+<h1 id="module-2-lesson-2-schema-design">Module 2, Lesson 2: Schema Design</h1>
+<p>In this assignment you will get some practice reshaping documents and relationships according to how you wish to represent individual document fields and document relationships.</p>
+<p>The overall goal of the assignment is to:</p>
+<ul>
+<li>change the data type for fields in a document</li>
+<li>add missing fields in documents</li>
+<li>normalize fields in a document</li>
+<li>change the structure of documents to support different relationships</li>
+</ul>
+<p>The functional goal of the assignment is to:</p>
+<ul>
+<li>update the <code>Racer</code> document fields to be a more well-designed schema</li>
+</ul>
+<p>This assignment is written as a practice exercise with self grading. You were shown many of the commands used here in a previous lesson and now called to use them as a part of implementing better document schema. You will perform all of it from within the <code>irb</code> shell. All queries are provided for you to inspect, modify, and verify the contents of the database. There is no test or anything to turn in but the format should leave you in a state where you are confortable making schema changes in your collections with the hands on experience and examples covered here.</p>
+<h2 id="getting-started">Getting Started</h2>
+<ol style="list-style-type: decimal">
+<li><p>Start your MongoDB server</p></li>
+<li><p>Download and extract the starter set of files. The instructions are written assuming you are inside this directory.</p>
+<pre class="text"><code>--- student-start  
+    |-- racer.rb
+    `-- race2_results.json</code></pre>
+<ul>
+<li>racer.rb - a helper class to obtain MongoDB server connections and access convenience methods to load and reset the test data</li>
+<li>race2_results.json - test data for the exercise.</li>
+</ul></li>
+<li><p>Install the following gems. You may already have them installed.</p>
+<pre class="shell"><code>$ gem install mongo -v 2.1.2</code></pre></li>
+<li>Helper methods have been provided to get a connection to MongoDB server and collections. You can override these values using environment variables if you are not using the defaults.</li>
+</ol>
+<ul>
+<li>MONGO_URL=&quot;mongodb://localhost:27017&quot;</li>
+<li>MONGO_DATABASE=&quot;test&quot;</li>
+<li>RACE_COLLECTION=&quot;race2&quot;</li>
+<li>RACER_COLLECTION=&quot;racer2&quot;</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><p>Prepare your <code>irb</code> shell environment by executing the following commands.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ irb
+&gt; require <span class="st">&quot;./racer.rb&quot;</span>
+&gt; <span class="dt">Racer</span>.reset
+ =&gt; <span class="dv">1000</span> </code></pre>
+<p><code>Racer.reset</code> takes an optional path to a data file, deletes everything in the collection, and loads in a fresh copy of the data. Nothing is touched if the file does not exist. If successfull, 1000 documents will be in the initial race results collection (<code>race2</code>) and no documents will be in the racer collection (<code>racer2</code>).</p></li>
+<li><p>You may reset your environment at any time by calling <code>Racer.reset</code>. You can also gain access to the specific collections being used by doing the following:</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.reset
+ =&gt; <span class="dv">1000</span> 
+&gt; races=<span class="dt">Racer</span>.races_collection
+ =&gt; <span class="co">#&lt;Mongo::Collection:0x10465900 namespace=test.race2&gt; </span>
+&gt; races.name
+ =&gt; <span class="st">&quot;race2&quot;</span> 
+&gt; races.count
+ =&gt; <span class="dv">1000</span> 
+&gt; racers=<span class="dt">Racer</span>.racers_collection
+ =&gt; <span class="co">#&lt;Mongo::Collection:0x9918740 namespace=test.racer2&gt; </span>
+&gt; racers.name
+ =&gt; <span class="st">&quot;racer2&quot;</span> 
+&gt; racers.count
+ =&gt; <span class="dv">0</span> </code></pre>
+<p>Since we will be using the races collection the most, the default <code>Racer.collection</code> and <code>Racer.races_collection</code> both reference the same thing.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.collection.name
+ =&gt; <span class="st">&quot;race2&quot;</span></code></pre></li>
+</ol>
+<h2 id="exercise">Exercise</h2>
+<h2 id="field-normalization">Field Normalization</h2>
+<h3 id="part-1-consistent-field-types">Part 1: Consistent Field Types</h3>
+<p>In this section you are going to locate fields of a particular type using the <code>$type</code> operator and update the field to a desired type using <code>update_one</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Locate a sample of <code>:number</code> fields from the documents in the database and notice how some are strings and others are integer type.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.collection.find(name: {<span class="st">:$regex=</span>&gt;<span class="st">&quot;JONES&quot;</span>}).projection({_id:<span class="dv">0</span>, number:<span class="dv">1</span>}).to_a
+ =&gt; [{<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">7</span>}, {<span class="st">&quot;number&quot;</span>=&gt;<span class="st">&quot;8&quot;</span>}]</code></pre></li>
+<li><p>Use the following query to find all <code>:number</code> properties of type <code>String</code>. We use the enum ordinal <code>2</code> for the BSON data type for String. (<a href="https://docs.mongodb.org/v3.0/reference/operator/query/type/">BSON Types</a>)</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.collection.find(number: {<span class="st">:$type=</span>&gt;<span class="dv">2</span>}).count
+ =&gt; <span class="dv">492</span> </code></pre>
+<p><code>16</code> is the ordinal type for a 32-bit integer.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.collection.find(number: {<span class="st">:$type=</span>&gt;<span class="dv">16</span>}).count
+ =&gt; <span class="dv">508</span> </code></pre></li>
+<li><p>Use the <a href="https://docs.mongodb.org/ecosystem/tutorial/ruby-driver-tutorial/#update-one"><code>update_one</code></a> operator to update only the <code>:number</code> field of documents with <code>:number</code>s of String type with the Integer form of the String using <code>to_i</code>.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer=<span class="dt">Racer</span>.collection
+&gt; racer.find(number: {<span class="st">:$type=</span>&gt;<span class="dv">2</span>}).each <span class="kw">do</span> |r|
+     racer.update_one({<span class="st">:_id=</span>&gt;r[<span class="st">:_id</span>]}, {<span class="st">:$set=</span>&gt;{<span class="st">:number=</span>&gt;r[<span class="st">:number</span>].to_i}})
+  <span class="kw">end</span>
+
+&gt; <span class="dt">Racer</span>.collection.find(number: {<span class="st">:$type=</span>&gt;<span class="dv">2</span>}).count
+ =&gt; <span class="dv">0</span> 
+&gt; <span class="dt">Racer</span>.collection.find(number: {<span class="st">:$type=</span>&gt;<span class="dv">16</span>}).count
+ =&gt; <span class="dv">1000</span> </code></pre></li>
+</ol>
+<h3 id="part-2-consistent-fields-supplied">Part 2: Consistent Fields Supplied</h3>
+<p>In this part we are going to fix some inconsistencies between documents where some are missing the <code>:gender</code> field. We are going to make use of the <code>$nil</code> comparison value and the <a href="https://docs.mongodb.org/ecosystem/tutorial/ruby-driver-tutorial/#update-many"><code>update_many</code></a> function to correct these documents.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the following query to locate all documents that do not have a <code>:gender</code> field.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; <span class="dt">Racer</span>.collection.find(gender<span class="st">:$nil</span>).count
+ =&gt; <span class="dv">508</span> </code></pre></li>
+<li><p>Use the following query to add the <code>:gender=&gt;&quot;F&quot;</code> to each document missing that field. This assumes we already know that each document missing a <code>:gender</code> is female.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; result=<span class="dt">Racer</span>.collection.find(gender<span class="st">:$nil</span>).update_many(<span class="st">:$set=</span>&gt;{<span class="st">:gender=</span>&gt;<span class="st">&quot;F&quot;</span>})
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:21076800 documents=[{&quot;ok&quot;=&gt;1, &quot;nModified&quot;=&gt;508, &quot;n&quot;=&gt;508}]&gt; </span>
+&gt; result.modified_count
+ =&gt; <span class="dv">508</span> 
+&gt; <span class="dt">Racer</span>.collection.find(gender<span class="st">:$nil</span>).count
+ =&gt; <span class="dv">0</span> </code></pre></li>
+</ol>
+<h3 id="part-3-normalized-fields-compound-values">Part 3: Normalized Fields (compound values)</h3>
+<p>In this part we are going to replace the compound <code>:name</code> field with a normalized <code>:first_name</code> and <code>:last_name</code> field. Luckily we know that in our database, all first and last names are a single word (no spaces) and first is always before last in the existing <code>:name</code> field.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the following query to show the <code>:name</code> fields. Notice how the first and last name of each person is combined into a single field. The later query tells us how many documents in the collection still have a <code>:name</code> field.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.collection.find.projection({_id:<span class="dv">0</span>, name:<span class="dv">1</span>}).limit(<span class="dv">3</span>).to_a
+ =&gt; [{<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;ARACELY SMITH&quot;</span>}, {<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;JOEL JOHNSON&quot;</span>}, {<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;MARTIN JOHNSON&quot;</span>}] 
+&gt; <span class="dt">Racer</span>.collection.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).count
+ =&gt; <span class="dv">1000</span> </code></pre></li>
+<li><p>Use the following query to locate all documents with a <code>:name</code> field, extract the <code>first_name</code> and <code>last_name</code> from the <code>:name</code> field with a regular expression, and update the document. The document will have the two new fields added and the older one removed.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers=<span class="dt">Racer</span>.collection
+&gt; racers.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).each <span class="kw">do</span> |r|
+    matches=<span class="ot">/(\w+) (\w+)/</span>.match r[<span class="st">:name</span>]
+    first_name=matches[<span class="dv">1</span>]
+    last_name=matches[<span class="dv">2</span>]
+    racers.update_one({<span class="st">:_id=</span>&gt;r[<span class="st">:_id</span>]}, 
+                      {<span class="st">:$set=</span>&gt;{<span class="st">:first_name=</span>&gt;first_name, <span class="st">:last_name=</span>&gt;last_name}, 
+                       <span class="st">:$unset=</span>&gt;{<span class="st">:name=</span>&gt;<span class="st">&quot;&quot;</span>}})
+  <span class="kw">end</span></code></pre></li>
+<li><p>Verify all <code>:name</code> properties were deleted and we now have <code>:first_name</code> and <code>:last_name</code> fields.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">false</span>}, 
+              <span class="st">:first_name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}, 
+              <span class="st">:last_name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).count
+ =&gt; <span class="dv">1000</span> </code></pre></li>
+</ol>
+<h2 id="normalizing-relationships">Normalizing Relationships</h2>
+<p>For the purposes of the next sections, it has been discovered that racers race in many races and we need to model our <code>Racer</code> and <code>Race</code> as a many-to-one relationship.</p>
+<h3 id="part-1-creating-a-linked-relationship">Part 1: Creating a Linked Relationship</h3>
+<p>In this section we are going to create a separate collection for the <code>Racer</code> with <code>name</code> and a new <code>_id</code>. We are going to remove the <code>name</code> property from the <code>Races</code> collection and insert a new <code>racer_id</code> set to the <code>_id</code> of the <code>Racer</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the following to create references to the two collections. If they do not yet exist -- they will be automatically created.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers=<span class="dt">Racer</span>.racers_collection
+&gt; races=<span class="dt">Racer</span>.races_collection</code></pre></li>
+<li><p>Use the following to reset the collections back to a default state.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.reset</code></pre></li>
+<li>Use the following queries and algorithm to:
+<ul>
+<li>locate all <code>Races</code> that still have a <code>name</code></li>
+<li>upsert the <code>Racer</code> by attempting to locate them by name and creating a new document if not found</li>
+<li>create a new <code>racer_id</code> property in the <code>Race</code> set to the <code>upserted_id</code> of the of the <code>Racer</code></li>
+</ul>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; races.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).count
+ =&gt; <span class="dv">1000</span> 
+&gt; racers.find.count
+  =&gt; <span class="dv">0</span> 
+
+&gt; races.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).each <span class="kw">do</span> |r| 
+    result=racers.update_one({<span class="st">:name=</span>&gt;r[<span class="st">:name</span>]}, {<span class="st">:name=</span>&gt;r[<span class="st">:name</span>]}, {<span class="st">:upsert=</span>&gt;<span class="dv">true</span>})
+    id=result.upserted_id
+    races.update_one({<span class="st">:_id=</span>&gt;r[<span class="st">:_id</span>]},{<span class="st">:$set=</span>&gt;{<span class="st">:racer_id=</span>&gt;id},<span class="st">:$unset=</span>&gt;{<span class="st">:name=</span>&gt;<span class="st">&quot;&quot;</span>}})
+  <span class="kw">end</span>
+
+&gt; races.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).count
+ =&gt; <span class="dv">0</span> 
+&gt; racers.find.count
+ =&gt; <span class="dv">1000</span> </code></pre></li>
+<li><p>Use the following query to inspect both collections and perform a client &quot;join&quot; on the two collections. Your <code>first</code> document may be different than the example shown below.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563ef169e301d0dc61002e51&#39;</span>), <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;FREDERICKA BALDWIN&quot;</span>}
+&gt; pp races.find( <span class="st">:racer_id</span> =&gt; racers.find.first[<span class="st">:_id</span>] ).first; <span class="dv">nil</span>
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563ef169e301d0dc61002e51&#39;</span>), 
+     <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">857</span>, 
+     <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;20 to 20&quot;</span>, 
+     <span class="st">&quot;time&quot;</span>=&gt;<span class="st">&quot;3594 secs&quot;</span>, 
+     <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563ef169e301d0dc61002e51&#39;</span>)} </code></pre></li>
+</ol>
+<h3 id="part-2-creating-an-embedded-relationship">Part 2: Creating an Embedded Relationship</h3>
+<p>In this section we are going to create an embedded representation of the relationship with <code>Races</code> inside the <code>Racer</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Use the following query and algorithm to:
+<ul>
+<li>locate all <code>Races</code> with <code>Racer</code> names</li>
+<li>create a new <code>Racer</code> and insert the <code>Race</code> as the first element within an array within <code>Racer</code> called <code>races</code></li>
+<li>remove the <code>Race</code></li>
+</ul>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.reset
+&gt; racers=<span class="dt">Racer</span>.racers_collection
+&gt; races=<span class="dt">Racer</span>.races_collection
+&gt; races.find(<span class="st">:name=</span>&gt;{<span class="st">:$exists=</span>&gt;<span class="dv">true</span>}).each <span class="kw">do</span> |r|
+    result=racers.update_one({<span class="st">:name=</span>&gt;r[<span class="st">:name</span>]}, 
+                             {<span class="st">:name=</span>&gt;r[<span class="st">:name</span>], 
+                              <span class="st">:races=</span>&gt;[
+                                 {<span class="st">:_id=</span>&gt;r[<span class="st">:_id</span>],
+                                  <span class="st">:number=</span>&gt;r[<span class="st">:number</span>],
+                                  <span class="st">:group=</span>&gt;r[<span class="st">:group</span>],
+                                  <span class="st">:time=</span>&gt;r[<span class="st">:time</span>]}
+                                  ]}, {<span class="st">:upsert=</span>&gt;<span class="dv">true</span>})
+    races.find(<span class="st">:_id=</span>&gt;r[<span class="st">:_id</span>]).delete_one
+  <span class="kw">end</span>
+  &gt; races.find.count
+   =&gt; <span class="dv">0</span> 
+  &gt; racers.find.count
+   =&gt; <span class="dv">1000</span> </code></pre></li>
+<li><p>Use the following query to look at the structure of the document. Notice the <code>Race</code> is embedded within an array within the <code>Racer</code>.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; pp racers.find.first; <span class="dv">nil</span>
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563efb5e0878cba85bcb014a&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;AMPARO WEBER&quot;</span>,
+ <span class="st">&quot;races&quot;</span>=&gt;
+  [{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563efb35e301d0dc610040e5&#39;</span>),
+    <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">613</span>,
+    <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;14 and under&quot;</span>,
+    <span class="st">&quot;time&quot;</span>=&gt;<span class="st">&quot;3489 secs&quot;</span>}
+  ]}</code></pre></li>
+<li><p>Use the following query to unwind the embedded we can re-create a 1:1 relationship between the <code>Racer</code> and one of its <code>Races</code> by creating copies of the <code>Racer</code> for each <code>Race</code> in the array.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racers.find.aggregate([ {<span class="st">:$unwind=</span>&gt;<span class="st">&quot;$races&quot;</span>}, {<span class="st">:$project=</span>&gt;{_id:<span class="dv">0</span>, name:<span class="dv">1</span>, races:<span class="dv">1</span>}} ]).first
+ =&gt; {<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;AMPARO WEBER&quot;</span>, 
+     <span class="st">&quot;races&quot;</span>=&gt;{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;563efb35e301d0dc610040e5&#39;</span>), 
+               <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">613</span>, 
+               <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;14 and under&quot;</span>, 
+               <span class="st">&quot;time&quot;</span>=&gt;<span class="st">&quot;3489 secs&quot;</span>}} </code></pre></li>
+</ol>
+<h2 id="self-gradingfeedback">Self Grading/Feedback</h2>
+<p>All feedback is performed through execution of commands and queries provided. You are welcome to go off on many tangents and can always get back to the start point with <code>Racers.reset</code>.</p>
+<h2 id="submission">Submission</h2>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<h2 id="last-updated-2015-12-14">Last Updated: 2015-12-14</h2>

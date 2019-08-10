@@ -1,0 +1,241 @@
+<h1 id="module-1-lesson-2-mongodb-ruby-driver-crud">Module 1, Lesson 2: MongoDB Ruby Driver CRUD</h1>
+<p>The overall goal of the assignment is to:</p>
+<ul>
+<li>implement various document access methods using the MongoDB Ruby Driver</li>
+</ul>
+<p>The functional goal of the assignment is to:</p>
+<ul>
+<li>implement various document access methods for Race Results</li>
+</ul>
+<p>Note that this assignment was written so that you can implement it in parts after each lecture. If you are performing the assignment in between lectures, stop at the next lecture boundary in the technical requirements section and resume once you have completed the lecture. You are free to experiment with other forms of the queries presented, but the grading will only be targeted at the specific requirements listed.</p>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Start your MongoDB server using <code>mongod</code></p></li>
+<li><p>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</p>
+<pre class="text"><code>--- student-start  
+    |-- assignment.rb
+    |-- race_results.json
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- lecture1_spec.rb
+        |-- lecture2_spec.rb
+        |-- lecture3_spec.rb
+        |-- lecture4_spec.rb
+        |-- lecture5_spec.rb
+        `-- spec_helper.rb</code></pre>
+<ul>
+<li>assignment.rb - your solution must be placed within this file</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+</ul></li>
+<li><p>Install the following gems. You may already have them installed.</p>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its
+$ gem install mongo -v 2.1.2</code></pre></li>
+<li><p>Run the rspec command from the project root directory (i.e., <code>student-start</code> directory) to execute the unit tests within the spec directory. This should result in several failures until you complete your solution in <code>assignment.rb</code>.</p>
+<pre class="shell"><code>$ rspec
+
+(N) examples, (N) failures, (N) pending
+...</code></pre></li>
+<li><p>Implement the Ruby technical requirements in <code>assignment.rb</code> within the provided class <code>Solution</code>. Helper methods have been provided to get a connection to Mongo and to set the database and collection names. You can override these values using environment variables if you are not using the defaults. Since you are not turning in this assignment -- you may also simply edit the defaults used within the source file. However, the defaults used are as follows:</p></li>
+</ol>
+<ul>
+<li><code>MONGO_URL='mongodb://localhost:27017'</code></li>
+<li><code>MONGO_DATABASE='test'</code></li>
+<li><code>RACE_COLLECTION='race1'</code></li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li><p>You can load the <code>assignment.rb</code> script into the <code>irb</code> shell and take advantage of the helper methods of the <code>Solution</code> class to try out commands in the shell before adding them to the assignment solution.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ irb
+&gt; require <span class="st">&#39;./assignment.rb&#39;</span>
+ =&gt; <span class="dv">true</span> 
+&gt; racers=<span class="dt">Solution</span>.collection
+  =&gt; <span class="co">#&lt;Mongo::Collection:0x8262360 namespace=test.race1&gt; </span>
+&gt; racers.find.count
+  =&gt; <span class="dv">1000</span> </code></pre></li>
+</ol>
+<p>Implement all methods relative to the <code>@coll</code> instance variable setup to reference the collection.</p>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<p>As you implement each requirement, the following is provided to help familiarize you with the schema associated with a race document:</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;564c01c886c12c3d3d0003ca&#39;</span>),
+ <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">970</span>,
+ <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;LONNIE&quot;</span>,
+ <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;FITZGERALD&quot;</span>,
+ <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>,
+ <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;14 and under&quot;</span>,
+ <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">2258</span>}</code></pre>
+<h4 id="lecture-1-create">Lecture 1: Create</h4>
+<p>In this section we will use <code>delete_many</code>, <code>insert_many</code>, and <code>insert_one</code> to implement and test different create metthods.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>clear_collection</code> that:
+<ul>
+<li>accepts no arguments</li>
+<li>deletes all documents from the collection (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html#delete_many-instance_method"><code>delete_many</code></a>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Solution</span>.collection.insert_one({})
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:22500120 documents=[{&quot;ok&quot;=&gt;1, &quot;n&quot;=&gt;1}]&gt; </span>
+&gt; s=<span class="dt">Solution</span>.new
+&gt; r=s.clear_collection
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:22249400 documents=[{&quot;ok&quot;=&gt;1, &quot;n&quot;=&gt;1}]&gt; </span>
+&gt; r.ok?
+ =&gt; <span class="dv">true</span> 
+&gt; r.deleted_count
+ =&gt; <span class="dv">1</span> </code></pre>
+<pre class="shell"><code>$rspec spec/lecture1_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>load_collection</code> that:
+<ul>
+<li>accepts a file_path argument to a file of JSON data containing race results</li>
+<li>reads the JSON contents of the file into an array of hashes. You may use the <code>load_hash()</code> method provided in the bootstrap <code>assignment.rb</code> for this.</li>
+<li>inserts each of the hash elements of the array into the database collection (hint:<a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html#insert_many-instance_method"><code>insert_many</code></a>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.load_collection(<span class="st">&#39;./race_results.json&#39;</span>)
+&gt; r.inserted_count
+ =&gt; <span class="dv">1000</span> 
+&gt; r.inserted_ids.slice(<span class="dv">0</span>,<span class="dv">2</span>)
+ =&gt; [<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5663a565e301d093ac0003eb&#39;</span>), <span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5663a565e301d093ac0003ec&#39;</span>)] </code></pre>
+<pre class="shell"><code>$rspec spec/lecture1_spec.rb -e rq02</code></pre></li>
+<li>Implement an instance method called <code>insert</code> that:
+<ul>
+<li>accepts a hash for race result data</li>
+<li>inserts this one race result into the collection (hint:<a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html#insert_one-instance_method"><code>insert_one</code></a>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.insert({<span class="st">:foo=</span>&gt;<span class="st">&quot;bar&quot;</span>})
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:18276240 documents=[{&quot;ok&quot;=&gt;1, &quot;n&quot;=&gt;1}]&gt;</span>
+&gt; r.inserted_ids
+ =&gt; [<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5663a66fe301d093ac0007d3&#39;</span>)] 
+<span class="fl">2.2</span>.<span class="dv">2</span> :<span class="bn">052</span> &gt; r.returned_count
+ =&gt; <span class="dv">1</span> </code></pre>
+<pre class="shell"><code>$rspec spec/lecture1_spec.rb -e rq03</code></pre></li>
+</ol>
+<h4 id="lecture-2-find-by-prototype">Lecture 2: Find By Prototype</h4>
+<p>In this section we will locate documents in a collection based on the AND'ing of extact-matching parameters acting as <code>prototype</code> documents. We will also begin to shape the returned document(s) with the use of <code>projection</code>.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>all</code> that:
+<ul>
+<li>accepts an optional hash prototype</li>
+<li>finds all documents that match all parameters in the hash (or all documents if empty hash). In this case, the caller is required to form the hash for the query that matches the field names. (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html#find-instance_method"><code>find</code></a>)</li>
+<li>returns the Mongo result object for the command with all fields of the document included</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; s.all(<span class="st">:first_name=</span>&gt;<span class="st">&quot;MARY&quot;</span>).first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5663a755e301d099140003d0&#39;</span>), <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">975</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;MARY&quot;</span>, 
+         <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;RODGERS&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;M&quot;</span>, <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;30 to 39&quot;</span>, <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">3025</span>} </code></pre>
+<pre class="shell"><code>$rspec spec/lecture2_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>find_by_name</code> that:
+<ul>
+<li>accepts a first and last name</li>
+<li>finds all documents that match the first and last name provided. In this case, you must actually form the hash for the query. (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html#find-instance_method"><code>find</code></a>)</li>
+<li>forms a projection that returns only the <code>first_name</code>, <code>last_name</code>, and <code>number</code> properties (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Readable.html#projection-instance_method"><code>projection</code></a></li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; s.find_by_name(<span class="st">&quot;MARY&quot;</span>, <span class="st">&quot;RODGERS&quot;</span>).first
+ =&gt; {<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">975</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;MARY&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;RODGERS&quot;</span>}</code></pre>
+<pre class="shell"><code>$rspec spec/lecture2_spec.rb -e rq02</code></pre></li>
+</ol>
+<h4 id="lecture-3-paging">Lecture 3: Paging</h4>
+<p>In this section we will get some practice bounding method results based on sorting and paging commands.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>find_group_results</code> that
+<ul>
+<li>accepts a <code>group</code> name, <code>offset</code> value, and <code>limit</code> value</li>
+<li>finds only race results for the specified <code>group</code></li>
+<li>forms a projection that eliminates the <code>group</code> and <code>_id</code> fields from the results (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Readable.html#projection-instance_method"><code>projection</code></a>)</li>
+<li>sorts the results by time (<code>secs</code>), accending (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Readable.html#sort-instance_method"><code>sort</code></a>)</li>
+<li>skips <code>offset</code> documents in the ordered result (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Readable.html#skip-instance_method"><code>skip</code></a>)</li>
+<li>limits the results to only <code>limit</code> documents (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Readable.html#limit-instance_method"><code>limit</code></a>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.find_group_results(<span class="st">&quot;30 to 39&quot;</span>, <span class="dv">1</span>, <span class="dv">2</span>)
+&gt; r.to_a.count
+ =&gt; <span class="dv">2</span> 
+&gt; r.to_a
+ =&gt; [{<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">248</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;MARTIN&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;RAMOS&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;M&quot;</span>, <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">1263</span>}, 
+     {<span class="st">&quot;number&quot;</span>=&gt;<span class="dv">320</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;TWILA&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;TUCKER&quot;</span>, <span class="st">&quot;gender&quot;</span>=&gt;<span class="st">&quot;F&quot;</span>, <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">1270</span>}]
+&gt; r.selector
+ =&gt; {<span class="st">:group=</span>&gt;<span class="st">&quot;30 to 39&quot;</span>} 
+&gt; r.count
+ =&gt; <span class="dv">129</span> </code></pre>
+<pre class="shell"><code>$rspec spec/lecture3_spec.rb</code></pre></li>
+</ol>
+<h4 id="lecture-4-find-by-criteria">Lecture 4: Find By Criteria</h4>
+<p>In this section we will find documents based on a comparison that does not involve equality.</p>
+<p><a href="https://docs.mongodb.org/manual/reference/operator/query/">Hint: Review the Mongo Query and Projection Operators</a></p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>find_between</code> that
+<ul>
+<li>accepts a <code>min</code> and <code>max</code> value</li>
+<li>finds all race results with a time (<code>secs</code>) that is between <code>min</code> and <code>max</code> (exclusive).</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=s.find_between(<span class="dv">1600</span>,<span class="dv">1615</span>)
+&gt; r.to_a.count
+ =&gt; <span class="dv">2</span> 
+&gt; r.to_a
+ =&gt; [{...<span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;MEGAN&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;ANDERSON&quot;</span>... <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">1605</span>}, 
+     {...<span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;KELI&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;SIMPSON&quot;</span>... <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">1606</span>}]</code></pre>
+<pre class="shell"><code>$rspec spec/lecture4_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>find_by_letter</code> that
+<ul>
+<li>accepts a <code>letter</code>, <code>offset</code>, and <code>limit</code></li>
+<li>finds all race results with the last_name that starts with the <code>letter</code> provided using a regular expression. You only need to treat <code>letter</code> as a string and do not have to enforce as a character. However, you should convert this value to upper case. The following REGEX <code>&quot;^S.+&quot;</code> will locate all names starting with the letter <code>S</code>.</li>
+<li>orders the results by <code>last_name</code>, ascending</li>
+<li>skips the first <code>offset</code> documents</li>
+<li>limits results to <code>limit</code> documents</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">r=s.find_by_letter(<span class="st">&quot;sal&quot;</span>,<span class="dv">0</span>,<span class="dv">1</span>).first
+ =&gt; {...<span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;LOURIE&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;SALAZAR&quot;</span>...}</code></pre>
+<pre class="shell"><code>$rspec spec/lecture4_spec.rb -e rq02</code></pre></li>
+</ol>
+<h4 id="lecture-5-update">Lecture 5: Update</h4>
+<p>In this section we will modify the database.</p>
+<ol style="list-style-type: decimal">
+<li>Implement an instance method called <code>update_racer</code> that
+<ul>
+<li>accepts a hash of racer properties</li>
+<li>finds the racer associated with the <code>_id</code> property in the input hash</li>
+<li>replaces all existing fields for the racer with what is provided (hint: <a href="http://api.mongodb.org/ruby/current/Mongo/Collection/View/Writable.html#replace_one-instance_method"><code>replace_one</code></a>)</li>
+<li>returns the Mongo result object for the command</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r1=s.all.first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;..., <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">0</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;SHAUN&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;JOHNSON&quot;</span> ...
+&gt; r1[<span class="st">:first_name</span>]=<span class="st">&quot;foo&quot;</span>; r1[<span class="st">:last_name</span>]=<span class="st">&quot;bar&quot;</span>
+&gt; r1
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;..., <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">0</span>, <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;foo&quot;</span>, <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;bar&quot;</span> ...
+&gt; r=s.update_racer(r1)
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:28472340 documents=[{&quot;ok&quot;=&gt;1, &quot;nModified&quot;=&gt;1, &quot;n&quot;=&gt;1}]&gt; </span>
+&gt; r.modified_count
+ =&gt; <span class="dv">1</span> </code></pre>
+<pre class="shell"><code>$rspec spec/lecture5_spec.rb -e rq01</code></pre></li>
+<li>Implement an instance method called <code>add_time</code> that
+<ul>
+<li>accepts the racer number and an amount of time in seconds</li>
+<li>finds the racer's document and increments the time in the database without retrieving the actual document. (hint: <a href="https://docs.mongodb.org/manual/reference/operator/update/inc/#up._S_inc"><code>:$inc</code></a>)</li>
+</ul>
+<p>You can demonstrate your method using the <code>irb</code> shell.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">r1=s.all.to_a.sample
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5663a754e301d09914000054&#39;</span>), <span class="st">&quot;number&quot;</span>=&gt;<span class="dv">83</span>, ... <span class="st">&quot;secs&quot;</span>=&gt;<span class="dv">3146</span>} 
+&gt; r=s.add_time(r1[<span class="st">:number</span>], <span class="dv">1000</span>)
+ =&gt; <span class="co">#&lt;Mongo::Operation::Result:23028380 documents=[{&quot;ok&quot;=&gt;1, &quot;nModified&quot;=&gt;1, &quot;n&quot;=&gt;1}]&gt; </span>
+&gt; s.all(<span class="st">:number=</span>&gt;r1[<span class="st">:number</span>]).first[<span class="st">:secs</span>]
+ =&gt; <span class="dv">4146</span> </code></pre>
+<pre class="shell"><code>$rspec spec/lecture5_spec.rb -e rq02</code></pre></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+........
+
+(N) examples, 0 failures</code></pre>
+<h3 id="submission">Submission</h3>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<h3 id="last-updated-2015-01-19">Last Updated: 2015-01-19</h3>

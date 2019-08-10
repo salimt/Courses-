@@ -1,0 +1,6494 @@
+[
+  {
+    "number": 0,
+    "name": "ARACELY SMITH",
+    "group": "20 to 20",
+    "time": "1985 secs"
+  },
+  {
+    "number": 1,
+    "name": "JOEL JOHNSON",
+    "group": "40 to 49",
+    "time": "1416 secs"
+  },
+  {
+    "number": "2",
+    "name": "MARTIN JOHNSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1517 secs"
+  },
+  {
+    "number": "3",
+    "name": "JOSH BROWN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1878 secs"
+  },
+  {
+    "number": 4,
+    "name": "CHARITY BROWN",
+    "group": "60 to 69",
+    "time": "1937 secs"
+  },
+  {
+    "number": 5,
+    "name": "DEDRA BROWN",
+    "group": "60 to 69",
+    "time": "2154 secs"
+  },
+  {
+    "number": "6",
+    "name": "ALBERT BROWN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1330 secs"
+  },
+  {
+    "number": 7,
+    "name": "SHENNA JONES",
+    "group": "14 and under",
+    "time": "2501 secs"
+  },
+  {
+    "number": "8",
+    "name": "EMMETT JONES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3352 secs"
+  },
+  {
+    "number": "9",
+    "name": "VICENTE MILLER",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2124 secs"
+  },
+  {
+    "number": 10,
+    "name": "OSCAR DAVIS",
+    "group": "masters",
+    "time": "3566 secs"
+  },
+  {
+    "number": 11,
+    "name": "JANELLE GARCIA",
+    "group": "14 and under",
+    "time": "3295 secs"
+  },
+  {
+    "number": "12",
+    "name": "LENARD RODRIGUEZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3579 secs"
+  },
+  {
+    "number": "13",
+    "name": "DEWEY RODRIGUEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2482 secs"
+  },
+  {
+    "number": 14,
+    "name": "BECKI WILSON",
+    "group": "50 to 59",
+    "time": "2252 secs"
+  },
+  {
+    "number": 15,
+    "name": "CHEYENNE WILSON",
+    "group": "15 to 19",
+    "time": "1834 secs"
+  },
+  {
+    "number": "16",
+    "name": "DILLON MARTINEZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3940 secs"
+  },
+  {
+    "number": "17",
+    "name": "IKE MARTINEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1770 secs"
+  },
+  {
+    "number": "18",
+    "name": "ZACHARY MARTINEZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3448 secs"
+  },
+  {
+    "number": 19,
+    "name": "CLAIRE MARTINEZ",
+    "group": "40 to 49",
+    "time": "3582 secs"
+  },
+  {
+    "number": "20",
+    "name": "PARIS MARTINEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1353 secs"
+  },
+  {
+    "number": "21",
+    "name": "PEDRO ANDERSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1455 secs"
+  },
+  {
+    "number": "22",
+    "name": "ARNOLDO ANDERSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2322 secs"
+  },
+  {
+    "number": "23",
+    "name": "JAMAR ANDERSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1806 secs"
+  },
+  {
+    "number": "24",
+    "name": "BERNARDO TAYLOR",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1980 secs"
+  },
+  {
+    "number": 25,
+    "name": "THOMASINE TAYLOR",
+    "group": "masters",
+    "time": "1710 secs"
+  },
+  {
+    "number": "26",
+    "name": "DENNIS TAYLOR",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1424 secs"
+  },
+  {
+    "number": "27",
+    "name": "ELIJAH THOMAS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2010 secs"
+  },
+  {
+    "number": 28,
+    "name": "TIMIKA HERNANDEZ",
+    "group": "masters",
+    "time": "2973 secs"
+  },
+  {
+    "number": 29,
+    "name": "HAROLD HERNANDEZ",
+    "group": "masters",
+    "time": "2736 secs"
+  },
+  {
+    "number": 30,
+    "name": "LULA MOORE",
+    "group": "30 to 39",
+    "time": "3535 secs"
+  },
+  {
+    "number": 31,
+    "name": "MARYLYN MOORE",
+    "group": "50 to 59",
+    "time": "3558 secs"
+  },
+  {
+    "number": "32",
+    "name": "CHESTER MOORE",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3543 secs"
+  },
+  {
+    "number": 33,
+    "name": "JESSI MOORE",
+    "group": "20 to 20",
+    "time": "2759 secs"
+  },
+  {
+    "number": 34,
+    "name": "CORINA MARTIN",
+    "group": "40 to 49",
+    "time": "3385 secs"
+  },
+  {
+    "number": "35",
+    "name": "BURT MARTIN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3117 secs"
+  },
+  {
+    "number": "36",
+    "name": "HAROLD MARTIN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4068 secs"
+  },
+  {
+    "number": 37,
+    "name": "TRESSIE MARTIN",
+    "group": "40 to 49",
+    "time": "3379 secs"
+  },
+  {
+    "number": "38",
+    "name": "TOBY MARTIN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3303 secs"
+  },
+  {
+    "number": 39,
+    "name": "CHARLOTT JACKSON",
+    "group": "15 to 19",
+    "time": "2063 secs"
+  },
+  {
+    "number": "40",
+    "name": "LAMAR LOPEZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4053 secs"
+  },
+  {
+    "number": 41,
+    "name": "CHRISTENA LOPEZ",
+    "group": "20 to 20",
+    "time": "3711 secs"
+  },
+  {
+    "number": "42",
+    "name": "LESLEY LOPEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4254 secs"
+  },
+  {
+    "number": "43",
+    "name": "ANTIONE LOPEZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2838 secs"
+  },
+  {
+    "number": "44",
+    "name": "LUCIEN LEE",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3815 secs"
+  },
+  {
+    "number": 45,
+    "name": "AMERICA HARRIS",
+    "group": "masters",
+    "time": "2967 secs"
+  },
+  {
+    "number": 46,
+    "name": "ZAIDA HARRIS",
+    "group": "14 and under",
+    "time": "2463 secs"
+  },
+  {
+    "number": 47,
+    "name": "GENESIS HARRIS",
+    "group": "30 to 39",
+    "time": "2638 secs"
+  },
+  {
+    "number": "48",
+    "name": "DARRICK HARRIS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1800 secs"
+  },
+  {
+    "number": "49",
+    "name": "DARNELL HARRIS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3108 secs"
+  },
+  {
+    "number": "50",
+    "name": "ARMAND LEWIS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2744 secs"
+  },
+  {
+    "number": "51",
+    "name": "CLETUS LEWIS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1521 secs"
+  },
+  {
+    "number": 52,
+    "name": "ALESHA LEWIS",
+    "group": "14 and under",
+    "time": "3714 secs"
+  },
+  {
+    "number": "53",
+    "name": "RODGER ROBINSON",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2241 secs"
+  },
+  {
+    "number": "54",
+    "name": "SEYMOUR ROBINSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3011 secs"
+  },
+  {
+    "number": "55",
+    "name": "JIM ROBINSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2080 secs"
+  },
+  {
+    "number": 56,
+    "name": "EVALYN WALKER",
+    "group": "masters",
+    "time": "1881 secs"
+  },
+  {
+    "number": 57,
+    "name": "CECILLE WALKER",
+    "group": "60 to 69",
+    "time": "1488 secs"
+  },
+  {
+    "number": "58",
+    "name": "MALIK PEREZ",
+    "gender": "M",
+    "group": "masters",
+    "time": "2503 secs"
+  },
+  {
+    "number": "59",
+    "name": "KING PEREZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3779 secs"
+  },
+  {
+    "number": "60",
+    "name": "JAVIER PEREZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2061 secs"
+  },
+  {
+    "number": 61,
+    "name": "JACKELYN HALL",
+    "group": "50 to 59",
+    "time": "3013 secs"
+  },
+  {
+    "number": "62",
+    "name": "RUBIN HALL",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2332 secs"
+  },
+  {
+    "number": "63",
+    "name": "ERNEST HALL",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2703 secs"
+  },
+  {
+    "number": "64",
+    "name": "DARIUS HALL",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2442 secs"
+  },
+  {
+    "number": "65",
+    "name": "WILLIS YOUNG",
+    "gender": "M",
+    "group": "masters",
+    "time": "3467 secs"
+  },
+  {
+    "number": 66,
+    "name": "SHONTA SANCHEZ",
+    "group": "14 and under",
+    "time": "3344 secs"
+  },
+  {
+    "number": 67,
+    "name": "LEO SANCHEZ",
+    "group": "40 to 49",
+    "time": "4012 secs"
+  },
+  {
+    "number": 68,
+    "name": "ROSALEE SANCHEZ",
+    "group": "50 to 59",
+    "time": "3836 secs"
+  },
+  {
+    "number": "69",
+    "name": "RICK SANCHEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1460 secs"
+  },
+  {
+    "number": "70",
+    "name": "DENNIS SANCHEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2653 secs"
+  },
+  {
+    "number": 71,
+    "name": "NIA WRIGHT",
+    "group": "20 to 20",
+    "time": "3219 secs"
+  },
+  {
+    "number": "72",
+    "name": "JEFFRY KING",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1631 secs"
+  },
+  {
+    "number": 73,
+    "name": "LOURA KING",
+    "group": "20 to 20",
+    "time": "3056 secs"
+  },
+  {
+    "number": 74,
+    "name": "BRYANNA KING",
+    "group": "50 to 59",
+    "time": "2341 secs"
+  },
+  {
+    "number": 75,
+    "name": "JOLANDA KING",
+    "group": "masters",
+    "time": "3473 secs"
+  },
+  {
+    "number": "76",
+    "name": "MAYNARD SCOTT",
+    "gender": "M",
+    "group": "masters",
+    "time": "2578 secs"
+  },
+  {
+    "number": 77,
+    "name": "TANIKA SCOTT",
+    "group": "14 and under",
+    "time": "3159 secs"
+  },
+  {
+    "number": 78,
+    "name": "TAMAR SCOTT",
+    "group": "40 to 49",
+    "time": "3454 secs"
+  },
+  {
+    "number": 79,
+    "name": "BOBBYE SCOTT",
+    "group": "30 to 39",
+    "time": "3766 secs"
+  },
+  {
+    "number": "80",
+    "name": "ZACKARY GREEN",
+    "gender": "M",
+    "group": "masters",
+    "time": "3530 secs"
+  },
+  {
+    "number": "81",
+    "name": "CHUNG GREEN",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1787 secs"
+  },
+  {
+    "number": 82,
+    "name": "HANNA GREEN",
+    "group": "40 to 49",
+    "time": "2920 secs"
+  },
+  {
+    "number": 83,
+    "name": "EUGENE GREEN",
+    "group": "20 to 20",
+    "time": "2177 secs"
+  },
+  {
+    "number": 84,
+    "name": "MERRILEE GREEN",
+    "group": "30 to 39",
+    "time": "1498 secs"
+  },
+  {
+    "number": 85,
+    "name": "JOYE ADAMS",
+    "group": "40 to 49",
+    "time": "1556 secs"
+  },
+  {
+    "number": "86",
+    "name": "DEMETRIUS HILL",
+    "gender": "M",
+    "group": "masters",
+    "time": "1463 secs"
+  },
+  {
+    "number": "87",
+    "name": "CHAD HILL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2658 secs"
+  },
+  {
+    "number": "88",
+    "name": "NATHAN RAMIREZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3789 secs"
+  },
+  {
+    "number": "89",
+    "name": "TYREE RAMIREZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3463 secs"
+  },
+  {
+    "number": 90,
+    "name": "ALESSANDRA CAMPBELL",
+    "group": "14 and under",
+    "time": "2040 secs"
+  },
+  {
+    "number": 91,
+    "name": "LAMONICA CAMPBELL",
+    "group": "14 and under",
+    "time": "1598 secs"
+  },
+  {
+    "number": 92,
+    "name": "FREEDA MITCHELL",
+    "group": "30 to 39",
+    "time": "3212 secs"
+  },
+  {
+    "number": "93",
+    "name": "CRAIG MITCHELL",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2336 secs"
+  },
+  {
+    "number": "94",
+    "name": "TREY MITCHELL",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1348 secs"
+  },
+  {
+    "number": 95,
+    "name": "SPARKLE MITCHELL",
+    "group": "40 to 49",
+    "time": "2431 secs"
+  },
+  {
+    "number": "96",
+    "name": "WENDELL MITCHELL",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2554 secs"
+  },
+  {
+    "number": 97,
+    "name": "KATELYNN ROBERTS",
+    "group": "20 to 20",
+    "time": "1745 secs"
+  },
+  {
+    "number": "98",
+    "name": "ROMEO ROBERTS",
+    "gender": "M",
+    "group": "masters",
+    "time": "2623 secs"
+  },
+  {
+    "number": 99,
+    "name": "JERRICA ROBERTS",
+    "group": "30 to 39",
+    "time": "3830 secs"
+  },
+  {
+    "number": "100",
+    "name": "ROBERTO CARTER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2024 secs"
+  },
+  {
+    "number": 101,
+    "name": "GEORGETTE CARTER",
+    "group": "60 to 69",
+    "time": "1653 secs"
+  },
+  {
+    "number": 102,
+    "name": "JODY CARTER",
+    "group": "60 to 69",
+    "time": "3228 secs"
+  },
+  {
+    "number": 103,
+    "name": "LARISA PHILLIPS",
+    "group": "30 to 39",
+    "time": "3853 secs"
+  },
+  {
+    "number": 104,
+    "name": "REBBECA PHILLIPS",
+    "group": "15 to 19",
+    "time": "3745 secs"
+  },
+  {
+    "number": 105,
+    "name": "CELESTE TURNER",
+    "group": "14 and under",
+    "time": "3665 secs"
+  },
+  {
+    "number": "106",
+    "name": "CHANCE TURNER",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1707 secs"
+  },
+  {
+    "number": 107,
+    "name": "ADRIANA TURNER",
+    "group": "60 to 69",
+    "time": "3328 secs"
+  },
+  {
+    "number": 108,
+    "name": "TALISHA TURNER",
+    "group": "14 and under",
+    "time": "1800 secs"
+  },
+  {
+    "number": 109,
+    "name": "ELIA TORRES",
+    "group": "40 to 49",
+    "time": "3834 secs"
+  },
+  {
+    "number": "110",
+    "name": "ALTON COLLINS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3165 secs"
+  },
+  {
+    "number": 111,
+    "name": "EUGENIA COLLINS",
+    "group": "masters",
+    "time": "3876 secs"
+  },
+  {
+    "number": 112,
+    "name": "CARLOS COLLINS",
+    "group": "50 to 59",
+    "time": "2114 secs"
+  },
+  {
+    "number": "113",
+    "name": "ELWOOD COLLINS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3356 secs"
+  },
+  {
+    "number": "114",
+    "name": "MONTY COLLINS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2080 secs"
+  },
+  {
+    "number": 115,
+    "name": "KATRINA EDWARDS",
+    "group": "masters",
+    "time": "1821 secs"
+  },
+  {
+    "number": 116,
+    "name": "ARIE EDWARDS",
+    "group": "20 to 20",
+    "time": "4059 secs"
+  },
+  {
+    "number": 117,
+    "name": "CLARA EDWARDS",
+    "group": "60 to 69",
+    "time": "1308 secs"
+  },
+  {
+    "number": 118,
+    "name": "KRISTA EDWARDS",
+    "group": "50 to 59",
+    "time": "2100 secs"
+  },
+  {
+    "number": "119",
+    "name": "MILLARD STEWART",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3479 secs"
+  },
+  {
+    "number": "120",
+    "name": "JARRETT STEWART",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3167 secs"
+  },
+  {
+    "number": 121,
+    "name": "GUSSIE STEWART",
+    "group": "40 to 49",
+    "time": "1278 secs"
+  },
+  {
+    "number": 122,
+    "name": "LEKISHA STEWART",
+    "group": "40 to 49",
+    "time": "1728 secs"
+  },
+  {
+    "number": "123",
+    "name": "WINFORD FLORES",
+    "gender": "M",
+    "group": "masters",
+    "time": "3237 secs"
+  },
+  {
+    "number": "124",
+    "name": "EMILE FLORES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3010 secs"
+  },
+  {
+    "number": "125",
+    "name": "ROBERTO MORRIS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3820 secs"
+  },
+  {
+    "number": 126,
+    "name": "NATALIA MORRIS",
+    "group": "14 and under",
+    "time": "3709 secs"
+  },
+  {
+    "number": 127,
+    "name": "SHARILYN NGUYEN",
+    "group": "15 to 19",
+    "time": "3024 secs"
+  },
+  {
+    "number": 128,
+    "name": "DANNIELLE NGUYEN",
+    "group": "20 to 20",
+    "time": "3074 secs"
+  },
+  {
+    "number": 129,
+    "name": "CORDIA NGUYEN",
+    "group": "14 and under",
+    "time": "2144 secs"
+  },
+  {
+    "number": 130,
+    "name": "KARY NGUYEN",
+    "group": "50 to 59",
+    "time": "3573 secs"
+  },
+  {
+    "number": "131",
+    "name": "OWEN NGUYEN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2362 secs"
+  },
+  {
+    "number": 132,
+    "name": "FILOMENA MURPHY",
+    "group": "20 to 20",
+    "time": "1814 secs"
+  },
+  {
+    "number": 133,
+    "name": "DOMONIQUE MURPHY",
+    "group": "40 to 49",
+    "time": "3933 secs"
+  },
+  {
+    "number": 134,
+    "name": "SHARLENE MURPHY",
+    "group": "20 to 20",
+    "time": "1294 secs"
+  },
+  {
+    "number": "135",
+    "name": "JAMISON RIVERA",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2526 secs"
+  },
+  {
+    "number": "136",
+    "name": "KIETH RIVERA",
+    "gender": "M",
+    "group": "masters",
+    "time": "2639 secs"
+  },
+  {
+    "number": 137,
+    "name": "COLBY COOK",
+    "group": "masters",
+    "time": "3782 secs"
+  },
+  {
+    "number": 138,
+    "name": "AUREA COOK",
+    "group": "30 to 39",
+    "time": "1618 secs"
+  },
+  {
+    "number": 139,
+    "name": "NUMBERS COOK",
+    "group": "50 to 59",
+    "time": "1287 secs"
+  },
+  {
+    "number": 140,
+    "name": "JESUS ROGERS",
+    "group": "60 to 69",
+    "time": "3155 secs"
+  },
+  {
+    "number": "141",
+    "name": "EMERY MORGAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2247 secs"
+  },
+  {
+    "number": "142",
+    "name": "FELTON MORGAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3199 secs"
+  },
+  {
+    "number": 143,
+    "name": "RACHEAL MORGAN",
+    "group": "masters",
+    "time": "2839 secs"
+  },
+  {
+    "number": "144",
+    "name": "EARNEST MORGAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3542 secs"
+  },
+  {
+    "number": 145,
+    "name": "ALONA MORGAN",
+    "group": "40 to 49",
+    "time": "1753 secs"
+  },
+  {
+    "number": 146,
+    "name": "AGUEDA PETERSON",
+    "group": "50 to 59",
+    "time": "3128 secs"
+  },
+  {
+    "number": "147",
+    "name": "SANFORD REED",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1721 secs"
+  },
+  {
+    "number": "148",
+    "name": "LINCOLN REED",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1788 secs"
+  },
+  {
+    "number": 149,
+    "name": "ELIN REED",
+    "group": "masters",
+    "time": "1589 secs"
+  },
+  {
+    "number": "150",
+    "name": "RONALD BAILEY",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3466 secs"
+  },
+  {
+    "number": 151,
+    "name": "CASIMIRA BAILEY",
+    "group": "40 to 49",
+    "time": "2513 secs"
+  },
+  {
+    "number": 152,
+    "name": "MARISELA BELL",
+    "group": "masters",
+    "time": "3353 secs"
+  },
+  {
+    "number": "153",
+    "name": "SCOTT BELL",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2207 secs"
+  },
+  {
+    "number": 154,
+    "name": "SKYE GOMEZ",
+    "group": "15 to 19",
+    "time": "2487 secs"
+  },
+  {
+    "number": "155",
+    "name": "BRENT GOMEZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2030 secs"
+  },
+  {
+    "number": "156",
+    "name": "CURTIS GOMEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3460 secs"
+  },
+  {
+    "number": "157",
+    "name": "PAUL GOMEZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2991 secs"
+  },
+  {
+    "number": 158,
+    "name": "SANTA KELLY",
+    "group": "60 to 69",
+    "time": "3352 secs"
+  },
+  {
+    "number": "159",
+    "name": "ISSAC HOWARD",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2227 secs"
+  },
+  {
+    "number": 160,
+    "name": "PATRIA HOWARD",
+    "group": "50 to 59",
+    "time": "3437 secs"
+  },
+  {
+    "number": "161",
+    "name": "RAMON HOWARD",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3428 secs"
+  },
+  {
+    "number": 162,
+    "name": "GISELE HOWARD",
+    "group": "14 and under",
+    "time": "2533 secs"
+  },
+  {
+    "number": 163,
+    "name": "VERA WARD",
+    "group": "masters",
+    "time": "2068 secs"
+  },
+  {
+    "number": 164,
+    "name": "MARX WARD",
+    "group": "20 to 20",
+    "time": "3803 secs"
+  },
+  {
+    "number": "165",
+    "name": "KRISTOPHER WARD",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2790 secs"
+  },
+  {
+    "number": "166",
+    "name": "BARNEY COX",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1959 secs"
+  },
+  {
+    "number": "167",
+    "name": "JERALD COX",
+    "gender": "M",
+    "group": "masters",
+    "time": "2105 secs"
+  },
+  {
+    "number": "168",
+    "name": "ALFRED COX",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "4077 secs"
+  },
+  {
+    "number": 169,
+    "name": "GRAZYNA COX",
+    "group": "50 to 59",
+    "time": "3262 secs"
+  },
+  {
+    "number": 170,
+    "name": "JERALDINE COX",
+    "group": "60 to 69",
+    "time": "4255 secs"
+  },
+  {
+    "number": "171",
+    "name": "RUSSELL DIAZ",
+    "gender": "M",
+    "group": "masters",
+    "time": "3550 secs"
+  },
+  {
+    "number": 172,
+    "name": "ADENA DIAZ",
+    "group": "60 to 69",
+    "time": "1401 secs"
+  },
+  {
+    "number": 173,
+    "name": "DENA RICHARDSON",
+    "group": "50 to 59",
+    "time": "2964 secs"
+  },
+  {
+    "number": 174,
+    "name": "LETHA RICHARDSON",
+    "group": "50 to 59",
+    "time": "2538 secs"
+  },
+  {
+    "number": 175,
+    "name": "FERMINA RICHARDSON",
+    "group": "60 to 69",
+    "time": "3789 secs"
+  },
+  {
+    "number": 176,
+    "name": "RONNIE RICHARDSON",
+    "group": "14 and under",
+    "time": "3901 secs"
+  },
+  {
+    "number": 177,
+    "name": "LOTTIE RICHARDSON",
+    "group": "30 to 39",
+    "time": "3302 secs"
+  },
+  {
+    "number": "178",
+    "name": "PATRICIA WOOD",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3799 secs"
+  },
+  {
+    "number": 179,
+    "name": "BRANDA WATSON",
+    "group": "60 to 69",
+    "time": "1736 secs"
+  },
+  {
+    "number": "180",
+    "name": "JERRY BROOKS",
+    "gender": "M",
+    "group": "masters",
+    "time": "2752 secs"
+  },
+  {
+    "number": "181",
+    "name": "KEVEN BROOKS",
+    "gender": "M",
+    "group": "masters",
+    "time": "1728 secs"
+  },
+  {
+    "number": "182",
+    "name": "TOD BROOKS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2008 secs"
+  },
+  {
+    "number": 183,
+    "name": "JUSTINA BROOKS",
+    "group": "50 to 59",
+    "time": "2844 secs"
+  },
+  {
+    "number": "184",
+    "name": "RALPH BENNETT",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2950 secs"
+  },
+  {
+    "number": "185",
+    "name": "RICKEY BENNETT",
+    "gender": "M",
+    "group": "masters",
+    "time": "1429 secs"
+  },
+  {
+    "number": 186,
+    "name": "AUSTIN BENNETT",
+    "group": "50 to 59",
+    "time": "2331 secs"
+  },
+  {
+    "number": 187,
+    "name": "AIKO BENNETT",
+    "group": "30 to 39",
+    "time": "1945 secs"
+  },
+  {
+    "number": 188,
+    "name": "TIMIKA GRAY",
+    "group": "14 and under",
+    "time": "3758 secs"
+  },
+  {
+    "number": "189",
+    "name": "GIUSEPPE GRAY",
+    "gender": "M",
+    "group": "masters",
+    "time": "2227 secs"
+  },
+  {
+    "number": "190",
+    "name": "WILLIAM JAMES",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1482 secs"
+  },
+  {
+    "number": "191",
+    "name": "AL JAMES",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2329 secs"
+  },
+  {
+    "number": "192",
+    "name": "MAC JAMES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4161 secs"
+  },
+  {
+    "number": "193",
+    "name": "EDDIE JAMES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1894 secs"
+  },
+  {
+    "number": 194,
+    "name": "CHAROLETTE REYES",
+    "group": "40 to 49",
+    "time": "1403 secs"
+  },
+  {
+    "number": 195,
+    "name": "LEONTINE CRUZ",
+    "group": "50 to 59",
+    "time": "2534 secs"
+  },
+  {
+    "number": "196",
+    "name": "GABRIEL CRUZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3914 secs"
+  },
+  {
+    "number": "197",
+    "name": "HONG CRUZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2252 secs"
+  },
+  {
+    "number": 198,
+    "name": "DAYNA HUGHES",
+    "group": "60 to 69",
+    "time": "3632 secs"
+  },
+  {
+    "number": 199,
+    "name": "DONNETTE HUGHES",
+    "group": "60 to 69",
+    "time": "2089 secs"
+  },
+  {
+    "number": "200",
+    "name": "EMILE HUGHES",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2209 secs"
+  },
+  {
+    "number": 201,
+    "name": "TESSA HUGHES",
+    "group": "50 to 59",
+    "time": "1929 secs"
+  },
+  {
+    "number": 202,
+    "name": "MARIVEL PRICE",
+    "group": "15 to 19",
+    "time": "4011 secs"
+  },
+  {
+    "number": "203",
+    "name": "JOSUE MYERS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2199 secs"
+  },
+  {
+    "number": 204,
+    "name": "KATHI MYERS",
+    "group": "60 to 69",
+    "time": "1775 secs"
+  },
+  {
+    "number": "205",
+    "name": "DOUGLASS MYERS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3992 secs"
+  },
+  {
+    "number": 206,
+    "name": "DANIELL MYERS",
+    "group": "50 to 59",
+    "time": "4017 secs"
+  },
+  {
+    "number": "207",
+    "name": "HAI LONG",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3684 secs"
+  },
+  {
+    "number": "208",
+    "name": "ISMAEL LONG",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3785 secs"
+  },
+  {
+    "number": 209,
+    "name": "MIKE SANDERS",
+    "group": "30 to 39",
+    "time": "2730 secs"
+  },
+  {
+    "number": 210,
+    "name": "CHARLSIE SANDERS",
+    "group": "20 to 20",
+    "time": "1399 secs"
+  },
+  {
+    "number": "211",
+    "name": "LOU SANDERS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2910 secs"
+  },
+  {
+    "number": 212,
+    "name": "MERCY SANDERS",
+    "group": "60 to 69",
+    "time": "4021 secs"
+  },
+  {
+    "number": "213",
+    "name": "RICKEY SANDERS",
+    "gender": "M",
+    "group": "masters",
+    "time": "1574 secs"
+  },
+  {
+    "number": 214,
+    "name": "VENICE ROSS",
+    "group": "60 to 69",
+    "time": "4139 secs"
+  },
+  {
+    "number": 215,
+    "name": "STEPHENIE ROSS",
+    "group": "20 to 20",
+    "time": "2408 secs"
+  },
+  {
+    "number": 216,
+    "name": "JOSEFINE POWELL",
+    "group": "masters",
+    "time": "2002 secs"
+  },
+  {
+    "number": "217",
+    "name": "BERNARDO POWELL",
+    "gender": "M",
+    "group": "masters",
+    "time": "4257 secs"
+  },
+  {
+    "number": "218",
+    "name": "JAMIE POWELL",
+    "gender": "M",
+    "group": "masters",
+    "time": "3042 secs"
+  },
+  {
+    "number": "219",
+    "name": "MAURICIO POWELL",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1437 secs"
+  },
+  {
+    "number": "220",
+    "name": "OSWALDO RUSSELL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2517 secs"
+  },
+  {
+    "number": 221,
+    "name": "ERNESTINA ORTIZ",
+    "group": "14 and under",
+    "time": "1744 secs"
+  },
+  {
+    "number": 222,
+    "name": "MARIAH ORTIZ",
+    "group": "50 to 59",
+    "time": "3754 secs"
+  },
+  {
+    "number": "223",
+    "name": "ROBIN GUTIERREZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3912 secs"
+  },
+  {
+    "number": 224,
+    "name": "SANTANA GUTIERREZ",
+    "group": "20 to 20",
+    "time": "1377 secs"
+  },
+  {
+    "number": 225,
+    "name": "SHAMIKA GUTIERREZ",
+    "group": "masters",
+    "time": "2584 secs"
+  },
+  {
+    "number": "226",
+    "name": "GERRY PERRY",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2124 secs"
+  },
+  {
+    "number": "227",
+    "name": "BERNIE PERRY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3842 secs"
+  },
+  {
+    "number": 228,
+    "name": "STACIE PERRY",
+    "group": "60 to 69",
+    "time": "3404 secs"
+  },
+  {
+    "number": 229,
+    "name": "LAURENCE PERRY",
+    "group": "14 and under",
+    "time": "1487 secs"
+  },
+  {
+    "number": 230,
+    "name": "ADELINA PERRY",
+    "group": "14 and under",
+    "time": "2952 secs"
+  },
+  {
+    "number": "231",
+    "name": "JONAS BUTLER",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4108 secs"
+  },
+  {
+    "number": "232",
+    "name": "JACINTO BUTLER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2569 secs"
+  },
+  {
+    "number": 233,
+    "name": "TEREASA BUTLER",
+    "group": "masters",
+    "time": "2514 secs"
+  },
+  {
+    "number": 234,
+    "name": "BARB BUTLER",
+    "group": "masters",
+    "time": "3564 secs"
+  },
+  {
+    "number": "235",
+    "name": "OREN BARNES",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3386 secs"
+  },
+  {
+    "number": 236,
+    "name": "SHAY BARNES",
+    "group": "masters",
+    "time": "2056 secs"
+  },
+  {
+    "number": "237",
+    "name": "SCOTTIE BARNES",
+    "gender": "M",
+    "group": "masters",
+    "time": "1306 secs"
+  },
+  {
+    "number": "238",
+    "name": "ORVAL FISHER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2979 secs"
+  },
+  {
+    "number": "239",
+    "name": "ROGELIO FISHER",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3350 secs"
+  },
+  {
+    "number": "240",
+    "name": "EMORY FISHER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1451 secs"
+  },
+  {
+    "number": 241,
+    "name": "ISAURA HENDERSON",
+    "group": "15 to 19",
+    "time": "2971 secs"
+  },
+  {
+    "number": "242",
+    "name": "LOUIE COLEMAN",
+    "gender": "M",
+    "group": "masters",
+    "time": "3502 secs"
+  },
+  {
+    "number": "243",
+    "name": "DALLAS COLEMAN",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2220 secs"
+  },
+  {
+    "number": 244,
+    "name": "RONA COLEMAN",
+    "group": "60 to 69",
+    "time": "3543 secs"
+  },
+  {
+    "number": "245",
+    "name": "MYLES COLEMAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1952 secs"
+  },
+  {
+    "number": "246",
+    "name": "ERNESTO SIMMONS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1812 secs"
+  },
+  {
+    "number": "247",
+    "name": "JOHNNIE SIMMONS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1437 secs"
+  },
+  {
+    "number": "248",
+    "name": "ERIC SIMMONS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3180 secs"
+  },
+  {
+    "number": "249",
+    "name": "HUGH SIMMONS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2056 secs"
+  },
+  {
+    "number": 250,
+    "name": "TONA SIMMONS",
+    "group": "15 to 19",
+    "time": "3133 secs"
+  },
+  {
+    "number": "251",
+    "name": "JAMAL PATTERSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4211 secs"
+  },
+  {
+    "number": 252,
+    "name": "ALISON PATTERSON",
+    "group": "30 to 39",
+    "time": "2715 secs"
+  },
+  {
+    "number": 253,
+    "name": "MELAINE PATTERSON",
+    "group": "20 to 20",
+    "time": "1554 secs"
+  },
+  {
+    "number": "254",
+    "name": "MAURICE PATTERSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2395 secs"
+  },
+  {
+    "number": "255",
+    "name": "CAREY PATTERSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3443 secs"
+  },
+  {
+    "number": 256,
+    "name": "SALENA JORDAN",
+    "group": "15 to 19",
+    "time": "1965 secs"
+  },
+  {
+    "number": "257",
+    "name": "RANDELL JORDAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3456 secs"
+  },
+  {
+    "number": 258,
+    "name": "LORINDA JORDAN",
+    "group": "60 to 69",
+    "time": "2569 secs"
+  },
+  {
+    "number": "259",
+    "name": "FREDERICK JORDAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2268 secs"
+  },
+  {
+    "number": 260,
+    "name": "VALENCIA JORDAN",
+    "group": "20 to 20",
+    "time": "2879 secs"
+  },
+  {
+    "number": 261,
+    "name": "CYRSTAL REYNOLDS",
+    "group": "masters",
+    "time": "1380 secs"
+  },
+  {
+    "number": 262,
+    "name": "TINY REYNOLDS",
+    "group": "50 to 59",
+    "time": "1461 secs"
+  },
+  {
+    "number": 263,
+    "name": "PAIGE REYNOLDS",
+    "group": "50 to 59",
+    "time": "4055 secs"
+  },
+  {
+    "number": 264,
+    "name": "NELIA HAMILTON",
+    "group": "14 and under",
+    "time": "3972 secs"
+  },
+  {
+    "number": "265",
+    "name": "ARMAND HAMILTON",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "4195 secs"
+  },
+  {
+    "number": 266,
+    "name": "ARNETTE GRAHAM",
+    "group": "60 to 69",
+    "time": "3232 secs"
+  },
+  {
+    "number": 267,
+    "name": "SHELBY GRAHAM",
+    "group": "50 to 59",
+    "time": "2628 secs"
+  },
+  {
+    "number": "268",
+    "name": "KIRBY KIM",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2271 secs"
+  },
+  {
+    "number": "269",
+    "name": "STEPHEN KIM",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2524 secs"
+  },
+  {
+    "number": 270,
+    "name": "NELDA KIM",
+    "group": "masters",
+    "time": "3664 secs"
+  },
+  {
+    "number": "271",
+    "name": "CYRUS KIM",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1457 secs"
+  },
+  {
+    "number": "272",
+    "name": "DARIN GONZALES",
+    "gender": "M",
+    "group": "masters",
+    "time": "1734 secs"
+  },
+  {
+    "number": "273",
+    "name": "LUKE GONZALES",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1565 secs"
+  },
+  {
+    "number": "274",
+    "name": "ANGEL GONZALES",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3951 secs"
+  },
+  {
+    "number": 275,
+    "name": "GERTHA GONZALES",
+    "group": "30 to 39",
+    "time": "2741 secs"
+  },
+  {
+    "number": "276",
+    "name": "JULIO GONZALES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3779 secs"
+  },
+  {
+    "number": 277,
+    "name": "JA ALEXANDER",
+    "group": "masters",
+    "time": "3211 secs"
+  },
+  {
+    "number": 278,
+    "name": "KEENA ALEXANDER",
+    "group": "60 to 69",
+    "time": "3860 secs"
+  },
+  {
+    "number": "279",
+    "name": "FREDDY ALEXANDER",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1645 secs"
+  },
+  {
+    "number": "280",
+    "name": "JUNIOR ALEXANDER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3822 secs"
+  },
+  {
+    "number": "281",
+    "name": "KEENAN RAMOS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3036 secs"
+  },
+  {
+    "number": 282,
+    "name": "LAVONE RAMOS",
+    "group": "15 to 19",
+    "time": "3253 secs"
+  },
+  {
+    "number": "283",
+    "name": "LUIS RAMOS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2945 secs"
+  },
+  {
+    "number": "284",
+    "name": "DEL RAMOS",
+    "gender": "M",
+    "group": "masters",
+    "time": "2441 secs"
+  },
+  {
+    "number": "285",
+    "name": "RORY WALLACE",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1263 secs"
+  },
+  {
+    "number": "286",
+    "name": "GLENN WALLACE",
+    "gender": "M",
+    "group": "masters",
+    "time": "2902 secs"
+  },
+  {
+    "number": 287,
+    "name": "MAGNOLIA WALLACE",
+    "group": "40 to 49",
+    "time": "2937 secs"
+  },
+  {
+    "number": "288",
+    "name": "KIRBY WALLACE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2083 secs"
+  },
+  {
+    "number": 289,
+    "name": "TONY GRIFFIN",
+    "group": "15 to 19",
+    "time": "3873 secs"
+  },
+  {
+    "number": "290",
+    "name": "ROLAND GRIFFIN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1328 secs"
+  },
+  {
+    "number": "291",
+    "name": "EDISON GRIFFIN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1315 secs"
+  },
+  {
+    "number": "292",
+    "name": "JOHNATHAN GRIFFIN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3237 secs"
+  },
+  {
+    "number": 293,
+    "name": "JEANA GRIFFIN",
+    "group": "50 to 59",
+    "time": "3278 secs"
+  },
+  {
+    "number": 294,
+    "name": "ROSALVA WEST",
+    "group": "40 to 49",
+    "time": "1792 secs"
+  },
+  {
+    "number": "295",
+    "name": "DELMAR WEST",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2477 secs"
+  },
+  {
+    "number": "296",
+    "name": "JON WEST",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2610 secs"
+  },
+  {
+    "number": "297",
+    "name": "MOISES WEST",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1803 secs"
+  },
+  {
+    "number": "298",
+    "name": "KELVIN WEST",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "4021 secs"
+  },
+  {
+    "number": "299",
+    "name": "DONTE HAYES",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1313 secs"
+  },
+  {
+    "number": 300,
+    "name": "DELPHA HAYES",
+    "group": "50 to 59",
+    "time": "2237 secs"
+  },
+  {
+    "number": "301",
+    "name": "EVERETT HAYES",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1771 secs"
+  },
+  {
+    "number": "302",
+    "name": "DOUGLAS CHAVEZ",
+    "gender": "M",
+    "group": "masters",
+    "time": "3574 secs"
+  },
+  {
+    "number": 303,
+    "name": "ARA GIBSON",
+    "group": "14 and under",
+    "time": "2255 secs"
+  },
+  {
+    "number": "304",
+    "name": "BARNEY GIBSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4258 secs"
+  },
+  {
+    "number": 305,
+    "name": "KARISA ELLIS",
+    "group": "50 to 59",
+    "time": "2327 secs"
+  },
+  {
+    "number": "306",
+    "name": "KING STEVENS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1900 secs"
+  },
+  {
+    "number": 307,
+    "name": "MARIANELA MURRAY",
+    "group": "masters",
+    "time": "3227 secs"
+  },
+  {
+    "number": "308",
+    "name": "ARLEN MARSHALL",
+    "gender": "M",
+    "group": "masters",
+    "time": "3803 secs"
+  },
+  {
+    "number": "309",
+    "name": "ERNEST MARSHALL",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2869 secs"
+  },
+  {
+    "number": 310,
+    "name": "JEANIE MARSHALL",
+    "group": "40 to 49",
+    "time": "4093 secs"
+  },
+  {
+    "number": "311",
+    "name": "DARWIN MARSHALL",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3902 secs"
+  },
+  {
+    "number": "312",
+    "name": "STANFORD MARSHALL",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2351 secs"
+  },
+  {
+    "number": 313,
+    "name": "JANETT MCDONALD",
+    "group": "40 to 49",
+    "time": "3373 secs"
+  },
+  {
+    "number": 314,
+    "name": "MANDY HARRISON",
+    "group": "20 to 20",
+    "time": "3412 secs"
+  },
+  {
+    "number": "315",
+    "name": "LOGAN HARRISON",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1406 secs"
+  },
+  {
+    "number": "316",
+    "name": "MITCHELL KENNEDY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3034 secs"
+  },
+  {
+    "number": 317,
+    "name": "KAMILAH KENNEDY",
+    "group": "20 to 20",
+    "time": "3110 secs"
+  },
+  {
+    "number": 318,
+    "name": "AUSTIN KENNEDY",
+    "group": "masters",
+    "time": "1837 secs"
+  },
+  {
+    "number": "319",
+    "name": "ROLF KENNEDY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3475 secs"
+  },
+  {
+    "number": "320",
+    "name": "WM KENNEDY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3515 secs"
+  },
+  {
+    "number": "321",
+    "name": "BOYCE WELLS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2757 secs"
+  },
+  {
+    "number": "322",
+    "name": "SAM WELLS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1547 secs"
+  },
+  {
+    "number": "323",
+    "name": "LYNN ALVAREZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "4073 secs"
+  },
+  {
+    "number": 324,
+    "name": "DIEDRA ALVAREZ",
+    "group": "masters",
+    "time": "1684 secs"
+  },
+  {
+    "number": "325",
+    "name": "JACK ALVAREZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2181 secs"
+  },
+  {
+    "number": 326,
+    "name": "SHERY WOODS",
+    "group": "30 to 39",
+    "time": "1348 secs"
+  },
+  {
+    "number": 327,
+    "name": "JENNELL MENDOZA",
+    "group": "60 to 69",
+    "time": "3112 secs"
+  },
+  {
+    "number": "328",
+    "name": "CHRISTOPHER MENDOZA",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3052 secs"
+  },
+  {
+    "number": 329,
+    "name": "CARLY MENDOZA",
+    "group": "20 to 20",
+    "time": "1917 secs"
+  },
+  {
+    "number": "330",
+    "name": "DILLON CASTILLO",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2590 secs"
+  },
+  {
+    "number": "331",
+    "name": "GREGG CASTILLO",
+    "gender": "M",
+    "group": "masters",
+    "time": "3583 secs"
+  },
+  {
+    "number": 332,
+    "name": "PENELOPE CASTILLO",
+    "group": "14 and under",
+    "time": "1645 secs"
+  },
+  {
+    "number": 333,
+    "name": "SASHA OLSON",
+    "group": "50 to 59",
+    "time": "1637 secs"
+  },
+  {
+    "number": 334,
+    "name": "MARYJANE OLSON",
+    "group": "masters",
+    "time": "2958 secs"
+  },
+  {
+    "number": 335,
+    "name": "ROSENA OLSON",
+    "group": "30 to 39",
+    "time": "1687 secs"
+  },
+  {
+    "number": "336",
+    "name": "TIMOTHY OLSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2110 secs"
+  },
+  {
+    "number": 337,
+    "name": "LEONORA OLSON",
+    "group": "40 to 49",
+    "time": "3848 secs"
+  },
+  {
+    "number": "338",
+    "name": "RONALD WEBB",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3603 secs"
+  },
+  {
+    "number": "339",
+    "name": "AMOS WASHINGTON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1532 secs"
+  },
+  {
+    "number": 340,
+    "name": "ASHANTI WASHINGTON",
+    "group": "20 to 20",
+    "time": "3842 secs"
+  },
+  {
+    "number": 341,
+    "name": "RAEANN HENRY",
+    "group": "50 to 59",
+    "time": "3791 secs"
+  },
+  {
+    "number": "342",
+    "name": "HIPOLITO HENRY",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4177 secs"
+  },
+  {
+    "number": 343,
+    "name": "TRACEY HENRY",
+    "group": "30 to 39",
+    "time": "2495 secs"
+  },
+  {
+    "number": "344",
+    "name": "FLOYD HENRY",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3300 secs"
+  },
+  {
+    "number": "345",
+    "name": "CLINT HENRY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2562 secs"
+  },
+  {
+    "number": 346,
+    "name": "TAKAKO SNYDER",
+    "group": "60 to 69",
+    "time": "2861 secs"
+  },
+  {
+    "number": 347,
+    "name": "HYO SNYDER",
+    "group": "50 to 59",
+    "time": "1535 secs"
+  },
+  {
+    "number": "348",
+    "name": "EMORY SNYDER",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3099 secs"
+  },
+  {
+    "number": "349",
+    "name": "BURT SIMPSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2702 secs"
+  },
+  {
+    "number": 350,
+    "name": "BLONDELL SIMPSON",
+    "group": "14 and under",
+    "time": "3891 secs"
+  },
+  {
+    "number": 351,
+    "name": "CHIQUITA SIMPSON",
+    "group": "40 to 49",
+    "time": "2495 secs"
+  },
+  {
+    "number": "352",
+    "name": "EUGENIO SIMPSON",
+    "gender": "M",
+    "group": "masters",
+    "time": "3973 secs"
+  },
+  {
+    "number": 353,
+    "name": "VALERY CRAWFORD",
+    "group": "40 to 49",
+    "time": "1991 secs"
+  },
+  {
+    "number": 354,
+    "name": "SHASTA CRAWFORD",
+    "group": "60 to 69",
+    "time": "2132 secs"
+  },
+  {
+    "number": "355",
+    "name": "MARCELLUS CRAWFORD",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3590 secs"
+  },
+  {
+    "number": "356",
+    "name": "DEVON CRAWFORD",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2329 secs"
+  },
+  {
+    "number": "357",
+    "name": "LUCIO JIMENEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1364 secs"
+  },
+  {
+    "number": "358",
+    "name": "IKE PORTER",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3018 secs"
+  },
+  {
+    "number": 359,
+    "name": "REGAN PORTER",
+    "group": "masters",
+    "time": "1543 secs"
+  },
+  {
+    "number": 360,
+    "name": "IVY PORTER",
+    "group": "15 to 19",
+    "time": "3040 secs"
+  },
+  {
+    "number": "361",
+    "name": "GARTH MASON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2426 secs"
+  },
+  {
+    "number": 362,
+    "name": "YOULANDA SHAW",
+    "group": "50 to 59",
+    "time": "2091 secs"
+  },
+  {
+    "number": "363",
+    "name": "MODESTO SHAW",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "4060 secs"
+  },
+  {
+    "number": 364,
+    "name": "NEELY SHAW",
+    "group": "15 to 19",
+    "time": "3845 secs"
+  },
+  {
+    "number": "365",
+    "name": "ORLANDO GORDON",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3020 secs"
+  },
+  {
+    "number": 366,
+    "name": "SHIRLENE GORDON",
+    "group": "20 to 20",
+    "time": "2085 secs"
+  },
+  {
+    "number": "367",
+    "name": "ARON GORDON",
+    "gender": "M",
+    "group": "masters",
+    "time": "2845 secs"
+  },
+  {
+    "number": 368,
+    "name": "KIMBERLIE ROMERO",
+    "group": "masters",
+    "time": "3814 secs"
+  },
+  {
+    "number": "369",
+    "name": "ROBT ROMERO",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2609 secs"
+  },
+  {
+    "number": "370",
+    "name": "ROGELIO ROMERO",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1641 secs"
+  },
+  {
+    "number": 371,
+    "name": "SHAYNE ROMERO",
+    "group": "30 to 39",
+    "time": "3068 secs"
+  },
+  {
+    "number": "372",
+    "name": "MAXWELL HICKS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4102 secs"
+  },
+  {
+    "number": 373,
+    "name": "SHAQUITA HICKS",
+    "group": "40 to 49",
+    "time": "3075 secs"
+  },
+  {
+    "number": "374",
+    "name": "FRANKLYN HICKS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2664 secs"
+  },
+  {
+    "number": "375",
+    "name": "JARRETT HICKS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1531 secs"
+  },
+  {
+    "number": "376",
+    "name": "LANCE DIXON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1716 secs"
+  },
+  {
+    "number": "377",
+    "name": "CYRIL DIXON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2786 secs"
+  },
+  {
+    "number": "378",
+    "name": "KASEY HUNT",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2143 secs"
+  },
+  {
+    "number": "379",
+    "name": "VON HUNT",
+    "gender": "M",
+    "group": "masters",
+    "time": "2747 secs"
+  },
+  {
+    "number": 380,
+    "name": "MANDI PALMER",
+    "group": "50 to 59",
+    "time": "1834 secs"
+  },
+  {
+    "number": 381,
+    "name": "TAMRA PALMER",
+    "group": "15 to 19",
+    "time": "2710 secs"
+  },
+  {
+    "number": "382",
+    "name": "KYLE PALMER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2625 secs"
+  },
+  {
+    "number": 383,
+    "name": "CECIL PALMER",
+    "group": "20 to 20",
+    "time": "3873 secs"
+  },
+  {
+    "number": 384,
+    "name": "KIZZY ROBERTSON",
+    "group": "15 to 19",
+    "time": "3631 secs"
+  },
+  {
+    "number": "385",
+    "name": "BERNIE ROBERTSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2234 secs"
+  },
+  {
+    "number": 386,
+    "name": "LIANNE BLACK",
+    "group": "50 to 59",
+    "time": "1525 secs"
+  },
+  {
+    "number": "387",
+    "name": "HAYDEN BLACK",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4061 secs"
+  },
+  {
+    "number": "388",
+    "name": "BRYANT BLACK",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1545 secs"
+  },
+  {
+    "number": "389",
+    "name": "HILARIO BLACK",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2336 secs"
+  },
+  {
+    "number": "390",
+    "name": "BUDDY BLACK",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3730 secs"
+  },
+  {
+    "number": "391",
+    "name": "MICAH HOLMES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3808 secs"
+  },
+  {
+    "number": "392",
+    "name": "PALMER HOLMES",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3097 secs"
+  },
+  {
+    "number": "393",
+    "name": "MASON HOLMES",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3269 secs"
+  },
+  {
+    "number": "394",
+    "name": "SAMMIE HOLMES",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2261 secs"
+  },
+  {
+    "number": "395",
+    "name": "EDWIN STONE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4200 secs"
+  },
+  {
+    "number": 396,
+    "name": "HOPE STONE",
+    "group": "60 to 69",
+    "time": "1783 secs"
+  },
+  {
+    "number": "397",
+    "name": "NATHAN STONE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2398 secs"
+  },
+  {
+    "number": 398,
+    "name": "AMADA STONE",
+    "group": "60 to 69",
+    "time": "3186 secs"
+  },
+  {
+    "number": "399",
+    "name": "DONNELL BOYD",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2358 secs"
+  },
+  {
+    "number": "400",
+    "name": "SON BOYD",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3780 secs"
+  },
+  {
+    "number": "401",
+    "name": "REYES BOYD",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3938 secs"
+  },
+  {
+    "number": 402,
+    "name": "MARCIE BOYD",
+    "group": "15 to 19",
+    "time": "3692 secs"
+  },
+  {
+    "number": 403,
+    "name": "CHRISTENE BOYD",
+    "group": "masters",
+    "time": "1913 secs"
+  },
+  {
+    "number": 404,
+    "name": "TROY MILLS",
+    "group": "60 to 69",
+    "time": "1298 secs"
+  },
+  {
+    "number": "405",
+    "name": "ARDEN MILLS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4153 secs"
+  },
+  {
+    "number": 406,
+    "name": "LEA MILLS",
+    "group": "30 to 39",
+    "time": "1708 secs"
+  },
+  {
+    "number": 407,
+    "name": "VELMA MILLS",
+    "group": "30 to 39",
+    "time": "3030 secs"
+  },
+  {
+    "number": 408,
+    "name": "ELINORE MILLS",
+    "group": "50 to 59",
+    "time": "2810 secs"
+  },
+  {
+    "number": 409,
+    "name": "KIMIKO WARREN",
+    "group": "masters",
+    "time": "1754 secs"
+  },
+  {
+    "number": "410",
+    "name": "CARLOS FOX",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3137 secs"
+  },
+  {
+    "number": 411,
+    "name": "RIVKA FOX",
+    "group": "14 and under",
+    "time": "3120 secs"
+  },
+  {
+    "number": "412",
+    "name": "LAWRENCE FOX",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4111 secs"
+  },
+  {
+    "number": "413",
+    "name": "JACQUES FOX",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4073 secs"
+  },
+  {
+    "number": 414,
+    "name": "RICARDA FOX",
+    "group": "60 to 69",
+    "time": "2307 secs"
+  },
+  {
+    "number": "415",
+    "name": "MURRAY ROSE",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1797 secs"
+  },
+  {
+    "number": 416,
+    "name": "CAMIE ROSE",
+    "group": "14 and under",
+    "time": "1553 secs"
+  },
+  {
+    "number": "417",
+    "name": "COURTNEY ROSE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1853 secs"
+  },
+  {
+    "number": "418",
+    "name": "ANDERSON ROSE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3962 secs"
+  },
+  {
+    "number": 419,
+    "name": "SHIRL RICE",
+    "group": "15 to 19",
+    "time": "2062 secs"
+  },
+  {
+    "number": "420",
+    "name": "BUFORD RICE",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1448 secs"
+  },
+  {
+    "number": 421,
+    "name": "BEA RICE",
+    "group": "60 to 69",
+    "time": "2984 secs"
+  },
+  {
+    "number": "422",
+    "name": "GAVIN RICE",
+    "gender": "M",
+    "group": "masters",
+    "time": "2659 secs"
+  },
+  {
+    "number": 423,
+    "name": "HELLEN RICE",
+    "group": "30 to 39",
+    "time": "4133 secs"
+  },
+  {
+    "number": 424,
+    "name": "BASILIA PATEL",
+    "group": "40 to 49",
+    "time": "2481 secs"
+  },
+  {
+    "number": "425",
+    "name": "RENALDO PATEL",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3130 secs"
+  },
+  {
+    "number": 426,
+    "name": "JULI PATEL",
+    "group": "60 to 69",
+    "time": "3843 secs"
+  },
+  {
+    "number": "427",
+    "name": "TRUMAN FERGUSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2152 secs"
+  },
+  {
+    "number": "428",
+    "name": "CARMINE FERGUSON",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1430 secs"
+  },
+  {
+    "number": "429",
+    "name": "KRIS NICHOLS",
+    "gender": "M",
+    "group": "masters",
+    "time": "3329 secs"
+  },
+  {
+    "number": 430,
+    "name": "BERNADINE NICHOLS",
+    "group": "20 to 20",
+    "time": "1509 secs"
+  },
+  {
+    "number": 431,
+    "name": "SHONDA NICHOLS",
+    "group": "14 and under",
+    "time": "3878 secs"
+  },
+  {
+    "number": "432",
+    "name": "BEN HERRERA",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1935 secs"
+  },
+  {
+    "number": 433,
+    "name": "VETA HERRERA",
+    "group": "masters",
+    "time": "3673 secs"
+  },
+  {
+    "number": "434",
+    "name": "COURTNEY MEDINA",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2024 secs"
+  },
+  {
+    "number": "435",
+    "name": "FLETCHER MEDINA",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1972 secs"
+  },
+  {
+    "number": "436",
+    "name": "ANTON MEDINA",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1467 secs"
+  },
+  {
+    "number": 437,
+    "name": "CIERRA MEDINA",
+    "group": "60 to 69",
+    "time": "2000 secs"
+  },
+  {
+    "number": "438",
+    "name": "GEORGE MEDINA",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3987 secs"
+  },
+  {
+    "number": "439",
+    "name": "BRADLY RYAN",
+    "gender": "M",
+    "group": "masters",
+    "time": "2017 secs"
+  },
+  {
+    "number": 440,
+    "name": "SEBRINA RYAN",
+    "group": "50 to 59",
+    "time": "2316 secs"
+  },
+  {
+    "number": 441,
+    "name": "HEIDE RYAN",
+    "group": "30 to 39",
+    "time": "3980 secs"
+  },
+  {
+    "number": "442",
+    "name": "KIM RYAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3790 secs"
+  },
+  {
+    "number": 443,
+    "name": "VIVIENNE FERNANDEZ",
+    "group": "50 to 59",
+    "time": "1404 secs"
+  },
+  {
+    "number": 444,
+    "name": "ASHLI FERNANDEZ",
+    "group": "40 to 49",
+    "time": "3756 secs"
+  },
+  {
+    "number": 445,
+    "name": "SAM FERNANDEZ",
+    "group": "20 to 20",
+    "time": "2732 secs"
+  },
+  {
+    "number": 446,
+    "name": "SHAUNNA FERNANDEZ",
+    "group": "50 to 59",
+    "time": "3356 secs"
+  },
+  {
+    "number": "447",
+    "name": "MORTON FERNANDEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2474 secs"
+  },
+  {
+    "number": 448,
+    "name": "ODESSA WEAVER",
+    "group": "40 to 49",
+    "time": "2137 secs"
+  },
+  {
+    "number": 449,
+    "name": "KARY WEAVER",
+    "group": "40 to 49",
+    "time": "1564 secs"
+  },
+  {
+    "number": "450",
+    "name": "ERVIN WEAVER",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3203 secs"
+  },
+  {
+    "number": 451,
+    "name": "REMONA DANIELS",
+    "group": "60 to 69",
+    "time": "4039 secs"
+  },
+  {
+    "number": 452,
+    "name": "SOOK DANIELS",
+    "group": "40 to 49",
+    "time": "3222 secs"
+  },
+  {
+    "number": 453,
+    "name": "JANET DANIELS",
+    "group": "30 to 39",
+    "time": "1449 secs"
+  },
+  {
+    "number": "454",
+    "name": "FRANCES STEPHENS",
+    "gender": "M",
+    "group": "masters",
+    "time": "2695 secs"
+  },
+  {
+    "number": "455",
+    "name": "STERLING PAYNE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1457 secs"
+  },
+  {
+    "number": 456,
+    "name": "TENISHA PAYNE",
+    "group": "20 to 20",
+    "time": "1347 secs"
+  },
+  {
+    "number": "457",
+    "name": "ROSENDO DUNN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1508 secs"
+  },
+  {
+    "number": 458,
+    "name": "AUGUSTINE DUNN",
+    "group": "60 to 69",
+    "time": "3453 secs"
+  },
+  {
+    "number": "459",
+    "name": "CHUCK DUNN",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3344 secs"
+  },
+  {
+    "number": 460,
+    "name": "CHRISTIAN DUNN",
+    "group": "20 to 20",
+    "time": "2860 secs"
+  },
+  {
+    "number": 461,
+    "name": "TARAH DUNN",
+    "group": "14 and under",
+    "time": "3582 secs"
+  },
+  {
+    "number": 462,
+    "name": "BEATA PIERCE",
+    "group": "50 to 59",
+    "time": "1401 secs"
+  },
+  {
+    "number": 463,
+    "name": "DEENA PIERCE",
+    "group": "40 to 49",
+    "time": "3763 secs"
+  },
+  {
+    "number": 464,
+    "name": "ROXANN PIERCE",
+    "group": "60 to 69",
+    "time": "2168 secs"
+  },
+  {
+    "number": "465",
+    "name": "KENT ARNOLD",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3523 secs"
+  },
+  {
+    "number": "466",
+    "name": "ROSCOE SPENCER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4211 secs"
+  },
+  {
+    "number": "467",
+    "name": "WILTON SPENCER",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2773 secs"
+  },
+  {
+    "number": 468,
+    "name": "ISAURA PETERS",
+    "group": "30 to 39",
+    "time": "2954 secs"
+  },
+  {
+    "number": "469",
+    "name": "LYLE PETERS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3451 secs"
+  },
+  {
+    "number": 470,
+    "name": "SO PETERS",
+    "group": "14 and under",
+    "time": "3664 secs"
+  },
+  {
+    "number": 471,
+    "name": "CHARMAIN PETERS",
+    "group": "50 to 59",
+    "time": "1412 secs"
+  },
+  {
+    "number": "472",
+    "name": "WALLACE PETERS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3925 secs"
+  },
+  {
+    "number": "473",
+    "name": "CEDRICK HAWKINS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3214 secs"
+  },
+  {
+    "number": 474,
+    "name": "NANETTE HAWKINS",
+    "group": "40 to 49",
+    "time": "2109 secs"
+  },
+  {
+    "number": 475,
+    "name": "SHANITA HANSEN",
+    "group": "15 to 19",
+    "time": "4164 secs"
+  },
+  {
+    "number": "476",
+    "name": "GUSTAVO HANSEN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3506 secs"
+  },
+  {
+    "number": "477",
+    "name": "ROYCE HANSEN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1699 secs"
+  },
+  {
+    "number": 478,
+    "name": "YUONNE HANSEN",
+    "group": "60 to 69",
+    "time": "2844 secs"
+  },
+  {
+    "number": 479,
+    "name": "IRA CASTRO",
+    "group": "60 to 69",
+    "time": "3875 secs"
+  },
+  {
+    "number": 480,
+    "name": "TIFFINY CASTRO",
+    "group": "20 to 20",
+    "time": "1428 secs"
+  },
+  {
+    "number": 481,
+    "name": "KORI HOFFMAN",
+    "group": "30 to 39",
+    "time": "2460 secs"
+  },
+  {
+    "number": 482,
+    "name": "MICKIE HART",
+    "group": "30 to 39",
+    "time": "2830 secs"
+  },
+  {
+    "number": "483",
+    "name": "COLUMBUS ELLIOTT",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3897 secs"
+  },
+  {
+    "number": "484",
+    "name": "JOAQUIN CUNNINGHAM",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3952 secs"
+  },
+  {
+    "number": 485,
+    "name": "DARA CUNNINGHAM",
+    "group": "20 to 20",
+    "time": "2549 secs"
+  },
+  {
+    "number": "486",
+    "name": "ELI CUNNINGHAM",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3735 secs"
+  },
+  {
+    "number": 487,
+    "name": "MARGURITE CUNNINGHAM",
+    "group": "50 to 59",
+    "time": "1746 secs"
+  },
+  {
+    "number": "488",
+    "name": "STEVEN KNIGHT",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2781 secs"
+  },
+  {
+    "number": "489",
+    "name": "CRUZ KNIGHT",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4067 secs"
+  },
+  {
+    "number": "490",
+    "name": "SEAN KNIGHT",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3405 secs"
+  },
+  {
+    "number": 491,
+    "name": "KARI KNIGHT",
+    "group": "14 and under",
+    "time": "3624 secs"
+  },
+  {
+    "number": 492,
+    "name": "TILLIE BRADLEY",
+    "group": "60 to 69",
+    "time": "3976 secs"
+  },
+  {
+    "number": 493,
+    "name": "YETTA CARROLL",
+    "group": "30 to 39",
+    "time": "3102 secs"
+  },
+  {
+    "number": "494",
+    "name": "MARIO CARROLL",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2449 secs"
+  },
+  {
+    "number": 495,
+    "name": "THI CARROLL",
+    "group": "40 to 49",
+    "time": "2423 secs"
+  },
+  {
+    "number": 496,
+    "name": "ROSEANNA HUDSON",
+    "group": "14 and under",
+    "time": "1964 secs"
+  },
+  {
+    "number": "497",
+    "name": "JOHNIE HUDSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3786 secs"
+  },
+  {
+    "number": "498",
+    "name": "THOMAS DUNCAN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1513 secs"
+  },
+  {
+    "number": 499,
+    "name": "ALIA DUNCAN",
+    "group": "40 to 49",
+    "time": "2142 secs"
+  },
+  {
+    "number": "500",
+    "name": "WES DUNCAN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2781 secs"
+  },
+  {
+    "number": 501,
+    "name": "BUNNY ARMSTRONG",
+    "group": "14 and under",
+    "time": "1388 secs"
+  },
+  {
+    "number": "502",
+    "name": "CARLTON BERRY",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2829 secs"
+  },
+  {
+    "number": 503,
+    "name": "TRAVIS BERRY",
+    "group": "masters",
+    "time": "1261 secs"
+  },
+  {
+    "number": "504",
+    "name": "TYLER ANDREWS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3384 secs"
+  },
+  {
+    "number": 505,
+    "name": "ARIANA ANDREWS",
+    "group": "14 and under",
+    "time": "4212 secs"
+  },
+  {
+    "number": "506",
+    "name": "HENRY ANDREWS",
+    "gender": "M",
+    "group": "masters",
+    "time": "2732 secs"
+  },
+  {
+    "number": "507",
+    "name": "LUCIUS ANDREWS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3808 secs"
+  },
+  {
+    "number": 508,
+    "name": "DORETHEA JOHNSTON",
+    "group": "50 to 59",
+    "time": "4057 secs"
+  },
+  {
+    "number": 509,
+    "name": "LATARSHA RAY",
+    "group": "20 to 20",
+    "time": "1619 secs"
+  },
+  {
+    "number": "510",
+    "name": "PARIS RAY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1364 secs"
+  },
+  {
+    "number": 511,
+    "name": "AUDIE RAY",
+    "group": "30 to 39",
+    "time": "1858 secs"
+  },
+  {
+    "number": 512,
+    "name": "LACI LANE",
+    "group": "50 to 59",
+    "time": "3025 secs"
+  },
+  {
+    "number": 513,
+    "name": "ARTHUR LANE",
+    "group": "15 to 19",
+    "time": "3602 secs"
+  },
+  {
+    "number": "514",
+    "name": "LOGAN RILEY",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4115 secs"
+  },
+  {
+    "number": "515",
+    "name": "EDGARDO RILEY",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2450 secs"
+  },
+  {
+    "number": "516",
+    "name": "SID RILEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3530 secs"
+  },
+  {
+    "number": 517,
+    "name": "COLLEN CARPENTER",
+    "group": "14 and under",
+    "time": "2058 secs"
+  },
+  {
+    "number": 518,
+    "name": "MAGEN CARPENTER",
+    "group": "15 to 19",
+    "time": "3167 secs"
+  },
+  {
+    "number": 519,
+    "name": "ALITA CARPENTER",
+    "group": "50 to 59",
+    "time": "3373 secs"
+  },
+  {
+    "number": "520",
+    "name": "WILBERT PERKINS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2706 secs"
+  },
+  {
+    "number": 521,
+    "name": "THOMASENA PERKINS",
+    "group": "20 to 20",
+    "time": "1299 secs"
+  },
+  {
+    "number": "522",
+    "name": "DELMER PERKINS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2854 secs"
+  },
+  {
+    "number": 523,
+    "name": "NONA PERKINS",
+    "group": "40 to 49",
+    "time": "2230 secs"
+  },
+  {
+    "number": "524",
+    "name": "WILBERT AGUILAR",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3440 secs"
+  },
+  {
+    "number": "525",
+    "name": "ABRAM SILVA",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2647 secs"
+  },
+  {
+    "number": 526,
+    "name": "JOLYNN RICHARDS",
+    "group": "60 to 69",
+    "time": "3898 secs"
+  },
+  {
+    "number": 527,
+    "name": "EVIA RICHARDS",
+    "group": "30 to 39",
+    "time": "2840 secs"
+  },
+  {
+    "number": 528,
+    "name": "VERONA RICHARDS",
+    "group": "60 to 69",
+    "time": "2504 secs"
+  },
+  {
+    "number": 529,
+    "name": "SHAREE RICHARDS",
+    "group": "14 and under",
+    "time": "2172 secs"
+  },
+  {
+    "number": 530,
+    "name": "SIMA RICHARDS",
+    "group": "20 to 20",
+    "time": "1366 secs"
+  },
+  {
+    "number": 531,
+    "name": "HILDA WILLIS",
+    "group": "50 to 59",
+    "time": "1527 secs"
+  },
+  {
+    "number": "532",
+    "name": "STEPHEN WILLIS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3747 secs"
+  },
+  {
+    "number": 533,
+    "name": "KELLEE WILLIS",
+    "group": "40 to 49",
+    "time": "3495 secs"
+  },
+  {
+    "number": 534,
+    "name": "TYLER WILLIS",
+    "group": "14 and under",
+    "time": "3755 secs"
+  },
+  {
+    "number": "535",
+    "name": "IRVIN MATTHEWS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2238 secs"
+  },
+  {
+    "number": "536",
+    "name": "TYREE MATTHEWS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "4233 secs"
+  },
+  {
+    "number": 537,
+    "name": "ROBIN CHAPMAN",
+    "group": "50 to 59",
+    "time": "1880 secs"
+  },
+  {
+    "number": 538,
+    "name": "LIZ CHAPMAN",
+    "group": "14 and under",
+    "time": "3798 secs"
+  },
+  {
+    "number": "539",
+    "name": "JEFFREY LAWRENCE",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2787 secs"
+  },
+  {
+    "number": "540",
+    "name": "GAYLE GARZA",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1491 secs"
+  },
+  {
+    "number": "541",
+    "name": "JULIO GARZA",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2437 secs"
+  },
+  {
+    "number": 542,
+    "name": "CORALIE GARZA",
+    "group": "14 and under",
+    "time": "3347 secs"
+  },
+  {
+    "number": "543",
+    "name": "BRUNO GARZA",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2967 secs"
+  },
+  {
+    "number": "544",
+    "name": "EDGAR GARZA",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2716 secs"
+  },
+  {
+    "number": 545,
+    "name": "JEANIE VARGAS",
+    "group": "20 to 20",
+    "time": "2346 secs"
+  },
+  {
+    "number": "546",
+    "name": "RODOLFO WATKINS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3252 secs"
+  },
+  {
+    "number": 547,
+    "name": "DANETTE WATKINS",
+    "group": "14 and under",
+    "time": "2988 secs"
+  },
+  {
+    "number": 548,
+    "name": "SERAFINA WATKINS",
+    "group": "50 to 59",
+    "time": "3556 secs"
+  },
+  {
+    "number": 549,
+    "name": "KIMBERELY WHEELER",
+    "group": "14 and under",
+    "time": "3695 secs"
+  },
+  {
+    "number": 550,
+    "name": "SANTOS WHEELER",
+    "group": "14 and under",
+    "time": "1393 secs"
+  },
+  {
+    "number": 551,
+    "name": "ROSALEE WHEELER",
+    "group": "14 and under",
+    "time": "2157 secs"
+  },
+  {
+    "number": "552",
+    "name": "NATHANIEL CARLSON",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2138 secs"
+  },
+  {
+    "number": 553,
+    "name": "ALEJANDRINA CARLSON",
+    "group": "40 to 49",
+    "time": "3493 secs"
+  },
+  {
+    "number": 554,
+    "name": "ARNETTA CARLSON",
+    "group": "40 to 49",
+    "time": "1593 secs"
+  },
+  {
+    "number": "555",
+    "name": "TYREE HARPER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3338 secs"
+  },
+  {
+    "number": 556,
+    "name": "THERESA HARPER",
+    "group": "40 to 49",
+    "time": "2004 secs"
+  },
+  {
+    "number": 557,
+    "name": "ALTA HARPER",
+    "group": "masters",
+    "time": "3362 secs"
+  },
+  {
+    "number": 558,
+    "name": "AUGUSTINA HARPER",
+    "group": "15 to 19",
+    "time": "3041 secs"
+  },
+  {
+    "number": 559,
+    "name": "LENORE HARPER",
+    "group": "masters",
+    "time": "1755 secs"
+  },
+  {
+    "number": "560",
+    "name": "ASA GEORGE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1382 secs"
+  },
+  {
+    "number": "561",
+    "name": "BILL GEORGE",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2800 secs"
+  },
+  {
+    "number": "562",
+    "name": "ALEXIS GEORGE",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1952 secs"
+  },
+  {
+    "number": "563",
+    "name": "JOAN GREENE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3256 secs"
+  },
+  {
+    "number": "564",
+    "name": "JERE GREENE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3942 secs"
+  },
+  {
+    "number": "565",
+    "name": "WALLY GREENE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2286 secs"
+  },
+  {
+    "number": 566,
+    "name": "CHARLES GREENE",
+    "group": "50 to 59",
+    "time": "3069 secs"
+  },
+  {
+    "number": "567",
+    "name": "BRYAN BURKE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3584 secs"
+  },
+  {
+    "number": "568",
+    "name": "RAY BURKE",
+    "gender": "M",
+    "group": "masters",
+    "time": "1488 secs"
+  },
+  {
+    "number": 569,
+    "name": "STEFANIA BURKE",
+    "group": "masters",
+    "time": "2550 secs"
+  },
+  {
+    "number": 570,
+    "name": "JOHANNE GUZMAN",
+    "group": "40 to 49",
+    "time": "1959 secs"
+  },
+  {
+    "number": "571",
+    "name": "LEIF MORRISON",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2410 secs"
+  },
+  {
+    "number": 572,
+    "name": "CHRISTEN MORRISON",
+    "group": "30 to 39",
+    "time": "3863 secs"
+  },
+  {
+    "number": "573",
+    "name": "FRANCISCO MORRISON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3466 secs"
+  },
+  {
+    "number": 574,
+    "name": "WANITA MORRISON",
+    "group": "40 to 49",
+    "time": "2264 secs"
+  },
+  {
+    "number": 575,
+    "name": "ADELAIDA MORRISON",
+    "group": "40 to 49",
+    "time": "3498 secs"
+  },
+  {
+    "number": "576",
+    "name": "DON MUNOZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3743 secs"
+  },
+  {
+    "number": 577,
+    "name": "LACEY MUNOZ",
+    "group": "40 to 49",
+    "time": "3959 secs"
+  },
+  {
+    "number": "578",
+    "name": "DARRYL MUNOZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2648 secs"
+  },
+  {
+    "number": 579,
+    "name": "CHERILYN JACOBS",
+    "group": "masters",
+    "time": "3948 secs"
+  },
+  {
+    "number": 580,
+    "name": "CHARLSIE FRANKLIN",
+    "group": "50 to 59",
+    "time": "1956 secs"
+  },
+  {
+    "number": "581",
+    "name": "DAMON FRANKLIN",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2111 secs"
+  },
+  {
+    "number": "582",
+    "name": "LESLIE LYNCH",
+    "gender": "M",
+    "group": "masters",
+    "time": "4217 secs"
+  },
+  {
+    "number": 583,
+    "name": "CORENE LYNCH",
+    "group": "40 to 49",
+    "time": "1777 secs"
+  },
+  {
+    "number": 584,
+    "name": "CHANA SALAZAR",
+    "group": "30 to 39",
+    "time": "2879 secs"
+  },
+  {
+    "number": 585,
+    "name": "VANNESA SALAZAR",
+    "group": "15 to 19",
+    "time": "2651 secs"
+  },
+  {
+    "number": "586",
+    "name": "JUNIOR SALAZAR",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3258 secs"
+  },
+  {
+    "number": 587,
+    "name": "SHONDA SALAZAR",
+    "group": "14 and under",
+    "time": "3495 secs"
+  },
+  {
+    "number": 588,
+    "name": "TESSA AUSTIN",
+    "group": "14 and under",
+    "time": "2680 secs"
+  },
+  {
+    "number": "589",
+    "name": "GERALD AUSTIN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1455 secs"
+  },
+  {
+    "number": 590,
+    "name": "CLAUDETTE AUSTIN",
+    "group": "15 to 19",
+    "time": "2278 secs"
+  },
+  {
+    "number": "591",
+    "name": "HUNTER AUSTIN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3107 secs"
+  },
+  {
+    "number": 592,
+    "name": "KELI MENDEZ",
+    "group": "14 and under",
+    "time": "1485 secs"
+  },
+  {
+    "number": "593",
+    "name": "DORSEY MENDEZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1305 secs"
+  },
+  {
+    "number": 594,
+    "name": "ZANA MENDEZ",
+    "group": "30 to 39",
+    "time": "2157 secs"
+  },
+  {
+    "number": 595,
+    "name": "ELIZABETH GILBERT",
+    "group": "20 to 20",
+    "time": "2050 secs"
+  },
+  {
+    "number": 596,
+    "name": "CORY GILBERT",
+    "group": "20 to 20",
+    "time": "4115 secs"
+  },
+  {
+    "number": "597",
+    "name": "BENJAMIN GILBERT",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "4258 secs"
+  },
+  {
+    "number": "598",
+    "name": "JEROLD GILBERT",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2504 secs"
+  },
+  {
+    "number": 599,
+    "name": "MARGRETT GILBERT",
+    "group": "60 to 69",
+    "time": "1742 secs"
+  },
+  {
+    "number": 600,
+    "name": "APRIL JENSEN",
+    "group": "40 to 49",
+    "time": "1607 secs"
+  },
+  {
+    "number": 601,
+    "name": "DANITA WILLIAMSON",
+    "group": "50 to 59",
+    "time": "2645 secs"
+  },
+  {
+    "number": "602",
+    "name": "LUTHER WILLIAMSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3361 secs"
+  },
+  {
+    "number": 603,
+    "name": "LANA WILLIAMSON",
+    "group": "20 to 20",
+    "time": "1403 secs"
+  },
+  {
+    "number": 604,
+    "name": "TOSHA WILLIAMSON",
+    "group": "masters",
+    "time": "3529 secs"
+  },
+  {
+    "number": 605,
+    "name": "MARION MONTGOMERY",
+    "group": "masters",
+    "time": "1423 secs"
+  },
+  {
+    "number": "606",
+    "name": "VAL MONTGOMERY",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1602 secs"
+  },
+  {
+    "number": "607",
+    "name": "GREG MONTGOMERY",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2684 secs"
+  },
+  {
+    "number": 608,
+    "name": "KANDY MONTGOMERY",
+    "group": "50 to 59",
+    "time": "4074 secs"
+  },
+  {
+    "number": "609",
+    "name": "SAL HARVEY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2311 secs"
+  },
+  {
+    "number": 610,
+    "name": "JANEE HARVEY",
+    "group": "30 to 39",
+    "time": "1348 secs"
+  },
+  {
+    "number": 611,
+    "name": "LESIA HOWELL",
+    "group": "masters",
+    "time": "1992 secs"
+  },
+  {
+    "number": 612,
+    "name": "JESUSITA HANSON",
+    "group": "30 to 39",
+    "time": "2941 secs"
+  },
+  {
+    "number": 613,
+    "name": "AMPARO WEBER",
+    "group": "14 and under",
+    "time": "3489 secs"
+  },
+  {
+    "number": 614,
+    "name": "ELKE WEBER",
+    "group": "60 to 69",
+    "time": "3842 secs"
+  },
+  {
+    "number": 615,
+    "name": "JEANETTA GARRETT",
+    "group": "14 and under",
+    "time": "1514 secs"
+  },
+  {
+    "number": 616,
+    "name": "TABITHA GARRETT",
+    "group": "masters",
+    "time": "3420 secs"
+  },
+  {
+    "number": "617",
+    "name": "EFREN GARRETT",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3418 secs"
+  },
+  {
+    "number": 618,
+    "name": "MARILEE BURTON",
+    "group": "20 to 20",
+    "time": "1755 secs"
+  },
+  {
+    "number": "619",
+    "name": "LAURENCE FULLER",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "4152 secs"
+  },
+  {
+    "number": "620",
+    "name": "FILIBERTO FULLER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2278 secs"
+  },
+  {
+    "number": "621",
+    "name": "JOEL FULLER",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3060 secs"
+  },
+  {
+    "number": "622",
+    "name": "ABRAM MCCOY",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2332 secs"
+  },
+  {
+    "number": 623,
+    "name": "GERRI MCCOY",
+    "group": "40 to 49",
+    "time": "1263 secs"
+  },
+  {
+    "number": "624",
+    "name": "CLIFF MCCOY",
+    "gender": "M",
+    "group": "masters",
+    "time": "3788 secs"
+  },
+  {
+    "number": 625,
+    "name": "YAHAIRA WELCH",
+    "group": "50 to 59",
+    "time": "1262 secs"
+  },
+  {
+    "number": 626,
+    "name": "DEBRA WELCH",
+    "group": "40 to 49",
+    "time": "2404 secs"
+  },
+  {
+    "number": "627",
+    "name": "ELDON SCHULTZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3328 secs"
+  },
+  {
+    "number": 628,
+    "name": "CARLYN WALTERS",
+    "group": "40 to 49",
+    "time": "4072 secs"
+  },
+  {
+    "number": 629,
+    "name": "ERMA WALTERS",
+    "group": "50 to 59",
+    "time": "2423 secs"
+  },
+  {
+    "number": "630",
+    "name": "ELMO REID",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3856 secs"
+  },
+  {
+    "number": "631",
+    "name": "ALI REID",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1841 secs"
+  },
+  {
+    "number": "632",
+    "name": "CONNIE REID",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2454 secs"
+  },
+  {
+    "number": 633,
+    "name": "ZENOBIA WALSH",
+    "group": "15 to 19",
+    "time": "3976 secs"
+  },
+  {
+    "number": "634",
+    "name": "DOMINIC LITTLE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3953 secs"
+  },
+  {
+    "number": 635,
+    "name": "SHAMEKA FOWLER",
+    "group": "masters",
+    "time": "2302 secs"
+  },
+  {
+    "number": 636,
+    "name": "RENEA BOWMAN",
+    "group": "15 to 19",
+    "time": "1832 secs"
+  },
+  {
+    "number": 637,
+    "name": "ANNELLE BOWMAN",
+    "group": "60 to 69",
+    "time": "2721 secs"
+  },
+  {
+    "number": 638,
+    "name": "TIFFINY BOWMAN",
+    "group": "15 to 19",
+    "time": "1879 secs"
+  },
+  {
+    "number": "639",
+    "name": "TOM BOWMAN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3616 secs"
+  },
+  {
+    "number": 640,
+    "name": "CLAUDE DAVIDSON",
+    "group": "50 to 59",
+    "time": "3301 secs"
+  },
+  {
+    "number": 641,
+    "name": "CRISTINA DAVIDSON",
+    "group": "30 to 39",
+    "time": "2012 secs"
+  },
+  {
+    "number": "642",
+    "name": "SHAYNE DAVIDSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3752 secs"
+  },
+  {
+    "number": 643,
+    "name": "JACQUELIN DAY",
+    "group": "30 to 39",
+    "time": "2396 secs"
+  },
+  {
+    "number": "644",
+    "name": "FOREST DAY",
+    "gender": "M",
+    "group": "masters",
+    "time": "3591 secs"
+  },
+  {
+    "number": "645",
+    "name": "ODIS DAY",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4098 secs"
+  },
+  {
+    "number": "646",
+    "name": "ENOCH SCHNEIDER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3557 secs"
+  },
+  {
+    "number": 647,
+    "name": "GLENDORA SCHNEIDER",
+    "group": "50 to 59",
+    "time": "3318 secs"
+  },
+  {
+    "number": 648,
+    "name": "ANTIONETTE SCHNEIDER",
+    "group": "20 to 20",
+    "time": "3941 secs"
+  },
+  {
+    "number": "649",
+    "name": "NORBERT SCHNEIDER",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3041 secs"
+  },
+  {
+    "number": 650,
+    "name": "DUSTY BREWER",
+    "group": "60 to 69",
+    "time": "2315 secs"
+  },
+  {
+    "number": "651",
+    "name": "ABEL BREWER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3028 secs"
+  },
+  {
+    "number": "652",
+    "name": "MARSHALL BREWER",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3333 secs"
+  },
+  {
+    "number": "653",
+    "name": "OTHA LUCAS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1341 secs"
+  },
+  {
+    "number": "654",
+    "name": "ODELL LUCAS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2136 secs"
+  },
+  {
+    "number": "655",
+    "name": "DARREN LUCAS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2106 secs"
+  },
+  {
+    "number": 656,
+    "name": "LINDA HOLLAND",
+    "group": "30 to 39",
+    "time": "2569 secs"
+  },
+  {
+    "number": 657,
+    "name": "KATHLYN HOLLAND",
+    "group": "masters",
+    "time": "1937 secs"
+  },
+  {
+    "number": "658",
+    "name": "BENITO HOLLAND",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2214 secs"
+  },
+  {
+    "number": 659,
+    "name": "AVIS HOLLAND",
+    "group": "14 and under",
+    "time": "3325 secs"
+  },
+  {
+    "number": 660,
+    "name": "IMOGENE WONG",
+    "group": "60 to 69",
+    "time": "2864 secs"
+  },
+  {
+    "number": "661",
+    "name": "JEFFERY WONG",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1867 secs"
+  },
+  {
+    "number": "662",
+    "name": "JUDSON WONG",
+    "gender": "M",
+    "group": "masters",
+    "time": "1382 secs"
+  },
+  {
+    "number": 663,
+    "name": "ROCIO BANKS",
+    "group": "60 to 69",
+    "time": "3303 secs"
+  },
+  {
+    "number": 664,
+    "name": "STEPHINE BANKS",
+    "group": "30 to 39",
+    "time": "3578 secs"
+  },
+  {
+    "number": "665",
+    "name": "FELIX BANKS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3338 secs"
+  },
+  {
+    "number": "666",
+    "name": "MARLON BANKS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1521 secs"
+  },
+  {
+    "number": 667,
+    "name": "KATRINA BANKS",
+    "group": "14 and under",
+    "time": "3159 secs"
+  },
+  {
+    "number": 668,
+    "name": "SACHA CURTIS",
+    "group": "50 to 59",
+    "time": "2082 secs"
+  },
+  {
+    "number": 669,
+    "name": "ETTIE CURTIS",
+    "group": "40 to 49",
+    "time": "1404 secs"
+  },
+  {
+    "number": "670",
+    "name": "JAMEL CURTIS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4037 secs"
+  },
+  {
+    "number": "671",
+    "name": "HARLEY CURTIS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2739 secs"
+  },
+  {
+    "number": "672",
+    "name": "DANA PEARSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1353 secs"
+  },
+  {
+    "number": 673,
+    "name": "CLELIA PEARSON",
+    "group": "15 to 19",
+    "time": "2317 secs"
+  },
+  {
+    "number": 674,
+    "name": "DANNA VALDEZ",
+    "group": "14 and under",
+    "time": "4165 secs"
+  },
+  {
+    "number": "675",
+    "name": "STANFORD VALDEZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1645 secs"
+  },
+  {
+    "number": 676,
+    "name": "CAROLEE PENA",
+    "group": "20 to 20",
+    "time": "1960 secs"
+  },
+  {
+    "number": 677,
+    "name": "DULCE PENA",
+    "group": "60 to 69",
+    "time": "2055 secs"
+  },
+  {
+    "number": 678,
+    "name": "PENELOPE PENA",
+    "group": "15 to 19",
+    "time": "1495 secs"
+  },
+  {
+    "number": "679",
+    "name": "DEXTER PENA",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1824 secs"
+  },
+  {
+    "number": "680",
+    "name": "CAROL RIOS",
+    "gender": "M",
+    "group": "masters",
+    "time": "3551 secs"
+  },
+  {
+    "number": "681",
+    "name": "JOHNNIE RIOS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3079 secs"
+  },
+  {
+    "number": 682,
+    "name": "BERYL RIOS",
+    "group": "40 to 49",
+    "time": "1825 secs"
+  },
+  {
+    "number": "683",
+    "name": "RANDOLPH RIOS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1260 secs"
+  },
+  {
+    "number": 684,
+    "name": "AURORE DOUGLAS",
+    "group": "15 to 19",
+    "time": "3953 secs"
+  },
+  {
+    "number": "685",
+    "name": "CLAYTON SANDOVAL",
+    "gender": "M",
+    "group": "masters",
+    "time": "2675 secs"
+  },
+  {
+    "number": 686,
+    "name": "RENAY SANDOVAL",
+    "group": "30 to 39",
+    "time": "3172 secs"
+  },
+  {
+    "number": 687,
+    "name": "MELVA SANDOVAL",
+    "group": "masters",
+    "time": "1798 secs"
+  },
+  {
+    "number": 688,
+    "name": "GEORGIANNE SANDOVAL",
+    "group": "30 to 39",
+    "time": "2789 secs"
+  },
+  {
+    "number": "689",
+    "name": "LESTER SANDOVAL",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1284 secs"
+  },
+  {
+    "number": "690",
+    "name": "ALI KELLER",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "4234 secs"
+  },
+  {
+    "number": "691",
+    "name": "FELIX KELLER",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3724 secs"
+  },
+  {
+    "number": "692",
+    "name": "CHONG STANLEY",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2936 secs"
+  },
+  {
+    "number": 693,
+    "name": "CELINE BATES",
+    "group": "20 to 20",
+    "time": "3968 secs"
+  },
+  {
+    "number": "694",
+    "name": "JARVIS BATES",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2133 secs"
+  },
+  {
+    "number": 695,
+    "name": "HETTIE BATES",
+    "group": "40 to 49",
+    "time": "1422 secs"
+  },
+  {
+    "number": "696",
+    "name": "JAE BATES",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3816 secs"
+  },
+  {
+    "number": "697",
+    "name": "DEAN ALVARADO",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1626 secs"
+  },
+  {
+    "number": 698,
+    "name": "ODESSA ALVARADO",
+    "group": "15 to 19",
+    "time": "2754 secs"
+  },
+  {
+    "number": "699",
+    "name": "JAYSON ALVARADO",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2375 secs"
+  },
+  {
+    "number": "700",
+    "name": "MARKUS ALVARADO",
+    "gender": "M",
+    "group": "masters",
+    "time": "1903 secs"
+  },
+  {
+    "number": 701,
+    "name": "LAVERNA ORTEGA",
+    "group": "60 to 69",
+    "time": "1569 secs"
+  },
+  {
+    "number": "702",
+    "name": "ANDRE ORTEGA",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3894 secs"
+  },
+  {
+    "number": 703,
+    "name": "SUSANA ORTEGA",
+    "group": "30 to 39",
+    "time": "3592 secs"
+  },
+  {
+    "number": "704",
+    "name": "JOHNNIE ORTEGA",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3409 secs"
+  },
+  {
+    "number": 705,
+    "name": "TRICIA ORTEGA",
+    "group": "14 and under",
+    "time": "2495 secs"
+  },
+  {
+    "number": "706",
+    "name": "LESTER WADE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4203 secs"
+  },
+  {
+    "number": 707,
+    "name": "HEDWIG WADE",
+    "group": "14 and under",
+    "time": "2466 secs"
+  },
+  {
+    "number": 708,
+    "name": "SOO ESTRADA",
+    "group": "20 to 20",
+    "time": "1450 secs"
+  },
+  {
+    "number": 709,
+    "name": "ELSIE ESTRADA",
+    "group": "30 to 39",
+    "time": "3812 secs"
+  },
+  {
+    "number": 710,
+    "name": "ROSAMARIA ESTRADA",
+    "group": "14 and under",
+    "time": "3414 secs"
+  },
+  {
+    "number": 711,
+    "name": "SAVANNAH CONTRERAS",
+    "group": "50 to 59",
+    "time": "2190 secs"
+  },
+  {
+    "number": "712",
+    "name": "NEAL CONTRERAS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3746 secs"
+  },
+  {
+    "number": 713,
+    "name": "DORETHEA CONTRERAS",
+    "group": "masters",
+    "time": "3675 secs"
+  },
+  {
+    "number": "714",
+    "name": "JARROD BARNETT",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1586 secs"
+  },
+  {
+    "number": "715",
+    "name": "JEWEL BARNETT",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2841 secs"
+  },
+  {
+    "number": "716",
+    "name": "ALTON CALDWELL",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3055 secs"
+  },
+  {
+    "number": "717",
+    "name": "SHON CALDWELL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2350 secs"
+  },
+  {
+    "number": "718",
+    "name": "ALDEN POWERS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3512 secs"
+  },
+  {
+    "number": "719",
+    "name": "CRISTOPHER CHAMBERS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2982 secs"
+  },
+  {
+    "number": "720",
+    "name": "QUINCY CHAMBERS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3892 secs"
+  },
+  {
+    "number": 721,
+    "name": "JERLENE CHAMBERS",
+    "group": "20 to 20",
+    "time": "2800 secs"
+  },
+  {
+    "number": 722,
+    "name": "CARMA CHAMBERS",
+    "group": "50 to 59",
+    "time": "2316 secs"
+  },
+  {
+    "number": "723",
+    "name": "CYRUS CRAIG",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2619 secs"
+  },
+  {
+    "number": 724,
+    "name": "MELODIE CRAIG",
+    "group": "14 and under",
+    "time": "2720 secs"
+  },
+  {
+    "number": 725,
+    "name": "MACY CRAIG",
+    "group": "60 to 69",
+    "time": "1794 secs"
+  },
+  {
+    "number": 726,
+    "name": "KELSIE LOWE",
+    "group": "masters",
+    "time": "1432 secs"
+  },
+  {
+    "number": 727,
+    "name": "LADY RHODES",
+    "group": "14 and under",
+    "time": "2140 secs"
+  },
+  {
+    "number": 728,
+    "name": "CLAIR RHODES",
+    "group": "14 and under",
+    "time": "3786 secs"
+  },
+  {
+    "number": 729,
+    "name": "PATRIA RHODES",
+    "group": "14 and under",
+    "time": "1941 secs"
+  },
+  {
+    "number": "730",
+    "name": "BORIS RHODES",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3657 secs"
+  },
+  {
+    "number": "731",
+    "name": "YONG BYRD",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2412 secs"
+  },
+  {
+    "number": "732",
+    "name": "QUINN GREGORY",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1414 secs"
+  },
+  {
+    "number": 733,
+    "name": "SHAINA GREGORY",
+    "group": "30 to 39",
+    "time": "1277 secs"
+  },
+  {
+    "number": 734,
+    "name": "SATURNINA GREGORY",
+    "group": "40 to 49",
+    "time": "2684 secs"
+  },
+  {
+    "number": "735",
+    "name": "ELIAS FRAZIER",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3974 secs"
+  },
+  {
+    "number": 736,
+    "name": "ANNAMAE BECKER",
+    "group": "14 and under",
+    "time": "3884 secs"
+  },
+  {
+    "number": 737,
+    "name": "ROSENA BECKER",
+    "group": "50 to 59",
+    "time": "4040 secs"
+  },
+  {
+    "number": "738",
+    "name": "NATHANIAL BECKER",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3139 secs"
+  },
+  {
+    "number": 739,
+    "name": "JAN BECKER",
+    "group": "30 to 39",
+    "time": "3446 secs"
+  },
+  {
+    "number": "740",
+    "name": "DWIGHT BECKER",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3513 secs"
+  },
+  {
+    "number": "741",
+    "name": "GARRET MALDONADO",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3730 secs"
+  },
+  {
+    "number": 742,
+    "name": "GRISELDA MALDONADO",
+    "group": "50 to 59",
+    "time": "3407 secs"
+  },
+  {
+    "number": "743",
+    "name": "JEFFERY MALDONADO",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4248 secs"
+  },
+  {
+    "number": "744",
+    "name": "EMILE MALDONADO",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2337 secs"
+  },
+  {
+    "number": "745",
+    "name": "JAMAL FLEMING",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3899 secs"
+  },
+  {
+    "number": "746",
+    "name": "ELDRIDGE FLEMING",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2851 secs"
+  },
+  {
+    "number": "747",
+    "name": "ELOY FLEMING",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2283 secs"
+  },
+  {
+    "number": "748",
+    "name": "FELIPE FLEMING",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2340 secs"
+  },
+  {
+    "number": "749",
+    "name": "SAMUAL VEGA",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3552 secs"
+  },
+  {
+    "number": "750",
+    "name": "HAYDEN VEGA",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1382 secs"
+  },
+  {
+    "number": "751",
+    "name": "QUINCY VEGA",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3393 secs"
+  },
+  {
+    "number": 752,
+    "name": "CORRINNE VEGA",
+    "group": "20 to 20",
+    "time": "2018 secs"
+  },
+  {
+    "number": "753",
+    "name": "STAN SUTTON",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1295 secs"
+  },
+  {
+    "number": 754,
+    "name": "ZORA SUTTON",
+    "group": "60 to 69",
+    "time": "3423 secs"
+  },
+  {
+    "number": "755",
+    "name": "GARTH SUTTON",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2159 secs"
+  },
+  {
+    "number": 756,
+    "name": "GLENNIE SUTTON",
+    "group": "60 to 69",
+    "time": "1617 secs"
+  },
+  {
+    "number": 757,
+    "name": "MAJORIE SUTTON",
+    "group": "20 to 20",
+    "time": "4018 secs"
+  },
+  {
+    "number": "758",
+    "name": "RICKEY COHEN",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1933 secs"
+  },
+  {
+    "number": "759",
+    "name": "CEDRIC COHEN",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3416 secs"
+  },
+  {
+    "number": 760,
+    "name": "SHYLA JENNINGS",
+    "group": "15 to 19",
+    "time": "2541 secs"
+  },
+  {
+    "number": 761,
+    "name": "DAVINA JENNINGS",
+    "group": "30 to 39",
+    "time": "3946 secs"
+  },
+  {
+    "number": "762",
+    "name": "SHERWOOD JENNINGS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3151 secs"
+  },
+  {
+    "number": "763",
+    "name": "NICHOLAS PARKS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2971 secs"
+  },
+  {
+    "number": 764,
+    "name": "JOLIE PARKS",
+    "group": "30 to 39",
+    "time": "1681 secs"
+  },
+  {
+    "number": "765",
+    "name": "HERBERT PARKS",
+    "gender": "M",
+    "group": "masters",
+    "time": "3755 secs"
+  },
+  {
+    "number": "766",
+    "name": "DANIAL PARKS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2337 secs"
+  },
+  {
+    "number": 767,
+    "name": "CASSEY MCDANIEL",
+    "group": "50 to 59",
+    "time": "1788 secs"
+  },
+  {
+    "number": "768",
+    "name": "WM MCDANIEL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2043 secs"
+  },
+  {
+    "number": 769,
+    "name": "BERNIECE MCDANIEL",
+    "group": "60 to 69",
+    "time": "1577 secs"
+  },
+  {
+    "number": "770",
+    "name": "NOEL MCDANIEL",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2947 secs"
+  },
+  {
+    "number": "771",
+    "name": "JEFFERY WATTS",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3951 secs"
+  },
+  {
+    "number": "772",
+    "name": "RODERICK WATTS",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2110 secs"
+  },
+  {
+    "number": 773,
+    "name": "ASHLEIGH BARKER",
+    "group": "30 to 39",
+    "time": "3844 secs"
+  },
+  {
+    "number": 774,
+    "name": "ZENOBIA BARKER",
+    "group": "40 to 49",
+    "time": "2218 secs"
+  },
+  {
+    "number": "775",
+    "name": "MILFORD BARKER",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3924 secs"
+  },
+  {
+    "number": 776,
+    "name": "RUTHIE NORRIS",
+    "group": "60 to 69",
+    "time": "2706 secs"
+  },
+  {
+    "number": "777",
+    "name": "TERENCE VAUGHN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1725 secs"
+  },
+  {
+    "number": 778,
+    "name": "VALERI VAUGHN",
+    "group": "masters",
+    "time": "2685 secs"
+  },
+  {
+    "number": "779",
+    "name": "EARNEST VAUGHN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3173 secs"
+  },
+  {
+    "number": 780,
+    "name": "ALETA VAUGHN",
+    "group": "15 to 19",
+    "time": "4114 secs"
+  },
+  {
+    "number": "781",
+    "name": "FRANKLYN VAZQUEZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1367 secs"
+  },
+  {
+    "number": "782",
+    "name": "CARSON VAZQUEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3771 secs"
+  },
+  {
+    "number": 783,
+    "name": "TOMMYE VAZQUEZ",
+    "group": "40 to 49",
+    "time": "2755 secs"
+  },
+  {
+    "number": 784,
+    "name": "BROOKE VAZQUEZ",
+    "group": "50 to 59",
+    "time": "2278 secs"
+  },
+  {
+    "number": 785,
+    "name": "RANDY HOLT",
+    "group": "15 to 19",
+    "time": "2032 secs"
+  },
+  {
+    "number": 786,
+    "name": "ZORAIDA SCHWARTZ",
+    "group": "60 to 69",
+    "time": "3781 secs"
+  },
+  {
+    "number": 787,
+    "name": "RAYLENE SCHWARTZ",
+    "group": "14 and under",
+    "time": "3576 secs"
+  },
+  {
+    "number": 788,
+    "name": "LORRAINE SCHWARTZ",
+    "group": "40 to 49",
+    "time": "1422 secs"
+  },
+  {
+    "number": 789,
+    "name": "CHERRIE SCHWARTZ",
+    "group": "50 to 59",
+    "time": "1590 secs"
+  },
+  {
+    "number": 790,
+    "name": "TAMAR SCHWARTZ",
+    "group": "30 to 39",
+    "time": "3025 secs"
+  },
+  {
+    "number": "791",
+    "name": "MORRIS STEELE",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3414 secs"
+  },
+  {
+    "number": 792,
+    "name": "SHAY STEELE",
+    "group": "30 to 39",
+    "time": "2800 secs"
+  },
+  {
+    "number": 793,
+    "name": "ALETA STEELE",
+    "group": "masters",
+    "time": "1361 secs"
+  },
+  {
+    "number": "794",
+    "name": "BROCK BENSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2314 secs"
+  },
+  {
+    "number": "795",
+    "name": "COREY BENSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2340 secs"
+  },
+  {
+    "number": "796",
+    "name": "ANIBAL BENSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4027 secs"
+  },
+  {
+    "number": 797,
+    "name": "MICHELE DOMINGUEZ",
+    "group": "60 to 69",
+    "time": "2454 secs"
+  },
+  {
+    "number": "798",
+    "name": "KEVEN DOMINGUEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2324 secs"
+  },
+  {
+    "number": "799",
+    "name": "WARNER DOMINGUEZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3775 secs"
+  },
+  {
+    "number": 800,
+    "name": "JEANNIE DOMINGUEZ",
+    "group": "20 to 20",
+    "time": "3623 secs"
+  },
+  {
+    "number": 801,
+    "name": "KHALILAH DOMINGUEZ",
+    "group": "40 to 49",
+    "time": "3641 secs"
+  },
+  {
+    "number": 802,
+    "name": "KATHEY TERRY",
+    "group": "50 to 59",
+    "time": "1676 secs"
+  },
+  {
+    "number": 803,
+    "name": "BETHEL WOLFE",
+    "group": "20 to 20",
+    "time": "3610 secs"
+  },
+  {
+    "number": "804",
+    "name": "TIMMY WOLFE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2414 secs"
+  },
+  {
+    "number": 805,
+    "name": "SHEBA HALE",
+    "group": "20 to 20",
+    "time": "2587 secs"
+  },
+  {
+    "number": 806,
+    "name": "TOSHIA LYONS",
+    "group": "14 and under",
+    "time": "1740 secs"
+  },
+  {
+    "number": 807,
+    "name": "ARLETHA LYONS",
+    "group": "15 to 19",
+    "time": "2752 secs"
+  },
+  {
+    "number": 808,
+    "name": "KERI LYONS",
+    "group": "14 and under",
+    "time": "2767 secs"
+  },
+  {
+    "number": "809",
+    "name": "ELMER LYONS",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1315 secs"
+  },
+  {
+    "number": 810,
+    "name": "BRUNILDA LYONS",
+    "group": "30 to 39",
+    "time": "1514 secs"
+  },
+  {
+    "number": "811",
+    "name": "FORREST GRAVES",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1500 secs"
+  },
+  {
+    "number": "812",
+    "name": "JAMES GRAVES",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2128 secs"
+  },
+  {
+    "number": "813",
+    "name": "ELLIOTT GRAVES",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2374 secs"
+  },
+  {
+    "number": "814",
+    "name": "MOSES PARK",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2769 secs"
+  },
+  {
+    "number": 815,
+    "name": "ELIDIA WARNER",
+    "group": "60 to 69",
+    "time": "2477 secs"
+  },
+  {
+    "number": 816,
+    "name": "LASHAWNDA PADILLA",
+    "group": "30 to 39",
+    "time": "2703 secs"
+  },
+  {
+    "number": "817",
+    "name": "CEDRIC PADILLA",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3937 secs"
+  },
+  {
+    "number": "818",
+    "name": "TORY PADILLA",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2569 secs"
+  },
+  {
+    "number": "819",
+    "name": "GENARO PADILLA",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1305 secs"
+  },
+  {
+    "number": 820,
+    "name": "ELEONORE PADILLA",
+    "group": "masters",
+    "time": "4072 secs"
+  },
+  {
+    "number": "821",
+    "name": "JONATHON BUSH",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2405 secs"
+  },
+  {
+    "number": 822,
+    "name": "MARNA BUSH",
+    "group": "15 to 19",
+    "time": "3484 secs"
+  },
+  {
+    "number": "823",
+    "name": "PALMER BUSH",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2850 secs"
+  },
+  {
+    "number": "824",
+    "name": "BARNEY THORNTON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2682 secs"
+  },
+  {
+    "number": 825,
+    "name": "KARL THORNTON",
+    "group": "20 to 20",
+    "time": "2056 secs"
+  },
+  {
+    "number": 826,
+    "name": "FRANCENE ERICKSON",
+    "group": "40 to 49",
+    "time": "1926 secs"
+  },
+  {
+    "number": "827",
+    "name": "MEL ERICKSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4254 secs"
+  },
+  {
+    "number": "828",
+    "name": "CLEMENTE ERICKSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3825 secs"
+  },
+  {
+    "number": "829",
+    "name": "GEORGE ERICKSON",
+    "gender": "M",
+    "group": "masters",
+    "time": "3867 secs"
+  },
+  {
+    "number": 830,
+    "name": "NIEVES ERICKSON",
+    "group": "14 and under",
+    "time": "3501 secs"
+  },
+  {
+    "number": "831",
+    "name": "HUNTER FLETCHER",
+    "gender": "M",
+    "group": "masters",
+    "time": "3684 secs"
+  },
+  {
+    "number": "832",
+    "name": "LUIS FLETCHER",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3962 secs"
+  },
+  {
+    "number": 833,
+    "name": "DEANNA FLETCHER",
+    "group": "20 to 20",
+    "time": "2916 secs"
+  },
+  {
+    "number": "834",
+    "name": "KIP FLETCHER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3567 secs"
+  },
+  {
+    "number": 835,
+    "name": "SUNDAY FLETCHER",
+    "group": "14 and under",
+    "time": "2948 secs"
+  },
+  {
+    "number": "836",
+    "name": "LINDSEY MCKINNEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2734 secs"
+  },
+  {
+    "number": "837",
+    "name": "ISMAEL PAGE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "4181 secs"
+  },
+  {
+    "number": 838,
+    "name": "SUNSHINE PAGE",
+    "group": "14 and under",
+    "time": "2022 secs"
+  },
+  {
+    "number": "839",
+    "name": "SEAN DAWSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2550 secs"
+  },
+  {
+    "number": 840,
+    "name": "IRA DAWSON",
+    "group": "50 to 59",
+    "time": "3243 secs"
+  },
+  {
+    "number": 841,
+    "name": "KATHRYN DAWSON",
+    "group": "20 to 20",
+    "time": "3371 secs"
+  },
+  {
+    "number": "842",
+    "name": "TERRY DAWSON",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3776 secs"
+  },
+  {
+    "number": 843,
+    "name": "ELIZEBETH JOSEPH",
+    "group": "40 to 49",
+    "time": "1419 secs"
+  },
+  {
+    "number": 844,
+    "name": "KARLYN MARQUEZ",
+    "group": "15 to 19",
+    "time": "2322 secs"
+  },
+  {
+    "number": "845",
+    "name": "RUDOLF MARQUEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3115 secs"
+  },
+  {
+    "number": "846",
+    "name": "SEYMOUR MARQUEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3219 secs"
+  },
+  {
+    "number": "847",
+    "name": "TRAVIS REEVES",
+    "gender": "M",
+    "group": "masters",
+    "time": "2502 secs"
+  },
+  {
+    "number": "848",
+    "name": "MARVIN REEVES",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3313 secs"
+  },
+  {
+    "number": 849,
+    "name": "PATTY KLEIN",
+    "group": "15 to 19",
+    "time": "2082 secs"
+  },
+  {
+    "number": 850,
+    "name": "SHEREE KLEIN",
+    "group": "50 to 59",
+    "time": "3357 secs"
+  },
+  {
+    "number": "851",
+    "name": "GAIL KLEIN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3997 secs"
+  },
+  {
+    "number": "852",
+    "name": "WALTER KLEIN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1740 secs"
+  },
+  {
+    "number": "853",
+    "name": "DENVER KLEIN",
+    "gender": "M",
+    "group": "masters",
+    "time": "2727 secs"
+  },
+  {
+    "number": "854",
+    "name": "ARTURO BALDWIN",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3477 secs"
+  },
+  {
+    "number": "855",
+    "name": "MARIANO BALDWIN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "1822 secs"
+  },
+  {
+    "number": 856,
+    "name": "NGOC BALDWIN",
+    "group": "50 to 59",
+    "time": "1261 secs"
+  },
+  {
+    "number": 857,
+    "name": "FREDERICKA BALDWIN",
+    "group": "20 to 20",
+    "time": "3594 secs"
+  },
+  {
+    "number": 858,
+    "name": "CLAUDINE BALDWIN",
+    "group": "masters",
+    "time": "3367 secs"
+  },
+  {
+    "number": 859,
+    "name": "ELENORA MORAN",
+    "group": "14 and under",
+    "time": "3408 secs"
+  },
+  {
+    "number": 860,
+    "name": "VIRGIL MORAN",
+    "group": "20 to 20",
+    "time": "3412 secs"
+  },
+  {
+    "number": 861,
+    "name": "YAJAIRA MORAN",
+    "group": "40 to 49",
+    "time": "3921 secs"
+  },
+  {
+    "number": 862,
+    "name": "MIRANDA MORAN",
+    "group": "20 to 20",
+    "time": "3880 secs"
+  },
+  {
+    "number": "863",
+    "name": "TYSON LOVE",
+    "gender": "M",
+    "group": "masters",
+    "time": "3542 secs"
+  },
+  {
+    "number": 864,
+    "name": "CHARLINE LOVE",
+    "group": "30 to 39",
+    "time": "4116 secs"
+  },
+  {
+    "number": 865,
+    "name": "AZZIE LOVE",
+    "group": "14 and under",
+    "time": "3648 secs"
+  },
+  {
+    "number": "866",
+    "name": "JESSIE LOVE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3220 secs"
+  },
+  {
+    "number": "867",
+    "name": "ALVARO LOVE",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1341 secs"
+  },
+  {
+    "number": "868",
+    "name": "CLINT ROBBINS",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2911 secs"
+  },
+  {
+    "number": 869,
+    "name": "MICHAELA ROBBINS",
+    "group": "60 to 69",
+    "time": "1685 secs"
+  },
+  {
+    "number": "870",
+    "name": "COLE ROBBINS",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3369 secs"
+  },
+  {
+    "number": "871",
+    "name": "BRAD BALL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2017 secs"
+  },
+  {
+    "number": 872,
+    "name": "KYLA CORTEZ",
+    "group": "20 to 20",
+    "time": "1342 secs"
+  },
+  {
+    "number": 873,
+    "name": "TASHIA CORTEZ",
+    "group": "14 and under",
+    "time": "3917 secs"
+  },
+  {
+    "number": "874",
+    "name": "BRIAN LE",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2253 secs"
+  },
+  {
+    "number": 875,
+    "name": "ANETTE LE",
+    "group": "40 to 49",
+    "time": "1789 secs"
+  },
+  {
+    "number": "876",
+    "name": "HARLEY GRIFFITH",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2634 secs"
+  },
+  {
+    "number": "877",
+    "name": "CLEMENT GRIFFITH",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "4225 secs"
+  },
+  {
+    "number": 878,
+    "name": "PEGGIE BOWEN",
+    "group": "masters",
+    "time": "3832 secs"
+  },
+  {
+    "number": 879,
+    "name": "KACEY BOWEN",
+    "group": "60 to 69",
+    "time": "1545 secs"
+  },
+  {
+    "number": 880,
+    "name": "MARANDA BOWEN",
+    "group": "14 and under",
+    "time": "1322 secs"
+  },
+  {
+    "number": "881",
+    "name": "MARVIN BOWEN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2659 secs"
+  },
+  {
+    "number": 882,
+    "name": "MIGNON BOWEN",
+    "group": "50 to 59",
+    "time": "2299 secs"
+  },
+  {
+    "number": "883",
+    "name": "JOHNNY SHARP",
+    "gender": "M",
+    "group": "masters",
+    "time": "2260 secs"
+  },
+  {
+    "number": "884",
+    "name": "VINCE SHARP",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "3746 secs"
+  },
+  {
+    "number": "885",
+    "name": "JOSUE SHARP",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "3580 secs"
+  },
+  {
+    "number": 886,
+    "name": "CHARLETTE SHARP",
+    "group": "30 to 39",
+    "time": "1471 secs"
+  },
+  {
+    "number": 887,
+    "name": "GLAYDS CUMMINGS",
+    "group": "masters",
+    "time": "2142 secs"
+  },
+  {
+    "number": 888,
+    "name": "MARYROSE RAMSEY",
+    "group": "20 to 20",
+    "time": "1461 secs"
+  },
+  {
+    "number": "889",
+    "name": "CAREY RAMSEY",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2183 secs"
+  },
+  {
+    "number": "890",
+    "name": "KENTON RAMSEY",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2663 secs"
+  },
+  {
+    "number": 891,
+    "name": "OPAL HARDY",
+    "group": "20 to 20",
+    "time": "4059 secs"
+  },
+  {
+    "number": "892",
+    "name": "HENRY HARDY",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1854 secs"
+  },
+  {
+    "number": "893",
+    "name": "LENARD HARDY",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1402 secs"
+  },
+  {
+    "number": 894,
+    "name": "MARIANA SWANSON",
+    "group": "masters",
+    "time": "4211 secs"
+  },
+  {
+    "number": "895",
+    "name": "EDWARDO SWANSON",
+    "gender": "M",
+    "group": "masters",
+    "time": "3960 secs"
+  },
+  {
+    "number": 896,
+    "name": "VIVA SWANSON",
+    "group": "15 to 19",
+    "time": "3235 secs"
+  },
+  {
+    "number": 897,
+    "name": "JEANETTE SWANSON",
+    "group": "60 to 69",
+    "time": "4164 secs"
+  },
+  {
+    "number": 898,
+    "name": "ALIA SWANSON",
+    "group": "20 to 20",
+    "time": "3563 secs"
+  },
+  {
+    "number": 899,
+    "name": "INGRID ACOSTA",
+    "group": "14 and under",
+    "time": "1846 secs"
+  },
+  {
+    "number": 900,
+    "name": "PEI LUNA",
+    "group": "60 to 69",
+    "time": "4018 secs"
+  },
+  {
+    "number": 901,
+    "name": "ALIDA LUNA",
+    "group": "40 to 49",
+    "time": "2726 secs"
+  },
+  {
+    "number": "902",
+    "name": "TYRON LUNA",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2102 secs"
+  },
+  {
+    "number": "903",
+    "name": "EDMUNDO LUNA",
+    "gender": "M",
+    "group": "masters",
+    "time": "2941 secs"
+  },
+  {
+    "number": 904,
+    "name": "GABRIEL CHANDLER",
+    "group": "50 to 59",
+    "time": "1557 secs"
+  },
+  {
+    "number": 905,
+    "name": "KERRY BLAIR",
+    "group": "20 to 20",
+    "time": "3509 secs"
+  },
+  {
+    "number": 906,
+    "name": "SHA CROSS",
+    "group": "50 to 59",
+    "time": "2949 secs"
+  },
+  {
+    "number": "907",
+    "name": "ALTON SIMON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "4151 secs"
+  },
+  {
+    "number": 908,
+    "name": "ADRIA SIMON",
+    "group": "60 to 69",
+    "time": "3464 secs"
+  },
+  {
+    "number": 909,
+    "name": "ASSUNTA SIMON",
+    "group": "14 and under",
+    "time": "1347 secs"
+  },
+  {
+    "number": 910,
+    "name": "DANIELE SIMON",
+    "group": "14 and under",
+    "time": "3353 secs"
+  },
+  {
+    "number": "911",
+    "name": "FRANKIE QUINN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3015 secs"
+  },
+  {
+    "number": 912,
+    "name": "ADRIENE QUINN",
+    "group": "30 to 39",
+    "time": "2413 secs"
+  },
+  {
+    "number": "913",
+    "name": "SAMUEL QUINN",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "1650 secs"
+  },
+  {
+    "number": "914",
+    "name": "LORENZO GROSS",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2264 secs"
+  },
+  {
+    "number": "915",
+    "name": "SCOTT NAVARRO",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "4197 secs"
+  },
+  {
+    "number": 916,
+    "name": "PATRICIA NAVARRO",
+    "group": "40 to 49",
+    "time": "3683 secs"
+  },
+  {
+    "number": "917",
+    "name": "AURELIO NAVARRO",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "2341 secs"
+  },
+  {
+    "number": 918,
+    "name": "BONITA MOSS",
+    "group": "40 to 49",
+    "time": "2620 secs"
+  },
+  {
+    "number": "919",
+    "name": "MOHAMED MOSS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "1534 secs"
+  },
+  {
+    "number": "920",
+    "name": "GAYLORD MOSS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2732 secs"
+  },
+  {
+    "number": 921,
+    "name": "VICTORINA MOSS",
+    "group": "14 and under",
+    "time": "3623 secs"
+  },
+  {
+    "number": "922",
+    "name": "DARON MOSS",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2197 secs"
+  },
+  {
+    "number": 923,
+    "name": "NANCIE MCLAUGHLIN",
+    "group": "20 to 20",
+    "time": "2876 secs"
+  },
+  {
+    "number": 924,
+    "name": "ARACELI MCLAUGHLIN",
+    "group": "40 to 49",
+    "time": "1886 secs"
+  },
+  {
+    "number": "925",
+    "name": "BUDDY MCLAUGHLIN",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2019 secs"
+  },
+  {
+    "number": 926,
+    "name": "CHIQUITA ROJAS",
+    "group": "60 to 69",
+    "time": "2624 secs"
+  },
+  {
+    "number": 927,
+    "name": "CELINE ROJAS",
+    "group": "20 to 20",
+    "time": "3122 secs"
+  },
+  {
+    "number": 928,
+    "name": "KAREN RODGERS",
+    "group": "30 to 39",
+    "time": "1360 secs"
+  },
+  {
+    "number": 929,
+    "name": "ESTEFANA STEVENSON",
+    "group": "14 and under",
+    "time": "1946 secs"
+  },
+  {
+    "number": 930,
+    "name": "NARCISA STEVENSON",
+    "group": "14 and under",
+    "time": "3424 secs"
+  },
+  {
+    "number": "931",
+    "name": "KAREEM SINGH",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3775 secs"
+  },
+  {
+    "number": "932",
+    "name": "MARCELINO FIGUEROA",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3466 secs"
+  },
+  {
+    "number": "933",
+    "name": "ROBBY FIGUEROA",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2518 secs"
+  },
+  {
+    "number": 934,
+    "name": "ANTONETTA HARMON",
+    "group": "50 to 59",
+    "time": "2511 secs"
+  },
+  {
+    "number": "935",
+    "name": "BRAD HARMON",
+    "gender": "M",
+    "group": "masters",
+    "time": "2609 secs"
+  },
+  {
+    "number": "936",
+    "name": "CASEY HARMON",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3234 secs"
+  },
+  {
+    "number": 937,
+    "name": "FIONA HARMON",
+    "group": "30 to 39",
+    "time": "2649 secs"
+  },
+  {
+    "number": "938",
+    "name": "ED NEWTON",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "1608 secs"
+  },
+  {
+    "number": "939",
+    "name": "LAVERNE NEWTON",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1272 secs"
+  },
+  {
+    "number": "940",
+    "name": "RICHARD PAUL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "2426 secs"
+  },
+  {
+    "number": 941,
+    "name": "CAREY PAUL",
+    "group": "14 and under",
+    "time": "3289 secs"
+  },
+  {
+    "number": "942",
+    "name": "KURT PAUL",
+    "gender": "M",
+    "group": "20 to 20",
+    "time": "3826 secs"
+  },
+  {
+    "number": "943",
+    "name": "RANDY PAUL",
+    "gender": "M",
+    "group": "masters",
+    "time": "1278 secs"
+  },
+  {
+    "number": 944,
+    "name": "GALINA PAUL",
+    "group": "20 to 20",
+    "time": "2786 secs"
+  },
+  {
+    "number": 945,
+    "name": "CHANTAL MANNING",
+    "group": "50 to 59",
+    "time": "3128 secs"
+  },
+  {
+    "number": "946",
+    "name": "JASPER MANNING",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "3314 secs"
+  },
+  {
+    "number": "947",
+    "name": "TONEY MANNING",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2573 secs"
+  },
+  {
+    "number": 948,
+    "name": "EMELINA MANNING",
+    "group": "20 to 20",
+    "time": "3056 secs"
+  },
+  {
+    "number": "949",
+    "name": "ALDEN MCGEE",
+    "gender": "M",
+    "group": "30 to 39",
+    "time": "2532 secs"
+  },
+  {
+    "number": "950",
+    "name": "SHAUN MCGEE",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "2042 secs"
+  },
+  {
+    "number": 951,
+    "name": "TEMPIE MCGEE",
+    "group": "20 to 20",
+    "time": "1717 secs"
+  },
+  {
+    "number": 952,
+    "name": "ANNETTE REESE",
+    "group": "30 to 39",
+    "time": "2678 secs"
+  },
+  {
+    "number": "953",
+    "name": "JESSE REESE",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "4047 secs"
+  },
+  {
+    "number": "954",
+    "name": "QUINTON REESE",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3855 secs"
+  },
+  {
+    "number": 955,
+    "name": "SHERRIL FRANCIS",
+    "group": "50 to 59",
+    "time": "1628 secs"
+  },
+  {
+    "number": 956,
+    "name": "WEI CURRY",
+    "group": "50 to 59",
+    "time": "3005 secs"
+  },
+  {
+    "number": 957,
+    "name": "MELVA CURRY",
+    "group": "30 to 39",
+    "time": "3705 secs"
+  },
+  {
+    "number": 958,
+    "name": "CORRINA CURRY",
+    "group": "50 to 59",
+    "time": "3168 secs"
+  },
+  {
+    "number": "959",
+    "name": "HARLAN BRADY",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "4185 secs"
+  },
+  {
+    "number": 960,
+    "name": "HELEN POTTER",
+    "group": "masters",
+    "time": "2143 secs"
+  },
+  {
+    "number": "961",
+    "name": "TIM POTTER",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "2989 secs"
+  },
+  {
+    "number": 962,
+    "name": "RUTHIE POTTER",
+    "group": "14 and under",
+    "time": "3732 secs"
+  },
+  {
+    "number": 963,
+    "name": "JANETH GOODWIN",
+    "group": "40 to 49",
+    "time": "3625 secs"
+  },
+  {
+    "number": "964",
+    "name": "LACY GOODWIN",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "1398 secs"
+  },
+  {
+    "number": "965",
+    "name": "JACKIE GOODWIN",
+    "gender": "M",
+    "group": "masters",
+    "time": "3349 secs"
+  },
+  {
+    "number": 966,
+    "name": "RUTHA GOODWIN",
+    "group": "30 to 39",
+    "time": "3146 secs"
+  },
+  {
+    "number": 967,
+    "name": "LEILA MULLINS",
+    "group": "60 to 69",
+    "time": "4189 secs"
+  },
+  {
+    "number": "968",
+    "name": "VALENTINE MOLINA",
+    "gender": "M",
+    "group": "masters",
+    "time": "3281 secs"
+  },
+  {
+    "number": 969,
+    "name": "RHEBA MOLINA",
+    "group": "20 to 20",
+    "time": "3505 secs"
+  },
+  {
+    "number": "970",
+    "name": "ISAIAH MOLINA",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "1714 secs"
+  },
+  {
+    "number": "971",
+    "name": "MILO MOLINA",
+    "gender": "M",
+    "group": "15 to 19",
+    "time": "1871 secs"
+  },
+  {
+    "number": 972,
+    "name": "SHANELLE MOLINA",
+    "group": "14 and under",
+    "time": "2894 secs"
+  },
+  {
+    "number": 973,
+    "name": "DELISA WEBSTER",
+    "group": "15 to 19",
+    "time": "2950 secs"
+  },
+  {
+    "number": 974,
+    "name": "HA WEBSTER",
+    "group": "masters",
+    "time": "3202 secs"
+  },
+  {
+    "number": 975,
+    "name": "SAMIRA WEBSTER",
+    "group": "14 and under",
+    "time": "2028 secs"
+  },
+  {
+    "number": "976",
+    "name": "LUCIEN FISCHER",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3264 secs"
+  },
+  {
+    "number": "977",
+    "name": "SANTIAGO AVILA",
+    "gender": "M",
+    "group": "60 to 69",
+    "time": "2655 secs"
+  },
+  {
+    "number": 978,
+    "name": "VENICE AVILA",
+    "group": "20 to 20",
+    "time": "3040 secs"
+  },
+  {
+    "number": 979,
+    "name": "DELCIE TODD",
+    "group": "masters",
+    "time": "2448 secs"
+  },
+  {
+    "number": 980,
+    "name": "ILONA TODD",
+    "group": "40 to 49",
+    "time": "3473 secs"
+  },
+  {
+    "number": 981,
+    "name": "KAREN CHANG",
+    "group": "14 and under",
+    "time": "3540 secs"
+  },
+  {
+    "number": 982,
+    "name": "CECIL CHANG",
+    "group": "masters",
+    "time": "4035 secs"
+  },
+  {
+    "number": "983",
+    "name": "JARED CHANG",
+    "gender": "M",
+    "group": "masters",
+    "time": "3871 secs"
+  },
+  {
+    "number": 984,
+    "name": "ELLIS CHANG",
+    "group": "50 to 59",
+    "time": "2979 secs"
+  },
+  {
+    "number": "985",
+    "name": "TRUMAN BLAKE",
+    "gender": "M",
+    "group": "masters",
+    "time": "2414 secs"
+  },
+  {
+    "number": 986,
+    "name": "JOSIE BLAKE",
+    "group": "masters",
+    "time": "2331 secs"
+  },
+  {
+    "number": 987,
+    "name": "DOROTHA BLAKE",
+    "group": "60 to 69",
+    "time": "4219 secs"
+  },
+  {
+    "number": 988,
+    "name": "AMIE BLAKE",
+    "group": "14 and under",
+    "time": "2329 secs"
+  },
+  {
+    "number": 989,
+    "name": "GLENDORA MALONE",
+    "group": "15 to 19",
+    "time": "3998 secs"
+  },
+  {
+    "number": "990",
+    "name": "FRANCISCO WOLF",
+    "gender": "M",
+    "group": "40 to 49",
+    "time": "3958 secs"
+  },
+  {
+    "number": 991,
+    "name": "BRENDA WOLF",
+    "group": "20 to 20",
+    "time": "1451 secs"
+  },
+  {
+    "number": "992",
+    "name": "HOMER JUAREZ",
+    "gender": "M",
+    "group": "14 and under",
+    "time": "3070 secs"
+  },
+  {
+    "number": 993,
+    "name": "LULA JUAREZ",
+    "group": "15 to 19",
+    "time": "3910 secs"
+  },
+  {
+    "number": 994,
+    "name": "RESSIE JUAREZ",
+    "group": "30 to 39",
+    "time": "3392 secs"
+  },
+  {
+    "number": 995,
+    "name": "VELIA JUAREZ",
+    "group": "40 to 49",
+    "time": "3422 secs"
+  },
+  {
+    "number": "996",
+    "name": "AURELIO GILL",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "3881 secs"
+  },
+  {
+    "number": 997,
+    "name": "LYNDA GILL",
+    "group": "30 to 39",
+    "time": "3801 secs"
+  },
+  {
+    "number": 998,
+    "name": "JENETTE FARMER",
+    "group": "40 to 49",
+    "time": "2005 secs"
+  },
+  {
+    "number": "999",
+    "name": "GLEN HINES",
+    "gender": "M",
+    "group": "50 to 59",
+    "time": "2860 secs"
+  }
+]

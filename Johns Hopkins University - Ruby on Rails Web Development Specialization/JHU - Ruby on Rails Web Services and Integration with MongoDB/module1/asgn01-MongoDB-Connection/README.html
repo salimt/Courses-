@@ -1,0 +1,111 @@
+<h1 id="module-1-assignment-1-mongodb-ruby-driver-connection">Module 1, Assignment 1: MongoDB Ruby Driver Connection</h1>
+<p>The overall goal of the assignment is to:</p>
+<ul>
+<li>verify your MongoDB instance is running</li>
+<li>import sample data into a MongoDB collection</li>
+<li>verify you can communicate with the MongoDB server from a Ruby program</li>
+<li>have a working development environment with test data to follow along with the lectures</li>
+</ul>
+<p>The functional goal of the assignment is to:</p>
+<ul>
+<li>populate the database with the <code>zips</code> test data from the MongoDB web site</li>
+<li>create a ruby program that can manipulate the <code>zips</code> collection in MongoDB.</li>
+<li>leave you at a point where you can locally implement many of the queries (and more) discussed in the upcoming lectures.</li>
+</ul>
+<p>Documentation for the MongoDB Ruby Driver is located on the MongoDB site at <a href="https://api.mongodb.org/ruby/current/">https://api.mongodb.org/ruby/current/</a>. You can locate API reference information using the tabs at the upper right side of the page <a href="http://api.mongodb.org/ruby/current/Mongo.html">http://api.mongodb.org/ruby/current/Mongo.html</a>.</p>
+<h3 id="getting-started">Getting Started</h3>
+<ol style="list-style-type: decimal">
+<li><p>Download the <code>zips.json</code> document from <a href="http://media.mongodb.org/zips.json">http://media.mongodb.org/zips.json</a></p></li>
+<li><p>Start your MongoDB server. This can be platform/installation-specific but essentially involves the start of the <code>mongod</code> process on your machine. See the installation lecture if you have not yet done so.</p></li>
+<li><p>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution.</p>
+<pre class="text"><code>---student-start  
+    |-- assignment.rb
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- assignment_spec.rb
+        `-- spec_helper.rb</code></pre>
+<ul>
+<li>assignment.rb - your solution must be placed within this file</li>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+</ul></li>
+<li><p>Install the following gems. You may already have them installed.</p>
+<pre class="shell"><code>$ gem install rspec
+$ gem install rspec-its
+$ gem install mongo -v 2.1.2</code></pre></li>
+<li><p>Run the rspec command from the project root directory (i.e., <code>student-start</code> directory) to execute the unit tests within the spec directory. This should result in several failures until you complete your solution in <code>assignment.rb</code>.</p>
+<pre class="shell"><code>$ rspec
+
+(N) examples, (N) failures
+...</code></pre></li>
+<li><p>Implement the Ruby technical requirements in <code>assignment.rb</code></p></li>
+</ol>
+<h3 id="technical-requirements">Technical Requirements</h3>
+<ol style="list-style-type: decimal">
+<li><p>Use <a href="https://docs.mongodb.org/manual/reference/program/mongoimport/"><code>mongoimport</code></a> to import the <code>zips.json</code> JSON file you downloaded from the MongoDB site in <code>getting started</code>. The command example, below, shows a <code>drop</code> of the existing collection if it already exists.</p>
+<ul>
+<li>use the <code>test</code> database</li>
+<li>use the <code>zips</code> collection</li>
+</ul>
+<pre class="shell"><code>$ mongoimport --drop --db test --collection zips zips.json
+...    connected to: localhost
+...    dropping: test.zips
+...    imported 29353 documents</code></pre></li>
+<li><p>Implement a file <code>assignment.rb</code> that will:</p>
+<ul>
+<li>require the <code>mongo</code> gem</li>
+<li>optionally set the <a href="http://api.mongodb.org/ruby/current/Mongo/Logger.html"><code>Mongo::Logger.logger.level</code></a> to <code>::Logger::INFO</code> or <code>::Logger::DEBUG</code></li>
+<li>define a class called <code>Solution</code>. The grader will look for a class with this exact name.</li>
+</ul></li>
+<li><p>Implement a class method in the <code>Solution</code> class called <code>mongo_client</code> that will:</p>
+<ul>
+<li>create a <a href="http://api.mongodb.org/ruby/current/Mongo/Client.html"><code>Mongo::Client</code></a> connection to the server using a URL (.e.g., 'mongodb://localhost:27017')</li>
+<li>configure the client to use the <code>test</code> database</li>
+<li>return the <a href="http://api.mongodb.org/ruby/current/Mongo/Database.html"><code>Mongo::Database</code></a> client</li>
+</ul>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ rspec -e rq03</code></pre></li>
+<li><p>Implement a class method in the <code>Solution</code> class called <code>collection</code> that will:</p>
+<ul>
+<li>return the <code>zips</code> collection (<a href="http://api.mongodb.org/ruby/current/Mongo/Collection.html"><code>Mongo::Collection</code></a>)</li>
+</ul>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ rspec -e rq04</code></pre></li>
+<li><p>Implement an instance method in the <code>Solution</code> class called <code>sample</code> that will:</p>
+<ul>
+<li>return a single document from the <code>zips</code> collection from the database. This does not have to be random. It can be first, last, or any other document in the collection.</li>
+</ul>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ rspec -e rq05</code></pre></li>
+<li><p>(ungraded) Use an instance of the <code>Solution</code> class to execute a pretty-print of the sample document. You will need to require <code>pp</code> for this to work.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">s=<span class="dt">Solution</span>.new
+pp s.sample</code></pre></li>
+<li><p>(ungraded) Use the Ruby <code>irb shell</code> to pretty-print a sample document from the collection without directly using your assignment.rb.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ irb
+&gt; require <span class="st">&#39;mongo&#39;</span>
+&gt; require <span class="st">&#39;pp&#39;</span>
+&gt; db=<span class="dt">Mongo</span>::<span class="dt">Client</span>.new(<span class="st">&#39;mongodb://localhost:27017&#39;</span>)
+&gt; db=db.use(<span class="st">&#39;test&#39;</span>)
+&gt; pp db[<span class="st">:zips</span>].find.first
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;01001&quot;</span>,
+ <span class="st">&quot;city&quot;</span>=&gt;<span class="st">&quot;AGAWAM&quot;</span>,
+ <span class="st">&quot;loc&quot;</span>=&gt;[-<span class="fl">72.622739</span>, <span class="fl">42.070206</span>],
+ <span class="st">&quot;pop&quot;</span>=&gt;<span class="dv">15338</span>,
+ <span class="st">&quot;state&quot;</span>=&gt;<span class="st">&quot;MA&quot;</span>}</code></pre></li>
+<li><p>(ungraded) Repeat the previous step, except this time load the code from your <code>assignment.rb</code> to automate getting the connection to MongoDB using the <code>Solution.mongo_client</code> class method. You can also use <code>Solution.collection</code> to get the collection but most of the examples in the lecture will use the syntax <code>db[:zips]</code> to refer to the collection.</p>
+<pre class="sourceCode ruby"><code class="sourceCode ruby">$ irb
+&gt; require <span class="st">&#39;./assignment.rb&#39;</span>
+&gt; db=<span class="dt">Solution</span>.mongo_client
+&gt; pp db[<span class="st">:zips</span>].find.first
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="st">&quot;01001&quot;</span>,
+ <span class="st">&quot;city&quot;</span>=&gt;<span class="st">&quot;AGAWAM&quot;</span>,
+ <span class="st">&quot;loc&quot;</span>=&gt;[-<span class="fl">72.622739</span>, <span class="fl">42.070206</span>],
+ <span class="st">&quot;pop&quot;</span>=&gt;<span class="dv">15338</span>,
+ <span class="st">&quot;state&quot;</span>=&gt;<span class="st">&quot;MA&quot;</span>}</code></pre></li>
+<li><p>(ungraded) Use the Ruby <code>irb shell</code> to execute one of the commands shown in the lecture.</p></li>
+</ol>
+<h3 id="self-gradingfeedback">Self Grading/Feedback</h3>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+........
+
+(N&gt;0) examples, 0 failures</code></pre>
+<h3 id="submission">Submission</h3>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<h3 id="last-updated-2015-11-16">Last Updated: 2015-11-16</h3>

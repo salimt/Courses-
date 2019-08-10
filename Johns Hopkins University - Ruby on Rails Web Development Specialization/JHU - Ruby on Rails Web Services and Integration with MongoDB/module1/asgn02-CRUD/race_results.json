@@ -1,0 +1,8002 @@
+[
+  {
+    "number": 0,
+    "first_name": "SHAUN",
+    "last_name": "JOHNSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1464
+  },
+  {
+    "number": 1,
+    "first_name": "TUAN",
+    "last_name": "JOHNSON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3994
+  },
+  {
+    "number": 2,
+    "first_name": "EARLINE",
+    "last_name": "BROWN",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1415
+  },
+  {
+    "number": 3,
+    "first_name": "RANDALL",
+    "last_name": "JONES",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2061
+  },
+  {
+    "number": 4,
+    "first_name": "DELBERT",
+    "last_name": "JONES",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1714
+  },
+  {
+    "number": 5,
+    "first_name": "ARTHUR",
+    "last_name": "JONES",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1590
+  },
+  {
+    "number": 6,
+    "first_name": "SADYE",
+    "last_name": "JONES",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2041
+  },
+  {
+    "number": 7,
+    "first_name": "SHAWNTA",
+    "last_name": "JONES",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2627
+  },
+  {
+    "number": 8,
+    "first_name": "HERSHEL",
+    "last_name": "MILLER",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1657
+  },
+  {
+    "number": 9,
+    "first_name": "MARGO",
+    "last_name": "MILLER",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3450
+  },
+  {
+    "number": 10,
+    "first_name": "JULIETA",
+    "last_name": "DAVIS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2227
+  },
+  {
+    "number": 11,
+    "first_name": "GERMAINE",
+    "last_name": "DAVIS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2121
+  },
+  {
+    "number": 12,
+    "first_name": "RALEIGH",
+    "last_name": "DAVIS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3885
+  },
+  {
+    "number": 13,
+    "first_name": "RONNIE",
+    "last_name": "GARCIA",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3672
+  },
+  {
+    "number": 14,
+    "first_name": "OMER",
+    "last_name": "GARCIA",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 4152
+  },
+  {
+    "number": 15,
+    "first_name": "NORMAN",
+    "last_name": "GARCIA",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3353
+  },
+  {
+    "number": 16,
+    "first_name": "DERICK",
+    "last_name": "GARCIA",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1862
+  },
+  {
+    "number": 17,
+    "first_name": "TAMRA",
+    "last_name": "GARCIA",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2410
+  },
+  {
+    "number": 18,
+    "first_name": "ALTON",
+    "last_name": "RODRIGUEZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1439
+  },
+  {
+    "number": 19,
+    "first_name": "ANJANETTE",
+    "last_name": "RODRIGUEZ",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1963
+  },
+  {
+    "number": 20,
+    "first_name": "MERVIN",
+    "last_name": "WILSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1937
+  },
+  {
+    "number": 21,
+    "first_name": "MICAH",
+    "last_name": "WILSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2491
+  },
+  {
+    "number": 22,
+    "first_name": "OTTO",
+    "last_name": "WILSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2876
+  },
+  {
+    "number": 23,
+    "first_name": "LOUIS",
+    "last_name": "WILSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2816
+  },
+  {
+    "number": 24,
+    "first_name": "SHANIQUA",
+    "last_name": "MARTINEZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2699
+  },
+  {
+    "number": 25,
+    "first_name": "MEGAN",
+    "last_name": "ANDERSON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1605
+  },
+  {
+    "number": 26,
+    "first_name": "EMMETT",
+    "last_name": "ANDERSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2348
+  },
+  {
+    "number": 27,
+    "first_name": "KHADIJAH",
+    "last_name": "ANDERSON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3452
+  },
+  {
+    "number": 28,
+    "first_name": "WILEY",
+    "last_name": "TAYLOR",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2473
+  },
+  {
+    "number": 29,
+    "first_name": "PALMER",
+    "last_name": "TAYLOR",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2718
+  },
+  {
+    "number": 30,
+    "first_name": "DREW",
+    "last_name": "TAYLOR",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3863
+  },
+  {
+    "number": 31,
+    "first_name": "VALENCIA",
+    "last_name": "TAYLOR",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3849
+  },
+  {
+    "number": 32,
+    "first_name": "BELINDA",
+    "last_name": "THOMAS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3265
+  },
+  {
+    "number": 33,
+    "first_name": "DOLLIE",
+    "last_name": "THOMAS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1640
+  },
+  {
+    "number": 34,
+    "first_name": "SOMMER",
+    "last_name": "HERNANDEZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3312
+  },
+  {
+    "number": 35,
+    "first_name": "VIRGILIO",
+    "last_name": "MOORE",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2663
+  },
+  {
+    "number": 36,
+    "first_name": "BRENDON",
+    "last_name": "MOORE",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3583
+  },
+  {
+    "number": 37,
+    "first_name": "STEFANY",
+    "last_name": "MOORE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3298
+  },
+  {
+    "number": 38,
+    "first_name": "NISHA",
+    "last_name": "MOORE",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1830
+  },
+  {
+    "number": 39,
+    "first_name": "OPHELIA",
+    "last_name": "MOORE",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3770
+  },
+  {
+    "number": 40,
+    "first_name": "MARCELL",
+    "last_name": "MARTIN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3184
+  },
+  {
+    "number": 41,
+    "first_name": "LESLEE",
+    "last_name": "MARTIN",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2221
+  },
+  {
+    "number": 42,
+    "first_name": "GREGORY",
+    "last_name": "JACKSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1316
+  },
+  {
+    "number": 43,
+    "first_name": "JOHNNIE",
+    "last_name": "JACKSON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3951
+  },
+  {
+    "number": 44,
+    "first_name": "OSVALDO",
+    "last_name": "JACKSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1923
+  },
+  {
+    "number": 45,
+    "first_name": "TRACY",
+    "last_name": "THOMPSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3496
+  },
+  {
+    "number": 46,
+    "first_name": "OTTO",
+    "last_name": "THOMPSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4053
+  },
+  {
+    "number": 47,
+    "first_name": "VIRGIL",
+    "last_name": "WHITE",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2929
+  },
+  {
+    "number": 48,
+    "first_name": "MALENA",
+    "last_name": "LOPEZ",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2347
+  },
+  {
+    "number": 49,
+    "first_name": "ADELA",
+    "last_name": "LOPEZ",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2067
+  },
+  {
+    "number": 50,
+    "first_name": "MERRI",
+    "last_name": "LOPEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2129
+  },
+  {
+    "number": 51,
+    "first_name": "DAGMAR",
+    "last_name": "LOPEZ",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3096
+  },
+  {
+    "number": 52,
+    "first_name": "TAMBRA",
+    "last_name": "LEE",
+    "gender": "F",
+    "group": "masters",
+    "secs": 4081
+  },
+  {
+    "number": 53,
+    "first_name": "MARYANNA",
+    "last_name": "GONZALEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2268
+  },
+  {
+    "number": 54,
+    "first_name": "TARRA",
+    "last_name": "HARRIS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1388
+  },
+  {
+    "number": 55,
+    "first_name": "ANH",
+    "last_name": "CLARK",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2708
+  },
+  {
+    "number": 56,
+    "first_name": "CARY",
+    "last_name": "CLARK",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2555
+  },
+  {
+    "number": 57,
+    "first_name": "HENRIETTA",
+    "last_name": "CLARK",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3082
+  },
+  {
+    "number": 58,
+    "first_name": "SIDNEY",
+    "last_name": "CLARK",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3457
+  },
+  {
+    "number": 59,
+    "first_name": "DELILA",
+    "last_name": "ROBINSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3154
+  },
+  {
+    "number": 60,
+    "first_name": "ALEJANDRINA",
+    "last_name": "ROBINSON",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3289
+  },
+  {
+    "number": 61,
+    "first_name": "BILLIE",
+    "last_name": "ROBINSON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1264
+  },
+  {
+    "number": 62,
+    "first_name": "CLIFFORD",
+    "last_name": "ROBINSON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2429
+  },
+  {
+    "number": 63,
+    "first_name": "KORY",
+    "last_name": "ROBINSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2560
+  },
+  {
+    "number": 64,
+    "first_name": "KITTIE",
+    "last_name": "WALKER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2420
+  },
+  {
+    "number": 65,
+    "first_name": "BENITO",
+    "last_name": "WALKER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3400
+  },
+  {
+    "number": 66,
+    "first_name": "VELVET",
+    "last_name": "WALKER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4120
+  },
+  {
+    "number": 67,
+    "first_name": "CHI",
+    "last_name": "PEREZ",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 4178
+  },
+  {
+    "number": 68,
+    "first_name": "DARIO",
+    "last_name": "PEREZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3477
+  },
+  {
+    "number": 69,
+    "first_name": "ERYN",
+    "last_name": "PEREZ",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3937
+  },
+  {
+    "number": 70,
+    "first_name": "SHELBY",
+    "last_name": "HALL",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2587
+  },
+  {
+    "number": 71,
+    "first_name": "RICKIE",
+    "last_name": "HALL",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3149
+  },
+  {
+    "number": 72,
+    "first_name": "CARSON",
+    "last_name": "HALL",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3927
+  },
+  {
+    "number": 73,
+    "first_name": "AGUSTIN",
+    "last_name": "YOUNG",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3608
+  },
+  {
+    "number": 74,
+    "first_name": "MY",
+    "last_name": "YOUNG",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2973
+  },
+  {
+    "number": 75,
+    "first_name": "ALINA",
+    "last_name": "YOUNG",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3630
+  },
+  {
+    "number": 76,
+    "first_name": "BROOK",
+    "last_name": "ALLEN",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3425
+  },
+  {
+    "number": 77,
+    "first_name": "RUDY",
+    "last_name": "ALLEN",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3594
+  },
+  {
+    "number": 78,
+    "first_name": "OLEN",
+    "last_name": "WRIGHT",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3946
+  },
+  {
+    "number": 79,
+    "first_name": "LINDA",
+    "last_name": "WRIGHT",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3532
+  },
+  {
+    "number": 80,
+    "first_name": "SERGIO",
+    "last_name": "SCOTT",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2441
+  },
+  {
+    "number": 81,
+    "first_name": "VICTORINA",
+    "last_name": "SCOTT",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2459
+  },
+  {
+    "number": 82,
+    "first_name": "LIONEL",
+    "last_name": "SCOTT",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1845
+  },
+  {
+    "number": 83,
+    "first_name": "EARLE",
+    "last_name": "SCOTT",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3146
+  },
+  {
+    "number": 84,
+    "first_name": "TRINIDAD",
+    "last_name": "GREEN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3859
+  },
+  {
+    "number": 85,
+    "first_name": "LINETTE",
+    "last_name": "GREEN",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1574
+  },
+  {
+    "number": 86,
+    "first_name": "NOEL",
+    "last_name": "GREEN",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2580
+  },
+  {
+    "number": 87,
+    "first_name": "FRITZ",
+    "last_name": "GREEN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1952
+  },
+  {
+    "number": 88,
+    "first_name": "SYDNEY",
+    "last_name": "GREEN",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1710
+  },
+  {
+    "number": 89,
+    "first_name": "BRITTNY",
+    "last_name": "BAKER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2354
+  },
+  {
+    "number": 90,
+    "first_name": "LEAH",
+    "last_name": "BAKER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4256
+  },
+  {
+    "number": 91,
+    "first_name": "KENDRA",
+    "last_name": "ADAMS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2327
+  },
+  {
+    "number": 92,
+    "first_name": "ASHLEY",
+    "last_name": "ADAMS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3806
+  },
+  {
+    "number": 93,
+    "first_name": "SILAS",
+    "last_name": "ADAMS",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3653
+  },
+  {
+    "number": 94,
+    "first_name": "WYNONA",
+    "last_name": "ADAMS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1951
+  },
+  {
+    "number": 95,
+    "first_name": "ORLANDO",
+    "last_name": "NELSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1583
+  },
+  {
+    "number": 96,
+    "first_name": "MYRON",
+    "last_name": "HILL",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3546
+  },
+  {
+    "number": 97,
+    "first_name": "DAREN",
+    "last_name": "HILL",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3179
+  },
+  {
+    "number": 98,
+    "first_name": "EARLENE",
+    "last_name": "HILL",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3489
+  },
+  {
+    "number": 99,
+    "first_name": "LEOPOLDO",
+    "last_name": "RAMIREZ",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3117
+  },
+  {
+    "number": 100,
+    "first_name": "BARRIE",
+    "last_name": "RAMIREZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2722
+  },
+  {
+    "number": 101,
+    "first_name": "BERENICE",
+    "last_name": "CAMPBELL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1816
+  },
+  {
+    "number": 102,
+    "first_name": "EMIL",
+    "last_name": "CAMPBELL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3058
+  },
+  {
+    "number": 103,
+    "first_name": "LAVONA",
+    "last_name": "CAMPBELL",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3285
+  },
+  {
+    "number": 104,
+    "first_name": "SANTOS",
+    "last_name": "CAMPBELL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3132
+  },
+  {
+    "number": 105,
+    "first_name": "SHAWANA",
+    "last_name": "ROBERTS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2129
+  },
+  {
+    "number": 106,
+    "first_name": "SILVANA",
+    "last_name": "ROBERTS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2233
+  },
+  {
+    "number": 107,
+    "first_name": "SHAREE",
+    "last_name": "ROBERTS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1646
+  },
+  {
+    "number": 108,
+    "first_name": "JOHN",
+    "last_name": "CARTER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2144
+  },
+  {
+    "number": 109,
+    "first_name": "KATHERINA",
+    "last_name": "TURNER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3276
+  },
+  {
+    "number": 110,
+    "first_name": "BENITO",
+    "last_name": "TURNER",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2775
+  },
+  {
+    "number": 111,
+    "first_name": "MATHILDA",
+    "last_name": "TURNER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2211
+  },
+  {
+    "number": 112,
+    "first_name": "TUAN",
+    "last_name": "TURNER",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1993
+  },
+  {
+    "number": 113,
+    "first_name": "TRISTAN",
+    "last_name": "TORRES",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3417
+  },
+  {
+    "number": 114,
+    "first_name": "ALTHEA",
+    "last_name": "TORRES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1291
+  },
+  {
+    "number": 115,
+    "first_name": "ELWOOD",
+    "last_name": "TORRES",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 4056
+  },
+  {
+    "number": 116,
+    "first_name": "MOSES",
+    "last_name": "PARKER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2187
+  },
+  {
+    "number": 117,
+    "first_name": "DARNELL",
+    "last_name": "PARKER",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2770
+  },
+  {
+    "number": 118,
+    "first_name": "SHANE",
+    "last_name": "EDWARDS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1262
+  },
+  {
+    "number": 119,
+    "first_name": "RANDALL",
+    "last_name": "EDWARDS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2151
+  },
+  {
+    "number": 120,
+    "first_name": "AGNES",
+    "last_name": "EDWARDS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3922
+  },
+  {
+    "number": 121,
+    "first_name": "HARLAN",
+    "last_name": "EDWARDS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3341
+  },
+  {
+    "number": 122,
+    "first_name": "VALENCIA",
+    "last_name": "EDWARDS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1376
+  },
+  {
+    "number": 123,
+    "first_name": "JON",
+    "last_name": "STEWART",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2283
+  },
+  {
+    "number": 124,
+    "first_name": "INELL",
+    "last_name": "STEWART",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1354
+  },
+  {
+    "number": 125,
+    "first_name": "ODELL",
+    "last_name": "STEWART",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1365
+  },
+  {
+    "number": 126,
+    "first_name": "LEIF",
+    "last_name": "STEWART",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1684
+  },
+  {
+    "number": 127,
+    "first_name": "ALAN",
+    "last_name": "STEWART",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2387
+  },
+  {
+    "number": 128,
+    "first_name": "OLIVER",
+    "last_name": "FLORES",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3638
+  },
+  {
+    "number": 129,
+    "first_name": "CARLOS",
+    "last_name": "FLORES",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1845
+  },
+  {
+    "number": 130,
+    "first_name": "CARY",
+    "last_name": "MORRIS",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1433
+  },
+  {
+    "number": 131,
+    "first_name": "SHAROLYN",
+    "last_name": "MORRIS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2889
+  },
+  {
+    "number": 132,
+    "first_name": "JESUS",
+    "last_name": "NGUYEN",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4073
+  },
+  {
+    "number": 133,
+    "first_name": "SOMMER",
+    "last_name": "NGUYEN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2375
+  },
+  {
+    "number": 134,
+    "first_name": "DEVIN",
+    "last_name": "NGUYEN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3773
+  },
+  {
+    "number": 135,
+    "first_name": "MAXWELL",
+    "last_name": "NGUYEN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3200
+  },
+  {
+    "number": 136,
+    "first_name": "ARMIDA",
+    "last_name": "NGUYEN",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1844
+  },
+  {
+    "number": 137,
+    "first_name": "RONNIE",
+    "last_name": "MURPHY",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2002
+  },
+  {
+    "number": 138,
+    "first_name": "MARTIN",
+    "last_name": "COOK",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4206
+  },
+  {
+    "number": 139,
+    "first_name": "WILL",
+    "last_name": "COOK",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 4251
+  },
+  {
+    "number": 140,
+    "first_name": "JEANNIE",
+    "last_name": "ROGERS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2806
+  },
+  {
+    "number": 141,
+    "first_name": "ANTOINE",
+    "last_name": "ROGERS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 4064
+  },
+  {
+    "number": 142,
+    "first_name": "TASHA",
+    "last_name": "ROGERS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1361
+  },
+  {
+    "number": 143,
+    "first_name": "KERRY",
+    "last_name": "ROGERS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3327
+  },
+  {
+    "number": 144,
+    "first_name": "KIRBY",
+    "last_name": "MORGAN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3403
+  },
+  {
+    "number": 145,
+    "first_name": "TRACEE",
+    "last_name": "MORGAN",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1338
+  },
+  {
+    "number": 146,
+    "first_name": "ELVERA",
+    "last_name": "PETERSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1313
+  },
+  {
+    "number": 147,
+    "first_name": "MONTY",
+    "last_name": "PETERSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2635
+  },
+  {
+    "number": 148,
+    "first_name": "QUINN",
+    "last_name": "PETERSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1890
+  },
+  {
+    "number": 149,
+    "first_name": "DELBERT",
+    "last_name": "PETERSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3555
+  },
+  {
+    "number": 150,
+    "first_name": "TEREASA",
+    "last_name": "REED",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2497
+  },
+  {
+    "number": 151,
+    "first_name": "SHARI",
+    "last_name": "BAILEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3926
+  },
+  {
+    "number": 152,
+    "first_name": "CELINE",
+    "last_name": "BAILEY",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2781
+  },
+  {
+    "number": 153,
+    "first_name": "BETTYANN",
+    "last_name": "BAILEY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1961
+  },
+  {
+    "number": 154,
+    "first_name": "JOEL",
+    "last_name": "BAILEY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1445
+  },
+  {
+    "number": 155,
+    "first_name": "PHEBE",
+    "last_name": "KELLY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2259
+  },
+  {
+    "number": 156,
+    "first_name": "KARRY",
+    "last_name": "KELLY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3644
+  },
+  {
+    "number": 157,
+    "first_name": "HUEY",
+    "last_name": "KELLY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2322
+  },
+  {
+    "number": 158,
+    "first_name": "SHERWOOD",
+    "last_name": "KELLY",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1428
+  },
+  {
+    "number": 159,
+    "first_name": "THOMASENA",
+    "last_name": "HOWARD",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3184
+  },
+  {
+    "number": 160,
+    "first_name": "GENE",
+    "last_name": "HOWARD",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3521
+  },
+  {
+    "number": 161,
+    "first_name": "ROSENDO",
+    "last_name": "WARD",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2315
+  },
+  {
+    "number": 162,
+    "first_name": "LOVETTA",
+    "last_name": "WARD",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2420
+  },
+  {
+    "number": 163,
+    "first_name": "PAULINA",
+    "last_name": "RICHARDSON",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2783
+  },
+  {
+    "number": 164,
+    "first_name": "KENTON",
+    "last_name": "WATSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1485
+  },
+  {
+    "number": 165,
+    "first_name": "CHARLES",
+    "last_name": "WATSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1530
+  },
+  {
+    "number": 166,
+    "first_name": "MONA",
+    "last_name": "WATSON",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2321
+  },
+  {
+    "number": 167,
+    "first_name": "DONNIE",
+    "last_name": "WATSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2117
+  },
+  {
+    "number": 168,
+    "first_name": "SANTIAGO",
+    "last_name": "WATSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3766
+  },
+  {
+    "number": 169,
+    "first_name": "PERRY",
+    "last_name": "BROOKS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2441
+  },
+  {
+    "number": 170,
+    "first_name": "ALFREDO",
+    "last_name": "BROOKS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 4040
+  },
+  {
+    "number": 171,
+    "first_name": "JACKIE",
+    "last_name": "BROOKS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3554
+  },
+  {
+    "number": 172,
+    "first_name": "LARA",
+    "last_name": "BENNETT",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 4081
+  },
+  {
+    "number": 173,
+    "first_name": "TYNISHA",
+    "last_name": "GRAY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1375
+  },
+  {
+    "number": 174,
+    "first_name": "CHET",
+    "last_name": "GRAY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3890
+  },
+  {
+    "number": 175,
+    "first_name": "CORY",
+    "last_name": "GRAY",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3722
+  },
+  {
+    "number": 176,
+    "first_name": "DARYL",
+    "last_name": "JAMES",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3872
+  },
+  {
+    "number": 177,
+    "first_name": "ASHANTI",
+    "last_name": "JAMES",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3048
+  },
+  {
+    "number": 178,
+    "first_name": "BETSY",
+    "last_name": "JAMES",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1291
+  },
+  {
+    "number": 179,
+    "first_name": "CAMERON",
+    "last_name": "JAMES",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3690
+  },
+  {
+    "number": 180,
+    "first_name": "TRENTON",
+    "last_name": "JAMES",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3644
+  },
+  {
+    "number": 181,
+    "first_name": "TINISHA",
+    "last_name": "REYES",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3754
+  },
+  {
+    "number": 182,
+    "first_name": "GUILLERMO",
+    "last_name": "REYES",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 4245
+  },
+  {
+    "number": 183,
+    "first_name": "LEONTINE",
+    "last_name": "REYES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1756
+  },
+  {
+    "number": 184,
+    "first_name": "RORY",
+    "last_name": "CRUZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3527
+  },
+  {
+    "number": 185,
+    "first_name": "RONNA",
+    "last_name": "HUGHES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3871
+  },
+  {
+    "number": 186,
+    "first_name": "ISAIAS",
+    "last_name": "HUGHES",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1426
+  },
+  {
+    "number": 187,
+    "first_name": "DARWIN",
+    "last_name": "PRICE",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1807
+  },
+  {
+    "number": 188,
+    "first_name": "BEV",
+    "last_name": "MYERS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1926
+  },
+  {
+    "number": 189,
+    "first_name": "EDEN",
+    "last_name": "MYERS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2637
+  },
+  {
+    "number": 190,
+    "first_name": "KURTIS",
+    "last_name": "MYERS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3377
+  },
+  {
+    "number": 191,
+    "first_name": "COLLEEN",
+    "last_name": "FOSTER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4042
+  },
+  {
+    "number": 192,
+    "first_name": "ATHENA",
+    "last_name": "FOSTER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2246
+  },
+  {
+    "number": 193,
+    "first_name": "BRYAN",
+    "last_name": "FOSTER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3586
+  },
+  {
+    "number": 194,
+    "first_name": "ROMEO",
+    "last_name": "FOSTER",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2602
+  },
+  {
+    "number": 195,
+    "first_name": "IVA",
+    "last_name": "FOSTER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2970
+  },
+  {
+    "number": 196,
+    "first_name": "MARCIA",
+    "last_name": "SANDERS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4080
+  },
+  {
+    "number": 197,
+    "first_name": "ALI",
+    "last_name": "ROSS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3332
+  },
+  {
+    "number": 198,
+    "first_name": "RUPERT",
+    "last_name": "ROSS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2861
+  },
+  {
+    "number": 199,
+    "first_name": "HENRIETTA",
+    "last_name": "ROSS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2466
+  },
+  {
+    "number": 200,
+    "first_name": "HONG",
+    "last_name": "ROSS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2795
+  },
+  {
+    "number": 201,
+    "first_name": "RAYMOND",
+    "last_name": "MORALES",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3400
+  },
+  {
+    "number": 202,
+    "first_name": "ANDREE",
+    "last_name": "POWELL",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2992
+  },
+  {
+    "number": 203,
+    "first_name": "VALERI",
+    "last_name": "POWELL",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3551
+  },
+  {
+    "number": 204,
+    "first_name": "JAYE",
+    "last_name": "POWELL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1896
+  },
+  {
+    "number": 205,
+    "first_name": "GILBERTO",
+    "last_name": "POWELL",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4108
+  },
+  {
+    "number": 206,
+    "first_name": "CHRIS",
+    "last_name": "SULLIVAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2828
+  },
+  {
+    "number": 207,
+    "first_name": "JERRICA",
+    "last_name": "SULLIVAN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2545
+  },
+  {
+    "number": 208,
+    "first_name": "SHAUNA",
+    "last_name": "SULLIVAN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3712
+  },
+  {
+    "number": 209,
+    "first_name": "GEORGANN",
+    "last_name": "SULLIVAN",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2028
+  },
+  {
+    "number": 210,
+    "first_name": "SHEBA",
+    "last_name": "RUSSELL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1288
+  },
+  {
+    "number": 211,
+    "first_name": "ZOFIA",
+    "last_name": "ORTIZ",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3694
+  },
+  {
+    "number": 212,
+    "first_name": "KIM",
+    "last_name": "ORTIZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 4082
+  },
+  {
+    "number": 213,
+    "first_name": "RONNY",
+    "last_name": "ORTIZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3110
+  },
+  {
+    "number": 214,
+    "first_name": "KRIS",
+    "last_name": "JENKINS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4080
+  },
+  {
+    "number": 215,
+    "first_name": "SEAN",
+    "last_name": "GUTIERREZ",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3553
+  },
+  {
+    "number": 216,
+    "first_name": "BENTON",
+    "last_name": "GUTIERREZ",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3861
+  },
+  {
+    "number": 217,
+    "first_name": "BERTRAM",
+    "last_name": "BUTLER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 4019
+  },
+  {
+    "number": 218,
+    "first_name": "HOMER",
+    "last_name": "BARNES",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2630
+  },
+  {
+    "number": 219,
+    "first_name": "ELVERA",
+    "last_name": "BARNES",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1899
+  },
+  {
+    "number": 220,
+    "first_name": "EVALYN",
+    "last_name": "BARNES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3338
+  },
+  {
+    "number": 221,
+    "first_name": "CURT",
+    "last_name": "BARNES",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3088
+  },
+  {
+    "number": 222,
+    "first_name": "JENIFER",
+    "last_name": "SIMMONS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2543
+  },
+  {
+    "number": 223,
+    "first_name": "ISIS",
+    "last_name": "SIMMONS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3394
+  },
+  {
+    "number": 224,
+    "first_name": "JEWEL",
+    "last_name": "SIMMONS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3962
+  },
+  {
+    "number": 225,
+    "first_name": "DYLAN",
+    "last_name": "SIMMONS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2987
+  },
+  {
+    "number": 226,
+    "first_name": "KRYSTA",
+    "last_name": "JORDAN",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1642
+  },
+  {
+    "number": 227,
+    "first_name": "CLARITA",
+    "last_name": "REYNOLDS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1871
+  },
+  {
+    "number": 228,
+    "first_name": "LANELLE",
+    "last_name": "REYNOLDS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2061
+  },
+  {
+    "number": 229,
+    "first_name": "ADAN",
+    "last_name": "REYNOLDS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3421
+  },
+  {
+    "number": 230,
+    "first_name": "DANTE",
+    "last_name": "REYNOLDS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3509
+  },
+  {
+    "number": 231,
+    "first_name": "LARRY",
+    "last_name": "REYNOLDS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3185
+  },
+  {
+    "number": 232,
+    "first_name": "MARQUIS",
+    "last_name": "HAMILTON",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3471
+  },
+  {
+    "number": 233,
+    "first_name": "VIRGILIO",
+    "last_name": "GRAHAM",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 4090
+  },
+  {
+    "number": 234,
+    "first_name": "KALI",
+    "last_name": "GRAHAM",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1447
+  },
+  {
+    "number": 235,
+    "first_name": "CHRISTIAN",
+    "last_name": "GRAHAM",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2007
+  },
+  {
+    "number": 236,
+    "first_name": "VERN",
+    "last_name": "KIM",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1554
+  },
+  {
+    "number": 237,
+    "first_name": "MARCOS",
+    "last_name": "GONZALES",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3295
+  },
+  {
+    "number": 238,
+    "first_name": "KRYSTYNA",
+    "last_name": "GONZALES",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3889
+  },
+  {
+    "number": 239,
+    "first_name": "JANEY",
+    "last_name": "GONZALES",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2752
+  },
+  {
+    "number": 240,
+    "first_name": "KRISTOPHER",
+    "last_name": "GONZALES",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3330
+  },
+  {
+    "number": 241,
+    "first_name": "HARVEY",
+    "last_name": "GONZALES",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1839
+  },
+  {
+    "number": 242,
+    "first_name": "EMORY",
+    "last_name": "ALEXANDER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3961
+  },
+  {
+    "number": 243,
+    "first_name": "MIKEL",
+    "last_name": "ALEXANDER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3200
+  },
+  {
+    "number": 244,
+    "first_name": "SUZANNA",
+    "last_name": "ALEXANDER",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2913
+  },
+  {
+    "number": 245,
+    "first_name": "HILDEGARD",
+    "last_name": "ALEXANDER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3004
+  },
+  {
+    "number": 246,
+    "first_name": "VIOLETTE",
+    "last_name": "RAMOS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4204
+  },
+  {
+    "number": 247,
+    "first_name": "GUSTAVO",
+    "last_name": "RAMOS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 4131
+  },
+  {
+    "number": 248,
+    "first_name": "MARTIN",
+    "last_name": "RAMOS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1263
+  },
+  {
+    "number": 249,
+    "first_name": "TRACEY",
+    "last_name": "RAMOS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2678
+  },
+  {
+    "number": 250,
+    "first_name": "BEAU",
+    "last_name": "RAMOS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2350
+  },
+  {
+    "number": 251,
+    "first_name": "VILMA",
+    "last_name": "WALLACE",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3535
+  },
+  {
+    "number": 252,
+    "first_name": "ADOLPH",
+    "last_name": "WALLACE",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2674
+  },
+  {
+    "number": 253,
+    "first_name": "ALEXIS",
+    "last_name": "WALLACE",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2962
+  },
+  {
+    "number": 254,
+    "first_name": "ROSCOE",
+    "last_name": "WALLACE",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1850
+  },
+  {
+    "number": 255,
+    "first_name": "DORETHEA",
+    "last_name": "WALLACE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1831
+  },
+  {
+    "number": 256,
+    "first_name": "ANNETTA",
+    "last_name": "WEST",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3521
+  },
+  {
+    "number": 257,
+    "first_name": "LEO",
+    "last_name": "WEST",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1293
+  },
+  {
+    "number": 258,
+    "first_name": "EUN",
+    "last_name": "WEST",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2728
+  },
+  {
+    "number": 259,
+    "first_name": "LACHELLE",
+    "last_name": "WEST",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1306
+  },
+  {
+    "number": 260,
+    "first_name": "GRICELDA",
+    "last_name": "WEST",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 4060
+  },
+  {
+    "number": 261,
+    "first_name": "JARVIS",
+    "last_name": "HAYES",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3408
+  },
+  {
+    "number": 262,
+    "first_name": "HEIDE",
+    "last_name": "HAYES",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2734
+  },
+  {
+    "number": 263,
+    "first_name": "QUINCY",
+    "last_name": "HAYES",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1914
+  },
+  {
+    "number": 264,
+    "first_name": "REBECA",
+    "last_name": "HAYES",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2367
+  },
+  {
+    "number": 265,
+    "first_name": "COLTON",
+    "last_name": "HAYES",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2572
+  },
+  {
+    "number": 266,
+    "first_name": "JASPER",
+    "last_name": "GIBSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1700
+  },
+  {
+    "number": 267,
+    "first_name": "VINCENT",
+    "last_name": "GIBSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2606
+  },
+  {
+    "number": 268,
+    "first_name": "LAVONNE",
+    "last_name": "BRYANT",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1516
+  },
+  {
+    "number": 269,
+    "first_name": "ROGER",
+    "last_name": "BRYANT",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2204
+  },
+  {
+    "number": 270,
+    "first_name": "LUIS",
+    "last_name": "BRYANT",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2195
+  },
+  {
+    "number": 271,
+    "first_name": "KENIA",
+    "last_name": "BRYANT",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1745
+  },
+  {
+    "number": 272,
+    "first_name": "ELMER",
+    "last_name": "ELLIS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2022
+  },
+  {
+    "number": 273,
+    "first_name": "HARLEY",
+    "last_name": "ELLIS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2949
+  },
+  {
+    "number": 274,
+    "first_name": "ALYSHA",
+    "last_name": "STEVENS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3106
+  },
+  {
+    "number": 275,
+    "first_name": "REBBECCA",
+    "last_name": "STEVENS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1621
+  },
+  {
+    "number": 276,
+    "first_name": "KEVIN",
+    "last_name": "MURRAY",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3124
+  },
+  {
+    "number": 277,
+    "first_name": "RAMONITA",
+    "last_name": "MURRAY",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3063
+  },
+  {
+    "number": 278,
+    "first_name": "STEVIE",
+    "last_name": "MURRAY",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2506
+  },
+  {
+    "number": 279,
+    "first_name": "GARY",
+    "last_name": "MURRAY",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3008
+  },
+  {
+    "number": 280,
+    "first_name": "RODGER",
+    "last_name": "MURRAY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3297
+  },
+  {
+    "number": 281,
+    "first_name": "STEVEN",
+    "last_name": "FORD",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1753
+  },
+  {
+    "number": 282,
+    "first_name": "MAIRA",
+    "last_name": "FORD",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4050
+  },
+  {
+    "number": 283,
+    "first_name": "SAL",
+    "last_name": "FORD",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3496
+  },
+  {
+    "number": 284,
+    "first_name": "BETTIE",
+    "last_name": "FORD",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3657
+  },
+  {
+    "number": 285,
+    "first_name": "ERWIN",
+    "last_name": "OWENS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2384
+  },
+  {
+    "number": 286,
+    "first_name": "NIGEL",
+    "last_name": "MCDONALD",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2595
+  },
+  {
+    "number": 287,
+    "first_name": "EDDIE",
+    "last_name": "MCDONALD",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3654
+  },
+  {
+    "number": 288,
+    "first_name": "CLAYTON",
+    "last_name": "MCDONALD",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 4226
+  },
+  {
+    "number": 289,
+    "first_name": "AYANA",
+    "last_name": "MCDONALD",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3170
+  },
+  {
+    "number": 290,
+    "first_name": "DALENE",
+    "last_name": "HARRISON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2257
+  },
+  {
+    "number": 291,
+    "first_name": "BETHANN",
+    "last_name": "HARRISON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2976
+  },
+  {
+    "number": 292,
+    "first_name": "BEATRICE",
+    "last_name": "HARRISON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2042
+  },
+  {
+    "number": 293,
+    "first_name": "NOLAN",
+    "last_name": "HARRISON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3005
+  },
+  {
+    "number": 294,
+    "first_name": "ALETA",
+    "last_name": "RUIZ",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3559
+  },
+  {
+    "number": 295,
+    "first_name": "REANNA",
+    "last_name": "RUIZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1589
+  },
+  {
+    "number": 296,
+    "first_name": "IVETTE",
+    "last_name": "RUIZ",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2114
+  },
+  {
+    "number": 297,
+    "first_name": "GREGG",
+    "last_name": "KENNEDY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3309
+  },
+  {
+    "number": 298,
+    "first_name": "LORINA",
+    "last_name": "KENNEDY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2150
+  },
+  {
+    "number": 299,
+    "first_name": "LEILA",
+    "last_name": "KENNEDY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 4149
+  },
+  {
+    "number": 300,
+    "first_name": "FRANCESCO",
+    "last_name": "KENNEDY",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3663
+  },
+  {
+    "number": 301,
+    "first_name": "CHARLES",
+    "last_name": "KENNEDY",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3353
+  },
+  {
+    "number": 302,
+    "first_name": "ASHLEY",
+    "last_name": "WELLS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2387
+  },
+  {
+    "number": 303,
+    "first_name": "ADELINA",
+    "last_name": "WELLS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3192
+  },
+  {
+    "number": 304,
+    "first_name": "ILONA",
+    "last_name": "WELLS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3434
+  },
+  {
+    "number": 305,
+    "first_name": "CHET",
+    "last_name": "ALVAREZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2376
+  },
+  {
+    "number": 306,
+    "first_name": "CESAR",
+    "last_name": "ALVAREZ",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3718
+  },
+  {
+    "number": 307,
+    "first_name": "CARL",
+    "last_name": "ALVAREZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1742
+  },
+  {
+    "number": 308,
+    "first_name": "HARLAN",
+    "last_name": "MENDOZA",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2679
+  },
+  {
+    "number": 309,
+    "first_name": "LOGAN",
+    "last_name": "MENDOZA",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4102
+  },
+  {
+    "number": 310,
+    "first_name": "NOE",
+    "last_name": "CASTILLO",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3028
+  },
+  {
+    "number": 311,
+    "first_name": "JAMEY",
+    "last_name": "WEBB",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1974
+  },
+  {
+    "number": 312,
+    "first_name": "TEOFILA",
+    "last_name": "WEBB",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2310
+  },
+  {
+    "number": 313,
+    "first_name": "ANITRA",
+    "last_name": "WEBB",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4214
+  },
+  {
+    "number": 314,
+    "first_name": "SAMUAL",
+    "last_name": "WEBB",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3224
+  },
+  {
+    "number": 315,
+    "first_name": "ADRIANNE",
+    "last_name": "WASHINGTON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4132
+  },
+  {
+    "number": 316,
+    "first_name": "MERVIN",
+    "last_name": "WASHINGTON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3496
+  },
+  {
+    "number": 317,
+    "first_name": "MARTY",
+    "last_name": "WASHINGTON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1543
+  },
+  {
+    "number": 318,
+    "first_name": "JULIAN",
+    "last_name": "WASHINGTON",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3780
+  },
+  {
+    "number": 319,
+    "first_name": "DENIS",
+    "last_name": "TUCKER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2003
+  },
+  {
+    "number": 320,
+    "first_name": "TWILA",
+    "last_name": "TUCKER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1270
+  },
+  {
+    "number": 321,
+    "first_name": "REENA",
+    "last_name": "TUCKER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3760
+  },
+  {
+    "number": 322,
+    "first_name": "DEENA",
+    "last_name": "TUCKER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2245
+  },
+  {
+    "number": 323,
+    "first_name": "DREW",
+    "last_name": "TUCKER",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3714
+  },
+  {
+    "number": 324,
+    "first_name": "LAYNE",
+    "last_name": "HENRY",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2741
+  },
+  {
+    "number": 325,
+    "first_name": "SID",
+    "last_name": "HENRY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3843
+  },
+  {
+    "number": 326,
+    "first_name": "JANNIE",
+    "last_name": "HENRY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1533
+  },
+  {
+    "number": 327,
+    "first_name": "JAKE",
+    "last_name": "VASQUEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3308
+  },
+  {
+    "number": 328,
+    "first_name": "GARRY",
+    "last_name": "VASQUEZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2472
+  },
+  {
+    "number": 329,
+    "first_name": "PRUDENCE",
+    "last_name": "VASQUEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3119
+  },
+  {
+    "number": 330,
+    "first_name": "JOSPEH",
+    "last_name": "SIMPSON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2721
+  },
+  {
+    "number": 331,
+    "first_name": "JACKI",
+    "last_name": "SIMPSON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3106
+  },
+  {
+    "number": 332,
+    "first_name": "KELI",
+    "last_name": "SIMPSON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1606
+  },
+  {
+    "number": 333,
+    "first_name": "VALERIA",
+    "last_name": "SIMPSON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1935
+  },
+  {
+    "number": 334,
+    "first_name": "ASHLEY",
+    "last_name": "SIMPSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3697
+  },
+  {
+    "number": 335,
+    "first_name": "WILMER",
+    "last_name": "JIMENEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3459
+  },
+  {
+    "number": 336,
+    "first_name": "JERE",
+    "last_name": "JIMENEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2120
+  },
+  {
+    "number": 337,
+    "first_name": "FREDRICK",
+    "last_name": "JIMENEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1926
+  },
+  {
+    "number": 338,
+    "first_name": "DANELLE",
+    "last_name": "JIMENEZ",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2175
+  },
+  {
+    "number": 339,
+    "first_name": "DELILA",
+    "last_name": "JIMENEZ",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4206
+  },
+  {
+    "number": 340,
+    "first_name": "VON",
+    "last_name": "PORTER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4243
+  },
+  {
+    "number": 341,
+    "first_name": "JOHNIE",
+    "last_name": "MASON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1595
+  },
+  {
+    "number": 342,
+    "first_name": "TRACEE",
+    "last_name": "MASON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1288
+  },
+  {
+    "number": 343,
+    "first_name": "KARIMA",
+    "last_name": "SHAW",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3069
+  },
+  {
+    "number": 344,
+    "first_name": "MOHAMED",
+    "last_name": "SHAW",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3822
+  },
+  {
+    "number": 345,
+    "first_name": "NESTOR",
+    "last_name": "GORDON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1463
+  },
+  {
+    "number": 346,
+    "first_name": "GEOFFREY",
+    "last_name": "WAGNER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3262
+  },
+  {
+    "number": 347,
+    "first_name": "JACQUILINE",
+    "last_name": "HUNTER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2868
+  },
+  {
+    "number": 348,
+    "first_name": "KEVEN",
+    "last_name": "HUNTER",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3113
+  },
+  {
+    "number": 349,
+    "first_name": "HECTOR",
+    "last_name": "HUNTER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1752
+  },
+  {
+    "number": 350,
+    "first_name": "RUSSELL",
+    "last_name": "HUNTER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1850
+  },
+  {
+    "number": 351,
+    "first_name": "ERICK",
+    "last_name": "HICKS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1529
+  },
+  {
+    "number": 352,
+    "first_name": "ANTONE",
+    "last_name": "HICKS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1575
+  },
+  {
+    "number": 353,
+    "first_name": "DEIDRA",
+    "last_name": "HICKS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2477
+  },
+  {
+    "number": 354,
+    "first_name": "YONG",
+    "last_name": "HICKS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3881
+  },
+  {
+    "number": 355,
+    "first_name": "LYNDIA",
+    "last_name": "HICKS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2828
+  },
+  {
+    "number": 356,
+    "first_name": "STEPANIE",
+    "last_name": "DIXON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1924
+  },
+  {
+    "number": 357,
+    "first_name": "EMMANUEL",
+    "last_name": "DIXON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1467
+  },
+  {
+    "number": 358,
+    "first_name": "LEVI",
+    "last_name": "DIXON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2990
+  },
+  {
+    "number": 359,
+    "first_name": "DOLORIS",
+    "last_name": "HUNT",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3995
+  },
+  {
+    "number": 360,
+    "first_name": "DOREATHA",
+    "last_name": "HUNT",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2892
+  },
+  {
+    "number": 361,
+    "first_name": "BRADY",
+    "last_name": "HUNT",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3463
+  },
+  {
+    "number": 362,
+    "first_name": "JORDON",
+    "last_name": "HUNT",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2603
+  },
+  {
+    "number": 363,
+    "first_name": "SCOTTY",
+    "last_name": "HUNT",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3972
+  },
+  {
+    "number": 364,
+    "first_name": "CAROLYNE",
+    "last_name": "PALMER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2602
+  },
+  {
+    "number": 365,
+    "first_name": "ELINORE",
+    "last_name": "PALMER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2523
+  },
+  {
+    "number": 366,
+    "first_name": "STANLEY",
+    "last_name": "PALMER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4063
+  },
+  {
+    "number": 367,
+    "first_name": "SILAS",
+    "last_name": "PALMER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3584
+  },
+  {
+    "number": 368,
+    "first_name": "STEWART",
+    "last_name": "ROBERTSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2813
+  },
+  {
+    "number": 369,
+    "first_name": "RAVEN",
+    "last_name": "ROBERTSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2725
+  },
+  {
+    "number": 370,
+    "first_name": "EARLE",
+    "last_name": "ROBERTSON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4062
+  },
+  {
+    "number": 371,
+    "first_name": "SALINA",
+    "last_name": "BLACK",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2622
+  },
+  {
+    "number": 372,
+    "first_name": "HANK",
+    "last_name": "BLACK",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1811
+  },
+  {
+    "number": 373,
+    "first_name": "GERMAN",
+    "last_name": "BLACK",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2772
+  },
+  {
+    "number": 374,
+    "first_name": "NORA",
+    "last_name": "STONE",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2549
+  },
+  {
+    "number": 375,
+    "first_name": "ARMANDO",
+    "last_name": "STONE",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3789
+  },
+  {
+    "number": 376,
+    "first_name": "DARREL",
+    "last_name": "STONE",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2337
+  },
+  {
+    "number": 377,
+    "first_name": "FOSTER",
+    "last_name": "MEYER",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4050
+  },
+  {
+    "number": 378,
+    "first_name": "",
+    "last_name": "MEYER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3122
+  },
+  {
+    "number": 379,
+    "first_name": "THURMAN",
+    "last_name": "MEYER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2158
+  },
+  {
+    "number": 380,
+    "first_name": "COLLEEN",
+    "last_name": "MEYER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2045
+  },
+  {
+    "number": 381,
+    "first_name": "EASTER",
+    "last_name": "MEYER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1358
+  },
+  {
+    "number": 382,
+    "first_name": "FELIPE",
+    "last_name": "BOYD",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2045
+  },
+  {
+    "number": 383,
+    "first_name": "MICHALE",
+    "last_name": "BOYD",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3026
+  },
+  {
+    "number": 384,
+    "first_name": "LORRI",
+    "last_name": "BOYD",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4106
+  },
+  {
+    "number": 385,
+    "first_name": "IVA",
+    "last_name": "BOYD",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2145
+  },
+  {
+    "number": 386,
+    "first_name": "DARNELL",
+    "last_name": "MILLS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2201
+  },
+  {
+    "number": 387,
+    "first_name": "MCKINLEY",
+    "last_name": "MILLS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3233
+  },
+  {
+    "number": 388,
+    "first_name": "HEIDI",
+    "last_name": "WARREN",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1455
+  },
+  {
+    "number": 389,
+    "first_name": "CHI",
+    "last_name": "FOX",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3666
+  },
+  {
+    "number": 390,
+    "first_name": "LOU",
+    "last_name": "FOX",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3994
+  },
+  {
+    "number": 391,
+    "first_name": "HUGH",
+    "last_name": "FOX",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3037
+  },
+  {
+    "number": 392,
+    "first_name": "THURMAN",
+    "last_name": "RICE",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2289
+  },
+  {
+    "number": 393,
+    "first_name": "LEISA",
+    "last_name": "RICE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2941
+  },
+  {
+    "number": 394,
+    "first_name": "LEIGH",
+    "last_name": "MORENO",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3352
+  },
+  {
+    "number": 395,
+    "first_name": "REYNALDO",
+    "last_name": "SCHMIDT",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 4052
+  },
+  {
+    "number": 396,
+    "first_name": "LITA",
+    "last_name": "SCHMIDT",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1948
+  },
+  {
+    "number": 397,
+    "first_name": "CHUNG",
+    "last_name": "SCHMIDT",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3669
+  },
+  {
+    "number": 398,
+    "first_name": "HOWARD",
+    "last_name": "SCHMIDT",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2532
+  },
+  {
+    "number": 399,
+    "first_name": "ROYCE",
+    "last_name": "PATEL",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3139
+  },
+  {
+    "number": 400,
+    "first_name": "KRISTEEN",
+    "last_name": "FERGUSON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2614
+  },
+  {
+    "number": 401,
+    "first_name": "MAC",
+    "last_name": "FERGUSON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2673
+  },
+  {
+    "number": 402,
+    "first_name": "SHERLY",
+    "last_name": "NICHOLS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2330
+  },
+  {
+    "number": 403,
+    "first_name": "CAMILLE",
+    "last_name": "NICHOLS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3392
+  },
+  {
+    "number": 404,
+    "first_name": "JEANETTE",
+    "last_name": "NICHOLS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1994
+  },
+  {
+    "number": 405,
+    "first_name": "VINCENT",
+    "last_name": "NICHOLS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 4006
+  },
+  {
+    "number": 406,
+    "first_name": "SHON",
+    "last_name": "HERRERA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3666
+  },
+  {
+    "number": 407,
+    "first_name": "DONN",
+    "last_name": "HERRERA",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 4215
+  },
+  {
+    "number": 408,
+    "first_name": "ELZA",
+    "last_name": "HERRERA",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2773
+  },
+  {
+    "number": 409,
+    "first_name": "MARK",
+    "last_name": "MEDINA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3371
+  },
+  {
+    "number": 410,
+    "first_name": "PALMER",
+    "last_name": "MEDINA",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4143
+  },
+  {
+    "number": 411,
+    "first_name": "ROYAL",
+    "last_name": "MEDINA",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1827
+  },
+  {
+    "number": 412,
+    "first_name": "ROLANDO",
+    "last_name": "MEDINA",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1549
+  },
+  {
+    "number": 413,
+    "first_name": "AMBROSE",
+    "last_name": "MEDINA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3600
+  },
+  {
+    "number": 414,
+    "first_name": "JIMMIE",
+    "last_name": "RYAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2767
+  },
+  {
+    "number": 415,
+    "first_name": "JEANETTA",
+    "last_name": "RYAN",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2540
+  },
+  {
+    "number": 416,
+    "first_name": "DARNELL",
+    "last_name": "RYAN",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2964
+  },
+  {
+    "number": 417,
+    "first_name": "RUBIN",
+    "last_name": "RYAN",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1621
+  },
+  {
+    "number": 418,
+    "first_name": "WILLIAM",
+    "last_name": "RYAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2752
+  },
+  {
+    "number": 419,
+    "first_name": "TOBIE",
+    "last_name": "FERNANDEZ",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2595
+  },
+  {
+    "number": 420,
+    "first_name": "LUZ",
+    "last_name": "DANIELS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1763
+  },
+  {
+    "number": 421,
+    "first_name": "TEMEKA",
+    "last_name": "DANIELS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3640
+  },
+  {
+    "number": 422,
+    "first_name": "IRAIDA",
+    "last_name": "DANIELS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1302
+  },
+  {
+    "number": 423,
+    "first_name": "MAURICIO",
+    "last_name": "DANIELS",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3990
+  },
+  {
+    "number": 424,
+    "first_name": "ZACHARY",
+    "last_name": "STEPHENS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3307
+  },
+  {
+    "number": 425,
+    "first_name": "HORACIO",
+    "last_name": "STEPHENS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1930
+  },
+  {
+    "number": 426,
+    "first_name": "AUNDREA",
+    "last_name": "GARDNER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3933
+  },
+  {
+    "number": 427,
+    "first_name": "LOAN",
+    "last_name": "GARDNER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2039
+  },
+  {
+    "number": 428,
+    "first_name": "FLORENCIO",
+    "last_name": "GARDNER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3152
+  },
+  {
+    "number": 429,
+    "first_name": "GRACIE",
+    "last_name": "PAYNE",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1487
+  },
+  {
+    "number": 430,
+    "first_name": "BREANA",
+    "last_name": "KELLEY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1924
+  },
+  {
+    "number": 431,
+    "first_name": "JOSEFINE",
+    "last_name": "KELLEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3578
+  },
+  {
+    "number": 432,
+    "first_name": "WILFREDO",
+    "last_name": "KELLEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3977
+  },
+  {
+    "number": 433,
+    "first_name": "DUSTY",
+    "last_name": "DUNN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1665
+  },
+  {
+    "number": 434,
+    "first_name": "DESPINA",
+    "last_name": "ARNOLD",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3898
+  },
+  {
+    "number": 435,
+    "first_name": "ERIC",
+    "last_name": "ARNOLD",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3275
+  },
+  {
+    "number": 436,
+    "first_name": "SHAREN",
+    "last_name": "ARNOLD",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2529
+  },
+  {
+    "number": 437,
+    "first_name": "MARYA",
+    "last_name": "SPENCER",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1880
+  },
+  {
+    "number": 438,
+    "first_name": "ALLEEN",
+    "last_name": "SPENCER",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1683
+  },
+  {
+    "number": 439,
+    "first_name": "IVAN",
+    "last_name": "SPENCER",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2670
+  },
+  {
+    "number": 440,
+    "first_name": "FELICIA",
+    "last_name": "SPENCER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3980
+  },
+  {
+    "number": 441,
+    "first_name": "MAEGAN",
+    "last_name": "PETERS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2500
+  },
+  {
+    "number": 442,
+    "first_name": "IRINA",
+    "last_name": "PETERS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3441
+  },
+  {
+    "number": 443,
+    "first_name": "GEORGIANNE",
+    "last_name": "HAWKINS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2340
+  },
+  {
+    "number": 444,
+    "first_name": "OREN",
+    "last_name": "HAWKINS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3004
+  },
+  {
+    "number": 445,
+    "first_name": "TOSHIKO",
+    "last_name": "HAWKINS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4240
+  },
+  {
+    "number": 446,
+    "first_name": "JC",
+    "last_name": "HAWKINS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3710
+  },
+  {
+    "number": 447,
+    "first_name": "ARIANE",
+    "last_name": "HAWKINS",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2106
+  },
+  {
+    "number": 448,
+    "first_name": "DWANA",
+    "last_name": "HANSEN",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3120
+  },
+  {
+    "number": 449,
+    "first_name": "EDGAR",
+    "last_name": "HANSEN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3771
+  },
+  {
+    "number": 450,
+    "first_name": "JUSTINA",
+    "last_name": "HANSEN",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1850
+  },
+  {
+    "number": 451,
+    "first_name": "CHIQUITA",
+    "last_name": "HANSEN",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2214
+  },
+  {
+    "number": 452,
+    "first_name": "SHARLA",
+    "last_name": "CASTRO",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3045
+  },
+  {
+    "number": 453,
+    "first_name": "ELLIS",
+    "last_name": "CASTRO",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3890
+  },
+  {
+    "number": 454,
+    "first_name": "ANGELYN",
+    "last_name": "HOFFMAN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2443
+  },
+  {
+    "number": 455,
+    "first_name": "KARY",
+    "last_name": "HOFFMAN",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2191
+  },
+  {
+    "number": 456,
+    "first_name": "ANIBAL",
+    "last_name": "HOFFMAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2661
+  },
+  {
+    "number": 457,
+    "first_name": "SAMUAL",
+    "last_name": "HART",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3115
+  },
+  {
+    "number": 458,
+    "first_name": "SERITA",
+    "last_name": "HART",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1427
+  },
+  {
+    "number": 459,
+    "first_name": "MICHAELE",
+    "last_name": "HART",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1346
+  },
+  {
+    "number": 460,
+    "first_name": "QUYEN",
+    "last_name": "HART",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3851
+  },
+  {
+    "number": 461,
+    "first_name": "SILAS",
+    "last_name": "HART",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1309
+  },
+  {
+    "number": 462,
+    "first_name": "MISSY",
+    "last_name": "ELLIOTT",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1959
+  },
+  {
+    "number": 463,
+    "first_name": "BUD",
+    "last_name": "ELLIOTT",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2476
+  },
+  {
+    "number": 464,
+    "first_name": "CAMI",
+    "last_name": "ELLIOTT",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2636
+  },
+  {
+    "number": 465,
+    "first_name": "FELIPE",
+    "last_name": "ELLIOTT",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2916
+  },
+  {
+    "number": 466,
+    "first_name": "JOHNIE",
+    "last_name": "CUNNINGHAM",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2113
+  },
+  {
+    "number": 467,
+    "first_name": "MISTI",
+    "last_name": "CUNNINGHAM",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4151
+  },
+  {
+    "number": 468,
+    "first_name": "DOMINIC",
+    "last_name": "KNIGHT",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3196
+  },
+  {
+    "number": 469,
+    "first_name": "TASHINA",
+    "last_name": "BRADLEY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2891
+  },
+  {
+    "number": 470,
+    "first_name": "EARLE",
+    "last_name": "BRADLEY",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2041
+  },
+  {
+    "number": 471,
+    "first_name": "HERLINDA",
+    "last_name": "BRADLEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2774
+  },
+  {
+    "number": 472,
+    "first_name": "ANTONY",
+    "last_name": "BRADLEY",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2319
+  },
+  {
+    "number": 473,
+    "first_name": "FRANCES",
+    "last_name": "BRADLEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1448
+  },
+  {
+    "number": 474,
+    "first_name": "ANGELINA",
+    "last_name": "CARROLL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3966
+  },
+  {
+    "number": 475,
+    "first_name": "ERLINDA",
+    "last_name": "CARROLL",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3290
+  },
+  {
+    "number": 476,
+    "first_name": "MOSES",
+    "last_name": "CARROLL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3891
+  },
+  {
+    "number": 477,
+    "first_name": "BASIL",
+    "last_name": "CARROLL",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3367
+  },
+  {
+    "number": 478,
+    "first_name": "NOBLE",
+    "last_name": "DUNCAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2761
+  },
+  {
+    "number": 479,
+    "first_name": "OTHA",
+    "last_name": "DUNCAN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1363
+  },
+  {
+    "number": 480,
+    "first_name": "BILLIE",
+    "last_name": "DUNCAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2001
+  },
+  {
+    "number": 481,
+    "first_name": "JERROLD",
+    "last_name": "DUNCAN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2083
+  },
+  {
+    "number": 482,
+    "first_name": "BRIGETTE",
+    "last_name": "ARMSTRONG",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2450
+  },
+  {
+    "number": 483,
+    "first_name": "DOUG",
+    "last_name": "ARMSTRONG",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3692
+  },
+  {
+    "number": 484,
+    "first_name": "WEN",
+    "last_name": "ARMSTRONG",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1375
+  },
+  {
+    "number": 485,
+    "first_name": "MEGGAN",
+    "last_name": "ANDREWS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2419
+  },
+  {
+    "number": 486,
+    "first_name": "STUART",
+    "last_name": "ANDREWS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2835
+  },
+  {
+    "number": 487,
+    "first_name": "MAJOR",
+    "last_name": "ANDREWS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2372
+  },
+  {
+    "number": 488,
+    "first_name": "ELDON",
+    "last_name": "ANDREWS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2649
+  },
+  {
+    "number": 489,
+    "first_name": "OREN",
+    "last_name": "RAY",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2522
+  },
+  {
+    "number": 490,
+    "first_name": "STEPHANI",
+    "last_name": "RAY",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2862
+  },
+  {
+    "number": 491,
+    "first_name": "CANDI",
+    "last_name": "RAY",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 4076
+  },
+  {
+    "number": 492,
+    "first_name": "HSIU",
+    "last_name": "RAY",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1362
+  },
+  {
+    "number": 493,
+    "first_name": "KATELYNN",
+    "last_name": "RAY",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2366
+  },
+  {
+    "number": 494,
+    "first_name": "VERSIE",
+    "last_name": "LANE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1645
+  },
+  {
+    "number": 495,
+    "first_name": "BEVERLEE",
+    "last_name": "LANE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4047
+  },
+  {
+    "number": 496,
+    "first_name": "FRANCESCO",
+    "last_name": "LANE",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2970
+  },
+  {
+    "number": 497,
+    "first_name": "WILFRED",
+    "last_name": "RILEY",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 4185
+  },
+  {
+    "number": 498,
+    "first_name": "ANNIE",
+    "last_name": "RILEY",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4214
+  },
+  {
+    "number": 499,
+    "first_name": "JOSPEH",
+    "last_name": "CARPENTER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3103
+  },
+  {
+    "number": 500,
+    "first_name": "KENYATTA",
+    "last_name": "CARPENTER",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1334
+  },
+  {
+    "number": 501,
+    "first_name": "KEELEY",
+    "last_name": "CARPENTER",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3394
+  },
+  {
+    "number": 502,
+    "first_name": "XIAO",
+    "last_name": "CARPENTER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3927
+  },
+  {
+    "number": 503,
+    "first_name": "CESAR",
+    "last_name": "CARPENTER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2631
+  },
+  {
+    "number": 504,
+    "first_name": "ELISE",
+    "last_name": "PERKINS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3842
+  },
+  {
+    "number": 505,
+    "first_name": "DERICK",
+    "last_name": "PERKINS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2323
+  },
+  {
+    "number": 506,
+    "first_name": "NERY",
+    "last_name": "PERKINS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2000
+  },
+  {
+    "number": 507,
+    "first_name": "FLETA",
+    "last_name": "PERKINS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 4014
+  },
+  {
+    "number": 508,
+    "first_name": "JEFF",
+    "last_name": "AGUILAR",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2808
+  },
+  {
+    "number": 509,
+    "first_name": "THAO",
+    "last_name": "AGUILAR",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1395
+  },
+  {
+    "number": 510,
+    "first_name": "MARIA",
+    "last_name": "AGUILAR",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4027
+  },
+  {
+    "number": 511,
+    "first_name": "LEON",
+    "last_name": "AGUILAR",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1436
+  },
+  {
+    "number": 512,
+    "first_name": "VIRGILIO",
+    "last_name": "AGUILAR",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3277
+  },
+  {
+    "number": 513,
+    "first_name": "ARNULFO",
+    "last_name": "SILVA",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3905
+  },
+  {
+    "number": 514,
+    "first_name": "LON",
+    "last_name": "RICHARDS",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3833
+  },
+  {
+    "number": 515,
+    "first_name": "ELAINA",
+    "last_name": "RICHARDS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2244
+  },
+  {
+    "number": 516,
+    "first_name": "LONNIE",
+    "last_name": "RICHARDS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1925
+  },
+  {
+    "number": 517,
+    "first_name": "YUETTE",
+    "last_name": "RICHARDS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2393
+  },
+  {
+    "number": 518,
+    "first_name": "WENDI",
+    "last_name": "RICHARDS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3022
+  },
+  {
+    "number": 519,
+    "first_name": "JONELL",
+    "last_name": "CHAPMAN",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2215
+  },
+  {
+    "number": 520,
+    "first_name": "WARREN",
+    "last_name": "CHAPMAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1956
+  },
+  {
+    "number": 521,
+    "first_name": "CONRAD",
+    "last_name": "CHAPMAN",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1452
+  },
+  {
+    "number": 522,
+    "first_name": "TABATHA",
+    "last_name": "GARZA",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2743
+  },
+  {
+    "number": 523,
+    "first_name": "RAPHAEL",
+    "last_name": "GARZA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1466
+  },
+  {
+    "number": 524,
+    "first_name": "HORTENCIA",
+    "last_name": "WATKINS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 4104
+  },
+  {
+    "number": 525,
+    "first_name": "GERARD",
+    "last_name": "WHEELER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3295
+  },
+  {
+    "number": 526,
+    "first_name": "ELDEN",
+    "last_name": "WHEELER",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3108
+  },
+  {
+    "number": 527,
+    "first_name": "VIVIAN",
+    "last_name": "LARSON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3718
+  },
+  {
+    "number": 528,
+    "first_name": "SAMUAL",
+    "last_name": "LARSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2276
+  },
+  {
+    "number": 529,
+    "first_name": "DOMINIC",
+    "last_name": "LARSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1697
+  },
+  {
+    "number": 530,
+    "first_name": "MATHILDA",
+    "last_name": "LARSON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3450
+  },
+  {
+    "number": 531,
+    "first_name": "KATELYN",
+    "last_name": "LARSON",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2675
+  },
+  {
+    "number": 532,
+    "first_name": "ROXANNA",
+    "last_name": "HARPER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1912
+  },
+  {
+    "number": 533,
+    "first_name": "TOM",
+    "last_name": "HARPER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3530
+  },
+  {
+    "number": 534,
+    "first_name": "MARYALICE",
+    "last_name": "HARPER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3300
+  },
+  {
+    "number": 535,
+    "first_name": "GLADIS",
+    "last_name": "GEORGE",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1813
+  },
+  {
+    "number": 536,
+    "first_name": "CHRISTAL",
+    "last_name": "GEORGE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3133
+  },
+  {
+    "number": 537,
+    "first_name": "APRYL",
+    "last_name": "GEORGE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4064
+  },
+  {
+    "number": 538,
+    "first_name": "ROMA",
+    "last_name": "GREENE",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3192
+  },
+  {
+    "number": 539,
+    "first_name": "CHARA",
+    "last_name": "GREENE",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2612
+  },
+  {
+    "number": 540,
+    "first_name": "SUNSHINE",
+    "last_name": "GREENE",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1563
+  },
+  {
+    "number": 541,
+    "first_name": "PAUL",
+    "last_name": "BURKE",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2100
+  },
+  {
+    "number": 542,
+    "first_name": "ALLISON",
+    "last_name": "BURKE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3049
+  },
+  {
+    "number": 543,
+    "first_name": "EDGAR",
+    "last_name": "BURKE",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2131
+  },
+  {
+    "number": 544,
+    "first_name": "NOEMI",
+    "last_name": "BURKE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2610
+  },
+  {
+    "number": 545,
+    "first_name": "LACY",
+    "last_name": "BURKE",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1483
+  },
+  {
+    "number": 546,
+    "first_name": "GARY",
+    "last_name": "GUZMAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3485
+  },
+  {
+    "number": 547,
+    "first_name": "MICKEY",
+    "last_name": "MORRISON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2280
+  },
+  {
+    "number": 548,
+    "first_name": "JANN",
+    "last_name": "MORRISON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1372
+  },
+  {
+    "number": 549,
+    "first_name": "LAVONNA",
+    "last_name": "MUNOZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2972
+  },
+  {
+    "number": 550,
+    "first_name": "WADE",
+    "last_name": "MUNOZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4247
+  },
+  {
+    "number": 551,
+    "first_name": "SHELLI",
+    "last_name": "MUNOZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3864
+  },
+  {
+    "number": 552,
+    "first_name": "PORTER",
+    "last_name": "MUNOZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3516
+  },
+  {
+    "number": 553,
+    "first_name": "DUANE",
+    "last_name": "JACOBS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3319
+  },
+  {
+    "number": 554,
+    "first_name": "MARKITA",
+    "last_name": "JACOBS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4127
+  },
+  {
+    "number": 555,
+    "first_name": "JACKIE",
+    "last_name": "JACOBS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2294
+  },
+  {
+    "number": 556,
+    "first_name": "BRANDON",
+    "last_name": "OBRIEN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1860
+  },
+  {
+    "number": 557,
+    "first_name": "OMEGA",
+    "last_name": "OBRIEN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2047
+  },
+  {
+    "number": 558,
+    "first_name": "IRWIN",
+    "last_name": "OBRIEN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1984
+  },
+  {
+    "number": 559,
+    "first_name": "BERTRAM",
+    "last_name": "OBRIEN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2544
+  },
+  {
+    "number": 560,
+    "first_name": "SUSIE",
+    "last_name": "OBRIEN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3443
+  },
+  {
+    "number": 561,
+    "first_name": "TUAN",
+    "last_name": "LAWSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3606
+  },
+  {
+    "number": 562,
+    "first_name": "JACINTO",
+    "last_name": "LAWSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 4109
+  },
+  {
+    "number": 563,
+    "first_name": "RICHIE",
+    "last_name": "LAWSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2767
+  },
+  {
+    "number": 564,
+    "first_name": "NOEL",
+    "last_name": "FRANKLIN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2777
+  },
+  {
+    "number": 565,
+    "first_name": "JOHNNY",
+    "last_name": "LYNCH",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3993
+  },
+  {
+    "number": 566,
+    "first_name": "GREGG",
+    "last_name": "LYNCH",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2286
+  },
+  {
+    "number": 567,
+    "first_name": "LOUELLA",
+    "last_name": "BISHOP",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2161
+  },
+  {
+    "number": 568,
+    "first_name": "VAN",
+    "last_name": "CARR",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4140
+  },
+  {
+    "number": 569,
+    "first_name": "FELICITAS",
+    "last_name": "CARR",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1940
+  },
+  {
+    "number": 570,
+    "first_name": "DEADRA",
+    "last_name": "CARR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4058
+  },
+  {
+    "number": 571,
+    "first_name": "JOSETTE",
+    "last_name": "CARR",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2050
+  },
+  {
+    "number": 572,
+    "first_name": "LOURIE",
+    "last_name": "SALAZAR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1651
+  },
+  {
+    "number": 573,
+    "first_name": "ERNESTINA",
+    "last_name": "SALAZAR",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 4107
+  },
+  {
+    "number": 574,
+    "first_name": "CHERILYN",
+    "last_name": "SALAZAR",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3100
+  },
+  {
+    "number": 575,
+    "first_name": "ALESHIA",
+    "last_name": "SALAZAR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2209
+  },
+  {
+    "number": 576,
+    "first_name": "STEVEN",
+    "last_name": "SALAZAR",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2090
+  },
+  {
+    "number": 577,
+    "first_name": "LINO",
+    "last_name": "AUSTIN",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3922
+  },
+  {
+    "number": 578,
+    "first_name": "RODRICK",
+    "last_name": "AUSTIN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1878
+  },
+  {
+    "number": 579,
+    "first_name": "BLAINE",
+    "last_name": "MENDEZ",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2920
+  },
+  {
+    "number": 580,
+    "first_name": "HUEY",
+    "last_name": "MENDEZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3423
+  },
+  {
+    "number": 581,
+    "first_name": "ARNITA",
+    "last_name": "MENDEZ",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3708
+  },
+  {
+    "number": 582,
+    "first_name": "MARTA",
+    "last_name": "MENDEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3853
+  },
+  {
+    "number": 583,
+    "first_name": "JASON",
+    "last_name": "GILBERT",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2634
+  },
+  {
+    "number": 584,
+    "first_name": "KENDRA",
+    "last_name": "JENSEN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3198
+  },
+  {
+    "number": 585,
+    "first_name": "LAWRENCE",
+    "last_name": "JENSEN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2085
+  },
+  {
+    "number": 586,
+    "first_name": "WILMER",
+    "last_name": "WILLIAMSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3774
+  },
+  {
+    "number": 587,
+    "first_name": "LYNELLE",
+    "last_name": "WILLIAMSON",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1700
+  },
+  {
+    "number": 588,
+    "first_name": "JOHNETTA",
+    "last_name": "WILLIAMSON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3412
+  },
+  {
+    "number": 589,
+    "first_name": "NERY",
+    "last_name": "WILLIAMSON",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3886
+  },
+  {
+    "number": 590,
+    "first_name": "EDNA",
+    "last_name": "WILLIAMSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1502
+  },
+  {
+    "number": 591,
+    "first_name": "CLORINDA",
+    "last_name": "MONTGOMERY",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1975
+  },
+  {
+    "number": 592,
+    "first_name": "KAYCE",
+    "last_name": "MONTGOMERY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2394
+  },
+  {
+    "number": 593,
+    "first_name": "ANDERA",
+    "last_name": "MONTGOMERY",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2268
+  },
+  {
+    "number": 594,
+    "first_name": "ESTELA",
+    "last_name": "MONTGOMERY",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1345
+  },
+  {
+    "number": 595,
+    "first_name": "MICHAEL",
+    "last_name": "HARVEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2676
+  },
+  {
+    "number": 596,
+    "first_name": "TRACY",
+    "last_name": "HARVEY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2867
+  },
+  {
+    "number": 597,
+    "first_name": "JERRY",
+    "last_name": "HARVEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3788
+  },
+  {
+    "number": 598,
+    "first_name": "ASHLEY",
+    "last_name": "HARVEY",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2218
+  },
+  {
+    "number": 599,
+    "first_name": "STUART",
+    "last_name": "OLIVER",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 4052
+  },
+  {
+    "number": 600,
+    "first_name": "BERTRAM",
+    "last_name": "HOWELL",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2828
+  },
+  {
+    "number": 601,
+    "first_name": "OSVALDO",
+    "last_name": "HOWELL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3139
+  },
+  {
+    "number": 602,
+    "first_name": "WALLACE",
+    "last_name": "HOWELL",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1811
+  },
+  {
+    "number": 603,
+    "first_name": "SHENNA",
+    "last_name": "HOWELL",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3278
+  },
+  {
+    "number": 604,
+    "first_name": "ZOFIA",
+    "last_name": "HOWELL",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4001
+  },
+  {
+    "number": 605,
+    "first_name": "LINWOOD",
+    "last_name": "DEAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1377
+  },
+  {
+    "number": 606,
+    "first_name": "PANDORA",
+    "last_name": "DEAN",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1347
+  },
+  {
+    "number": 607,
+    "first_name": "DELFINA",
+    "last_name": "DEAN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2622
+  },
+  {
+    "number": 608,
+    "first_name": "SHARMAINE",
+    "last_name": "DEAN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2140
+  },
+  {
+    "number": 609,
+    "first_name": "MAURITA",
+    "last_name": "DEAN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2111
+  },
+  {
+    "number": 610,
+    "first_name": "BRIANNE",
+    "last_name": "HANSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2591
+  },
+  {
+    "number": 611,
+    "first_name": "ALBERT",
+    "last_name": "HANSON",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2892
+  },
+  {
+    "number": 612,
+    "first_name": "ADRIANA",
+    "last_name": "HANSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1918
+  },
+  {
+    "number": 613,
+    "first_name": "BEAU",
+    "last_name": "HANSON",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3216
+  },
+  {
+    "number": 614,
+    "first_name": "KANISHA",
+    "last_name": "WEBER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3055
+  },
+  {
+    "number": 615,
+    "first_name": "JORDAN",
+    "last_name": "WEBER",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2016
+  },
+  {
+    "number": 616,
+    "first_name": "ERROL",
+    "last_name": "GARRETT",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4123
+  },
+  {
+    "number": 617,
+    "first_name": "HARLAND",
+    "last_name": "SIMS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2686
+  },
+  {
+    "number": 618,
+    "first_name": "FRANCISCO",
+    "last_name": "FULLER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3491
+  },
+  {
+    "number": 619,
+    "first_name": "LEIGH",
+    "last_name": "SOTO",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1596
+  },
+  {
+    "number": 620,
+    "first_name": "KLARA",
+    "last_name": "SOTO",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2355
+  },
+  {
+    "number": 621,
+    "first_name": "ROBT",
+    "last_name": "SOTO",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3485
+  },
+  {
+    "number": 622,
+    "first_name": "WILBURN",
+    "last_name": "WELCH",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2781
+  },
+  {
+    "number": 623,
+    "first_name": "MIKEL",
+    "last_name": "WELCH",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1496
+  },
+  {
+    "number": 624,
+    "first_name": "JON",
+    "last_name": "WELCH",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1761
+  },
+  {
+    "number": 625,
+    "first_name": "JOSEPH",
+    "last_name": "WELCH",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3990
+  },
+  {
+    "number": 626,
+    "first_name": "VERNELL",
+    "last_name": "CHEN",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1430
+  },
+  {
+    "number": 627,
+    "first_name": "CLEMENTE",
+    "last_name": "CHEN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2917
+  },
+  {
+    "number": 628,
+    "first_name": "ROBT",
+    "last_name": "CHEN",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3544
+  },
+  {
+    "number": 629,
+    "first_name": "SAUNDRA",
+    "last_name": "CHEN",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1490
+  },
+  {
+    "number": 630,
+    "first_name": "WARD",
+    "last_name": "SCHULTZ",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1928
+  },
+  {
+    "number": 631,
+    "first_name": "LEON",
+    "last_name": "SCHULTZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1532
+  },
+  {
+    "number": 632,
+    "first_name": "RASHIDA",
+    "last_name": "SCHULTZ",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3845
+  },
+  {
+    "number": 633,
+    "first_name": "LESLI",
+    "last_name": "SCHULTZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3656
+  },
+  {
+    "number": 634,
+    "first_name": "DARRICK",
+    "last_name": "WALTERS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3398
+  },
+  {
+    "number": 635,
+    "first_name": "CATHRINE",
+    "last_name": "WALTERS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2291
+  },
+  {
+    "number": 636,
+    "first_name": "RICKY",
+    "last_name": "WALTERS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2755
+  },
+  {
+    "number": 637,
+    "first_name": "RORY",
+    "last_name": "REID",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4182
+  },
+  {
+    "number": 638,
+    "first_name": "MIRNA",
+    "last_name": "REID",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2427
+  },
+  {
+    "number": 639,
+    "first_name": "PATTIE",
+    "last_name": "REID",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2595
+  },
+  {
+    "number": 640,
+    "first_name": "VINCE",
+    "last_name": "REID",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4113
+  },
+  {
+    "number": 641,
+    "first_name": "JEREMIAH",
+    "last_name": "REID",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2547
+  },
+  {
+    "number": 642,
+    "first_name": "GIL",
+    "last_name": "FIELDS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3270
+  },
+  {
+    "number": 643,
+    "first_name": "JACINTA",
+    "last_name": "FIELDS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2951
+  },
+  {
+    "number": 644,
+    "first_name": "LUCIENNE",
+    "last_name": "WALSH",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2188
+  },
+  {
+    "number": 645,
+    "first_name": "DOUGLASS",
+    "last_name": "WALSH",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3819
+  },
+  {
+    "number": 646,
+    "first_name": "KASEY",
+    "last_name": "FOWLER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2938
+  },
+  {
+    "number": 647,
+    "first_name": "RONNY",
+    "last_name": "FOWLER",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1591
+  },
+  {
+    "number": 648,
+    "first_name": "HUNTER",
+    "last_name": "FOWLER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1570
+  },
+  {
+    "number": 649,
+    "first_name": "TERENCE",
+    "last_name": "FOWLER",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1445
+  },
+  {
+    "number": 650,
+    "first_name": "JARED",
+    "last_name": "BOWMAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3417
+  },
+  {
+    "number": 651,
+    "first_name": "LASHANDRA",
+    "last_name": "BOWMAN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4239
+  },
+  {
+    "number": 652,
+    "first_name": "NEWTON",
+    "last_name": "DAVIDSON",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3505
+  },
+  {
+    "number": 653,
+    "first_name": "MAYNARD",
+    "last_name": "MAY",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2838
+  },
+  {
+    "number": 654,
+    "first_name": "TEODORO",
+    "last_name": "MAY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2357
+  },
+  {
+    "number": 655,
+    "first_name": "BESSIE",
+    "last_name": "MAY",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2279
+  },
+  {
+    "number": 656,
+    "first_name": "JOELLEN",
+    "last_name": "DAY",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4259
+  },
+  {
+    "number": 657,
+    "first_name": "ARNITA",
+    "last_name": "DAY",
+    "gender": "F",
+    "group": "masters",
+    "secs": 4144
+  },
+  {
+    "number": 658,
+    "first_name": "PERRY",
+    "last_name": "DAY",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4214
+  },
+  {
+    "number": 659,
+    "first_name": "SOMER",
+    "last_name": "DAY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2936
+  },
+  {
+    "number": 660,
+    "first_name": "FLOYD",
+    "last_name": "DAY",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2861
+  },
+  {
+    "number": 661,
+    "first_name": "LADONNA",
+    "last_name": "SCHNEIDER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3591
+  },
+  {
+    "number": 662,
+    "first_name": "CLYDE",
+    "last_name": "SCHNEIDER",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2221
+  },
+  {
+    "number": 663,
+    "first_name": "DINO",
+    "last_name": "NEWMAN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1786
+  },
+  {
+    "number": 664,
+    "first_name": "LEO",
+    "last_name": "NEWMAN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 4079
+  },
+  {
+    "number": 665,
+    "first_name": "CARLEE",
+    "last_name": "NEWMAN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2005
+  },
+  {
+    "number": 666,
+    "first_name": "DONNY",
+    "last_name": "BREWER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1997
+  },
+  {
+    "number": 667,
+    "first_name": "CONNIE",
+    "last_name": "LUCAS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3323
+  },
+  {
+    "number": 668,
+    "first_name": "GALEN",
+    "last_name": "HOLLAND",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3908
+  },
+  {
+    "number": 669,
+    "first_name": "TONEY",
+    "last_name": "HOLLAND",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3172
+  },
+  {
+    "number": 670,
+    "first_name": "MALIK",
+    "last_name": "HOLLAND",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1459
+  },
+  {
+    "number": 671,
+    "first_name": "MAXIMO",
+    "last_name": "HOLLAND",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1616
+  },
+  {
+    "number": 672,
+    "first_name": "LUCIENNE",
+    "last_name": "WONG",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3470
+  },
+  {
+    "number": 673,
+    "first_name": "MICHIKO",
+    "last_name": "WONG",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2365
+  },
+  {
+    "number": 674,
+    "first_name": "FLORRIE",
+    "last_name": "BANKS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3023
+  },
+  {
+    "number": 675,
+    "first_name": "TYSON",
+    "last_name": "BANKS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3999
+  },
+  {
+    "number": 676,
+    "first_name": "BECKI",
+    "last_name": "SANTOS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1551
+  },
+  {
+    "number": 677,
+    "first_name": "QUENTIN",
+    "last_name": "CURTIS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3682
+  },
+  {
+    "number": 678,
+    "first_name": "KEELY",
+    "last_name": "CURTIS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3024
+  },
+  {
+    "number": 679,
+    "first_name": "HYMAN",
+    "last_name": "CURTIS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1799
+  },
+  {
+    "number": 680,
+    "first_name": "MARIEL",
+    "last_name": "CURTIS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3574
+  },
+  {
+    "number": 681,
+    "first_name": "ANTHONY",
+    "last_name": "PEARSON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2041
+  },
+  {
+    "number": 682,
+    "first_name": "DELPHA",
+    "last_name": "PEARSON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4243
+  },
+  {
+    "number": 683,
+    "first_name": "REVA",
+    "last_name": "PEARSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2860
+  },
+  {
+    "number": 684,
+    "first_name": "RYAN",
+    "last_name": "PEARSON",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3753
+  },
+  {
+    "number": 685,
+    "first_name": "LAJUANA",
+    "last_name": "DELGADO",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1402
+  },
+  {
+    "number": 686,
+    "first_name": "LAKENDRA",
+    "last_name": "DELGADO",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3926
+  },
+  {
+    "number": 687,
+    "first_name": "LYNN",
+    "last_name": "DELGADO",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1401
+  },
+  {
+    "number": 688,
+    "first_name": "TERRY",
+    "last_name": "DELGADO",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1765
+  },
+  {
+    "number": 689,
+    "first_name": "HERSCHEL",
+    "last_name": "VALDEZ",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2335
+  },
+  {
+    "number": 690,
+    "first_name": "ZOFIA",
+    "last_name": "VALDEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2260
+  },
+  {
+    "number": 691,
+    "first_name": "ALEXANDRIA",
+    "last_name": "VALDEZ",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3445
+  },
+  {
+    "number": 692,
+    "first_name": "ASA",
+    "last_name": "VALDEZ",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2907
+  },
+  {
+    "number": 693,
+    "first_name": "JEROLD",
+    "last_name": "VALDEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1663
+  },
+  {
+    "number": 694,
+    "first_name": "THERSA",
+    "last_name": "PENA",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 4001
+  },
+  {
+    "number": 695,
+    "first_name": "JAY",
+    "last_name": "PENA",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1687
+  },
+  {
+    "number": 696,
+    "first_name": "KRISHNA",
+    "last_name": "PENA",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2754
+  },
+  {
+    "number": 697,
+    "first_name": "EDDIE",
+    "last_name": "RIOS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2326
+  },
+  {
+    "number": 698,
+    "first_name": "BRETT",
+    "last_name": "RIOS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3637
+  },
+  {
+    "number": 699,
+    "first_name": "LATONIA",
+    "last_name": "RIOS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1844
+  },
+  {
+    "number": 700,
+    "first_name": "EMMIE",
+    "last_name": "RIOS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3220
+  },
+  {
+    "number": 701,
+    "first_name": "ZACK",
+    "last_name": "DOUGLAS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2844
+  },
+  {
+    "number": 702,
+    "first_name": "JESUSITA",
+    "last_name": "DOUGLAS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2457
+  },
+  {
+    "number": 703,
+    "first_name": "HYMAN",
+    "last_name": "SANDOVAL",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3299
+  },
+  {
+    "number": 704,
+    "first_name": "PATIENCE",
+    "last_name": "HOPKINS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3814
+  },
+  {
+    "number": 705,
+    "first_name": "ADRIAN",
+    "last_name": "HOPKINS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1806
+  },
+  {
+    "number": 706,
+    "first_name": "TERRA",
+    "last_name": "KELLER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3649
+  },
+  {
+    "number": 707,
+    "first_name": "JAIME",
+    "last_name": "KELLER",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3045
+  },
+  {
+    "number": 708,
+    "first_name": "CARL",
+    "last_name": "KELLER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 4004
+  },
+  {
+    "number": 709,
+    "first_name": "INA",
+    "last_name": "GUERRERO",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2518
+  },
+  {
+    "number": 710,
+    "first_name": "JAKE",
+    "last_name": "GUERRERO",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1837
+  },
+  {
+    "number": 711,
+    "first_name": "HYUN",
+    "last_name": "GUERRERO",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3734
+  },
+  {
+    "number": 712,
+    "first_name": "ELI",
+    "last_name": "STANLEY",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2845
+  },
+  {
+    "number": 713,
+    "first_name": "ABRAHAM",
+    "last_name": "STANLEY",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1670
+  },
+  {
+    "number": 714,
+    "first_name": "SHELTON",
+    "last_name": "STANLEY",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3012
+  },
+  {
+    "number": 715,
+    "first_name": "OLIVER",
+    "last_name": "STANLEY",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 4088
+  },
+  {
+    "number": 716,
+    "first_name": "BAO",
+    "last_name": "STANLEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1269
+  },
+  {
+    "number": 717,
+    "first_name": "VICTOR",
+    "last_name": "BATES",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1303
+  },
+  {
+    "number": 718,
+    "first_name": "DOUGLAS",
+    "last_name": "BATES",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2164
+  },
+  {
+    "number": 719,
+    "first_name": "KEREN",
+    "last_name": "ALVARADO",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1346
+  },
+  {
+    "number": 720,
+    "first_name": "CORY",
+    "last_name": "BECK",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3860
+  },
+  {
+    "number": 721,
+    "first_name": "SYLVESTER",
+    "last_name": "BECK",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3008
+  },
+  {
+    "number": 722,
+    "first_name": "KIMBERLEY",
+    "last_name": "BECK",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2578
+  },
+  {
+    "number": 723,
+    "first_name": "TRACI",
+    "last_name": "BECK",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4068
+  },
+  {
+    "number": 724,
+    "first_name": "MITSUE",
+    "last_name": "ORTEGA",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2530
+  },
+  {
+    "number": 725,
+    "first_name": "CURTIS",
+    "last_name": "ESTRADA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3230
+  },
+  {
+    "number": 726,
+    "first_name": "CYRIL",
+    "last_name": "ESTRADA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3440
+  },
+  {
+    "number": 727,
+    "first_name": "RUDY",
+    "last_name": "CONTRERAS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1371
+  },
+  {
+    "number": 728,
+    "first_name": "CHARITA",
+    "last_name": "CONTRERAS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1314
+  },
+  {
+    "number": 729,
+    "first_name": "NEOMA",
+    "last_name": "CONTRERAS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3928
+  },
+  {
+    "number": 730,
+    "first_name": "VEOLA",
+    "last_name": "CONTRERAS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1529
+  },
+  {
+    "number": 731,
+    "first_name": "DIANNA",
+    "last_name": "BARNETT",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2071
+  },
+  {
+    "number": 732,
+    "first_name": "ALYCE",
+    "last_name": "CALDWELL",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3058
+  },
+  {
+    "number": 733,
+    "first_name": "STEPHANIE",
+    "last_name": "SANTIAGO",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3954
+  },
+  {
+    "number": 734,
+    "first_name": "CHARISSA",
+    "last_name": "SANTIAGO",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2548
+  },
+  {
+    "number": 735,
+    "first_name": "FLOYD",
+    "last_name": "SANTIAGO",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3412
+  },
+  {
+    "number": 736,
+    "first_name": "DEL",
+    "last_name": "LAMBERT",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1560
+  },
+  {
+    "number": 737,
+    "first_name": "RAY",
+    "last_name": "POWERS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2934
+  },
+  {
+    "number": 738,
+    "first_name": "NICK",
+    "last_name": "POWERS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3696
+  },
+  {
+    "number": 739,
+    "first_name": "OWEN",
+    "last_name": "POWERS",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3651
+  },
+  {
+    "number": 740,
+    "first_name": "HECTOR",
+    "last_name": "POWERS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3710
+  },
+  {
+    "number": 741,
+    "first_name": "CANDRA",
+    "last_name": "POWERS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3799
+  },
+  {
+    "number": 742,
+    "first_name": "BO",
+    "last_name": "CHAMBERS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1822
+  },
+  {
+    "number": 743,
+    "first_name": "CHRISTINE",
+    "last_name": "CHAMBERS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 4083
+  },
+  {
+    "number": 744,
+    "first_name": "LYNELL",
+    "last_name": "CHAMBERS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3386
+  },
+  {
+    "number": 745,
+    "first_name": "JUAN",
+    "last_name": "NUNEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3667
+  },
+  {
+    "number": 746,
+    "first_name": "BARRETT",
+    "last_name": "CRAIG",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3395
+  },
+  {
+    "number": 747,
+    "first_name": "JACINTO",
+    "last_name": "CRAIG",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1292
+  },
+  {
+    "number": 748,
+    "first_name": "TIM",
+    "last_name": "CRAIG",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1979
+  },
+  {
+    "number": 749,
+    "first_name": "NORINE",
+    "last_name": "CRAIG",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2721
+  },
+  {
+    "number": 750,
+    "first_name": "ROSALIE",
+    "last_name": "CRAIG",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1312
+  },
+  {
+    "number": 751,
+    "first_name": "NATHAN",
+    "last_name": "LEONARD",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2095
+  },
+  {
+    "number": 752,
+    "first_name": "GREGORIO",
+    "last_name": "LOWE",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2137
+  },
+  {
+    "number": 753,
+    "first_name": "ANIBAL",
+    "last_name": "LOWE",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1963
+  },
+  {
+    "number": 754,
+    "first_name": "TRISH",
+    "last_name": "RHODES",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3737
+  },
+  {
+    "number": 755,
+    "first_name": "LONNY",
+    "last_name": "RHODES",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2650
+  },
+  {
+    "number": 756,
+    "first_name": "CAMILA",
+    "last_name": "RHODES",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1557
+  },
+  {
+    "number": 757,
+    "first_name": "RAYE",
+    "last_name": "BYRD",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2407
+  },
+  {
+    "number": 758,
+    "first_name": "MONET",
+    "last_name": "BYRD",
+    "gender": "F",
+    "group": "masters",
+    "secs": 4175
+  },
+  {
+    "number": 759,
+    "first_name": "DALLAS",
+    "last_name": "BYRD",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2075
+  },
+  {
+    "number": 760,
+    "first_name": "CASSI",
+    "last_name": "BYRD",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1670
+  },
+  {
+    "number": 761,
+    "first_name": "MICHAEL",
+    "last_name": "GREGORY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3242
+  },
+  {
+    "number": 762,
+    "first_name": "EUSEBIA",
+    "last_name": "GREGORY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4140
+  },
+  {
+    "number": 763,
+    "first_name": "HARRIETTE",
+    "last_name": "GREGORY",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1405
+  },
+  {
+    "number": 764,
+    "first_name": "SHERWOOD",
+    "last_name": "GREGORY",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1570
+  },
+  {
+    "number": 765,
+    "first_name": "JACQULINE",
+    "last_name": "GREGORY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3330
+  },
+  {
+    "number": 766,
+    "first_name": "DEEANN",
+    "last_name": "SHELTON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1623
+  },
+  {
+    "number": 767,
+    "first_name": "SHERRIE",
+    "last_name": "SHELTON",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1672
+  },
+  {
+    "number": 768,
+    "first_name": "CONCHITA",
+    "last_name": "SHELTON",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3057
+  },
+  {
+    "number": 769,
+    "first_name": "TOI",
+    "last_name": "FRAZIER",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2112
+  },
+  {
+    "number": 770,
+    "first_name": "THERESE",
+    "last_name": "FRAZIER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2241
+  },
+  {
+    "number": 771,
+    "first_name": "BRANDY",
+    "last_name": "BECKER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3627
+  },
+  {
+    "number": 772,
+    "first_name": "ORLANDO",
+    "last_name": "BECKER",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4047
+  },
+  {
+    "number": 773,
+    "first_name": "CASSY",
+    "last_name": "BECKER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3479
+  },
+  {
+    "number": 774,
+    "first_name": "YULANDA",
+    "last_name": "BECKER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4200
+  },
+  {
+    "number": 775,
+    "first_name": "CARINA",
+    "last_name": "MALDONADO",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1396
+  },
+  {
+    "number": 776,
+    "first_name": "CLAYTON",
+    "last_name": "MALDONADO",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2093
+  },
+  {
+    "number": 777,
+    "first_name": "LOUIS",
+    "last_name": "MALDONADO",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1555
+  },
+  {
+    "number": 778,
+    "first_name": "ARNULFO",
+    "last_name": "MALDONADO",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1385
+  },
+  {
+    "number": 779,
+    "first_name": "HANS",
+    "last_name": "FLEMING",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3656
+  },
+  {
+    "number": 780,
+    "first_name": "GAYLENE",
+    "last_name": "FLEMING",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3157
+  },
+  {
+    "number": 781,
+    "first_name": "MILISSA",
+    "last_name": "FLEMING",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3924
+  },
+  {
+    "number": 782,
+    "first_name": "VERSIE",
+    "last_name": "FLEMING",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2371
+  },
+  {
+    "number": 783,
+    "first_name": "OFELIA",
+    "last_name": "FLEMING",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3052
+  },
+  {
+    "number": 784,
+    "first_name": "GUS",
+    "last_name": "VEGA",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1953
+  },
+  {
+    "number": 785,
+    "first_name": "KIMBERLIE",
+    "last_name": "SUTTON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3858
+  },
+  {
+    "number": 786,
+    "first_name": "BRODERICK",
+    "last_name": "COHEN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1431
+  },
+  {
+    "number": 787,
+    "first_name": "DONG",
+    "last_name": "JENNINGS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3672
+  },
+  {
+    "number": 788,
+    "first_name": "JOELLEN",
+    "last_name": "JENNINGS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 4049
+  },
+  {
+    "number": 789,
+    "first_name": "SANDRA",
+    "last_name": "JENNINGS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3093
+  },
+  {
+    "number": 790,
+    "first_name": "NENITA",
+    "last_name": "JENNINGS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3361
+  },
+  {
+    "number": 791,
+    "first_name": "AUGUSTUS",
+    "last_name": "PARKS",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3305
+  },
+  {
+    "number": 792,
+    "first_name": "ORLANDO",
+    "last_name": "MCDANIEL",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3719
+  },
+  {
+    "number": 793,
+    "first_name": "DOUG",
+    "last_name": "WATTS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2942
+  },
+  {
+    "number": 794,
+    "first_name": "MINH",
+    "last_name": "WATTS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2617
+  },
+  {
+    "number": 795,
+    "first_name": "DERICK",
+    "last_name": "WATTS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2527
+  },
+  {
+    "number": 796,
+    "first_name": "SHARA",
+    "last_name": "BARKER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2259
+  },
+  {
+    "number": 797,
+    "first_name": "KAMALA",
+    "last_name": "BARKER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1759
+  },
+  {
+    "number": 798,
+    "first_name": "ANTON",
+    "last_name": "NORRIS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2710
+  },
+  {
+    "number": 799,
+    "first_name": "VAN",
+    "last_name": "NORRIS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2921
+  },
+  {
+    "number": 800,
+    "first_name": "SHIRLEY",
+    "last_name": "VAUGHN",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2359
+  },
+  {
+    "number": 801,
+    "first_name": "CAREY",
+    "last_name": "VAZQUEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3154
+  },
+  {
+    "number": 802,
+    "first_name": "MARQUITTA",
+    "last_name": "VAZQUEZ",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1362
+  },
+  {
+    "number": 803,
+    "first_name": "SERGIO",
+    "last_name": "VAZQUEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3649
+  },
+  {
+    "number": 804,
+    "first_name": "DEWEY",
+    "last_name": "HOLT",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1523
+  },
+  {
+    "number": 805,
+    "first_name": "GARFIELD",
+    "last_name": "SCHWARTZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3120
+  },
+  {
+    "number": 806,
+    "first_name": "RANDALL",
+    "last_name": "SCHWARTZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 3001
+  },
+  {
+    "number": 807,
+    "first_name": "ANDRES",
+    "last_name": "SCHWARTZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2014
+  },
+  {
+    "number": 808,
+    "first_name": "CATHRYN",
+    "last_name": "SCHWARTZ",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1777
+  },
+  {
+    "number": 809,
+    "first_name": "CAMIE",
+    "last_name": "SCHWARTZ",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4027
+  },
+  {
+    "number": 810,
+    "first_name": "CRUZ",
+    "last_name": "STEELE",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1509
+  },
+  {
+    "number": 811,
+    "first_name": "OLENE",
+    "last_name": "STEELE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2546
+  },
+  {
+    "number": 812,
+    "first_name": "RORY",
+    "last_name": "STEELE",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1559
+  },
+  {
+    "number": 813,
+    "first_name": "RENE",
+    "last_name": "NEAL",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1710
+  },
+  {
+    "number": 814,
+    "first_name": "AARON",
+    "last_name": "NEAL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2530
+  },
+  {
+    "number": 815,
+    "first_name": "CEDRIC",
+    "last_name": "NEAL",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3904
+  },
+  {
+    "number": 816,
+    "first_name": "ISIDRO",
+    "last_name": "NEAL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2262
+  },
+  {
+    "number": 817,
+    "first_name": "SEBASTIAN",
+    "last_name": "DOMINGUEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1548
+  },
+  {
+    "number": 818,
+    "first_name": "SHERLYN",
+    "last_name": "DOMINGUEZ",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2075
+  },
+  {
+    "number": 819,
+    "first_name": "SHERLEY",
+    "last_name": "DOMINGUEZ",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4037
+  },
+  {
+    "number": 820,
+    "first_name": "GERARDO",
+    "last_name": "DOMINGUEZ",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2889
+  },
+  {
+    "number": 821,
+    "first_name": "EVELINA",
+    "last_name": "HORTON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 4157
+  },
+  {
+    "number": 822,
+    "first_name": "DEANE",
+    "last_name": "HORTON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2334
+  },
+  {
+    "number": 823,
+    "first_name": "JOSH",
+    "last_name": "HORTON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1914
+  },
+  {
+    "number": 824,
+    "first_name": "CASSY",
+    "last_name": "HORTON",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1630
+  },
+  {
+    "number": 825,
+    "first_name": "LESTER",
+    "last_name": "HORTON",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3561
+  },
+  {
+    "number": 826,
+    "first_name": "FREDRICK",
+    "last_name": "TERRY",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2662
+  },
+  {
+    "number": 827,
+    "first_name": "PAIGE",
+    "last_name": "WOLFE",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4042
+  },
+  {
+    "number": 828,
+    "first_name": "SHERILL",
+    "last_name": "HALE",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2940
+  },
+  {
+    "number": 829,
+    "first_name": "WILLIAM",
+    "last_name": "HALE",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3722
+  },
+  {
+    "number": 830,
+    "first_name": "LORIANN",
+    "last_name": "LYONS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3433
+  },
+  {
+    "number": 831,
+    "first_name": "DION",
+    "last_name": "LYONS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3424
+  },
+  {
+    "number": 832,
+    "first_name": "MAURICE",
+    "last_name": "GRAVES",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1710
+  },
+  {
+    "number": 833,
+    "first_name": "DANIKA",
+    "last_name": "GRAVES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2492
+  },
+  {
+    "number": 834,
+    "first_name": "RONA",
+    "last_name": "HAYNES",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1923
+  },
+  {
+    "number": 835,
+    "first_name": "TOSHIKO",
+    "last_name": "HAYNES",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2243
+  },
+  {
+    "number": 836,
+    "first_name": "LESLEY",
+    "last_name": "HAYNES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2757
+  },
+  {
+    "number": 837,
+    "first_name": "KASEY",
+    "last_name": "HAYNES",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 3134
+  },
+  {
+    "number": 838,
+    "first_name": "YASUKO",
+    "last_name": "PARK",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3574
+  },
+  {
+    "number": 839,
+    "first_name": "MARVA",
+    "last_name": "PARK",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3264
+  },
+  {
+    "number": 840,
+    "first_name": "YOULANDA",
+    "last_name": "PARK",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3211
+  },
+  {
+    "number": 841,
+    "first_name": "LASHAWN",
+    "last_name": "WARNER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2506
+  },
+  {
+    "number": 842,
+    "first_name": "DANILO",
+    "last_name": "WARNER",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2863
+  },
+  {
+    "number": 843,
+    "first_name": "HONG",
+    "last_name": "PADILLA",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1691
+  },
+  {
+    "number": 844,
+    "first_name": "MONTE",
+    "last_name": "PADILLA",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1655
+  },
+  {
+    "number": 845,
+    "first_name": "GARRY",
+    "last_name": "PADILLA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2425
+  },
+  {
+    "number": 846,
+    "first_name": "LILIA",
+    "last_name": "THORNTON",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2874
+  },
+  {
+    "number": 847,
+    "first_name": "SALOME",
+    "last_name": "MANN",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4166
+  },
+  {
+    "number": 848,
+    "first_name": "SHANDI",
+    "last_name": "MANN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1836
+  },
+  {
+    "number": 849,
+    "first_name": "JOEL",
+    "last_name": "MANN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1466
+  },
+  {
+    "number": 850,
+    "first_name": "ELLENA",
+    "last_name": "MANN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3218
+  },
+  {
+    "number": 851,
+    "first_name": "GROVER",
+    "last_name": "MANN",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1926
+  },
+  {
+    "number": 852,
+    "first_name": "GENARO",
+    "last_name": "ZIMMERMAN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3178
+  },
+  {
+    "number": 853,
+    "first_name": "JERROLD",
+    "last_name": "ZIMMERMAN",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1524
+  },
+  {
+    "number": 854,
+    "first_name": "ROMAN",
+    "last_name": "ERICKSON",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1474
+  },
+  {
+    "number": 855,
+    "first_name": "DEXTER",
+    "last_name": "ERICKSON",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3029
+  },
+  {
+    "number": 856,
+    "first_name": "PERRY",
+    "last_name": "FLETCHER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2961
+  },
+  {
+    "number": 857,
+    "first_name": "GIOVANNI",
+    "last_name": "FLETCHER",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2849
+  },
+  {
+    "number": 858,
+    "first_name": "GORDON",
+    "last_name": "FLETCHER",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3218
+  },
+  {
+    "number": 859,
+    "first_name": "NATISHA",
+    "last_name": "FLETCHER",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2909
+  },
+  {
+    "number": 860,
+    "first_name": "KESHIA",
+    "last_name": "MCKINNEY",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1696
+  },
+  {
+    "number": 861,
+    "first_name": "MARYA",
+    "last_name": "MCKINNEY",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4166
+  },
+  {
+    "number": 862,
+    "first_name": "CRISELDA",
+    "last_name": "MCKINNEY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3942
+  },
+  {
+    "number": 863,
+    "first_name": "DONALD",
+    "last_name": "PAGE",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3988
+  },
+  {
+    "number": 864,
+    "first_name": "SHERI",
+    "last_name": "PAGE",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2595
+  },
+  {
+    "number": 865,
+    "first_name": "SCOTTY",
+    "last_name": "PAGE",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2274
+  },
+  {
+    "number": 866,
+    "first_name": "ROSEMARIE",
+    "last_name": "PAGE",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1451
+  },
+  {
+    "number": 867,
+    "first_name": "JIMMY",
+    "last_name": "PAGE",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3086
+  },
+  {
+    "number": 868,
+    "first_name": "EVELINA",
+    "last_name": "DAWSON",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 4082
+  },
+  {
+    "number": 869,
+    "first_name": "BRYCE",
+    "last_name": "DAWSON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4024
+  },
+  {
+    "number": 870,
+    "first_name": "FLOSSIE",
+    "last_name": "DAWSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4028
+  },
+  {
+    "number": 871,
+    "first_name": "CHANCE",
+    "last_name": "DAWSON",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2357
+  },
+  {
+    "number": 872,
+    "first_name": "GASTON",
+    "last_name": "JOSEPH",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3841
+  },
+  {
+    "number": 873,
+    "first_name": "RICO",
+    "last_name": "REEVES",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2294
+  },
+  {
+    "number": 874,
+    "first_name": "MYRNA",
+    "last_name": "REEVES",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3629
+  },
+  {
+    "number": 875,
+    "first_name": "WARD",
+    "last_name": "REEVES",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 1716
+  },
+  {
+    "number": 876,
+    "first_name": "SAMARA",
+    "last_name": "REEVES",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3805
+  },
+  {
+    "number": 877,
+    "first_name": "KYLE",
+    "last_name": "REEVES",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3392
+  },
+  {
+    "number": 878,
+    "first_name": "RUSS",
+    "last_name": "KLEIN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 4006
+  },
+  {
+    "number": 879,
+    "first_name": "CLINT",
+    "last_name": "KLEIN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3866
+  },
+  {
+    "number": 880,
+    "first_name": "DANNY",
+    "last_name": "KLEIN",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2292
+  },
+  {
+    "number": 881,
+    "first_name": "LATRICE",
+    "last_name": "KLEIN",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 4145
+  },
+  {
+    "number": 882,
+    "first_name": "KEVIN",
+    "last_name": "KLEIN",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 4080
+  },
+  {
+    "number": 883,
+    "first_name": "CORNELL",
+    "last_name": "ESPINOZA",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 2260
+  },
+  {
+    "number": 884,
+    "first_name": "TISHA",
+    "last_name": "BALDWIN",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2966
+  },
+  {
+    "number": 885,
+    "first_name": "HERMILA",
+    "last_name": "BALDWIN",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2149
+  },
+  {
+    "number": 886,
+    "first_name": "ELISE",
+    "last_name": "BALDWIN",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2177
+  },
+  {
+    "number": 887,
+    "first_name": "JULE",
+    "last_name": "BALDWIN",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3962
+  },
+  {
+    "number": 888,
+    "first_name": "WELDON",
+    "last_name": "BALDWIN",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3782
+  },
+  {
+    "number": 889,
+    "first_name": "ARMANDO",
+    "last_name": "LOVE",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2459
+  },
+  {
+    "number": 890,
+    "first_name": "EILENE",
+    "last_name": "LOVE",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 2841
+  },
+  {
+    "number": 891,
+    "first_name": "KARLYN",
+    "last_name": "LOVE",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1651
+  },
+  {
+    "number": 892,
+    "first_name": "ELIZA",
+    "last_name": "ROBBINS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4155
+  },
+  {
+    "number": 893,
+    "first_name": "ENRIQUE",
+    "last_name": "ROBBINS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3603
+  },
+  {
+    "number": 894,
+    "first_name": "CYNTHIA",
+    "last_name": "ROBBINS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2757
+  },
+  {
+    "number": 895,
+    "first_name": "GREGORY",
+    "last_name": "ROBBINS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1775
+  },
+  {
+    "number": 896,
+    "first_name": "TONY",
+    "last_name": "ROBBINS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3207
+  },
+  {
+    "number": 897,
+    "first_name": "ROBERT",
+    "last_name": "HIGGINS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1798
+  },
+  {
+    "number": 898,
+    "first_name": "NADA",
+    "last_name": "HIGGINS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3410
+  },
+  {
+    "number": 899,
+    "first_name": "SIERRA",
+    "last_name": "BALL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 1516
+  },
+  {
+    "number": 900,
+    "first_name": "EWA",
+    "last_name": "BALL",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3334
+  },
+  {
+    "number": 901,
+    "first_name": "HAL",
+    "last_name": "BALL",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3842
+  },
+  {
+    "number": 902,
+    "first_name": "DARYL",
+    "last_name": "BALL",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4074
+  },
+  {
+    "number": 903,
+    "first_name": "CLINTON",
+    "last_name": "CORTEZ",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3552
+  },
+  {
+    "number": 904,
+    "first_name": "DARNELL",
+    "last_name": "CORTEZ",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2795
+  },
+  {
+    "number": 905,
+    "first_name": "SHELBY",
+    "last_name": "LE",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3960
+  },
+  {
+    "number": 906,
+    "first_name": "JEAN",
+    "last_name": "LE",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1538
+  },
+  {
+    "number": 907,
+    "first_name": "TUAN",
+    "last_name": "GRIFFITH",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2817
+  },
+  {
+    "number": 908,
+    "first_name": "MICHELINA",
+    "last_name": "BOWEN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 2409
+  },
+  {
+    "number": 909,
+    "first_name": "TEMPIE",
+    "last_name": "BOWEN",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3567
+  },
+  {
+    "number": 910,
+    "first_name": "MILDA",
+    "last_name": "BOWEN",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 3646
+  },
+  {
+    "number": 911,
+    "first_name": "CURTIS",
+    "last_name": "SHARP",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2125
+  },
+  {
+    "number": 912,
+    "first_name": "ROLF",
+    "last_name": "CUMMINGS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3682
+  },
+  {
+    "number": 913,
+    "first_name": "LURA",
+    "last_name": "CUMMINGS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1703
+  },
+  {
+    "number": 914,
+    "first_name": "CHUCK",
+    "last_name": "CUMMINGS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2966
+  },
+  {
+    "number": 915,
+    "first_name": "ETTIE",
+    "last_name": "CUMMINGS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1908
+  },
+  {
+    "number": 916,
+    "first_name": "DARRELL",
+    "last_name": "CUMMINGS",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2396
+  },
+  {
+    "number": 917,
+    "first_name": "LESLI",
+    "last_name": "RAMSEY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3461
+  },
+  {
+    "number": 918,
+    "first_name": "SHILOH",
+    "last_name": "HARDY",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 1322
+  },
+  {
+    "number": 919,
+    "first_name": "GHISLAINE",
+    "last_name": "HARDY",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 2655
+  },
+  {
+    "number": 920,
+    "first_name": "MELODEE",
+    "last_name": "SWANSON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 3374
+  },
+  {
+    "number": 921,
+    "first_name": "ROSARIA",
+    "last_name": "SWANSON",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2400
+  },
+  {
+    "number": 922,
+    "first_name": "FLAVIA",
+    "last_name": "SWANSON",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3542
+  },
+  {
+    "number": 923,
+    "first_name": "CURT",
+    "last_name": "BARBER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1856
+  },
+  {
+    "number": 924,
+    "first_name": "YOSHIKO",
+    "last_name": "BARBER",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 4148
+  },
+  {
+    "number": 925,
+    "first_name": "GWENDA",
+    "last_name": "BARBER",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3847
+  },
+  {
+    "number": 926,
+    "first_name": "PERRY",
+    "last_name": "ACOSTA",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1954
+  },
+  {
+    "number": 927,
+    "first_name": "GINO",
+    "last_name": "ACOSTA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3692
+  },
+  {
+    "number": 928,
+    "first_name": "FILIBERTO",
+    "last_name": "ACOSTA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2408
+  },
+  {
+    "number": 929,
+    "first_name": "RANDAL",
+    "last_name": "LUNA",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3649
+  },
+  {
+    "number": 930,
+    "first_name": "WALTON",
+    "last_name": "LUNA",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3910
+  },
+  {
+    "number": 931,
+    "first_name": "BEE",
+    "last_name": "LUNA",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1346
+  },
+  {
+    "number": 932,
+    "first_name": "RUTHIE",
+    "last_name": "LUNA",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3810
+  },
+  {
+    "number": 933,
+    "first_name": "ILUMINADA",
+    "last_name": "CHANDLER",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1343
+  },
+  {
+    "number": 934,
+    "first_name": "ALEXIS",
+    "last_name": "CHANDLER",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 3472
+  },
+  {
+    "number": 935,
+    "first_name": "LAWRENCE",
+    "last_name": "BLAIR",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 1456
+  },
+  {
+    "number": 936,
+    "first_name": "ROBT",
+    "last_name": "BLAIR",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3268
+  },
+  {
+    "number": 937,
+    "first_name": "AVERY",
+    "last_name": "BLAIR",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3080
+  },
+  {
+    "number": 938,
+    "first_name": "PALMA",
+    "last_name": "BLAIR",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 3147
+  },
+  {
+    "number": 939,
+    "first_name": "RON",
+    "last_name": "BLAIR",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2165
+  },
+  {
+    "number": 940,
+    "first_name": "PETE",
+    "last_name": "DANIEL",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1560
+  },
+  {
+    "number": 941,
+    "first_name": "CARTER",
+    "last_name": "DANIEL",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2785
+  },
+  {
+    "number": 942,
+    "first_name": "LUDIE",
+    "last_name": "DANIEL",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 4155
+  },
+  {
+    "number": 943,
+    "first_name": "BILL",
+    "last_name": "DANIEL",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2200
+  },
+  {
+    "number": 944,
+    "first_name": "LAMONT",
+    "last_name": "DANIEL",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 3496
+  },
+  {
+    "number": 945,
+    "first_name": "JOSHUA",
+    "last_name": "SIMON",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 1427
+  },
+  {
+    "number": 946,
+    "first_name": "REGINALD",
+    "last_name": "SIMON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3415
+  },
+  {
+    "number": 947,
+    "first_name": "LANG",
+    "last_name": "SIMON",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3253
+  },
+  {
+    "number": 948,
+    "first_name": "TRISTA",
+    "last_name": "DENNIS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1293
+  },
+  {
+    "number": 949,
+    "first_name": "BRUNA",
+    "last_name": "DENNIS",
+    "gender": "F",
+    "group": "40 to 49",
+    "secs": 4244
+  },
+  {
+    "number": 950,
+    "first_name": "ELDA",
+    "last_name": "DENNIS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2912
+  },
+  {
+    "number": 951,
+    "first_name": "WALKER",
+    "last_name": "DENNIS",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 1540
+  },
+  {
+    "number": 952,
+    "first_name": "RAMONITA",
+    "last_name": "DENNIS",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3576
+  },
+  {
+    "number": 953,
+    "first_name": "JEANETTE",
+    "last_name": "OCONNOR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1900
+  },
+  {
+    "number": 954,
+    "first_name": "ALYSA",
+    "last_name": "OCONNOR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2562
+  },
+  {
+    "number": 955,
+    "first_name": "DONNY",
+    "last_name": "OCONNOR",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3475
+  },
+  {
+    "number": 956,
+    "first_name": "LILLIAM",
+    "last_name": "OCONNOR",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 1732
+  },
+  {
+    "number": 957,
+    "first_name": "LAVENIA",
+    "last_name": "OCONNOR",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 2399
+  },
+  {
+    "number": 958,
+    "first_name": "WENDELL",
+    "last_name": "GROSS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 2584
+  },
+  {
+    "number": 959,
+    "first_name": "RUSSEL",
+    "last_name": "GROSS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1845
+  },
+  {
+    "number": 960,
+    "first_name": "ERNEST",
+    "last_name": "GROSS",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 2488
+  },
+  {
+    "number": 961,
+    "first_name": "BRANDON",
+    "last_name": "GROSS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2226
+  },
+  {
+    "number": 962,
+    "first_name": "DAISY",
+    "last_name": "GROSS",
+    "gender": "F",
+    "group": "15 to 19",
+    "secs": 1655
+  },
+  {
+    "number": 963,
+    "first_name": "JERRELL",
+    "last_name": "NAVARRO",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 2205
+  },
+  {
+    "number": 964,
+    "first_name": "ARDITH",
+    "last_name": "NAVARRO",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 3860
+  },
+  {
+    "number": 965,
+    "first_name": "BUDDY",
+    "last_name": "NAVARRO",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2110
+  },
+  {
+    "number": 966,
+    "first_name": "CHANG",
+    "last_name": "NAVARRO",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 2108
+  },
+  {
+    "number": 967,
+    "first_name": "JOSEFINA",
+    "last_name": "MOSS",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3267
+  },
+  {
+    "number": 968,
+    "first_name": "CARLA",
+    "last_name": "MOSS",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3547
+  },
+  {
+    "number": 969,
+    "first_name": "JOHANA",
+    "last_name": "FITZGERALD",
+    "gender": "F",
+    "group": "masters",
+    "secs": 3767
+  },
+  {
+    "number": 970,
+    "first_name": "LONNIE",
+    "last_name": "FITZGERALD",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2258
+  },
+  {
+    "number": 971,
+    "first_name": "LARRY",
+    "last_name": "ROJAS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 1681
+  },
+  {
+    "number": 972,
+    "first_name": "NITA",
+    "last_name": "ROJAS",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2406
+  },
+  {
+    "number": 973,
+    "first_name": "BUDDY",
+    "last_name": "RODGERS",
+    "gender": "M",
+    "group": "14 and under",
+    "secs": 3861
+  },
+  {
+    "number": 974,
+    "first_name": "LINDSY",
+    "last_name": "RODGERS",
+    "gender": "F",
+    "group": "masters",
+    "secs": 1469
+  },
+  {
+    "number": 975,
+    "first_name": "MARY",
+    "last_name": "RODGERS",
+    "gender": "M",
+    "group": "30 to 39",
+    "secs": 3025
+  },
+  {
+    "number": 976,
+    "first_name": "IRA",
+    "last_name": "RODGERS",
+    "gender": "M",
+    "group": "masters",
+    "secs": 1452
+  },
+  {
+    "number": 977,
+    "first_name": "QUINCY",
+    "last_name": "SINGH",
+    "gender": "M",
+    "group": "masters",
+    "secs": 4136
+  },
+  {
+    "number": 978,
+    "first_name": "DEWEY",
+    "last_name": "SINGH",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 2273
+  },
+  {
+    "number": 979,
+    "first_name": "CHIEKO",
+    "last_name": "SINGH",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1971
+  },
+  {
+    "number": 980,
+    "first_name": "VALENCIA",
+    "last_name": "YANG",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3284
+  },
+  {
+    "number": 981,
+    "first_name": "KERMIT",
+    "last_name": "YANG",
+    "gender": "M",
+    "group": "50 to 59",
+    "secs": 1702
+  },
+  {
+    "number": 982,
+    "first_name": "AL",
+    "last_name": "YANG",
+    "gender": "M",
+    "group": "40 to 49",
+    "secs": 1923
+  },
+  {
+    "number": 983,
+    "first_name": "JAQUELYN",
+    "last_name": "YANG",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 1740
+  },
+  {
+    "number": 984,
+    "first_name": "DENNISE",
+    "last_name": "FIGUEROA",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 1975
+  },
+  {
+    "number": 985,
+    "first_name": "FUMIKO",
+    "last_name": "FIGUEROA",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3016
+  },
+  {
+    "number": 986,
+    "first_name": "TEODORO",
+    "last_name": "FIGUEROA",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 2962
+  },
+  {
+    "number": 987,
+    "first_name": "CLAUDIA",
+    "last_name": "FIGUEROA",
+    "gender": "F",
+    "group": "30 to 39",
+    "secs": 2806
+  },
+  {
+    "number": 988,
+    "first_name": "JOHNIE",
+    "last_name": "HARMON",
+    "gender": "M",
+    "group": "15 to 19",
+    "secs": 3095
+  },
+  {
+    "number": 989,
+    "first_name": "ELTON",
+    "last_name": "NEWTON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 2526
+  },
+  {
+    "number": 990,
+    "first_name": "DEANGELO",
+    "last_name": "NEWTON",
+    "gender": "M",
+    "group": "masters",
+    "secs": 3943
+  },
+  {
+    "number": 991,
+    "first_name": "MIRIAM",
+    "last_name": "NEWTON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 3589
+  },
+  {
+    "number": 992,
+    "first_name": "AHMAD",
+    "last_name": "NEWTON",
+    "gender": "M",
+    "group": "60 to 69",
+    "secs": 4089
+  },
+  {
+    "number": 993,
+    "first_name": "CARA",
+    "last_name": "NEWTON",
+    "gender": "F",
+    "group": "14 and under",
+    "secs": 2976
+  },
+  {
+    "number": 994,
+    "first_name": "HELGA",
+    "last_name": "PAUL",
+    "gender": "F",
+    "group": "60 to 69",
+    "secs": 3266
+  },
+  {
+    "number": 995,
+    "first_name": "TYSON",
+    "last_name": "PAUL",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1307
+  },
+  {
+    "number": 996,
+    "first_name": "GRETCHEN",
+    "last_name": "PAUL",
+    "gender": "F",
+    "group": "masters",
+    "secs": 2512
+  },
+  {
+    "number": 997,
+    "first_name": "LEOPOLDO",
+    "last_name": "PAUL",
+    "gender": "M",
+    "group": "20 to 20",
+    "secs": 1852
+  },
+  {
+    "number": 998,
+    "first_name": "MARIELA",
+    "last_name": "PAUL",
+    "gender": "F",
+    "group": "20 to 20",
+    "secs": 3412
+  },
+  {
+    "number": 999,
+    "first_name": "RUTH",
+    "last_name": "GARNER",
+    "gender": "F",
+    "group": "50 to 59",
+    "secs": 2237
+  }
+]
