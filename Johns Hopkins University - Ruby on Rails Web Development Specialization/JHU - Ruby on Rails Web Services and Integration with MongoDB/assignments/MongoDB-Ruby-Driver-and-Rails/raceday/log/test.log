@@ -1,0 +1,603 @@
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+MONGODB | EVENT: #<TopologyOpening topology=Unknown[]>
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[] new=Unknown[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Unknown'.
+MONGODB | EVENT: #<ServerOpening address=localhost:27017 topology=Unknown[localhost:27017]>
+MONGODB | Server localhost:27017 initializing.
+MONGODB | EVENT: #<ServerDescriptionChanged address=localhost:27017 topology=Single[localhost:27017] prev=#<Mongo::Server:Description:0x66983904 config={} average_round_trip_time=> new=#<Mongo::Server:Description:0x66978192 config={"ismaster"=>true, "maxBsonObjectSize"=>16777216, "maxMessageSizeBytes"=>48000000, "maxWriteBatchSize"=>100000, "localTime"=>2019-08-06 14:15:36 UTC, "logicalSessionTimeoutMinutes"=>30, "minWireVersion"=>0, "maxWireVersion"=>7, "readOnly"=>false, "ok"=>1.0} average_round_trip_time=0.031418>>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | EVENT: #<TopologyChanged prev=Unknown[localhost:27017] new=Single[localhost:27017]>
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+  [1m[35m (0.0ms)[0m  rollback transaction
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:22:27 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (251.8ms)
+Completed 500 Internal Server Error in 951ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:29:52 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (233.6ms)
+Completed 500 Internal Server Error in 849ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:32:36 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (321.8ms)
+Completed 500 Internal Server Error in 1301ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:33:56 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (469.7ms)
+Completed 200 OK in 1522ms (Views: 1459.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:33:58 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (505.7ms)
+Completed 200 OK in 510ms (Views: 509.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49ba042ae6fd156c79492f" for 127.0.0.1 at 2019-08-06 20:33:59 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49ba042ae6fd156c79492f"}
+  Rendered racers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 205ms (Views: 188.5ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:33:59 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (525.1ms)
+Completed 200 OK in 529ms (Views: 528.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49ba042ae6fd156c79492f/edit" for 127.0.0.1 at 2019-08-06 20:34:00 +0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"5d49ba042ae6fd156c79492f"}
+  Rendered racers/_form.html.erb (255.8ms)
+  Rendered racers/edit.html.erb within layouts/application (464.7ms)
+Completed 200 OK in 681ms (Views: 662.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:34:01 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (525.7ms)
+Completed 200 OK in 531ms (Views: 529.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2019-08-06 20:34:02 +0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (6.0ms)
+  Rendered racers/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 198ms (Views: 197.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:34:02 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (473.7ms)
+Completed 200 OK in 479ms (Views: 478.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2019-08-06 20:34:03 +0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (9.0ms)
+  Rendered racers/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+Started POST "/racers" for 127.0.0.1 at 2019-08-06 20:34:03 +0300
+Processing by RacersController#create as HTML
+  Parameters: {"utf8"=>"✓", "racer"=>{"number"=>"1", "first_name"=>"Carly", "last_name"=>"Fiorino", "gender"=>"F", "group"=>"60 to 69", "secs"=>"2833"}, "commit"=>"Create Racer"}
+Redirected to http://www.example.com/racers/5d49ba0b2ae6fd156c794d12
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+Started GET "/racers/5d49ba0b2ae6fd156c794d12" for 127.0.0.1 at 2019-08-06 20:34:56 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49ba0b2ae6fd156c794d12"}
+  Rendered racers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:34:57 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (439.7ms)
+Completed 200 OK in 445ms (Views: 443.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49ba042ae6fd156c79492b/edit" for 127.0.0.1 at 2019-08-06 20:34:57 +0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"5d49ba042ae6fd156c79492b"}
+  Rendered racers/_form.html.erb (5.0ms)
+  Rendered racers/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 28ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+Started PATCH "/racers/5d49ba042ae6fd156c79492b" for 127.0.0.1 at 2019-08-06 20:34:57 +0300
+Processing by RacersController#update as HTML
+  Parameters: {"utf8"=>"✓", "racer"=>{"number"=>"1", "first_name"=>"Joe", "last_name"=>"Pesci", "gender"=>"M", "group"=>"masters", "secs"=>"3994"}, "commit"=>"Update Racer", "id"=>"5d49ba042ae6fd156c79492b"}
+Redirected to http://www.example.com/racers/5d49ba042ae6fd156c79492b
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms)
+Started GET "/racers/5d49ba042ae6fd156c79492b" for 127.0.0.1 at 2019-08-06 20:34:57 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49ba042ae6fd156c79492b"}
+  Rendered racers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 20:34:57 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (537.7ms)
+Completed 200 OK in 547ms (Views: 545.9ms | ActiveRecord: 0.0ms)
+Started DELETE "/racers/5d49ba042ae6fd156c79492a" for 127.0.0.1 at 2019-08-06 20:34:58 +0300
+Processing by RacersController#destroy as HTML
+  Parameters: {"id"=>"5d49ba042ae6fd156c79492a"}
+Redirected to http://www.example.com/racers
+Completed 302 Found in 35ms (ActiveRecord: 0.0ms)
+Started GET "/racers" for 127.0.0.1 at 2019-08-06 20:34:58 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (541.7ms)
+Completed 200 OK in 547ms (Views: 545.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=1&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:23 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"1", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 1041ms (Views: 957.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=2&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"2", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 44ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=3&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"3", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 40ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=4&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"4", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 43ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=5&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"5", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=6&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"6", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (38.0ms)
+Completed 200 OK in 64ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=7&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"7", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 42ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=8&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"8", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 45ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=9&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"9", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 51ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=10&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"10", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 57ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=11&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"11", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 59ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=12&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"12", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 53ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=13&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"13", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 43ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=14&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"14", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 46ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=15&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:24 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"15", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 43ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=16&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"16", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 46ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=17&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"17", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 51ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=18&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"18", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 42ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=19&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"19", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 45ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=20&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"20", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 42ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=21&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"21", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 53ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=22&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"22", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 40ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=23&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"23", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=24&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"24", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 43ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=25&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"25", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 39ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=26&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"26", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 42ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=27&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"27", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=28&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"28", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 40ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=29&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"29", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 33ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=30&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"30", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 43ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=31&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"31", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 43ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=32&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:25 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"32", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=33&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"33", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 42ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=34&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"34", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=35&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"35", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=36&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"36", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=37&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"37", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=38&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"38", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=39&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"39", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=40&per_page=25" for 127.0.0.1 at 2019-08-06 21:20:26 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"40", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 33ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=1&per_page=5" for 127.0.0.1 at 2019-08-06 21:21:41 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"1", "per_page"=>"5"}
+  Rendered racers/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 1150ms (Views: 1066.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=1&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"1", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 59ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=2&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"2", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 38ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=3&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"3", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 53ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=4&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"4", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 49ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=5&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"5", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 52ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=6&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"6", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 50ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=7&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"7", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 47ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=8&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"8", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 42ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=9&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"9", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 63ms (Views: 32.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=10&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"10", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 85ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=11&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"11", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 55ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=12&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"12", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 46ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=13&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:43 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"13", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 45ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=14&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"14", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=15&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"15", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 45ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=16&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"16", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=17&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"17", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 34ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=18&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"18", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 45ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=19&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"19", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 45ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=20&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"20", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 49ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=21&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"21", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 53ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=22&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"22", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 66ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=23&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"23", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 47ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=24&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"24", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 60ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=25&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"25", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 68ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=26&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"26", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 73ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=27&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:44 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"27", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 86ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=28&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"28", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 47ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=29&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"29", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 56ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=30&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"30", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 52ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=31&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"31", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 48ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=32&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"32", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 41ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=33&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"33", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 43ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=34&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"34", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 46ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=35&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"35", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 40ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=36&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"36", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 44ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=37&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"37", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 41ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=38&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"38", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 44ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=39&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"39", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 54ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers?page=40&per_page=25" for 127.0.0.1 at 2019-08-06 21:21:45 +0300
+Processing by RacersController#index as HTML
+  Parameters: {"page"=>"40", "per_page"=>"25"}
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 46ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:21:46 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 45ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:21:46 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 60ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49c53a2ae6fd3374b57b1f" for 127.0.0.1 at 2019-08-06 21:21:46 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49c53a2ae6fd3374b57b1f"}
+  Rendered racers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 203ms (Views: 185.9ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:21:46 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 48ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49c53a2ae6fd3374b57b1f/edit" for 127.0.0.1 at 2019-08-06 21:21:46 +0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"5d49c53a2ae6fd3374b57b1f"}
+  Rendered racers/_form.html.erb (212.9ms)
+  Rendered racers/edit.html.erb within layouts/application (404.8ms)
+Completed 200 OK in 587ms (Views: 570.4ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:21:47 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2019-08-06 21:21:47 +0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (4.0ms)
+  Rendered racers/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 202ms (Views: 200.7ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:21:47 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+Started GET "/racers/new" for 127.0.0.1 at 2019-08-06 21:21:47 +0300
+Processing by RacersController#new as HTML
+  Rendered racers/_form.html.erb (4.0ms)
+  Rendered racers/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+Started POST "/racers" for 127.0.0.1 at 2019-08-06 21:21:47 +0300
+Processing by RacersController#create as HTML
+  Parameters: {"utf8"=>"✓", "racer"=>{"number"=>"1", "first_name"=>"Carly", "last_name"=>"Fiorino", "gender"=>"F", "group"=>"60 to 69", "secs"=>"2833"}, "commit"=>"Create Racer"}
+Redirected to http://www.example.com/racers/5d49c53b2ae6fd3374b57f02
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+Started GET "/racers/5d49c53b2ae6fd3374b57f02" for 127.0.0.1 at 2019-08-06 21:22:21 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49c53b2ae6fd3374b57f02"}
+  Rendered racers/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 79ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+Started GET "/racers/5d49c53a2ae6fd3374b57b1b/edit" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#edit as HTML
+  Parameters: {"id"=>"5d49c53a2ae6fd3374b57b1b"}
+  Rendered racers/_form.html.erb (5.0ms)
+  Rendered racers/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+Started PATCH "/racers/5d49c53a2ae6fd3374b57b1b" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#update as HTML
+  Parameters: {"utf8"=>"✓", "racer"=>{"number"=>"1", "first_name"=>"Joe", "last_name"=>"Pesci", "gender"=>"M", "group"=>"masters", "secs"=>"3994"}, "commit"=>"Update Racer", "id"=>"5d49c53a2ae6fd3374b57b1b"}
+Redirected to http://www.example.com/racers/5d49c53a2ae6fd3374b57b1b
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms)
+Started GET "/racers/5d49c53a2ae6fd3374b57b1b" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#show as HTML
+  Parameters: {"id"=>"5d49c53a2ae6fd3374b57b1b"}
+  Rendered racers/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 20ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 49ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+Started DELETE "/racers/5d49c53a2ae6fd3374b57b1a" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#destroy as HTML
+  Parameters: {"id"=>"5d49c53a2ae6fd3374b57b1a"}
+Redirected to http://www.example.com/racers
+Completed 302 Found in 60ms (ActiveRecord: 0.0ms)
+Started GET "/racers" for 127.0.0.1 at 2019-08-06 21:22:22 +0300
+Processing by RacersController#index as HTML
+  Rendered racers/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 38ms (Views: 11.4ms | ActiveRecord: 0.0ms)
