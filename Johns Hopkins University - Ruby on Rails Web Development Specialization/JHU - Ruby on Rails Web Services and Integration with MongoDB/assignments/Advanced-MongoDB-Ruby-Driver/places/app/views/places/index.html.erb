@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Places</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Formatted address</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @places.each do |place| %>
+    <% photo=place.photos.sample %>
+      <tr>
+        <td><%= place.formatted_address %></td>
+        <% if photo %>
+          <td><img height="50px" width="65px" src= <%= photos_show_path("#{photo.id}")%>/></td>
+        <% end %>
+        <td><%= link_to 'Show', place %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

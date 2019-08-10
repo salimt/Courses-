@@ -1,0 +1,1879 @@
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (12.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2019-08-10 13:36:31 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (26.0ms)
+Completed 200 OK in 383ms (Views: 319.8ms | ActiveRecord: 0.0ms)
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+MONGODB | No connection could be made because the target machine actively refused it. - connect(2) for 127.0.0.1:27017
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000c0')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000c4')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000c6')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000c8')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000d7')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001005s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"fs.files", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000da')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.011991s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc000098')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc000099')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009a')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009b')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000996s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009c')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009d')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009e')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000997s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc00009f')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a0')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a1')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a2')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a3')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a4')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a5')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a6')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a7')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a8')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000a9')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000aa')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000ab')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000ac')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000ad')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000ae')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000af')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b0')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b1')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b2')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b3')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b4')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b5')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b6')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b7')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001003s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b8')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000b9')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000ba')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000bb')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000bc')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000bd')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.000997s
+MONGODB | localhost:27017 | places_development.delete | STARTED | {"delete"=>"places", "deletes"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef90d2ae6fd33dc0000be')}, "limit"=>1}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.delete | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"places", "indexes"=>[{:key=>{:"geometry.geolocation"=>"2dsphere"}, :name=>"geometry.geolocation_2dsphere"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"places", "documents"=>[{"address_components"=>[{"long_name"=>"77713-77735", "short_name"=>"77713-77735", "types"=>["street_number"]}, {"long_name"=>"Dillon Road", "short_name"=>"Dillon Rd", "types"=>["route"]}, {"long_name"=>"Desert Hot Sp...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.007992s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"fs.chunks", "indexes"=>[{:key=>{:files_id=>1, :n=>1}, :unique=>true, :name=>"files_id_1_n_1"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.000996s
+MONGODB | localhost:27017 | places_development.createIndexes | STARTED | {"createIndexes"=>"fs.files", "indexes"=>[{:key=>{:filename=>1, :uploadDate=>1}, :name=>"filename_1_uploadDate_1"}]}
+MONGODB | localhost:27017 | places_development.createIndexes | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x3551400 @document={"_id"=>BSON::ObjectId('5d4ef9742ae6fd3734000027'), "data"=><BSON::Binary:0x27953760 type=generic data=0xffd8ffe000104a46...>, "files_id"=>BSON::ObjectId('5d4ef9742ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.002999s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x27956736 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9742ae6fd3734000028 md5=871666ee99b90e51c69af02f77f021aa>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x471be50 @document={"_id"=>BSON::ObjectId('5d4ef9742ae6fd373400002b'), "data"=><BSON::Binary:0x37281624 type=generic data=0xffd8ffe000104a46...>, "files_id"=>BSON::ObjectId('5d4ef9742ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.001996s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x37317180 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9742ae6fd373400002c md5=41fbaf0bd1db0dc5dcec962951b67f07>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x48d9968 @document={"_id"=>BSON::ObjectId('5d4ef9742ae6fd373400002d'), "data"=><BSON::Binary:0x38194728 type=generic data=0xffd8ffe000104a46...>, "files_id"=>BSON::ObjectId('5d4ef9742ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.001639s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x38248860 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9742ae6fd373400002e md5=165fe2f0184509f99f97bae8ff930a09>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x52f28b8 @document={"_id"=>BSON::ObjectId('5d4ef9742ae6fd373400002f'), "data"=><BSON::Binary:0x43488384 type=generic data=0xffd8ffe1fa454578...>, "files_id"=>BSON::ObjectId('5d4ef9742ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.02399s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x43490796 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9742ae6fd3734000030 md5=2e801d538abc311983d6a7b0a166b6d4>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x55bbf28 @document={"_id"=>BSON::ObjectId('5d4ef9752ae6fd373400003e'), "data"=><BSON::Binary:0x44949444 type=generic data=0xffd8ffe12ffe4578...>, "files_id"=>BSON::ObjectId('5d4ef9752ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.008993s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x44000028 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9752ae6fd373400003f md5=414e303a9fa5c84f4dabada988c148e1>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "projection"=>{:_id=>1}, "limit"=>1}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.chunks", "documents"=>[#<Mongo::Grid::File::Chunk:0x5ee5988 @document={"_id"=>BSON::ObjectId('5d4ef9752ae6fd3734000041'), "data"=><BSON::Binary:0x49753320 type=generic data=0xffd8ffe12c6f4578...>, "files_id"=>BSON::ObjectId('5d4ef9752ae...
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.014991s
+MONGODB | localhost:27017 | places_development.insert | STARTED | {"insert"=>"fs.files", "documents"=>[#<Mongo::Grid::File::Info:0x49754892 chunk_size=261120 filename= content_type=image/jpeg id=5d4ef9752ae6fd3734000042 md5=3bb9b8a6963159219958397ed5a4f3a1>], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | places_development.insert | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-116.30161960177952, 33.87546081542969]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003996s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9742ae6fd3734000028')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[-116.30161960177952, 33.87546081542969]}, :place=>BSON::ObjectId('5d...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[11.002793200000001, 47.7867336]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002998s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9742ae6fd373400002c')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[11.002793200000001, 47.7867336]}, :place=>BSON::ObjectId('5d4ef9742a...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[141.11956166666667, 41.451645]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001994s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9742ae6fd373400002e')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[141.11956166666667, 41.451645]}, :place=>BSON::ObjectId('5d4ef9742ae...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-1.86062, 53.81734]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002956s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9742ae6fd3734000030')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[-1.86062, 53.81734]}, :place=>BSON::ObjectId('5d4ef9742ae6fd37340000...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-75.56733333333334, 39.87416666666667]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9752ae6fd373400003f')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[-75.56733333333334, 39.87416666666667]}, :place=>BSON::ObjectId('5d4...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{"geometry.geolocation"=>{:$near=>{:$geometry=>{:type=>"Point", :coordinates=>[-85.79233333333335, 10.432833333333333]}, :$maxDistance=>1609.34}}}, "projection"=>{:_id=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.update | STARTED | {"update"=>"fs.files", "updates"=>[{"q"=>{:_id=>BSON::ObjectId('5d4ef9752ae6fd3734000042')}, "u"=>{:content_type=>"image/jpeg", :metadata=>{:location=>{:type=>"Point", :coordinates=>[-85.79233333333335, 10.432833333333333]}, :place=>BSON::ObjectId('5d...
+MONGODB | localhost:27017 | places_development.update | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.010993s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001028s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+
+
+Started GET "/" for ::1 at 2019-08-10 20:07:55 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (43.0ms)
+Completed 200 OK in 524ms (Views: 464.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:08:03 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 171ms (Views: 170.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:08:05 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 199ms (Views: 198.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:08:07 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/railties-4.2.8/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
+Completed 200 OK in 200ms (Views: 198.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/1/show" for ::1 at 2019-08-10 20:08:23 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendered photos/show.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 2182ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    2: <html>
+    3: <head>
+    4:   <title>Places</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___149567200_48455148'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6686.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5914.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13818.3ms)
+
+
+Started GET "/photos/" for ::1 at 2019-08-10 20:09:34 +0300
+
+ActionController::RoutingError (No route matches [GET] "/photos"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (112.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9418.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6065.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13792.0ms)
+
+
+Started GET "/photos/56554251e301d0ed8c00003f/show" for ::1 at 2019-08-10 20:10:29 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"56554251e301d0ed8c00003f"}
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('56554251e301d0ed8c00003f')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6541.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6781.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15538.1ms)
+Started GET "/photos/5d4efab42ae6fd2218000030/show" for 127.0.0.1 at 2019-08-10 20:11:16 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efab42ae6fd2218000030"}
+  Rendered text template (0.0ms)
+Sent data  (89.9ms)
+Completed 200 OK in 175ms (Views: 89.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:14:40 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.010992s
+  Rendered places/index.html.erb within layouts/application (244.9ms)
+Completed 500 Internal Server Error in 753ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `edit_place_path' for #<#<Class:0x5b356c0>:0x5accdf8>
+Did you mean?  edit_polymorphic_path):
+    15:       <tr>
+    16:         <td><%= place.formatted_address %></td>
+    17:         <td><%= link_to 'Show', place %></td>
+    18:         <!-- <td><%= link_to 'Edit', edit_place_path(place) %></td> -->
+    19:         <!-- <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    20:       </tr>
+    21:     <% end %>
+  app/views/places/index.html.erb:18:in `block in _app_views_places_index_html_erb__641496715_47488596'
+  app/views/places/index.html.erb:14:in `each'
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__641496715_47488596'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6538.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6469.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15179.9ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:15:07 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.022986s
+  Rendered places/index.html.erb within layouts/application (212.9ms)
+Completed 500 Internal Server Error in 874ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `edit_place_path' for #<#<Class:0x5b356c0>:0x731d720>
+Did you mean?  edit_polymorphic_path):
+    15:       <tr>
+    16:         <td><%= place.formatted_address %></td>
+    17:         <td><%= link_to 'Show', place %></td>
+    18:         <!-- <td><%= link_to 'Edit', edit_place_path(place) %></td> -->
+    19:         <!-- <td><%= link_to 'Destroy', place, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+    20:       </tr>
+    21:     <% end %>
+  app/views/places/index.html.erb:18:in `block in _app_views_places_index_html_erb__641496715_47488596'
+  app/views/places/index.html.erb:14:in `each'
+  app/views/places/index.html.erb:14:in `_app_views_places_index_html_erb__641496715_47488596'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6596.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5975.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13866.7ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:15:51 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.009993s
+  Rendered places/index.html.erb within layouts/application (210.9ms)
+Completed 500 Internal Server Error in 692ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined local variable or method `new_place_path' for #<#<Class:0x5b356c0>:0x8488f38>
+Did you mean?  new_polymorphic_path):
+    22: 
+    23: <br>
+    24: 
+    25: <!-- <%= link_to 'New Place', new_place_path %> -->
+  app/views/places/index.html.erb:25:in `_app_views_places_index_html_erb__641496715_69485028'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6538.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5892.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13925.8ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:16:39 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.009994s
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 471ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:28: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/places/index.html.erb:28: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/places/index.html.erb:30: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6905.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6365.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14033.3ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:19:19 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.02099s
+  Rendered places/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 613ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/places/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/places/index.html.erb:28: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (7536.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6730.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15442.9ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:19:52 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 551ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/places/index.html.erb:25: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/places/index.html.erb:27: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (7041.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6069.1ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:20:16 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.019986s
+  Rendered places/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 546ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/views/places/index.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/places/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/places/index.html.erb:25: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15050.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6473.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:21:53 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (70.0ms)
+Completed 500 Internal Server Error in 1698ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    2: <html>
+    3: <head>
+    4:   <title>Places</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__385512670_59359488'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6573.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6041.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14046.6ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:23:37 +0300
+Processing by PlacesController#index as HTML
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.016989s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001006s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0019979999999999998s
+  Rendered places/index.html.erb within layouts/application (387.8ms)
+Completed 500 Internal Server Error in 2462ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    2: <html>
+    3: <head>
+    4:   <title>Places</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__908247803_46809996'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7488.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6931.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16958.9ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:24:13 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (68.0ms)
+Completed 500 Internal Server Error in 1610ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (TypeError: Object doesn't support this property or method):
+    2: <html>
+    3: <head>
+    4:   <title>Places</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___839303664_59165904'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6564.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6288.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14316.1ms)
+
+
+Started GET "/places" for ::1 at 2019-08-10 20:25:04 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.018987s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001003s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+  Rendered places/index.html.erb within layouts/application (184.0ms)
+Completed 200 OK in 738ms (Views: 711.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2019-08-10 20:25:26 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (114.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10998.1ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:25:44 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (106.9ms)
+Completed 200 OK in 1120ms (Views: 1036.1ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7523.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17402.3ms)
+
+
+Started GET "/javascripts/default.js" for ::1 at 2019-08-10 20:26:01 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+Started GET "/places/5d4efe172ae6fd3200000000" for 127.0.0.1 at 2019-08-10 20:26:10 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd3200000000"}
+  Rendered places/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 534ms (Views: 530.1ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10521.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6337.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14779.7ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c000042/show/" for ::1 at 2019-08-10 20:26:31 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c000042"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c000042')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6646.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6095.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13938.4ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c00003f/show/" for ::1 at 2019-08-10 20:26:56 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c00003f"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c00003f')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000996s
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6623.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6023.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13961.1ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c00002e/show/" for ::1 at 2019-08-10 20:27:21 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c00002e"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c00002e')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6571.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5991.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13835.8ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c000028/show/" for ::1 at 2019-08-10 20:27:46 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c000028"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c000028')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6615.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (5972.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13890.9ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c000030/show/" for ::1 at 2019-08-10 20:28:11 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c000030"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c000030')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6652.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6061.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13937.0ms)
+
+
+Started GET "/photos/5d4efdbc2ae6fd014c00002c/show/" for ::1 at 2019-08-10 20:28:36 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c00002c"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c00002c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000995s
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6615.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6099.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14043.9ms)
+
+
+Started GET "/places/5d4efdbc2ae6fd014c000000" for ::1 at 2019-08-10 20:32:58 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4efdbc2ae6fd014c000000"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('5d4efdbc2ae6fd014c000000')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+  Rendered places/show.html.erb within layouts/application (174.9ms)
+Completed 500 Internal Server Error in 636ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `formatted_address' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Formatted address:</strong>
+    5:   <%= @place.formatted_address %>
+    6: </p>
+    7: 
+    8: <% @place.photos.each do |photo| %>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb___155522140_36107412'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6788.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6024.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (13807.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:34:37 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.011992s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000992s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+  Rendered places/index.html.erb within layouts/application (171.6ms)
+Completed 200 OK in 670ms (Views: 605.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2019-08-10 20:34:38 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9978.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8922.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (19048.9ms)
+
+
+Started GET "/photos/5d4efe172ae6fd320000002e/show/" for ::1 at 2019-08-10 20:35:12 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd320000002e"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd320000002e')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4efe172ae6fd3200000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003996s
+  Rendered text template (0.0ms)
+Sent data  (27.0ms)
+Completed 200 OK in 46ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/default.js" for ::1 at 2019-08-10 20:35:12 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (11126.5ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:35:27 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (129.9ms)
+Completed 200 OK in 1310ms (Views: 1231.1ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7768.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17392.7ms)
+
+
+Started GET "/photos/5d4efe172ae6fd320000003f/show/" for ::1 at 2019-08-10 20:35:47 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd320000003f"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd320000003f')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+Started GET "/places/5d4f005f2ae6fd1fc0000000" for 127.0.0.1 at 2019-08-10 20:35:54 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4f005f2ae6fd1fc0000000"}
+  Rendered places/show.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 626ms (Views: 571.1ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (7710.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6590.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15216.9ms)
+
+
+Started GET "/photos/5d4efe172ae6fd320000002c/show/" for ::1 at 2019-08-10 20:36:15 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd320000002c"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd320000002c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6783.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7392.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16534.1ms)
+
+
+Started GET "/photos/5d4efe172ae6fd3200000042/show/" for ::1 at 2019-08-10 20:36:43 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd3200000042"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd3200000042')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (7505.3ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7600.5ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:37:10 +0300
+Processing by PlacesController#index as HTML
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered places/index.html.erb within layouts/application (116.9ms)
+Completed 200 OK in 1161ms (Views: 1078.8ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (5.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (17463.2ms)
+
+
+Started GET "/photos/5d4efe172ae6fd3200000030/show/" for ::1 at 2019-08-10 20:37:13 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd3200000030"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd3200000030')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (9768.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+Started GET "/places/5d4f00c52ae6fd3190000000" for 127.0.0.1 at 2019-08-10 20:37:44 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd3190000000"}
+  Rendered places/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 570ms (Views: 565.0ms | ActiveRecord: 0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (8709.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (19065.8ms)
+
+
+Started GET "/photos/5d4efe172ae6fd3200000028/show/" for ::1 at 2019-08-10 20:37:49 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd3200000028"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd3200000028')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000997s
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `contents' for nil:NilClass
+Did you mean?  concern):
+  app/controllers/photos_controller.rb:4:in `show'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (6535.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6202.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14258.6ms)
+
+
+Started GET "/places/5d4efe172ae6fd3200000000" for ::1 at 2019-08-10 20:38:14 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4efe172ae6fd3200000000"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{:_id=>BSON::ObjectId('5d4efe172ae6fd3200000000')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+  Rendered places/show.html.erb within layouts/application (176.5ms)
+Completed 500 Internal Server Error in 674ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `formatted_address' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Formatted address:</strong>
+    5:   <%= @place.formatted_address %>
+    6: </p>
+    7: 
+    8: <% @place.photos.each do |photo| %>
+  app/views/places/show.html.erb:5:in `_app_views_places_show_html_erb___155522140_36107412'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7415.6ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6121.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (14368.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:39:41 +0300
+Processing by PlacesController#index as HTML
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"places", "filter"=>{}, "skip"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.01699s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000996s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001991s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001995s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001997s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}, "skip"=>0, "limit"=>0}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001998s
+  Rendered places/index.html.erb within layouts/application (212.9ms)
+Completed 200 OK in 860ms (Views: 789.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd3190000042/show/" for ::1 at 2019-08-10 20:39:43 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd3190000042"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd3190000042')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000998s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.005995s
+  Rendered text template (0.0ms)
+Sent data  (7.0ms)
+Completed 200 OK in 28ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/javascripts/default.js" for ::1 at 2019-08-10 20:39:43 +0300
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/default.js"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9647.1ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6651.2ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15246.4ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd319000002c/show/" for ::1 at 2019-08-10 20:40:13 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd319000002c"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd319000002c')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.0s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004997s
+  Rendered text template (0.0ms)
+Sent data  (4.0ms)
+Completed 200 OK in 58ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2019-08-10 20:40:13 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (10295.7ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7023.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (15905.7ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd3190000028/show/" for ::1 at 2019-08-10 20:40:44 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd3190000028"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000999s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.004996s
+  Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 21ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd3190000030/show/" for ::1 at 2019-08-10 20:40:44 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd3190000030"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd3190000030')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001007s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002998s
+  Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd319000003f/show/" for ::1 at 2019-08-10 20:40:45 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd319000003f"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd319000003f')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.000995s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.003001s
+  Rendered text template (0.0ms)
+Sent data  (1.0ms)
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/photos/5d4f00c52ae6fd319000002e/show/" for ::1 at 2019-08-10 20:40:45 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f00c52ae6fd319000002e"}
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{:_id=>BSON::ObjectId('5d4f00c52ae6fd319000002e')}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.files", "filter"=>{}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002002s
+MONGODB | localhost:27017 | places_development.find | STARTED | {"find"=>"fs.chunks", "filter"=>{"files_id"=>BSON::ObjectId('5d4f00c52ae6fd3190000028')}, "sort"=>{"n"=>1}}
+MONGODB | localhost:27017 | places_development.find | SUCCEEDED | 0.002997s
+  Rendered text template (0.0ms)
+Sent data  (0.0ms)
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/default.css" for ::1 at 2019-08-10 20:40:52 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/default.css"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (9060.8ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (6988.5ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16381.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-10 20:44:01 +0300
+Processing by PlacesController#index as HTML
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+SyntaxError (C:/Users/ACER/Desktop/Johns Hopkins University - Ruby on Rails Web Development Specialization/assignment-Advanced-MongoDB-Ruby-Driver/places/app/models/place.rb:116: syntax error, unexpected tSTRING_DEND, expecting ']'
+...kip=>offset}, {:$limit=>limit}}]).each
+...                               ^):
+  app/models/place.rb:116: syntax error, unexpected tSTRING_DEND, expecting ']'
+  app/controllers/places_controller.rb:7:in `index'
+
+
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (15.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (8870.4ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (7085.9ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (16777.6ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:53:15 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (81.0ms)
+Completed 200 OK in 854ms (Views: 791.2ms | ActiveRecord: 0.0ms)
+Started GET "/places/5d4f048b2ae6fd2fcc000000" for 127.0.0.1 at 2019-08-10 20:53:34 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4f048b2ae6fd2fcc000000"}
+  Rendered places/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 447ms (Views: 443.6ms | ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:54:35 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (65.0ms)
+Completed 200 OK in 874ms (Views: 808.3ms | ActiveRecord: 0.0ms)
+Started GET "/places/5d4f04da2ae6fd36e4000000" for 127.0.0.1 at 2019-08-10 20:54:52 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4f04da2ae6fd36e4000000"}
+  Rendered places/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 545ms (Views: 542.0ms | ActiveRecord: 0.0ms)
+Started GET "/photos/5d4f052e2ae6fd314c0003ae/show" for 127.0.0.1 at 2019-08-10 20:55:59 +0300
+Processing by PhotosController#show as HTML
+  Parameters: {"id"=>"5d4f052e2ae6fd314c0003ae"}
+  Rendered text template (0.0ms)
+Sent data  (87.0ms)
+Completed 200 OK in 142ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+Started GET "/places" for 127.0.0.1 at 2019-08-10 20:56:05 +0300
+Processing by PlacesController#index as HTML
+  Rendered places/index.html.erb within layouts/application (60.0ms)
+Completed 200 OK in 662ms (Views: 650.9ms | ActiveRecord: 0.0ms)
+Started GET "/places/5d4f05342ae6fd314c000eae" for 127.0.0.1 at 2019-08-10 20:56:26 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"5d4f05342ae6fd314c000eae"}
+  Rendered places/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 516ms (Views: 514.0ms | ActiveRecord: 0.0ms)
+MONGODB | An existing connection was forcibly closed by the remote host.

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Formatted address:</strong>
+  <%= @place.formatted_address %>
+</p>
+
+<% @place.photos.each do |photo| %>
+	<p>
+		<img height="500px" width="650px" src= <%= photos_show_path("#{photo.id}")%>/>
+	</p>
+<% end %>
+
+<%= link_to 'Back', places_path %>

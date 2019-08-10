@@ -1,0 +1,2780 @@
+[
+  {
+    "address_components": [
+      {
+        "long_name": "77713-77735",
+        "short_name": "77713-77735",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Dillon Road",
+        "short_name": "Dillon Rd",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Desert Hot Springs",
+        "short_name": "Desert Hot Springs",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Riverside County",
+        "short_name": "Riverside County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "California",
+        "short_name": "CA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "92241",
+        "short_name": "92241",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "77713-77735 Dillon Rd, Desert Hot Springs, CA 92241, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 33.8755568,
+          "lng": -116.3013125
+        },
+        "southwest": {
+          "lat": 33.8753572,
+          "lng": -116.3017883
+        }
+      },
+      "location": {
+        "lat": 33.875467,
+        "lng": -116.3016158
+      },
+      "location_type": "RANGE_INTERPOLATED",
+      "viewport": {
+        "northeast": {
+          "lat": 33.87680598029151,
+          "lng": -116.3002014197085
+        },
+        "southwest": {
+          "lat": 33.87410801970851,
+          "lng": -116.3028993802915
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -116.3016158,
+          33.875467
+        ]
+      }
+    },
+    "place_id": "Ejg3NzcxMy03NzczNSBEaWxsb24gUmQsIERlc2VydCBIb3QgU3ByaW5ncywgQ0EgOTIyNDEsIFVTQQ",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "92241",
+        "short_name": "92241",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Desert Hot Springs",
+        "short_name": "Desert Hot Springs",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Riverside County",
+        "short_name": "Riverside County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "California",
+        "short_name": "CA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Desert Hot Springs, CA 92241, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 33.9473779,
+          "lng": -116.095138
+        },
+        "southwest": {
+          "lat": 33.758427,
+          "lng": -116.510532
+        }
+      },
+      "location": {
+        "lat": 33.861935,
+        "lng": -116.2540856
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 33.9473779,
+          "lng": -116.095138
+        },
+        "southwest": {
+          "lat": 33.758427,
+          "lng": -116.510532
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -116.2540856,
+          33.861935
+        ]
+      }
+    },
+    "place_id": "ChIJGRcBxJnj2oARADqJDUIIJO8",
+    "types": [
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Riverside County",
+        "short_name": "Riverside County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "California",
+        "short_name": "CA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Riverside County, CA, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 34.0798841,
+          "lng": -114.4352889
+        },
+        "southwest": {
+          "lat": 33.425888,
+          "lng": -117.6762859
+        }
+      },
+      "location": {
+        "lat": 33.9532966,
+        "lng": -117.3961192
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 34.0798841,
+          "lng": -114.4352889
+        },
+        "southwest": {
+          "lat": 33.425888,
+          "lng": -117.6762859
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -117.3961192,
+          33.9532966
+        ]
+      }
+    },
+    "place_id": "ChIJr3EqHoH12oARjSkNIFgUKF8",
+    "types": [
+      "administrative_area_level_2",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Inland Empire",
+        "short_name": "Inland Empire",
+        "types": [
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Inland Empire, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 35.809097,
+          "lng": -114.1344265
+        },
+        "southwest": {
+          "lat": 33.425932,
+          "lng": -117.8028909
+        }
+      },
+      "location": {
+        "lat": 34.9592083,
+        "lng": -116.419389
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 35.809097,
+          "lng": -114.1344265
+        },
+        "southwest": {
+          "lat": 33.425932,
+          "lng": -117.8028909
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -116.419389,
+          34.9592083
+        ]
+      }
+    },
+    "place_id": "ChIJsVgntPM5xYAR17AuvXq8jzI",
+    "types": [
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "California",
+        "short_name": "CA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "California, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 42.0095169,
+          "lng": -114.1313926
+        },
+        "southwest": {
+          "lat": 32.5342321,
+          "lng": -124.415165
+        }
+      },
+      "location": {
+        "lat": 36.778261,
+        "lng": -119.4179324
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 42.0095169,
+          "lng": -114.1313926
+        },
+        "southwest": {
+          "lat": 32.5342321,
+          "lng": -124.415165
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -119.4179324,
+          36.778261
+        ]
+      }
+    },
+    "place_id": "ChIJPV4oX_65j4ARVW8IJ6IJUYs",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "United States",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 71.3867745,
+          "lng": -66.9502861
+        },
+        "southwest": {
+          "lat": 18.9106768,
+          "lng": 172.4458955
+        }
+      },
+      "location": {
+        "lat": 37.09024,
+        "lng": -95.712891
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 49.38,
+          "lng": -66.94
+        },
+        "southwest": {
+          "lat": 25.82,
+          "lng": -124.39
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -95.712891,
+          37.09024
+        ]
+      }
+    },
+    "place_id": "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "11",
+        "short_name": "11",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Zieglmeierstraße",
+        "short_name": "Zieglmeierstraße",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Hohenpeißenberg",
+        "short_name": "Hohenpeißenberg",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Oberbayern",
+        "short_name": "Oberbayern",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bayern",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "82383",
+        "short_name": "82383",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "Zieglmeierstraße 11, 82383 Hohenpeißenberg, Germany",
+    "geometry": {
+      "location": {
+        "lat": 47.7875253,
+        "lng": 11.001679
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 47.7888742802915,
+          "lng": 11.0030279802915
+        },
+        "southwest": {
+          "lat": 47.7861763197085,
+          "lng": 11.0003300197085
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.001679,
+          47.7875253
+        ]
+      }
+    },
+    "place_id": "ChIJ02ioWgZMnEcRQtcm4BFUwqs",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Hohenpeißenberg",
+        "short_name": "Hohenpeißenberg",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Weilheim-Schongau",
+        "short_name": "Weilheim-Schongau",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Upper Bavaria",
+        "short_name": "Upper Bavaria",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bavaria",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Hohenpeißenberg, Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 47.8338352,
+          "lng": 11.0513557
+        },
+        "southwest": {
+          "lat": 47.7708877,
+          "lng": 10.9584887
+        }
+      },
+      "location": {
+        "lat": 47.79447080000001,
+        "lng": 11.0057709
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 47.8338352,
+          "lng": 11.0513557
+        },
+        "southwest": {
+          "lat": 47.7708877,
+          "lng": 10.9584887
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.0057709,
+          47.79447080000001
+        ]
+      }
+    },
+    "place_id": "ChIJj_B5jeRLnEcRoK2L161IHgQ",
+    "types": [
+      "locality",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "82383",
+        "short_name": "82383",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Hohenpeißenberg",
+        "short_name": "Hohenpeißenberg",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Weilheim-Schongau",
+        "short_name": "Weilheim-Schongau",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Upper Bavaria",
+        "short_name": "Upper Bavaria",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bavaria",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "82383 Hohenpeißenberg, Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 47.833543,
+          "lng": 11.0512399
+        },
+        "southwest": {
+          "lat": 47.77090500000001,
+          "lng": 10.958622
+        }
+      },
+      "location": {
+        "lat": 47.80534660000001,
+        "lng": 11.004653
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 47.833543,
+          "lng": 11.0512399
+        },
+        "southwest": {
+          "lat": 47.77090500000001,
+          "lng": 10.958622
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.004653,
+          47.80534660000001
+        ]
+      }
+    },
+    "place_id": "ChIJj_B5jeRLnEcRwD20C7FIHhw",
+    "types": [
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Upper Bavaria",
+        "short_name": "Upper Bavaria",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Upper Bavaria, Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 49.0876959,
+          "lng": 13.0989291
+        },
+        "southwest": {
+          "lat": 47.3933482,
+          "lng": 10.7156838
+        }
+      },
+      "location": {
+        "lat": 47.9520866,
+        "lng": 11.7877295
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 49.0876959,
+          "lng": 13.0989291
+        },
+        "southwest": {
+          "lat": 47.3933482,
+          "lng": 10.7156838
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.7877295,
+          47.9520866
+        ]
+      }
+    },
+    "place_id": "ChIJOxnyw4oPnkcRxA8bO3kOAUA",
+    "types": [
+      "administrative_area_level_2",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Bavaria",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Bavaria, Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 50.5647142,
+          "lng": 13.8396371
+        },
+        "southwest": {
+          "lat": 47.2701115,
+          "lng": 8.9763497
+        }
+      },
+      "location": {
+        "lat": 48.7904472,
+        "lng": 11.4978895
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 50.5647142,
+          "lng": 13.8396371
+        },
+        "southwest": {
+          "lat": 47.2701115,
+          "lng": 8.9763497
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.4978895,
+          48.7904472
+        ]
+      }
+    },
+    "place_id": "ChIJqVPfD0wEn0cRYHk4CaQlHQE",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 55.05812359999999,
+          "lng": 15.0418962
+        },
+        "southwest": {
+          "lat": 47.2701115,
+          "lng": 5.8663425
+        }
+      },
+      "location": {
+        "lat": 51.165691,
+        "lng": 10.451526
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 55.05812359999999,
+          "lng": 15.0418962
+        },
+        "southwest": {
+          "lat": 47.2701115,
+          "lng": 5.8663425
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          10.451526,
+          51.165691
+        ]
+      }
+    },
+    "place_id": "ChIJa76xwh5ymkcRW-WRjmtd6HU",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Hamanasu Line",
+        "short_name": "国道279号線",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Ōhatamachi",
+        "short_name": "Ōhatamachi",
+        "types": [
+          "sublocality_level_1",
+          "sublocality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Mutsu-shi",
+        "short_name": "Mutsu-shi",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Aomori-ken",
+        "short_name": "Aomori-ken",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "039-4401",
+        "short_name": "039-4401",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "Hamanasu Line, Ōhatamachi, Mutsu-shi, Aomori-ken 039-4401, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 41.4529291,
+          "lng": 141.1193256
+        },
+        "southwest": {
+          "lat": 41.4515403,
+          "lng": 141.1191098
+        }
+      },
+      "location": {
+        "lat": 41.452247,
+        "lng": 141.1193256
+      },
+      "location_type": "GEOMETRIC_CENTER",
+      "viewport": {
+        "northeast": {
+          "lat": 41.4535836802915,
+          "lng": 141.1205666802915
+        },
+        "southwest": {
+          "lat": 41.4508857197085,
+          "lng": 141.1178687197085
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          141.1193256,
+          41.452247
+        ]
+      }
+    },
+    "place_id": "ChIJaYsBW4UlnF8RLFJ3xBKg6Rs",
+    "types": [
+      "route"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Ohatamachi",
+        "short_name": "Ohatamachi",
+        "types": [
+          "sublocality_level_1",
+          "sublocality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Mutsu",
+        "short_name": "Mutsu",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Aomori Prefecture",
+        "short_name": "Aomori Prefecture",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "039-4401",
+        "short_name": "039-4401",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "Ohatamachi, Mutsu, Aomori Prefecture 039-4401, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 41.4557064,
+          "lng": 141.193176
+        },
+        "southwest": {
+          "lat": 41.2878149,
+          "lng": 140.9114383
+        }
+      },
+      "location": {
+        "lat": 41.4056283,
+        "lng": 141.1633802
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 41.4557064,
+          "lng": 141.193176
+        },
+        "southwest": {
+          "lat": 41.2878149,
+          "lng": 140.9114383
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          141.1633802,
+          41.4056283
+        ]
+      }
+    },
+    "place_id": "ChIJV4wg9tM8nF8Rn4NEtVu3tN4",
+    "types": [
+      "sublocality_level_1",
+      "sublocality",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Mutsu",
+        "short_name": "Mutsu",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Aomori Prefecture",
+        "short_name": "Aomori Prefecture",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Mutsu, Aomori Prefecture, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 41.4558816,
+          "lng": 141.3390608
+        },
+        "southwest": {
+          "lat": 41.1189388,
+          "lng": 140.7639268
+        }
+      },
+      "location": {
+        "lat": 41.2927457,
+        "lng": 141.1834755
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 41.4558816,
+          "lng": 141.3390608
+        },
+        "southwest": {
+          "lat": 41.1189388,
+          "lng": 140.7639268
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          141.1834755,
+          41.2927457
+        ]
+      }
+    },
+    "place_id": "ChIJmSRIktoVnF8Rv-lDdImwNGk",
+    "types": [
+      "locality",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "039-4401",
+        "short_name": "039-4401",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Ohatamachi",
+        "short_name": "Ohatamachi",
+        "types": [
+          "sublocality_level_1",
+          "sublocality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Mutsu",
+        "short_name": "Mutsu",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Aomori Prefecture",
+        "short_name": "Aomori Prefecture",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Ohatamachi, Mutsu, Aomori Prefecture 039-4401, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 41.4557064,
+          "lng": 141.193176
+        },
+        "southwest": {
+          "lat": 41.2878149,
+          "lng": 140.9114383
+        }
+      },
+      "location": {
+        "lat": 41.3931668,
+        "lng": 141.0454605
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 41.4557064,
+          "lng": 141.193176
+        },
+        "southwest": {
+          "lat": 41.2878149,
+          "lng": 140.9114383
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          141.0454605,
+          41.3931668
+        ]
+      }
+    },
+    "place_id": "ChIJ36NSvEU7nF8RlveZx6nc9w0",
+    "types": [
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Aomori Prefecture",
+        "short_name": "Aomori Prefecture",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Aomori Prefecture, Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 41.55623689999999,
+          "lng": 141.6830976
+        },
+        "southwest": {
+          "lat": 40.21775909999999,
+          "lng": 139.8587195
+        }
+      },
+      "location": {
+        "lat": 40.8243077,
+        "lng": 140.7399984
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 41.55623689999999,
+          "lng": 141.6830976
+        },
+        "southwest": {
+          "lat": 40.21775909999999,
+          "lng": 139.8587195
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          140.7399984,
+          40.8243077
+        ]
+      }
+    },
+    "place_id": "ChIJR60vIL2bm18Ro_kApp-uBak",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Japan",
+        "short_name": "JP",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Japan",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 45.5227719,
+          "lng": 153.9874305
+        },
+        "southwest": {
+          "lat": 20.4223052,
+          "lng": 122.9338302
+        }
+      },
+      "location": {
+        "lat": 36.204824,
+        "lng": 138.252924
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 45.5227719,
+          "lng": 145.8175503
+        },
+        "southwest": {
+          "lat": 24.0486929,
+          "lng": 122.9338302
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          138.252924,
+          36.204824
+        ]
+      }
+    },
+    "place_id": "ChIJLxl_1w9OZzQRRFJmfNR1QvU",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "8",
+        "short_name": "8",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Badgergate Avenue",
+        "short_name": "Badgergate Ave",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Wilsden",
+        "short_name": "Wilsden",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bradford",
+        "short_name": "Bradford",
+        "types": [
+          "postal_town"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "BD15 0LJ",
+        "short_name": "BD15 0LJ",
+        "types": [
+          "postal_code"
+        ]
+      }
+    ],
+    "formatted_address": "8 Badgergate Ave, Wilsden, Bradford, West Yorkshire BD15 0LJ, UK",
+    "geometry": {
+      "location": {
+        "lat": 53.8173182,
+        "lng": -1.8603934
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 53.81866718029149,
+          "lng": -1.859044419708498
+        },
+        "southwest": {
+          "lat": 53.81596921970849,
+          "lng": -1.861742380291502
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.8603934,
+          53.8173182
+        ]
+      }
+    },
+    "place_id": "ChIJd7KJtvvle0gRBdhidA7e_XI",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Wilsden",
+        "short_name": "Wilsden",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bradford District",
+        "short_name": "Bradford District",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "England",
+        "short_name": "England",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Wilsden, West Yorkshire, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.8399586,
+          "lng": -1.8368897
+        },
+        "southwest": {
+          "lat": 53.8078964,
+          "lng": -1.8899853
+        }
+      },
+      "location": {
+        "lat": 53.823713,
+        "lng": -1.859404
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.8399586,
+          "lng": -1.8368897
+        },
+        "southwest": {
+          "lat": 53.8078964,
+          "lng": -1.8899853
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.859404,
+          53.823713
+        ]
+      }
+    },
+    "place_id": "ChIJRRp9xvble0gRTf8DEh8FXQY",
+    "types": [
+      "locality",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Wilsden",
+        "short_name": "Wilsden",
+        "types": [
+          "administrative_area_level_4",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bradford District",
+        "short_name": "Bradford District",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "England",
+        "short_name": "England",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Wilsden, West Yorkshire, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.8399586,
+          "lng": -1.8368897
+        },
+        "southwest": {
+          "lat": 53.8078964,
+          "lng": -1.8899853
+        }
+      },
+      "location": {
+        "lat": 53.8256035,
+        "lng": -1.8625303
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.8399586,
+          "lng": -1.8368897
+        },
+        "southwest": {
+          "lat": 53.8078964,
+          "lng": -1.8899853
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.8625303,
+          53.8256035
+        ]
+      }
+    },
+    "place_id": "ChIJRRp9xvble0gR7M3MlaQDgok",
+    "types": [
+      "administrative_area_level_4",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "BD15",
+        "short_name": "BD15",
+        "types": [
+          "postal_code_prefix",
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Bradford",
+        "short_name": "Bradford",
+        "types": [
+          "postal_town"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Bradford, West Yorkshire BD15, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.8351137,
+          "lng": -1.8083382
+        },
+        "southwest": {
+          "lat": 53.79307610000001,
+          "lng": -1.8877016
+        }
+      },
+      "location": {
+        "lat": 53.81495630000001,
+        "lng": -1.8486032
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.8351137,
+          "lng": -1.8083382
+        },
+        "southwest": {
+          "lat": 53.79307610000001,
+          "lng": -1.8877016
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.8486032,
+          53.81495630000001
+        ]
+      }
+    },
+    "place_id": "ChIJ1cPe2tDle0gRH6O7gGVz2mE",
+    "types": [
+      "postal_code_prefix",
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Bradford",
+        "short_name": "Bradford",
+        "types": [
+          "postal_town"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Bradford, West Yorkshire, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.8567315,
+          "lng": -1.6385444
+        },
+        "southwest": {
+          "lat": 53.7259964,
+          "lng": -1.9238542
+        }
+      },
+      "location": {
+        "lat": 53.7887315,
+        "lng": -1.7875219
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.8567315,
+          "lng": -1.6385444
+        },
+        "southwest": {
+          "lat": 53.7259964,
+          "lng": -1.9238542
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.7875219,
+          53.7887315
+        ]
+      }
+    },
+    "place_id": "ChIJ814gK7_me0gR6G3XFxHk1DM",
+    "types": [
+      "postal_town"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "England",
+        "short_name": "England",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "West Yorkshire, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.963151,
+          "lng": -1.1988144
+        },
+        "southwest": {
+          "lat": 53.51974,
+          "lng": -2.1732938
+        }
+      },
+      "location": {
+        "lat": 53.81081760000001,
+        "lng": -1.76261
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.963151,
+          "lng": -1.1988144
+        },
+        "southwest": {
+          "lat": 53.51974,
+          "lng": -2.1732938
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.76261,
+          53.81081760000001
+        ]
+      }
+    },
+    "place_id": "ChIJ8RhrwDkTeUgRlMFjPKK1F2U",
+    "types": [
+      "administrative_area_level_2",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "England",
+        "short_name": "England",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "England, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 55.8111127,
+          "lng": 1.7629159
+        },
+        "southwest": {
+          "lat": 49.8647465,
+          "lng": -6.4177822
+        }
+      },
+      "location": {
+        "lat": 52.3555177,
+        "lng": -1.1743197
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 55.8111127,
+          "lng": 1.7629159
+        },
+        "southwest": {
+          "lat": 49.8647877,
+          "lng": -6.4124324
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.1743197,
+          52.3555177
+        ]
+      }
+    },
+    "place_id": "ChIJ39UebIqp0EcRqI4tMyWV4fQ",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "United Kingdom",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 60.8608653,
+          "lng": 33.9165549
+        },
+        "southwest": {
+          "lat": 34.5626609,
+          "lng": -8.649357199999999
+        }
+      },
+      "location": {
+        "lat": 55.378051,
+        "lng": -3.435973
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 60.856553,
+          "lng": 1.7627096
+        },
+        "southwest": {
+          "lat": 49.8699654,
+          "lng": -8.649357199999999
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -3.435973,
+          55.378051
+        ]
+      }
+    },
+    "place_id": "ChIJqZHHQhE7WgIReiWIMkOg-MQ",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "1399",
+        "short_name": "1399",
+        "types": [
+          "street_number"
+        ]
+      },
+      {
+        "long_name": "Baltimore Pike",
+        "short_name": "Baltimore Pike",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Chadds Ford",
+        "short_name": "Chadds Ford",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Chadds Ford",
+        "short_name": "Chadds Ford",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Delaware County",
+        "short_name": "Delaware County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      },
+      {
+        "long_name": "19317",
+        "short_name": "19317",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "7368",
+        "short_name": "7368",
+        "types": [
+          "postal_code_suffix"
+        ]
+      }
+    ],
+    "formatted_address": "1399 Baltimore Pike, Chadds Ford, PA 19317, USA",
+    "geometry": {
+      "location": {
+        "lat": 39.874572,
+        "lng": -75.56709699999999
+      },
+      "location_type": "ROOFTOP",
+      "viewport": {
+        "northeast": {
+          "lat": 39.8759209802915,
+          "lng": -75.56574801970848
+        },
+        "southwest": {
+          "lat": 39.8732230197085,
+          "lng": -75.5684459802915
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -75.56709699999999,
+          39.874572
+        ]
+      }
+    },
+    "place_id": "ChIJj92QF4z6xokR9K8XsMQ0qlw",
+    "types": [
+      "street_address"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "19317",
+        "short_name": "19317",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Chadds Ford",
+        "short_name": "Chadds Ford",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Chadds Ford, PA 19317, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 39.901131,
+          "lng": -75.516184
+        },
+        "southwest": {
+          "lat": 39.817195,
+          "lng": -75.674244
+        }
+      },
+      "location": {
+        "lat": 39.8482368,
+        "lng": -75.632447
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 39.901131,
+          "lng": -75.516184
+        },
+        "southwest": {
+          "lat": 39.817195,
+          "lng": -75.674244
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -75.632447,
+          39.8482368
+        ]
+      }
+    },
+    "place_id": "ChIJJ92Q3nn5xokR_1lAJOVjizQ",
+    "types": [
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Delaware County",
+        "short_name": "Delaware County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Delaware County, PA, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 40.066197,
+          "lng": -75.21572189999999
+        },
+        "southwest": {
+          "lat": 39.8059886,
+          "lng": -75.6015401
+        }
+      },
+      "location": {
+        "lat": 39.907793,
+        "lng": -75.3878525
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 40.066197,
+          "lng": -75.21572189999999
+        },
+        "southwest": {
+          "lat": 39.8059886,
+          "lng": -75.6015401
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -75.3878525,
+          39.907793
+        ]
+      }
+    },
+    "place_id": "ChIJM-XEj6nuxokR4Dx2JFH4Zho",
+    "types": [
+      "administrative_area_level_2",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Pennsylvania, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 42.2693866,
+          "lng": -74.6895018
+        },
+        "southwest": {
+          "lat": 39.7197989,
+          "lng": -80.51989499999999
+        }
+      },
+      "location": {
+        "lat": 41.2033216,
+        "lng": -77.1945247
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 42.2693866,
+          "lng": -74.6895018
+        },
+        "southwest": {
+          "lat": 39.7197989,
+          "lng": -80.51989499999999
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -77.1945247,
+          41.2033216
+        ]
+      }
+    },
+    "place_id": "ChIJieUyHiaALYgRPbQiUEchRsI",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "United States",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 71.3867745,
+          "lng": -66.9502861
+        },
+        "southwest": {
+          "lat": 18.9106768,
+          "lng": 172.4458955
+        }
+      },
+      "location": {
+        "lat": 37.09024,
+        "lng": -95.712891
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 49.38,
+          "lng": -66.94
+        },
+        "southwest": {
+          "lat": 25.82,
+          "lng": -124.39
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -95.712891,
+          37.09024
+        ]
+      }
+    },
+    "place_id": "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Flamingo Beach Road",
+        "short_name": "Flamingo Beach Road",
+        "types": [
+          "route"
+        ]
+      },
+      {
+        "long_name": "Playa Flamingo",
+        "short_name": "Playa Flamingo",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Guanacaste",
+        "short_name": "Guanacaste",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Costa Rica",
+        "short_name": "CR",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Flamingo Beach Road, Playa Flamingo, Costa Rica",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 10.4389713,
+          "lng": -85.7921223
+        },
+        "southwest": {
+          "lat": 10.4322857,
+          "lng": -85.7929578
+        }
+      },
+      "location": {
+        "lat": 10.4356501,
+        "lng": -85.7921523
+      },
+      "location_type": "GEOMETRIC_CENTER",
+      "viewport": {
+        "northeast": {
+          "lat": 10.4389713,
+          "lng": -85.79119106970849
+        },
+        "southwest": {
+          "lat": 10.4322857,
+          "lng": -85.79388903029151
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -85.7921523,
+          10.4356501
+        ]
+      }
+    },
+    "place_id": "ChIJGyj7CxYlno8REv6V2nEqAw8",
+    "types": [
+      "route"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Playa Flamingo",
+        "short_name": "Playa Flamingo",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Guanacaste",
+        "short_name": "Guanacaste",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Costa Rica",
+        "short_name": "CR",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Playa Flamingo, Costa Rica",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 10.4459328,
+          "lng": -85.77665809999999
+        },
+        "southwest": {
+          "lat": 10.4241702,
+          "lng": -85.8000692
+        }
+      },
+      "location": {
+        "lat": 10.4316532,
+        "lng": -85.784604
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 10.4459328,
+          "lng": -85.77665809999999
+        },
+        "southwest": {
+          "lat": 10.4241702,
+          "lng": -85.8000692
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -85.784604,
+          10.4316532
+        ]
+      }
+    },
+    "place_id": "ChIJofJ7gxUlno8RHxQBxvPLtPg",
+    "types": [
+      "locality",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Guanacaste",
+        "short_name": "Guanacaste",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Costa Rica",
+        "short_name": "CR",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Guanacaste, Costa Rica",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 11.2168181,
+          "lng": -84.760645
+        },
+        "southwest": {
+          "lat": 9.723861099999999,
+          "lng": -85.9460828
+        }
+      },
+      "location": {
+        "lat": 10.4957971,
+        "lng": -85.35496499999999
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 11.2168181,
+          "lng": -84.760645
+        },
+        "southwest": {
+          "lat": 9.723861099999999,
+          "lng": -85.9460828
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -85.35496499999999,
+          10.4957971
+        ]
+      }
+    },
+    "place_id": "ChIJ5Qgciip9dY8RRfkqAYIQCOE",
+    "types": [
+      "administrative_area_level_1",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Costa Rica",
+        "short_name": "CR",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Costa Rica",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 11.2196808,
+          "lng": -82.55265709999999
+        },
+        "southwest": {
+          "lat": 5.4991622,
+          "lng": -87.0944591
+        }
+      },
+      "location": {
+        "lat": 9.748916999999999,
+        "lng": -83.753428
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 11.2196808,
+          "lng": -82.55265709999999
+        },
+        "southwest": {
+          "lat": 8.0406976,
+          "lng": -85.9557116
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -83.753428,
+          9.748916999999999
+        ]
+      }
+    },
+    "place_id": "ChIJJcmsIWLlko8RK5qBNSX3VGI",
+    "types": [
+      "country",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Weilheim-Schongau",
+        "short_name": "Weilheim-Schongau",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Upper Bavaria",
+        "short_name": "Upper Bavaria",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bavaria",
+        "short_name": "BY",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Germany",
+        "short_name": "DE",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Weilheim-Schongau, Germany",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 47.954881,
+          "lng": 11.4304095
+        },
+        "southwest": {
+          "lat": 47.61597640000001,
+          "lng": 10.7156838
+        }
+      },
+      "location": {
+        "lat": 47.8251832,
+        "lng": 11.0576663
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 47.954881,
+          "lng": 11.4304095
+        },
+        "southwest": {
+          "lat": 47.61597640000001,
+          "lng": 10.7156838
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          11.0576663,
+          47.8251832
+        ]
+      }
+    },
+    "place_id": "ChIJx0RePF9LnEcRQOSawlWDgtY",
+    "types": [
+      "administrative_area_level_3",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "BD15 0LJ",
+        "short_name": "BD15 0LJ",
+        "types": [
+          "postal_code"
+        ]
+      },
+      {
+        "long_name": "Wilsden",
+        "short_name": "Wilsden",
+        "types": [
+          "locality",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Bradford",
+        "short_name": "Bradford",
+        "types": [
+          "postal_town"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Wilsden, Bradford, West Yorkshire BD15 0LJ, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.8177762,
+          "lng": -1.8592549
+        },
+        "southwest": {
+          "lat": 53.8167747,
+          "lng": -1.8609407
+        }
+      },
+      "location": {
+        "lat": 53.8171568,
+        "lng": -1.8603333
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.81862443029149,
+          "lng": -1.858748819708498
+        },
+        "southwest": {
+          "lat": 53.81592646970849,
+          "lng": -1.861446780291502
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.8603333,
+          53.8171568
+        ]
+      }
+    },
+    "place_id": "ChIJ3xMCyvvle0gRvCo_m_22yxs",
+    "types": [
+      "postal_code"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Bradford District",
+        "short_name": "Bradford District",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "West Yorkshire",
+        "short_name": "West York",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "England",
+        "short_name": "England",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United Kingdom",
+        "short_name": "GB",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Bradford District, West Yorkshire, UK",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 53.963151,
+          "lng": -1.6403242
+        },
+        "southwest": {
+          "lat": 53.7243251,
+          "lng": -2.061248200000001
+        }
+      },
+      "location": {
+        "lat": 53.8313346,
+        "lng": -1.8431099
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 53.963151,
+          "lng": -1.6403242
+        },
+        "southwest": {
+          "lat": 53.7243251,
+          "lng": -2.061248200000001
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -1.8431099,
+          53.8313346
+        ]
+      }
+    },
+    "place_id": "ChIJ1zMpIZrle0gRIOJoWLxiEAQ",
+    "types": [
+      "administrative_area_level_3",
+      "political"
+    ]
+  },
+  {
+    "address_components": [
+      {
+        "long_name": "Chadds Ford",
+        "short_name": "Chadds Ford",
+        "types": [
+          "administrative_area_level_3",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Delaware County",
+        "short_name": "Delaware County",
+        "types": [
+          "administrative_area_level_2",
+          "political"
+        ]
+      },
+      {
+        "long_name": "Pennsylvania",
+        "short_name": "PA",
+        "types": [
+          "administrative_area_level_1",
+          "political"
+        ]
+      },
+      {
+        "long_name": "United States",
+        "short_name": "US",
+        "types": [
+          "country",
+          "political"
+        ]
+      }
+    ],
+    "formatted_address": "Chadds Ford, PA, USA",
+    "geometry": {
+      "bounds": {
+        "northeast": {
+          "lat": 39.901638,
+          "lng": -75.5350918
+        },
+        "southwest": {
+          "lat": 39.8373409,
+          "lng": -75.6015401
+        }
+      },
+      "location": {
+        "lat": 39.8653481,
+        "lng": -75.5684254
+      },
+      "location_type": "APPROXIMATE",
+      "viewport": {
+        "northeast": {
+          "lat": 39.901638,
+          "lng": -75.5350918
+        },
+        "southwest": {
+          "lat": 39.8373409,
+          "lng": -75.6015401
+        }
+      },
+      "geolocation": {
+        "type": "Point",
+        "coordinates": [
+          -75.5684254,
+          39.8653481
+        ]
+      }
+    },
+    "place_id": "ChIJOzvMpvT6xokRo8GeO_b-aKU",
+    "types": [
+      "administrative_area_level_3",
+      "political"
+    ]
+  }
+]
