@@ -1,0 +1,11 @@
+MONGODB | Adding localhost:27017 to the cluster.
+MONGODB | localhost:27017 | triracers_test.insert | STARTED | {"insert"=>"racer1", "documents"=>[{"_id"=>BSON::ObjectId('5d500a6e2ae6fd1114000000'), "fn"=>"Sally", "gender"=>"F", "dob"=>1957-01-01 00:00:00 UTC, "updated_at"=>2019-08-11 12:30:59 UTC, "created_at"=>2019-08-11 12:30:59 UTC}], "writeConcern"=>{:w=>1...
+MONGODB | localhost:27017 | triracers_test.insert | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | triracers_test.count | STARTED | {"count"=>"racer1", "query"=>{"fn"=>{"$ne"=>"Sally"}}}
+MONGODB | localhost:27017 | triracers_test.count | SUCCEEDED | 0.001003s
+MONGODB | localhost:27017 | triracers_test.delete | STARTED | {"delete"=>"racer1", "deletes"=>[{"q"=>{"fn"=>{"$ne"=>"Sally"}}, "limit"=>0}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | triracers_test.delete | SUCCEEDED | 0.001s
+MONGODB | localhost:27017 | triracers_test.count | STARTED | {"count"=>"racer1", "query"=>{"fn"=>{"$ne"=>"Sally"}}}
+MONGODB | localhost:27017 | triracers_test.count | SUCCEEDED | 0.001996s
+MONGODB | localhost:27017 | triracers_test.delete | STARTED | {"delete"=>"racer1", "deletes"=>[{"q"=>{"fn"=>{"$ne"=>"Sally"}}, "limit"=>0}], "writeConcern"=>{:w=>1}, "ordered"=>true}
+MONGODB | localhost:27017 | triracers_test.delete | SUCCEEDED | 0.000997s
