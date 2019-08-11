@@ -1,0 +1,712 @@
+<h1 id="module-3-lesson-2-mongoid-relationships">Module 3, Lesson 2: Mongoid Relationships</h1>
+<p>The overall goal of the assignment is to give you practice in:</p>
+<ul>
+<li>Defining models, custom type classes, and relationships</li>
+<li>Defining relationship cardinality (one and many), realization (embedded and linked), and navigation types (uni and bi-directional)</li>
+<li>Forming and manipulating relationships</li>
+</ul>
+<p>The functional goal of the assignment is to:</p>
+<ul>
+<li>Implement a data tier for managing <code>Contest</code> information to include the following document types:
+<ul>
+<li><code>Venue</code>, <code>Judge</code>, <code>MedicalRecord</code>, and <code>Racer</code></li>
+</ul></li>
+</ul>
+<p><strong>Note</strong> that this assignment was written so that you can implement it in parts after each lecture. If you are performing the assignment in between lectures, stop at the next lecture boundary in the technical requirements section and resume once you have completed the lecture. You are free to experiment with other forms of the configurations presented, but the grading will only be targeted at the specific requirements listed.</p>
+<h2 id="functional-requirements">Functional Requirements</h2>
+<div class="figure">
+<img src="./module3-relationships.jpg" alt="Model/Relationships" />
+<p class="caption">Model/Relationships</p>
+</div>
+<ul>
+<li><strong>Diagram Notes</strong>:
+<ul>
+<li><a href="./module3-relationships.jpg">Model/Relationships Image</a></li>
+<li>(*) represents a foreign key</li>
+<li>the upper left-hand names in each boundary box represents the corresponding collection names within MongoDB</li>
+</ul></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li><p>Implement a (custom type) <code>Point</code> that encapsulates the geographic coordinates of an <code>Address</code>.</p></li>
+<li><p>Implement a (1:1 embedded) relationship between <code>Racer</code>/<code>Venue</code> and <code>Address</code>.</p></li>
+<li><p>Implement a (1:M linked) relationship between <code>Venue</code> and <code>Contest</code> and an embedded linked relationship between <code>Entrant</code> and <code>Racer</code>.</p></li>
+<li><p>Implement a (1:M embedded) relationship between <code>Contest</code> and <code>Entrant</code>.</p></li>
+<li><p>Implement a (1:1 Linked) relationship between <code>Racer</code> and <code>MedicalRecord</code>.</p></li>
+<li><p>Implement a (M:M Linked) relationship between <code>Judge</code> and <code>Contest</code>.</p></li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<ol style="list-style-type: decimal">
+<li><p>Start your MongoDB server using <code>mongod</code></p></li>
+<li><p>Create a new Rails application called <code>contests</code>.</p>
+<pre class="shell"><code>$ rails new contests
+$ cd contests</code></pre></li>
+<li><p>Setup your application for Mongoid.</p>
+<ul>
+<li><p>Add the <code>mongoid</code>, <code>rspec-rails</code>, and <code>mongoid-rspec</code> gems to your Gemfile and run <code>bundle</code>. Notice that the <code>:test</code> group encapsulates the two related <code>rspec</code> gems.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">gem <span class="st">&#39;mongoid&#39;</span>, <span class="st">&#39;~&gt; 5.0.0&#39;</span>
+
+group <span class="st">:test</span> <span class="kw">do</span>
+    gem <span class="st">&#39;rspec-rails&#39;</span>, <span class="st">&#39;~&gt; 3.0&#39;</span>
+    gem <span class="st">&#39;mongoid-rspec&#39;</span>, <span class="st">&#39;3.0.0&#39;</span>
+<span class="kw">end</span></code></pre></div></li>
+<li><p>Generate a <code>mongoid.yml</code> configuration file</p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash">$ <span class="kw">rails</span> g mongoid:config
+    <span class="kw">create</span> config/mongoid.yml</code></pre></div></li>
+<li><p>Add the generated <code>mongoid.yml</code> file to <code>config/application.rb</code></p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span class="kw">module</span> <span class="dt">Contests</span>
+    <span class="kw">class</span> <span class="dt">Application</span> &lt; <span class="dt">Rails</span>::<span class="dt">Application</span>
+    ...
+    <span class="co"># Boostraps mongoid within applications -- like rails console</span>
+    <span class="dt">Mongoid</span>.load!(<span class="st">&#39;./config/mongoid.yml&#39;</span>)</code></pre></div></li>
+</ul></li>
+<li><p>Download and extract the starter set of files. The root directory of this starter set will be referred to as the root directory of your solution. When extracted correctly -- the <code>spec</code> folder should be at the same (root) level.</p>
+<pre class="text"><code>--- student-start  
+    |-- .rspec (important hidden file)
+    `-- spec
+        |-- test_utils.rb
+        |-- customtype_spec.rb
+        |-- lecture1_spec.rb
+        |-- lecture2_spec.rb
+        |-- lecture3_spec.rb
+        |-- lecture4_spec.rb
+        |-- lecture5_spec.rb
+        |-- rails_helper.rb
+        `-- spec_helper.rb</code></pre>
+<ul>
+<li>spec - this directory contains tests to verify your solution. You should not modify anything in this directory</li>
+</ul></li>
+<li><p>Implement the technical requirements.</p></li>
+<li><p>Run the rspec command from the project root directory. The spec files are written per-lecture. The steps taken in one lecture can impact the results of a preceding lecture. However, if you execute all sections correctly, you will be able to execute all rspec tests at the end and pass.</p>
+<pre class="shell"><code>$ rspec
+
+(N) examples, (N) failures
+...</code></pre></li>
+</ol>
+<h2 id="technical-requirements">Technical Requirements</h2>
+<h3 id="setup-custom-type">Setup: Custom Type</h3>
+<p>In this section we will perform some catch-up and implement a custom type described in Lesson 1. Custom types have structure but no <code>_id</code>. They are used as a convenience for handling fields and marshaling/de-marshaling those fields. Otherwise your application code can work directly with hashes.</p>
+<ol style="list-style-type: decimal">
+<li><p>Add a custom type called <code>Point</code> (in the <code>app/model</code> directory) that represents the longitude and latitude coordinates for an <code>Address</code> expressed in <code>GeoJSON</code> format. This class must:</p>
+<ul>
+<li>be called <code>Point</code></li>
+<li>have a read/write attribute called <code>longitude</code></li>
+<li>have a read/write attribute called <code>latitude</code></li>
+<li>have an initializer that accepts the two attribute values in the order of <code>longitude</code> and <code>latitude</code></li>
+</ul>
+<p>You can use the rails console to demonstrate your new class and initializer method.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; <span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>)
+  =&gt; <span class="co">#&lt;Point:0x000000053e69d0 @longitude=0, @latitude=1&gt; </span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb -e rq01</code></pre></li>
+<li><p>Add an instance method to the <code>Point</code> class called <code>mongoize</code> that returns a hash in <code>GeoJSON Point</code> format and ready to be stored within MongoDB. An instance method by this name is required by Mongoid for use of custom types. This method must:</p>
+<ul>
+<li>accept no arguments</li>
+<li>return a hash with a
+<ul>
+<li>key <code>type</code> with the String value <code>&quot;Point&quot;</code> and</li>
+<li>key <code>coordinates</code> with an array containing <code>longitude</code> and <code>latitude</code> in that order.</li>
+</ul></li>
+</ul>
+<p>You can use the rails console to demonstrate your new instance method.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">  &gt; <span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>).mongoize
+   =&gt; {<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]} </code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb -e rq02</code></pre></li>
+<li><p>Add a class method called <code>demongoize</code> that will return an instance of the <code>Point</code> class initialized from the contents in the database. A class method by this name is required by Mongoid for custom types. This method must:</p>
+<ul>
+<li>accept a hash object assumed to be the result of the <code>mongoize</code> method</li>
+<li>extract the <code>longitude</code> and <code>latitude</code> from the <code>coordinates</code> array in the hash</li>
+<li>instantiate a new Point instance with the <code>longitude</code> and <code>latitude</code></li>
+<li>return the new Point instance</li>
+</ul>
+<p>You can use the rails console to demonstrate your new class method.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Point</span>.demongoize(<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>])
+ =&gt; <span class="co">#&lt;Point:0x0000000538e7a8 @longitude=0, @latitude=1&gt;</span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb -e rq03</code></pre></li>
+<li><p>Add a class method called <code>mongoize</code> that will accept either <code>Point</code> or hash types and return a <code>mongoized</code> string for either inputs. A class method by this name is required by Mongoid for custom types. This method must:</p>
+<ul>
+<li>accept a single input</li>
+<li>determine the type of the input</li>
+<li>create a <code>mongoized</code> form of the <code>Point</code> ready to be store in MongoDB.</li>
+</ul>
+<p>You can use the rails console to demonstrate your new class method.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; <span class="dt">Point</span>.mongoize(<span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>))
+  =&gt; {<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]} 
+ &gt; <span class="dt">Point</span>.mongoize(<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>])
+  =&gt; {<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb -e rq04</code></pre></li>
+<li><p>Add a class method called <code>evolve</code> that performs the same functionality as <code>mongoize</code>. A class method by this name is required by Mongoid for custom types.</p>
+<p>You can use the rails console to demonstrate your new class method.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; <span class="dt">Point</span>.evolve(<span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>))
+  =&gt; {<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]} 
+ &gt; <span class="dt">Point</span>.evolve(<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>])
+  =&gt; {<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb -e rq05</code></pre></li>
+<li><p>Use the <code>rails generate</code> to create a model class called <code>Address</code> with the following fields:</p>
+<ul>
+<li><code>street</code> : String</li>
+<li><code>city</code> : String</li>
+<li><code>state</code> : String</li>
+<li><code>country</code> : String</li>
+<li><code>geolocation</code> : Point</li>
+</ul>
+<p>You can use the rails console to demonstrate your new model class with the embedded custom type.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Address</span>.create(<span class="st">:geolocation=</span>&gt;<span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>))          
+ =&gt; <span class="co">#&lt;Address _id: 5675f08de301d0a1fb000000, </span>
+   <span class="st">street: </span><span class="dv">nil</span>, <span class="st">city: </span><span class="dv">nil</span>, <span class="st">state: </span><span class="dv">nil</span>, <span class="st">country: </span><span class="dv">nil</span>, 
+   <span class="st">geolocation: </span>{<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}&gt; 
+
+&gt; <span class="dt">Address</span>.collection.find.first
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675f08de301d0a1f    Can navigate from Racer to Address (FAILED - 2)</span>
+<span class="st">b000000&#39;</span>), 
+   <span class="st">&quot;geolocation&quot;</span>=&gt;{<span class="st">&quot;type&quot;</span>=&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">&quot;coordinates&quot;</span>=&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}}
+
+&gt; <span class="dt">Address</span>.first.geolocation
+ =&gt; <span class="co">#&lt;Point:0x000000047aee10 @longitude=0, @latitude=1&gt; </span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/customtype_spec.rb</code></pre></li>
+</ol>
+<h3 id="lecture-1-11-embedded">Lecture 1: 1:1 Embedded</h3>
+<p>In this section we will build a 1:1 embedded relationship between <code>Racer</code>/<code>Venue</code> and <code>Address</code>. We will start with just <code>Racer</code> and <code>Address</code> and build a concrete 1:1 embedded relationship. It will eventually evolve to a 1:1 embedded polymorphic relationship since Address is not specific to <code>Racer</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the <code>rails generate</code> to create a model class called <code>Racer</code> with the following fields:</p>
+<ul>
+<li><code>first_name</code> : String -- mapped to the document field <code>fn</code></li>
+<li><code>last_name</code> : String -- mapped to the document field <code>ln</code></li>
+<li><code>date_of_birth</code> : Date -- mapped to the document field <code>dob</code></li>
+</ul>
+<p>You can use the rails console to demonstrate your new model class, fields, and field mappings.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Racer</span>.new
+ =&gt; <span class="co">#&lt;Racer _id: 5675fb8ae301d0a1fb000002, </span>
+   first_name(fn): <span class="dv">nil</span>, last_name(ln): <span class="dv">nil</span>, date_of_birth(dob): <span class="dv">nil</span>&gt;</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq01</code></pre></li>
+<li><p>Define a 1:1 uni-directional, embeded relationship from <code>Racer</code> to <code>Address</code> using the <code>embeds_one</code> macro. (<strong>Hint</strong>: Since the relationship name <code>primary_address</code> is different from the classname <code>Address</code>, you must specify a <code>class_name</code> mapping). This relationship must:</p>
+<ul>
+<li>be called <code>primary_address</code></li>
+<li>embed the <code>Address</code> instance within the body of the <code>Racer</code></li>
+</ul>
+<p>You can use the rails console to demonstrate your new relationship. In the example below, we are forming the relationship at the point where query is executed.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; address=<span class="dt">Address</span>.new(<span class="st">:city=</span>&gt;<span class="st">&quot;somewhere&quot;</span>, <span class="st">:geolocation=</span>&gt;<span class="dt">Point</span>.new(<span class="dv">0</span>,<span class="dv">1</span>))
+ =&gt; <span class="co">#&lt;Address _id: 5675fedfe301d0a1fb000003, street: nil, city: &quot;somewhere&quot;, </span>
+   <span class="st">state: </span><span class="dv">nil</span>, <span class="st">country: </span><span class="dv">nil</span>, <span class="st">geolocation: </span>{<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}&gt; 
+&gt; r=<span class="dt">Racer</span>.create(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>,<span class="st">:primary_address=</span>&gt;address)
+ =&gt; <span class="co">#&lt;Racer _id: 5675ff11e301d0a1fb000004, </span>
+   first_name(fn): <span class="st">&quot;cat&quot;</span>, last_name(ln): <span class="st">&quot;inhat&quot;</span>, date_of_birth(dob): <span class="dv">nil</span>&gt; </code></pre></div>
+<p><strong>Note</strong> the <code>Address</code> instance is embedded within the <code>Racer</code> instance.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; pp r.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>),
+ <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;cat&quot;</span>,
+ <span class="st">&quot;last_name&quot;</span>=&gt;<span class="st">&quot;inhat&quot;</span>,
+ <span class="st">&quot;primary_address&quot;</span>=&gt;
+  {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675fedfe301d0a1fb000003&#39;</span>),
+   <span class="st">&quot;city&quot;</span>=&gt;<span class="st">&quot;somewhere&quot;</span>,
+   <span class="st">&quot;geolocation&quot;</span>=&gt;{<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="dv">0</span>, <span class="dv">1</span>]}}}</code></pre></div>
+<p>Notice that you can navigate from the <code>Racer</code> to the <code>Address</code> fields. Since this is currently uni-directional, we cannot navigate from the <code>Address</code> instance to the containing <code>Racer</code> instance.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r.first_name
+ =&gt; <span class="st">&quot;cat&quot;</span> 
+&gt; r.primary_address.city
+ =&gt; <span class="st">&quot;somewhere&quot;</span> 
+&gt; r.primary_address.geolocation
+ =&gt; <span class="co">#&lt;Point:0x00000004ffe818 @longitude=0, @latitude=1&gt; </span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq02</code></pre></li>
+<li><p>Define a 1:1 concrete relationship in the reverse direction from <code>Address</code> to <code>Racer</code> using the <code>embedded_in</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>racer</code> and be specific to <code>Racer</code> (i.e., we are not yet worried about Venue at this point)</li>
+</ul>
+<p>You can demonstrate your new bi-directional relationship by navigating back and forth between the <code>Racer</code> and <code>Address</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=<span class="dt">Racer</span>.where(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>).first
+ =&gt; <span class="co">#&lt;Racer _id: 5675ff11e301d0a1fb000004, </span>
+   first_name(fn): <span class="st">&quot;cat&quot;</span>, last_name(ln): <span class="st">&quot;inhat&quot;</span>, date_of_birth(dob): <span class="dv">nil</span>&gt; 
+&gt; address=r.primary_address
+&gt; address.racer
+ =&gt; <span class="co">#&lt;Racer _id: 5675ff11e301d0a1fb000004, </span>
+   first_name(fn): <span class="st">&quot;cat&quot;</span>, last_name(ln): <span class="st">&quot;inhat&quot;</span>, date_of_birth(dob): <span class="dv">nil</span>&gt;</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq03</code></pre></li>
+<li><p>Generalize the 1:1 concrete relationship using a polymorphic construct such that any model class can also embed <code>Address</code> instance(s). The <code>Address</code> class must</p>
+<ul>
+<li>change the name of the relationship from <code>racer</code> to <code>addressable</code></li>
+<li>annotate the relationship as being <code>polymorphic</code></li>
+</ul>
+<p>The <code>Racer</code> class must:</p>
+<ul>
+<li>annotate the relationship on its end as <code>addressable</code></li>
+</ul>
+<p>You may use the rails console to repeat the actions of the previous step to demonstrate your new polymorphic relationship.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=<span class="dt">Racer</span>.where(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>).first
+&gt; address=r.primary_address
+&gt; address.addressable
+ =&gt; <span class="co">#&lt;Racer _id: 5675ff11e301d0a1fb000004, </span>
+   first_name(fn): <span class="st">&quot;cat&quot;</span>, last_name(ln): <span class="st">&quot;inhat&quot;</span>, date_of_birth(dob): <span class="dv">nil</span>&gt; </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq04</code></pre></li>
+<li><p>Use the <code>rails generate</code> command to create a model class called <code>Venue</code> with the following fields:</p>
+<ul>
+<li><code>name</code> : String</li>
+</ul>
+<p>You can use the rails console to demonstrate your new model class.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Venue</span>.new
+ =&gt; <span class="co">#&lt;Venue _id: 56760a1ce301d0a1fb000005, name: nil&gt;</span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq05</code></pre></li>
+<li><p>Create a 1:1 embedded relationship between <code>Venue</code> and <code>Address</code> using the now polymorphic <code>addressable</code> relationship. This relationship must:</p>
+<ul>
+<li>be called <code>address</code></li>
+<li>embed an instance of <code>Address</code> within <code>Venue</code> instances</li>
+<li>annotate the relationship as <code>addressable</code></li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console. If you inspect the <code>Venue</code> class for methods containing the word <code>address</code> (<strong>Hint</strong>: <code>Venue.methods.grep /address/</code>) you can locate alternatives for creating the relationship.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v=<span class="dt">Venue</span>.create(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston&quot;</span>)
+ =&gt; <span class="co">#&lt;Venue _id: 56760ddbe301d0a1fb00000a, name: &quot;Boston&quot;&gt; </span>
+&gt; <span class="dt">Venue</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston&quot;</span>).attributes
+ =&gt; {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>), <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston&quot;</span>} 
+
+&gt; v.create_address(<span class="st">:city=</span>&gt;<span class="st">&quot;Boston&quot;</span>, <span class="st">:state=</span>&gt;<span class="st">&quot;MA&quot;</span>, <span class="st">:geolocation=</span>&gt;<span class="dt">Point</span>.new(<span class="fl">71.5</span>,<span class="fl">42.21</span>))
+ =&gt; <span class="co">#&lt;Address _id: 56760de9e301d0a1fb00000b, street: nil, city: &quot;Boston&quot;, state: &quot;MA&quot;, </span>
+   <span class="st">country: </span><span class="dv">nil</span>, <span class="st">geolocation: </span>{<span class="st">:type=</span>&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">:coordinates=</span>&gt;[<span class="fl">71.5</span>, <span class="fl">42.21</span>]}&gt; 
+&gt; pp <span class="dt">Venue</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston&quot;</span>).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston&quot;</span>,
+ <span class="st">&quot;address&quot;</span>=&gt;
+  {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760de9e301d0a1fb00000b&#39;</span>),
+   <span class="st">&quot;city&quot;</span>=&gt;<span class="st">&quot;Boston&quot;</span>,
+   <span class="st">&quot;state&quot;</span>=&gt;<span class="st">&quot;MA&quot;</span>,
+   <span class="st">&quot;geolocation&quot;</span>=&gt;{<span class="st">&quot;type&quot;</span>=&gt;<span class="st">&quot;Point&quot;</span>, <span class="st">&quot;coordinates&quot;</span>=&gt;[<span class="fl">71.5</span>, <span class="fl">42.21</span>]}}}
+
+&gt; v.address.addressable
+ =&gt; <span class="co">#&lt;Venue _id: 56760ddbe301d0a1fb00000a, name: &quot;Boston&quot;&gt;</span></code></pre></div>
+<p><strong>Note</strong> that setting the <code>address</code> to <code>nil</code> removes the <code>Address</code> from the <code>Venue</code> document.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v.address=<span class="dv">nil</span>
+ =&gt; <span class="dv">nil</span> 
+&gt; pp <span class="dt">Venue</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston&quot;</span>).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>), <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston&quot;</span>}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture1_spec.rb -e rq06</code></pre></li>
+</ol>
+<h3 id="lecture-2-1m-linked">Lecture 2: 1:M Linked</h3>
+<p>In this section you will be asked to create a few examples of 1:M linked relationships. The first one between <code>Contest</code> and <code>Venue</code> will be straight forward. The second one between <code>Entrant</code> and <code>Racer</code> will be complicated by <code>Entrant</code> becoming an embedded type in the next section.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the <code>rails generate</code> command to create a model class called <code>Contest</code> with the following fields:</p>
+<ul>
+<li><code>name</code> : String</li>
+<li><code>date</code> : Date</li>
+</ul>
+<p>Also add:</p>
+<ul>
+<li>a mixin to track updates, but not creates (<strong>Hint</strong>: <code>Mongoid::Timestamps::Updated</code>)</li>
+</ul>
+<p>You can use the rails console to demonstrate your new model class, fields, and field mappings.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Contest</span>.new
+ =&gt; <span class="co">#&lt;Contest _id: 56761701e301d0a1fb00000c, updated_at: nil, name: nil, date: nil&gt; </span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq01</code></pre></li>
+<li><p>Create a M:1 linked, uni-directional relationship from <code>Contest</code> to <code>Venue</code> using the <code>belongs_to</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>venue</code></li>
+<li>form a foreign key link from the <code>Contest</code> to the <code>Venue</code></li>
+</ul>
+<p>You can use the rails console to demonstrate your new M:1 uni-directional relationship.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v=<span class="dt">Venue</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston&quot;</span>)
+ =&gt; <span class="co">#&lt;Venue _id: 56760ddbe301d0a1fb00000a, name: &quot;Boston&quot;&gt; </span>
+&gt; c=<span class="dt">Contest</span>.create(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston 5K&quot;</span>, <span class="st">:date=</span>&gt;<span class="dt">Date</span>.new(<span class="dv">2015</span>,<span class="dv">5</span>,<span class="dv">30</span>))
+&gt; pp <span class="dt">Contest</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston 5K&quot;</span>).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>), 
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>, 
+ <span class="st">&quot;date&quot;</span>=&gt;<span class="dv">2015</span><span class="bn">-05</span><span class="dv">-30</span> <span class="dv">00</span>:<span class="dv">00</span>:<span class="dv">00</span> <span class="dt">UTC</span>, 
+ <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">02</span>:<span class="dv">58</span>:<span class="dv">12</span> <span class="dt">UTC</span>}</code></pre></div>
+<p>Notice that when you asssign the <code>Venue</code> to the <code>Contest</code> and save the <code>Contest</code>, the foreign key to the <code>Venue</code> is written into the <code>Contest</code> instance.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; c.venue = v
+ =&gt; <span class="co">#&lt;Venue _id: 56760ddbe301d0a1fb00000a, name: &quot;Boston&quot;&gt; </span>
+&gt; c.save
+&gt; pp <span class="dt">Contest</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston 5K&quot;</span>).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>,
+ <span class="st">&quot;date&quot;</span>=&gt;<span class="dv">2015</span><span class="bn">-05</span><span class="dv">-30</span> <span class="dv">00</span>:<span class="dv">00</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">03</span>:<span class="bn">02</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>)}</code></pre></div>
+<p>Notice that if you reset the state of the in-memory instances and access the <code>Contest</code> again, the <code>Venue</code> is not accessed.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; reload!
+
+&gt; c=<span class="dt">Contest</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston 5K&quot;</span>)
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;contests&quot;</span>, <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>}}
+ =&gt; <span class="co">#&lt;Contest _id: 56761944e301d0a1fb00000d, updated_arailst: 2015-12-20 03:02:00 UTC, name: &quot;Boston 5K&quot;, ...</span></code></pre></div>
+<p>We can even access the <code>_id</code> of the <code>Venue</code> from the <code>Contest</code> without loading the <code>Venue</code>. This is because Mongoid gives us direct access to the foreign key property.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; c.venue_id
+ =&gt; <span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>) </code></pre></div>
+<p>However, if we cross the relationship -- the <code>Venue</code> is loaded.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; c.venue.id
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;venues&quot;</span>, <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>)}}
+ =&gt; <span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>) </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq02</code></pre></li>
+<li><p>Implement the inverse side of the M:1 relationship from <code>Venue</code> to <code>Contest</code> using the <code>has_many</code> macro. This does not add a foreign key local to <code>Venue</code>. It causes <code>Venue</code> to search for <code>Contest</code>s with its primary key listed as a foreign key. The relationship must:</p>
+<ul>
+<li>be called <code>contests</code></li>
+</ul>
+<p>You can demonstrate your new 1:M inverse relationship using the rails console. Pay close attention to the debug printed (and not printed) by the driver. We start by getting a <code>Contest</code> with an association with a <code>Venue</code> to obtain the primary key for the <code>Venue</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; reload!
+&gt; c=<span class="dt">Contest</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Boston 5K&quot;</span>)
+&gt; vid=c.venue_id</code></pre></div>
+<p>When we access the <code>Venue</code> via the find method, the <code>venues</code> collection is searched for documents with a primary key (<code>_id</code>) equal to our value.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v=<span class="dt">Venue</span>.find(vid)
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;venues&quot;</span>, <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>)}}
+ =&gt; <span class="co">#&lt;Venue _id: 56760ddbe301d0a1fb00000a, name: &quot;Boston&quot;&gt; </span></code></pre></div>
+<p>When we access the <code>Contest</code>s via the <code>venue.contests</code> method, the <code>contests</code> collection is searched for foreign keys (<code>venue_id</code>) equal to our value.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v.contests.map {|c| c.name}
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;contests&quot;</span>, <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>)}}
+ =&gt; [<span class="st">&quot;Boston 5K&quot;</span>] </code></pre></div>
+<p>Prior to removing the relationship, we can check the state of the database and see the foreign key in the <code>Contest</code> collection.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; pp c.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>,
+ <span class="st">&quot;date&quot;</span>=&gt;<span class="dv">2015</span><span class="bn">-05</span><span class="dv">-30</span> <span class="dv">00</span>:<span class="dv">00</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">03</span>:<span class="bn">02</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56760ddbe301d0a1fb00000a&#39;</span>)}</code></pre></div>
+<p>When we remove the <code>Contest</code> (many-side) from the <code>Venue</code> (one/inverse-side) side of the bi-directional relationship, the foreign key in the <code>Contest</code> is updated along with the <code>updated_at</code> timestamp.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v.contests.delete c
+D, | {<span class="st">&quot;update&quot;</span>=&gt;<span class="st">&quot;contests&quot;</span>, <span class="st">&quot;updates&quot;</span>=&gt;[{<span class="st">&quot;q&quot;</span>=&gt;{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>)}, 
+  <span class="st">&quot;u&quot;</span>=&gt;{<span class="st">&quot;$set&quot;</span>=&gt;{<span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dv">nil</span>, <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">03</span>:<span class="dv">29</span>:<span class="dv">54</span> <span class="dt">UTC</span>}}...</code></pre></div>
+<p>We are left with a <code>nil</code> foreign key in the <code>Contest</code> with an updated <code>updated_at</code> timestamp.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; pp <span class="dt">Contest</span>.find(c.id).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>,
+ <span class="st">&quot;date&quot;</span>=&gt;<span class="dv">2015</span><span class="bn">-05</span><span class="dv">-30</span> <span class="dv">00</span>:<span class="dv">00</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">03</span>:<span class="dv">29</span>:<span class="dv">54</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dv">nil</span>}</code></pre></div>
+<p>Further accesses for <code>Contest</code> instances for the <code>Venue</code> come up empty.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; v.contests.map {|c| c.name}
+ =&gt; [] </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq03</code></pre></li>
+<li><p>Use the <code>rails generate</code> command to create a model class called <code>Entrant</code> with the following fields:</p>
+<ul>
+<li><code>_id</code> : Integer -- assigned to hold the <code>number</code> of the entrant</li>
+<li><code>name</code> : String -- cached name of the <code>Racer</code></li>
+<li><code>group</code> : String</li>
+<li><code>secs</code> : Float</li>
+</ul>
+<p>You can demonstrate your new model class using the rails console.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Entrant</span>.new(<span class="st">:id=</span>&gt;<span class="dv">1</span>)
+ =&gt; <span class="co">#&lt;Entrant _id: 1, name: nil, group: nil, secs: nil&gt;</span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq04</code></pre></li>
+<li><p>Add a M:1 uni-directional, linked relationship from <code>Entrant</code> to <code>Racer</code> using the <code>belongs_to</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>racer</code></li>
+<li>copy the name of the <code>Racer</code> (by concatenating &quot;last, first&quot; names separated by a comma, into a single string) when the instance is created. (Hint: <code>before_create</code> callback).</li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console. When we associate a new <code>Entrant</code> with a <code>Racer</code> instance, only the primary key of the <code>Racer</code> is stored.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer=<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>)
+&gt; entrant=<span class="dt">Entrant</span>.new(<span class="st">:id=</span>&gt;<span class="dv">1</span>, <span class="st">:racer=</span>&gt;racer, <span class="st">:group=</span>&gt;<span class="st">&quot;masters&quot;</span>)
+ =&gt; <span class="co">#&lt;Entrant _id: 1, name: nil, group: &quot;masters&quot;, secs: nil, </span>
+   <span class="st">racer_id: </span><span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)&gt; </code></pre></div>
+<p>However, when the <code>Entrant</code> is saved, the <code>before_create</code> callback is invoked, where the <code>Entrant</code> has a chance to copy off the <code>Racer</code>'s first/last name into a field within the <code>Entrant</code> document. It is assumed that <code>Entrant</code>s never change <code>Racer</code> instances and <code>Racer</code> names rarely change. However, it is also assumed that the <code>Racer</code> name will be needed in <code>Contest</code> race results.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; entrant.save
+D, | {<span class="st">&quot;insert&quot;</span>=&gt;<span class="st">&quot;entrants&quot;</span>, <span class="st">&quot;documents&quot;</span>=&gt;[{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">1</span>, <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;masters&quot;</span>, 
+  <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>), <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;inhat, cat&quot;</span>}]</code></pre></div>
+<p><strong>Note</strong> that the name of the <code>Racer</code> can be obtained from the cached copy within the <code>Entrant</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; entrant.name
+ =&gt; <span class="st">&quot;inhat, cat&quot;</span> </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq05</code></pre></li>
+<li><p>Implement the inverse side of the M:1 linked relationship from <code>Racer</code> to <code>Entrant</code> using the <code>has_many</code> macro. This will be a temporary construct because in the next section we will be changing <code>Entrant</code> to an embedded class and will need to do something different. For now, this relationship must:</p>
+<ul>
+<li>be called <code>races</code> (<strong>Hint</strong>: this relationship must also be mapped to the <code>Entrant</code> class since the name <code>Entrant</code> and the singular form of <code>races</code> is not the same.</li>
+</ul>
+<p>You can demonstrate your new bi-directional relationship using the rails console. Notice if more <code>Entrant</code> associations are made with <code>Racer</code> -- they are all located using a single foreign key query.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; (<span class="dv">2</span>..<span class="dv">3</span>).each {|index| <span class="dt">Entrant</span>.create(<span class="st">:id=</span>&gt;index, <span class="st">:racer=</span>&gt;racer)}
+&gt; racer.races.map {|r| r.id}
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;entrants&quot;</span>, 
+  <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)}}
+ =&gt; [<span class="dv">2</span>, <span class="dv">3</span>] </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture2_spec.rb -e rq06</code></pre></li>
+</ol>
+<h3 id="lecture-3-1m-embedded">Lecture 3: 1:M Embedded</h3>
+<p>In this section you will focus on implementing a 1:M embedded relationship. In this case, the embedded document will be an &quot;annotated link&quot; from <code>Contest</code> to <code>Racer</code> augmented with racer-specific information for the contest using an <code>Entrant</code> class.</p>
+<ol style="list-style-type: decimal">
+<li><p>Create an 1:M, uni-directional embedded relationship from <code>Contest</code> to <code>Entrant</code> using the <code>embeds_many</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>entrants</code></li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console. However, until we make this a bi-directional relationship there will not be much you can do with the relationship.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Contest</span>.new.entrants 
+ =&gt; [] </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture3_spec.rb -e rq01</code></pre></li>
+<li><p>Complete the M:1, bi-directional embedded relationship from <code>Entrant</code> to <code>Contest</code> using the <code>embedded_in</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>contest</code></li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">Entrant</span>.new.embedded?
+ =&gt; <span class="dv">true</span> 
+&gt; <span class="dt">Entrant</span>.new.contest
+ =&gt; <span class="dv">nil</span> </code></pre></div>
+<p>However, we soon will see that embedding <code>Entrant</code> within <code>Contest</code> causes a problem with the inverse side of the 1:M relationship from <code>Racer</code> to `Entrant'.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer=<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>)
+&gt; racer.races
+  <span class="dt">Mongoid</span>::<span class="dt">Errors</span>::<span class="dt">MixedRelations</span>: 
+  message:
+    <span class="dt">Referencing</span> a(n) <span class="dt">Entrant</span> document from the <span class="dt">Racer</span> document via
+    a relational association is <span class="kw">not</span> allowed since the <span class="dt">Entrant</span> is
+    embedded.
+  summary:
+    <span class="dt">In</span> order to properly access a(n) <span class="dt">Entrant</span> from <span class="dt">Racer</span> the reference
+    would need to go through the root document of <span class="dt">Entrant</span>. <span class="dt">In</span> a simple
+    <span class="kw">case</span> this would require <span class="dt">Mongoid</span> to store an extra foreign key
+    <span class="kw">for</span> the root, <span class="kw">in</span> more complex cases where <span class="dt">Entrant</span> is multiple
+    levels deep a key would need to be stored <span class="kw">for</span> each parent up
+    the hierarchy.
+  resolution:
+    <span class="dt">Consider</span> <span class="kw">not</span> embedding <span class="dt">Entrant</span>, <span class="kw">or</span> <span class="kw">do</span> the key storage <span class="kw">and</span> access
+    <span class="kw">in</span> a custom manner <span class="kw">in</span> the application code.</code></pre></div>
+<p><strong>Note</strong> that many of the previous rspec tests that succeeded will now fail as the result of the current state detailed above. This will be repaired in the next step.</p>
+<pre class="shell"><code>$ rspec spec/lecture3_spec.rb -e rq02</code></pre></li>
+<li><p>Modify the M:1 relationship from <code>Entrant</code> to <code>Racer</code> to be uni-directional again, thus only directly navigatable from the embedded <code>Entrant</code> owning side. We will provide an alternative once we get finished with the other relationship started in this section.</p>
+<p>You can demonstrate that the relationship is again uni-directional using the rails console. We can navigate from the <code>Entrant</code> to the <code>Racer</code> but no longer have a way to navigate back.</p>
+<p><strong>Note</strong> that this will still break lecture2_spec tests for rq06 since there is neither a races relationship or method at the moment. This will be repaired shortly.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; entrant=<span class="dt">Entrant</span>.first
+&gt; racer=entrant.racer
+&gt; racer.methods.grep <span class="ot">/races/</span>
+ =&gt; [] </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture3_spec.rb -e rq03</code></pre></li>
+<li><p>Complete the demonstration of the 1:M embedded relationship between <code>Contest</code> and <code>Entrant</code>.</p>
+<p>Using the rails console, you can demonstrate your 1:M embedded relationship, with the embedded <code>Entrant</code> class having a link to the <code>Racer</code>. Notice how each of the <code>Entrants</code> are now stored within an array contained in the <code>Contest</code> document.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; [<span class="st">&quot;one&quot;</span>,<span class="st">&quot;two&quot;</span>].each {|lname| <span class="dt">Racer</span>.create(<span class="st">:fn=</span>&gt;<span class="st">&quot;thing&quot;</span>,<span class="st">:ln=</span>&gt;lname) }
+&gt; contest=<span class="dt">Contest</span>.first
+&gt; contest.entrants.create(<span class="st">:id=</span>&gt;<span class="dv">1</span>, <span class="st">:group=</span>&gt;<span class="st">&quot;youth&quot;</span>, <span class="st">:racer=</span>&gt;<span class="dt">Racer</span>.find_by(<span class="st">:ln=</span>&gt;<span class="st">&quot;one&quot;</span>))
+&gt; contest.entrants.create(<span class="st">:id=</span>&gt;<span class="dv">2</span>, <span class="st">:group=</span>&gt;<span class="st">&quot;youth&quot;</span>, <span class="st">:racer=</span>&gt;<span class="dt">Racer</span>.find_by(<span class="st">:ln=</span>&gt;<span class="st">&quot;two&quot;</span>))
+&gt; contest.entrants.create(<span class="st">:id=</span>&gt;<span class="dv">0</span>, <span class="st">:group=</span>&gt;<span class="st">&quot;masters&quot;</span>, <span class="st">:racer=</span>&gt;<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>))
+&gt; pp <span class="dt">Contest</span>.first.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>),
+ <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Boston 5K&quot;</span>,
+ <span class="st">&quot;date&quot;</span>=&gt;<span class="dv">2015</span><span class="bn">-05</span><span class="dv">-30</span> <span class="dv">00</span>:<span class="dv">00</span>:<span class="dv">00</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;updated_at&quot;</span>=&gt;<span class="dv">2015-12-20</span> <span class="bn">06</span>:<span class="bn">07</span>:<span class="dv">15</span> <span class="dt">UTC</span>,
+ <span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dv">nil</span>,
+ <span class="st">&quot;entrants&quot;</span>=&gt;
+  [{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">1</span>,
+    <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;youth&quot;</span>,
+    <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676438be301d0a1fb000026&#39;</span>),
+    <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;one, thing&quot;</span>},
+   {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">2</span>,
+    <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;youth&quot;</span>,
+    <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676438be301d0a1fb000027&#39;</span>),
+    <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;two, thing&quot;</span>},
+   {<span class="st">&quot;_id&quot;</span>=&gt;<span class="dv">0</span>,
+    <span class="st">&quot;group&quot;</span>=&gt;<span class="st">&quot;masters&quot;</span>,
+    <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>),
+    <span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;inhat, cat&quot;</span>}]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture3_spec.rb -e rq04</code></pre></li>
+<li><p>Add an instance method called <code>races</code> that re-implements access to the now embedded <code>Entrant</code> documents from <code>Racer</code> using a query and application logic (as the error message suggests.) This method must:</p>
+<ul>
+<li>be called <code>races</code></li>
+<li>query for all <code>Contest</code> instances that contain an <code>Entrant</code> with a foreign key (<code>racer_id</code>) equal to the primary key (<code>_id</code>) of the current <code>Racer</code> instance (<strong>Hint</strong>: <code>where</code> function) and</li>
+<li>return references to only the embedded documents (<strong>Hint</strong>: <code>map</code> function)</li>
+</ul>
+<p>You can demonstrate your new navigation using the rails console. Given a <code>Racer</code>, you should be able to obtain a collection of <code>Entract</code> instances for races.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer=<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>)
+&gt; racer.races
+ =&gt; [<span class="co">#&lt;Entrant _id: 0, name: &quot;inhat, cat&quot;, group: &quot;masters&quot;, secs: nil, </span>
+  <span class="st">racer_id: </span><span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)&gt;] 
+&gt; racer.races.first.contest.name
+ =&gt; <span class="st">&quot;Boston 5K&quot;</span> </code></pre></div>
+<p>We can verify that list by coming from the other direction.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; contest=<span class="dt">Contest</span>.where(:<span class="st">&quot;entrants.name&quot;</span>=&gt;{<span class="st">:$regex=</span>&gt;<span class="st">&quot;inhat&quot;</span>}).first
+&gt; contest.entrants.where(<span class="st">:name=</span>&gt;<span class="st">&quot;inhat, cat&quot;</span>).first
+ =&gt; <span class="co">#&lt;Entrant _id: 0, name: &quot;inhat, cat&quot;, group: &quot;masters&quot;, secs: nil, </span>
+  <span class="st">racer_id: </span><span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)&gt; </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture3_spec.rb -e rq05</code></pre></li>
+</ol>
+<h3 id="lecture-4-11-linked">Lecture 4: 1:1 Linked</h3>
+<p>In this section we will concentrate on creating a 1:1 linked relationship. We will create a <code>MedicalRecord</code>, which we want to keep associated with the <code>Racer</code>, but separate from the <code>Racer</code>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the <code>rails generate</code> command to create a model class called <code>MedicalRecord</code> that is mapped to the <code>medical</code> collection and uses the following fields:</p>
+<ul>
+<li><code>conditions</code> : Array</li>
+</ul>
+<p>You can demonstrate your new model class using the rails console.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">MedicalRecord</span>.new(<span class="st">:conditions=</span>&gt;[<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>])
+ =&gt; <span class="co">#&lt;MedicalRecord _id: 567655c6e301d0a1fb00002b, conditions: [&quot;A&quot;, &quot;B&quot;]&gt; </span></code></pre></div>
+<p>Notice too that the documents in this collection are being stored in an alternate-named collection called <code>medical</code> and not the default name of <code>medicalrecords</code> derived from the model class name.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; <span class="dt">MedicalRecord</span>.collection.name
+ =&gt; <span class="st">&quot;medical&quot;</span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture4_spec.rb -e rq01</code></pre></li>
+<li><p>Add a 1:1 linked, uni-directional relationship from <code>MedicalRecord</code> to <code>Racer</code> using the <code>belongs_to</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>racer</code></li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console. The <code>MedicalRecord</code> class was implemented to store the foreign key of the <code>Racer</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; m=<span class="dt">MedicalRecord</span>.create(<span class="st">:conditions=</span>&gt;[<span class="st">&quot;A&quot;</span>,<span class="st">&quot;B&quot;</span>])
+ =&gt; <span class="co">#&lt;MedicalRecord _id: 5676561ce301d0a1fb00002c, conditions: [&quot;A&quot;, &quot;B&quot;], </span>
+    <span class="st">racer_id: </span><span class="dv">nil</span>&gt; 
+&gt; m.racer=<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>)
+&gt; m.save
+ =&gt; <span class="dv">true</span> 
+&gt; pp <span class="dt">MedicalRecord</span>.find(m.id).attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676561ce301d0a1fb00002c&#39;</span>),
+ <span class="st">&quot;conditions&quot;</span>=&gt;[<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>],
+ <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture4_spec.rb -e rq02</code></pre></li>
+<li><p>Implement the inverse side of the 1:1 linked relationship in the <code>Racer</code> model class using the <code>has_one</code> macro to make it bi-directional. This relationship must:</p>
+<ul>
+<li>be called <code>medical_record</code></li>
+</ul>
+<p>You can demonstrate your new bi-directional relationship capability using the rails console. In the following example, we locate the <code>MedicalRecord</code> created in the previous step, navigate to the <code>Racer</code> and back again to print the conditions.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; m=<span class="dt">MedicalRecord</span>.first
+&gt; m.racer.medical_record.conditions
+ =&gt; [<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>] </code></pre></div>
+<p><strong>Note</strong> that if we get rid of the original relationship...</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">racer=<span class="dt">Racer</span>.find_by(<span class="st">:fn=</span>&gt;<span class="st">&quot;cat&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;inhat&quot;</span>)
+racer.medical_record.destroy</code></pre></div>
+<p>...we can create a new related instance using the create_(relationship) macro.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer.create_medical_record(<span class="st">:conditions=</span>&gt;[<span class="st">&quot;C&quot;</span>,<span class="st">&quot;D&quot;</span>])
+&gt; pp <span class="dt">MedicalRecord</span>.first.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56765840e301d0b210000000&#39;</span>),
+ <span class="st">&quot;conditions&quot;</span>=&gt;[<span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>],
+ <span class="st">&quot;racer_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5675ff11e301d0a1fb000004&#39;</span>)}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture4_spec.rb -e rq03</code></pre></li>
+</ol>
+<h3 id="lecture-5-mm-linked">Lecture 5: M:M Linked</h3>
+<p>In this section we will focus on implementing a relationship where the remote foreign key is stored on both sides of the relationship as a part of an M:M bi-directional relationship.</p>
+<ol style="list-style-type: decimal">
+<li><p>Use the <code>rails generate</code> command to create a model class called <code>Judge</code> with the following fields:</p>
+<ul>
+<li><code>first_name</code> : String</li>
+<li><code>last_name</code> : String</li>
+</ul>
+<p>You can demonstrate your new model class using the rails console.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; <span class="dt">Judge</span>.new
+  =&gt; <span class="co">#&lt;Judge _id: 56765acee301d0b210000001, first_name: nil, last_name: nil&gt;</span></code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture5_spec.rb -e rq01</code></pre></li>
+<li><p>Create a M:M uni-directional, linked relationship between <code>Judge</code> and <code>Contest</code> using the <code>has_and_belongs_to_many</code> macro. This relationship must:</p>
+<ul>
+<li>be called <code>contests</code></li>
+</ul>
+<p>You can demonstrate your new relationship using the rails console. Notice that when you form the relationship -- the foreign key is stored in an array on what would have been the parent. This array implements the <code>belongs_to</code> part of <code>has_and_belongs_to_many</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; judge=<span class="dt">Judge</span>.create(<span class="st">:first_name=</span>&gt;<span class="st">&quot;Judy&quot;</span>)
+&gt; contest=<span class="dt">Contest</span>.first
+&gt; judge.contests &lt;&lt; contest
+&gt; pp <span class="dt">Judge</span>.first.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56765bd0e301d0b210000003&#39;</span>),
+ <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;Judy&quot;</span>,
+ <span class="st">&quot;contest_ids&quot;</span>=&gt;[<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>)]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture5_spec.rb -e rq02</code></pre></li>
+<li><p>Implement the reverse direction of the M:M linked relationship using the same <code>has_and_belongs_to_many</code> macro on the alternate side. The relationship must:</p>
+<ul>
+<li>be called <code>judges</code></li>
+</ul>
+<p>You can demonstrate your new navigation using the rails console. <strong>Note</strong> how Mongoid updates both sides of the relation except this time it is smart enough to know that the judge already has a record of the relationship.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; judge=<span class="dt">Judge</span>.first
+&gt; contest=<span class="dt">Contest</span>.first
+
+&gt; contest.judges &lt;&lt; judge
+&gt; pp <span class="dt">Contest</span>.first.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>),
+  ...
+ <span class="st">&quot;judge_ids&quot;</span>=&gt;[<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56765bd0e301d0b210000003&#39;</span>)]}
+&gt; pp <span class="dt">Judge</span>.first.attributes
+{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56765bd0e301d0b210000003&#39;</span>),
+ <span class="st">&quot;first_name&quot;</span>=&gt;<span class="st">&quot;Judy&quot;</span>,
+ <span class="st">&quot;contest_ids&quot;</span>=&gt;[<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;56761944e301d0a1fb00000d&#39;</span>)]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture5_spec.rb -e rq03</code></pre></li>
+</ol>
+<h3 id="lecture-6-validations-and-constraints">Lecture 6: Validations and Constraints</h3>
+<p>In this section we will focus our attention on adding more definition to fields and relationships we have in place. For the <code>Entrant</code> to <code>Racer</code> relationship -- the <code>Entrant</code> relied on both <code>first_name</code> and <code>last_name</code> being present in the <code>Racer</code> but there was nothing that made that a requirement. In that same relationship, there was also no requirement that the <code>Racer</code> exist when the <code>Entrant</code> was added.</p>
+<ol style="list-style-type: decimal">
+<li><p>In the <code>Racer</code> class, define a built-in validation that tests the presence of <code>first_name</code> and <code>last_name</code>.</p>
+<p>You can demonstrate your new validation using the rails console. Notice in the example below we can instantiate an invalid <code>Racer</code> and inspect the object for validation errors. However, the validation does not yet occur until specifically called.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby"> &gt; r=<span class="dt">Racer</span>.new
+ =&gt; <span class="co">#&lt;Racer _id: 5676d02ee301d0b21000000b, </span>
+   first_name(fn): <span class="dv">nil</span>, last_name(ln): <span class="dv">nil</span>, date_of_birth(dob): <span class="dv">nil</span>&gt; 
+&gt; r.errors.messages
+ =&gt; {} 
+&gt; r.validate
+ =&gt; <span class="dv">false</span> 
+&gt; r.errors.messages
+ =&gt; {<span class="st">:first_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>], <span class="st">:last_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>]} </code></pre></div>
+<p>The same sequence is followed if we attempt to instantiate a new, invalid <code>Racer</code> and then <code>save</code> it. The <code>save</code> fails with a quiet status response we can check and then poll for the errors.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r=<span class="dt">Racer</span>.new
+&gt; r.errors.messages
+     =&gt; {} 
+&gt; r.save
+ =&gt; <span class="dv">false</span> 
+&gt; r.errors.messages
+ =&gt; {<span class="st">:first_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>], <span class="st">:last_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>]}</code></pre></div>
+<p>To get a more violent error response back from Mongoid, we can call the <code>save!</code> method instead, which reports the error using an exception.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; r.save!
+<span class="dt">Mongoid</span>::<span class="dt">Errors</span>::<span class="dt">Validations</span>: 
+message:
+  <span class="dt">Validation</span> of <span class="dt">Racer</span> failed.
+summary:
+  <span class="dt">The</span> following errors were <span class="st">found: </span><span class="dt">First</span> name can<span class="st">&#39;t be blank, Last</span>
+<span class="st">  name can&#39;</span>t be blank
+resolution:
+  <span class="dt">Try</span> persisting the document with valid data <span class="kw">or</span> remove the
+  validations.</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture6_spec.rb -e rq01</code></pre></li>
+<li><p>Update the relationship from <code>Entrant</code> to <code>Racer</code> so that <code>Racer</code> will be validated each time <code>Entrant</code> is validated.</p>
+<p>You can demonstrate your validation cascades across relationships using the rails console. In the following, we instantiate an <code>Entrant</code> with an invalid <code>Racer</code>. The <code>Entrant</code> is reported as an error because it references an invalid <code>Racer</code>. We can walk the relationship to the <code>Racer</code> to determine more details about its validation error.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; entrant=<span class="dt">Entrant</span>.create(<span class="st">:racer=</span>&gt;<span class="dt">Racer</span>.new)
+&gt; entrant.validate
+ =&gt; <span class="dv">false</span> 
+&gt; entrant.errors.messages
+ =&gt; {<span class="st">:racer=</span>&gt;[<span class="st">&quot;is invalid&quot;</span>]} 
+&gt; entrant.racer.errors.messages
+ =&gt; {<span class="st">:first_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>], <span class="st">:last_name=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>]} </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture6_spec.rb -e rq02</code></pre></li>
+<li><p>Update the relationship from <code>MedicalRecord</code> to <code>Racer</code> so that the relationship is required to exist for <code>MedicalRecord</code> to be valid.</p>
+<p>You can demonstrate your required relationship using the rails console. In the example below, <code>MedicalRecord</code> is invalid because it does not have a relationship to a <code>Racer</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; m=<span class="dt">MedicalRecord</span>.create
+ =&gt; <span class="co">#&lt;MedicalRecord _id: 5676d759e301d0b210000016, conditions: nil, racer_id: nil&gt; </span>
+&gt; m.validate
+ =&gt; <span class="dv">false</span> 
+&gt; m.errors.messages
+ =&gt; {<span class="st">:racer=</span>&gt;[<span class="st">&quot;can&#39;t be blank&quot;</span>]}</code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture6_spec.rb -e rq03</code></pre></li>
+<li><p>Update the relationship from <code>Venue</code> to <code>Contest</code> to have <code>Venue</code> restricted from being deleted if there is a child <code>Contest</code> referencing it.</p>
+<p>Your new relationship constraint can be demonstrated using the rails console. In the example below, we create a new <code>Venue</code> and associated <code>Contest</code>. <code>Contest</code> is stored with the foreign key to <code>Venue</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; venue=<span class="dt">Venue</span>.create(<span class="st">:name=</span>&gt;<span class="st">&quot;Flat Field&quot;</span>)                
+ =&gt; <span class="co">#&lt;Venue _id: 5676dd57e301d0b21000001c, name: &quot;Flat Field&quot;&gt; </span>
+&gt; venue.contests.create(<span class="st">:name=</span>&gt;<span class="st">&quot;FF10K&quot;</span>)
+ =&gt; <span class="co">#&lt;Contest _id: 5676dd8ee301d0b21000001d, </span>
+   <span class="st">updated_at: </span><span class="dv">2015-12-20</span> <span class="dv">16</span>:<span class="dv">55</span>:<span class="dv">42</span> <span class="dt">UTC</span>, <span class="st">name: &quot;FF10K&quot;</span>, <span class="st">date: </span><span class="dv">nil</span>, 
+   <span class="st">venue_id: </span><span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676dd57e301d0b21000001c&#39;</span>), <span class="st">judge_ids: </span><span class="dv">nil</span>&gt; </code></pre></div>
+<p>Starting from a fresh find (so that we see what Mongoid needs to do to enforce the relationship) -- we can observe that Mongoid performs a count in the database for all <code>Contest</code> documents containing the foreign key to this <code>Venue</code> instance. It will report an error when the count is greater than 0.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; reload!
+&gt; venue=<span class="dt">Venue</span>.find_by(<span class="st">:name=</span>&gt;<span class="st">&quot;Flat Field&quot;</span>)
+D, | {<span class="st">&quot;find&quot;</span>=&gt;<span class="st">&quot;venues&quot;</span>, <span class="st">&quot;filter&quot;</span>=&gt;{<span class="st">&quot;name&quot;</span>=&gt;<span class="st">&quot;Flat Field&quot;</span>}}
+
+&gt; venue.destroy
+D, | {<span class="st">&quot;count&quot;</span>=&gt;<span class="st">&quot;contests&quot;</span>, 
+  <span class="st">&quot;query&quot;</span>=&gt;{<span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676dd57e301d0b21000001c&#39;</span>)}}
+<span class="dt">Mongoid</span>::<span class="dt">Errors</span>::<span class="dt">DeleteRestriction</span>: 
+message:
+  <span class="dt">Cannot</span> delete <span class="dt">Venue</span> because of dependent <span class="st">&#39;contests&#39;</span>.
+summary:
+  <span class="dt">When</span> defining <span class="st">&#39;contests&#39;</span> with a <span class="st">:dependent</span> =&gt; <span class="st">:restrict</span>, <span class="dt">Mongoid</span> will
+  raise an error <span class="kw">when</span> attempting to delete the <span class="dt">Venue</span> <span class="kw">when</span> the child
+  <span class="st">&#39;contests&#39;</span> still has documents <span class="kw">in</span> it.
+resolution:
+  <span class="dt">Don</span><span class="st">&#39;t attempt to delete the parent Venue when it has children, or</span>
+<span class="st">  change the dependent option on the relation.</span></code></pre></div>
+<p>If we delete the relationship between the <code>Contest</code> and <code>Venue</code>, we see the foreign key being erased from the <code>Contest</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; contest=venue.contests.first
+&gt; venue.contests.delete contest
+ =&gt; <span class="co">#&lt;Contest _id: 5676dd8ee301d0b21000001d, updated_at: 2015-12-20 16:57:39 UTC, </span>
+   <span class="st">name: &quot;FF10K&quot;</span>, <span class="st">date: </span><span class="dv">nil</span>, <span class="st">venue_id: </span><span class="dv">nil</span>, <span class="st">judge_ids: </span><span class="dv">nil</span>&gt; </code></pre></div>
+<p>A re-attempt to delete the <code>Venue</code> causes the count query to return 0 and the delete of the <code>Venue</code> completes successfully.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; venue.destroy
+D, | {<span class="st">&quot;count&quot;</span>=&gt;<span class="st">&quot;contests&quot;</span>, <span class="st">&quot;query&quot;</span>=&gt;{<span class="st">&quot;venue_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676dd57e301d0b21000001c&#39;</span>)}}
+D, | {<span class="st">&quot;delete&quot;</span>=&gt;<span class="st">&quot;venues&quot;</span>, <span class="st">&quot;deletes&quot;</span>=&gt;[{<span class="st">&quot;q&quot;</span>=&gt;{<span class="st">&quot;_id&quot;</span>=&gt;<span class="dt">BSON</span>::<span class="dt">ObjectId</span>(<span class="st">&#39;5676dd57e301d0b21000001c&#39;</span>)}...
+ =&gt; <span class="dv">true</span> </code></pre></div>
+<pre class="shell"><code>$ rspec spec/lecture6_spec.rb -e rq04</code></pre></li>
+<li><p>Update the relationship from <code>Racer</code> to <code>MedicalRecord</code> to have the <code>MedicalRecord</code> destroyed when a <code>Racer</code> is removed.</p>
+<p>Your new relationship constraint can be demonstrated using the rails console. In the example below, we create a new <code>Racer</code> and associated <code>MedicalRecord</code>. The foreign key to the <code>Racer</code> is stored within the <code>MedicalRecord</code>.</p>
+<div class="sourceCode"><pre class="sourceCode ruby"><code class="sourceCode ruby">&gt; racer=<span class="dt">Racer</span>.create(<span class="st">:fn=</span>&gt;<span class="st">&quot;Sally&quot;</span>,<span class="st">:ln=</span>&gt;<span class="st">&quot;Walden&quot;</span>)
+&gt; racer.create_medical_record(<span class="st">:conditions=</span>&gt;[<span class="st">&quot;messy&quot;</span>])</code></pre></div>
+<p>If we reload our state, re-find our <code>Racer</code>, and delete that instance, Mongoid will load the <code>MedicalRecord</code>, perform any callbacks on that <code>MedicalRecord</code>, and then delete both documents from the separate collections.</p>
+<pre><code>&gt; reload!
+&gt; racer=Racer.where(:id=&gt;racer.id).first
+&gt; racer.delete
+D, | {&quot;find&quot;=&gt;&quot;medical&quot;, &quot;filter&quot;=&gt;{&quot;racer_id&quot;=&gt;BSON::ObjectId(&#39;5676e4dce301d0b210000027&#39;)}}
+D, | {&quot;delete&quot;=&gt;&quot;medical&quot;, &quot;deletes&quot;=&gt;[{&quot;q&quot;=&gt;{&quot;_id&quot;=&gt;BSON::ObjectId(&#39;5676e4e1e301d0b210000028&#39;)}...
+D, | {&quot;delete&quot;=&gt;&quot;racers&quot;, &quot;deletes&quot;=&gt;[{&quot;q&quot;=&gt;{&quot;_id&quot;=&gt;BSON::ObjectId(&#39;5676e4dce301d0b210000027&#39;)}...
+ =&gt; true </code></pre>
+<pre class="shell"><code>$ rspec spec/lecture6_spec.rb -e rq05</code></pre></li>
+</ol>
+<h2 id="self-gradingfeedback">Self Grading/Feedback</h2>
+<p>Unit tests have been provided in the bootstrap files that can be used to evaluate your solution. They must be run from the same directory as your solution.</p>
+<pre class="shell"><code>$ rspec
+........
+
+(N) examples, 0 failures</code></pre>
+<h2 id="submission">Submission</h2>
+<p>There is no submission required for this assignment but the skills learned will be part of a follow-on assignment so please complete this to the requirements of the unit test.</p>
+<h2 id="last-updated-2015-01-16">Last Updated: 2015-01-16</h2>

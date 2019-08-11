@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  _id: 
+  name: MyString
+  group: MyString
+  secs: 
+
+two:
+  _id: 
+  name: MyString
+  group: MyString
+  secs: 
