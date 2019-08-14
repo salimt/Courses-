@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Races</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Swim distance</th>
+      <th>Swim units</th>
+      <th>Bike distance</th>
+      <th>Bike units</th>
+      <th>Run distance</th>
+      <th>Run units</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @races.each do |race| %>
+      <tr>
+        <td><%= race.name %></td>
+        <td><%= race.date %></td>
+        <td><%= race.city %></td>
+        <td><%= race.state %></td>
+        <td><%= race.swim_distance %></td>
+        <td><%= race.swim_units %></td>
+        <td><%= race.bike_distance %></td>
+        <td><%= race.bike_units %></td>
+        <td><%= race.run_distance %></td>
+        <td><%= race.run_units %></td>
+        <td><%= link_to 'Show', race %></td>
+        <td><%= link_to 'Edit', edit_race_path(race) %></td>
+        <td><%= link_to 'Destroy', race, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Race', new_race_path %>

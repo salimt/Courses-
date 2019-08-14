@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @racer.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @racer.last_name %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @racer.gender %>
+</p>
+
+<p>
+  <strong>Birth year:</strong>
+  <%= @racer.birth_year %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @racer.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @racer.state %>
+</p>
+
+<%= link_to 'Edit', edit_racer_path(@racer) %> |
+<%= link_to 'Back', racers_path %>
+</p>
+<strong>Races:</strong>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Date</th>
+      <th>Overall Place</th>
+      <th>Gender Place</th>
+      <th>Group Place</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @racer.races.each do |entry| %>
+      <tr>
+        <td><%= entry.race_name %></td>
+        <td><%= entry.race_date %></td>
+        <td><%= entry.overall_place %></td>
+        <td><%= entry.gender_place %></td>
+        <td><%= entry.group_place %></td>
+        <td><%= link_to 'Results', race_path(entry.race) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+<table>
