@@ -1,0 +1,978 @@
+============
+Associations
+============
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+Referenced Associations
+-----------------------
+
+Mongoid supports the ``has_one``, ``has_many``, ``belongs_to`` and
+``has_and_belongs_to_many`` associations familiar to ActiveRecord users.
+
+
+Has One
+*******
+
+One to one associations where documents are stored in separate collections
+are defined using ``has_one`` and ``belongs_to`` macros.
+
+Defining
+~~~~~~~~
+
+The parent document of the association should use the ``has_one`` macro to
+indicate is has one referenced child, and the document that is referenced
+should use ``belongs_to``.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    has_one :studio
+  end
+
+  class Studio
+    include Mongoid::Document
+    field :name, type: String
+    belongs_to :band
+  end
+
+Definitions are required on both sides to the association in order for it to
+work properly.
+
+Storage
+~~~~~~~
+
+When defining an association of this nature, each document is stored in its
+respective collection, and the child document contains a "foreign key"
+reference to the parent:
+
+.. code-block:: ruby
+
+  # The parent band document.
+  { "_id" : ObjectId("4d3ed089fb60ab534684b7e9") }
+
+  # The child studio document.
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7f1"),
+    "band_id" : ObjectId("4d3ed089fb60ab534684b7e9")
+  }
+
+
+Has Many
+********
+
+One to many associations where the children are stored in a separate
+collection from the parent document are defined using Mongoid's ``has_many``
+and ``belongs_to`` macros.
+
+Defining
+~~~~~~~~
+
+The parent document of the association should use the ``has_many`` macro to
+indicate is has n number of referenced children, where the document that is
+referenced uses ``belongs_to``.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    has_many :members
+  end
+
+  class Member
+    include Mongoid::Document
+    field :name, type: String
+    belongs_to :band
+  end
+
+Definitions are required on both sides to the association in order for it
+to work properly.
+
+Storage
+~~~~~~~
+
+When defining an association of this nature, each document is stored in its
+respective collection, and the child document contains a "foreign key"
+reference to the parent.
+
+.. code-block:: ruby
+
+  # The parent band document.
+  { "_id" : ObjectId("4d3ed089fb60ab534684b7e9") }
+
+  # A child member document.
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7f1"),
+    "band_id" : ObjectId("4d3ed089fb60ab534684b7e9")
+  }
+
+Belongs To
+**********
+
+A ``belongs_to`` macro is used when a document is the child in a ``has_one``
+or ``has_many`` association. By default, in order for a document to
+be saved, each of its ``belongs_to`` associations must be provided a value.
+To override this requirement, you can use the option ``optional: false``
+on the ``belong_to`` association.
+
+Defining
+~~~~~~~~
+
+The child document of the association uses the ``belongs_to`` macro to indicate
+it is associated with a parent. The document on the ``belongs_to`` side
+stores the reference to the parent.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    has_one :studio
+  end
+
+  class Studio
+    include Mongoid::Document
+    field :name, type: String
+    belongs_to :band
+  end
+
+Definitions are required on both sides to the association in order for it to
+work properly.
+
+Storage
+~~~~~~~
+
+When defining an association of this nature, each document is stored in its respective collection,
+but the child document contains a "foreign key" reference to the parent.
+
+.. code-block:: ruby
+
+  # The parent band document.
+  { "_id" : ObjectId("4d3ed089fb60ab534684b7e9") }
+
+  # The child studio document.
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7f1"),
+    "band_id" : ObjectId("4d3ed089fb60ab534684b7e9")
+  }
+
+Has And Belongs To Many
+***********************
+
+Many to many associations in Mongoid are defined using the
+``has_and_belongs_to_many`` macro. Unlike ActiveRecord's
+``has_and_belongs_to_many``, in Mongoid there is no "join collection" -
+the foreign key ids are stored as arrays on both sides of the association.
+
+``has_and_belongs_to_many`` association has no embedded equivalent.
+
+Defining
+~~~~~~~~
+
+Both sides of the association use the same macro.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    has_and_belongs_to_many :tags
+  end
+
+  class Tag
+    include Mongoid::Document
+    field :name, type: String
+    has_and_belongs_to_many :bands
+  end
+
+You can create a one sided many to many if you want to mimic a has_many
+that stores the keys as an array on the parent.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    has_and_belongs_to_many :tags, inverse_of: nil
+  end
+
+  class Tag
+    include Mongoid::Document
+    field :name, type: String
+  end
+
+Storage
+~~~~~~~
+
+When defining an association of this nature, each document is stored in its
+respective collection, and each document contains a "foreign key" reference
+to the other in the form of an array.
+
+.. code-block:: ruby
+
+  # The band document.
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7e9"),
+    "tag_ids" : [ ObjectId("4d3ed089fb60ab534684b7f2") ]
+  }
+
+  # The tag document.
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7f2"),
+    "band_ids" : [ ObjectId("4d3ed089fb60ab534684b7e9") ]
+  }
+
+Embedded Associations
+---------------------
+
+Thanks to MongoDB's document model, Mongoid also offers embedded associations
+which allow documents of different types to be stored hierarchically
+in the same collection. Embedded associations are defined using
+``embeds_one``, ``embeds_many`` and ``embedded_in`` macros, plus
+``recursively_embeds_one`` and ``recursively_embeds_many``for recursive
+embedding.
+
+Embeds One
+**********
+
+One to one associations where the children are embedded in the parent
+document are defined using Mongoid's ``embeds_one`` and ``embedded_in`` macros.
+
+Defining
+~~~~~~~~
+
+The parent document of the association should use the ``embeds_one`` macro to
+indicate is has one embedded child, where the document that is embedded uses
+``embedded_in``. Definitions are required on both sides to the association
+in order for it to work properly.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     embeds_one :label
+   end
+  
+   class Label
+     include Mongoid::Document
+     field :name, type: String
+     embedded_in :band
+   end
+
+Storage
+~~~~~~~
+
+Documents that are embedded using the ``embeds_one`` macro are stored as a
+hash inside the parent in the parent's database collection.
+
+.. code-block:: ruby
+
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7e9"),
+    "label" : {
+      "_id" : ObjectId("4d3ed089fb60ab534684b7e0"),
+      "name" : "Mute",
+    }
+  }
+
+You can optionally tell Mongoid to store the embedded document in a different
+attribute other than the name, by providing the ``:store_as`` option.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    embeds_one :label, store_as: "lab"
+  end
+
+
+Embeds Many
+***********
+
+One to many relationships where the children are embedded in the parent
+document are defined using Mongoid's ``embeds_many`` and ``embedded_in`` macros.
+
+Defining
+~~~~~~~~
+
+The parent document of the association should use the ``embeds_many`` macro
+to indicate it has many embedded children, where the document that is
+embedded uses ``embedded_in``. Definitions are required on both sides of
+the association in order for it to work properly.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    embeds_many :albums
+  end
+
+  class Album
+    include Mongoid::Document
+    field :name, type: String
+    embedded_in :band
+  end
+
+Storage
+~~~~~~~
+
+Documents that are embedded using the ``embeds_many`` macro are stored as
+an array of hashes inside the parent in the parent's database collection.
+
+.. code-block:: ruby
+
+  {
+    "_id" : ObjectId("4d3ed089fb60ab534684b7e9"),
+    "albums" : [
+      {
+        "_id" : ObjectId("4d3ed089fb60ab534684b7e0"),
+        "name" : "Violator",
+      }
+    ]
+  }
+
+You can optionally tell Mongoid to store the embedded document in a different
+attribute other than the name, by providing the ``:store_as`` option.
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    embeds_many :albums, store_as: "albs"
+  end
+
+Recursive Embedding
+*******************
+
+A document can recursively embed itself using ``recursively_embeds_one`` or
+``recursively_embeds_many``, which provides accessors for the parent and
+children via ``parent_`` and ``child_`` methods.
+
+.. code-block:: ruby
+
+   class Tag
+     include Mongoid::Document
+     field :name, type: String
+     recursively_embeds_many
+   end
+  
+   root = Tag.new(name: "programming")
+   child_one = root.child_tags.build
+   child_two = root.child_tags.build
+  
+   root.child_tags # [ child_one, child_two ]
+   child_one.parent_tag # [ root ]
+   child_two.parent_tag # [ root ]
+  
+   class Node
+     include Mongoid::Document
+     recursively_embeds_one
+   end
+  
+   root = Node.new
+   child = Node.new
+   root.child_node = child
+  
+   root.child_node # child
+   child.parent_node # root
+
+Referencing Vs Embedding
+************************
+
+While a complete discussion of referencing vs embedding is beyond the scope
+of this tutorial, here are some high level considerations for choosing
+one over the other.
+
+When an association is embedded, both parent and child documents are stored
+in the same collection. This permits efficient persistence and retrieval
+when both are used/needed. For example, if the navigation bar on a web site
+shows attributes of a user that are stored in documents themselves, it is
+often a good idea to use embedded associations.
+
+Using embedded associations allows using MongoDB tools like the
+`aggregation pipeline
+<https://docs.mongodb.com/manual/core/aggregation-pipeline/>`_ to query
+these documents in a powerful way.
+
+Because embedded documents are stored as part of their parent top-level
+documents, it is not possible to persist an embedded document by itself,
+nor is it possible to retrieve embedded documents directly. However,
+embedded documents can still be efficiently queried and retrieved with the
+help of MongoDB projection operation:
+
+.. code-block:: ruby
+
+  class Band
+    include Mongoid::Document
+    field :started_on, type: Date
+    embeds_one :label
+  end
+  
+  class Label
+    include Mongoid::Document
+    field :name, type: String
+    embedded_in :band
+  end
+
+  # Retrieve labels for bands started in the last year.
+  #
+  # Sends a find query like this:
+  # {"find"=>"bands",
+  #  "filter"=>{"started_on"=>{"$gt"=>2018-07-01 00:00:00 UTC}},
+  #  "projection"=>{"_id"=>1, "label"=>1}}
+  Band.where(started_on: {'$gt' => Time.now - 1.year}).only(:label).map(&:label).compact.uniq
+
+
+Common Behavior
+---------------
+
+Extensions
+**********
+
+All associations can have extensions, which provides a way to add application specific
+functionality to the association. They are defined by providing a block to the association definition.
+
+.. code-block:: ruby
+
+   class Person
+     include Mongoid::Document
+     embeds_many :addresses do
+       def find_by_country(country)
+         where(country: country).first
+       end
+       def chinese
+         @target.select { |address| address.country == "China" }
+       end
+     end
+   end
+  
+   person.addresses.find_by_country("Mongolia") # returns address
+   person.addresses.chinese # returns [ address ]
+
+Custom Association Names
+************************
+
+You can name your associations whatever you like, but if the class cannot be inferred by
+Mongoid from the name, and neither can the opposite side you'll want to provide the
+macro with some additional options to tell Mongoid how to hook them up.
+
+.. code-block:: ruby
+
+   class Lush
+     include Mongoid::Document
+     embeds_one :whiskey, class_name: "Drink", inverse_of: :alcoholic
+   end
+   
+   class Drink
+     include Mongoid::Document
+     embedded_in :alcoholic, class_name: "Lush", inverse_of: :whiskey
+   end
+
+Custom Primary & Foreign Keys
+*****************************
+
+The fields used when looking up associations can be explicitly specified.
+The default is to use ``id`` on the "parent" association and ``#{association_name}_id``
+on the "child" association, for example with a has_many/belongs_to:
+
+.. code-block:: ruby
+
+  class Company
+    include Mongoid::Document
+    has_many :emails
+  end
+  
+  class Email
+    include Mongoid::Document
+    belongs_to :company
+  end
+  
+  company = Company.find(id)
+  # looks up emails where emails.company_id == company.id
+  company.emails
+
+Specify a different ``primary_key`` to change the field name on the "parent"
+association and ``foreign_key`` to change the field name on the "child"
+association:
+
+.. code-block:: ruby
+
+  class Company
+    include Mongoid::Document
+    field :c, type: String
+    has_many :emails, foreign_key: 'c_ref', primary_key: 'c'
+  end
+
+  class Email
+    include Mongoid::Document
+    # This definition of c_ref is automatically generated by Mongoid:
+    # field :c_ref, type: Object
+    # But the type can also be specified:
+    field :c_ref, type: String
+    belongs_to :company, foreign_key: 'c_ref', primary_key: 'c'
+  end
+  
+  company = Company.find(id)
+  # looks up emails where emails.c_ref == company.c
+  company.emails
+
+With a has_and_belongs_to_many association, since the data is stored on both
+sides of the association, there are 4 fields configurable when the association
+is defined:
+
+- ``:primary_key`` is the field on the remote model that contains the value
+  by which the remote model is looked up.
+- ``:foreign_key`` is the field on the local model which stores the
+  ``:primary_key`` values.
+- ``:inverse_primary_key`` is the field on the local model that the remote
+  model uses to look up the local model docuemnts.
+- ``:inverse_foreign_key`` is the field on the remote model storing the
+  values in ``:inverse_primary_key``.
+
+An example might make this more clear:
+
+.. code-block:: ruby
+
+  class Company
+    include Mongoid::Document
+    
+    field :c_id, type: Integer
+    field :e_ids, type: Array
+    
+    has_and_belongs_to_many :employees,
+      primary_key: :e_id, foreign_key: :e_ids,
+      inverse_primary_key: :c_id, inverse_foreign_key: :c_ids
+  end
+  
+  class Employee
+    include Mongoid::Document
+    
+    field :e_id, type: Integer
+    field :c_ids, type: Array
+    
+    has_and_belongs_to_many :companies,
+      primary_key: :c_id, foreign_key: :c_ids,
+      inverse_primary_key: :e_id, inverse_foreign_key: :e_ids
+  end
+  
+  company = Company.create!(c_id: 123)
+  # => #<Company _id: 5c565ece026d7c461d8a9d4e, c_id: 123, e_ids: nil>
+  
+  employee = Employee.create!(e_id: 456)
+  # => #<Employee _id: 5c565ee8026d7c461d8a9d4f, e_id: 456, c_ids: nil>
+
+  company.employees << employee
+  
+  company
+  # => #<Company _id: 5c565ece026d7c461d8a9d4e, c_id: 123, e_ids: [456]>
+  
+  employee
+  # => #<Employee _id: 5c5883ce026d7c4b9e244c0c, e_id: 456, c_ids: [123]>
+
+Note that just like with the default ``#{association_name}_id`` field,
+Mongoid automatically adds a field for the custom foreign key ``c_ref`` to
+the model. However, since Mongoid doesn't know what type of data should be
+allowed in the field, the field is created with a type of Object. It is a
+good idea to explicitly define the field with the appropriate type.
+
+Validations
+***********
+
+It is important to note that by default, Mongoid will validate the children of any
+association that are loaded into memory via a ``validates_associated``. The associations that
+this applies to are:
+
+- ``embeds_many``
+- ``embeds_one``
+- ``has_many``
+- ``has_one``
+- ``has_and_belongs_to_many``
+
+If you do not want this behavior, you may turn it off when defining the association.
+
+.. code-block:: ruby
+
+   class Person
+     include Mongoid::Document
+   
+     embeds_many :addresses, validate: false
+     has_many :posts, validate: false
+   end
+
+
+Polymorphism
+************
+
+One to one and one to many associations support polymorphism, which is
+having a single association potentially contain objects of different classes.
+For example, we could model an organization in which departments and teams
+have managers as follows:
+
+.. code-block:: ruby
+
+  class Department
+    include Mongoid::Document
+    
+    has_one :manager, as: :unit
+  end
+  
+  class Team
+    include Mongoid::Document
+    
+    has_one :manager, as: :unit
+  end
+   
+  class Manager
+    include Mongoid::Document
+    
+    belongs_to :unit, polymorphic: true
+  end
+  
+  dept = Department.create!
+  team = Team.create!
+  
+  alice = Manager.create!(unit: dept)
+  alice.unit == dept
+  # => true
+  dept.manager == alice
+  # => true
+
+To provide another example, suppose we want to track price history for
+products and bundles. This can be achieved via an embedded one to many
+polymorphic association:
+
+.. code-block:: ruby
+
+  class Product
+    include Mongoid::Document
+    
+    field :name, type: String
+    has_and_belongs_to_many :bundles
+    
+    embeds_many :prices, as: :item
+  end
+  
+  class Bundle
+    include Mongoid::Document
+
+    field :name, type: String
+    has_and_belongs_to_many :products
+
+    embeds_many :prices, as: :item
+  end
+  
+  class Price
+    include Mongoid::Document
+    
+    embedded_in :item, polymorphic: true
+  end
+  
+  pants = Product.create!(name: 'Pants',
+    prices: [Price.new, Price.new])
+  costume = Bundle.create!(name: 'Costume', products: [pants],
+    prices: [Price.new, Price.new])
+
+To define a polymorphic association, specify the ``polymorphic: true`` option
+on the child association and add the ``as: :association_name`` option to the
+parent association.
+
+Note that Mongoid currently supports polymorphism only in one direction - from
+the child to the parent. For example, polymorphism cannot be used to specify
+that a bundle may contain other bundles or products:
+  
+.. code-block:: ruby
+
+  class Bundle
+    include Mongoid::Document
+
+    # Does not work:
+    has_many :items, polymorphic: true
+  end
+
+``has_and_belongs_to_many`` associations do not support polymorphism.
+
+
+Cascading Callbacks
+*******************
+
+If you want the embedded document callbacks to fire when calling a persistence operation on
+its parent, you will need to provide the cascade callbacks option to the association.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     embeds_many :albums, cascade_callbacks: true
+     embeds_one :label, cascade_callbacks: true
+   end
+
+  band.save # Fires all save callbacks on the band, albums, and label.
+
+Dependent Behavior
+******************
+
+You can provide dependent options to referenced associations to instruct Mongoid
+how to handle situations where one side of the association is deleted, or is attempted
+to be deleted. The options are as follows:
+
+- ``:delete``: Delete the child document without running any of the model callbacks.
+- ``:destroy``: Destroy the child document and run all of the model callbacks.
+- ``:nullify``: Orphan the child document.
+- ``:restrict``: Raise an error if the child is not empty.
+
+The default behavior of each association when no dependent option is provided is to nullify.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     has_many :albums, dependent: :delete_all
+     belongs_to :label, dependent: :nullify
+   end
+  
+   class Album
+     include Mongoid::Document
+     belongs_to :band
+   end
+  
+   class Label
+     include Mongoid::Document
+     has_many :bands, dependent: :restrict
+   end
+  
+   label = Label.first
+   label.bands.push(Band.first)
+   label.delete # Raises an error since bands is not empty.
+  
+   Band.first.delete # Will delete all associated albums.
+
+Autosaving
+**********
+
+One core difference between Mongoid and Active Record from a behavior standpoint
+is that Mongoid does not automatically save associated documents for
+non-embedded associations. This is for performance reasons.
+
+To enable an autosave on a non-embedded association (embedded associations do not need
+this since they are actually part of the parent in the database) add the autosave
+option to the association.
+
+Note that autosave functionality will automatically be added to an association when using
+``accepts_nested_attributes_for`` or validating presence of the association.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     has_many :albums, autosave: true
+   end
+ 
+   band = Band.first
+   band.albums.build(name: "101")
+   band.save # Will save the album as well.
+
+Existence Predicates
+********************
+
+All associations have existence predicates on them in the form of ``name?`` and ``has_name?``
+to check if the association is blank.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     embeds_one :label
+     embeds_many :albums
+   end
+ 
+   band.label?
+   band.has_label?
+   band.albums?
+   band.has_albums?
+
+Autobuilding
+************
+
+One to one associations (``embeds_one``, ``has_one``) have an autobuild option which tells
+Mongoid to instantiate a new document when the association is accessed and it is ``nil``.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     embeds_one :label, autobuild: true
+     has_one :producer, autobuild: true
+   end
+  
+   band = Band.new
+   band.label # Returns a new empty label.
+   band.producer # Returns a new empty producer.
+
+Touching
+********
+
+Any ``belongs_to`` association, no matter where it hangs off from, can take an optional ``:touch``
+option which will call the touch method on it and any parent associations with the option defined
+when the base document calls ``#touch``.
+
+.. code-block:: ruby
+
+   class Band
+     include Mongoid::Document
+     belongs_to :label, touch: true
+   end
+  
+   band = Band.first
+   band.touch # Calls touch on the parent label.
+
+The counter_cache Option
+************************
+
+As with ActiveRecord, the ``:counter_cache`` option can be used on an association
+to make finding the number of belonging objects more efficient. Also similar
+to ActiveRecord, you must take into account that there will be an extra
+attribute on the associated model. This means that with Mongoid,
+you need to include ``Mongoid::Attributes::Dynamic`` on the associated model.
+For example:
+
+.. code-block:: ruby
+
+  class Order
+    include Mongoid::Document
+    belongs_to :customer, counter_cache: true
+  end
+
+  class Customer
+    include Mongoid::Document
+    include Mongoid::Attributes::Dynamic
+    has_many :orders
+  end
+
+Association metadata
+--------------------
+
+All associations in Mongoid contain metadata that holds information about the association in
+question, and is a valuable tool for third party developers to use to extend Mongoid.
+
+You can access the association metadata of the association in a few different ways.
+
+.. code-block:: ruby
+
+   # Get the metadata for a named association from the class or document.
+   Model.reflect_on_association(:association_name)
+   model.reflect_on_association(:association_name)
+ 
+   # Get the metadata with a specific association itself on a specific
+   # document.
+   model.associations[:association_name]
+
+Attributes
+**********
+
+All associations contain a ``_target``, which is the proxied document or documents, a ``_base``
+which is the document the association hangs off, and ``_association`` which provides information
+about the association.
+
+.. code-block:: ruby
+
+   class Person
+     include Mongoid::Document
+     embeds_many :addresses
+   end
+   
+   person.addresses = [ address ]
+   person.addresses._target # returns [ address ]
+   person.addresses._base # returns person
+   person.addresses._association # returns the association metadata
+
+The Association Object
+**********************
+
+The association object itself contains more information than one might know what to do
+with, and is useful for developers of extensions to Mongoid.
+
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 60
+
+   * - Method
+     - Description
+   * - ``Association#as``
+     - Returns the name of the parent to a polymorphic child.
+   * - ``Association#as?``
+     - Returns whether or not an as option exists.
+   * - ``Association#autobuilding?``
+     - Returns whether or not the association is autobuilding.
+   * - ``Association#autosaving?``
+     - Returns whether or not the association is autosaving.
+   * - ``Association#cascading_callbacks?``
+     - Returns whether the association has callbacks cascaded down from the parent.
+   * - ``Association#class_name``
+     - Returns the class name of the proxied document.
+   * - ``Association#cyclic?``
+     - Returns whether the association is a cyclic association.
+   * - ``Association#dependent``
+     - Returns the association's dependent option.
+   * - ``Association#destructive?``
+     - Returns true if the association has a dependent delete or destroy.
+   * - ``Association#embedded?``
+     - Returns whether the association is embedded in another document.
+   * - ``Association#forced_nil_inverse?``
+     - Returns whether the association has a nil inverse defined.
+   * - ``Association#foreign_key``
+     - Returns the name of the foreign key field.
+   * - ``Association#foreign_key_check``
+     - Returns the name of the foreign key field dirty check method.
+   * - ``Association#foreign_key_setter``
+     - Returns the name of the foreign key field setter.
+   * - ``Association#indexed?``
+     - Returns whether the foreign key is auto indexed.
+   * - ``Association#inverses``
+     - Returns the names of all inverse association.
+   * - ``Association#inverse``
+     - Returns the name of a single inverse association.
+   * - ``Association#inverse_class_name``
+     - Returns the class name of the association on the inverse side.
+   * - ``Association#inverse_foreign_key``
+     - Returns the name of the foreign key field on the inverse side.
+   * - ``Association#inverse_klass``
+     - Returns the class of the association on the inverse side.
+   * - ``Association#inverse_association``
+     - Returns the metadata of the association on the inverse side.
+   * - ``Association#inverse_of``
+     - Returns the explicitly defined name of the inverse association.
+   * - ``Association#inverse_setter``
+     - Returns the name of the method used to set the inverse.
+   * - ``Association#inverse_type``
+     - Returns the name for the polymorphic type field of the inverse.
+   * - ``Association#inverse_type_setter``
+     - Returns the name for the polymorphic type field setter of the inverse.
+   * - ``Association#key``
+     - Returns the name of the field in the attributes hash to use to get the association.
+   * - ``Association#klass``
+     - Returns the class of the proxied documents in the association.
+   * - ``Association#name``
+     - Returns the association name.
+   * - ``Association#options``
+     - Returns self, for API compatibility with Active Record.
+   * - ``Association#order``
+     - Returns the custom sorting options on the association.
+   * - ``Association#polymorphic?``
+     - Returns whether the association is polymorphic.
+   * - ``Association#setter``
+     - Returns the name of the field to set the association.
+   * - ``Association#store_as``
+     - Returns the name of the attribute to store an embedded association in.
+   * - ``Association#touchable?``
+     - Returns whether or not the association has a touch option.
+   * - ``Association#type``
+     - Returns the name of the field to get the polymorphic type.
+   * - ``Association#type_setter``
+     - Returns the name of the field to set the polymorphic type.
+   * - ``Association#validate?``
+     - Returns whether the association has an associated validation.

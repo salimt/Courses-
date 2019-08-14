@@ -1,0 +1,107 @@
+============
+Installation
+============
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Install the Gem
+---------------
+
+Mongoid is bundled as a gem, and is hosted on `Rubygems <http://rubygems.org>`_.
+It can be installed manually or with bundler.
+
+To install the gem manually:
+
+.. code-block:: sh
+
+    gem install mongoid
+
+To install the gem with bundler, include the following in your Gemfile:
+
+.. code-block:: ruby
+
+   gem 'mongoid', '~> 7.0'
+
+Compatibility
+-------------
+
+Note the following compatibility matrix to determine if Mongoid is
+compatible with your Ruby version and MongoDB server. Note that Mongoid
+is currently compatible with Rails 5 and depends on ActiveModel 5.1 or higher,
+and thus requires Ruby 2.2.2 or higher.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Ruby Version
+     - MongoDB 4.0.x
+     - MongoDB 3.6.x
+     - MongoDB 3.4.x
+     - MongoDB 3.2.x
+     - MongoDB 3.0.x
+     - MongoDB 2.6.x
+
+   * - MRI 2.5.0+
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+   * - MRI 2.4.1+
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+   * - MRI 2.3.x
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+   * - MRI 2.2.2+
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+   * - MRI 2.1.x
+     - No
+     - No
+     - No
+     - No
+     - No
+     - No
+
+   * - JRuby 9.2.x
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+   * - JRuby 9.1.x
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+     - Yes
+
+Refer to :ref:`Rails considerations <rails-compatibility>`
+for the Ruby on Rails compatibility matrix.
