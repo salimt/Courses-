@@ -1,0 +1,82 @@
+<%= form_for(@racer) do |f| %>
+  <% if @racer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@racer.errors.count, "error") %> prohibited this racer from being saved:</h2>
+
+      <ul>
+      <% @racer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_year %><br>
+    <%= f.text_field :birth_year %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<% if @racer.persisted? %>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Swim distance</th>
+        <th>units</th>
+        <th>Bike distance</th>
+        <th>units</th>
+        <th>Run distance</th>
+        <th>units</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @races.each do |race| %>
+        <tr>
+          <td><%= race.name %></td>
+          <td><%= race.date %></td>
+          <td><%= race.city %></td>
+          <td><%= race.state %></td>
+          <td><%= race.swim_distance %></td>
+          <td><%= race.swim_units %></td>
+          <td><%= race.bike_distance %></td>
+          <td><%= race.bike_units %></td>
+          <td><%= race.run_distance %></td>
+          <td><%= race.run_units %></td>
+          <td><%= link_to 'Register', racer_entries_path(@racer, :race_id=>race.id), method: :post %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+
+

@@ -1,0 +1,108 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @race.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @race.date %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @race.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @race.state %>
+</p>
+
+<p>
+  <strong>Swim distance:</strong>
+  <%= @race.swim_distance %>
+</p>
+
+<p>
+  <strong>Swim units:</strong>
+  <%= @race.swim_units %>
+</p>
+
+<p>
+  <strong>Bike distance:</strong>
+  <%= @race.bike_distance %>
+</p>
+
+<p>
+  <strong>Bike units:</strong>
+  <%= @race.bike_units %>
+</p>
+
+<p>
+  <strong>Run distance:</strong>
+  <%= @race.run_distance %>
+</p>
+
+<p>
+  <strong>Run units:</strong>
+  <%= @race.run_units %>
+</p>
+
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'Back', races_path %>
+
+</p><strong>Results:</strong>
+<table>
+  <thead>
+    <tr>
+      <th>Place</th>
+      <th>Time</th>
+      <th>Name</th>
+      <th>Bib#</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Gender</th>
+      <th>Gender Place</th>
+      <th>Group</th>
+      <th>Group Place</th>
+      <th>Swim Place 100</th>
+      <th>T1</th>
+      <th>Bike</th>
+      <th>MPH</th>
+      <th>T2</th>
+      <th>Run</th>
+      <th>Min Mile</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entrants.each do |entrant| %>
+        <tr>
+        <td><%= entrant.overall_place %></td>
+        <td><%= format_hours entrant.secs %></td>
+        <% if entrant.racer.id %>
+            <td><%= link_to "#{entrant.last_name}, #{entrant.first_name}", racer_path(entrant.racer.id) %>
+        <%else%>
+            <td><%= "#{entrant.last_name}, #{entrant.first_name}" %></td>
+        <% end %>
+        <td><%= entrant.bib %></td>
+        <td><%= entrant.city %></td>
+        <td><%= entrant.state %></td>
+        <td><%= entrant.racer_gender %></td>
+        <td><%= entrant.gender_place %></td>
+        <td><%= entrant.group_name %></td>
+        <td><%= entrant.group_place %></td>
+        <td><%= format_hours entrant.swim_secs %></td>
+        <td><%= format_minutes entrant.swim_pace_100 %></td>
+        <td><%= entrant.t1_secs %></td>
+        <td><%= format_hours entrant.bike_secs %></td>
+        <td><%= format_mph entrant.bike_mph %></td>
+        <td><%= entrant.t2_secs %></td>
+        <td><%= format_hours entrant.run_secs %></td>
+        <td><%= format_minutes entrant.run_mmile %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

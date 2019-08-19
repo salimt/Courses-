@@ -1,0 +1,57 @@
+<%= form_for(@race) do |f| %>
+  <% if @race.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@race.errors.count, "error") %> prohibited this race from being saved:</h2>
+
+      <ul>
+      <% @race.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :swim_distance %><br>
+    <%= f.text_field :swim_distance %>
+  </div>
+  <div class="field">
+    <%= f.label :swim_units %><br>
+    <%= f.text_field :swim_units %>
+  </div>
+  <div class="field">
+    <%= f.label :bike_distance %><br>
+    <%= f.text_field :bike_distance %>
+  </div>
+  <div class="field">
+    <%= f.label :bike_units %><br>
+    <%= f.text_field :bike_units %>
+  </div>
+  <div class="field">
+    <%= f.label :run_distance %><br>
+    <%= f.text_field :run_distance %>
+  </div>
+  <div class="field">
+    <%= f.label :run_units %><br>
+    <%= f.text_field :run_units %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
