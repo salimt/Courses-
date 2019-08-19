@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order: 
+  name: MyString
+  distance: 
+  units: MyString
+
+two:
+  order: 
+  name: MyString
+  distance: 
+  units: MyString
