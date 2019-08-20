@@ -59,6 +59,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 3. [Johns Hopkins University - Ruby on Rails Web Services and Integration with MongoDB](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/JHU%20-%20Ruby%20on%20Rails%20Web%20Services%20and%20Integration%20with%20MongoDB)
 
+4. [Johns Hopkins University - HTML, CSS, and Javascript for Web Developers](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/)
+
 - #### [Stanford University - Introduction to Mathematical Thinking](./Stanford-University-Introduction-to-Mathematical-Thinking)
 
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
