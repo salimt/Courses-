@@ -7,6 +7,9 @@
 
 Learning how to implement modern web pages with HTML and CSS. We will then advance to learning how to code our pages such that its components rearrange and resize themselves automatically based on the size of the user’s screen. You’ll be able to code up a web page that will be just as useful on a mobile phone as on a desktop computer. No “pinch and zoom” required! Last but certainly not least, we will get a thorough introduction to the most ubiquitous, popular, and incredibly powerful language of the web: Javascript. Using Javascript, you will be able to build a fully functional web application that utilizes Ajax to expose server-side functionality and data to the end user.
 
+[https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20HTML,%20CSS,%20and%20Javascript%20for%20Web%20Developers/assignment2/](Assignment 1)
+[https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20HTML,%20CSS,%20and%20Javascript%20for%20Web%20Developers/assignment3/](Assignment 2
+
 ## Course include
 
 ## HTML5
