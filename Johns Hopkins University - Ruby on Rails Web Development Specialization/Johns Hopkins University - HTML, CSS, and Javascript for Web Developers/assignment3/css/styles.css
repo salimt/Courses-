@@ -1,0 +1,73 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+}
+
+body {
+ background-color: #FAFAD2;
+}
+
+h1 {
+  font-family: 'Tangerine', serif;
+  font-size: 62px;
+  text-align: center;
+  text-shadow: 4px 4px 4px #aaa;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto 15px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 34px;
+}
+
+p {
+  color: black;
+  font-family: 'Viga', sans-serif;
+
+}
+
+#top {
+  color: white;
+}
+
+.navbar-brand { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+
+#bigBox {
+  color: black;
+  position:relative;
+  border: 2px solid black;
+  background-color: #6495ED;
+  padding: 10px;
+  margin: 4%;
+  -webkit-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.68);
+  -moz-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.68);
+  box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.68);
+
+}
+
+@media (min-width: 768px) {
+  #chickenBt {
+    display: none;
+  }
+  #beefBt {
+    display: none;
+  }
+  #sushiBt {
+    display: none;
+  }
+}
