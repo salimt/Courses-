@@ -12,6 +12,8 @@ Learning how to implement modern web pages with HTML and CSS. We will then advan
 
 [Assignment 3](https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20HTML,%20CSS,%20and%20Javascript%20for%20Web%20Developers/assignment3/)
 
+[Assignment 5](https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20HTML,%20CSS,%20and%20Javascript%20for%20Web%20Developers/assignment5/)
+
 ## Course include
 
 ## HTML5
