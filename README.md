@@ -2,6 +2,10 @@
 This repository is aimed to help Coursera and edX learners who have difficulties in their learning process.  
 The quiz and programming homework is belong to coursera and edx and solutions to me.
 
+
+
+- #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
