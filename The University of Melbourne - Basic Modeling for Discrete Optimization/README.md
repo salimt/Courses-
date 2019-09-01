@@ -1,5 +1,5 @@
-# THE UNIVERSITY OF MELBOURNE & THE CHINESE UNIVERSITY OF HONG KONG
-# Basic Modeling for Discrete Optimization
+### THE UNIVERSITY OF MELBOURNE & THE CHINESE UNIVERSITY OF HONG KONG
+### Basic Modeling for Discrete Optimization
 
 ![logo](https://i.imgur.com/G3kZ4uC.png)
 
