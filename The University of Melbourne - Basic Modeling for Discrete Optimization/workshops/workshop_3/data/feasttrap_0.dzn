@@ -1,0 +1,10 @@
+len  = 6;
+
+DISH =  { MAPOTOFU, KUNGPAOCHICKEN, COCONUTJELLY, LAIWONGBAO, CHARSIUBAO, 
+          SESAMEPRAWN, HOTSOURSOUP, CHILIDUMPLINGS, GLASSNOODLES, FRIEDRICE };  
+
+taste = [umame, spicy, sweet, sweet, salty, salty, sour, spicy, bland, bland];
+temp =  [ hot, hot, warm, cold, warm, warm, hot, hot, cold, warm];
+heavy = [ true, true, false, false, false, true, true, true, false, false];
+value = [ 8, 4, 5, 3, 5, 7, 4, 3, 2, 1 ];
+
