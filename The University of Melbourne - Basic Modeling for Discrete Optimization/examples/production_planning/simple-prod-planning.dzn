@@ -1,0 +1,12 @@
+% Data file for simple production planning model
+
+nproducts = 2;       %banana cakes and chocolate cakes
+profit = [400, 450]; %in cents
+pname = ["banana-cake", "chocolate-cake"];
+
+nresources = 5;      %flour, banana, sugar, butter, cocoa
+capacity = [4000, 6, 2000, 500, 500];
+rname = ["flour","banana","sugar","butter","cocoa"];
+
+consumption= [| 250, 2, 75, 100, 0,
+              | 200, 0, 150, 150, 75 |];

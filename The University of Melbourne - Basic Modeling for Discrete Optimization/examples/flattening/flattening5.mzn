@@ -1,0 +1,12 @@
+int: n;    set of int: OBJ = 1..n;
+array[OBJ] of int: size;
+array[OBJ] of int: value;
+int: limit;
+array[OBJ] of var int: x;
+constraint forall(i in OBJ)(x[i] >= 0);
+constraint sum(i in OBJ)(size[i]*x[i])<= limit;
+solve maximize sum(i in OBJ)(value[i]*x[i]);
+n = 4;
+size = [5,8,9,12];
+value = [3,5,7,8];
+limit = 29;

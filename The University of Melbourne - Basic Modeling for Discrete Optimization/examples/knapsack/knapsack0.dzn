@@ -1,0 +1,5 @@
+n = 3;
+capacity = 9;
+profit = [15,10,7];
+size = [4,3,2];
+

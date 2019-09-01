@@ -1,0 +1,25 @@
+n = 8;
+
+m = 3;
+L = [3,3,2];
+res = [| 0,3,1,0,2,1,0,0
+       | 3,0,2,1,0,0,0,0
+       | 1,1,1,1,1,1,1,1 |];
+
+int: foundations = 1; int: interior_walls =2; int: exterior_walls = 3;
+int: chimney = 4; int: roof = 5; int: doors = 6;
+int: tiles = 7; int: windows = 8;
+
+d = [7,4,3,3,2,2,3,3];
+l = 8;
+pre = 
+  [| foundations, interior_walls 
+   | foundations, exterior_walls
+   | foundations, chimney
+   | exterior_walls, roof
+   | exterior_walls, windows
+   | interior_walls, doors
+   | chimney, tiles
+   | roof, tiles |];
+
+maxt = 25;
