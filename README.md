@@ -34,6 +34,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 7. [IBM: Machine Learning with Python](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Machine%20Learning%20with%20Python)
 
+8. [IBM: Applied Data Science Capstone Project](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Applied%20Data%20Science%20Capstone%20Project)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [Delft University of Technology - Automated Software Testing](./Delft%20University%20of%20Technology%20-%20Automated%20Software%20Testing)
