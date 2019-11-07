@@ -1,7 +1,7 @@
 
 **Introduction**
 
-This project will analysis the New York City data. First, we will find the most
+This project will analyze the New York City data. First, we will find the most
 visited commercial shop according to the number of check-ins, then we will try
 to find the neighborhoods that are lacking the selected type of shop which
 could be potential business opportunity.
