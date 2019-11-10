@@ -46,7 +46,7 @@ GEM
     coffee-script (2.4.1)
       coffee-script-source
       execjs
-    coffee-script-source (1.12.2)
+    coffee-script-source (1.8.0)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
     debug_inspector (0.0.3)
@@ -81,7 +81,7 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multi_xml (0.6.0)
-    nokogiri (1.10.1)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
     rack (1.6.11)
@@ -162,6 +162,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  coffee-script-source (= 1.8.0)
   httparty
   jbuilder (~> 2.0)
   jquery-rails
