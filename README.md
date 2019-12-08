@@ -40,7 +40,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [Delft University of Technology - Automated Software Testing](./Delft%20University%20of%20Technology%20-%20Automated%20Software%20Testing)
 
-- #### [University of Maryland, College Park: Software Security](./University%20of%20Maryland%20)
+- #### [University of Maryland, College Park: Software Security](./University%20of%20Maryland%20-%20Cybersecurity%20Specialization/University%20of%20Maryland%20-%20Software%20Security)
 
 - #### [University of Maryland, College Park: Programming Mobile Applications for Android Handheld Systems: Part 1](./University%20of%20Maryland%20-%20Programming%20Mobile%20Applications%20for%20Android%20Handheld%20Systems%2C%20Part%20I)
 
