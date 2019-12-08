@@ -1,0 +1,3 @@
+*Note: the .c file is disassembled with those flags mentioned in project description:
+
+gcc -fno-stack-protector -ggdb -m32 -S wisdom-alt.c -o wisdom-alt-ass.s
