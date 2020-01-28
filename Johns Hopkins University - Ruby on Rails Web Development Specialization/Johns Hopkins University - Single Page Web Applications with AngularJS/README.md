@@ -8,7 +8,7 @@
 In this course, we will explore the core design of AngularJS 1.x (latest version of AngularJS 1), its components and code organization techniques. We will enhance the functionality of our web app by utilizing dependency injection to reuse existing services as well as write our own. We will create reusable HTML components that take advantage of AngularJS data binding as well as extend HTML syntax with a very powerful feature of AngularJS called directives. We’ll set up routing so our SPA can have multiple views. We will also learn how to unit test our functionality. At the end of this course, you will build a fully functional, well organized and tested web application using AngularJS and deploy it to the cloud.
 
 
-[Assignment 1](https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20HTML,%20CSS,%20and%20Javascript%20for%20Web%20Developers/assignment2/)
+[Assignment 1](https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20Single%20Page%20Web%20Applications%20with%20AngularJS/assignment1/)
 
 
 ## Course include
