@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Shopping List Check Off</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+      .emptyMessage {
+        font-weight: bold;
+        color: red;
+        font-size: 1.2em;
+      }
+      li {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+      }
+      li > button {
+        margin-left: 6px;
+      }
+      button > span {
+        color: green;
+      }
+    </style>
+  </head>
+<body ng-app="ShoppingListCheckOff">
+  <div class="container">
+  <h1>Shopping List Check Off</h1>
+
+    <!-- Add Item Function -->
+    <div ng-controller='AddItemController as addItem'>
+      <form>
+        Add Item:
+        <input type="text" ng-model="addItem.itemName" placeholder="item name" size="25" required="required">
+        <input type="text" ng-model="addItem.itemQuantity" placeholder="quantity" size="5" required="required">
+        <button type="reset" class="btn btn-default" ng-click="addItem.addItem();"> Add</button>
+      </form>
+    </div>
+
+    <!-- To Buy List -->
+    <div class="col-md-6" ng-controller='ToBuyController as buyItem'>
+      <h2>To Buy:</h2>
+      <ul>
+        <li ng-repeat="item in buyItem.toBeBoughtItems | filter:filterIds()">
+          Buy {{ item.quantity }} {{ item.name }}<button class="btn btn-default" ng-click="buyItem.addItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button>
+      </ul>
+      <div class="emptyMessage" ng-show="!buyItem.toBeBoughtItems.length">{{buyItem.errorMessage}}</div>
+    </div>
+
+    <!-- Already Bought List -->
+    <div class="col-md-6" ng-controller='AlreadyBoughtController as itemList'>
+      <h2>Already Bought:</h2>
+      <ul>
+        <li ng-repeat="item in itemList.items | filter:filterIds()">
+          Bought {{ item.quantity }} {{ item.name }}
+      </ul>
+      <div class="emptyMessage" ng-show="!itemList.items.length">{{itemList.errorMessage}}</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
