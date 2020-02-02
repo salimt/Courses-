@@ -78,9 +78,12 @@ body {
 }
 
 .emptyMessage {
-  font-weight: bold;
-  color: red;
-  font-size: 1.2em;
+    text-transform: uppercase;
+    color:#848484;
+    white-space:nowrap;
+    font-weight: bold;
+    color: red;
+    font-size: 1.2em;
 }
 
 .list-background {
