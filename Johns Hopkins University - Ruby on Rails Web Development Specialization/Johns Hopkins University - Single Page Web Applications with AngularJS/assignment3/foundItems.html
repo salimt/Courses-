@@ -1,0 +1,11 @@
+<ol>
+  <div class="list-background" style="color: white; padding: 25px; border: 1px"><h3>Dishes found({{ narrow.items.length }}):</h3>
+  <hr>
+  <li ng-repeat="item in narrow.items">
+    <div style="color: white;"><p><b>Name:</b> {{ item["name"] }}<br> <b>Description:</b> {{ item["description"] }}</p></div>
+    <div class="form-group button" style="color: black;">
+    	<button ng-click="narrow.onRemove({index: $index});">Remove Item</button>
+    </div>
+    <hr>
+  </li></div>
+</ol>

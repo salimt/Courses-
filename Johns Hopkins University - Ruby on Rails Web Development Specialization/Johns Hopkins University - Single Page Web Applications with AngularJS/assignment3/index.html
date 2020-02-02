@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Narrow Down Your Menu Choice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+<body ng-app="NarrowItDownApp"> 
+    <div class="container" ng-controller='NarrowItDownController as narrow'>
+    <div class="neon">Narrow Down Your </div>
+    <div class="flux">Chinese Menu Choice </div><br>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4">
+          <div class="input-group">
+              <input type="text" ng-model="narrow.searchTerm" placeholder="search term" class="form-control">
+              <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" ng-click="narrow.logDishes();">Narrow It Down For Me!</button>
+              </span><span class="emptyMessage">{{ narrow.lastRemoved }}</span>
+          </div><!-- /input-group -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row --><br>
+
+    <!-- found-items should be implemented as a component -->
+    <found-items 
+        items="narrow.items"
+        on-remove="narrow.removeItem(index)"></found-items>
+  </div>
+</body>
+</html>
