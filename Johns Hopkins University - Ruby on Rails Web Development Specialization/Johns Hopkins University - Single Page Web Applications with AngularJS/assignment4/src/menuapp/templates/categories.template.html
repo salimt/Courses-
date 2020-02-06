@@ -7,13 +7,13 @@
 
 
 <div class="row">
-  <center><div class="col-md-3 center" target="_blank" ng-repeat="item in $ctrl.items" ui-sref="categoryList.categoryDetail({categoryShortName: item['short_name']})">
+  <center><div class="col-md-3 center" ng-repeat="item in $ctrl.items" ui-sref="categoryList.categoryDetail({categoryShortName: item['short_name']})">
      <table>
        <thead>
         <th>    
           <div class="button" id="button-2">
             <div id="slide"></div>
-            <center><a href="#">{{ item.name }}</a></center>
+            <center><a href="#" target="_blank" >{{ item.name }}</a></center>
           </div></th>
        </thead>
      </table>
