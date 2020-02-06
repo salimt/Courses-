@@ -1,6 +1,7 @@
 /*body {
-  font-size: 1.2em;*/
-}
+  font-size: 1.2em;
+}*/
+
 
 div.tabs > a, div.tabs > button {
   margin-right: 10px;
@@ -24,16 +25,14 @@ body {
 
 /* Heading */
 
-h1 {
+h1, body {
   font-size: 1.5em;
   text-align: center;
-  padding: 70px 0 0 0;
+  padding: 10px 0 0 0;
   color: #EF8354;
   font-weight: 300;
   letter-spacing: 1px;
 }
-
-
 
 
 /* Layout Styling */
@@ -318,3 +317,41 @@ a#button-1:hover img {
     width: 50%;
   }
 }
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Ruda:900');
+
+body {
+  background-image: url(//www.toptal.com/designers/subtlepatterns/patterns/symphony.png);
+  background-position: bottom;
+  animation: 4s linear 0s infinite bp;
+  display: flex;
+
+  justify-content: center;
+}
+
+@keyframes bp {
+  from {
+    background-position:  198px 0;
+  }
+  
+  to {
+    background-position:  0 198px;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.text {
+  font: 900 18px Ruda;
+  color: #C08;
+  background: white;
+  display: inline-block;
+  padding: 1rem;
+}
+

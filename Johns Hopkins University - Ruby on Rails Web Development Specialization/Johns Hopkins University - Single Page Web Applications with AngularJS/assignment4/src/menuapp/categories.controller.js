@@ -4,37 +4,11 @@
 angular.module('data')
 .controller('MainCategoryListController', MainCategoryListController);
 
-
-MainCategoryListController.$inject = ['MenuDataService', 'items'];
-function MainCategoryListController(MenuDataService, items) {
+MainCategoryListController.$inject = ['MenuDataService', 'items', '$state'];
+function MainCategoryListController(MenuDataService, items, $state) {
   var categorylist = this;
   categorylist.items = items;
+  console.log($state.current.name );
 }
 
 })();
-
-
-
-// (function () {
-// 'use strict';
-
-// angular.module('data')
-// .controller('CategoriesController', CategoriesController);
-
-
-// // MainShoppingListController.$inject = ['ShoppingListService'];
-// // function MainShoppingListController(ShoppingListService) {
-// CategoriesController.$inject = ['items'];
-// function CategoriesController(items) {
-//   var categories = this;
-//   categories.items = items;
-
-//   // mainList.$onInit = function () {
-//   //   ShoppingListService.getItems()
-//   //   .then(function (result) {
-//   //     mainList.items = result;
-//   //   });
-//   // };
-// }
-
-// })();

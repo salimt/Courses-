@@ -1,10 +1,152 @@
-<!-- <a ui-sref="home">Home</a> &lt; <a ui-sref="categoryList">Categories</a> &lt; <span>Menus</span>
- -->
 
+<!-- Very simple example for an auto scrolling pattern to show someone the css only approach --->
+<style>
+@charset "UTF-8";
 
+/* box Style 1*/
+.pd-box-style1 .box-item {
+    padding: 30px 25px 25px;
+    position: relative;
+    text-align: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+.pd-box-style1 .box-icon {
+    font-size: 32px;
+    display: inline-block;
+    background-color: #444;
+    color: #bbb;height: 82px;
+    width: 82px;text-align: center;
+    line-height: 82px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.pd-box-style1 .box-item:hover .box-icon {
+    background-color: #222;
+    color: #fff;
+}
+.pd-box-style1 .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #222;
+}
+.pd-box-style1 .box-desc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777;
+}
+.pd-box-style1 .box-desc a {
+    color: #777;
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    text-decoration: none !important;
+    margin-top: 8px;
+}
+.pd-box-style1 .box-desc a:hover {
+    color: #222;
+}
 
-<ul>
-  <li ng-repeat="item in dishes.items">
-    Name: {{ item.name }}<br> Description: {{ item.description }}<br><br>
-  </li>
-</ul>
+/* Box Style 2*/
+.pd-box-style2 .box-item {
+    padding: 30px 25px 25px;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+.pd-box-style2 .box-icon {
+    font-size: 42px;
+    display: inline-block;
+    color: #999;
+    text-align: center;
+    margin-bottom: 15px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.pd-box-style2 .box-title {
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    font-size: 17px;
+    margin-bottom: 30px;
+    margin-left: -25px;
+    margin-right: -25px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.pd-box-style2 .box-item:hover .box-title {
+    background-color: #222;
+}
+.pd-box-style2 .box-desc p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #777;
+}
+.pd-box-style2 .box-desc a {
+    position: relative;
+    display: inline-block;
+    color: #888;
+    font-size: 11px;
+    line-height: normal;
+    border: 1px solid #e5e5e5;
+    text-decoration: none !important;
+    padding: 3px 10px;
+    margin-top: 20px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.pd-box-style2 .box-desc a:hover {
+    color: #222;
+    border-color: #222;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+</style>
+
+<a ui-sref="home">Home</a> &lt; <a ui-sref="categoryList">Categories</a> &lt; <span>Menus</span><br><br>
+<div class="container container-center">
+	<div class="row pd-box-style2">
+		<div class="col-md-3" ng-repeat="item in dishes.items">
+			<div class="pd-flipbox-wrap">
+				<div class="horizontal-flip-left">
+				    <div class="front-part">
+				        <div class="box-item">
+				            <div class="box-icon">
+				                <i class="fa fa-lightbulb-o"></i>
+				            </div>
+				            <div class="box-desc">
+				                <h2 class="box-title">{{ item.name }}</h2>
+				               <p>{{ item.description }}</p>
+				               <a href="#">Learn More <i class="fa fa-arrow-circle-o-right"></i></a>
+				            </div>
+				        </div>
+				    </div>
+				</div>					
+			</div>						
+		</div>
+    </div>    				
+</div>
+
+<!-- <div class="row">
+  <center><div class="col-md-6" ng-repeat="item in dishes.items">
+     <table>
+           <b><div class = "text-box" style="color: black;">Name: {{ item.name }}<br> Description: {{ item.description }}<br><br></b></div>
+     </table>
+  </div></center>
+ </div> -->
