@@ -1,0 +1,30 @@
+<!-- <li ng-repeat="item in $ctrl.items" ui-sref="categoryList.categoryDetail({categoryShortName: item['short_name']})">
+    <div class="button" id="button-2">
+      <div id="slide"></div>
+        <center><a href="#">{{ item.name }}</a></center>
+    </div>
+</li> -->
+
+
+<div class="row">
+  <center><div class="col-md-3 center" target="_blank" ng-repeat="item in $ctrl.items" ui-sref="categoryList.categoryDetail({categoryShortName: item['short_name']})">
+     <table>
+       <thead>
+        <th>    
+          <div class="button" id="button-2">
+            <div id="slide"></div>
+            <center><a href="#">{{ item.name }}</a></center>
+          </div></th>
+       </thead>
+     </table>
+  </div></center>
+ </div>
+
+<!-- <ul>
+  <li ng-repeat="item in $ctrl.items" ui-sref="categoryList.categoryDetail({categoryShortName: item['short_name']})">
+    <div class="button" id="button-2">
+      <div id="slide"></div>
+        <a href="#">{{ item.name }}</a>
+      </div>
+  </li>
+</ul> -->
