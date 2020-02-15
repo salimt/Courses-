@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  short_name: MyString
+  name: MyString
+  description: MyText
+  price_small: 1.5
+  price_large: 1.5
+  small_portion_name: MyString
+  large_portion_name: MyString
+  category_id: 
+
+two:
+  short_name: MyString
+  name: MyString
+  description: MyText
+  price_small: 1.5
+  price_large: 1.5
+  small_portion_name: MyString
+  large_portion_name: MyString
+  category_id: 
