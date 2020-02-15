@@ -1,0 +1,2 @@
+module MenuItemsHelper
+end
