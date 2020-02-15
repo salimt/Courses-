@@ -16,6 +16,8 @@ In this course, we will explore the core design of AngularJS 1.x (latest version
 
 [Assignment 4](https://salimt.github.io/Courses-/Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20Single%20Page%20Web%20Applications%20with%20AngularJS/assignment4/)
 
+[Assignment 5](https://salimt-course5.herokuapp.com/)
+
 ## Course include
 
 ### Module 2 - Filters, Digest Cycle, Controller Inheritance, and Custom Services
