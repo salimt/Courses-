@@ -1,0 +1,21 @@
+short_name,name,special_instructions
+L,Lunch,"Sunday-Friday 11:15am-3:00pm. Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot & Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll. $1.00 extra to have both soup and egg roll."
+A,Soup,
+B,Appetizers,
+SP,Chef's Recommendations,
+C,Chicken,
+F,Beef,
+V,Veal,
+DK,Duck,
+VG,Vegetables,
+CU,Curry,
+NL,Noodles (Lo Mein),
+NF,Mei Fan (Very Fine Noodles),
+PF,Pan Fried Noodles,
+FR,Fried Rice,
+CM,Chow Mein,
+FY,Egg Foo Young,
+SO,Side Orders,
+DS,Desserts,
+D,Dinner Combo,"Served with your choice of rice (Vegetable Fried RIce, Steamed Rice, Brown Rice), AND EITHER soup (Hot & Sour, Wonton, Vegetable, Egg Drop, Chicken Corn Soup) OR veggie egg roll."
+SR,Sushi Menu,"Contains raw ingredients. Consuming raw or undercooked meat, poultry, or seafood may increase your risk of food borne illness."

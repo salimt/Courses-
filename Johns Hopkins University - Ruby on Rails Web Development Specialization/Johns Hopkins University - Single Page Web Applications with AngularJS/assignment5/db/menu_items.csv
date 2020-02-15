@@ -1,0 +1,220 @@
+category_id,short_name,name,description,price_small,price_large,small_portion_name,large_portion_name
+A,A1,Won Ton Soup with Chicken,chicken-stuffed won tons in clear chicken broth with white meat chicken pieces and a few scallions,2.55,5.00,pint,quart
+A,A2,Egg Drop Soup,chicken broth with egg drop,2.25,4.50,pint,quart
+A,A3,Chicken Corn Soup,clear chicken broth with creamy corn and egg drop with white meat chicken pieces,2.75,5.50,pint,quart
+A,A4,Hot and Sour Soup,"tofu, chicken, mushroom, bamboo shoot, and egg",2.55,5.00,pint,quart
+A,A5,Egg Drop with Won Ton Soup,chicken soup with egg drop and won tons,3.00,6.00,pint,quart
+A,A6,Chicken Noodle (or Rice) Soup,"clear broth and lo mein noodles or white rice, chicken pieces",2.55,5.00,pint,quart
+A,A7,Garden Vegetable Soup,"clear chicken broth with mixed vegetables (carrots, cabbage, baby corn, mushroom, snow peas)",2.55,5.00,pint,quart
+A,A8,Garden Vegetable Soup with Tofu,"clear chicken broth with mixed vegetables (carrots, cabbage, baby corn, mushroom, snow peas) with tofu pieces",3.00,6.00,pint,quart
+A,A9,Chicken with Garden Vegetable Soup,"clear chicken broth with mixed vegetables (carrots, cabbage, baby corn, mushroom, snow peas) and chicken pieces",3.25,6.40,pint,quart
+A,A10,Hong Kong Style Won Ton Soup,"clear chicken broth with carrots, mushrooms, snow peas, and broccoli, and a few pieces of Hong Kong style won tons",4.25,8.50,pint,quart
+A,A11,Young Chow Won Ton Soup (for 2),"clear chicken broth with vegetables, veal, chicken, and beef and won tons",,11.95,,
+B,B1,Beef Egg Roll,"eggroll with cabbage, carrots and beef",,3.00,,
+B,B2,Spring Roll (1),thin wraps with white meat and cabbage,,3.00,,
+B,B3,Vegetable Egg Roll (1),cabbage and carrots in eggroll wrappers,,2.25,,
+B,B4,Fried Won Ton with Chicken Meat (6),triangle shaped won ton with ground white meat chicken inside,,6.25,,
+B,B5,Chicken Toast (4),"ground chicken meat on bread, deep-fried, comes with 4 pieces",,6.25,,
+B,B6,Fried Silky Tofu with Special Garlic Sauce,"4 large tofu cubes, breaded and deep-fried, with garlic sauce on the side",,5.95,,
+B,B7,Scallion Pancake,dough mixed with scallion and pan-fried,,5.75,,
+B,B8,Steamed (or Pan Fried) Chicken Dumplings (6),house-made dough dumpling with chicken,,7.95,,
+B,B9,Steamed (or Pan Fried) Vegetable Dumplings (6),"house-made dough dumpling with carrot, mushroom, cellophane noodles, cabbage (6 pieces)",,7.95,,
+B,B10,Szechuan Soft Won Ton (8),"soft won tons filled with chicken, with garlic sauce",,8.55,,
+B,B11,Chicken in Soothing Lettuce Wraps,"white-meat chicken with mushrooms, green peppers, water chestnuts, carrots sauteed with special house sauce, wrapped in fresh lettuce",,8.90,,
+B,B12,Teriyaki Beef (6),6 pieces of beef on skewers with teriyaki sauce,,7.95,,
+B,B13,Fried Chicken Wing (6),6 pieces of curry-flavored chicken wings,,4.95,,
+B,B14,B.B.Q. Spareribs,marinated grilled roast barbeque ribs,,13.95,,
+B,B15,Pu Pu Platter (for 2),"2 spring egg rolls, 2 fried won tons, 2 BBQ ribs, 2 chicken toast, 2 teriyaki beef",,18.95,,
+B,B16,Cold Sesame Noodle,Peanut butter sauce and sesame seeds on lo mein noodles ,,6.95,,
+SP,SP1,Chinese Scallion Pancake Wrap,"with choice of string bean, string bean chicken, string bean beef, beef onions, moo shu vegetable",,18.95,,
+SP,SP2,Teriyaki Chicken,marinated grilled chicken breast with vegetables and lo mein on the side,,18.95,,
+SP,SP3,Vegetable Tempura,"assorted vegetables breaded and fried, served with lo mein on the side",,15.95,,
+SP,SP4,Orange Chicken and Beef Combo,"white meat chicken and beef, breaded and deep-fried with special house sauce; served with lo mein and vegetables",,19.95,,
+SP,SP5,Happy Family,"beef, veal, and chicken sauteed with mixed vegetables in chef's special sauce; lo mein served on the side",,19.95,,
+SP,SP6,Grilled Veal,marinated and grilled veal served with vegetables and lo mein on the side,,19.95,,
+SP,SP7,Orange Beef,"a few cuts of beef, breaded, deep-fried with sauce containing orange peels; served with lo mein on the side",,19.95,,
+SP,SP8,Sesame Beef,"a few cuts of beef, breaded, deep-fried with sauce containing sesame seeds; served with lo mein on the side",,19.95,,
+C,C1,Orange Chicken,"chunks of chicken, breaded and deep-fried with sauce containing orange peels; white meat by request: for pint $1 extra, for large $2 extra",10.95,14.95,pint,large
+C,C2,General Tso's Chicken,"chunks of chicken, breaded and deep-fried with sauce and scallions; white meat by request: for pint $1 extra, for large $2 extra",10.95,14.95,pint,large
+C,C3,White Meat Chicken with String Bean,white meat chicken sauteed with string beans and soy sauce,10.95,14.95,pint,large
+C,C4,White Meat Chicken with Eggplant In Garlic Sauce,"white meat chicken, string beans, waterchestnuts, mushrooms, and eggplant, in garlic sauce",10.95,14.95,pint,large
+C,C5,Chicken Cashewnuts,"diced chicken with waterchestnuts, green peppers, and celery, and cashewnuts; white meat by request: for pint $1 extra, for large $2 extra",10.95,14.95,pint,large
+C,C6,White Meat Chicken with Fresh Vegetables,white meat chicken in a clear white sauce sauteed with mixed vegetables,10.95,14.95,pint,large
+C,C7,Sesame Chicken,"chunks of chicken, breaded and deep-fried with a sesame seed sauce",10.95,14.95,pint,large
+C,C8,Hunan Chicken,"white meat chicken sauteed with broccoli, mushrooms, and baby corn in Hunan sauce",10.95,14.95,pint,large
+C,C9,Szechuan Chicken,"white meat chicken sauteed with carrots, celery, and bean sprouts in Szechuan sauce",10.95,14.95,pint,large
+C,C10,Kung Pao Chicken,"diced chicken sauteed with peanuts, and celery in delicious kung pao sauce; white meat by request: for pint $1 extra, for large $2 extra",10.95,14.95,pint,large
+C,C11,White Meat Chicken with Garlic Sauce,"chicken sauteed with string beans, mushrooms, and waterchestnuts in garlic sauce",10.95,14.95,pint,large
+C,C12,Dry Shredded Chicken,"white meat chicken lightly breaded and fried until crip, then sauteed with celery and carrots in a special chef's sauce",11.95,16.95,pint,large
+C,C13,Moo Shu Chicken,"white meat chicken sauteed with shredded cabbage, mushrooms and eggs, then wrapped with pancake and delicious plum sauce",10.95,14.95,pint,large
+C,C14,Moo Goo Gau Pan,"white meat chicken sauteed with broccoli, snow peas, mushrooms, and waterchestnuts in a white sauce",10.95,14.95,pint,large
+C,C15,Sweet and Sour Chicken,"white meat chicken, breaded and fried with some green pepper, onion, and pineapples",10.95,14.95,pint,large
+C,C16,Chicken with Broccoli,white meat chicken sauteed with broccoli in brown sauce,10.95,14.95,pint,large
+C,C17,Lemon Chicken,"white meat chicken breaded and fried, served with lemon sauce on the side",11.95,15.95,pint,large
+C,C18,Eight Treasure Chicken,"diced chicken sauteed with mushrooms, waterchestnuts, celery, peas, carrots, peanuts, and cahsews in a chef's sauce; white meat by request: for pint $1 extra, for large $2 extra",10.95,14.95,pint,large
+C,C19,Salt & Pepper Chicken,"chunks of chicken breaded and fried, the sauteed with green peppers",11.95,15.95,pint,large
+F,F1,Beef Broccoli,sliced beef sauteed with broccoli in brown sauce,11.45,15.45,pint,large
+F,F2,Hunan Beef,"beef sauteed with broccoli, mushrooms, and carrots in spicy Hunan sauce",11.45,15.45,pint,large
+F,F3,Szechuan Beef,"beef sauteed with carrots and celery, in a spicy Szechuan sauce",11.45,15.45,pint,large
+F,F4,Beef with Mixed Vegetables,sliced beef sauteed with mixed vegetables,11.45,15.45,pint,large
+F,F5,Beef with Garlic Sauce,sliced beef sauteed in garlic sauce,11.45,15.45,pint,large
+F,F6,Beef with Eggplant in Garlic Sauce,sliced beef sauteed with eggplant in garlic sauce,11.45,15.45,pint,large
+F,F7,Beef with Snow Peas,sliced beef sauteed with snow peas in brown sauce,11.45,15.45,pint,large
+F,F8,Beef with Green Pepper,sliced beef sauteed with green peppers and onions in brown sauce,11.45,15.45,pint,large
+F,F9,Kung Pao Beef,sliced beef sauteed with peanuts and celery in delicious Kung Pao sauce,11.45,15.45,pint,large
+F,F10,Mongolian Beef,"sliced beef sauteed with bamboo shoots, onions, and green onions in chef's sauce",11.45,15.45,pint,large
+F,F11,Moo Shu Beef,"sliced beef sauteed  with shredded cabbage, mushrooms and eggs, then wrapped with pancake and delicious plum sauce",11.45,15.45,pint,large
+F,F12,Beef with String Bean,sliced beef sauteed with string beans and onions,11.45,15.45,pint,large
+V,V1,Hunan Veal,"veal sauteed with broccoli, mushrooms, and carrots in spicy Hunan sauce",12.45,18.45,pint,large
+V,V2,Veal with Mixed Vegetables,"sliced veal sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce",12.45,18.45,pint,large
+V,V3,Veal with Garlic Sauce,"sliced veal sauteed with mushrooms, string beans, and water chestnuts in garlic sauce",12.45,18.45,pint,large
+V,V4,Kung Pao Veal,sliced veal sauteed with peanuts and celery in delicious Kung Pao sauce,12.45,18.45,pint,large
+V,V5,Mongolian Veal,"veal sauteed with onions, green onions, and bamboo shoots in chef's sauce",12.45,18.45,pint,large
+V,V6,Veal with Green Peppers,sliced veal sauteed with onions and green peppers in brown sauce,12.45,18.45,pint,large
+V,V7,Szechuan Veal,"veal sauteed with carrots, celery, and bean sprouts in Szechuan sauce",12.45,18.45,pint,large
+DK,DK1,Peking Duck,marinated duck roasted crisp and served with pancake and green onion with special sauce,28.95,52.95,half,whole
+DK,DK2,Crispy Duck,"boneless duck meat, lightly breaded, deep fried to a crisp, topped with vegetables in chef's special sauce",,30.95,,
+DK,DK3,Duck with Vegetables,sliced lean duck meat sauteed with mixed vegtables in brown sauce,,30.95,,
+VG,VG1,Wok's Mixed Vegetables,"broccoli, carrots, baby corn, water chestnuts, mushrooms, and snow peas sauteed in brown sauce",9.45,11.45,pint,large
+VG,VG2,"Sauteed String Beans, Szechuan",onions and string beans sauteed with chef's sauce,9.45,11.45,pint,large
+VG,VG3,Eggplant in Garlic Sauce,eggplant sauteed with water chestnuts and string beans in garlic sauce,9.45,11.45,pint,large
+VG,VG4,Crispy Eggplant in Garlic Sauce,breaded and fried eggplants sauteed in sweet garlic sauce and sesame seeds,9.45,11.45,pint,large
+VG,VG5,Broccoli Sauteed wtih Mushrooms in Light Sauce,broccoli sauteed with fresh mushrooms in white sauce,9.45,11.45,pint,large
+VG,VG6,Moo Shu Vegetables,"shredded cabbage sauteed with mushrooms, carrots, and scrambled eggs",9.45,11.45,pint,large
+VG,VG7,Sauteed Snow Peas & Waterchestnuts in Brown Sauce,snow peas and water chestnuts sauteed in brown sauce,9.45,11.45,pint,large
+VG,VG8,"Bean Curd, Szechuan Style",silky soft bean curd braised in chef's brown sauce,9.45,11.45,pint,large
+VG,VG9,"Bean Curd, Hunan Style","bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce",9.45,11.45,pint,large
+VG,VG10,Bean Curd with Mixed Vegetables,"Tofu lightly breaded and fried and sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce",9.45,11.45,pint,large
+VG,VG11,Bean Curd with Mushrooms,bean curd sauteed with black mushrooms and regular mushrooms in brown sauce,9.45,11.45,pint,large
+VG,VG12,Orange Bean Curd,Tofu lightly breaded and fried and sauteed with orange peel in sweet brown sauce,9.45,11.45,pint,large
+VG,VG13,Bean Curd with Eggplant in Garlic Sauce,"Tofu lightly breaded and fried and sauteed with water chestnuts, string beans, and mushrooms in garlic sauce",9.45,11.45,pint,large
+VG,VG14,Sauteed Bean Sprouts,fresh bean sprouts sauteed with scallions,9.45,11.45,pint,large
+CU,CU21,Curry Chicken,"white meat chicken sauteed with ionions, peas, carrots, and broccoli",11.95,14.95,pint,large
+CU,CU22,Curry Beef,"beef sauteed with ionions, peas, carrots, and broccoli",12.95,16.95,pint,large
+CU,CU23,Curry Veal,"veal sauteed with ionions, peas, carrots, and broccoli",12.95,17.95,pint,large
+NL,NL1,Vegetable Lo Mein,"broccoli, carrots, onions, snow peas, and bean sprouts sauteed with soft lo mein noodles",8.95,10.95,pint,large
+NL,NL2,Chicken Lo Mein,"white meat chicken, onions, and bean sprouts sauteed with soft lo mein noodles",9.95,11.95,pint,large
+NL,NL3,Beef Lo Mein,"beef, onions, and bean sprouts sauteed with soft lo mein noodles",9.95,11.95,pint,large
+NL,NL4,Veal Lo Mein,"veal, onions, and bean sprouts sauteed with soft lo mein noodles",10.95,12.95,pint,large
+NL,NL5,House Special Lo Mein,"white meat chicken, beef, veal, onions, and bean sprouts sauteed with soft lo mein noodles",11.95,13.95,pint,large
+NF,NF10,Vegetable Mei Fan,"broccoli, snow peas, onions, and bean sprouts sauteed with rice noodles",,12.95,,
+NF,NF11,Chicken Mei Fan,white meat chicken sauteed with onions and bean sprouts,,14.95,,
+NF,NF12,Beef Mei Fan,beef sauteed with onions and bean sprouts,,15.95,,
+NF,NF13,House Special Mei Fan,"white meat chicken, beef, and veal sauteed with onions and bean sprouts",,17.95,,
+PF,PF1,Pan Fried Noodles with Vegetables,"broccoli, snow peas, mushrooms, water chestnuts, and carrots sauteed with brown sauce on a bed of crispy crunchy noodles",,12.45,,
+PF,PF2,Pan Fried Noodles with Chicken,"white meat chicken sauteed with broccoli, snow peas, mushrooms, water chestnuts, and carrots with brown sauce on a bed of crispy crunchy noodles",,16.45,,
+PF,PF3,Pan Fried Noodles with Beef,"sliced beef sauteed with broccoli, snow peas, mushrooms, water chestnuts, and carrots with brown sauce on a bed of crispy crunchy noodles",,16.45,,
+PF,PF4,Pan Fried Noodles with Veal,"sliced veal sauteed with broccoli, snow peas, mushrooms, water chestnuts, and carrots with brown sauce on a bed of crispy crunchy noodles",,17.45,,
+PF,PF5,House Special Pan Fried Noodles,"veal, beef, and chicken sauteed with broccoli, snow peas, mushrooms, water chestnuts, and carrots with brown sauce on a bed of crispy crunchy noodles",,18.45,,
+FR,FR1,Vegetable Fried Rice,"broccoli, snow peas, onions, and bean sprouts sauteed with rice",8.95,11.45,pint,large
+FR,FR2,Chicken Fried Rice,white meat chicken sauteed with onions and bean sprouts with rice,9.95,12.45,pint,large
+FR,FR3,Beef Fried Rice,sliced beef sauteed with onions and bean sprouts with rice,9.95,12.45,pint,large
+FR,FR4,Veal Fried Rice,sliced veal sauteed with onions and bean sprouts with rice,10.95,13.45,pint,large
+FR,FR5,House Fried Rice,"veal, beef, and chicken sauteed with onions and bean sprouts with rice",11.95,14.45,pint,large
+CM,CM1,Vegetable Chow Mein,"broccoli, snow peas, onions, bean sprouts, and celery sauteed with white sauce",8.95,11.45,pint,large
+CM,CM2,Chicken Chow Mein,"white meat chicken sauteed with bean sprouts, onions, and celery in white sauce",9.95,12.45,pint,large
+CM,CM3,Beef Chow Mein,"beef sauteed with bean sprouts, onions, and celery in brown sauce",9.95,12.45,pint,large
+CM,CM4,Veal Chow Mein,"veal sauteed with bean sprouts, onions, and celery in brown sauce",10.95,13.45,pint,large
+CM,CM5,House Special Chow Mein,"veal, beef, and chicken sauteed with bean sprouts, onions, and celery in brown sauce",11.95,14.45,pint,large
+FY,FY1,Vegetable Egg Foo Young,"shredded cabbage, onions, bean sprouts, celery, snow peas, and carrots in egg",,11.45,,
+FY,FY2,Chicken Egg Foo Young,"white meat chicken, shredded cabbage, onions, bean sprouts, celery, snow peas, and carrots in egg",,13.45,,
+FY,FY3,Beef Egg Foo Young,"beef, shredded cabbage, onions, bean sprouts, celery, snow peas, and carrots in egg",,13.45,,
+FY,FY4,Veal Egg Foo Young,"veal, shredded cabbage, onions, bean sprouts, celery, snow peas, and carrots in egg",,14.45,,
+FY,FY5,House Egg Foo Young,"veal, beef, and chicken, shredded cabbage, onions, bean sprouts, celery, snow peas, and carrots in egg",,15.45,,
+SO,SO1,Chicken Nuggets with French Fries,,,7.25,,
+SO,SO2,French Fries,,,4.25,,
+SO,SO3,Brown Rice,,2.50,4.00,pint,large
+SO,SO4,Extra White Rice,,2.50,4.00,pint,large
+SO,SO5,Extra Fried Rice,,2.50,4.00,pint,large
+SO,SO6,Fortune Cookies (12),,,2.50,,
+SO,SO7,Fountain Soda Large,,,2.00,,
+DS,DS1,Chocolate Truffle Cake,,,4.25,,slice
+DS,DS2,Cappuccino Apricot Cake,,,4.25,,slice
+D,D1,Orange Chicken,"chunks of chicken, breaded and deep-fried with sauce containing orange peels; white meat by request: for pint $1 extra, for large $2 extra",,13.95,,
+D,D2,General Tso's Chicken,"chunks of chicken, breaded and deep-fried with sauce and scallions; white meat by request: for pint $1 extra, for large $2 extra",,13.95,,
+D,D3,Sesame Chicken,"chunks of chicken, breaded and deep-fried with a sesame seed sauce",,13.95,,
+D,D4,Kung Pao Chicken,"diced chicken sauteed with peanuts, and celery in delicious kung pao sauce; white meat by request: for pint $1 extra, for large $2 extra",,13.95,,
+D,D5,Chicken Cashewnuts,"diced chicken with waterchestnuts, green peppers, and celery, and cashewnuts; white meat by request: for pint $1 extra, for large $2 extra",,13.95,,
+D,D6,Chicken with Vegetables,white meat chicken in a clear white sauce,,13.95,,
+D,D7,Sweet and Sour Chicken,"white meat chicken, breaded and fried with some green pepper, onion, and pineapples",,13.95,,
+D,D8,Beef Broccoli,sliced beef sauteed with broccoli in brown sauce,,13.95,,
+D,D9,Beef with Garlic Sauce,sliced beef sauteed in garlic sauce,,13.95,,
+D,D10,Beef with Fresh Vegetables,sliced beef sauteed with mixed vegetables,,13.95,,
+D,D11,Veal with Fresh Vegetables,sliced veal sauteed with mixed vegetables,,13.95,,
+D,D12,Veal with Garlic Sauce,sliced veal sauteed in garlic sauce,,13.95,,
+D,D13,Hunan Bean Curd,"bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce",,13.95,,
+D,D14,Bean Curd with Fresh Vegetables,"Tofu lightly breaded and fried and sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce",,13.95,,
+D,D15,Mixed Vegetables,"broccoli, carrots, baby corn, water chestnuts, mushrooms, and snow peas sauteed in brown sauce",,13.95,,
+D,D16,Eggplant with Garlic Sauce,eggplant sauteed with water chestnuts and string beans in garlic sauce,,13.95,,
+D,D17,Lo Mein,"onions, and bean sprouts sauteed with soft lo mein noodles",,13.95,,
+D,D18,Chow Mein,"chow mein noodles sauteed with bean sprouts, onions, and celery in brown sauce",,13.95,,
+SR,SR1,Cucumber Sushi Roll,,,4.50,,
+SR,SR2,Asparagus Sushi Roll,,,5.00,,
+SR,SR3,Avocado Sushi Roll,,,5.00,,
+SR,SR4,Garden Vegetable Sushi Roll,,,6.50,,
+SR,SR5,California Sushi Roll,,,6.00,,
+SR,SR6,Salmon Sushi Roll,,,5.50,,
+SR,SR7,Tuna Sushi Roll,,,5.50,,
+SR,SR8,Yellowtail Sushi Roll,,,6.00,,
+SR,SR9,Salmon Skin & Cucumber Sushi Roll,,,5.50,,
+SR,SR10,Tuna and Avocado Sushi Roll,,,6.50,,
+SR,SR11,Salmon and Avocado Sushi Roll,,,6.50,,
+SR,SR12,Yellowtail and Avocado Sushi Roll,,,6.50,,
+SR,SR13,Spicy Tuna Sushi Roll,,,6.50,,
+SR,SR14,Spicy Salmon Sushi Roll,,,6.50,,
+SR,SR15,Fried Sweet Potato Sushi Roll,,,6.50,,
+SR,SR16,Philadelphia Sushi Roll,,,6.50,,
+SR,SR17,Salmon Tempura Cooked Sushi Roll,,,9.50,,
+SR,SR18,Teriyaki Tuna Cooked Sushi Roll,,,8.00,,
+SR,SR19,Teriyaki Salmon Cooked Sushi Roll,,,8.00,,
+SR,SR20,Tiriyaki Combo Cooked Sushi Roll,,,9.50,,
+SR,SR21,Tuna and Cucumber Temaki Roll,,,7.00,,
+SR,SR22,Salmon Skin and Cucumber Temaki Roll,,,7.00,,
+SR,SR23,Yellowtail Avocado Temaki Roll,,,7.00,,
+SR,SR24,Salmon Tartar Temaki Roll,,,8.00,,
+SR,SR25,Salmon Sashimi,,,2.50,,
+SR,SR26,Tuna Sashimi,,,2.50,,
+SR,SR27,Yellowtail Sashimi,,,2.75,,
+SR,SR28,Imitation Crab Stick Sashimi,,,2.50,,
+SR,SR29,Garden Salad,,,5.95,,
+SR,SR30,Double Happiness,,,13.00,,
+SR,SR31,Las Vegas Roll,,,14.00,,
+SR,SR32,Love Roll,,,13.00,,
+SR,SR33,Volcano Roll,,,13.00,,
+SR,SR34,Alaska Roll,,,12.00,,
+SR,SR35,Rainbow Roll,,,12.00,,
+SR,SR36,Orioles,,,12.00,,
+SR,SR37,Dragon Roll,,,12.00,,
+SR,SR38,Blossom Roll,,,13.00,,
+SR,SR39,Golden Dragon Roll,,,13.00,,
+SR,SR40,Festival Roll,,,15.00,,
+SR,SR41,Sashimi Combo,,,18.00,,
+SR,SR42,Sushi Sashimi Combo,,,27.95,,
+SR,SR43,Sashimi Maki Combo,,,15.00,,
+L,L1,Orange Chicken,"chunks of chicken, breaded and deep-fried with sauce containing orange peels; white meat by request: for pint $1 extra, for large $2 extra",,9.75,,
+L,L2,General Tso's Chicken,"chunks of chicken, breaded and deep-fried with sauce and scallions; white meat by request: for pint $1 extra, for large $2 extra",,9.75,,
+L,L3,Chicken Cashewnuts,"diced chicken with waterchestnuts, green peppers, and celery, and cashewnuts; white meat by request: for pint $1 extra, for large $2 extra",,9.75,,
+L,L4,Kung Pao Chicken,"beef sauteed with carrots and celery, in a spicy Szechuan sauce",,9.75,,
+L,L5,Chicken String Bean,white meat chicken sauteed with string beans and soy sauce,,9.75,,
+L,L6,Chicken Vegetable,white meat chicken in a clear white sauce sauteed with mixed vegetables,,9.75,,
+L,L7,Chicken Garlic Sauce,"chicken sauteed with string beans, mushrooms, and waterchestnuts in garlic sauce",,9.75,,
+L,L8,Chicken Eggplant with Garlic Sauce,"white meat chicken, string beans, waterchestnuts, mushrooms, and eggplant, in garlic sauce",,9.75,,
+L,L9,Sweet and Sour Chicken,"white meat chicken, breaded and fried with some green pepper, onion, and pineapples",,9.75,,
+L,L10,Chicken Broccoli,white meat chicken sauteed with broccoli in brown sauce,,9.75,,
+L,L11,Hunan Chicken,"white meat chicken sauteed with broccoli, mushrooms, and baby corn in Hunan sauce",,9.75,,
+L,L12,Szechuan Chicken,"white meat chicken sauteed with carrots, celery, and bean sprouts in Szechuan sauce",,9.75,,
+L,L13,Hunan Beef,"beef sauteed with broccoli, mushrooms, and carrots in spicy Hunan sauce",,9.75,,
+L,L14,Beef with Broccoli,sliced beef sauteed with broccoli in brown sauce,,9.75,,
+L,L15,Beef with Garlic Sauce,sliced beef sauteed in garlic sauce,,9.75,,
+L,L16,Beef String Bean,sliced beef sauteed with string beans and onions,,9.75,,
+L,L17,Beef with Green Pepper,sliced beef sauteed with green peppers and onions in brown sauce,,9.75,,
+L,L18,Veal with Mixed Vegetables,"sliced veal sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce",,9.75,,
+L,L19,Hunan Bean Curd,"bean curd lightly fried then sauteed with green pepper, snow peas, and water chestnuts in brown sauce",,9.75,,
+L,L20,Bean Curd with Vegetables,"Tofu lightly breaded and fried and sauteed with carrots, broccoli, snow peas, string beans, water chestnuts, and mushrooms in brown sauce",,9.75,,
+L,L21,Wok's Mixed Vegetables,"broccoli, carrots, baby corn, water chestnuts, mushrooms, and snow peas sauteed in brown sauce",,9.75,,
+L,L22,Szechuan String Bean,onions and string beans sauteed with chef's sauce,,9.75,,
+L,L23,Eggplant with Garlic Sauce,eggplant sauteed with water chestnuts and string beans in garlic sauce,,9.75,,
+L,L24,Chicken Mei Fan,white meat chicken sauteed with onions and bean sprouts,,9.75,,
+L,L26,Chow Mein,"white meat chicken OR beef OR vegetables, sauteed with bean sprouts, onions, and celery in white sauce",,9.75,,
+L,L27,Lo Mein,"white meat chicken OR beef OR vegetables, sauteed with onions, and bean sprouts and soft lo mein noodles",,9.75,,
+L,L28,Sesame Chicken,"chunks of chicken, breaded and deep-fried with a sesame seed sauce",,9.75,,
