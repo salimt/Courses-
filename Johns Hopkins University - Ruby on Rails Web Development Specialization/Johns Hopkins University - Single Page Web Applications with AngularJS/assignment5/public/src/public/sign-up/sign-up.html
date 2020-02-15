@@ -1,0 +1,172 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 62,5%;
+}
+
+.submit {
+    border: 4px solid white;
+    color: #3F3F3F;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: auto;
+    padding: 12px 32px 12px 82px;
+    position: relative;
+    text-decoration: none;
+}
+
+.submit .label,
+.submit .icon-arrow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    perspective: 1000;
+}
+
+.submit .label {
+    display: inline-block;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.submit .icon-arrow {
+    fill: white;
+    height: 15px;
+    top: 17px;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1), opacity .4s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 35px;
+}
+
+.submit .icon-arrow.before {
+    left: 32px;
+    margin-right: 15px;
+    position: absolute;
+    transform-origin: left center;
+}
+
+.submit .icon-arrow.after {
+    margin-left: 15px;
+    opacity: 0;
+    position: absolute;
+    right: 32px;
+    transform: translateX(75%) scaleX(0.1);
+    transform-origin: right center;
+}
+
+.submit:hover .label {
+    transform: translateX(-52px);
+}
+
+.submit:hover .icon-arrow.before {
+    opacity: 0;
+    transform: translateX(-75%) scaleX(0.1);
+}
+
+.submit:hover .icon-arrow.after {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+.submit:active {
+    border-color: #FD6154;
+    color: #FD6154;
+}
+
+.submit:active .icon-arrow {
+    fill: #FD6154;
+}</style>
+
+
+<center><fieldset class="form__group" ng-controller="SignUpController as reg">
+  <legend style="color: white;">Registration</legend>
+  <form name='regForm' novalidate>
+
+    <input class="form__input" type="text" name="firstname" placeholder="First Name"
+      ng-model="reg.firstname"
+      required>
+      <span ng-if="regForm.firstname.$invalid && regForm.firstname.$touched" class="error">
+        First name cannot be empty
+      </span>
+      <br>
+
+     <input class="form__input" type="text" name="lastname" placeholder="Last Name"
+      ng-model="reg.lastname"
+      required>
+      <span ng-if="regForm.lastname.$invalid && regForm.lastname.$touched" class="error">
+        Last name cannot be empty
+      </span>
+      <br>
+
+    <input class="form__input" type="email" name="email" placeholder="Email"
+      ng-model="reg.email"
+      required>
+      <span ng-if="regForm.email.$invalid && regForm.email.$touched" class="error">
+        Must be a valid email address: handle@domain format
+      </span>
+      <br>
+
+    <input class="form__input" type="text" name="phone" placeholder="Phone ###-###-####"
+      ng-model="reg.phone"
+      pattern="(\d{3})-(\d{3})-(\d{4})">
+      <span ng-if="regForm.phone.$invalid && regForm.phone.$touched" class="error">
+        Phone must be in the format ###-###-####.
+      </span>
+      <br>
+
+    <input ng-change="reg.getFaveDish()" class="form__input" type="text" name="favedish" placeholder="Favourite Dish"
+      ng-model="reg.favedish"
+      required>      
+      <span ng-if="reg.confirmDish==false" class="error">
+        No such menu number exists
+      </span><br>
+      <span ng-if="regForm.favedish.$invalid && regForm.favedish.$touched" class="error">
+        Favourite dish cannot be empty
+      </span>
+      <br>
+
+    <a class="submit" name="submit" 
+          ng-click="reg.submit();" style="color: white;">
+        <svg class="icon-arrow before">
+            <use xlink:href="#arrow"></use>
+        </svg>
+        <button class="label" ng-disabled="regForm.$invalid" style="border:0px solid white; background-color: transparent;">Submit</button>
+        <svg class="icon-arrow after">
+            <use xlink:href="#arrow"></use>
+        </svg>
+    </a>
+    <svg style="display: none;">
+      <defs>
+        <symbol id="arrow" viewBox="0 0 35 15">
+          <title>Arrow</title>
+          <path d="M27.172 5L25 2.828 27.828 0 34.9 7.071l-7.07 7.071L25 11.314 27.314 9H0V5h27.172z "/>
+        </symbol>
+      </defs>
+    </svg>
+
+<!--       <div style="margin-top: 10px;">
+        Form valid? {{ regForm.$valid }}
+      </div> -->
+
+ <div ng-switch on="reg.completed">
+    <div ng-if="regForm.$valid" ng-switch-when=true>
+      <center><img src="https://ya-webdesign.com/images250_/icon-success-png-4.png" alt="Successful" width="64" height="64">
+
+    <h3 style="border-color: white; color: green;">Your information has been saved.</h3></center>
+    </div>
+<!--      <div ng-switch-when=false>
+      <center><img src="https://cdn2.iconfinder.com/data/icons/user-needs-19/16/45_false_delete_remove_cross_wrong_2-512.png" alt="Unsuccessful" width="64" height="64">
+
+    <h3 style="border-color: white; color: red;">Favourite dish has not been found in the menu.</h3></center>
+    </div> -->
+  </div>
+  </form>
+
+
+</fieldset></center>
+
+
