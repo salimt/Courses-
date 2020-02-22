@@ -1,0 +1,82 @@
+<body>
+</body>
+
+<template name="ApplicationLayout">
+    <div class="container">
+        <a href="/">Home</a>
+        {{>header}}
+        {{>loginButtons}}
+        <!-- iron router will select what to render in place of yield-->
+        {{> yield }}
+    </div>
+</template>
+
+<template name="header">
+    <h1>Welcome to M-Instant v4 {{nickname}}</h1>
+</template>
+
+<template name="chatroomList">
+    {{#if currentUser}}
+    <h3><a href="#" class="js-toggle-chatform">Create a new chatroom</a></h3>
+    <div id="chatroomForm">
+        {{>chatroomForm}}
+        <a href="#" class="js-toggle-chatform">close</a>
+    </div>
+
+    <h3>Available chatrooms</h3>
+    {{#each chatrooms}}
+        {{>chatroomItem}}
+    {{/each}}
+
+
+    {{/if}}
+</template>
+
+<!-- HERE is where you come in... you must edit this template -->
+<template name="chatroomForm">
+    {{> quickForm collection="Chatrooms"
+                id="insertChatroomForm"
+                type="method"
+                meteormethod="insertChatroom"}}
+
+</template>
+
+<template name="chatroomItem">
+    <div class="well">
+        <h4>{{title}}</h4>
+        <p>{{description}}</p>
+        <a href="/chatrooms/{{_id}}">enter chatroom</a>
+        <br/>
+    </div>
+</template>
+
+<template name="messageList">
+    <h3>Chatroom: {{title}}</h3>
+    {{>messageForm}}
+
+    {{#each messages _id}}
+        {{>messageItem}}
+    {{/each}}
+</template>
+
+<template name="messageItem">
+    <h3><button class="btn btn-warning js-del-message">delete</button>{{nickname}} - {{messageText}}</h3>
+    <br/>{{createdOn}}
+</template>
+
+<template name="messageForm">
+    {{#autoForm collection="Messages"
+                id="insertMessageForm"
+                type="method"
+                meteormethod="insertMessage"}}
+  <fieldset>
+    {{> afQuickField name='messageText'}}
+    <!-- the rest of the fields are hidden -->
+    {{> afQuickField name='chatroomId' value=_id type="hidden"}}
+    <!-- this one will be set by the method to the current user id -->
+    {{> afQuickField name='nickname' value=0 type="hidden"}}
+    {{> afQuickField name='createdOn' type="hidden"}}
+  </fieldset>
+  <button type="submit" class="btn btn-primary">Post!</button>
+{{/autoForm}}
+</template>

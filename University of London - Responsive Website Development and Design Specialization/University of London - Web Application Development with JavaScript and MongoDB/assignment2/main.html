@@ -1,0 +1,30 @@
+<body>
+    {{>header}}
+    {{>loginButtons}}
+    {{>messageForm}}
+    {{>messageList}}
+</body>
+
+
+<template name="header">
+    <h1>Welcome to M-Instant {{nickname}}</h1>
+</template>
+
+<template name="messageList">
+    {{#each messages}}
+        {{>messageItem}}
+    {{/each}}
+</template>
+
+<template name="messageItem">
+    <h3>{{nickname}} - {{messageText}}</h3>
+</template>
+
+<template name="messageForm">
+    <div class="form-group">
+        <label for="message-text-input">Message:</label>
+        <input type="text" class="form-control" id="message-text-input" placeholder="Type message here...">
+        <button type="submit" class="btn btn-primary js-save-message">Post!</button>
+
+    </div>
+</template>
