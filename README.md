@@ -73,9 +73,9 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [Stanford University - Introduction to Mathematical Thinking](./Stanford-University-Introduction-to-Mathematical-Thinking)
 
-- #### [University of London - Responsive Website Development and Design Specialization](./Stanford-University-Introduction-to-Mathematical-Thinking)
+- #### [University of London - Responsive Website Development and Design Specialization](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization)
 
-1. [University of London - Web Application Development with JavaScript and MongoDB](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20Single%20Page%20Web%20Applications%20with%20AngularJS)
+1. [University of London - Web Application Development with JavaScript and MongoDB](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Web%20Application%20Development%20with%20JavaScript%20and%20MongoDB)
 
 
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
