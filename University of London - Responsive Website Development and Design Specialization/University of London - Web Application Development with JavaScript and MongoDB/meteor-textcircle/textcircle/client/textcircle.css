@@ -1,0 +1,16 @@
+/* CSS declarations go here */
+
+.top-margin{
+	margin-top:50px;
+}
+
+#viewer_iframe{
+	border:1px solid gray;
+	resize:both;
+	width:100%;
+}
+
+.light-border{
+	border:1px solid gray;
+	width:100%;	
+}
