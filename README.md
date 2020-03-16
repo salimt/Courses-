@@ -79,7 +79,9 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [University of London - Responsive Website Development and Design Specialization](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization)
 
-1. [University of London - Web Application Development with JavaScript and MongoDB](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Web%20Application%20Development%20with%20JavaScript%20and%20MongoDB)
+1. [University of London - Responsive Web Design](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Responsive%20Web%20Design)
+
+2. [University of London - Web Application Development with JavaScript and MongoDB](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Web%20Application%20Development%20with%20JavaScript%20and%20MongoDB)
 
 
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
