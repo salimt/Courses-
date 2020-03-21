@@ -1,0 +1,102 @@
+<template name="playground">
+
+  <header>
+      <span class="machine-navbar" style="margin-left:2rem;">Music Machine</span>
+      <i class="fa fa-ellipsis-v machine-navbar pull-right js-ellipsis" style="margin-right:2rem;" aria-hidden="true"></i>
+      <i class="fa fa-share-alt machine-navbar pull-right js-share" aria-hidden="true"></i>
+  </header>
+
+  <!-- Remember - if you want to control functions globaly, don't declare them as var. Just name them. -->
+
+  <div class="container">
+      <section >
+        <div class="overlay-wcs"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+          <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+
+              <svg viewBox="0 0 1800 300">
+                <symbol id="s-text">
+
+                  <text text-anchor="right" x="0%" y="55%">MUSIC MACHINE</text>
+                </symbol>
+
+                <g class = "g-ants">
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                  <use xlink:href="#s-text" class="text-copy"></use>
+                </g>
+              </svg>
+              
+              {{#if startdac }}
+                  <i class="btn btn-lg btn-danger js-masterButton fa fa-stop-circle fa-3x"></i>
+              {{else}}
+                  <i class="btn btn-lg btn-success js-masterButton fa fa-play-circle fa-3x"></i>
+              {{/if}}
+
+              <hr>
+
+                
+              <div id="slider"></div>
+              <br>
+              <p style="color:white;">Current Speed = {{sliderValue}}</p>
+              <hr>
+
+              <div class="row"> 
+                  <div class="col-xs-2" id="p1"><button class="btn btn-md css-instrument-name">Drums</button></div>
+                  <div class="col-xs-2 col-half-offset" id="p2"><button class="btn btn-md css-instrument-name">Bassline</button></div>
+                  <div class="col-xs-2 col-half-offset" id="p3"><button class="btn btn-md css-instrument-name">Arpeggiator</button></div>
+                  <div class="col-xs-2 col-half-offset" id="p4"><button class="btn btn-md css-instrument-name">Cymbal</button></div>
+                  <div class="col-xs-2 col-half-offset" id="p5"><button class="btn btn-md css-instrument-name">Snaredrum</button></div>
+                  <br><br><br>
+                  <div class="col-xs-2" id="p1">
+                    {{#if drums}}
+                        <i class="fa fa-stop-circle fa-2x btn-danger js-controlDrums" aria-hidden="true"></i>
+                    {{else}}
+                        <i class="fa fa-play-circle fa-2x btn-success js-controlDrums" aria-hidden="true"></i>
+                    {{/if}}
+                  </div>
+                  <div class="col-xs-2 col-half-offset" id="p2">
+                    {{#if bassline}}
+                        <i class="fa fa-stop-circle fa-2x btn-danger js-controlBass" aria-hidden="true"></i>
+                    {{else}}
+                        <i class="fa fa-play-circle fa-2x btn-success js-controlBass" aria-hidden="true"></i>
+                    {{/if}}
+                  </div>
+                  <div class="col-xs-2 col-half-offset" id="p3">
+                    {{#if arp}}
+                        <i class="fa fa-stop-circle fa-2x btn-danger js-controlArp" aria-hidden="true"></i>
+                    {{else}}
+                        <i class="fa fa-play-circle fa-2x btn-success js-controlArp" aria-hidden="true"></i>
+                     {{/if}}
+                  </div>
+                  <div class="col-xs-2 col-half-offset" id="p4">
+                    {{#if cymbal}}
+                        <i class="fa fa-stop-circle fa-2x btn-danger js-controlCymbal" aria-hidden="true"></i>
+                    {{else}}
+                        <i class="fa fa-play-circle fa-2x btn-success js-controlCymbal" aria-hidden="true"></i>
+                    {{/if}}
+                  </div>
+                  <div class="col-xs-2 col-half-offset" id="p5">
+                    {{#if snaredrum}}
+                        <i class="fa fa-stop-circle fa-2x btn-danger js-controlSnaredrum" aria-hidden="true"></i>
+                    {{else}}
+                        <i class="fa fa-play-circle fa-2x btn-success js-controlSnaredrum" aria-hidden="true"></i>
+                    {{/if}}
+                  </div>
+              </div>
+    
+              <h2> {{startdac}} {{drums}} {{bass}} {{arp}} {{cymbal}} {{snaredrum}}</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+
+  </div>
+</template>
