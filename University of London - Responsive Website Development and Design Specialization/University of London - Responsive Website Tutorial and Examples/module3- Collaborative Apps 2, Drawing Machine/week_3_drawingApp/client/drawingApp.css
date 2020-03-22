@@ -1,0 +1,120 @@
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    background: #BBB;
+}
+h2 {text-align:center; padding-bottom:10px}
+
+#wrapper {
+    width:1000px;
+    margin: 30px auto;
+    border:1px solid #000;
+    background:#EEF;
+    padding:10px 0 25px 0;
+}
+#outer-wrap {
+    width: 922px; 
+    height: 620px;
+    margin:0 auto;
+    overflow: auto; 
+    background:#BCC5E1;
+    border:1px solid #000; 
+}
+#inner-wrap {
+    float:left;
+    margin-right:-999em;
+    padding-left:20px;
+}
+.floatbox {
+    float:left; /*force into block level for dimensions*/
+    width:1000px;
+    height:800px;
+    background:blue;
+    color:#FFF;
+
+}
+
+.buttonL {
+    padding-left:88px;
+    padding-bottom: 8px;
+}
+
+.buttonR {
+    padding-right:88px;
+}
+
+.clear {
+    padding:10px; 
+    float:left;
+}
+.red, .blue, .green, .black, .white {
+    padding:10px; 
+    float:right;
+}
+
+/*.canvas {
+    width: 900px;
+    height: 800px;
+    background-color: #fff;
+
+    box-shadow: 0px 0px 44px 10px #0ff;
+     in order: x offset, y offset, blur size, spread size, color 
+    /* blur size and spread size are optional (they default to 0) */
+}*/
