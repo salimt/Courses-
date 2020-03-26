@@ -1,0 +1,674 @@
+[
+    "Dancing Queen"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.12559533119
+Diatonic strength 0.72001761198
+Chord Number 0.00201166770421
+Chord Change Rate 0.03600884974
+Beats (Maximilian) 386
+BPM (Maximilian) 100.814460754
+Spectral Flux (Maximilian) 0.0830400437117
+Dissonance (Essentia) 0.469998091459
+[
+    "Respect"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 1.32620382309
+Diatonic strength 0.6076567173
+Chord Number 0.00415601022542
+Chord Change Rate 0.0767263397574
+Beats (Maximilian) 277
+BPM (Maximilian) 114.813117981
+Spectral Flux (Maximilian) 0.0732592344284
+Dissonance (Essentia) 0.469070404768
+[
+    "Good Vibrations"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "A#"
+Danceability 0.999954819679
+Diatonic strength 0.526479542255
+Chord Number 0.00426257448271
+Chord Change Rate 0.0624467171729
+Beats (Maximilian) 528
+BPM (Maximilian) 150.846862793
+Spectral Flux (Maximilian) 0.0618967339396
+Dissonance (Essentia) 0.443387687206
+[
+    "Hey Jude"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "F"
+Danceability 1.24805665016
+Diatonic strength 0.723014593124
+Chord Number 0.000972657522652
+Chord Change Rate 0.0385820828378
+Beats (Maximilian) 1056
+BPM (Maximilian) 147.742218018
+Spectral Flux (Maximilian) 0.0693007782102
+Dissonance (Essentia) 0.469068706036
+[
+    "Stand By Me"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.28256845474
+Diatonic strength 0.775958836079
+Chord Number 0.00310719828121
+Chord Change Rate 0.06162609905
+Beats (Maximilian) 353
+BPM (Maximilian) 119.653198242
+Spectral Flux (Maximilian) 0.0569774731994
+Dissonance (Essentia) 0.461470425129
+[
+    "Like A Rolling Stone"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G"
+Danceability 1.05274391174
+Diatonic strength 0.692092716694
+Chord Number 0.000746083038393
+Chord Change Rate 0.0415319576859
+Beats (Maximilian) 593
+BPM (Maximilian) 95.5573806763
+Spectral Flux (Maximilian) 0.0695645064116
+Dissonance (Essentia) 0.46077299118
+[
+    "No Woman No Cry"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C#"
+Danceability 1.31871187687
+Diatonic strength 0.680779695511
+Chord Number 0.00130747444928
+Chord Change Rate 0.0451078675687
+Beats (Maximilian) 357
+BPM (Maximilian) 101.08416748
+Spectral Flux (Maximilian) 0.0774421319366
+Dissonance (Essentia) 0.473016083241
+[
+    "Born To Run"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.13522720337
+Diatonic strength 0.686627030373
+Chord Number 0.00222869869322
+Chord Change Rate 0.0464597977698
+Beats (Maximilian) 655
+BPM (Maximilian) 147.066635132
+Spectral Flux (Maximilian) 0.0866314992309
+Dissonance (Essentia) 0.47304469347
+[
+    "The Twist"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.23267352581
+Diatonic strength 0.776773035526
+Chord Number 0.00238450081088
+Chord Change Rate 0.0640834569931
+Beats (Maximilian) 202
+BPM (Maximilian) 78.275680542
+Spectral Flux (Maximilian) 0.0807101726532
+Dissonance (Essentia) 0.476241827011
+[
+    "Johnny B. Goode"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A#"
+Danceability 1.17990970612
+Diatonic strength 0.707161068916
+Chord Number 0.0022766077891
+Chord Change Rate 0.0526465550065
+Beats (Maximilian) 455
+BPM (Maximilian) 165.689376831
+Spectral Flux (Maximilian) 0.0770187303424
+Dissonance (Essentia) 0.440624117851
+[
+    "Life On Mars"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A#"
+Danceability 1.01930570602
+Diatonic strength 0.590216159821
+Chord Number 0.00297500984743
+Chord Change Rate 0.0422451421618
+Beats (Maximilian) 474
+BPM (Maximilian) 123.633468628
+Spectral Flux (Maximilian) 0.0618682131171
+Dissonance (Essentia) 0.461131602526
+[
+    "Sultans Of Swing"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 1.48832571507
+Diatonic strength 0.70835340023
+Chord Number 0.00119840214029
+Chord Change Rate 0.0499334223568
+Beats (Maximilian) 861
+BPM (Maximilian) 148.339752197
+Spectral Flux (Maximilian) 0.0725963935256
+Dissonance (Essentia) 0.464425563812
+[
+    "American Pie"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G"
+Danceability 1.11957323551
+Diatonic strength 0.693240880966
+Chord Number 0.000808407436125
+Chord Change Rate 0.0646725967526
+Beats (Maximilian) 1074
+BPM (Maximilian) 138.728378296
+Spectral Flux (Maximilian) 0.063977226615
+Dissonance (Essentia) 0.449591904879
+[
+    "Your Song"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 1.03227460384
+Diatonic strength 0.582112967968
+Chord Number 0.00190912559628
+Chord Change Rate 0.0412371121347
+Beats (Maximilian) 519
+BPM (Maximilian) 128.368728638
+Spectral Flux (Maximilian) 0.0581632629037
+Dissonance (Essentia) 0.436049699783
+[
+    "Heartbreak Hotel"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "D#"
+Danceability 1.20189380646
+Diatonic strength 0.631271898746
+Chord Number 0.00492091383785
+Chord Change Rate 0.0801405981183
+Beats (Maximilian) 209
+BPM (Maximilian) 92.894859314
+Spectral Flux (Maximilian) 0.0580365471542
+Dissonance (Essentia) 0.411957830191
+[
+    "Sweet Child O Mine"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C#"
+Danceability 1.25269305706
+Diatonic strength 0.566274642944
+Chord Number 0.00169890222605
+Chord Change Rate 0.0530580244958
+Beats (Maximilian) 736
+BPM (Maximilian) 125.508552551
+Spectral Flux (Maximilian) 0.0799632817507
+Dissonance (Essentia) 0.473835468292
+[
+    "River Deep Mountain High"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A#"
+Danceability 0.939055800438
+Diatonic strength 0.725199043751
+Chord Number 0.00233001471497
+Chord Change Rate 0.0459648370743
+Beats (Maximilian) 601
+BPM (Maximilian) 165.38343811
+Spectral Flux (Maximilian) 0.0782655179501
+Dissonance (Essentia) 0.465861111879
+[
+    "Papa's Got A Brand New Bag"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.24196588993
+Diatonic strength 0.817143619061
+Chord Number 0.00515274191275
+Chord Change Rate 0.10563120991
+Beats (Maximilian) 271
+BPM (Maximilian) 129.53326416
+Spectral Flux (Maximilian) 0.0557477101684
+Dissonance (Essentia) 0.47921654582
+[
+    "Hallelujah"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 0.908725500107
+Diatonic strength 0.543222844601
+Chord Number 0.00112309074029
+Chord Change Rate 0.0406558848917
+Beats (Maximilian) 724
+BPM (Maximilian) 102.828170776
+Spectral Flux (Maximilian) 0.0354986153543
+Dissonance (Essentia) 0.406836092472
+[
+    "Purple Haze"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.02565634251
+Diatonic strength 0.594101071358
+Chord Number 0.00338983046822
+Chord Change Rate 0.0782485902309
+Beats (Maximilian) 304
+BPM (Maximilian) 111.319152832
+Spectral Flux (Maximilian) 0.0702512338758
+Dissonance (Essentia) 0.488087534904
+[
+    "Imagine (2010 - Remaster)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 1.04517042637
+Diatonic strength 0.606533110142
+Chord Number 0.00271739135496
+Chord Change Rate 0.040019761771
+Beats (Maximilian) 469
+BPM (Maximilian) 151.662094116
+Spectral Flux (Maximilian) 0.0574358440936
+Dissonance (Essentia) 0.419940680265
+[
+    "Over The Rainbow (2006 Digital Remaster)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G#"
+Danceability 0.819886267185
+Diatonic strength 0.691091835499
+Chord Number 0.00328659079969
+Chord Change Rate 0.0528045557439
+Beats (Maximilian) 446
+BPM (Maximilian) 112.524391174
+Spectral Flux (Maximilian) 0.0380406491458
+Dissonance (Essentia) 0.403690695763
+[
+    "Stairway To Heaven"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.08637320995
+Diatonic strength 0.573688089848
+Chord Number 0.000970968045294
+Chord Change Rate 0.0451500155032
+Beats (Maximilian) 1109
+BPM (Maximilian) 164.683883667
+Spectral Flux (Maximilian) 0.0494915954769
+Dissonance (Essentia) 0.434096425772
+[
+    "Dancing In The Streets"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.28372442722
+Diatonic strength 0.701678514481
+Chord Number 0.00290782214142
+Chord Change Rate 0.0575748756528
+Beats (Maximilian) 338
+BPM (Maximilian) 127.247138977
+Spectral Flux (Maximilian) 0.0803738683462
+Dissonance (Essentia) 0.478392869234
+[
+    "What's Going On"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C#"
+Danceability 1.15980374813
+Diatonic strength 0.62078922987
+Chord Number 0.0031815469265
+Chord Change Rate 0.0739709660411
+Beats (Maximilian) 396
+BPM (Maximilian) 101.683532715
+Spectral Flux (Maximilian) 0.073616206646
+Dissonance (Essentia) 0.45873850584
+[
+    "Billie Jean"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "F#"
+Danceability 1.49823057652
+Diatonic strength 0.629555702209
+Chord Number 0.00110917445272
+Chord Change Rate 0.0719378888607
+Beats (Maximilian) 572
+BPM (Maximilian) 117.29233551
+Spectral Flux (Maximilian) 0.0815409943461
+Dissonance (Essentia) 0.458430975676
+[
+    "Smells Like Teen Spirit"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "C#"
+Danceability 1.2619780302
+Diatonic strength 0.575459778309
+Chord Number 0.00184842885938
+Chord Change Rate 0.0782501548529
+Beats (Maximilian) 585
+BPM (Maximilian) 117.504722595
+Spectral Flux (Maximilian) 0.0982070788741
+Dissonance (Essentia) 0.47738096118
+[
+    "Live Forever"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "A"
+Danceability 1.06861793995
+Diatonic strength 0.537040412426
+Chord Number 0.00184409052599
+Chord Change Rate 0.06085498631
+Beats (Maximilian) 428
+BPM (Maximilian) 90.822013855
+Spectral Flux (Maximilian) 0.0808625221252
+Dissonance (Essentia) 0.482494652271
+[
+    "(Sittin' On) The Dock of the Bay"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G"
+Danceability 1.20701169968
+Diatonic strength 0.615323960781
+Chord Number 0.00344431679696
+Chord Change Rate 0.0476463846862
+Beats (Maximilian) 277
+BPM (Maximilian) 103.269065857
+Spectral Flux (Maximilian) 0.0629240870476
+Dissonance (Essentia) 0.436268508434
+[
+    "When Doves Cry"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.49884438515
+Diatonic strength 0.563165664673
+Chord Number 0.00301507534459
+Chord Change Rate 0.115778893232
+Beats (Maximilian) 484
+BPM (Maximilian) 126.187675476
+Spectral Flux (Maximilian) 0.0791538953781
+Dissonance (Essentia) 0.469862252474
+[
+    "Bohemian Rhapsody (2011 Digital Remaster)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A#"
+Danceability 0.952645242214
+Diatonic strength 0.644621968269
+Chord Number 0.0019559264183
+Chord Change Rate 0.0551571249962
+Beats (Maximilian) 839
+BPM (Maximilian) 140.482254028
+Spectral Flux (Maximilian) 0.0531708486378
+Dissonance (Essentia) 0.457232803106
+[
+    "We Are The Champions (2011 Digital Remaster)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "F"
+Danceability 0.922261238098
+Diatonic strength 0.61701130867
+Chord Number 0.00347567023709
+Chord Change Rate 0.0499006956816
+Beats (Maximilian) 343
+BPM (Maximilian) 94.9905776978
+Spectral Flux (Maximilian) 0.0571040995419
+Dissonance (Essentia) 0.452354997396
+[
+    "Creep (Radio Edit)"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "G"
+Danceability 1.09610188007
+Diatonic strength 0.652979135513
+Chord Number 0.00174893124495
+Chord Change Rate 0.0454722121358
+Beats (Maximilian) 438
+BPM (Maximilian) 92.421836853
+Spectral Flux (Maximilian) 0.0613052509725
+Dissonance (Essentia) 0.467059403658
+[
+    "What'd I Say"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.19231534004
+Diatonic strength 0.459506869316
+Chord Number 0.00192813319154
+Chord Change Rate 0.0708150714636
+Beats (Maximilian) 710
+BPM (Maximilian) 178.205612183
+Spectral Flux (Maximilian) 0.0609882287681
+Dissonance (Essentia) 0.448195785284
+[
+    "A Change Is Gonna Come"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A#"
+Danceability 0.936095356941
+Diatonic strength 0.58489716053
+Chord Number 0.00260108779185
+Chord Change Rate 0.0409080162644
+Beats (Maximilian) 399
+BPM (Maximilian) 172.265655518
+Spectral Flux (Maximilian) 0.0661984756589
+Dissonance (Essentia) 0.430553525686
+[
+    "God Save The Queen"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "A"
+Danceability 1.46332657337
+Diatonic strength 0.569348752499
+Chord Number 0.00148698885459
+Chord Change Rate 0.0648698881269
+Beats (Maximilian) 636
+BPM (Maximilian) 153.132720947
+Spectral Flux (Maximilian) 0.114864110947
+Dissonance (Essentia) 0.47455984354
+[
+    "Bridge Over Troubled Water (Album Version)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G#"
+Danceability 0.879943311214
+Diatonic strength 0.675296485424
+Chord Number 0.00158302986529
+Chord Change Rate 0.0504986532032
+Beats (Maximilian) 750
+BPM (Maximilian) 164.67868042
+Spectral Flux (Maximilian) 0.0441317558289
+Dissonance (Essentia) 0.421326100826
+[
+    "Family Affair"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "D"
+Danceability 1.34336674213
+Diatonic strength 0.627627491951
+Chord Number 0.00326141505502
+Chord Change Rate 0.0988459587097
+Beats (Maximilian) 335
+BPM (Maximilian) 108.913337708
+Spectral Flux (Maximilian) 0.0906137600541
+Dissonance (Essentia) 0.422534406185
+[
+    "God Only Knows"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.06529390812
+Diatonic strength 0.709246635437
+Chord Number 0.00406614271924
+Chord Change Rate 0.0523177012801
+Beats (Maximilian) 335
+BPM (Maximilian) 117.574478149
+Spectral Flux (Maximilian) 0.0685384422541
+Dissonance (Essentia) 0.4501285851
+[
+    "A Day In The Life"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "C"
+Danceability 0.977464914322
+Diatonic strength 0.518762230873
+Chord Number 0.00222407560796
+Chord Change Rate 0.0665832608938
+Beats (Maximilian) 825
+BPM (Maximilian) 163.947097778
+Spectral Flux (Maximilian) 0.0542639531195
+Dissonance (Essentia) 0.446473032236
+[
+    "Yesterday"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "F"
+Danceability 0.954398274422
+Diatonic strength 0.645056784153
+Chord Number 0.0040029110387
+Chord Change Rate 0.0611353702843
+Beats (Maximilian) 224
+BPM (Maximilian) 96.9517745972
+Spectral Flux (Maximilian) 0.0439540930092
+Dissonance (Essentia) 0.429354161024
+[
+    "London Calling"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "E"
+Danceability 1.17307507992
+Diatonic strength 0.621347606182
+Chord Number 0.00250455364585
+Chord Change Rate 0.0507741346955
+Beats (Maximilian) 448
+BPM (Maximilian) 132.785858154
+Spectral Flux (Maximilian) 0.0885086208582
+Dissonance (Essentia) 0.465342313051
+[
+    "Hotel California"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "B"
+Danceability 1.26602399349
+Diatonic strength 0.48633363843
+Chord Number 0.00119033444207
+Chord Change Rate 0.0442804433405
+Beats (Maximilian) 959
+BPM (Maximilian) 147.806259155
+Spectral Flux (Maximilian) 0.0684579461813
+Dissonance (Essentia) 0.460101246834
+[
+    "Waterloo Sunset (Stereo)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "B"
+Danceability 1.1051003933
+Diatonic strength 0.61261510849
+Chord Number 0.00326950033195
+Chord Change Rate 0.0597851462662
+Beats (Maximilian) 356
+BPM (Maximilian) 107.834075928
+Spectral Flux (Maximilian) 0.0712658241391
+Dissonance (Essentia) 0.460176557302
+[
+    "Every Breath You Take (2003 Stereo Remastered Version)"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G#"
+Danceability 1.59918630123
+Diatonic strength 0.587596237659
+Chord Number 0.00219098036177
+Chord Change Rate 0.0388899035752
+Beats (Maximilian) 496
+BPM (Maximilian) 117.365943909
+Spectral Flux (Maximilian) 0.0778622180223
+Dissonance (Essentia) 0.442397534847
+[
+    "(I Can't Get No) Satisfaction"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.30470907688
+Diatonic strength 0.5645840168
+Chord Number 0.00206526229158
+Chord Change Rate 0.0950020626187
+Beats (Maximilian) 506
+BPM (Maximilian) 135.735031128
+Spectral Flux (Maximilian) 0.0817458555102
+Dissonance (Essentia) 0.478955149651
+[
+    "Gimme Shelter"
+]
+key (uncorrected) "minor"
+Prominent Rot (uncorrected) "C#"
+Danceability 1.10989737511
+Diatonic strength 0.545127868652
+Chord Number 0.00204429309815
+Chord Change Rate 0.0655877366662
+Beats (Maximilian) 538
+BPM (Maximilian) 118.528808594
+Spectral Flux (Maximilian) 0.0803851783276
+Dissonance (Essentia) 0.458996653557
+[
+    "Be My Baby"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "E"
+Danceability 1.04827928543
+Diatonic strength 0.710098862648
+Chord Number 0.00288350624032
+Chord Change Rate 0.0475778542459
+Beats (Maximilian) 346
+BPM (Maximilian) 129.252197266
+Spectral Flux (Maximilian) 0.0763809755445
+Dissonance (Essentia) 0.468581885099
+[
+    "My Generation"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "G"
+Danceability 1.00834929943
+Diatonic strength 0.535349607468
+Chord Number 0.00351947452873
+Chord Change Rate 0.0774284377694
+Beats (Maximilian) 315
+BPM (Maximilian) 96.5371246338
+Spectral Flux (Maximilian) 0.0861363336444
+Dissonance (Essentia) 0.47065860033
+[
+    "One"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 1.09805941582
+Diatonic strength 0.610476911068
+Chord Number 0.00134453782812
+Chord Change Rate 0.0415126048028
+Beats (Maximilian) 417
+BPM (Maximilian) 90.6167907715
+Spectral Flux (Maximilian) 0.0727082788944
+Dissonance (Essentia) 0.448325484991
+[
+    "I Will Always Love You"
+]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "A"
+Danceability 0.876990973949
+Diatonic strength 0.626951992512
+Chord Number 0.00281491898932
+Chord Change Rate 0.0633356794715
+Beats (Maximilian) 541
+BPM (Maximilian) 134.566696167
+Spectral Flux (Maximilian) 0.041362054646
+Dissonance (Essentia) 0.421868890524
+[               Best of My Love                  ]
+key (uncorrected) "major"
+Prominent Rot (uncorrected) "C"
+Danceability 1.29265797138
+Diatonic strength 0.729141175747
+Chord Number 0.00211104075424
+Chord Change Rate 0.0667088851333
+Beats (Maximilian) 423
+BPM (Maximilian) 116.388626099
+Spectral Flux (Maximilian) 0.0888672173023
+Dissonance (Essentia) 0.459924131632
