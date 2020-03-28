@@ -12,9 +12,9 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
 
-- #### [Johns Hopkins University - Data Science Specialization](./Applied-Data-Science-Specialization-IBM)
+- #### [Johns Hopkins University - Data Science Specialization](./AJohns%20Hopkins%20University%20-%20Data%20Science%20Specialization)
 
-1. [Johns Hopkins University - R Programming](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Open%20Source%20tools%20for%20Data%20Science)
+1. [Johns Hopkins University - R Programming](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20R%20Programming)
 
 - #### [University of California, San Diego - Object Oriented Programming in Java](./UCSD-Object-Oriented-Programming-in-Java)
 
