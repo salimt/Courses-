@@ -12,7 +12,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
 
-- #### [Johns Hopkins University - Data Science Specialization](./AJohns%20Hopkins%20University%20-%20Data%20Science%20Specialization)
+- #### [Johns Hopkins University - Data Science Specialization](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization)
 
 1. [Johns Hopkins University - R Programming](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20R%20Programming)
 
