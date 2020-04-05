@@ -78,9 +78,5 @@ matchedData$Rank.Groups = cut2(matchedData$Rank, g = 5)
 ## Build a table of Income Groups across Rank Groups
 table(matchedData$Income.Group, matchedData$Rank.Groups)
 
-##                         [  1, 39) [ 39, 77) [ 77,115) [115,154) [154,190]
-## High income: nonOECD         4         5         8         5         1
-## High income: OECD           18        10         1         1         0
-## Low income                   0         1         9        16        11
-## Lower middle income          *5*        13        12         8        16
-## Upper middle income         11         9         8         8         9
+##                         [  1, 39) 
+## Lower middle income          *5*      
