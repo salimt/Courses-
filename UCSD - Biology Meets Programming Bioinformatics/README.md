@@ -1,4 +1,4 @@
-# University of California, San Diego: Biology Meets Programming: Bioinformatics for Beginners
+# University of California, San Diego: Biology Meets Programming: Bioinformatics
 
 <img src="https://i.imgur.com/Ufaapoa.png">
 
