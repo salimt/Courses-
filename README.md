@@ -91,6 +91,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 3. [University of London - Responsive Website Tutorial and Examples](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Responsive%20Website%20Tutorial%20and%20Examples)
 
+- #### [University of California, San Diego - Biology Meets Programming: Bioinformatics](./UCSD%20-%20Biology%20Meets%20Programming%20Bioinformatics)
 
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
 
