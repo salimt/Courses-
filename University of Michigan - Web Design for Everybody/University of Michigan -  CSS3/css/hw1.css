@@ -1,0 +1,317 @@
+img {
+	padding-top:10px;
+	width: 250px;
+	height: 150px;
+	padding-bottom: 10px;
+}
+
+.left > a:hover, .left > a:active {
+  background-color: #333333;
+}
+
+.left > a:link, .left > a:visited {
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+main {
+	display: inline-flex;
+}
+
+.left {
+	width: 20%;
+	padding: 10px;
+	background-color: #1E1F25;
+}
+
+.right {
+	background-image: url("https://noideasports.com/wp-content/uploads/2017/01/frisbee-2.png");
+  background-size: cover;
+	color: #FFFFFF;
+	padding-left: 15px;
+	background-color: #C0C0C0;
+	border-color: #000000;
+	border: 2px solid #000000;
+}
+
+p {
+	font-family: 'Garamond';
+	font-size: 20px;
+  padding-right: 5%;
+}
+
+h2 { 
+	color: #b48608; 
+	font-family: 'Droid serif', serif; 
+	font-size: 36px; font-weight: 400; 
+	font-style: italic; 
+	line-height: 44px; 
+	margin: 0 0 12px; 
+	text-align: left; }
+
+
+
+/*nav {
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #C0C0C0;
+	border-color: #000000;
+	border: 1px solid #000000;
+	width: 100%;
+}
+
+nav > a {
+	border-radius: 20px;
+    color: #024794;
+}
+
+nav > a:link, nav > a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 85px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav > a:hover {
+  background: #29abe2;
+}
+
+nav > a.active {
+  background: #29abe2;
+  color: #fff;
+}*/
+
+h1 {	
+	text-align: center;
+	padding-top: 35px;
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 3.5em;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h1:hover {
+    animation-play-state: paused;
+}
+
+
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1em);
+        text-shadow: 
+            0 0.125em 0 #0c2ffb, 
+            0 0.25em 0 #2cfcfd, 
+            0 -0.125em 0 #fb203b, 
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5em);
+        text-shadow: 
+            0 -0.0625em 0 #0c2ffb, 
+            0 -0.125em 0 #2cfcfd, 
+            0 0.0625em 0 #fb203b, 
+            0 0.125em 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25em);
+        text-shadow: 
+            0 0.03125em 0 #0c2ffb, 
+            0 0.0625em 0 #2cfcfd, 
+            0 -0.03125em 0 #fb203b, 
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png");
+  background-position: bottom;
+  animation: 4s linear 0s infinite bp;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bp {
+  from {
+    background-position:  198px 0;
+  }
+  
+  to {
+    background-position:  0 198px;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  background: rgba(0, 20, 40, 0.3);
+  margin: auto;
+  font-weight: bold;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav > a {
+  text-decoration: none;
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000;
+  min-width: 80px;
+  margin: auto;
+}
+
+nav > a:hover, a.active {
+  background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+  font-weight: bold;
+}
+nav > a:active {
+  transform: translateY(4px);
+}
+
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.shameless-plug{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+.blue { color: #185875; }
+.yellow { color: #FFF842; }
+
+th h1 {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    color: #185875;
+}
+
+td {
+    font-weight: normal;
+    font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+table {
+    table-layout: fixed;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+td,  th {
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+tr:nth-child(odd) {
+    background-color: rgb(50,60,80, 0.8);
+}
+
+/* Background-color of the even rows */
+tr:nth-child(even) {
+    background-color: rgb(44,52,70, 0.8);
+}
+
+th {
+
+    background-color: #1F2739;
+}
+
+td:first-child { text-align: left; color: #FB667A; }
+
+tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+     -moz-box-shadow: 0 6px 6px -6px #0E1119;
+          box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+td:hover {
+  background-color: #FFF842;
+  color: #403E10;
+  font-weight: bold;
+  
+  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+  transform: translate3d(6px, -6px, 0);
+  
+  transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+td:nth-child(4),
+th:nth-child(4) { display: none; }
+}
