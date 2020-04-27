@@ -91,6 +91,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 2. [University of Michigan - CSS3](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody/University%20of%20Michigan%20-%20%20CSS3)
 
+3. [University of Michigan -  Interactivity with JavaScript](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody/University%20of%20Michigan%20-%20%20Interactivity%20with%20JavaScript)
+
 - #### [Stanford University - Introduction to Mathematical Thinking](./Stanford-University-Introduction-to-Mathematical-Thinking)
 
 - #### [University of London - Responsive Website Development and Design Specialization](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization)
