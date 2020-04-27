@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="en">
+ <head>	
+  <meta charset="UTF-8">	
+    <title>Shipping and Billing</title>	
+    <style>		
+        input{			
+          border:1px solid black;
+	}		
+        input:focus{
+	   background-color: #E6E6E6;		
+        }
+	fieldset{
+ 	   margin-bottom: 4%;
+	}	
+    </style>
+
+    <script type="text/javascript">
+    	function billingFunction(){
+    		var checked = document.getElementById("same").checked;
+
+    		document.getElementById("billingName").value = checked? 
+    								document.getElementById("shippingName").value : "";
+
+    		document.getElementById("billingZip").value = checked? 
+    								document.getElementById("shippingZip").value : "";
+    	}
+    </script>
+
+  </head>
+  <body>
+	<h1>JavaScript Homework</h1>	
+        <p>Add the JavaScript code needed to enable auto-complete on this form.  Whenever the checkbox is checked, the code should automatically copy the values from Shipping Name and Shipping Zip into the Billing Name and Billing Zip.  If the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
+
+		<form>		
+        <fieldset>
+	  <legend>Shipping Information</legend>			  <label for ="shippingName">Name:</label>		  <input type = "text" name = "Name" id = "shippingName" required><br/>
+
+	  <label for = "shippingzip">Zip code:</label>		  <input type = "text" name = "zip" id = "shippingZip" pattern = "[0-9]{5}" required><br/>
+        </fieldset>
+	<input type="checkbox" id="same" name="same" onchange= "billingFunction()"/>		
+        <label for = "same">Is the Billing Information the Same?</label>						
+        <fieldset>
+ 	  <legend>Billing Information</legend>			  <label for ="billingName">Name:</label>		  <input type = "text" name = "Name" id = "billingName" required><br/>
+	   
+          <label for = "billingzip">Zip code:</label>		  <input type = "text" name = "zip" id = "billingZip" pattern = "[0-9]{5}" required><br/>
+	</fieldset>
+
+	<input type = "submit" value = "Verify"/>	
+    </form>
+  </body>
+</html>
