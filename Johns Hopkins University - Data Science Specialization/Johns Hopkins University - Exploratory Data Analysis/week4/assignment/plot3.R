@@ -6,7 +6,7 @@ if(!exists("NEI")) {
         NEI <- readRDS("summarySCC_PM25.rds")
 }
 if(!exists("SCC")) {
-        NEI <- readRDS("Source_Classification_Code.rds")
+        SCC <- readRDS("Source_Classification_Code.rds")
 }
 
 subDf <- subset(NEI, fips == "24510")
