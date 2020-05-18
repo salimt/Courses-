@@ -16,7 +16,7 @@ This course focuses on the concepts and tools behind reporting modern data analy
 - This week we cover some of the core tools for developing reproducible documents. We cover the literate programming tool knitr and show how to integrate it with Markdown to publish reproducible web documents. We also introduce the first peer assessment which will require you to write up a reproducible data analysis using knitr.
 
 ### Week 3: Reproducible Research Checklist & Evidence-based Data Analysis
--This week covers what one could call a basic check list for ensuring that a data analysis is reproducible. While it's not absolutely sufficient to follow the check list, it provides a necessary minimum standard that would be applicable to almost any area of analysis.
+- This week covers what one could call a basic check list for ensuring that a data analysis is reproducible. While it's not absolutely sufficient to follow the check list, it provides a necessary minimum standard that would be applicable to almost any area of analysis.
 
 ### Week 4: Case Studies & Commentaries
 - This week there are two case studies involving the importance of reproducibility in science for you to watch.
