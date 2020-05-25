@@ -87,7 +87,7 @@ We get the events that harmed at least 1 person to narrow down the situation. Th
 
 Plotting the graph of the events that harmed more than 1000 people.
 
-![](project_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](https://github.com/salimt/Courses-/blob/master/Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Reproducible%20Research/project/fig/unnamed-chunk-4-1.png?raw=true)<!-- -->
 
 
 Finding the events that caused property damages, categorized by event name.
@@ -118,11 +118,11 @@ Also, sorting the table just given above in a descending order.
 
 Narrowing down the 406 objects from the table above by limiting the property damage by minimum of $10,000. After that, Plotting the the subset I did get by narrowing down, and putting labels to see the exact numbers for the events caused more than 450,000 dollars in damage.
 
-![](project_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![](https://github.com/salimt/Courses-/blob/master/Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Reproducible%20Research/project/fig/unnamed-chunk-7-1.png?raw=true)<!-- -->
 
 Merging the two dataset I did manage to get above, and continuing to create another data frame with a frequence for every event. With the frequence, I did divide the property damage by frequency to find an average to decide which one is more harmful than others in economic context.
 
-![](project_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](https://github.com/salimt/Courses-/blob/master/Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Reproducible%20Research/project/fig/unnamed-chunk-8-1.png?raw=true)<!-- -->
 
 ## Results
 
