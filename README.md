@@ -6,6 +6,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
+- #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
