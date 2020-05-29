@@ -1,0 +1,16 @@
+{
+  "name": "week_1_portfolio_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^0.8.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

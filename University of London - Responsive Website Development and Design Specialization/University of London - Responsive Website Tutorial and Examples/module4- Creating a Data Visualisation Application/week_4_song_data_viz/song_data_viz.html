@@ -1,0 +1,90 @@
+<head>
+  <title>song_data_viz</title>
+  <script src="vis.js"></script>
+  <script type="text/javascript">
+	function hideDiv() {
+	   document.getElementById('welcomeDiv').style.display = "none";
+	}
+
+	function showDiv() {
+	   document.getElementById('welcomeDiv').style.display = "block";
+	}
+  </script>
+</head>
+
+<body>
+
+<div class="container">
+  {{> song_viz}}
+</div>	
+</body>
+
+<template name="song_viz">
+<div class="row">
+	<div class="col-md-6">
+		<center>{{> song_viz_controls}}</center>
+
+		{{> song_feature_list}}
+
+	</div>
+	<div class="col-md-6">
+		{{> song_vizjs}}
+	</div>
+</div>
+
+</template>
+
+<template name="song_viz_controls">
+	<form>
+		<!-- list of available single features -->
+		Single numeric features:
+		<br/>
+		<select class="js-select-single-feature">
+			{{#each get_feature_names "single"}}
+			<option value="{{name}}">{{name}}</option>
+			{{/each}}
+		</select>
+		<button class="btn js-show-blobs" onclick="hideDiv()">blobs</button>
+		<button class="btn js-show-timeline" onclick="showDiv()">timeline</button>
+		<select id="welcomeDiv" style="display:none; margin-right: 141px" class="js-select-single-feature-comp">
+			{{#each get_feature_names "single"}}
+			<option value="{{name}}">{{name}}</option>
+			{{/each}}
+		</select> 
+	</form>
+</template>	
+
+
+<template name="song_feature_list">
+	<div class="table-users">
+	   <div class="header">Song Dataset</div>
+	   
+	   <table cellspacing="0">
+			<tr>
+				<th>Artist</th>
+				<th>Title</th>
+				<th>Value</th>
+			</tr>
+			{{#each get_all_feature_values}}
+				<tr>
+					<td>{{artist}}</td>
+					<td>{{title}}</td>
+					<td>{{value}}</td>
+				</tr>
+			{{/each}}
+	   </table>
+	</div>
+
+	
+</template>
+
+<template name="song_vizjs">
+	<div id="visjs"></div>
+		<tr>
+			<td>{{highestLabel}}</td>
+			<td>{{highestVal}}</td>
+		</tr>
+
+	<div id="mytableid"></div>
+</template>
+

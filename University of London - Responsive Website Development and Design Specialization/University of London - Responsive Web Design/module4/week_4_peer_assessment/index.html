@@ -1,0 +1,128 @@
+<!-- This is a first example of using a template -->
+
+<head>
+
+<!-- include our libraries and css files -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/handlebars-v3.0.3.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="AnimalsData.js"></script>
+
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/gallery.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div id="container-fluid">
+            <div class="row">
+
+                <div class="col-md-2">
+                     <!-- start collapsed navbar-->
+                    <div class="navbar-header navbar-inverse">
+                        <button 
+                        type="button" 
+                        class="navbar-toggle collapsed" 
+                        data-toggle="collapse" 
+                        data-target="#content_left" 
+                        aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div><!-- / collapsed navbar-->
+                    <!-- start un-collapsed navbar-->
+                    <div class="collapse navbar-collapse" id="content_left">
+                    <!-- animal list is rendered here -->
+                    </div><!-- / un-collapsed navbar-->
+                </div>
+                <div class="col-md-10">
+                    <div id="content_right">
+                        <!-- animal detail is rendered here -->
+                    </div>
+                </div>
+                </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- this is our template put your code in here...-->
+    <script id="category-template" type="text/x-handlebars-template">
+        <ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+        {{#each animals}}
+            <!-- note that we set the class to js-animal name. This lets us
+                assign a click event to this li -->
+            <li><a href="#" class="js-animal-name" data-id="{{name}}">{{name}}</a></li>
+        {{/each}}
+        </ul>
+    </script>
+
+    <script id="animal-detail-template" type="text/x-handlebars-template">
+        <h2>{{name}}</h2>
+        <img src={{image1}} style="width:400px;height:300px;">
+        <img src={{image2}} style="width:400px;height:300px;margin:15px">
+        <p>{{description}}</p>
+
+    </script>
+
+  <!-- javascript code to fill the template -->
+  <script type="text/javascript">
+
+    // grab our template code from the DOM
+    var source   = $("#category-template").html();
+
+    // compile the template so we can use it
+    var template = Handlebars.compile(source);
+
+    // generate HTML from the data
+    var html    = template(animals_data);
+
+    // add the HTML to the content div
+    $('#content_left').html(html);
+
+    // this event listener is triggered when the user clicks on an animal name
+    $('.js-animal-name').on('click', function(e){
+        var animal_name = $(e.target).data('id');// pull the data-id attribute, which contains the name
+        console.log('rendering detail page for '+animal_name);
+        for (var i=0;i<animals_data.animals.length;i++){// look for the animal in the array of animals
+            var an_animal = animals_data.animals[i];
+            if (an_animal.name == animal_name){// found it!
+                break;
+            }
+        }
+    // HERE IS WHERE YOU COME IN...
+        // fill in the following gaps:
+        // 1)
+        // load the html content of the animal-detail-template into a variable called sourcs
+
+        var source  = $("#animal-detail-template").html();
+
+        // 2)
+        // compile the contents of that variable using Handlebars and store it into
+
+        var template = Handlebars.compile(source);
+
+        // 3)
+        // call the template function, passing it the 'an_animal' variable to render the animal data with
+        // the template and store the results in a variable.
+
+        var html    = template(an_animal);
+
+        // 4)
+        // finally, replace the contents of the div with id #content_right
+        // with the results of your template render
+
+        $('#content_right').html(html);
+
+    });
+  </script>
+
+</body>

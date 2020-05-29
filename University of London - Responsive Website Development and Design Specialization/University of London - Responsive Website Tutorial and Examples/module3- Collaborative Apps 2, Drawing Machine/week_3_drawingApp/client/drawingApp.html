@@ -1,0 +1,44 @@
+<head>
+  <title>1-wall</title>
+</head>
+
+<body>
+  {{> wall}}
+</body>
+
+<template name="wall">
+  <h1>{{title}}</h1>
+  <div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<div class="content">
+  <div id="wrapper">
+    <h1>The Drawing Machine</h1>
+    <div class="bg"></div>
+    <div class="buttonL">
+      <button class='clear'><img style="width: 32px; height: 26px;" src="http://getdrawings.com/free-icon-bw/clear-filter-icon-5.png" alt="Avatar" class="image"></button>
+    </div>
+
+    <div class="buttonR">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class='thicker'><img style="width: 42px; height: 36px;" src="http://getdrawings.com/free-icon-bw/green-plus-icon-4.png" alt="Avatar" class="image"></button>
+      <button class='thinner'><img style="width: 42px; height: 36px;" src="https://cdn.onlinewebfonts.com/svg/img_165307.png" alt="Avatar" class="image"></button>
+      <button style="background-color: red;" class='red'>&nbsp;&nbsp;&nbsp;</button>
+      <button style="background-color: blue;" class='blue'>&nbsp;&nbsp;&nbsp;</button>
+      <button style="background-color: green;" class='green'>&nbsp;&nbsp;&nbsp;</button>
+      <button style="background-color: black;" class='black'>&nbsp;&nbsp;&nbsp;</button>
+      <button style="background-color: white;" class='white'>&nbsp;&nbsp;&nbsp;</button>
+    </div><br>
+
+      <div class='canvas' id="outer-wrap">
+          <div id="inner-wrap"> 
+          {{> canvas}}     
+          </div>
+      </div>
+  </div></div>
+</template>
+
+<template name="canvas">
+  <!-- style="box-shadow: 10px 10px 8px #888888;"  -->
+  <div id='canvas'></div>
+</template>

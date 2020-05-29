@@ -1,0 +1,623 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Users\\ACER\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.2_3\\mt-os.windows.x86_32\\dev_bundle\\bin\\node.exe',
+1 verbose cli   'C:\\Users\\ACER\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.2_3\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bcrypt' ]
+2 info using npm@3.10.9
+3 info using node@v4.6.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bcrypt@^0.8.7
+8 silly fetchNamedPackageData bcrypt
+9 silly mapToRegistry name bcrypt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bcrypt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bcrypt',
+12 silly mapToRegistry   name: 'bcrypt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+14 verbose request uri https://registry.npmjs.org/bcrypt
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:12:47 PM
+17 verbose request id ac33b20c966791b8
+18 verbose etag W/"834568389032c2e093f374cb001bf46c"
+19 verbose lastModified Mon, 02 Mar 2020 16:23:45 GMT
+20 http request GET https://registry.npmjs.org/bcrypt
+21 http 304 https://registry.npmjs.org/bcrypt
+22 verbose headers { date: 'Sat, 14 Mar 2020 15:12:48 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=df23364496f322edb4029ad8e4a9616781584198768; expires=Mon, 13-Apr-20 15:12:48 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+22 verbose headers   'cf-ray': '573eef5d68d7da0e-IST',
+22 verbose headers   age: '6226',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: '"834568389032c2e093f374cb001bf46c"',
+22 verbose headers   'last-modified': 'Mon, 02 Mar 2020 16:23:45 GMT',
+22 verbose headers   vary: 'Accept-Encoding',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   server: 'cloudflare' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Sat, 14 Mar 2020 15:12:48 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=df23364496f322edb4029ad8e4a9616781584198768; expires=Mon, 13-Apr-20 15:12:48 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+23 silly get     'cf-ray': '573eef5d68d7da0e-IST',
+23 silly get     age: '6226',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: '"834568389032c2e093f374cb001bf46c"',
+23 silly get     'last-modified': 'Mon, 02 Mar 2020 16:23:45 GMT',
+23 silly get     vary: 'Accept-Encoding',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     server: 'cloudflare' } ]
+24 verbose etag https://registry.npmjs.org/bcrypt from cache
+25 verbose get saving bcrypt to C:\Users\ACER\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt\.cache.json
+26 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule bcrypt@0.8.7 checking installable status
+40 silly cache add args [ 'bcrypt@^0.8.7', null ]
+41 verbose cache add spec bcrypt@^0.8.7
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'bcrypt@^0.8.7',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'bcrypt',
+42 silly cache add   name: 'bcrypt',
+42 silly cache add   rawSpec: '^0.8.7',
+42 silly cache add   spec: '>=0.8.7 <0.9.0',
+42 silly cache add   type: 'range' }
+43 silly addNamed bcrypt@>=0.8.7 <0.9.0
+44 verbose addNamed ">=0.8.7 <0.9.0" is a valid semver range for bcrypt
+45 silly addNameRange { name: 'bcrypt', range: '>=0.8.7 <0.9.0', hasData: false }
+46 silly mapToRegistry name bcrypt
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'bcrypt',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'bcrypt',
+49 silly mapToRegistry   name: 'bcrypt',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+51 verbose addNameRange registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+52 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+53 silly addNameRange number 2 { name: 'bcrypt', range: '>=0.8.7 <0.9.0', hasData: true }
+54 silly addNameRange versions [ 'bcrypt',
+54 silly addNameRange   [ '0.1.2',
+54 silly addNameRange     '0.2.0',
+54 silly addNameRange     '0.2.1',
+54 silly addNameRange     '0.1.3',
+54 silly addNameRange     '0.2.2',
+54 silly addNameRange     '0.2.3',
+54 silly addNameRange     '0.2.4',
+54 silly addNameRange     '0.3.0',
+54 silly addNameRange     '0.3.1',
+54 silly addNameRange     '0.3.2',
+54 silly addNameRange     '0.4.0',
+54 silly addNameRange     '0.4.1',
+54 silly addNameRange     '0.5.0',
+54 silly addNameRange     '0.6.0',
+54 silly addNameRange     '0.7.0',
+54 silly addNameRange     '0.7.1',
+54 silly addNameRange     '0.7.2',
+54 silly addNameRange     '0.7.3',
+54 silly addNameRange     '0.7.4',
+54 silly addNameRange     '0.7.5',
+54 silly addNameRange     '0.7.6',
+54 silly addNameRange     '0.7.7',
+54 silly addNameRange     '0.7.8',
+54 silly addNameRange     '0.8.0',
+54 silly addNameRange     '0.8.1',
+54 silly addNameRange     '0.8.2',
+54 silly addNameRange     '0.8.3',
+54 silly addNameRange     '0.8.4',
+54 silly addNameRange     '0.8.5',
+54 silly addNameRange     '0.8.6',
+54 silly addNameRange     '0.8.7',
+54 silly addNameRange     '1.0.0',
+54 silly addNameRange     '1.0.1',
+54 silly addNameRange     '1.0.2',
+54 silly addNameRange     '1.0.3',
+54 silly addNameRange     '1.1.0-napi',
+54 silly addNameRange     '2.0.0',
+54 silly addNameRange     '2.0.1',
+54 silly addNameRange     '3.0.0',
+54 silly addNameRange     '3.0.1',
+54 silly addNameRange     '3.0.2',
+54 silly addNameRange     '3.0.3',
+54 silly addNameRange     '3.0.4',
+54 silly addNameRange     '3.0.4-napi',
+54 silly addNameRange     '3.0.5',
+54 silly addNameRange     '3.0.6',
+54 silly addNameRange     '3.0.7',
+54 silly addNameRange     '3.0.8',
+54 silly addNameRange     '4.0.0',
+54 silly addNameRange     '4.0.1' ] ]
+55 silly addNamed bcrypt@0.8.7
+56 verbose addNamed "0.8.7" is a plain semver version for bcrypt
+57 warn deprecated bcrypt@0.8.7: bcrypt < v2.0.0 is susceptible to bcrypt wrap-around bug. Upgrade to bcrypt >= v2.0.0 for improved support for newer bcrypt hashes
+58 silly cache afterAdd bcrypt@0.8.7
+59 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\bcrypt\0.8.7\package\package.json not in flight; writing
+60 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+61 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\bcrypt\0.8.7\package\package.json written
+62 silly fetchNamedPackageData bindings
+63 silly mapToRegistry name bindings
+64 silly mapToRegistry using default registry
+65 silly mapToRegistry registry https://registry.npmjs.org/
+66 silly mapToRegistry data Result {
+66 silly mapToRegistry   raw: 'bindings',
+66 silly mapToRegistry   scope: null,
+66 silly mapToRegistry   escapedName: 'bindings',
+66 silly mapToRegistry   name: 'bindings',
+66 silly mapToRegistry   rawSpec: '',
+66 silly mapToRegistry   spec: 'latest',
+66 silly mapToRegistry   type: 'tag' }
+67 silly mapToRegistry uri https://registry.npmjs.org/bindings
+68 silly fetchNamedPackageData nan
+69 silly mapToRegistry name nan
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry data Result {
+72 silly mapToRegistry   raw: 'nan',
+72 silly mapToRegistry   scope: null,
+72 silly mapToRegistry   escapedName: 'nan',
+72 silly mapToRegistry   name: 'nan',
+72 silly mapToRegistry   rawSpec: '',
+72 silly mapToRegistry   spec: 'latest',
+72 silly mapToRegistry   type: 'tag' }
+73 silly mapToRegistry uri https://registry.npmjs.org/nan
+74 verbose request uri https://registry.npmjs.org/bindings
+75 verbose request no auth needed
+76 info attempt registry request try #1 at 5:12:48 PM
+77 verbose etag W/"8dfe34716157e36596b3ba5e5fcfb617"
+78 verbose lastModified Wed, 27 Feb 2019 22:54:48 GMT
+79 http request GET https://registry.npmjs.org/bindings
+80 verbose request uri https://registry.npmjs.org/nan
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 5:12:48 PM
+83 verbose etag W/"a665a85bde8d605dbf85b9013ecf702b"
+84 verbose lastModified Thu, 16 May 2019 19:11:40 GMT
+85 http request GET https://registry.npmjs.org/nan
+86 http 304 https://registry.npmjs.org/bindings
+87 verbose headers { date: 'Sat, 14 Mar 2020 15:12:49 GMT',
+87 verbose headers   connection: 'keep-alive',
+87 verbose headers   'set-cookie': [ '__cfduid=df23364496f322edb4029ad8e4a9616781584198768; expires=Mon, 13-Apr-20 15:12:48 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+87 verbose headers   'cf-ray': '573eef5f5b27da0e-IST',
+87 verbose headers   'cache-control': 'public, max-age=300',
+87 verbose headers   etag: '"8dfe34716157e36596b3ba5e5fcfb617"',
+87 verbose headers   'last-modified': 'Wed, 27 Feb 2019 22:54:48 GMT',
+87 verbose headers   vary: 'Accept-Encoding',
+87 verbose headers   'cf-cache-status': 'REVALIDATED',
+87 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+87 verbose headers   server: 'cloudflare' }
+88 silly get cb [ 304,
+88 silly get   { date: 'Sat, 14 Mar 2020 15:12:49 GMT',
+88 silly get     connection: 'keep-alive',
+88 silly get     'set-cookie': [ '__cfduid=df23364496f322edb4029ad8e4a9616781584198768; expires=Mon, 13-Apr-20 15:12:48 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+88 silly get     'cf-ray': '573eef5f5b27da0e-IST',
+88 silly get     'cache-control': 'public, max-age=300',
+88 silly get     etag: '"8dfe34716157e36596b3ba5e5fcfb617"',
+88 silly get     'last-modified': 'Wed, 27 Feb 2019 22:54:48 GMT',
+88 silly get     vary: 'Accept-Encoding',
+88 silly get     'cf-cache-status': 'REVALIDATED',
+88 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+88 silly get     server: 'cloudflare' } ]
+89 verbose etag https://registry.npmjs.org/bindings from cache
+90 verbose get saving bindings to C:\Users\ACER\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+91 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+92 silly resolveWithNewModule bindings@1.2.1 checking installable status
+93 silly cache add args [ 'bindings@1.2.1', null ]
+94 verbose cache add spec bindings@1.2.1
+95 silly cache add parsed spec Result {
+95 silly cache add   raw: 'bindings@1.2.1',
+95 silly cache add   scope: null,
+95 silly cache add   escapedName: 'bindings',
+95 silly cache add   name: 'bindings',
+95 silly cache add   rawSpec: '1.2.1',
+95 silly cache add   spec: '1.2.1',
+95 silly cache add   type: 'version' }
+96 silly addNamed bindings@1.2.1
+97 verbose addNamed "1.2.1" is a plain semver version for bindings
+98 silly mapToRegistry name bindings
+99 silly mapToRegistry using default registry
+100 silly mapToRegistry registry https://registry.npmjs.org/
+101 silly mapToRegistry data Result {
+101 silly mapToRegistry   raw: 'bindings',
+101 silly mapToRegistry   scope: null,
+101 silly mapToRegistry   escapedName: 'bindings',
+101 silly mapToRegistry   name: 'bindings',
+101 silly mapToRegistry   rawSpec: '',
+101 silly mapToRegistry   spec: 'latest',
+101 silly mapToRegistry   type: 'tag' }
+102 silly mapToRegistry uri https://registry.npmjs.org/bindings
+103 verbose addNameVersion registry:https://registry.npmjs.org/bindings not in flight; fetching
+104 verbose get https://registry.npmjs.org/bindings not expired, no request
+105 silly cache afterAdd bindings@1.2.1
+106 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+107 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+108 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+109 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 104.16.21.35:443
+110 info attempt registry request try #2 at 5:13:19 PM
+111 verbose etag W/"a665a85bde8d605dbf85b9013ecf702b"
+112 verbose lastModified Thu, 16 May 2019 19:11:40 GMT
+113 http request GET https://registry.npmjs.org/nan
+114 http 304 https://registry.npmjs.org/nan
+115 verbose headers { date: 'Sat, 14 Mar 2020 15:13:20 GMT',
+115 verbose headers   connection: 'keep-alive',
+115 verbose headers   'set-cookie': [ '__cfduid=dc5a760b828b3aede9216e535dac9bdc31584198799; expires=Mon, 13-Apr-20 15:13:19 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+115 verbose headers   'cf-ray': '573ef020e935da0e-IST',
+115 verbose headers   'cache-control': 'public, max-age=300',
+115 verbose headers   etag: '"a665a85bde8d605dbf85b9013ecf702b"',
+115 verbose headers   'last-modified': 'Thu, 16 May 2019 19:11:40 GMT',
+115 verbose headers   vary: 'Accept-Encoding',
+115 verbose headers   'cf-cache-status': 'REVALIDATED',
+115 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+115 verbose headers   server: 'cloudflare' }
+116 silly get cb [ 304,
+116 silly get   { date: 'Sat, 14 Mar 2020 15:13:20 GMT',
+116 silly get     connection: 'keep-alive',
+116 silly get     'set-cookie': [ '__cfduid=dc5a760b828b3aede9216e535dac9bdc31584198799; expires=Mon, 13-Apr-20 15:13:19 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+116 silly get     'cf-ray': '573ef020e935da0e-IST',
+116 silly get     'cache-control': 'public, max-age=300',
+116 silly get     etag: '"a665a85bde8d605dbf85b9013ecf702b"',
+116 silly get     'last-modified': 'Thu, 16 May 2019 19:11:40 GMT',
+116 silly get     vary: 'Accept-Encoding',
+116 silly get     'cf-cache-status': 'REVALIDATED',
+116 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+116 silly get     server: 'cloudflare' } ]
+117 verbose etag https://registry.npmjs.org/nan from cache
+118 verbose get saving nan to C:\Users\ACER\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+119 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+120 silly resolveWithNewModule nan@2.3.5 checking installable status
+121 silly cache add args [ 'nan@2.3.5', null ]
+122 verbose cache add spec nan@2.3.5
+123 silly cache add parsed spec Result {
+123 silly cache add   raw: 'nan@2.3.5',
+123 silly cache add   scope: null,
+123 silly cache add   escapedName: 'nan',
+123 silly cache add   name: 'nan',
+123 silly cache add   rawSpec: '2.3.5',
+123 silly cache add   spec: '2.3.5',
+123 silly cache add   type: 'version' }
+124 silly addNamed nan@2.3.5
+125 verbose addNamed "2.3.5" is a plain semver version for nan
+126 silly mapToRegistry name nan
+127 silly mapToRegistry using default registry
+128 silly mapToRegistry registry https://registry.npmjs.org/
+129 silly mapToRegistry data Result {
+129 silly mapToRegistry   raw: 'nan',
+129 silly mapToRegistry   scope: null,
+129 silly mapToRegistry   escapedName: 'nan',
+129 silly mapToRegistry   name: 'nan',
+129 silly mapToRegistry   rawSpec: '',
+129 silly mapToRegistry   spec: 'latest',
+129 silly mapToRegistry   type: 'tag' }
+130 silly mapToRegistry uri https://registry.npmjs.org/nan
+131 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+132 verbose get https://registry.npmjs.org/nan not expired, no request
+133 silly cache afterAdd nan@2.3.5
+134 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json not in flight; writing
+135 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+136 verbose afterAdd C:\Users\ACER\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json written
+137 silly loadAllDepsIntoIdealTree Finishing
+138 silly loadIdealTree Finishing
+139 silly currentTree week_1_portfolio_website@1.0.0
+139 silly currentTree +-- babel-runtime@6.26.0
+139 silly currentTree +-- core-js@2.6.11
+139 silly currentTree `-- regenerator-runtime@0.11.1
+140 silly idealTree week_1_portfolio_website@1.0.0
+140 silly idealTree +-- babel-runtime@6.26.0
+140 silly idealTree +-- bcrypt@0.8.7
+140 silly idealTree +-- bindings@1.2.1
+140 silly idealTree +-- core-js@2.6.11
+140 silly idealTree +-- nan@2.3.5
+140 silly idealTree `-- regenerator-runtime@0.11.1
+141 silly generateActionsToTake Starting
+142 silly install generateActionsToTake
+143 silly generateActionsToTake Finishing
+144 silly diffTrees action count 3
+145 silly diffTrees add bindings@1.2.1
+146 silly diffTrees add nan@2.3.5
+147 silly diffTrees add bcrypt@0.8.7
+148 silly decomposeActions action count 24
+149 silly decomposeActions fetch bindings@1.2.1
+150 silly decomposeActions extract bindings@1.2.1
+151 silly decomposeActions test bindings@1.2.1
+152 silly decomposeActions preinstall bindings@1.2.1
+153 silly decomposeActions build bindings@1.2.1
+154 silly decomposeActions install bindings@1.2.1
+155 silly decomposeActions postinstall bindings@1.2.1
+156 silly decomposeActions finalize bindings@1.2.1
+157 silly decomposeActions fetch nan@2.3.5
+158 silly decomposeActions extract nan@2.3.5
+159 silly decomposeActions test nan@2.3.5
+160 silly decomposeActions preinstall nan@2.3.5
+161 silly decomposeActions build nan@2.3.5
+162 silly decomposeActions install nan@2.3.5
+163 silly decomposeActions postinstall nan@2.3.5
+164 silly decomposeActions finalize nan@2.3.5
+165 silly decomposeActions fetch bcrypt@0.8.7
+166 silly decomposeActions extract bcrypt@0.8.7
+167 silly decomposeActions test bcrypt@0.8.7
+168 silly decomposeActions preinstall bcrypt@0.8.7
+169 silly decomposeActions build bcrypt@0.8.7
+170 silly decomposeActions install bcrypt@0.8.7
+171 silly decomposeActions postinstall bcrypt@0.8.7
+172 silly decomposeActions finalize bcrypt@0.8.7
+173 silly runTopLevelLifecycles Starting
+174 silly executeActions Starting
+175 silly install executeActions
+176 silly doSerial global-install 0
+177 silly doParallel fetch 3
+178 verbose correctMkdir C:\Users\ACER\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+179 verbose lock using C:\Users\ACER\AppData\Roaming\npm-cache\_locks\staging-d4f5533ba99cc610.lock for C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging
+180 silly doParallel extract 3
+181 silly extract bindings@1.2.1
+182 silly extract nan@2.3.5
+183 silly extract bcrypt@0.8.7
+184 verbose unbuild node_modules\.staging\bindings-ef9af20b
+185 verbose unbuild node_modules\.staging\nan-c173494c
+186 verbose unbuild node_modules\.staging\bcrypt-62954e2d
+187 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b is being purged from base C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website
+188 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b
+189 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c is being purged from base C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website
+190 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c
+191 verbose tar unpack C:\Users\ACER\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+192 verbose tar unpacking to C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b
+193 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b is being purged
+194 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b
+195 verbose tar unpack C:\Users\ACER\AppData\Roaming\npm-cache\nan\2.3.5\package.tgz
+196 verbose tar unpacking to C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c
+197 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c is being purged
+198 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c
+199 silly gunzTarPerm modes [ '777', '666' ]
+200 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d is being purged from base C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website
+201 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d
+202 silly gunzTarPerm modes [ '777', '666' ]
+203 verbose tar unpack C:\Users\ACER\AppData\Roaming\npm-cache\bcrypt\0.8.7\package.tgz
+204 verbose tar unpacking to C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d
+205 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d is being purged
+206 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d
+207 silly gunzTarPerm modes [ '777', '666' ]
+208 silly gunzTarPerm extractEntry package.json
+209 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+210 silly gunzTarPerm extractEntry package.json
+211 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+212 silly gunzTarPerm extractEntry package.json
+213 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+214 silly gunzTarPerm extractEntry README.md
+215 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+216 silly gunzTarPerm extractEntry README.md
+217 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+218 silly gunzTarPerm extractEntry bindings.js
+219 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+220 silly gunzTarPerm extractEntry include_dirs.js
+221 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+222 silly gunzTarPerm extractEntry .npmignore
+223 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+224 silly gunzTarPerm extractEntry README.md
+225 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+226 silly gunzTarPerm extractEntry nan_converters.h
+227 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+228 silly gunzTarPerm extractEntry LICENSE.md
+229 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+230 silly gunzTarPerm extractEntry doc/node_misc.md
+231 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+232 silly gunzTarPerm extractEntry doc/asyncworker.md
+233 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+234 silly gunzTarPerm extractEntry LICENSE
+235 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+236 silly gunzTarPerm extractEntry bcrypt.js
+237 silly gunzTarPerm modified mode [ 'bcrypt.js', 420, 438 ]
+238 silly gunzTarPerm extractEntry Makefile
+239 silly gunzTarPerm modified mode [ 'Makefile', 420, 438 ]
+240 silly gunzTarPerm extractEntry .travis.yml
+241 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+242 silly gunzTarPerm extractEntry CHANGELOG.md
+243 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+244 silly gunzTarPerm extractEntry binding.gyp
+245 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+246 silly gunzTarPerm extractEntry examples/async_compare.js
+247 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 420, 438 ]
+248 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+249 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 420, 438 ]
+250 silly gunzTarPerm extractEntry test/async.js
+251 silly gunzTarPerm modified mode [ 'test/async.js', 420, 438 ]
+252 silly gunzTarPerm extractEntry test/repetitions.js
+253 silly gunzTarPerm modified mode [ 'test/repetitions.js', 420, 438 ]
+254 silly gunzTarPerm extractEntry test/sync.js
+255 silly gunzTarPerm modified mode [ 'test/sync.js', 420, 438 ]
+256 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+257 silly gunzTarPerm modified mode [ 'ISSUE_TEMPLATE.md', 420, 438 ]
+258 silly gunzTarPerm extractEntry src/bcrypt.cc
+259 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 420, 438 ]
+260 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+261 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 420, 438 ]
+262 silly gunzTarPerm extractEntry src/blowfish.cc
+263 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 420, 438 ]
+264 silly gunzTarPerm extractEntry src/node_blf.h
+265 silly gunzTarPerm modified mode [ 'src/node_blf.h', 420, 438 ]
+266 silly gunzTarPerm extractEntry werker.yml
+267 silly gunzTarPerm modified mode [ 'werker.yml', 420, 438 ]
+268 silly gunzTarPerm extractEntry doc/callback.md
+269 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+270 silly gunzTarPerm extractEntry doc/converters.md
+271 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+272 silly gunzTarPerm extractEntry doc/errors.md
+273 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+274 silly gunzTarPerm extractEntry doc/maybe_types.md
+275 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+276 silly gunzTarPerm extractEntry doc/methods.md
+277 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+278 silly gunzTarPerm extractEntry doc/new.md
+279 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+280 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b\node_modules is being purged
+281 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b\node_modules
+282 silly gunzTarPerm extractEntry doc/buffers.md
+283 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+284 silly gunzTarPerm extractEntry doc/object_wrappers.md
+285 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+286 silly gunzTarPerm extractEntry doc/persistent.md
+287 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+288 silly gunzTarPerm extractEntry doc/scopes.md
+289 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+290 silly gunzTarPerm extractEntry doc/script.md
+291 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+292 silly gunzTarPerm extractEntry doc/string_bytes.md
+293 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+294 silly gunzTarPerm extractEntry doc/v8_internals.md
+295 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+296 silly gunzTarPerm extractEntry doc/v8_misc.md
+297 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+298 silly gunzTarPerm extractEntry nan.h
+299 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+300 silly gunzTarPerm extractEntry nan_callbacks.h
+301 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+302 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+303 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+304 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+305 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+306 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+307 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+308 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+309 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+310 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+311 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+312 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+313 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+314 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+315 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+316 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+317 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+318 silly gunzTarPerm extractEntry nan_new.h
+319 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+320 silly gunzTarPerm extractEntry nan_object_wrap.h
+321 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+322 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+323 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+324 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+325 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry nan_string_bytes.h
+327 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+328 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+329 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+330 silly gunzTarPerm extractEntry nan_weak.h
+331 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+332 silly gunzTarPerm extractEntry CHANGELOG.md
+333 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+334 silly gunzTarPerm extractEntry tools/package.json
+335 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+336 silly gunzTarPerm extractEntry tools/README.md
+337 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+338 silly gunzTarPerm extractEntry tools/1to2.js
+339 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+340 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d\node_modules is being purged
+341 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d\node_modules
+342 silly gentlyRm C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c\node_modules is being purged
+343 verbose gentlyRm don't care about contents; nuking C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c\node_modules
+344 silly doParallel preinstall 3
+345 silly preinstall bindings@1.2.1 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b
+346 info lifecycle bindings@1.2.1~preinstall: bindings@1.2.1
+347 silly preinstall nan@2.3.5 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c
+348 info lifecycle nan@2.3.5~preinstall: nan@2.3.5
+349 silly preinstall bcrypt@0.8.7 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d
+350 info lifecycle bcrypt@0.8.7~preinstall: bcrypt@0.8.7
+351 silly lifecycle bindings@1.2.1~preinstall: no script for preinstall, continuing
+352 silly lifecycle nan@2.3.5~preinstall: no script for preinstall, continuing
+353 silly lifecycle bcrypt@0.8.7~preinstall: no script for preinstall, continuing
+354 silly doReverseSerial remove 0
+355 silly doSerial move 0
+356 silly doSerial finalize 3
+357 silly finalize C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\bindings
+358 silly finalize C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\nan
+359 silly finalize C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\bcrypt
+360 silly doSerial build 3
+361 silly build bindings@1.2.1
+362 info linkStuff bindings@1.2.1
+363 silly linkStuff bindings@1.2.1 has C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules as its parent node_modules
+364 verbose linkBins bindings@1.2.1
+365 verbose linkMans bindings@1.2.1
+366 silly build nan@2.3.5
+367 info linkStuff nan@2.3.5
+368 silly linkStuff nan@2.3.5 has C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules as its parent node_modules
+369 verbose linkBins nan@2.3.5
+370 verbose linkMans nan@2.3.5
+371 silly build bcrypt@0.8.7
+372 info linkStuff bcrypt@0.8.7
+373 silly linkStuff bcrypt@0.8.7 has C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules as its parent node_modules
+374 verbose linkBins bcrypt@0.8.7
+375 verbose linkMans bcrypt@0.8.7
+376 silly doSerial global-link 0
+377 silly doParallel update-linked 0
+378 silly doSerial install 3
+379 silly install bindings@1.2.1 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bindings-ef9af20b
+380 info lifecycle bindings@1.2.1~install: bindings@1.2.1
+381 silly lifecycle bindings@1.2.1~install: no script for install, continuing
+382 silly install nan@2.3.5 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\nan-c173494c
+383 info lifecycle nan@2.3.5~install: nan@2.3.5
+384 silly lifecycle nan@2.3.5~install: no script for install, continuing
+385 silly install bcrypt@0.8.7 C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging\bcrypt-62954e2d
+386 info lifecycle bcrypt@0.8.7~install: bcrypt@0.8.7
+387 verbose lifecycle bcrypt@0.8.7~install: unsafe-perm in lifecycle true
+388 verbose lifecycle bcrypt@0.8.7~install: PATH: C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\bin\node-gyp-bin;C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\bcrypt\node_modules\.bin;C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.bin;C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32\dev_bundle\bin;C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32;C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32\dev_bundle\lib\node_modules\.bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files\nodejs\;C:\Program Files\MiniZinc\bin\;C:\Program Files (x86)\sbt\bin;C:\Users\ACER\AppData\Roaming\npm;C:\Program Files\aircrack-ng-1.5.2-win\aircrack-ng-1.5.2-win\bin\64bit;C:\Program Files\heroku\bin;C:\Users\ACER\AppData\Local\.meteor;
+389 verbose lifecycle bcrypt@0.8.7~install: CWD: C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\bcrypt
+390 silly lifecycle bcrypt@0.8.7~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
+391 silly lifecycle bcrypt@0.8.7~install: Returned: code: 1  signal: null
+392 info lifecycle bcrypt@0.8.7~install: Failed to exec install script
+393 verbose unlock done using C:\Users\ACER\AppData\Roaming\npm-cache\_locks\staging-d4f5533ba99cc610.lock for C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website\node_modules\.staging
+394 silly rollbackFailedOptional Starting
+395 silly rollbackFailedOptional Finishing
+396 silly runTopLevelLifecycles Finishing
+397 silly install printInstalled
+398 warn week_1_portfolio_website@1.0.0 No repository field.
+399 verbose If you need help, you may report this error at:
+399 verbose     <https://github.com/npm/npm/issues>
+400 verbose stack Error: bcrypt@0.8.7 install: `node-gyp rebuild`
+400 verbose stack Exit status 1
+400 verbose stack     at EventEmitter.<anonymous> (C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\lifecycle.js:255:16)
+400 verbose stack     at emitTwo (events.js:87:13)
+400 verbose stack     at EventEmitter.emit (events.js:172:7)
+400 verbose stack     at ChildProcess.<anonymous> (C:\Users\ACER\AppData\Local\.meteor\packages\meteor-tool\1.4.2_3\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\spawn.js:40:14)
+400 verbose stack     at emitTwo (events.js:87:13)
+400 verbose stack     at ChildProcess.emit (events.js:172:7)
+400 verbose stack     at maybeClose (internal/child_process.js:854:16)
+400 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:222:5)
+401 verbose pkgid bcrypt@0.8.7
+402 verbose cwd C:\Users\ACER\Desktop\University of London - Responsive Website Development and Design Specialization\University of London - Responsive Website Tutorial and Examples\module1\week_1_portfolio_website
+403 error Windows_NT 10.0.17763
+404 error argv "C:\\Users\\ACER\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.2_3\\mt-os.windows.x86_32\\dev_bundle\\bin\\node.exe" "C:\\Users\\ACER\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.4.2_3\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "bcrypt"
+405 error node v4.6.2
+406 error npm  v3.10.9
+407 error code ELIFECYCLE
+408 error bcrypt@0.8.7 install: `node-gyp rebuild`
+408 error Exit status 1
+409 error Failed at the bcrypt@0.8.7 install script 'node-gyp rebuild'.
+409 error Make sure you have the latest version of node.js and npm installed.
+409 error If you do, this is most likely a problem with the bcrypt package,
+409 error not with npm itself.
+409 error Tell the author that this fails on your system:
+409 error     node-gyp rebuild
+409 error You can get information on how to open an issue for this project with:
+409 error     npm bugs bcrypt
+409 error Or if that isn't available, you can get their info via:
+409 error     npm owner ls bcrypt
+409 error There is likely additional logging output above.
+410 verbose exit [ 1, true ]

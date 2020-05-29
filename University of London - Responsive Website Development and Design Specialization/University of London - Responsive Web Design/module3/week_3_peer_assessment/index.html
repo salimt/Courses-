@@ -1,0 +1,55 @@
+<!-- This is a first example of using a template -->
+
+<head>
+
+<!-- include our libraries and css files -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/handlebars-v3.0.3.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap_blue.css" rel="stylesheet">
+<link href="css/gallery.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- the content of the web page starts off empty
+     because we will fill it later from the template -->
+    <div id="content">
+    </div>
+
+    <!-- this is our template put your code in here...-->
+    <script id="todo-template" type="text/x-handlebars-template">
+        <h2>{{title}} due {{due_by}}</h2>
+        <h3>Assigned to: {{owner}}</h3>
+    </script>
+
+  <!-- javascript code to fill the template -->
+  <script type="text/javascript">
+
+    // grab our template code from the DOM
+    var source   = $("#todo-template").html();
+
+    // compile the template so we can use it
+    var template = Handlebars.compile(source);
+
+    // create some data
+    var task1 = {
+        "title":"Complete the peer assessment",
+        "due_by":"1 week from now",
+        "owner":"salimt"
+    };
+
+    // generate HTML from the data
+    var html    = template(task1);
+
+    // add the HTML to the content div
+    $('#content').html(html);
+  </script>
+
+</body>

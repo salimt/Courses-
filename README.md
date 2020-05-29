@@ -6,11 +6,23 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
+- #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
 
 - #### [Rice University - Python Data Visualization](./Rice-Python-Data-Visualization)
+
+- #### [Johns Hopkins University - Data Science Specialization](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization)
+
+1. [Johns Hopkins University - R Programming](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20R%20Programming)
+
+2. [Johns Hopkins University - Getting and Cleaning Data](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Getting%20and%20Cleaning%20Data)
+
+3. [Johns Hopkins University - Exploratory Data Analysis](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Exploratory%20Data%20Analysis)
+
+4. [Johns Hopkins University - Reproducible Research](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Reproducible%20Research)
 
 - #### [University of California, San Diego - Object Oriented Programming in Java](./UCSD-Object-Oriented-Programming-in-Java)
 
@@ -38,9 +50,22 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
+- #### [The Hong Kong University of Science and Technology - Python and Statistics for Financial Analysis](./HKUST%20%20-%20Python%20and%20Statistics%20for%20Financial%20Analysis)
+
+- #### [Google IT Automation with Python Professional Certificate](./Google%20IT%20Automation%20with%20Python)
+
+1. [Google - Crash Course on Python](./Google%20IT%20Automation%20with%20Python/Google%20-%20Crash%20Course%20on%20Python)
+
+2. [Google - Using Python to Interact with the Operating System](./Google%20IT%20Automation%20with%20Python/Google%20-%20Using%20Python%20to%20Interact%20with%20the%20Operating%20System)
+
+
 - #### [Delft University of Technology - Automated Software Testing](./Delft%20University%20of%20Technology%20-%20Automated%20Software%20Testing)
 
-- #### [University of Maryland, College Park: Software Security](./University%20of%20Maryland%20-%20Cybersecurity%20Specialization/University%20of%20Maryland%20-%20Software%20Security)
+- #### [University of Maryland, College Park: Cybersecurity Specialization](./University%20of%20Maryland%20-%20Cybersecurity%20Specialization) 
+
+1. [University of Maryland, College Park: Software Security](./University%20of%20Maryland%20-%20Cybersecurity%20Specialization/University%20of%20Maryland%20-%20Software%20Security)
+
+2. [University of Maryland, College Park: Usable Security](./University%20of%20Maryland%20-%20Cybersecurity%20Specialization/University%20of%20Maryland%20-%20Usable%20Security)
 
 - #### [University of Maryland, College Park: Programming Mobile Applications for Android Handheld Systems: Part 1](./University%20of%20Maryland%20-%20Programming%20Mobile%20Applications%20for%20Android%20Handheld%20Systems%2C%20Part%20I)
 
@@ -71,12 +96,25 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 5. [Johns Hopkins University - Single Page Web Applications with AngularJS](./Johns%20Hopkins%20University%20-%20Ruby%20on%20Rails%20Web%20Development%20Specialization/Johns%20Hopkins%20University%20-%20Single%20Page%20Web%20Applications%20with%20AngularJS)
 
+- #### [University of Michigan - Web Design for Everybody: Web Development & Coding Specialization](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody)
+
+1. [University of Michigan - HTML5](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody/University%20of%20Michigan%20-%20%20HTML5)
+
+2. [University of Michigan - CSS3](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody/University%20of%20Michigan%20-%20%20CSS3)
+
+3. [University of Michigan -  Interactivity with JavaScript](./University%20of%20Michigan%20-%20Web%20Design%20for%20Everybody/University%20of%20Michigan%20-%20%20Interactivity%20with%20JavaScript)
+
 - #### [Stanford University - Introduction to Mathematical Thinking](./Stanford-University-Introduction-to-Mathematical-Thinking)
 
 - #### [University of London - Responsive Website Development and Design Specialization](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization)
 
-1. [University of London - Web Application Development with JavaScript and MongoDB](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Web%20Application%20Development%20with%20JavaScript%20and%20MongoDB)
+1. [University of London - Responsive Web Design](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Responsive%20Web%20Design)
 
+2. [University of London - Web Application Development with JavaScript and MongoDB](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Web%20Application%20Development%20with%20JavaScript%20and%20MongoDB)
+
+3. [University of London - Responsive Website Tutorial and Examples](./University%20of%20London%20-%20Responsive%20Website%20Development%20and%20Design%20Specialization/University%20of%20London%20-%20Responsive%20Website%20Tutorial%20and%20Examples)
+
+- #### [University of California, San Diego - Biology Meets Programming: Bioinformatics](./UCSD%20-%20Biology%20Meets%20Programming%20Bioinformatics)
 
 - #### [University of Toronto - Learn to Program: The Fundamentals](./University-of-Toronto-The%20Fundamentals)
 
