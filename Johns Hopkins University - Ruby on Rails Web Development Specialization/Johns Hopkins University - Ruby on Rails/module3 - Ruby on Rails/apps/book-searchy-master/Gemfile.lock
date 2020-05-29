@@ -116,7 +116,7 @@ GEM
       activesupport (= 4.2.11.1)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (12.3.2)
+    rake (13.0.1)
     rdoc (4.3.0)
     sassc (2.0.1)
       ffi (~> 1.9)
