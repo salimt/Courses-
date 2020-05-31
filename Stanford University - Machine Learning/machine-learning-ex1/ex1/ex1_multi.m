@@ -104,7 +104,6 @@ fprintf('\n');
 % ====================== YOUR CODE HERE ======================
 % Recall that the first column of X is all-ones. Thus, it does
 % not need to be normalized.
-#(((X(:,2:end)-mu)./sigma)+alpha)
 Y = (([1650 3] - mu)./sigma);
 price = ([ones(rows(Y), 1) Y])*theta;
 
