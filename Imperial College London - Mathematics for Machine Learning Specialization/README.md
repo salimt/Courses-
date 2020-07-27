@@ -1,6 +1,6 @@
 # Imperial College London - Mathematics for Machine Learning Specialization
 
-<img src="https://i.imgur.com/wW2m604.jpg">
+<img src="https://i.imgur.com/1DbDipG.png">
 
 ![Imperial College London](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: David Dye, Samuel J. Cooper and A. Freddie Page
