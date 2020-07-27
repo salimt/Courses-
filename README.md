@@ -8,6 +8,10 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
 
+- #### [Imperial College London - Mathematics for Machine Learning Specialization](./Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Specialization)
+
+1. [Imperial College London - Linear Algebra](./Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Specialization/Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Linear%20Algebra)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
