@@ -12,6 +12,10 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 1. [Imperial College London - Linear Algebra](./Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Specialization/Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Linear%20Algebra)
 
+- #### [University of Washington - Machine Learning Specialization](./)
+
+1. [University of Washington - A Case Study Approach](./)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
