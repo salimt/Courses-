@@ -16,6 +16,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 1. [University of Washington - A Case Study Approach](./University%20of%20Washington%20-%20Machine%20Learning%20Specialization/University%20of%20Washington%20-%20Machine%20Learning%20Foundations%20A%20Case%20Study%20Approach)
 
+2. [University of Washington - Regression](./University%20of%20Washington%20-%20Machine%20Learning%20Specialization/University%20of%20Washington%20-%20Machine%20Learning%20Regression)
+
 - #### [Rice University - Python Data Representations](./Rice-Python-Data-Representations)
 
 - #### [Rice University - Python Data Analysis](./Rice-Python-Data-Analysis)
