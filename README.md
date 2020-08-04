@@ -60,6 +60,10 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 8. [IBM: Applied Data Science Capstone Project](./Applied-Data-Science-Specialization-IBM/IBM%20-%20Applied%20Data%20Science%20Capstone%20Project)
 
+- #### [deeplearning.ai - TensorFlow in Practice Specialization](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization)
+
+1. [deeplearning.ai - Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization/deeplearning.ai%20-%20TensorFlow%20for%20AI%2C%20ML%2C%20and%20Deep%20Learning)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [The Hong Kong University of Science and Technology - Python and Statistics for Financial Analysis](./HKUST%20%20-%20Python%20and%20Statistics%20for%20Financial%20Analysis)
