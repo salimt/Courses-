@@ -64,6 +64,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 1. [deeplearning.ai - Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization/deeplearning.ai%20-%20TensorFlow%20for%20AI%2C%20ML%2C%20and%20Deep%20Learning)
 
+2. [deeplearning.ai - Convolutional Neural Networks in TensorFlow](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization/deeplearning.ai%20-%20Convolutional%20Neural%20Networks%20in%20TensorFlow)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [The Hong Kong University of Science and Technology - Python and Statistics for Financial Analysis](./HKUST%20%20-%20Python%20and%20Statistics%20for%20Financial%20Analysis)
