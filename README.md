@@ -68,6 +68,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 3. [deeplearning.ai - Natural Language Processing in TensorFlow](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization/deeplearning.ai%20-%20Natural%20Language%20Processing%20in%20TensorFlow)
 
+4. [deeplearning.ai - Sequences, Time Series and Prediction](./deeplearning.ai%20-%20TensorFlow%20in%20Practice%20Specialization/deeplearning.ai%20-%20Sequences%2C%20Time%20Series%20and%20Prediction)
+
 - #### [University of Helsinki: Object-Oriented Programming with Java, part I](./Object-Oriented-Programming-with-Java-pt1-University-of%20Helsinki-moocfi)
 
 - #### [The Hong Kong University of Science and Technology - Python and Statistics for Financial Analysis](./HKUST%20%20-%20Python%20and%20Statistics%20for%20Financial%20Analysis)
