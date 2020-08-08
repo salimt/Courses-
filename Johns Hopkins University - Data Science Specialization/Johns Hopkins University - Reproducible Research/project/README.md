@@ -1,7 +1,7 @@
 ---
 title: "Data Analysis"
 author: "salimt"
-date: "2020-05-23"
+date: 2020-05-23
 output: 
   html_document:
     keep_md: true
