@@ -1,11 +1,3 @@
----
-title: "Activity Monitoring"
-author: "salimt"
-date: 2020-05-17
-output: 
-  html_document:
-    keep_md: true
----
 
 
 
