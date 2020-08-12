@@ -12,6 +12,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 1. [Imperial College London - Linear Algebra](./Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Specialization/Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Linear%20Algebra)
 
+2. [Imperial College London - Multivariate Calculus](./Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Specialization/Imperial%20College%20London%20-%20Mathematics%20for%20Machine%20Learning%20Multivariate%20Calculus)
+
 - #### [University of Washington - Machine Learning Specialization](./University%20of%20Washington%20-%20Machine%20Learning%20Specialization)
 
 1. [University of Washington - A Case Study Approach](./University%20of%20Washington%20-%20Machine%20Learning%20Specialization/University%20of%20Washington%20-%20Machine%20Learning%20Foundations%20A%20Case%20Study%20Approach)
