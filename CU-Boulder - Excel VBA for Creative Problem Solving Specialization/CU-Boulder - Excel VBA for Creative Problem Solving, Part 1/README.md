@@ -16,7 +16,7 @@
 ### User-Defined VBA Functions
 - In Week 2, you will learn basic VBA expression entry, how to create user-defined functions, how to convert functions to Add-Ins in Excel, how to borrow Excel's built-in functions, how to troubleshoot your VBA functions when they aren't working, and you'll learn about how to design your procedures in a modular fashion.
 
-### xchanging Information Between Excel and VBA
+### Exchanging Information Between Excel and VBA
 - Week 3 teaches you all about how to reference and move information to VBA from Excel and vice versa. You'll learn about the various objects, properties, methods, and events in VBA. Some of the most important properties and methods will be learned in this module that will make future problem solving in the course possible. You will also learn how to deal with errors that arise in your subroutines.
 
 ### Programming structures in VBA
