@@ -40,6 +40,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 4. [Johns Hopkins University - Reproducible Research](./Johns%20Hopkins%20University%20-%20Data%20Science%20Specialization/Johns%20Hopkins%20University%20-%20Reproducible%20Research)
 
+- #### [Saint Petersburg State University - Competitive Programmer's Core Skills](./Stanford%20University%20-%20Machine%20Learning)
+
 - #### [Rice University - Business Statistics and Analysis Capstone](./Rice%20University%20-%20Business%20Statistics%20and%20Analysis%20Capstone)
 
 - #### [University of California, San Diego - Object Oriented Programming in Java](./UCSD-Object-Oriented-Programming-in-Java)
