@@ -7,6 +7,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 1. [EDHEC - Portfolio Construction and Analysis with Python](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization/EDHEC%20-%20Portfolio%20Construction%20and%20Analysis%20with%20Python)
 
+2. [EDHEC - Advanced Portfolio Construction and Analysis with Python](./EDHEC%20-%20Advanced%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization/EDHEC%20-%20Portfolio%20Construction%20and%20Analysis%20with%20Python)
+
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
 - #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
