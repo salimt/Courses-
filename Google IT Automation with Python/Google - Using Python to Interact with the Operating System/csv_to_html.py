@@ -19,7 +19,7 @@ def error_csv():
 				errors[val] = 1
 			else:
 				errors[val] = errors.get(val)+1
-		sorted_errors = collections.orderedDict(sorted(errors.items(), key=operator.itemgetter(1), reverse=True))
+		sorted_errors = collections.OrderedDict(sorted(errors.items(), key=operator.itemgetter(1), reverse=True))
 		with open("error_message.csv", "w") as f:
 			writer = csv.DictWriter(f, fieldnames=["Error", "Count"])
 			writer.writeheader()
@@ -33,7 +33,7 @@ def user_csv():
 	with open("syslog.log", "r") as file:
 		for line in file.readlines():
 			val=line[line.find("(")+1:line.find(")")]
-			if val not in userdata:
+			if val not in userData:
 				userData[val] = [0]*2
 			if line.find("ERROR"):
 				errVal = userData.get(val)[1]+1
