@@ -20,7 +20,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 4. [Google - Process Data from Dirty to Clean](./Google%20Data%20Analytics%20Professional%20Certificate/course4-%20Process%20Data%20from%20Dirty%20to%20Clean)
 
-5. [Google - Analyze Data to Answer Questions](./Google%20Data%20Analytics%20Professional%20Certificate/course4-%20Process%20Data%20from%20Dirty%20to%20Clean)
+5. [Google - Analyze Data to Answer Questions](./Google%20Data%20Analytics%20Professional%20Certificate/course5-%20Analyze%20Data%20to%20Answer%20Questions)
 
 6. [Google - Share Data Through the Art of Visualization](./)
 
