@@ -9,6 +9,25 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 2. [EDHEC - Advanced Portfolio Construction and Analysis with Python](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization/EDHEC%20-%20Advanced%20Portfolio%20Construction%20and%20Analysis%20with%20Python)
 
+
+- #### [Google Data Analytics Professional Certificate](./Google%20Data%20Analytics%20Professional%20Certificate)
+
+1. [Google - Foundations: Data, Data, Everywhere](./Google%20Data%20Analytics%20Professional%20Certificate/course1-%20Foundations%20Data%2C%20Data%2C%20Everywhere)
+
+2. [Google - Ask Questions to Make Data-Driven Decisions](./Google%20Data%20Analytics%20Professional%20Certificate/course2-%20Ask%20Questions%20to%20Make%20Data-Driven%20Decisions)
+
+3. [Google - Prepare Data for Exploration](./Google%20Data%20Analytics%20Professional%20Certificate/course3-%20Prepare%20Data%20for%20Exploration)
+
+4. [Google - Process Data from Dirty to Clean](./Google%20Data%20Analytics%20Professional%20Certificate/course4-%20Process%20Data%20from%20Dirty%20to%20Clean)
+
+5. [Google - Analyze Data to Answer Questions](./Google%20Data%20Analytics%20Professional%20Certificate/course4-%20Process%20Data%20from%20Dirty%20to%20Clean)
+
+6. [Google - Share Data Through the Art of Visualization](./)
+
+7. [Google - Data Analysis with R Programming](./)
+
+8. [Google - Google Data Analytics Capstone: Complete a Case Study](./)
+
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
 - #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
