@@ -22,9 +22,9 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 5. [Google - Analyze Data to Answer Questions](./Google%20Data%20Analytics%20Professional%20Certificate/course5-%20Analyze%20Data%20to%20Answer%20Questions)
 
-6. [Google - Share Data Through the Art of Visualization](./)
+6. [Google - Share Data Through the Art of Visualization](./Google%20Data%20Analytics%20Professional%20Certificate/course6-%20Share%20Data%20Through%20the%20Art%20of%20Visualization)
 
-7. [Google - Data Analysis with R Programming](./)
+7. [Google - Data Analysis with R Programming](./Google%20Data%20Analytics%20Professional%20Certificate/course7-%20Data%20Analysis%20with%20R%20Programming)
 
 8. [Google - Google Data Analytics Capstone: Complete a Case Study](./)
 
