@@ -26,7 +26,7 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 7. [Google - Data Analysis with R Programming](./Google%20Data%20Analytics%20Professional%20Certificate/course7-%20Data%20Analysis%20with%20R%20Programming)
 
-8. [Google - Google Data Analytics Capstone: Complete a Case Study](./)
+8. [Google - Google Data Analytics Capstone: Complete a Case Study](./Google%20Data%20Analytics%20Professional%20Certificate/course8-%20Google%20Data%20Analytics%20Capstone%20Complete%20a%20Case%20Study)
 
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
