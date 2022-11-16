@@ -28,6 +28,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 8. [Google - Google Data Analytics Capstone: Complete a Case Study](./Google%20Data%20Analytics%20Professional%20Certificate/course8-%20Google%20Data%20Analytics%20Capstone%20Complete%20a%20Case%20Study)
 
+- #### [University of Michigan - PostgreSQL for Everybody Specialization](.//University%20of%20Michigan%20-%20PostgreSQL%20for%20Everybody%20Specialization)
+
 - #### [The University of Melbourne & The Chinese University of Hong Kong - Basic Modeling for Discrete Optimization](./The%20University%20of%20Melbourne%20-%20Basic%20Modeling%20for%20Discrete%20Optimization)
 
 - #### [Stanford University - Machine Learning](./Stanford%20University%20-%20Machine%20Learning)
