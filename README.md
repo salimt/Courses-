@@ -3,6 +3,10 @@ This repository is aimed to help Coursera and edX learners who have difficulties
 The quiz and programming homework is belong to coursera and edx and solutions to me.
 
 
+- #### [AWS Certified Solutions Architect - Professional](./AWS%20Cloud%20Solutions%20Architect%20Professional)
+
+- #### [DevOps on AWS Specialization](./DevOps%20on%20AWS%20Specialization)
+
 - #### [EDHEC - Investment Management with Python and Machine Learning Specialization](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization)
 
 1. [EDHEC - Portfolio Construction and Analysis with Python](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization/EDHEC%20-%20Portfolio%20Construction%20and%20Analysis%20with%20Python)
