@@ -2,7 +2,7 @@
 # AWS Certified Solutions Architect - Professional
 
 
-<img src="https://i.imgur.com/xZrS4P5.png" alt="Smiley face" height="200" width="600">
+<img src="https://i.imgur.com/xZrS4P5.png" alt="Smiley face" height="300" width="600">
 
 ![AWS](http://i.imgur.com/Qktqnu1.png) INSTRUCTORS
 #### Instructors: AWS Employees
