@@ -7,6 +7,8 @@ The quiz and programming homework is belong to coursera and edx and solutions to
 
 - #### [DevOps on AWS Specialization](./DevOps%20on%20AWS%20Specialization)
 
+- #### [Open Source Software Development, Linux and Git Specialization](./Open%20Source%20Software%20Development%2C%20Linux%20and%20Git%20Specialization)
+
 - #### [EDHEC - Investment Management with Python and Machine Learning Specialization](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization)
 
 1. [EDHEC - Portfolio Construction and Analysis with Python](./EDHEC%20-%20Investment%20Management%20with%20Python%20and%20Machine%20Learning%20Specialization/EDHEC%20-%20Portfolio%20Construction%20and%20Analysis%20with%20Python)
